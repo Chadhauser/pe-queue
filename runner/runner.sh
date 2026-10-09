@@ -6,6 +6,8 @@ cd /root/pe-queue || exit 1
 git pull -q 2>>/root/pe-queue-state/git.err || true
 mkdir -p /root/pe-queue-state /root/pe-queue-logs
 python3 /root/pe-queue/runner/report.py heartbeat >/dev/null 2>&1
+# progress reporter (independent of this lock) — installed once, idempotent
+crontab -l 2>/dev/null | grep -q 'pe-queue/runner/progress.sh' || ( crontab -l 2>/dev/null; echo "*/5 * * * * /bin/bash /root/pe-queue/runner/progress.sh >/dev/null 2>&1" ) | crontab -
 for job in $(ls jobs/*.sh 2>/dev/null | sort); do
   name=$(basename "$job" .sh)
   [ -f "/root/pe-queue-state/done/$name" ] && continue
