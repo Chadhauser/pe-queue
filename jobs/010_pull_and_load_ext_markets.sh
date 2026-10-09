@@ -5,18 +5,8 @@
 # (bot_core APP_KEY/USERNAME/PASSWORD) and write it to .env, so nobody has to copy a cookie. Exit 75 (WAITING) if that fails.
 python3 - <<'PY' || exit 75
 import sys, re, requests
-sys.path.insert(0,'/root/pe-bot'); import bot_core
-def env(f):
-    d={}
-    try:
-        for ln in open(f):
-            if '=' in ln and not ln.startswith('#'): k,v=ln.strip().split('=',1); d[k.strip()]=v.strip().strip('"').strip("'")
-    except FileNotFoundError: pass
-    return d
-E={}; [E.update(env(f)) for f in ('/root/pe-logger/.env','/root/pe-prematch/.env','/root/pe-bot/.env')]
-APP=getattr(bot_core,'APP_KEY',None) or E.get('APP_KEY') or E.get('BF_APP_KEY')
-U=getattr(bot_core,'USERNAME',None) or E.get('USERNAME') or E.get('BF_USERNAME')
-P=getattr(bot_core,'PASSWORD',None) or E.get('PASSWORD') or E.get('BF_PASSWORD')
+sys.path.insert(0,'/root/pe-queue/runner'); import creds
+print(creds.report()); APP,U,P=creds.betfair(); E=creds.all_vars()
 def ok(tok): return requests.get("https://historicdata.betfair.com/api/GetMyData",headers={"ssoid":tok},timeout=20).status_code==200
 tok=E.get('BF_SSOID')
 if tok and tok!='VALUE' and ok(tok): print("existing token OK"); sys.exit(0)

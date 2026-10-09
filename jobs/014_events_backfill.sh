@@ -6,23 +6,10 @@
 cd /root/pe-scan && cat > events_backfill.py <<'PYFILE'
 import os, re, sys, glob, json, time, datetime, requests, psycopg2, psycopg2.extras
 sys.path.insert(0,'/root/pe-bot'); from bot_core import DB
-# ---- find the key ----
-KEY=None; SRC=None
-for f in ['/root/pe-logger/.env','/root/pe-prematch/.env','/root/pe-bot/.env']:
-    try:
-        for ln in open(f):
-            m=re.match(r'^\s*(APIFOOTBALL_KEY|API_FOOTBALL_KEY|APISPORTS_KEY|RAPIDAPI_KEY)\s*=\s*["\']?([A-Za-z0-9]{20,})["\']?',ln)
-            if m: KEY,SRC=m.group(2),f
-    except FileNotFoundError: pass
-if not KEY:
-    for f in glob.glob('/root/**/*.py',recursive=True):
-        if 'site-packages' in f: continue
-        try: s=open(f,errors='ignore').read()
-        except Exception: continue
-        m=re.search(r'(x-apisports-key|x-rapidapi-key|API_FOOTBALL_KEY|APIFOOTBALL_KEY|APISPORTS_KEY)["\']?\s*[:=]\s*["\']([A-Za-z0-9]{20,})["\']',s,re.I)
-        if m: KEY,SRC=m.group(2),f; break
-if not KEY: print("WAITING: no API-Football key found on this server (searched .env files and all .py under /root). Peter: echo 'APIFOOTBALL_KEY=<key>' >> /root/pe-logger/.env"); sys.exit(75)
-print("key found in",SRC,"(ending ...%s)"%KEY[-4:])
+# ---- find the key (already on this server) ----
+sys.path.insert(0,'/root/pe-queue/runner'); import creds
+print(creds.report()); KEY=creds.apifootball()
+if not KEY: print("WAITING: no API-Football key found by creds.py (env, /etc/environment, ~/.bashrc, .env files)"); sys.exit(75)
 H={"x-apisports-key":KEY}; BASE="https://v3.football.api-sports.io"
 st=requests.get(BASE+"/status",headers=H,timeout=30).json()
 r=st.get('response') or {}

@@ -7,22 +7,10 @@
 # minute and price band whether or not a goal happens. Sizing job reads these after a week.
 mkdir -p /root/pe-liq && cat > /root/pe-liq/liq_recorder.py <<'PYFILE'
 import os, re, sys, time, json, datetime, collections, requests, psycopg2, psycopg2.extras
-sys.path.insert(0,'/root/pe-bot')
-import bot_core; from bot_core import DB
-def envs():
-    d={}
-    for f in ('/root/pe-bot/.env','/root/pe-prematch/.env','/root/pe-logger/.env'):
-        try:
-            for ln in open(f):
-                if '=' in ln and not ln.startswith('#'):
-                    k,v=ln.strip().split('=',1); d.setdefault(k.strip(),v.strip().strip('"').strip("'"))
-        except FileNotFoundError: pass
-    for k in ('APP_KEY','USERNAME','PASSWORD','BF_APP_KEY','BF_USERNAME','BF_PASSWORD'):
-        if hasattr(bot_core,k): d.setdefault(k,getattr(bot_core,k))
-    return d
-E=envs()
-APP_KEY=E.get('BF_APP_KEY') or E.get('APP_KEY'); USER=E.get('BF_USERNAME') or E.get('USERNAME'); PW=E.get('BF_PASSWORD') or E.get('PASSWORD')
-if not (APP_KEY and USER and PW): sys.exit("NO BETFAIR CREDENTIALS found in bot_core / .env files (need APP_KEY, USERNAME, PASSWORD)")
+sys.path.insert(0,'/root/pe-bot'); from bot_core import DB
+sys.path.insert(0,'/root/pe-queue/runner'); import creds
+print(creds.report(),flush=True); APP_KEY,USER,PW=creds.betfair()
+if not (APP_KEY and USER and PW): sys.exit("NO BETFAIR CREDENTIALS found by creds.py")
 TOK=None; TOK_T=0
 def login():
     global TOK,TOK_T
