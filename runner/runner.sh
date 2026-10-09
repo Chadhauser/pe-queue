@@ -14,6 +14,11 @@ for job in $(ls jobs/*.sh 2>/dev/null | sort); do
   start=$(date +%s)
   bash "$job" > "/root/pe-queue-logs/$name.log" 2>&1; rc=$?
   echo "exit=$rc secs=$(( $(date +%s) - start ))" >> "/root/pe-queue-logs/$name.log"
+  if [ "$rc" = "75" ]; then
+    # 75 = WAITING on something outside the job (a token, data from another job). Not done: retried every cycle, next jobs still run.
+    python3 /root/pe-queue/runner/report.py finish "$name" "$rc" "/root/pe-queue-logs/$name.log"
+    continue
+  fi
   touch "/root/pe-queue-state/done/$name"
   python3 /root/pe-queue/runner/report.py finish "$name" "$rc" "/root/pe-queue-logs/$name.log"
 done

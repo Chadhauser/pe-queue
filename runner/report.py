@@ -11,4 +11,4 @@ elif a=='start':
 elif a=='finish':
     log=open(sys.argv[4],errors='replace').read()
     if len(log)>400000: log=log[:150000]+"\n...[truncated]...\n"+log[-250000:]
-    cur.execute("UPDATE job_results SET finished=NOW(), status=%s, exit_code=%s, log=%s WHERE job=%s",('ok' if sys.argv[3]=='0' else 'failed',int(sys.argv[3]),log,sys.argv[2]))
+    cur.execute("UPDATE job_results SET finished=NOW(), status=%s, exit_code=%s, log=%s WHERE job=%s",('ok' if sys.argv[3]=='0' else 'waiting' if sys.argv[3]=='75' else 'failed',int(sys.argv[3]),log,sys.argv[2]))
