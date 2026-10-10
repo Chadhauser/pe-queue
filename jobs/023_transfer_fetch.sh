@@ -3,7 +3,7 @@
 # TRANSFER_KEY from /root/pe-logger/.env (one line Peter pastes ONCE; reused for every future transfer). No scp, no laptop terminal.
 # Exits 75 (WAITING) until the key is there. Then fetches every *.enc in the repo listing below, verifies md5, drops the plaintext in place.
 # take the TRANSFER_KEY line that is a full 32-hex key (a paste once lost 6 characters)
-KEY=$(grep -E '^TRANSFER_KEY=' /root/pe-logger/.env 2>/dev/null | cut -d= -f2- | tr -d '"\x27 \r' | grep -E '^[0-9a-f]{32}$' | tail -1)
+KEY=$(grep -E '^TRANSFER_KEY=' /root/pe-logger/.env 2>/dev/null | cut -d= -f2- | sed -e 's/["'"'"' ]//g' -e 's///' | grep -E '^[0-9a-f]{32}$' | tail -1)
 [ -z "$KEY" ] && { echo "WAITING: no TRANSFER_KEY in /root/pe-logger/.env"; exit 75; }
 echo "TRANSFER_KEY lines in .env: $(grep -c '^TRANSFER_KEY=' /root/pe-logger/.env) | using key of length ${#KEY} ending ...${KEY: -4} (expected length 32, ending ...384f)"
 [ "${KEY: -4}" != "384f" ] && echo "KEY DOES NOT MATCH the one Claude issued — re-paste the echo line exactly"
