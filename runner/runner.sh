@@ -3,7 +3,6 @@
 # one at a time, and files the log + status into Postgres (job_results) where Claude reads it.
 exec 9>/root/pe-queue-state/runner.lock; flock -n 9 || exit 0
 # children must not inherit the lock fd (a daemon started by a job would hold the queue shut)
-export BASH_XTRACEFD=; trap "" PIPE
 cd /root/pe-queue || exit 1
 git pull -q 2>>/root/pe-queue-state/git.err || true
 mkdir -p /root/pe-queue-state /root/pe-queue-logs
