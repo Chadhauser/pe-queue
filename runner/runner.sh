@@ -2,6 +2,8 @@
 # PE job runner. Cron every 2 min. Pulls the queue repo, runs each new jobs/*.sh once, in order,
 # one at a time, and files the log + status into Postgres (job_results) where Claude reads it.
 exec 9>/root/pe-queue-state/runner.lock; flock -n 9 || exit 0
+# children must not inherit the lock fd (a daemon started by a job would hold the queue shut)
+export BASH_XTRACEFD=; trap "" PIPE
 cd /root/pe-queue || exit 1
 git pull -q 2>>/root/pe-queue-state/git.err || true
 mkdir -p /root/pe-queue-state /root/pe-queue-logs
@@ -14,7 +16,7 @@ for job in $(ls jobs/*.sh 2>/dev/null | sort); do
   mkdir -p /root/pe-queue-state/done
   python3 /root/pe-queue/runner/report.py start "$name"
   start=$(date +%s)
-  bash "$job" > "/root/pe-queue-logs/$name.log" 2>&1; rc=$?
+  bash "$job" 9>&- > "/root/pe-queue-logs/$name.log" 2>&1; rc=$?
   echo "exit=$rc secs=$(( $(date +%s) - start ))" >> "/root/pe-queue-logs/$name.log"
   if [ "$rc" = "75" ]; then
     # 75 = WAITING on something outside the job (a token, data from another job). Not done: retried every cycle, next jobs still run.
