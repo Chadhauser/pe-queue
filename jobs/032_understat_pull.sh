@@ -6,6 +6,7 @@ cd /root/pe-scan && cat > understat_pull.py <<'PYFILE'
 import re, json, sys, time, datetime, requests, psycopg2, psycopg2.extras
 sys.path.insert(0,'/root/pe-bot'); from bot_core import DB
 con=psycopg2.connect(DB,sslmode='require'); con.autocommit=True; cur=con.cursor()
+cur.execute("ALTER TABLE understat_shots ADD COLUMN IF NOT EXISTS x NUMERIC, ADD COLUMN IF NOT EXISTS y NUMERIC, ADD COLUMN IF NOT EXISTS last_action TEXT, ADD COLUMN IF NOT EXISTS h_goals INT, ADD COLUMN IF NOT EXISTS a_goals INT")
 H={"User-Agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/124 Safari/537.36","Accept-Language":"en-GB,en;q=0.9"}
 def jsvar(html,name):
     m=re.search(name+r"\s*=\s*JSON\.parse\('((?:\\.|[^'])*)'\)",html)
@@ -48,9 +49,9 @@ for uid in todo:
         rows=[]
         for side in ('h','a'):
             for s in sd.get(side,[]):
-                rows.append((uid,str(s['id']),int(s['minute']),'H' if side=='h' else 'A',s.get('player'),float(s['xG']),s.get('result'),s.get('situation'),s.get('shotType')))
+                rows.append((uid,str(s['id']),int(s['minute']),'H' if side=='h' else 'A',s.get('player'),float(s['xG']),s.get('result'),s.get('situation'),s.get('shotType'),float(s.get('X') or 0),float(s.get('Y') or 0),s.get('lastAction'),int(s.get('h_goals') or 0),int(s.get('a_goals') or 0)))
         if rows:
-            psycopg2.extras.execute_values(cur,"INSERT INTO understat_shots (understat_id,shot_id,minute,team_side,player,xg,result,situation,shot_type) VALUES %s ON CONFLICT DO NOTHING",rows)
+            psycopg2.extras.execute_values(cur,"INSERT INTO understat_shots (understat_id,shot_id,minute,team_side,player,xg,result,situation,shot_type,x,y,last_action,h_goals,a_goals) VALUES %s ON CONFLICT DO NOTHING",rows)
         done+=1
         if done%100==0: print("shots loaded for",done,"matches",flush=True)
         time.sleep(1.0)
