@@ -13,4 +13,14 @@ open(p,'w').write(s)
 PY
 python3 -m py_compile $p || exit 1
 grep -c "BOTH_TEAMS_TO_SCORE" $p
-pkill -f liq_recorder.py; echo "recorder stopped; cron keepalive restarts it within 60s with 5 market types (request weight: batches of 8 unchanged)"
+# SAFETY: the runner can no longer see BETFAIR_USERNAME/PASSWORD (065 diag). A restarted recorder could not log in. Only restart
+# if a fresh login works from this process; otherwise leave the running recorder alone and exit 75 until the credentials are back.
+python3 - <<'PY2' || { echo "WAITING: Betfair username/password not available to a new process - NOT restarting the recorder"; exit 75; }
+import sys; sys.path.insert(0,'/root/pe-queue/runner'); import creds, requests
+a,u,p=creds.betfair()
+assert a and u and p, "no creds"
+r=requests.post("https://identitysso.betfair.com/api/login",data={"username":u,"password":p},headers={"X-Application":a,"Accept":"application/json"},timeout=15).json()
+assert r.get('status')=='SUCCESS', r
+print("fresh login OK")
+PY2
+pkill -f liq_recorder.py; echo "recorder stopped; cron keepalive restarts it within 60s with 5 market types"
