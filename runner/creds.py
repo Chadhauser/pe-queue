@@ -15,7 +15,7 @@ def _file_vars(path):
 def all_vars():
     d=dict(os.environ)
     for f in ['/etc/environment', os.path.expanduser('~/.bashrc'), os.path.expanduser('~/.profile'), os.path.expanduser('~/.bash_profile'),
-              os.path.expanduser('~/.pam_environment')] + glob.glob('/root/pe-*/.env*') + glob.glob('/root/*/.env'):
+              os.path.expanduser('~/.pam_environment')] + glob.glob('/root/pe-*/.env*') + glob.glob('/root/pe-*/*.env') + glob.glob('/root/*/.env'):
         for k,v in _file_vars(f).items(): d.setdefault(k, v)
     try:
         sys.path.insert(0,'/root/pe-bot'); import bot_core
