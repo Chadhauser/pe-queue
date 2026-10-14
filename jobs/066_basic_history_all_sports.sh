@@ -32,15 +32,18 @@ cur.execute("SELECT path FROM bf_hist_other_files"); done={r[0] for r in cur.fet
 WANT=[]
 for y,m in [(yy,mm) for yy in (2024,2025,2026) for mm in range(1,13) if (yy,mm)>=(2024,9) and (yy,mm)<=(2026,9)]:
     WANT+=[("Tennis",y,m,["MATCH_ODDS"],None),("Cricket",y,m,["MATCH_ODDS"],None),("Horse Racing",y,m,["WIN"],["GB","IE"]),("Greyhound Racing",y,m,["WIN"],["GB","IE"]),("Basketball",y,m,["MATCH_ODDS"],None),("Soccer",y,m,["CORRECT_SCORE"],None)]
-import time as _t; T0=_t.time(); BUDGET=50*60   # 50 minutes per run, then exit 75 and continue next cycle
+import time as _t; T0=_t.time(); BUDGET=8*60   # 8 minutes per run, then exit 75 so the rest of the queue runs each cycle
 import calendar
 for sport,y,m,mts,countries in WANT:
     if _t.time()-T0>BUDGET: print("time budget used; continuing next cycle"); sys.exit(75)
-    cur.execute("SELECT 1 FROM bf_hist_other_files WHERE path=%s",(f"DONE::{sport}::{y}-{m:02d}",))
+    cur.execute("SELECT 1 FROM bf_hist_other_files WHERE path=%s OR path=%s",(f"DONE::{sport}::{y}-{m:02d}",f"NOTOWNED::{sport}::{y}-{m:02d}"))
     if cur.fetchone(): continue
     body={"sport":sport,"plan":"Basic Plan","fromDay":1,"fromMonth":m,"fromYear":y,"toDay":calendar.monthrange(y,m)[1],"toMonth":m,"toYear":y,"marketTypesCollection":mts,"countriesCollection":countries or [],"fileTypeCollection":["M"]}
     r=requests.post("https://historicdata.betfair.com/api/DownloadListOfFiles",headers=H,json=body,timeout=120)
-    if r.status_code!=200: print(f"{sport} {y}-{m:02d}: LIST HTTP {r.status_code} -> not owned or API refused ({r.text[:120]})"); continue
+    if r.status_code!=200:
+        print(f"{sport} {y}-{m:02d}: LIST HTTP {r.status_code} -> not owned ({r.text[:90]})")
+        if 'not purchased' in r.text or 'has not purc' in r.text: cur.execute("INSERT INTO bf_hist_other_files VALUES (%s,NOW()) ON CONFLICT DO NOTHING",(f"NOTOWNED::{sport}::{y}-{m:02d}",))
+        continue
     files=r.json(); print(f"{sport} {y}-{m:02d}: {len(files)} files listed",flush=True)
     if not files: print("   -> empty list (nothing for that month or not in plan)"); cur.execute("INSERT INTO bf_hist_other_files VALUES (%s,NOW()) ON CONFLICT DO NOTHING",(f"DONE::{sport}::{y}-{m:02d}",)); continue
     base=f"/root/bfdata/{sport.replace(' ','_').lower()}"; os.makedirs(base,exist_ok=True); n=0; rows=[]

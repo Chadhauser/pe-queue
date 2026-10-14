@@ -14,7 +14,7 @@ cur.execute("SELECT fname FROM racing_bsp_files"); done={r[0] for r in cur.fetch
 d=datetime.date(2022,1,1); end=datetime.date.today()-datetime.timedelta(days=1); t0=time.time(); n=0
 COLS=['event_id','menu_hint','event_name','event_dt','selection_id','selection_name','win_lose','bsp','ppwap','morningwap','ppmax','ppmin','ipmax','ipmin','morningtradedvol','pptradedvol','iptradedvol']
 while d<=end:
-    if time.time()-t0>50*60: print("time budget used; continuing next cycle"); sys.exit(75)
+    if time.time()-t0>8*60: print("time budget used; continuing next cycle"); sys.exit(75)
     for country in ('uk','ire'):
         for market in ('win','place'):
             fname=f"dwbfprices{country}{market}{d:%d%m%Y}.csv"
