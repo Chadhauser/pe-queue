@@ -8,19 +8,23 @@ import os, re, sys, glob, json, time, datetime, requests, psycopg2, psycopg2.ext
 sys.path.insert(0,'/root/pe-bot'); from bot_core import DB
 # ---- find the key (already on this server) ----
 sys.path.insert(0,'/root/pe-queue/runner'); import creds
-print(creds.report()); KEY=creds.apifootball()
-if not KEY: print("WAITING: no API-Football key found by creds.py (env, /etc/environment, ~/.bashrc, .env files)"); sys.exit(75)
+print(creds.report()); KEYS=creds.apifootball_all()
+print("API-Football named variables on this server (file, name, length):",creds.apifootball_sources())
+if not KEYS: print("WAITING: no API-Football key found by creds.py (env, /etc/environment, ~/.bashrc, .env files)"); sys.exit(75)
 # The same service is sold two ways: direct (api-sports.io, header x-apisports-key) and via RapidAPI (different host and header).
 # Try both with the key found; use whichever /status accepts.
-CANDS=[({"x-apisports-key":KEY},"https://v3.football.api-sports.io"),
-       ({"x-rapidapi-key":KEY,"x-rapidapi-host":"api-football-v1.p.rapidapi.com"},"https://api-football-v1.p.rapidapi.com/v3")]
+CANDS=[]
+for KEY in KEYS:
+    CANDS+=[({"x-apisports-key":KEY},"https://v3.football.api-sports.io"),
+            ({"x-rapidapi-key":KEY,"x-rapidapi-host":"api-football-v1.p.rapidapi.com"},"https://api-football-v1.p.rapidapi.com/v3")]
+print("candidate keys found:",len(KEYS),"-> trying each against both hosts")
 H=None; BASE=None; plan=None; lim=None; used=None
 for h,b in CANDS:
     try: st=requests.get(b+"/status",headers=h,timeout=30).json()
     except Exception as e: print("status error",b,repr(e)); continue
     r=st.get('response') or {}
     p_=(r.get('subscription') or {}).get('plan'); l_=(r.get('requests') or {}).get('limit_day'); u_=(r.get('requests') or {}).get('current')
-    print(f"{b}: plan={p_} used/limit={u_}/{l_} errors={st.get('errors')}")
+    print(f"{b} key#{[c[1] for c in CANDS].index(b)//2+1 if False else ''} len={len(list(h.values())[0])}: plan={p_} used/limit={u_}/{l_} errors={st.get('errors')}")
     if p_: H,BASE,plan,lim,used=h,b,p_,l_,u_; break
 if not plan: print("WAITING: key rejected by BOTH api-sports.io and RapidAPI. Needs the key from dashboard.api-football.com (or the Railway service glorious-dream's env, which ran the earlier goals backfill): echo 'API_FOOTBALL_KEY=<key>' >> /root/pe-logger/.env"); sys.exit(75)
 print(f"API-Football via {BASE}: plan {plan} | today's requests used/limit: {used}/{lim}")

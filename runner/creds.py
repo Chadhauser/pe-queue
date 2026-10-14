@@ -33,9 +33,31 @@ def betfair():
     user=first(d,['BETFAIR_USERNAME','BETFAIR_USER','BF_USERNAME','BF_USER','USERNAME'])
     pw=first(d,['BETFAIR_PASSWORD','BETFAIR_PASS','BF_PASSWORD','BF_PASS','PASSWORD'])
     return app,user,pw
+AF_NAMES=['API_FOOTBALL_KEY','APIFOOTBALL_KEY','APISPORTS_KEY','API_SPORTS_KEY','RAPIDAPI_KEY','X_RAPIDAPI_KEY','API_FOOTBALL','FOOTBALL_API_KEY','APIFOOTBALL']
 def apifootball():
     d=all_vars()
-    return first(d,['API_FOOTBALL_KEY','APIFOOTBALL_KEY','APISPORTS_KEY','API_SPORTS_KEY','RAPIDAPI_KEY','X_RAPIDAPI_KEY'])
+    return first(d,AF_NAMES)
+def apifootball_all():
+    """Every distinct candidate key value found under any plausible name, in any file (newest .env lines first). Never prints values."""
+    d=all_vars(); out=[]
+    for n in AF_NAMES:
+        v=d.get(n)
+        if v and v not in out: out.append(v)
+    import glob as _g
+    for f in _g.glob('/root/pe-*/.env*')+_g.glob('/root/*/.env'):
+        for k,v in _file_vars(f).items():
+            if k.upper() in AF_NAMES and v not in out: out.append(v)
+    return out
+def apifootball_sources():
+    """Which file holds which API-Football-named variable (names and files only, never values)."""
+    import glob as _g
+    rows=[]
+    for f in ['/etc/environment', os.path.expanduser('~/.bashrc'), os.path.expanduser('~/.profile')]+_g.glob('/root/pe-*/.env*')+_g.glob('/root/*/.env'):
+        for k,v in _file_vars(f).items():
+            if k.upper() in AF_NAMES: rows.append((f,k,len(v)))
+    for k in os.environ:
+        if k.upper() in AF_NAMES: rows.append(('process env',k,len(os.environ[k])))
+    return rows
 def report():
     app,user,pw=betfair(); k=apifootball()
     return f"betfair app_key={'yes' if app else 'NO'} username={'yes' if user else 'NO'} password={'yes' if pw else 'NO'} | api-football key={'yes' if k else 'NO'}"
