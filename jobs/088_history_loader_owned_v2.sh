@@ -10,7 +10,7 @@ python3 - <<'PY'
 import os, sys, bz2, json, time, calendar, datetime, shutil, requests, psycopg2, psycopg2.extras
 sys.path.insert(0,'/root/pe-queue/runner'); import creds
 sys.path.insert(0,'/root/pe-bot'); from bot_core import DB
-T0=time.time(); BUDGET=8*60
+T0=time.time(); BUDGET=2*60
 APP,U,P=creds.betfair(); E=creds.all_vars()
 def ok(tok): return requests.get("https://historicdata.betfair.com/api/GetMyData",headers={"ssoid":tok},timeout=20).status_code==200
 tok=E.get('BF_SSOID')
