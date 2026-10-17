@@ -3,7 +3,7 @@
 # 087: BASIC HISTORY LOADER v3 — DRIVEN OFF GetMyData. Peter added the £0 Basic months on the Purchase page (15 Oct 13:44); this
 # reads the owned list itself, so nothing is hard-coded and anything he adds later is picked up automatically. Replaces 064/066.
 # Rules: 8-minute budget per run then exit 75 (re-run every 2 min until every owned month is loaded, never blocks the queue);
-# local bz2 deleted after parsing (server disk); stops with WAITING if DB > 22 GB (volume is 30 GB) so disk can never fill again.
+# local bz2 deleted after parsing (server disk); stops with WAITING if DB > 38 GB (volume is 50 GB from 17 Oct) so disk can never fill again.
 # Order: sports we hold nothing for first (tennis, greyhounds, basketball), then cricket, racing, golf, then soccer extras.
 # Storage: bf_hist_other, 1 row per runner per minute (LTP, inplay), progress in bf_hist_other_files + bf_hist_months.
 python3 - <<'PY'
@@ -22,7 +22,7 @@ if not (tok and ok(tok)):
 H={"ssoid":tok,"content-type":"application/json"}
 con=psycopg2.connect(DB,sslmode='require'); con.autocommit=True; cur=con.cursor()
 cur.execute("SELECT pg_database_size(current_database())/1e9"); gb=cur.fetchone()[0]; print(f"DB size {gb:.1f} GB")
-if gb>22: print("WAITING: DB over 22 GB — not loading more until pruned"); sys.exit(75)
+if gb>38: print("WAITING: DB over 38 GB — not loading more until pruned"); sys.exit(75)
 if shutil.disk_usage('/root').free<2e9: print("WAITING: server disk under 2 GB free"); sys.exit(75)
 cur.execute("""CREATE TABLE IF NOT EXISTS bf_hist_other (sport TEXT, market_id TEXT, event_id TEXT, event_name TEXT, market_type TEXT, market_time TIMESTAMPTZ, country TEXT,
   sel TEXT, ts TIMESTAMPTZ, ltp NUMERIC, inplay BOOLEAN); CREATE INDEX IF NOT EXISTS bfo_mkt ON bf_hist_other (sport, market_id);
