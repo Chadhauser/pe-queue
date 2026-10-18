@@ -88,7 +88,7 @@ for sport,y,m in todo:
         try: os.remove(local)
         except Exception: pass
         if md_:
-            mid=os.path.basename(fp).split('.')[0]
+            mid=os.path.basename(fp).replace('.bz2','')
             for (sid,_),(pt,p,ip) in last_min.items():
                 rows.append((sport,mid,str(md_.get('eventId')),md_.get('eventName'),md_.get('marketType'),md_.get('marketTime'),md_.get('countryCode'),runners[sid],datetime.datetime.utcfromtimestamp(pt/1000).replace(tzinfo=datetime.timezone.utc),p,ip))
         cur.execute("INSERT INTO bf_hist_other_files VALUES (%s,NOW()) ON CONFLICT DO NOTHING",(fp,)); done.add(fp); n+=1
