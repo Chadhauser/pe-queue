@@ -11,6 +11,8 @@ import os, sys, bz2, json, time, calendar, datetime, shutil, requests, psycopg2,
 sys.path.insert(0,'/root/pe-queue/runner'); import creds
 sys.path.insert(0,'/root/pe-bot'); from bot_core import DB
 T0=time.time(); BUDGET=2*60
+import os as _os
+if _os.path.exists("/root/LOADER_PAUSED"): print("paused: disk (18 Oct)"); sys.exit(0)
 APP,U,P=creds.betfair(); E=creds.all_vars()
 def ok(tok): return requests.get("https://historicdata.betfair.com/api/GetMyData",headers={"ssoid":tok},timeout=20).status_code==200
 tok=E.get('BF_SSOID')
