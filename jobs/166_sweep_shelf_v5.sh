@@ -1,5 +1,5 @@
 #!/bin/bash
-# 166: report — waits for the sweep after 164 (results from goals), prints the shelf, then re-runs goal_capture with its matching fix.
+# 166: report — waits for the sweep after 165 (equaliser detection + results from goals), prints the shelf, then re-runs goal_capture with its matching fix.
 if pgrep -f sport_sweep.py >/dev/null; then echo "sweep still running:"; tail -1 /root/pe-factory/v4/sport_sweep.log; exit 75; fi
 echo "== health"; date -u
 python3 - <<'PY'
@@ -13,4 +13,5 @@ c.execute("SELECT count(*), count(DISTINCT sofa_id), count(*) FILTER (WHERE mark
 PY
 echo "== sport sweep v2 (look-ahead fixed)"
 grep -v -E "UserWarning|pd.read_sql| processed" /root/pe-factory/v4/sport_sweep.log | tail -130
-echo "== (goal_capture already re-run in 160)"
+echo "== goal_capture with equaliser detection"
+cd /root/pe-factory && timeout 1500 python3 goal_capture.py 2>&1 | grep -v -E "UserWarning|pd.read_sql| processed" | sed -n '/entries removed/,/FIRST goal/p'
