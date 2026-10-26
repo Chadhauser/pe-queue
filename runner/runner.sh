@@ -9,7 +9,12 @@ mkdir -p /root/pe-queue-state /root/pe-queue-logs
 python3 /root/pe-queue/runner/report.py heartbeat >/dev/null 2>&1
 # progress reporter (independent of this lock) — installed once, idempotent
 crontab -l 2>/dev/null | grep -q 'pe-queue/runner/progress.sh' || ( crontab -l 2>/dev/null; echo "*/5 * * * * /bin/bash /root/pe-queue/runner/progress.sh >/dev/null 2>&1" ) | crontab -
-for job in $(ls jobs/*.sh 2>/dev/null | sort); do
+# order: never-run jobs first, then jobs that previously exited 75 (waiting/re-polling) — a 50-min re-polling download
+# must not hold brand-new jobs behind it every cycle
+mkdir -p /root/pe-queue-state/waiting
+fresh=""; retry=""
+for job in $(ls jobs/*.sh 2>/dev/null | sort); do n=$(basename "$job" .sh); if [ -f "/root/pe-queue-state/waiting/$n" ]; then retry="$retry $job"; else fresh="$fresh $job"; fi; done
+for job in $fresh $retry; do
   name=$(basename "$job" .sh)
   [ -f "/root/pe-queue-state/done/$name" ] && continue
   mkdir -p /root/pe-queue-state/done
@@ -21,9 +26,10 @@ for job in $(ls jobs/*.sh 2>/dev/null | sort); do
   echo "exit=$rc secs=$(( $(date +%s) - start ))" >> "/root/pe-queue-logs/$name.log"
   if [ "$rc" = "75" ]; then
     # 75 = WAITING on something outside the job (a token, data from another job). Not done: retried every cycle, next jobs still run.
+    touch "/root/pe-queue-state/waiting/$name"
     python3 /root/pe-queue/runner/report.py finish "$name" "$rc" "/root/pe-queue-logs/$name.log"
     continue
   fi
-  touch "/root/pe-queue-state/done/$name"
+  touch "/root/pe-queue-state/done/$name"; rm -f "/root/pe-queue-state/waiting/$name"
   python3 /root/pe-queue/runner/report.py finish "$name" "$rc" "/root/pe-queue-logs/$name.log"
 done
