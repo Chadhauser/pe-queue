@@ -10,9 +10,9 @@
 cd /root/pe-fin || exit 1
 cat > orb_nq.py <<'PYFILE'
 import os, sys, math, numpy as np, pandas as pd
-D='/root/pe-data/duka/USATECHIDXUSD'; files=sorted(f for f in os.listdir(D) if f.endswith('.parquet')) if os.path.isdir(D) else []
-if len(files)<18: print(f"only {len(files)} months on disk — waiting"); sys.exit(75)
-b=pd.concat(pd.read_parquet(f"{D}/{f}") for f in files).sort_index(); b=b[~b.index.duplicated()]
+sys.path.insert(0,'/root/pe-fin'); from duka_load import load
+b=load('USATECHIDXUSD'); ndays=len(np.unique(b.index.date)) if len(b) else 0
+if ndays<380: print(f"only {ndays} trading days on disk — waiting (need 380 = ~18 months)"); sys.exit(75)
 ny=b.index.tz_convert('America/New_York'); b=b.assign(d=ny.date,t=ny.time)
 SPREAD=float(b.spread.mean()); SLIP=1.0; COST_PTS=SPREAD+2*SLIP   # spread crossed once over the round trip + 1pt slippage each side
 print(f"bars {len(b)} | {b.index[0]} -> {b.index[-1]} | mean spread {SPREAD:.3f} pts | round-trip cost {COST_PTS:.3f} pts")
