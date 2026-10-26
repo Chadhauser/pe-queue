@@ -5,7 +5,7 @@
 # Two directions: back Betfair / lay elsewhere, and lay Betfair / back elsewhere. Output: count, mean edge, hours of day, leagues.
 set -e
 python3 - <<'PY'
-import sys,psycopg2,pandas as pd,re; sys.path.insert(0,'/root/pe-bot'); from bot_core import DB
+import sys,psycopg2,pandas as pd,re,unicodedata; sys.path.insert(0,'/root/pe-bot'); from bot_core import DB
 con=psycopg2.connect(DB,sslmode='require')
 xx=pd.read_sql("""SELECT ts, exchange, event_name, sel_name, back_px::float back_px, back_sz::float back_sz, lay_px::float lay_px, lay_sz::float lay_sz
                   FROM xx_tape WHERE sport ILIKE '%%soccer%%' OR sport ILIKE '%%football%%' OR market_name ILIKE '%%match odds%%' OR market_name ILIKE '%%winner%%'
@@ -13,7 +13,7 @@ xx=pd.read_sql("""SELECT ts, exchange, event_name, sel_name, back_px::float back
 bf=pd.read_sql("""SELECT ts, event_name, competition, sel, back_px::float back_px, back_sz::float back_sz, lay_px::float lay_px, lay_sz::float lay_sz
                   FROM liq_sample WHERE mkt='MO' AND ts>now()-interval '3 days' AND back_px IS NOT NULL AND lay_px IS NOT NULL AND lay_px<=back_px*1.2""",con)
 print("xx rows",len(xx),"betfair rows",len(bf))
-def norm(s): return re.sub(r'[^a-z0-9 ]','',str(s).lower().replace(' vs ',' v ')).strip()
+def norm(s): return re.sub(r'[^a-z0-9 ]','',unicodedata.normalize('NFKD',str(s)).encode('ascii','ignore').decode().lower().replace(' vs ',' v ')).strip()
 xx['ev']=xx.event_name.map(norm); bf['ev']=bf.event_name.map(norm)
 def side(row):
     ev=row['ev']; n=norm(row['sel_name'])
