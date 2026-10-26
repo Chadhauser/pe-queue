@@ -15,7 +15,9 @@ for job in $(ls jobs/*.sh 2>/dev/null | sort); do
   mkdir -p /root/pe-queue-state/done
   python3 /root/pe-queue/runner/report.py start "$name"
   start=$(date +%s)
-  bash "$job" 9>&- > "/root/pe-queue-logs/$name.log" 2>&1; rc=$?
+  # hard cap: no job may hold the queue for more than 3 h (248 held it 90+ min by running a recorder keepalive in the foreground)
+  timeout -k 30 10800 bash "$job" 9>&- > "/root/pe-queue-logs/$name.log" 2>&1; rc=$?
+  [ "$rc" = "124" ] && echo "TIMEOUT: job killed after 3 h — start daemons with nohup ... & never in the foreground" >> "/root/pe-queue-logs/$name.log"
   echo "exit=$rc secs=$(( $(date +%s) - start ))" >> "/root/pe-queue-logs/$name.log"
   if [ "$rc" = "75" ]; then
     # 75 = WAITING on something outside the job (a token, data from another job). Not done: retried every cycle, next jobs still run.
