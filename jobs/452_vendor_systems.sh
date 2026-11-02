@@ -10,7 +10,7 @@ set -o pipefail
 #  (d) LATE DRAW: first minute m in 71..85 with score 1-1 (goals <= m) and draw print <= 2.0 -> BACK the draw, hold to FT.
 # Honesty: no forward-fill. Decision on a real print; FILL at the WORSE of the decision print and the next real print within 2 minutes
 # (covers a goal landing inside the 1-minute granularity), then one tick adverse. Exits one tick adverse. MO never settles early, so a
-# missing MO exit print is SKIPPED AND COUNTED; OU25 settles at the result. Back stake £10 / lay liability £10, 2% commission on profit.
+# missing exit print is NOT skipped: the position is held to the first real print at any later minute, else settled at the result. Back stake £10 / lay liability £10, 2% commission on profit.
 # (b): a 2H goal at/before the decision minute = skip and count (all would-be winners, biased against). Halves = season 2024 vs 2025.
 # One entry per game per system (no correlated samples).
 # Prints AT 1.01 are kept (a first draft filtered ltp>1.01, which hid the exit prints of cruising favourites in (c) — the losing lays).
@@ -78,9 +78,9 @@ for i in range(0,len(G),1500):
             first=gl[0][0] if gl else None
             if first is None or first+2>95: add('a LTD exit goal+2',g,fb,'L',p,None,draw,'goal+2')
             else:
-                e=rp(Dr,first+2,first+5)
-                if e is None: SK['a LTD exit goal+2: no exit print']+=1
-                else: add('a LTD exit goal+2',g,fb,'L',p,Dr[e],draw,'goal+2')
+                e=rp(Dr,first+2,95)
+                if e is None: SK['a LTD exit goal+2: no print to 95 -> settled']+=1
+                add('a LTD exit goal+2',g,fb,'L',p,None if e is None else Dr[e],draw,'goal+2')
         # (b) HT 0-0, KO Over <= 1.80
         if O is not None and int(g.ht_hg)==0 and int(g.ht_ag)==0 and not np.isnan(O[0]) and O[0]<=1.80:
             d=rp(O,46,48)
@@ -105,10 +105,10 @@ for i in range(0,len(G),1500):
                     for m,s in gl[1:]:
                         h,a=score(gl,m)
                         if h==a: eq=m; break
-                    if eq is not None and eq<60: e=rp(F,eq+2,eq+5); why='equaliser'
-                    else: e=rp(F,60,63); why='60min'
-                    if e is None: SK['c no exit print ('+why+')']+=1
-                    else: add('c lay fav exit 60/eq',g,fb,'L',p,F[e],favwon,why)
+                    if eq is not None and eq<60: e=rp(F,eq+2,95); why='equaliser'
+                    else: e=rp(F,60,95); why='60min'
+                    if e is None: SK['c no exit print to 95 ('+why+') -> settled']+=1
+                    add('c lay fav exit 60/eq',g,fb,'L',p,None if e is None else F[e],favwon,why)
         # (d) 1-1 after 70, draw <= 2.0
         for m in range(71,86):
             if score(gl,m)!=(1,1) or np.isnan(Dr[m]) or Dr[m]>2.0: continue
