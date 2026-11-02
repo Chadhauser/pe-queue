@@ -2,3 +2,4 @@
 316_goal_signal_priced
 317_finder_install
 318_auto_bettor_census
+319_monte_carlo_watchlist
