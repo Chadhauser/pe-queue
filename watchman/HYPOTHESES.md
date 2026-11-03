@@ -4,4 +4,4 @@
 2026-11-03 | b Webb | racing morning money, morning WAP -> BSP (463) | DONE | WAP-only numeric pass (+0.20 n 29,400 t 20.5), dies at 3-5 ticks of spread; not a print
 2026-11-03 | c structural | kick-off FLB by country, full MO tape (464) | DONE | nothing passes; best t 3.25 known-only, negative with unknown=loss
 2026-11-03 | b Webb (from 463) | morning money at the real morning touch (needs morning book recorder) | TODO (item 17) | —
-2026-11-03 | a moves (from 463) | low-money drifters lay into the off on stream_ticks (pilot) | TODO (item 18) | —
+2026-11-03 | a moves (from 463) | low-money drifters lay into the off on stream_ticks (pilot, 465) | DONE | nothing passes; no drift in the last 10 min; LAY −0.07…−0.13 (spread), n 70–288 per band
