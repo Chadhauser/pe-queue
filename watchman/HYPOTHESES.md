@@ -26,4 +26,5 @@
 2026-11-04 | queue 30 | every line Peter was given, one table (472, 476, 477) | DONE | no line passes; S15 no rule on the box; S17 dutch untestable
 2026-11-04 | a moves (476, 480) | La Liga 0-0: Over 1.5 cheap at every minute? +4.80 at 60' n 142, +2.02 at 46' n 223; selected after 18 leagues | TODO (item 39) | —
 2026-11-04 | queue 26 (b vendor) | racing in-play shortened 15/25% on ip_tape (481) | DONE | nothing passes; tape not fit (8.6 snapshots per race, 37.9% clean winners); use item 33
+2026-11-04 | queue 29 (bookie-shaped) | MO in-play scalp by band and volatility (483) | DONE | nothing passes; back −0.64 n 888, lay −1.21 n 910; every band negative
 2026-11-03 | c structural (prematch_bands_v1, from 472) | lay the side that loses more than cost at KO: BTTS no (back −0.59, t −4.17, both halves, v BTTS yes −0.10), FH O1.5, O1.5, O3.5, U2.5; hold to settle | TODO (item 35) | —
