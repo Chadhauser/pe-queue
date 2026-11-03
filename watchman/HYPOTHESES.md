@@ -20,4 +20,5 @@
 2026-11-03 | a moves (stream_ticks, from 469) | passive lay on pre-match drifters: drift continues −2.8% to KO but crossing loses −0.23; offer at back_px, fill only when ltp prints through | TODO (item 34) | —
 2026-11-03 | queue 20 (c structural) | pre-match band sweep, every league, S7/S8/S9/S16/S17/S18 (472) | DONE | nothing passes; 0 of 479 cells, best t 2.16; S17 dutch, S8 Czech and closing line not testable on the tape
 2026-11-03 | queue 21 (b published) | HT family x OU x favourite x league, S13/S14 (476) | DONE | nothing passes; 0 of 752 cells, best t 2.67; S14 home favourite +0.27 n 278 t 1.06; NG2 edge halves at goal+5
+2026-11-04 | queue 24 (b published) | CSM dutch 1-0/2-0/2-1 with green at first goal and 0-0 recovery, pilot (478) | DONE | nothing passes; n 177; settle −0.98, green +2 −1.95 t −4.07; re-run 9 Nov
 2026-11-03 | c structural (prematch_bands_v1, from 472) | lay the side that loses more than cost at KO: BTTS no (back −0.59, t −4.17, both halves, v BTTS yes −0.10), FH O1.5, O1.5, O3.5, U2.5; hold to settle | TODO (item 35) | —
