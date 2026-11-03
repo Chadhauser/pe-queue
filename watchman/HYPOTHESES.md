@@ -20,7 +20,8 @@
 2026-11-03 | a moves (stream_ticks, from 469) | passive lay on pre-match drifters: drift continues −2.8% to KO but crossing loses −0.23; offer at back_px, fill only when ltp prints through | TODO (item 34) | —
 2026-11-03 | queue 20 (c structural) | pre-match band sweep, every league, S7/S8/S9/S16/S17/S18 (472) | DONE | nothing passes; 0 of 479 cells, best t 2.16; S17 dutch, S8 Czech and closing line not testable on the tape
 2026-11-03 | queue 21 (b published) | HT family x OU x favourite x league, S13/S14 (476) | DONE | nothing passes; 0 of 752 cells, best t 2.67; S14 home favourite +0.27 n 278 t 1.06; NG2 edge halves at goal+5
-2026-11-04 | queue 24 (b published) | CSM dutch 1-0/2-0/2-1 with green at first goal and 0-0 recovery, pilot (478) | DONE | nothing passes; n 177; settle −0.98, green +2 −1.95 t −4.07; re-run 9 Nov
+2026-11-04 | queue 24 (b published) | CSM dutch 1-0/2-0/2-1 with green at first goal and 0-0 recovery, pilot (478) | DONE | nothing passes; n 177; settle −0.98, green +2 −1.95 t −4.07; re-run needs liq_sample retention raised
+2026-11-04 | queue 27 (a moves) | tennis T2 and T3 break-back on ip_tape (482) | DONE | nothing passes; T2 −3.15 n 192; T3 −1.09 n 219, −0.34 with no latency
 2026-11-04 | queue 25 (b published) | Psychoff, Webb, Howe, Hargraves proxy, exact and relaxed (480) | DONE | nothing passes; 0 of 185 lines; Webb −0.66 n 1,409 t −6.85; LTD −0.18 n 1,045
 2026-11-04 | queue 30 | every line Peter was given, one table (472, 476, 477) | DONE | no line passes; S15 no rule on the box; S17 dutch untestable
 2026-11-04 | a moves (476, 480) | La Liga 0-0: Over 1.5 cheap at every minute? +4.80 at 60' n 142, +2.02 at 46' n 223; selected after 18 leagues | TODO (item 39) | —
