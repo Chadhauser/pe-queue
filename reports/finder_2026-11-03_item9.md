@@ -38,4 +38,4 @@ Top cells by t (168 cells, 40 at n≥300). **None passes:**
 | all other cells | | ≤ +0.55 | ≤ 0.66 | | |
 
 ## Verdict
-**Nothing passes.** Only basketball MATCH_ODDS clears the 150-inferable-market bar: 22% of its markets have no inferable result and none of its cells reach t 2. Momentum loses £2.3 per £10, roughly the round-trip spread plus two ticks. Every other sport is below 150 markets in the 6 days ip_tape holds. Re-test darts, ice hockey and cricket once ip_tape has ~3–4 more weeks.
+**Nothing passes.** Only basketball MATCH_ODDS clears the 150-inferable-market bar: 22% of its markets have no inferable result and none of its cells reach t 2. Momentum loses £2.3 per £10, roughly the round-trip spread plus two ticks. Every other sport is below 150 markets in the 6 days ip_tape holds. Darts (87), cricket (101) and ice hockey (106) would reach 150 markets in roughly another 4–6 days. **But every sport on ip_tape starts on 28 Oct** (the brief says "since Sept"), which suggests rolling ~6-day retention. If so, these sports never accumulate unless the recorder keeps history: worth checking before re-queuing.
