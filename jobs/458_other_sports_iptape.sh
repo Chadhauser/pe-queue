@@ -41,7 +41,9 @@ print("sports:",C.groupby('sport').markets.sum().sort_values(ascending=False).to
 def band(p): return '<1.5' if p<1.5 else '1.5-2' if p<2 else '2-3' if p<3 else '3-5' if p<5 else '5-10' if p<10 else '10-50'
 CEN=[]; rows=[]; SK=defaultdict(int)
 for (sport,mt),cc in C.groupby(['sport','market_type']):
-    if int(cc.markets.iloc[0])<150: continue
+    # v2: winner markets only (run 1 was OOM-killed loading basketball COMBINED_TOTAL, 7.7M rows; line markets have many runners and
+    # no single-runner result anyway); horse racing excluded (not in the item; racing is covered by racing_bsp)
+    if int(cc.markets.iloc[0])<150 or mt not in ('MATCH_ODDS','MONEY_LINE','RT_MATCH_ODDS') or sport=='horse_racing': continue
     T=pd.read_sql("""SELECT market_id, event_name, market_start, ts, status, secs_since_start s, sel_id, ltp::float ltp, back_px::float bp, back_sz::float bs,
       lay_px::float lp, lay_sz::float ls FROM ip_tape WHERE sport=%s AND market_type=%s AND status='OPEN' AND secs_since_start>0 ORDER BY market_id, ts""",con,params=(sport,mt))
     inf=0; snaps=[]; mk=[]
