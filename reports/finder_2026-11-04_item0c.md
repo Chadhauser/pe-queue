@@ -1,13 +1,10 @@
 # Finder 2026-11-04, item 0c: audit of the racing pre-off scalper paper bot
 
 **Data used:** preoff_scalp_paper, 117 trades on 19 races, all 3 Nov 12:14–19:26 UTC. stream_ticks 1–3 Nov for the fill checks and the replay, 69 races, 3.3M ticks.
-
 **Job:** jobs/479. The output is in the harness task file, as this run could not write to /root/pe-queue-logs. **Fix applied once:** the first run stopped on my own known-answer check (the tick below 4.0 is 3.95, not 3.9), before any data was read. The P&L code did not change.
-
 **Timing:** audited at about 22 h, not 24 h, and only one racing afternoon has traded. The bot's own 117 trades cannot reach n 300, so the replay carries the verdict.
 
 ## Bot's own trades
-
 As recorded: n 117, −£0.27/£10, t −9.44, hit rate 12.8%, mean −1.28 ticks, sum −£31.56. Re-priced to house rules: **−£0.54/£10, t −14.91** (BACK n 90 −0.655, LAY n 27 −0.155). Filling at the next tick instead: −£0.53. All 117 fall on one day, so a date split is impossible; by time of day, h1 n 57 −0.205, h2 n 60 −0.331.
 
 | cut | n / per £10 as recorded |
@@ -18,7 +15,6 @@ As recorded: n 117, −£0.27/£10, t −9.44, hit rate 12.8%, mean −1.28 tick
 | venue | Fairyhouse 8 −0.129; Lingfield 27 −0.255; Sedgefield 42 −0.278; Warwick 31 −0.287; Wolverhampton 9 −0.342 |
 
 ## Bot against its spec
-
 | item | does | should do | grade | evidence |
 |---|---|---|---|---|
 | UK/IE WIN only | stream catalogue filtered to GB, IE, WIN | same | PASS | pe-stream/stream_client.py:27 |
@@ -29,8 +25,7 @@ As recorded: n 117, −£0.27/£10, t −9.44, hit rate 12.8%, mean −1.28 tick
 | "Not lengthening" filter | compares last three per-tick ltp values, which repeat | last three TRADED prices | FAIL | one race checked, 23,672 ticks: per-tick flag 0 times, traded flag 132 times, so the filter does nothing there |
 | Weight of money depth | touch only, mean of tick ratios | first three price points | FAIL | no size at levels 2–3 in stream_ticks, so the spec cannot be tested here |
 | £50k matched | sums tv only over runners that ticked in the last 45 s | total matched | FAIL, minor | code line 39–46; can understate, effect not measured |
-| Lay risk | £10 stake, mean liability £44.65 | house rule: £10 liability | FAIL | code line 29 |
-| Venue column | absent | table includes venue | FAIL, minor | derived for 117 of 117 from other tables |
+| Lay risk; venue column | £10 stake, mean liability £44.65; no venue column | £10 liability; venue in the table | FAIL; FAIL, minor | code line 29; venue derived for 117 of 117 from other tables |
 
 **Not fixed:** the bot is under /root/pe-race, which the Finder may not touch. These need Peter or the strategy chat, and the verdict below gives no reason to spend time on them.
 
@@ -61,5 +56,4 @@ Whole-rule lines: BOT/SPEC one tick n 498 −0.546 t −35.52 (h1 −0.521, h2 �
 **Read these with care:** a two-tick target less one tick each way nets exactly £0, so no trade can win under the house rule, which is why hit rates show 0. That is why the no-cost lines matter: both directions lose before any cost. BOT and SPEC match to three decimals, probably because the filter rarely binds, but they were not compared trade by trade. Trades per race are correlated, so t is inflated; the first-per-race lines are the fairer read. Only three racing days.
 
 ## Verdict
-
 Nothing passes: 0 survivors. The bot loses −£0.54/£10 at house costs on its own trades (n 117), and the independent replay agrees at −£0.55 (n 498, both halves negative). Flipping the side, as job 459's inverted signal suggests, loses less but still loses, −£0.24 at one tick and −£0.07 at no cost. Fills are honest where it matters (no in-play trades, targets genuinely traded through), so this is a real loss and not a recording fault. Lead → item 53, as the two-tick target is what makes the scalp unable to pay.
