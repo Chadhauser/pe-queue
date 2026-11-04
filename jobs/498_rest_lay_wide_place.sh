@@ -45,6 +45,9 @@ def fill_at(T,L,TM,i,X,kind,win=60):
         if not (L[j]!=L[j-1] and TM[j]>TM[j-1]): continue
         if (kind=='THROUGH' and L[j]<X) or (kind=='TOUCH' and L[j]<=X) or (kind=='ASWRITTEN' and L[j]>=X): return j
     return None
+def at_first(ts,first):
+    """Is this runner's earliest frame the market's first? Compare as Timestamps: .values drops the timezone and never equals an aware Timestamp (the bug in this job's first run)."""
+    return ts.iloc[0]==first
 def band(p): return '<1.5' if p<1.5 else '1.5-2' if p<2 else '2-3' if p<3 else '3-5' if p<5 else '5-10' if p<10 else '10+'
 def tstat(v):
     v=np.asarray(v,dtype=float)
@@ -62,6 +65,8 @@ assert fill_at(T_,L_,V_,0,3.0,'ASWRITTEN')==2 and fill_at(T_,L_,V_,0,3.0,'TOUCH'
 assert fill_at(T_,L_,V_,0,2.85,'THROUGH') is None                             # 2.8 comes at 100 s, past the 60 s life
 assert fill_at([0,10,20],[3.0,2.9,2.8],[1,1,2],0,3.0,'THROUGH')==2            # 2.9 had no volume, so a stale ltp; 2.8 had
 assert fill_at([0,10],[2.9,2.9],[1,2],0,3.0,'THROUGH') is None                # the ltp already below X at signal is old: not a fill
+_ts=pd.Series(pd.to_datetime(['2026-11-01 12:00:00','2026-11-01 12:00:05'],utc=True))
+assert at_first(_ts,_ts.min()) and not at_first(_ts.iloc[1:],_ts.min())
 assert band(1.49)=='<1.5' and band(2.0)=='2-3' and band(10.0)=='10+' and abs(tstat([1,3])-2.0)<1e-9
 assert passes(300,150,150,3.5,.1,.1,.15,.15) and not passes(299,150,149,9,1,1,1,1) and not passes(400,200,200,4,-.1,1,1,1) and not passes(400,200,200,4,1,1,1,.1)
 print("known-answer checks: OK",flush=True)
@@ -99,12 +104,12 @@ for mid,g in A.groupby('market_id',sort=False):
     o=g[(g.status=='OPEN')&(g.ss>0)]; tss=np.sort(o.ts.unique())
     if len(tss)<2: SK['market: under 2 open frames']+=1; continue
     SK['market']+=1; SK['market: result known']+=int(known)
-    day=pd.Timestamp(g.market_start.iloc[0]).date(); first=tss[0]
+    day=pd.Timestamp(g.market_start.iloc[0]).date(); first=o.ts.min()
     for sid,x in o.groupby('sel_id',sort=False):
         x=x.drop_duplicates('ts'); T=((x.ts-EP)/pd.Timedelta('1s')).values; L=x.ltp.values; B=x.bp.values; Y=x.lp.values; TM=x.ts.map(f).values
         R=np.where((B>1)&(Y>1),Y/B,np.nan); w=None if not known else (sid in res)
         sig=[]
-        if x.ts.values[0]==first:
+        if at_first(x.ts,first):
             if not (B[0]>1): SK['first frame: no back price']+=1
             elif np.isnan(R[0]): SK['first frame: no lay price, no ratio']+=1
             else: sig.append(('WIDE' if R[0]>1.25 else 'TIGHT',0))
@@ -121,6 +126,7 @@ if D.empty: print("\n== SURVIVORS: 0\nnone"); sys.exit()
 D['pnl']=[lay_pnl(up(a),p) for a,p in zip(D.X,D.placed)]; D['exact']=[lay_pnl(a,p) for a,p in zip(D.X,D.placed)]
 days=sorted(D.day.unique()); md=sorted(D.drop_duplicates('market').day)[D.market.nunique()//2]
 print(f"orders {len(D)} | races {D.market.nunique()} | {days[0]}..{days[-1]} | second half from {md}",flush=True)
+if not {'WIDE','TIGHT'}<=set(D.group): print("ERROR: WIDE or TIGHT has no orders, so no verdict:",D.group.value_counts().to_dict()); sys.exit(1)
 print("orders by group:",D.group.value_counts().to_dict(),"| median lay/back:",D.groupby('group').ratio.median().round(3).to_dict(),flush=True)
 out=[]
 def line(s,**k):
