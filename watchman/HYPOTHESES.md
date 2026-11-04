@@ -57,3 +57,5 @@
 2026-11-04 | a moves (bf_hist_price, from 488) | why a GBM calling the next print's direction 85%/13% still loses | TODO (item 54) | —
 2026-11-04 | d untested (bf_hist_price, af_events) | football in-play calibration atlas, GBM and tree rules fit on 2024, scored on 2025 (488, item 46 atlas) | PARTIAL | nothing passes on 2,953 of 12,255 games; 0 of 88 lines; GBM hold-out corr −0.013; full set is item 46b
 2026-11-04 | a moves (bf_hist_price, from the 488 smoke test) | back Under 1.5 in games priced for few goals, leagues chosen on 2024 only | TODO (item 55) | —
+2026-11-04 | queue 48 (racing_bsp) | residual GBM on BSP, morning-only signal and the item as written, fit to Jun 2025 (489) | DONE | nothing passes; 0 of 515; best lay place one per race n 689 +0.310 t 1.77; model p no closer than BSP
+2026-11-04 | c structural (racing_bsp, from 489) | is the place market priced for the places paid? both sides lose at exact BSP, win lay about zero | TODO (item 56) | —
