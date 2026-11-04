@@ -88,4 +88,4 @@
 2026-11-04 | a moves (bf_hist_other, from 499_league_goal_error) | league goal error on the third season, leagues fixed from 2024 (same job, item 66) | DONE | nothing passes; cut 2 n 311 +0.141 t 0.22; Segunda n 68 -1.138, closed; 4 of 7 signs held
 2026-11-04 | d defect (from 499_line_move_result_check) | re-check verdicts that inferred results from a final print (jobs 464, 458, 481, 482, 493, 497) | TODO (item 67) | -
 2026-11-04 | a moves (bf_hist_other, from item 65) | item 65's two best lines on unseen games, lines fixed first (499_flb_unseen_games, item 68) | DONE | nothing passes, selection; favourite <=1.5 n 589 +0.009; draw 5-10 lay n 506 -0.142; gate 99.2%
-2026-11-04 | d census (grid_cells_v4, bf_hist_other) | top 20 in-play grid cells, written down first, on Jul-Sep 2026 | TODO (item 69) | -
+2026-11-04 | d census (grid_cells_v4, bf_hist_other) | top 20 in-play grid cells, written down first, on Jul-Sep 2026 (499_grid_cells_third_season, item 69) | DONE | nothing passes; 0 of 20, 8 positive; pooled first per market n 3,162 -0.044 t -0.27; best n 146 +1.331 t 2.00

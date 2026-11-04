@@ -52,6 +52,9 @@ def state_at(ts,ft,fm,fh,fa):
 def won(mk,sel,hg,ag):
     if mk=='MO': return hg>ag if sel=='HOME' else (hg<ag if sel=='AWAY' else hg==ag)
     return (hg+ag>2.5)==(sel=='OVER')
+def secs(col):
+    # seconds since 1970 whatever resolution pandas holds; astype int64 / 1e9 is wrong when the column is in microseconds
+    return (pd.to_datetime(col,utc=True)-pd.Timestamp('1970-01-01',tz='UTC'))/pd.Timedelta(seconds=1)
 def tstat(x):
     x=np.asarray(x,dtype=float); x=x[~np.isnan(x)]; s=x.std(ddof=1) if len(x)>1 else 0
     return x.mean()/(s/len(x)**0.5) if s>0 else 0.0
@@ -68,6 +71,7 @@ assert state_at(330,_f,_m,_h,_a)==('1-0',15,1,0)      # 210 s row says 1-0, noth
 assert state_at(50,_f,_m,_h,_a) is None               # no row 120 s back
 assert state_at(700,_f,_m,_h,_a) is None              # feed stale
 assert won('OU25','OVER',2,1) and won('OU25','UNDER',1,1) and not won('OU25','OVER',1,1) and won('MO','DRAW',0,0) and won('MO','AWAY',0,1)
+assert secs(pd.Series(['1970-01-01 00:01:00+00']))[0]==60.0 and abs(secs(pd.Series(['2026-08-01 00:00:00.5+00']))[0]-1785542400.5)<1e-6
 print("checks: OK",flush=True)
 con=psycopg2.connect(DB,sslmode='require'); con.autocommit=True; cur=con.cursor(); cur.execute("SET work_mem='64MB'"); cur.execute("SET statement_timeout='2400s'")
 C=pd.read_sql("SELECT state,band,mkt,sel,side,exit,fav,draw,dirty,n,s,ss,n1,s1,n2,s2 FROM grid_cells_v4 WHERE mkt IN ('MO','OU25') AND exit='SETTLE' AND dirty=0 AND n>=300 AND s1>0 AND s2>0",con)
@@ -102,12 +106,12 @@ for r in C.itertuples(): need[(r.mkt,r.sel,r.state,r.band)].append(r)
 bands_needed=set((r.state,r.band) for r in C.itertuples()); rows=[]; stats=defaultdict(int)
 def price_rows(ids):
     P=pd.read_sql("SELECT market_id,event_name,market_time,sel,ts,ltp::float ltp,inplay FROM bf_hist_other WHERE sport='Soccer' AND market_id=ANY(%s) AND ltp>=1.01 AND ltp<1000",con,params=(ids,))
-    P['tt']=pd.to_datetime(P.ts,utc=True).astype('int64')/1e9 if len(P) else []; P['mt']=pd.to_datetime(P.market_time,utc=True) if len(P) else []
+    P['tt']=secs(P.ts) if len(P) else []; P['mt']=pd.to_datetime(P.market_time,utc=True) if len(P) else []
     return {k:g.sort_values('tt') for k,g in P.groupby('market_id')} if len(P) else {}
 for c in range(0,len(Games),300):
     sub=Games[c:c+300]; fid=[g['score'][0] for g in sub]
     F=pd.read_sql("SELECT fixture_id,captured_at,minute,score_home,score_away FROM goal_timeline WHERE fixture_id=ANY(%s) AND score_home IS NOT NULL AND score_away IS NOT NULL ORDER BY fixture_id,captured_at",con,params=(fid,))
-    F['tt']=pd.to_datetime(F.captured_at,utc=True).astype('int64')/1e9; F['mn']=pd.to_numeric(F.minute,errors='coerce'); FF={k:g for k,g in F.groupby('fixture_id')}
+    F['tt']=secs(F.captured_at); F['mn']=pd.to_numeric(F.minute,errors='coerce'); FF={k:g for k,g in F.groupby('fixture_id')}
     PX=price_rows([g[k] for g in sub for k in ('MO','OU25') if k in g])
     for g in sub:
         fx,hg,ag=g['score']; fd=FF.get(fx); mo=PX.get(g['MO'])
@@ -145,6 +149,7 @@ for c in range(0,len(Games),300):
                         w=won(key,sl,hg,ag); rows.append(dict(cell=cell.cell,mid=g[key],d=d,side=cell.side,p=p,won=w,pnl=pnl(cell.side,p,w),x3=pnl(cell.side,p,w,3),min=st[1]))
     print(f"  {min(c+300,len(Games))}/{len(Games)} entries {len(rows)} {time.time()-T0:.0f}s",flush=True)
 con.close(); print(f"stats {dict(stats)}",flush=True)
+if stats['games_used']<1000: sys.exit(f"only {stats['games_used']} games used of {len(Games)}: a code fault, not a result")
 print("\n== GATE: entries, won v implied at the fill price")
 R=pd.DataFrame(rows)
 if not len(R): print("no entries"); print("\n== SURVIVORS\nnone"); sys.exit(0)
