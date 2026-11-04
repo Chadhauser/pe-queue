@@ -7,8 +7,9 @@ set -o pipefail
 # OWN GOALS: af_events.is_home already credits the benefiting team, no flip (job 471). Games whose event goals differ from the FT score are dropped and counted.
 # TARGET: residual = outcome - implied. implied = (1/ltp) / sum(1/ltp) over the market's selections printing in the last 2 minutes; raw 1/ltp where a selection has no print (flagged, feature only, no price is carried into a trade).
 # RULES: per selection, one tree on the actual residual and one on the GBM's prediction, both fitted on 2024; rank leaves by |mean residual| x n; top 40 become rules, back if residual > 0, lay if < 0. Plus the GBM itself at its 2024 1% and 5% tails.
+# OVERLAP: af seasons overlap in time (calendar-year leagues start season 2025 in Jan 2025, season 2024 runs to Jun 2025), so 2024 v 2025 is split by season label as the item says, not strictly by date.
 # SCORE: 2025 only, first row in the rule per game (one entry per game, so t is not inflated by repeats), one tick adverse, 2% commission, £10 risk. Exits: settle, and next goal +8 first real print (settled market or no print = result, never dropped). x3 = three ticks adverse at entry. Halves: 2025 by median date.
-FETCH_SECS=${FETCH_SECS:-1800} OMP_NUM_THREADS=3 python3 - <<'PY' 2>&1 | grep -v -E "UserWarning|pd.read_sql"
+FETCH_SECS=${FETCH_SECS:-0} OMP_NUM_THREADS=3 python3 - <<'PY' 2>&1 | grep --line-buffered -v -E "UserWarning|pd.read_sql"
 import os,sys,time,glob,pickle,threading,warnings,psycopg2,pandas as pd,numpy as np
 from concurrent.futures import ThreadPoolExecutor
 from functools import lru_cache
@@ -159,13 +160,23 @@ with ThreadPoolExecutor(3) as ex: list(ex.map(fetch,range(len(ids))))
 print(f"fetch phase {time.time()-T0:.0f}s, chunks this run {done[0]}, failures {len(fails)}",flush=True)
 files=sorted(glob.glob(f"{CACHE}/c*.pkl")); have=[int(os.path.basename(f)[1:5]) for f in files]
 GI=G.set_index('event_id'); fxs=[int(x) for i in have for x in GI.loc[ids[i]].fixture_id]
-EV=pd.read_sql("SELECT fixture_id,coalesce(minute,0) AS minute,coalesce(extra,0) AS extra,is_home,type,detail FROM af_events WHERE fixture_id=ANY(%s) AND ((type='Goal' AND detail IN ('Normal Goal','Penalty','Own Goal')) OR (type='Card' AND detail='Red Card'))",con,params=(fxs,))
+EV=[]; T2=time.time()
+for i in range(0,len(fxs),500):
+    EV.append(pd.read_sql("SELECT fixture_id,coalesce(minute,0) AS minute,coalesce(extra,0) AS extra,is_home,type,detail FROM af_events WHERE fixture_id=ANY(%s) AND ((type='Goal' AND detail IN ('Normal Goal','Penalty','Own Goal')) OR (type='Card' AND detail='Red Card'))",con,params=(fxs[i:i+500],)))
+    print(f"  events {min(i+500,len(fxs))}/{len(fxs)}, {time.time()-T2:.0f}s",flush=True)
+EV=pd.concat(EV,ignore_index=True)
 EV['gm']=EV.minute+np.where(EV.minute.isin([45,90]),EV.extra,0); EV['fh']=EV.minute<=45
 gl={k:sorted(zip(d.gm.astype(int),d.is_home.astype(bool),d.fh.astype(bool))) for k,d in EV[EV.type=='Goal'].groupby('fixture_id')}
 rd={k:list(zip(d.gm.astype(int),d.is_home.astype(bool))) for k,d in EV[EV.type=='Card'].groupby('fixture_id')}
 LGS=sorted(G.league.unique()); LGC={l:i for i,l in enumerate(LGS)}; KO=pd.to_datetime(G.kickoff,utc=True); G['ko']=KO; GI=G.set_index('event_id')
-rows=[]; n_game=0; bad_lag=0; bad_goal=0; no_book=0
-for f in files:
+parts=[]; n_rows=0; n_game=0; bad_lag=0; bad_goal=0; no_book=0; T1=time.time()
+def compact(rows):
+    d=pd.DataFrame(rows,columns=COLS)
+    for c in d.columns:
+        if c not in('fix','date'): d[c]=d[c].astype('float32')
+    return d
+for nf,f in enumerate(files,1):
+    rows=[]
     P,first=pickle.load(open(f,'rb')); P['mkt']=P.mkt.astype(str); P['sel']=P.sel.astype(str); by={k:d for k,d in P.groupby('event_id',sort=False)}
     for eid,d in by.items():
         g=GI.loc[eid]
@@ -179,10 +190,10 @@ for f in files:
             a=np.full(101,np.nan,dtype=float); a[x.minute.values]=x.ltp.values; a=np.round(a,2); book[(m,s)]=a
         if not book: no_book+=1; continue
         rows.extend(rows_for_game(int(g.fixture_id),int(g.season),g.ko.value//10**9,LGC[g.league],g.ko.hour,g.ko.dayofweek,gg,rd.get(g.fixture_id,[]),book,hg,ag,hh,ha)); n_game+=1
-print(f"games used {n_game}; dropped kick-off lag {bad_lag}, event goals differ from FT {bad_goal}, no book {no_book}; rows {len(rows)}",flush=True)
-R=pd.DataFrame(rows,columns=COLS); del rows
-for c in R.columns:
-    if c not in('fix','date'): R[c]=R[c].astype('float32')
+    if rows: parts.append(compact(rows)); n_rows+=len(rows)
+    if nf%10==0: print(f"  built {nf}/{len(files)} chunks, {n_game} games, {n_rows} rows, {time.time()-T1:.0f}s",flush=True)
+print(f"games used {n_game}; dropped kick-off lag {bad_lag}, event goals differ from FT {bad_goal}, no book {no_book}; rows {n_rows}, {time.time()-T1:.0f}s",flush=True)
+R=pd.concat(parts,ignore_index=True); del parts
 print("games by season:",R.groupby('season').fix.nunique().to_dict(),"rows:",R.groupby('season').size().to_dict(),flush=True)
 assert R.res.notna().all() and R.pb_s.notna().all() and R.pl_g.notna().all()
 A=R[R.season==2024].copy(); B=R[R.season==2025].copy(); MED=B.drop_duplicates('fix').date.median(); B['half']=(B.date>MED).astype(int)

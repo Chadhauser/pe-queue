@@ -55,3 +55,5 @@
 2026-11-04 | a moves (stream_ticks, from 479) | racing pre-off fade with targets of 4/6/10 ticks, as a two-tick target nets £0 after costs | TODO (item 53) | —
 2026-11-04 | d census (bf_hist_price, queue) | price-path signatures, price features only, learn on 2024, score on 2025 (488, item 47) | DONE | nothing passes; 0 of 66, best n 173 +0.502 t 1.35; 18% sample; chosen state lines +0.178 in 2024, all lines −0.188 in 2025
 2026-11-04 | a moves (bf_hist_price, from 488) | why a GBM calling the next print's direction 85%/13% still loses | TODO (item 54) | —
+2026-11-04 | d untested (bf_hist_price, af_events) | football in-play calibration atlas, GBM and tree rules fit on 2024, scored on 2025 (488, item 46 atlas) | INCOMPLETE | no verdict; two runs killed at the time limit; 592-game smoke test only
+2026-11-04 | a moves (bf_hist_price, from the 488 smoke test) | lay first-half Over at the first print from minute 3, one entry per game | TODO (item 55) | —
