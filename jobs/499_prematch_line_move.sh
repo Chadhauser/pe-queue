@@ -107,7 +107,8 @@ for MK,lo,hi in (('MO','MATCH_ODDS','MATCH_ODDT'),('OU25','OVER_UNDER_25','OVER_
             for sel,g in G.groupby('sel',sort=False):
                 runners[sel]=(g.mins.values,g.ltp.values,g.inplay.values.astype(bool))
             d=G.mt.iloc[0]; ev=G.event_name.iloc[0]; sc=score_of(ev,d); tw=true_winner(MK,ev,*sc) if sc else None
-            if tw is not None and tw not in runners: stats['winner_missing']+=1; tw=None   # a runner name that does not match the score's team cannot be settled
+            h_,_,a_=ev.partition(' v ')
+            if tw is not None and (tw not in runners or (MK=='MO' and not set(runners)<={h_.strip(),a_.strip(),'The Draw'})): stats['winner_missing']+=1; tw=None   # a runner whose name differs from the event name cannot be settled, whichever way the game went; testing only the winner would keep it when it lost and drop it when it won
             known=tw is not None; stats['known']+=known
             for sel,(m,p,ip) in runners.items():
                 won=(sel==tw) if known else None

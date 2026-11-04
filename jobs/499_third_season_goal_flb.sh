@@ -93,7 +93,11 @@ for MK,lo,hi in (('MO','MATCH_ODDS','MATCH_ODDT'),('OU25','OVER_UNDER_25','OVER_
                 out.append(dict(mk=MK,mid=mid,who=who,d=d,lg=sc[2],won=sel==tw,pt=pt if pt is not None else np.nan,pi=pi if pi is not None else np.nan))
         if c%4000==0: print(f"  {MK} {min(c+400,len(keep))}/{len(keep)} {time.time()-T0:.0f}s",flush=True)
 con.close()
-R=pd.DataFrame(out); print(f"runners {len(R)}, markets {R.mid.nunique()}, runner name missing {miss}, T15 print on {R.pt.notna().mean():.3f}, in-play print on {R.pi.notna().mean():.3f}; who {R.who.value_counts().to_dict()}; {time.time()-T0:.0f}s",flush=True)
+R=pd.DataFrame(out)
+# a runner whose name differs from the event name can only reach here when it lost: when it won, the score's winner is not found and the market is skipped above. Drop those markets whole, or they read as a sure loser
+bad=set(R[R.who=='OTHER'].mid); print(f"MO markets dropped for a runner name that differs from the event name: {len(bad)}, plus {miss} skipped above where that runner won",flush=True); R=R[~R.mid.isin(bad)].copy()
+assert (R.who!='OTHER').all()
+print(f"runners {len(R)}, markets {R.mid.nunique()}, runner name missing {miss}, T15 print on {R.pt.notna().mean():.3f}, in-play print on {R.pi.notna().mean():.3f}; who {R.who.value_counts().to_dict()}; {time.time()-T0:.0f}s",flush=True)
 med=R.d.median(); R['h']=np.where(R.d<=med,1,2); print(f"dates {R.d.min():%Y-%m-%d} to {R.d.max():%Y-%m-%d}, median {med:%Y-%m-%d}")
 for k in (1,3):
     R[f'b{k}']=[back_res(p,w,k) if p==p else np.nan for p,w in zip(R.pt,R.won)]; R[f'l{k}']=[lay_res(p,w,k) if p==p else np.nan for p,w in zip(R.pt,R.won)]
