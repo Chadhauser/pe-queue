@@ -8,7 +8,27 @@ echo "== scalper"; pgrep -af "preoff_scalp" | sed 's/postgres[^ ]*/<dsn>/g' || e
 pkill -f keepalive_preoff_scalp.sh 2>/dev/null; pkill -f preoff_scalp_paper.py 2>/dev/null; sleep 2
 nohup /root/pe-race/keepalive_preoff_scalp.sh >/dev/null 2>&1 &
 sleep 20; pgrep -af "preoff_scalp" | sed 's/postgres[^ ]*/<dsn>/g'
-( crontab -l 2>/dev/null | grep -v keepalive_preoff_scalp; echo "@reboot nohup /root/pe-race/keepalive_preoff_scalp.sh >/dev/null 2>&1 &"; echo "*/10 * * * * pgrep -f keepalive_preoff_scalp.sh >/dev/null || nohup /root/pe-race/keepalive_preoff_scalp.sh >/dev/null 2>&1 &" ) | crontab -
+# watchdog: if the heartbeat is older than 10 min (hung on a dead socket, as on 3 Nov), kill and relaunch
+cat > /root/pe-race/watchdog_preoff_scalp.sh <<'SH'
+#!/bin/bash
+age=$(python3 - <<'PY'
+import sys,psycopg2
+try:
+    sys.path.insert(0,'/root/pe-queue/runner'); import creds
+    c=psycopg2.connect(creds.pg_railway(), sslmode='require', connect_timeout=15).cursor(); c.execute("SET statement_timeout='30s'")
+    c.execute("select extract(epoch from now()-max(last_seen))/60 from preoff_scalp_heartbeat"); print(int(c.fetchone()[0] or 9999))
+except Exception: print(-1)
+PY
+)
+if [ "$age" -gt 10 ] || ! pgrep -f keepalive_preoff_scalp.sh >/dev/null; then
+  pkill -f keepalive_preoff_scalp.sh; pkill -f preoff_scalp_paper.py; sleep 2
+  nohup /root/pe-race/keepalive_preoff_scalp.sh >/dev/null 2>&1 &
+  echo "$(date -u +%FT%TZ) restarted (heartbeat age $age min)" >> /root/pe-race/watchdog.log
+fi
+SH
+chmod +x /root/pe-race/watchdog_preoff_scalp.sh
+( crontab -l 2>/dev/null | grep -v -E "keepalive_preoff_scalp|watchdog_preoff_scalp"; echo "@reboot nohup /root/pe-race/keepalive_preoff_scalp.sh >/dev/null 2>&1 &"; echo "*/5 * * * * /root/pe-race/watchdog_preoff_scalp.sh" ) | crontab -
+crontab -l | grep preoff
 tail -5 /root/pe-race/preoff_scalp.log 2>/dev/null | sed 's/postgres[^ ]*/<dsn>/g'
 echo "== heartbeats (name, age min)"
 python3 - <<'PY'
