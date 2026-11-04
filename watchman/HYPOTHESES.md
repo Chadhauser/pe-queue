@@ -46,3 +46,5 @@
 2026-11-04 | c structural (stream_ticks, from 494) | quote both sides inside the gap so the second fill greens the position; one-sided fills lose by crossing out; both-filled rate not yet measured | TODO (item 47) | —
 2026-11-04 | queue 44 (d data defect) | tennis T2 and T3 on ip_tape without replayed frames (495) | PARTIAL | nothing passes, tennis only; CLEAN T3 -1.51 n 183 h1 -1.84 h2 -1.19, T2 -3.94 n 161; first trigger barely changes, repeats 4.73 to 2.99 per market
 2026-11-04 | d data defect (ip_tape, from 495) | clean-frame re-run for racing, basketball, momentum; first resolve 29.4% of rows v 14.8% of frames | TODO (item 48) | —
+2026-11-04 | c structural (from 494) | quote both sides inside a wide pre-match gap (496) | DONE | nothing passes; −0.419 n 187 t −5.00 h1 −0.296 h2 −0.534; both filled 38% of filled; green +0.225, cross −0.813
+2026-11-04 | a moves (stream_ticks, from 496) | follow the first print through a wide pre-match book, at the touch to T-5 | TODO (item 49) | —
