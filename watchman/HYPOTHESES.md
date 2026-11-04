@@ -100,3 +100,9 @@
 2026-11-04 | a moves (af_fixtures, fd_matches, from 499_rest_gap) | tired side underpriced, on seasons that did not suggest it (499_tired_side, item 78) | DONE | nothing passes, selection; gap 4 n 1,661 -0.344 t -1.20
 2026-11-04 | a moves (fd_matches, from 499_luck_ou_fair_check) | goal-line finishing luck on 2012-19, bar fixed first (499_luck_ou_old_seasons, item 79) | DONE | does not hold; due +0.78, over-ran +0.21, spread z 0.46
 2026-11-04 | b published (fd_matches, from 499_sharp_gap) | lay the exchange 3% shorter than the sharp price, at the real touch | TODO (item 80, needs item 61) | -
+2026-11-04 | d untested (racing_bsp, runner history) | a horse's previous run priced at today's BSP (499_horse_last_run, item 81) | DONE, PARTIAL | nothing passes; 0 of 206, previous run on the box only as coverage is partial; best PLACE LTO_TRADED_1.5 5-15 back n 545 +1.362 t 2.15
+2026-11-04 | d untested (af_fixtures, bf_hist_price, fd_matches) | team form streaks and last big result (499_team_form_stage, item 82) | DONE | nothing passes; 0 of 64; best L3 lay n 1,320 +0.379 t 1.99, closes +0.248 t 1.55
+2026-11-04 | c structural (af_fixtures, bf_hist_price, fd_matches) | season stage: opening rounds, final rounds, after a 12-day gap (499_team_form_stage, item 83) | DONE | nothing passes; 0 of 30; best OPEN3 lay Over n 890 +0.449 t 1.25
+2026-11-04 | a moves (af_events, bf_hist_price) | price after a missed penalty or VAR reversal (499_let_off, item 84) | DONE, PARTIAL | nothing passes; 0 of 288; best VAR_GOAL_OFF lay opponent level n 348 +0.759 t 1.18; 2025 missed penalties missing
+2026-11-04 | a moves (racing_bsp, from 499_horse_last_run) | failed market support last time, on complete racing history, two lines fixed | TODO (item 85, needs data) | -
+2026-11-04 | d defect (af_events, from 499_let_off) | repair 2025 missed penalties, then re-run item 84 | TODO (item 86, needs data) | -
