@@ -66,3 +66,4 @@
 2026-11-04 | a moves (bf_hist_price, from 499_draw_22_fresh) | fresh draw price 5-25% above its same-state norm at level scores, chosen on 2024, scored on 2025 | TODO (item 57) | —
 2026-11-04 | d untested (bf_hist_other) | greyhounds before the off, held to result (499_greyhound_census, item 46) | BLOCKED | 0.1% of 2,026 sampled races have a clear result, no in-play prints
 2026-11-04 | c structural (bf_hist_other, from 499_greyhound_census) | greyhound pre-off momentum, closed before the off, no result needed | TODO (item 58) | —
+2026-11-04 | d defect (from 471) | re-run 452, 453, 455 without the own-goal flip, exits at goal +8 (499_rescore_own_goals, item 38) | DONE | nothing passes, no verdict changes; 453 best t 1.77 v 2.83; 455 lay 10-man +0.512 t 1.58
