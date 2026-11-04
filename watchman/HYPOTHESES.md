@@ -67,3 +67,4 @@
 2026-11-04 | d untested (bf_hist_other) | greyhounds before the off, held to result (499_greyhound_census, item 46) | BLOCKED | 0.1% of 2,026 sampled races have a clear result, no in-play prints
 2026-11-04 | c structural (bf_hist_other, from 499_greyhound_census) | greyhound pre-off momentum, closed before the off, no result needed | TODO (item 58) | —
 2026-11-04 | d defect (from 471) | re-run 452, 453, 455 without the own-goal flip, exits at goal +8 (499_rescore_own_goals, item 38) | DONE | nothing passes, no verdict changes; 453 best t 1.77 v 2.83; 455 lay 10-man +0.512 t 1.58
+2026-11-04 | a moves (stream_ticks, from 496) | follow the first print through a wide pre-match book to T-5 (499_follow_first_print, item 49) | DONE | nothing passes, pilot; follow −0.510 n 231 t −5.85, fade −0.772; mid moves +3.0% for the follower but the gap costs more
