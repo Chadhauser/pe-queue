@@ -6,6 +6,9 @@ set -o pipefail
 # OFF PRICE: the runner's last pre-off print (inplay false) no more than 10 min before market_time onward; none = not eligible, counted. Off price > 50 not traded.
 # TRIGGER: first in-play print with ltp <= off x (1-X), X = 15% or 25%. Earlier triggers cannot see later prices.
 # FILL: you see the trigger print and act after it, so BACK fills at the WORSE (lower) of the trigger print and the runner's next print (none = trigger print), less one tick; LAY at the worse (higher) of the two, plus one tick. Back at 1.01 cannot be filled: counted.
+# FILLS, all with one tick adverse, all unknown = -£10: NEXT = the runner's next print, the first price you could act on; no next print = no trade, counted. This is the line that can pass. TRIG = the trigger print itself, impossible in practice, an upper bound, never eligible. WORSE = the worse of the two.
+# FIRST RUN: WORSE alone (3,600 markets, 0 of 96 lines, back -5.05, lay -1.66). Back and lay both lost because WORSE looks ahead against the trader: a winner fills at the later short price, a loser keeps the trigger price. Too harsh to clear a line or to kill one, hence NEXT and TRIG. 
+# SECOND RUN (720 s budget, 600 s statement timeout, under the brief's 2400 s) died listing market ids: QueryCanceled, the listing took 448 s on the first run. Timeout and budget are now 2400 s. THIS VERSION HAS NOT COMPLETED A RUN; the NEXT and TRIG lines are untested (item 33b).
 # RESULT: racing_bsp win_lose by event_dt + runner name; otherwise inferred from the final in-play print (<= 1.05 winner, >= 100 loser); otherwise UNKNOWN. KNOWN = diagnostic only. WORST = unknown is -£10. Agreement of the inference with racing_bsp is printed. Positions are held to the result, never dropped.
 # SETS: ALL is correlated within a race. FIRST = first runner to trigger in the race, one entry per race. Only WORST + FIRST can pass. E>=1.2 re-tests without entries at 1.2 or shorter, where the race may be over.
 # COST: 2% commission on profit, £10 stake / £10 liability. Halves: median race date.
@@ -15,7 +18,7 @@ from collections import Counter
 warnings.filterwarnings('ignore')
 pd.set_option('display.width',230); pd.set_option('display.max_rows',80); pd.set_option('display.max_columns',30)
 sys.path.insert(0,'/root/pe-bot'); from bot_core import DB
-BUDGET=1500; CHUNK=300
+BUDGET=2400; CHUNK=300
 LAD=[]
 for lo,hi,st in ((1.01,2,0.01),(2,3,0.02),(3,4,0.05),(4,6,0.1),(6,10,0.2),(10,20,0.5),(20,30,1),(30,50,2),(50,100,5),(100,1000,10)):
     x=lo
@@ -58,7 +61,7 @@ assert rname('1. Far Above Dream (IRE)')==rname('Far Above Dream') and rname("O'
 assert band(2.99)=='<3' and band(3.0)=='3-6' and band(25.0)=='25+'
 print("known-answer checks: OK",flush=True)
 con=psycopg2.connect(DB,sslmode='require'); con.autocommit=True; cur=con.cursor()
-cur.execute("SET work_mem='64MB'; SET statement_timeout='600s'; SET max_parallel_workers_per_gather=0")
+cur.execute("SET work_mem='64MB'; SET statement_timeout='2400s'; SET max_parallel_workers_per_gather=0")
 t0=time.time()
 cur.execute("""WITH RECURSIVE t AS ((SELECT market_id FROM bf_hist_other WHERE sport='Horse Racing' ORDER BY market_id LIMIT 1)
   UNION ALL SELECT (SELECT market_id FROM bf_hist_other WHERE sport='Horse Racing' AND market_id>t.market_id ORDER BY market_id LIMIT 1) FROM t WHERE t.market_id IS NOT NULL)
@@ -112,7 +115,8 @@ for c_ in range(0,len(MID),CHUNK):
             for n,(t_,sel,off,tp,nx,won) in enumerate(ent):
                 bf=back_fill(tp,nx); lf=lay_fill(tp,nx)
                 if bf is None: SK['back unfillable at 1.01']+=1
-                rows.append(dict(mid=mid_,day=day,x=int(x*100),off=off,band=band(off),field='<=8' if field<=8 else '9-12' if field<=12 else '13+',first=n==0,hasnext=nx is not None,
+                nb=None if nx is None else back_fill(nx,None); nl=None if nx is None else lay_fill(nx,None); tb=back_fill(tp,None); tl=lay_fill(tp,None); w_=(lambda f,a:np.nan if a is None else (-10.0 if won is None else f(a,won)))
+                rows.append(dict(bn=w_(back_pnl,nb),ln=w_(lay_pnl,nl),bt=w_(back_pnl,tb),lt=w_(lay_pnl,tl),mid=mid_,day=day,x=int(x*100),off=off,band=band(off),field='<=8' if field<=8 else '9-12' if field<=12 else '13+',first=n==0,hasnext=nx is not None,
                     known=won is not None,bf=np.nan if bf is None else bf,lf=lf,
                     bk=np.nan if bf is None or won is None else back_pnl(bf,won),lk=np.nan if won is None else lay_pnl(lf,won),
                     bw=np.nan if bf is None else (-10.0 if won is None else back_pnl(bf,won)),lw=-10.0 if won is None else lay_pnl(lf,won)))
@@ -128,18 +132,21 @@ print("trades by month:",D[D['first']&(D.x==15)].groupby(pd.to_datetime(D.day).d
 def line(d,col,**k):
     d=d[d[col].notna()]; a=d[d.day<md][col]; c=d[d.day>=md][col]; v=d[col]
     if not len(v): return dict(**k,n=0,races=0,per10=np.nan,t=0.0,n1=0,h1=np.nan,n2=0,h2=np.nan,PASS=False)
-    ok=k.get('res')=='WORST' and k.get('set')=='FIRST'
+    ok=k.get('res')=='NEXT' and k.get('set')=='FIRST'
     return dict(**k,n=len(v),races=d.mid.nunique(),per10=v.mean(),t=tstat(v),n1=len(a),h1=a.mean() if len(a) else np.nan,n2=len(c),h2=c.mean() if len(c) else np.nan,PASS=bool(ok and len(v)>=300 and len(a)>=150 and len(c)>=150 and tstat(v)>=3.5 and a.mean()>0 and c.mean()>0 and v.mean()>=0.15))
 res=[]
 for x in (15,25):
     b=D[D.x==x]
     for st,s_ in (('FIRST',b[b['first']]),('ALL',b)):
-        for side,kc,wc,fc in (('back','bk','bw','bf'),('lay','lk','lw','lf')):
+        for side,kc,wc,fc,nc,tc in (('back','bk','bw','bf','bn','bt'),('lay','lk','lw','lf','ln','lt')):
             for lab,dd in (('all',s_),('E>=1.2',s_[s_[fc]>1.2]))+tuple(('off '+o,s_[s_.band==o]) for o in ('<3','3-6','6-12','12-25','25+'))+tuple(('field '+f,s_[s_.field==f]) for f in ('<=8','9-12','13+')):
                 res.append(line(dd,wc,x=x,set=st,side=side,res='WORST',cut=lab))
+                res.append(line(dd,nc,x=x,set=st,side=side,res='NEXT',cut=lab))
+                res.append(line(dd,tc,x=x,set=st,side=side,res='TRIG',cut=lab))
                 if lab in ('all','E>=1.2'): res.append(line(dd,kc,x=x,set=st,side=side,res='KNOWN',cut=lab))
 R=pd.DataFrame(res).sort_values('t',ascending=False)
 print("\n== TOP 25 BY t, per £10\n",R.head(25).round(3).to_string(index=False))
+print("\n== TOP 15 BY t, NEXT only\n",R[R.res=='NEXT'].head(15).round(3).to_string(index=False))
 print("\n== HEADLINE LINES\n",R[(R.cut=='all')].sort_values(['x','set','side','res']).round(3).to_string(index=False))
 W=R[R.PASS==True]; print(f"\n== SURVIVORS: {len(W)} of {len(R)} lines"); print(W.round(3).to_string(index=False) if len(W) else "none")
 PY
