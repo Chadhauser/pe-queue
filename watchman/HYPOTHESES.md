@@ -59,3 +59,4 @@
 2026-11-04 | a moves (bf_hist_price, from the 488 smoke test) | back Under 1.5 in games priced for few goals, leagues chosen on 2024 only | TODO (item 55) | —
 2026-11-04 | queue 48 (racing_bsp) | residual GBM on BSP, morning-only signal and the item as written, fit to Jun 2025 (489) | DONE | nothing passes; 0 of 515; best lay place one per race n 689 +0.310 t 1.77; model p no closer than BSP
 2026-11-04 | c structural (racing_bsp, from 489) | is the place market priced for the places paid? both sides lose at exact BSP, win lay about zero | TODO (item 56) | —
+2026-11-04 | queue 49 (goal_stats_live, liq_sample) | model of goals from shots v the Over price, fit 3–29 Oct, scored 30 Oct–3 Nov (489_stats_led) | DONE | nothing passes, pilot; 0 of 68, largest n 100; stats rank goals no better than the market
