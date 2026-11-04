@@ -4,7 +4,7 @@
 # finished fixture not yet stored (2 calls each), rate-limited, stops cleanly at 18 min and exits 75 until complete. Budget shown
 # from the API's own headers every run. This is the data the upgrade was for: true goal minutes for 20k+ games, not 3,440.
 python3 - <<'PY'
-import sys,time,requests,psycopg2,json,datetime; DB=__import__('creds').pg_local() if False else None; sys.path.insert(0,'/root/pe-queue/runner'); import creds
+import sys,time,requests,psycopg2,json,datetime; sys.path.insert(0,'/root/pe-queue/runner'); import creds
 DB=creds.pg_local(); assert DB, 'local DSN missing'
 AF=creds.apifootball(); H={"x-apisports-key":AF}; BASE="https://v3.football.api-sports.io"
 LEAGUES=[39,40,41,42,140,141,135,136,78,79,61,62,88,94,144,179,203,197,218,207,103,113,119,71,128,253,98,2,3]; SEASONS=[2026,2023,2022,2021,2020,2019,2018,2017,2016]
