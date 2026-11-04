@@ -113,6 +113,14 @@ for (T,sd,ex),x in O[(O.league_id!=0)&(O.n>=100)].groupby(['T','side','exit']):
     x=x.sort_values('mean',ascending=False).reset_index(drop=True); y=x[x.league_id==140]
     if len(y): pl.append(dict(T=T,side=sd,exit=ex,lg_n=len(x),rank=int(y.index[0])+1,mean=float(y['mean'].iloc[0]),t=float(y.t.iloc[0]),best=x.league.iloc[0],best_mean=float(x['mean'].iloc[0]),lg_pos=int((x['mean']>0).sum()),both_pos=int(((x.h1>0)&(x.h2>0)).sum()),lgs_t35=int((x.t>=3.5).sum())))
 print(pd.DataFrame(pl).sort_values(['side','T','exit']).round(3).to_string(index=False))
+print("\n== CHOOSE ON 2024, SCORE ON 2025: leagues ranked on 2024 alone (n1 >= 50), La Liga's 2024 rank, and the 2025 mean of the league that was top in 2024 and of the top three together; all = 2025 mean of every league with n1 >= 50")
+ch=[]
+for (T,sd,ex),x in R[R.exit.isin(['G8','SETTLE'])].groupby(['T','side','exit']):
+    a=x[x.season==2024].groupby('league').v.agg(['size','mean']); a=a[a['size']>=50].sort_values('mean',ascending=False)
+    if len(a)<5: continue
+    y=x[x.season==2025]; top=list(a.index[:3]); t3=y[y.league.isin(top)].v
+    ch.append(dict(T=T,side=sd,exit=ex,lgs=len(a),liga_rank=(list(a.index).index('La Liga')+1) if 'La Liga' in a.index else -1,top=top[0],top_24=a['mean'].iloc[0],top_25=y[y.league==top[0]].v.mean(),t_top=tstat(y[y.league==top[0]].v),top3_25=t3.mean(),t_top3=tstat(t3),n_top3=len(t3),all_25=y[y.league.isin(a.index)].v.mean()))
+print(pd.DataFrame(ch).sort_values(['side','T','exit']).round(3).to_string(index=False))
 print("\n== La Liga by half-season windows, LAY_U T=30 G8: is it one spell?")
 x=R[(R.league_id==140)&(R['T']==30)&(R.side=='LAY_U')&(R.exit=='G8')]; print(x.groupby('season').agg(n=('v','size'),mean=('v','mean'),over_won=('ft',lambda s:(s>=2).mean()),px=('p','mean')).round(3).to_string())
 # forward

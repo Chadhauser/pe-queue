@@ -68,3 +68,6 @@
 2026-11-04 | c structural (bf_hist_other, from 499_greyhound_census) | greyhound pre-off momentum, closed before the off, no result needed | TODO (item 58) | —
 2026-11-04 | d defect (from 471) | re-run 452, 453, 455 without the own-goal flip, exits at goal +8 (499_rescore_own_goals, item 38) | DONE | nothing passes, no verdict changes; 453 best t 1.77 v 2.83; 455 lay 10-man +0.512 t 1.58
 2026-11-04 | a moves (stream_ticks, from 496) | follow the first print through a wide pre-match book to T-5 (499_follow_first_print, item 49) | DONE | nothing passes, pilot; follow −0.510 n 231 t −5.85, fade −0.772; mid moves +3.0% for the follower but the gap costs more
+2026-11-04 | queue 36, 39 (bf_hist_price, goal_timeline) | La Liga 0-0: Over 1.5 cheap; independent audit, placebo of every league, mapping, cost, 2026-27 goals (489_laliga_*) | NUMERIC PASS, not cleared | T35 back Over g+5 n 336 +1.39 t 4.08, g+8 +1.28 t 3.51; 2026-27 goals 24 of 48 = 50.0% v 54.4% implied; treat as selection until forward agrees
+2026-11-04 | a moves (bf_hist_price, from 489_laliga_checks) | save the real La Liga touch at 0-0 at 30' and 35' forward, as liq_sample rolls | TODO (item 59) | —
+2026-11-04 | a moves (bf_hist_price, from 489_laliga_checks) | League One and Ligue 2 mirror: Over 1.5 at 0-0 overpriced, T30 −6.6 and −8.7 points, z −2.9 | TODO (item 60) | —
