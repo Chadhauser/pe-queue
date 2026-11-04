@@ -53,3 +53,5 @@
 2026-11-04 | a moves (bf_hist_price, af_fixtures, from 499) | does a league's goal error in 2024 predict 2025, trade 2025 only on leagues chosen from 2024 | TODO (item 52) | —
 2026-11-04 | b named (preoff_scalp_paper, stream_ticks, jobs/328) | audit Caan Berry / Peter Webb pre-off scalper paper bot, with independent replay and fade (479, item 0c) | DONE | nothing passes; bot n 117 −0.54 at house costs t −14.91; replay n 498 −0.546 t −35.52 h1 −0.521 h2 −0.559, no cost −0.233; fade n 497 −0.243, no cost −0.072
 2026-11-04 | a moves (stream_ticks, from 479) | racing pre-off fade with targets of 4/6/10 ticks, as a two-tick target nets £0 after costs | TODO (item 53) | —
+2026-11-04 | d census (bf_hist_price, queue) | price-path signatures, price features only, learn on 2024, score on 2025 (488, item 47) | DONE | nothing passes; 0 of 66, best n 173 +0.502 t 1.35; 18% sample; chosen state lines +0.178 in 2024, all lines −0.188 in 2025
+2026-11-04 | a moves (bf_hist_price, from 488) | why a GBM calling the next print's direction 85%/13% still loses | TODO (item 54) | —
