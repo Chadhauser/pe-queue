@@ -49,3 +49,5 @@
 2026-11-04 | c structural (from 494) | quote both sides inside a wide pre-match gap (496) | DONE | nothing passes; −0.419 n 187 t −5.00 h1 −0.296 h2 −0.534; both filled 38% of filled; green +0.225, cross −0.813
 2026-11-04 | a moves (stream_ticks, from 496) | follow the first print through a wide pre-match book, at the touch to T-5 | TODO (item 49) | —
 2026-11-04 | d defect (from 487/495) | clean-frame re-run: racing shortened 15/25%, basketball momentum (497) | DONE | nothing passes; race 15% back −7.830 n 410 t −23.56, race 15% lay −5.989 n 428, momentum −3.480 n 163; both halves negative; replays hide racing results (clean winners 224 -> 289)
+2026-11-04 | a moves (bf_hist_price, from 491) | Segunda low-goal side overpriced at kick-off, one bet per game (499, item 45) | DONE | nothing passes; ONE_U25 +0.833 n 922 t 2.21 h1 +1.08 h2 +0.59; Under 3.7-4.4 points under price both seasons, z about -2.5
+2026-11-04 | a moves (bf_hist_price, af_fixtures, from 499) | does a league's goal error in 2024 predict 2025, trade 2025 only on leagues chosen from 2024 | TODO (item 52) | —
