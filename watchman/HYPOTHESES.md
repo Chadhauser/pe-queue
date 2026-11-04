@@ -48,3 +48,4 @@
 2026-11-04 | d data defect (ip_tape, from 495) | clean-frame re-run for racing, basketball, momentum; first resolve 29.4% of rows v 14.8% of frames | TODO (item 48) | —
 2026-11-04 | c structural (from 494) | quote both sides inside a wide pre-match gap (496) | DONE | nothing passes; −0.419 n 187 t −5.00 h1 −0.296 h2 −0.534; both filled 38% of filled; green +0.225, cross −0.813
 2026-11-04 | a moves (stream_ticks, from 496) | follow the first print through a wide pre-match book, at the touch to T-5 | TODO (item 49) | —
+2026-11-04 | d defect (from 487/495) | clean-frame re-run: racing shortened 15/25%, basketball momentum (497) | DONE | nothing passes; race 15% back −7.830 n 410 t −23.56, race 15% lay −5.989 n 428, momentum −3.480 n 163; both halves negative; replays hide racing results (clean winners 224 -> 289)

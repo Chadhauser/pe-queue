@@ -74,7 +74,6 @@ assert frame_clean(_d).tolist()==[True,True,True,True,False,False,True]
 _d2=pd.DataFrame(dict(market_id=['m','m','m'],ts=[1,2,3],tm=[100.,np.nan,90.])); assert frame_clean(_d2).tolist()==[True,True,False]   # all-NULL frame kept, no reset
 assert abs(tstat([1,3])-2.0)<1e-9
 print("known-answer checks: OK",flush=True)
-if len(sys.argv)>1 and sys.argv[1]=='asserts-only': sys.exit(0)
 
 def racing(A,lab):
     SK=defaultdict(int); rows=[]
@@ -123,6 +122,16 @@ def momentum(T,lab):
     print(f"{lab} momentum:",dict(SK),flush=True)
     return rows
 
+# end-to-end on tiny frames, worked by hand. ts are integers, as in the run
+_n=4; _A=pd.DataFrame(dict(market_id=['m']*8,ts=[1,2,3,4]*2,sel_id=['a']*_n+['b']*_n,bp=[10.,8.,7.,1.03,5.,6.,7.,40.],lp=[11.,8.2,7.2,1.04,5.2,6.2,7.2,50.],ltp=[10.,8.,7.,1.03,5.,6.,7.,40.]))
+_x=pd.DataFrame(racing(_A,'T')); _y=_x[(_x.rule=='race 15% BACK')&(_x.fill=='NEXT')]
+assert len(_y)==1 and abs(_y.worst.iloc[0]-10*5.8*0.98)<1e-9 and bool(_y['first'].iloc[0])      # trigger 8.0 on a, next print 7.0 fills 6.8, a won
+_y=_x[(_x.rule=='race 15% LAY')&(_x.fill=='WORSE')]; assert len(_y)==1 and _y.worst.iloc[0]==-10.0
+_M=pd.DataFrame(dict(market_id=['k']*90,ts=list(range(45))*2,sel_id=['a']*45+['b']*45,bp=[2.0]*20+[1.7]*25+[3.0]*45,bs=[5.]*90,lp=[2.02]*40+[1.5]*5+[3.05]*45,ls=[5.]*90,ltp=[2.0]*90))
+_z=pd.DataFrame(momentum(_M,'T')); assert len(_z)==1 and abs(_z.worst.iloc[0]-10*(1.69/1.51-1)*0.98)<1e-9   # trigger k=20 at 1.7 fills 1.69; exit k=40 lay 1.5, one tick up 1.51
+print("end-to-end checks: OK",flush=True)
+if len(sys.argv)>1 and sys.argv[1]=='asserts-only': sys.exit(0)
+
 BUDGET=1700
 con=psycopg2.connect(DB,sslmode='require'); con.autocommit=True; cur=con.cursor()
 cur.execute("SET work_mem='64MB'; SET statement_timeout='2400s'; SET max_parallel_workers_per_gather=0")
@@ -141,16 +150,17 @@ def fetch(sports,mts,label,stop):
     return pd.concat(fr,ignore_index=True) if fr else pd.DataFrame()
 A=fetch(['Horse Racing','horse_racing','7','Horse racing'],['WIN'],'racing',1000)
 B=fetch(['basketball','Basketball','7522'],['MATCH_ODDS','MONEY_LINE'],'basketball',BUDGET)
+A.to_pickle('/tmp/497_racing.pkl'); B.to_pickle('/tmp/497_basketball.pkl')
 con.close(); print("coverage back to:",COV,"| fetch",int(time.time()-t0),"s",flush=True)
 rows=[]
 for lab,D,fn in (('racing',A,racing),('basketball',B,momentum)):
     if D.empty: print(f"== {lab}: NO ROWS, not tested",flush=True); continue
     for c in ('bp','bs','lp','ls','ltp','tm'): D[c]=pd.to_numeric(D[c],errors='coerce')
-    D=D.sort_values(['market_id','ts'],kind='stable').reset_index(drop=True)
+    D['ts']=pd.to_datetime(D.ts,utc=True); D=D.sort_values(['market_id','ts'],kind='stable').reset_index(drop=True); _rng=(D.ts.min(),D.ts.max()); D['ts']=D.ts.dt.tz_localize(None).astype('datetime64[ns]').astype('int64')
     nt=D.groupby(['market_id','ts']).tm.nunique()
     D['ok']=frame_clean(D); D['row_ok']=np.concatenate([clean_mask(g.tm.values) for _,g in D.groupby('market_id',sort=False)])
     fr=D.drop_duplicates(['market_id','ts'])
-    print(f"== {lab}: rows {len(D)}, markets {D.market_id.nunique()}, {D.ts.min()} .. {D.ts.max()}, tm null {D.tm.isna().mean():.1%}",flush=True)
+    print(f"== {lab}: rows {len(D)}, markets {D.market_id.nunique()}, {_rng[0]} .. {_rng[1]}, tm null {D.tm.isna().mean():.1%}",flush=True)
     print(f"   frames with more than one total_matched: {(nt>1).mean():.2%} of {len(nt)} | replay share: per row {(~D.row_ok).mean():.1%}, rows in replay frames {(~D.ok).mean():.1%}, per frame {(~fr.ok).mean():.1%}",flush=True)
     _r=D.groupby('market_id').ok.apply(lambda x:(~x).mean()); print("   replay share per market, quantiles:",_r.quantile([.25,.5,.75,.9]).round(3).to_dict(),f"| markets with none {(_r==0).mean():.1%}",flush=True)
     rows+=fn(D,'RAW'); rows+=fn(D[D.ok],'CLEAN')
