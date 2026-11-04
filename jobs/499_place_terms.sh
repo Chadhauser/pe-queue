@@ -52,7 +52,7 @@ dh=D[D.win_lose==2].rid.unique(); print("races with win_lose=2, dropped:",len(dh
 g=D.groupby('rid'); R=pd.DataFrame(dict(dt=g.event_dt.first(),book=g.bsp.apply(lambda s:(1/s).sum()),paid=g.won.sum(),field=g.bsp.size())); bad=R.paid==0; print("races with nobody placed, dropped:",int(bad.sum()),flush=True); R=R[~bad]; D=D[D.rid.isin(R.index)]
 D['bh']=[back(p,w) for p,w in zip(D.bsp,D.won)]; D['lh']=[lay(p,w) for p,w in zip(D.bsp,D.won)]; D['bx']=[back(p,w,False) for p,w in zip(D.bsp,D.won)]; D['lx']=[lay(p,w,False) for p,w in zip(D.bsp,D.won)]
 n0=len(D); D=D.dropna(subset=['bh']); print("too short to back at one tick, dropped rows:",n0-len(D),flush=True)
-B=D.groupby('rid')[['bh','lh','bx','lx']].mean(); F=D.sort_values('bsp').drop_duplicates('rid').set_index('rid')[['bh','lh','bx','lx','bsp','won']].add_prefix('f_')
+B=D.groupby('rid')[['bh','lh','bx','lx']].mean(); F=D.sort_values(['bsp','selection_id'],kind='mergesort').drop_duplicates('rid').set_index('rid')[['bh','lh','bx','lx','bsp','won']].add_prefix('f_')  # joint favourites: lowest selection_id, so the line is the same on every run
 R=R.join(B).join(F); R['over']=R.book-R.paid; R['hold']=R.dt>=pd.Timestamp('2025-07-01'); print(f"races {len(R)}, fit {int((~R.hold).sum())}, hold-out {int(R.hold.sum())}",flush=True)
 T=R.groupby(['paid','field']).agg(n=('book','size'),book=('book','mean'),over=('over','mean'),back=('bx','mean'),lay=('lx','mean'),fav_won=('f_won','mean'),fav_imp=('f_bsp',lambda s:(1/s).mean())).reset_index(); print("\n== BOOK v PLACES PAID, every race; back and lay at exact BSP, mean per runner per race\n",T[T.n>=20].round(3).to_string(index=False))
 print("\nodd cells, n < 20:",T[T.n<20][['paid','field','n']].values.tolist()[:40],flush=True)
