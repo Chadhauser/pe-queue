@@ -35,5 +35,5 @@
 2026-11-04 | d untested (bf_hist_other, census) | cricket MATCH_ODDS in-play on the two-year BASIC tape, about 76% of sampled rows in play, no cricket test on this table found in jobs/ | TODO (item 42) | —
 2026-11-03 | c structural (prematch_bands_v1, from 472) | lay the side that loses more than cost at KO: BTTS no (back −0.59, t −4.17, both halves, v BTTS yes −0.10), FH O1.5, O1.5, O3.5, U2.5; hold to settle | TODO (item 35) | —
 2026-11-04 | queue 32 (c structural) | racing place market in-play, first frame by band, lay favourite to place after WIN drift (487_place_inplay) | DONE | nothing passes; 0 of 61; all back -5.14 n 1,490, lay -4.10 n 868; drift 30% lay -6.07 n 13; tight books 218 implied v 214 placed
-2026-11-04 | d data defect (ip_tape, from 487_place_inplay) | re-run T3, momentum and shortened triggers without replayed frames (racing 48%, tennis and basketball 15% of frames) | TODO (item 42) | —
+2026-11-04 | d data defect (ip_tape, from 487_place_inplay) | re-run T3, momentum and shortened triggers without replayed frames (racing 48%, tennis and basketball 15% of frames) | TODO (item 44) | —
 2026-11-04 | a moves (ip_tape, from 487_place_inplay) | rest a lay inside wide in-play place books: 1.5-2 implies 0.588 v 0.318 placed, real lay often a junk 980 | TODO (item 43) | —
