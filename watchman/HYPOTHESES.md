@@ -61,3 +61,4 @@
 2026-11-04 | c structural (racing_bsp, from 489) | is the place market priced for the places paid? both sides lose at exact BSP, win lay about zero | TODO (item 56) | —
 2026-11-04 | queue 49 (goal_stats_live, liq_sample) | model of goals from shots v the Over price, fit 3–29 Oct, scored 30 Oct–3 Nov (489_stats_led) | DONE | nothing passes, pilot; 0 of 68, largest n 100; stats rank goals no better than the market
 2026-11-04 | queue 50 (bf_hist_price, af_fixtures) | states and GBM on the just-after-KO price, fit 2024, scored 2025 (489_prematch) | PARTIAL | nothing passes; 0 of 113, best t 1.32; line movement untestable, no pre-KO rows
+2026-11-04 | queue 51 (liq_sample) | two-rate Poisson consensus of the book, trade the line furthest away (489_cross_market) | DONE | nothing passes, pilot; 0 of 138; both sides lose about £1.30; book fits to median RMSE 0.0088
