@@ -3,6 +3,8 @@
 # already present locally with the same row count is skipped; after ~150 min it exits 75 so the runner re-polls and it
 # continues. Nothing is dropped on Railway here (that is a later job, after the Finder has run against the local copy).
 set -o pipefail
+export PATH=/usr/lib/postgresql/18/bin:$PATH   # Railway is PG 18.6: dump with the 18 client
+FAILS=0
 set -a; . /root/.pe_local_pg.env; set +a
 RAIL=$(python3 -c "import sys; sys.path.insert(0,'/root/pe-queue/runner'); import creds; print(creds.pg_railway())")
 [ -n "$RAIL" ] && [ -n "$PE_LOCAL_PG" ] || { echo "missing DSN"; exit 1; }
@@ -18,11 +20,12 @@ for t in $TABLES; do
   if [ "$ln" -ge 0 ] && [ "$rn" -gt 0 ] && [ $(( ln * 100 / (rn + 1) )) -ge 98 ]; then echo "-- $t: already local ($ln rows), skip"; continue; fi
   echo "-- $t: copying (railway est $rn rows) $(date -u +%H:%M:%S)"
   psql "$PE_LOCAL_PG" -qc "DROP TABLE IF EXISTS $t" 
-  if pg_dump --no-owner --no-acl --no-comments -t "public.$t" "$RAIL" | psql "$PE_LOCAL_PG" -q -v ON_ERROR_STOP=1; then
+  if pg_dump --version >/dev/null && pg_dump --no-owner --no-acl --no-comments -t "public.$t" "$RAIL" | psql "$PE_LOCAL_PG" -q -v ON_ERROR_STOP=1; then
     ln=$(psql "$PE_LOCAL_PG" -Atqc "select count(*) from $t"); echo "   done: local $ln rows $(date -u +%H:%M:%S)"
   else
-    echo "   FAILED $t (see above); continuing with the next table"; psql "$PE_LOCAL_PG" -qc "DROP TABLE IF EXISTS $t"
+    echo "   FAILED $t (see above); continuing with the next table"; FAILS=$((FAILS+1)); psql "$PE_LOCAL_PG" -qc "DROP TABLE IF EXISTS $t"
   fi
 done
 echo "== local inventory"; psql "$PE_LOCAL_PG" -Atc "select relname||'  '||pg_size_pretty(pg_total_relation_size(oid)) from pg_class where relkind='r' and relnamespace='public'::regnamespace order by pg_total_relation_size(oid) desc"
 echo "== disk"; df -h / | tail -1
+echo "tables failed: $FAILS"; [ "$FAILS" -eq 0 ]
