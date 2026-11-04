@@ -40,3 +40,4 @@
 2026-11-04 | queue 19 second (a moves) | tick lead-lag MO draw v OU25 Under at 0-0 (490) | TODO, job failed twice | no result, no data read; test arrays named DB overwrite the connection string, rename first
 2026-11-04 | queue 35 (c structural) | lay the overbacked side at kick-off (491) | DONE | nothing passes; 0 of 271; BTTS No lay +0.262 n 5,891 t 1.80, one 490 win is 0.083 of it, x3 +0.09, real lay 4.5 ticks above LTP on average
 2026-11-04 | a moves (bf_hist_price, from 491) | Segunda low-goal side overpriced at KO: BTTS No lay +1.60 n 355 t 3.09, U2.5 lay +0.75 n 911, correlated, best of 271 | TODO (item 45) | —
+2026-11-04 | queue 34 (a moves) | passive lay on pre-match drifters, fill only on a print through the level (492) | DONE | nothing passes; 0 of 20; DRIFT3 -0.290 n 725 h1 -0.29 h2 -0.29, exact level -0.234, control -0.358; filled orders shorten, unfilled keep drifting
