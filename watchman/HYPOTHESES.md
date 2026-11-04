@@ -64,3 +64,5 @@
 2026-11-04 | queue 51 (liq_sample) | two-rate Poisson consensus of the book, trade the line furthest away (489_cross_market) | DONE | nothing passes, pilot; 0 of 138; both sides lose about £1.30; book fits to median RMSE 0.0088
 2026-11-04 | a moves (grid_cells_v4, bf_hist_price, liq_sample) | back the draw at 2-2 late, one entry per game, with stale-print filters and the real touch (499_draw_22_late, 499_draw_22_fresh, item 37) | DONE | nothing tradable; 7 numeric passes, X75 n 739 +1.549 t 3.70; FRESH n 569 +0.722 t 2.23 h2 +0.20; forward n 43 −1.955
 2026-11-04 | a moves (bf_hist_price, from 499_draw_22_fresh) | fresh draw price 5-25% above its same-state norm at level scores, chosen on 2024, scored on 2025 | TODO (item 57) | —
+2026-11-04 | d untested (bf_hist_other) | greyhounds before the off, held to result (499_greyhound_census, item 46) | BLOCKED | 0.1% of 2,026 sampled races have a clear result, no in-play prints
+2026-11-04 | c structural (bf_hist_other, from 499_greyhound_census) | greyhound pre-off momentum, closed before the off, no result needed | TODO (item 58) | —
