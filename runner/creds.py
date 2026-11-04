@@ -58,7 +58,18 @@ def apifootball_sources():
     for k in os.environ:
         if k.upper() in AF_NAMES: rows.append(('process env',k,len(os.environ[k])))
     return rows
+
+def pg_railway():
+    """DSN of the Railway Postgres (the engine's live tables). Never prints it."""
+    d=all_vars()
+    return first(d,['DB','DATABASE_URL','PG_DSN','POSTGRES_URL','DB_URL'])
+def pg_local():
+    """DSN of the Postgres on this box (history and tape tables, from 4 Nov 2026). Written by jobs/337. None if not installed yet."""
+    for f in ['/root/.pe_local_pg.env']:
+        v=_file_vars(f).get('PE_LOCAL_PG')
+        if v: return v
+    return None
 def report():
     app,user,pw=betfair(); k=apifootball()
-    return f"betfair app_key={'yes' if app else 'NO'} username={'yes' if user else 'NO'} password={'yes' if pw else 'NO'} | api-football key={'yes' if k else 'NO'}"
+    return f"local_pg={'yes' if pg_local() else 'NO'} railway_pg={'yes' if pg_railway() else 'NO'} | betfair app_key={'yes' if app else 'NO'} username={'yes' if user else 'NO'} password={'yes' if pw else 'NO'} | api-football key={'yes' if k else 'NO'}"
 if __name__=='__main__': print(report())
