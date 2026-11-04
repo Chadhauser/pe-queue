@@ -15,7 +15,7 @@ def rows_of(fid,res):
     """API /fixtures/players response -> one tuple per player per team. Players with no id are dropped."""
     out=[]
     for t in res or []:
-        team=(t.get('team') or {}).get('name')
+        team=(t.get('team') or {}).get('name') or 'unknown'   # team is in the primary key, a null would stop the load
         for p in t.get('players') or []:
             pl=p.get('player') or {}; s=(p.get('statistics') or [{}])[0] or {}
             g=s.get('games') or {}; sh=s.get('shots') or {}; go=s.get('goals') or {}
@@ -27,6 +27,7 @@ def low(rem): return rem is not None and rem<FLOOR
 S_=[{'team':{'name':'A'},'players':[{'player':{'id':7,'name':'X'},'statistics':[{'games':{'minutes':90,'position':'F','rating':'7.4'},'shots':{'total':3,'on':2},'goals':{'total':1,'assists':None}}]},{'player':{'id':8,'name':'Y'},'statistics':[{'games':{'minutes':None,'rating':None},'shots':{},'goals':{}}]},{'player':{'name':'no id'},'statistics':[{}]}]}]
 assert rows_of(1,S_)==[(1,'A',7,'X',90,3,2,1,None,'F',7.4),(1,'A',8,'Y',None,None,None,None,None,None,None)]
 assert rows_of(1,None)==[] and rows_of(1,[{'team':{'name':'A'},'players':[{'player':{'id':9,'name':'Z'},'statistics':[]}]}])==[(1,'A',9,'Z',None,None,None,None,None,None,None)]
+assert rows_of(1,[{'team':None,'players':[{'player':{'id':9,'name':'Z'},'statistics':[]}]}])[0][1]=='unknown'
 assert to_num('') is None and to_int('7')==7 and low(149) and not low(150) and not low(None)
 print("known-answer checks: OK",flush=True)
 if len(sys.argv)>1 and sys.argv[1]=='asserts-only': sys.exit(0)
