@@ -35,6 +35,6 @@ All are negative, and the two leading cells have only 37–38 trades.
 | SHORT | 30 s | 70+ min | 38 | 16 | -0.636 | -1.09 | -0.405 | -0.730 |
 | DRIFT, Under lay moved too | 60 s | 45-70 min | 29 | 17 | -0.157 | -2.54 | -0.096 | -0.231 |
 
-**Reading it:** the best signal line beats its control by about 5p per £10 (-0.694 v -0.753) and the lay side by about 2–4p, far short of the 0.29–0.75 it would have to overcome. Size filters drop many candidate entries (14,448 back, 3,172 lay, control rows included), so these fills are on the deeper books only.
+**Reading it:** the best signal line beats its control by about 6p per £10 (-0.694 v -0.753) and the lay side by about 1–4p, far short of the 0.29–0.75 it would have to overcome. Size filters drop many candidate entries (14,448 back, 3,172 lay, control rows included), so these fills are on the deeper books only.
 
 **Log:** the runner's log. This session cannot write to /root/pe-queue-logs, so it does not hold a Finder copy.

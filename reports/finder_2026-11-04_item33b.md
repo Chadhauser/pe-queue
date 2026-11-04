@@ -42,7 +42,7 @@ Only NEXT with FIRST could pass. All are negative.
 | 15% | FIRST | back | NEXT | field 9-12 | 6,470 | -3.453 | -2.28 | -4.961 | -1.932 |
 
 ## Reading it
-- **The tape can reject this idea but could not have cleared it.** The fill is a one-minute proxy, so a pass would only have been an upper bound. A loss at the trigger print is stronger evidence, since a real trader could not do better than that print.
+- **The tape can reject this idea but could not have cleared it.** The fill is a one-minute proxy, so a pass would only have been an upper bound. A loss at the trigger print is stronger evidence, but only at one-minute resolution: a tick feed could see the same move earlier and at a better price, so this does not rule out a faster version, which needs a tick source for races.
 - **Why fills differ so much:** the market moves a long way in a minute. Backing goes from about -£1.08 at the trigger print to -£3.37 at the next one (15%).
 - **Fat tails:** NEXT back lines have very large spread (t -1.15 at -£2.31), so their t values are weak and a few long-priced winners may drive them. Not examined further, as no NEXT line is positive.
 - **Trades with no next print:** 12.1% of triggers have no next print and no NEXT trade, because there is no later price to fill at. They remain in TRIG.
