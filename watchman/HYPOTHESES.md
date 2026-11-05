@@ -145,3 +145,5 @@
 2026-11-05 | d untested (bf_hist_other, goal_timeline) | OU55, 65, 75, first-half 2.5, Sep 2026 (499_long_goal_lines, item 122) | DONE | nothing passes; 0 of 124; best FH25 T15 Over G0 lay n 1,558 +0.135 t 2.33
 2026-11-05 | c structural (racing_bsp, from 499_course_trip) | lay the favourite at a course running short of its price, on unseen races, rule fixed | TODO (item 123, needs data) | -
 2026-11-05 | c structural (bf_hist_other, from 499_long_goal_lines) | three or more first-half goals overpriced, on unseen months, two lines fixed | TODO (item 124, needs data) | -
+2026-11-05 | d untested (bf_hist_other Aug-Sep 2026, af_player_stats, af_events, af_stats) | anytime, first and 2+ scorer, hat-trick, player card, corner odds, booking odds, cards O/U, HT/FT, pre-off (499_player_corner_markets, item 74) | DONE | nothing passes; 0 of 274; best TO_SCORE away PRE lay n 921 +0.409 t 2.95
+2026-11-05 | d untested (bf_hist_other, from 499_player_corner_markets) | lay an away player to score on unseen months, rule fixed | TODO (item 125, needs data) | -
