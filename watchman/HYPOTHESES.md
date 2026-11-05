@@ -198,6 +198,10 @@
 2026-11-05 | c lower tiers (from 499_tennis_preoff_flb) | Challenger tennis before the off (499_tennis_preoff_flb, item 176) | DONE | nothing passes; 0 of 22; best 1.7-2.2 back n 1,826 +0.174 t 0.81 h1 +0.201 h2 +0.148
 2026-11-05 | a moves (from 499_cricket_shock) | a short-priced cricket runner that jumps, on a real book, rule fixed | TODO (item 177, needs data) | -
 2026-11-05 | c lower tiers (from 499_tennis_preoff_flb) | back a Challenger runner at 1.7-2.2 on unseen months, rule fixed | TODO (item 178, needs data) | -
-2026-11-05 | a moves (af_events, bf_hist_price) | first goal by type, penalty or own goal v open play (item 179) | RUNNING | -
-2026-11-05 | c structural (af_fixtures, bf_hist_price) | goals earlier today or last round v Over and BTTS at the first print (item 180) | RUNNING | -
-2026-11-05 | d untested (af_events, bf_hist_price) | yellow cards at half-time as a state (item 181) | RUNNING | -
+2026-11-05 | a moves (af_events, bf_hist_price) | first goal by type, penalty or own goal v open play (499_goal_type, item 179) | DONE | nothing passes; 0 of 480; best PEN OTHER back n 565 +4.948 t 1.64 h1 +5.586 h2 +4.364, one 1,068 win
+2026-11-05 | c structural (af_fixtures, bf_hist_price) | goals earlier today or last round v Over and BTTS at the first print (499_same_day_goals, item 180) | DONE | nothing passes; 0 of 28; best SD HIGH back Over n 740 +0.735 t 2.02 h1 +0.281 h2 +1.038
+2026-11-05 | d untested (af_events, bf_hist_price) | yellow cards at half-time as a state (499_ht_cards, item 181) | DONE | nothing passes; 0 of 34; best OU25 G0 Y23 lay n 1,126 +0.250 t 1.90 h1 +0.312 h2 +0.189
+2026-11-05 | a moves (from 499_same_day_goals) | SD HIGH back Over on Jul-Sep 2026 (499_same_day_over_unseen, item 182) | DONE, closed by 183 | too small; n 122 +1.249 t 1.49 h1 +0.884 h2 +1.591
+2026-11-05 | a moves (fd_matches, from 499_same_day_goals) | SD HIGH at Pinnacle closes, 2019-20 to 2023-24 (499_same_day_goals_old, item 183) | DONE | does not hold; n 1,294 +0.32 points z 0.23, spread z 0.82
+2026-11-05 | d untested (from 499_ht_cards) | lay Over 2.5 at 0-0 at HT with 2-3 yellows, unseen months, rule fixed | TODO (item 184, needs data) | -
+2026-11-05 | a moves (from 499_goal_type) | back Over 2.5 ten minutes after a first-goal penalty, unseen months, rule fixed | TODO (item 185, needs data) | -
