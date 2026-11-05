@@ -182,3 +182,9 @@
 2026-11-05 | a moves (from 499_longtail_move) | lay a drifted underdog in a thin senior game, unseen games (499_thin_drift_dog_unseen, item 160) | DONE | nothing passes; n 149 -0.461 t -1.07
 2026-11-05 | a moves (from 499_longtail_move) | follow the favourite's pre-match move, senior, unseen games (499_fav_move_follow_unseen, item 161) | DONE | nothing passes; SHORT back n 455 +0.598 t 1.25; DRIFT lay n 373 -0.515 t -1.10
 2026-11-05 | a moves (from 499_fav_move_follow_unseen) | back a favourite that has shortened before the off, older months, rule fixed | TODO (item 162, needs data) | -
+2026-11-05 | c structural (bf_hist_other, bf_hist_result, from 499_longtail_senior) | do the 5 Nov long-tail lines repeat on Oct 2024 (499_oct24_lines, item 163) | DONE | nothing passes; 0 of 10; Spearman 0.035 over 226 lines
+2026-11-05 | d untested (bf_hist_result) | HT/FT, half-time score, double chance before the off, per runner (499_oct24_lines, 499_oct24_dc, item 164) | DONE | nothing passes; 0 of 16; best FAV_DRAW lay n 843 +0.665 t 0.91
+2026-11-05 | c structural (from 499_away_scorer_may) | lay every player to score, Oct 2024 official (499_to_score_all_oct24, item 165) | DONE | nothing passes; n 1,651 +0.019 tg 0.17
+2026-11-05 | a moves (from 499_to_score_all_oct24) | lay a player to score at 20-200, May-Sep 2026 (499_to_score_long_unseen, item 166) | DONE | nothing passes; n 521 +0.134 t 1.97 tg 1.83
+2026-11-05 | c structural (from 499_oct24_lines) | back Under 2.5 in women's games, unseen (499_women_under_unseen, item 167) | TODO, needs more unseen games | too small; n 135 +1.176 t 0.93 h1 -0.645 h2 +2.970
+2026-11-05 | a moves (from 499_to_score_long_unseen) | lay a player to score at the real touch on player_liq (item 168) | TODO, from 11 Nov | -
