@@ -27,3 +27,6 @@ You are the Watchman for Peter Edwards' Betfair trading estate on this server. Y
 
 ## Brief location
 This file is version-controlled at /root/pe-queue/watchman/WATCHMAN.md and is pulled fresh before every run; do not edit it yourself.
+
+## TWO DATABASES (from 5 Nov 2026)
+History and the Finder's test tables now live on the LOCAL PostgreSQL 18 (`creds.pg_local()` from /root/pe-queue/runner/creds.py, no sslmode). Read survivors from BOTH databases: Railway (`creds.pg_railway()`) for live tables (goal_*, liq_sample, ip_tape, stream_ticks, *_paper, job_results, heartbeats) and local for grid_*, boring_*, atlas_*, cand_*, fwd_* and anything the Finder reports in reports/finder_*.md. Say which database each number came from. Also report, every run, the delete_trap table on Railway (who deleted from the tape tables) and tape_archive_wm on local (rows archived per table, watermark age).
