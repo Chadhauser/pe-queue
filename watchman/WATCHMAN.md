@@ -36,3 +36,6 @@ History and the Finder's test tables now live on the LOCAL PostgreSQL 18 (`creds
 
 ## STOPPED BOTS
 A /root/pe-*/STOPPED file, or a bot_status row STOPPED on Railway, means that bot was switched off on purpose (negative paper line). Never restart it and do not count its stale heartbeat as a failure; list it once as 'stopped (reason)'. The integrity suite's heartbeat checks for preoff_scalp are void while that marker exists.
+
+## THE SCOREBOARD (from 5 Nov 2026, job 510)
+The sports team daemon (/root/pe-sports/team/sports_team.py, hypotheses in hypotheses.json) is the only tester of trading lines now. Its Verifier is the ONLY writer of /root/pe-sports/team/scoreboard.md, mirrored every 10 minutes into job_results as job='SPORTS_SCOREBOARD'. Open every report with that scoreboard's "Data health" block and its "Money" line, verbatim, before anything else. Never write to the scoreboard, hypotheses.json or /root/pe-sports; if the daemon is not running (pgrep sports_team.py empty) say so in the first line — the cron keepalive restarts it within 10 minutes. The bookie paper bot (/root/pe-sports/bookie) is started by the daemon when fair_price_calib exists; its table is bookie_paper (local).
