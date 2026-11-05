@@ -134,3 +134,14 @@
 2026-11-05 | d untested (bf_hist_other, from 499_ou05_cs00 census) | DNB on the Sep 2026 tape, reopening 0f for one month (499_dnb_sep_tape, item 111) | DONE | nothing passes; 0 of 28; best PRE DOG lay n 1,245 +0.097 t 0.56; AH blocked, no handicap on the table
 2026-11-05 | d untested (bf_hist_other, from 499_dnb_sep_tape) | Asian Handicap once the loader keeps the line | TODO (item 112, needs data) | -
 2026-11-05 | d untested (bf_hist_other, from 499_ou05_cs00 census) | HALF_TIME, DOUBLE_CHANCE, OU4.5 on the Sep 2026 tape (499_sep_tape_rest, item 113) | DONE | nothing passes; 0 of 136; best DC T75 HA one apart back n 167 +0.762 t 2.09; TEAM handicaps too thin
+2026-11-05 | c structural, d untested (bf_hist_other, af_fixtures, fd_matches) | correct score pre-off per scoreline, Sep 2024-Apr 2025 (499_cs_scorelines, item 114) | DONE | nothing passes; 0 of 152; best AOHW LOWG lay n 1,940 +0.097 t 2.52, Sep 2026 -0.095
+2026-11-05 | d untested (bf_hist_other, goal_timeline) | current score in-play and HALF_TIME_SCORE, Sep 2026 (499_cs_scorelines, item 115) | DONE | nothing passes; 0 of 74; best HTS PRE Any Unquoted lay n 871 +0.166 t 2.04
+2026-11-05 | c structural (racing_bsp) | earlier results at the same meeting today (499_meeting_today, item 116) | DONE | nothing passes; 0 of 90; best FAVS_ALL_WON FAV lay n 399 +0.718 t 1.85
+2026-11-05 | c structural (bf_hist_price, fd_matches) | a team's own price error, season to season (499_team_identity, item 117) | DONE | nothing passes; 0 of 38; best H BOT20 lay n 724 +0.474 t 1.36; proxy flat
+2026-11-05 | a moves (bf_hist_price, af_events) | late-goal teams in-play (499_team_identity, item 118) | DONE | nothing passes; 0 of 144; HIGH v LOW no separation; control T75 G0 Over lay t 2.77
+2026-11-05 | a moves (bf_hist_other, from 499_team_identity) | lay Over 1.5 at 0-0 at 75' on Sep 2026 (499_ou15_00_t75_unseen, item 119) | DONE | closed; n 454 +0.085 t 0.52
+2026-11-05 | c structural (racing_bsp) | course error walked forward, trip by price band at BSP (499_course_trip, item 120) | DONE | nothing passes; 0 of 62; best COURSE_TOPQ FAV lay n 541 +0.785 t 2.22
+2026-11-05 | c structural (af_fixtures, bf_hist_price, fd_matches) | head-to-head, the bogey side, all-over and all-under meetings (499_h2h_bogey, item 121) | DONE | nothing passes; 0 of 20; best BOGEY_DOG team lay n 288 +0.439 t 1.27
+2026-11-05 | d untested (bf_hist_other, goal_timeline) | OU55, 65, 75, first-half 2.5, Sep 2026 (499_long_goal_lines, item 122) | DONE | nothing passes; 0 of 124; best FH25 T15 Over G0 lay n 1,558 +0.135 t 2.33
+2026-11-05 | c structural (racing_bsp, from 499_course_trip) | lay the favourite at a course running short of its price, on unseen races, rule fixed | TODO (item 123, needs data) | -
+2026-11-05 | c structural (bf_hist_other, from 499_long_goal_lines) | three or more first-half goals overpriced, on unseen months, two lines fixed | TODO (item 124, needs data) | -
