@@ -166,7 +166,10 @@
 2026-11-05 | c structural (bf_hist_result, bf_hist_other) | long tail before the off, women, youth, senior by liquidity, official results (499_longtail_official, item 141) | DONE, PARTIAL | nothing passes; 0 of 52, senior lost to a bug; best YOUTH OU25 Over lay n 114 +2.683 t 1.70
 2026-11-05 | c structural (bf_hist_result, from 499_ko_cross_market) | cross-market gap before the off, whole feed (499_xmarket_official, item 142) | DONE | nothing passes; 0 of 32; best BTTS 0.02 CHEAP back Yes n 66 +1.407 t 1.64
 2026-11-05 | c structural (bf_hist_result, bf_hist_other) | late short prices in the long tail, no score (499_longtail_late, item 143) | DONE | nothing passes; 0 of 180; S_THIN OU25 T95 back n 48 t 6.03, read as unfillable prints
-2026-11-05 | c structural (from 499_longtail_official) | item 141's senior lines, code fixes only | TODO (item 144) | -
+2026-11-05 | c structural (from 499_longtail_official) | item 141's senior lines, code fixes only (499_longtail_senior, item 144) | DONE | nothing passes; 0 of 130; best S_MID OU35 Under lay n 560 +0.956 t 1.70
 2026-11-05 | a moves (from 499_longtail_late) | back the short side of OU2.5 late in a thin senior game, unseen months, then the touch, rule fixed | TODO (item 145, needs data) | -
 2026-11-05 | c structural (from 499_xmarket_official) | BTTS cheap before the off on unseen games, rule fixed | TODO (item 146, needs data) | -
 2026-11-05 | c structural (from 499_longtail_official) | lay Over 2.5 in youth games on unseen games, rule fixed | TODO (item 147, needs data) | -
+2026-11-05 | c structural (bf_hist_other, goal_timeline, from 499_result_coverage) | lay Over 2.5 before the off, all games, Aug as the test (499_lay_over25_all, item 148) | DONE | nothing passes; Aug n 4,255 -0.457 t -2.64
+2026-11-05 | c structural (bf_hist_other, goal_timeline, from 499_longtail_senior) | first-half Under 0.5 before the off, unseen games (499_fh05_under_unseen, item 149) | DONE | nothing passes; Under back n 3,023 -0.293 t -1.00; Over lay n 3,542 -0.243 t -0.87
+2026-11-05 | c structural (from 499_longtail_senior) | lay Under 3.5 in mid-liquidity senior games, unseen games, rule fixed | TODO (item 150) | -
