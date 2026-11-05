@@ -192,3 +192,9 @@
 2026-11-05 | c early prices v the off (bf_hist_other, racing_bsp) | last print T-5 to T-1 to BSP (499_racing_preoff_tape, item 170) | DONE | nothing passes; 0 of 40; best DRIFT <3 lay n 530 -0.078 t -2.53 h1 -0.084 h2 -0.072
 2026-11-05 | a moves (bf_hist_other, tennis_results_2026) | tennis T2 and T3 on the BASIC tape (499_tennis_fav_trouble, item 171) | DONE | nothing passes; 0 of 12; best T2 lay 1.30-1.50 n 1,980 +0.058 t 0.28 h1 +0.332 h2 -0.216
 2026-11-05 | a moves (from 499_racing_preoff_tape) | lay a drifted 3-6 runner without crossing the spread, on a saved book, rule fixed | TODO (item 172, needs data) | -
+2026-11-05 | c structural (bf_hist_other, tennis_results_2026) | tennis before the off, band by tour, favourite's line move (499_tennis_preoff_flb, item 173) | DONE | nothing passes; 0 of 66; best ATP 1.2-1.4 lay n 858 +0.979 t 1.53 h1 +0.417 h2 +1.541
+2026-11-05 | a moves (bf_hist_other) | cricket in-play shock, fade or follow, real print exits (499_cricket_shock, item 174) | DONE | nothing passes; 0 of 72; best X20 <1.5 FOLLOW +10 n 628 +0.414 t 2.10 h1 +0.476 h2 +0.352
+2026-11-05 | c structural (bf_hist_other, greyhound_racecards_today) | greyhound trap and favourite state at tonight's meeting (499_greyhound_meeting_trap, item 175) | DONE | nothing passes; 0 of 44; best REPEAT1 ALL lay n 1,237 +0.235 t 1.45 h1 -0.062 h2 +0.531
+2026-11-05 | c lower tiers (from 499_tennis_preoff_flb) | Challenger tennis before the off (499_tennis_preoff_flb, item 176) | DONE | nothing passes; 0 of 22; best 1.7-2.2 back n 1,826 +0.174 t 0.81 h1 +0.201 h2 +0.148
+2026-11-05 | a moves (from 499_cricket_shock) | a short-priced cricket runner that jumps, on a real book, rule fixed | TODO (item 177, needs data) | -
+2026-11-05 | c lower tiers (from 499_tennis_preoff_flb) | back a Challenger runner at 1.7-2.2 on unseen months, rule fixed | TODO (item 178, needs data) | -
