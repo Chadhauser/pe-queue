@@ -175,4 +175,10 @@
 2026-11-05 | c structural (from 499_longtail_senior) | lay Under 3.5 in mid-liquidity senior games, unseen games (499_ou35_under_mid, item 150) | DONE | nothing passes; n 887 -0.092 t -0.18
 2026-11-05 | c structural (from 499_longtail_senior) | lay the underdog in thin senior games, unseen games (499_thin_dog_lay_unseen, item 153) | DONE | nothing passes; n 1,654 +0.103 t 0.76 h1 +0.084 h2 +0.123
 2026-11-05 | c structural (from 499_thin_dog_lay_unseen) | lay the long underdog, 5.0+, in thin senior games (499_thin_long_dog, item 154) | DONE | nothing passes; n 539 -0.201 t -1.16 h1 -0.480 h2 +0.090
-2026-11-05 | c structural (from 499_thin_long_dog) | lay the underdog under 5.0 in thin senior games, official-result games, rule fixed | TODO (item 156) | -
+2026-11-05 | c structural (from 499_thin_long_dog) | lay the underdog under 5.0 in thin senior games, official-result games (499_thin_short_dog_official, item 156) | DONE | nothing passes; n 702 +0.042 t 0.15
+2026-11-05 | c structural (bf_hist_result, from 499_longtail_senior) | official-result markets item 144 never read: OU05, OU45, FH15, FH25, HT, DNB, before the off (499_longtail_other_markets, item 157) | DONE | nothing passes; 0 of 130; best S_MID HT Draw lay n 458 +0.819 t 1.31
+2026-11-05 | c structural, early prices v the off (bf_hist_result, bf_hist_other) | pre-match move in the long tail, T-180/60 to entry, follow and fade (499_longtail_move, item 158) | DONE | nothing passes; 0 of 60; best S_DEEP FAV SHORT back n 129 +0.889 t 0.99
+2026-11-05 | c structural (from 499_longtail_other_markets) | lay the half-time draw before the off, unseen games (499_ht_draw_lay_unseen, item 159) | DONE | nothing passes; n 1,941 -0.048 t -0.26
+2026-11-05 | a moves (from 499_longtail_move) | lay a drifted underdog in a thin senior game, unseen games (499_thin_drift_dog_unseen, item 160) | DONE | nothing passes; n 149 -0.461 t -1.07
+2026-11-05 | a moves (from 499_longtail_move) | follow the favourite's pre-match move, senior, unseen games (499_fav_move_follow_unseen, item 161) | DONE | nothing passes; SHORT back n 455 +0.598 t 1.25; DRIFT lay n 373 -0.515 t -1.10
+2026-11-05 | a moves (from 499_fav_move_follow_unseen) | back a favourite that has shortened before the off, older months, rule fixed | TODO (item 162, needs data) | -
