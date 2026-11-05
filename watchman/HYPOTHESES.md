@@ -157,3 +157,5 @@
 2026-11-05 | b published, Trademate-style (bf_hist_other, tennis_matches) | ATP exchange print v de-vigged Pinnacle close (499_tennis_sharp_gap, item 133) | DONE | nothing passes; 0 of 18; best BACK 1.08 ALL n 375 +0.718 t 0.53
 2026-11-05 | a moves (bf_hist_other, from 499_goal_timing) | LATE FAV1 back the draw on Jul-Sep 2026 (499_late_ht_draw_unseen, item 134) | DONE | closed; n 62 -0.209 t -0.08 v EARLY -0.431, weak at this n
 2026-11-05 | a moves (bf_hist_other, from 499_goal_timing) | lay the trailer at a long price after two quick goals, on Jul-Sep 2026 (499_burst_trailer_unseen, item 135) | DONE | closed; ALL n 92 +0.080 t 0.26, won 0.054 v implied 0.054
+2026-11-05 | c structural (bf_hist_other, from 499_ko_cross_market) | BTTS cheap against MO and OU2.5 on the 2026 tape (499_btts_cheap_unseen, item 136) | DONE | too small; back Yes n 25 +1.492 t 0.91, h2 -0.146
+2026-11-05 | c structural (bf_hist_other, from 499_btts_cheap_unseen) | BTTS cheap at kick-off on older months as the loader reaches them, rule fixed | TODO (item 137, needs data) | -
