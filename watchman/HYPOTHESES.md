@@ -115,3 +115,13 @@
 2026-11-05 | a moves (bf_hist_price, bf_hist_other, from 499_ht_double_change) | lay a team one down at HT at a long price (499_ht_trail_long_lay, item 93) | DONE | nothing passes; all >12 n 2,401 +0.018 t 0.40; 30-50 n 359 +0.130 t 2.29, unseen n 39 -0.281
 2026-11-05 | c structural (racing_bsp, from 499_race_shape) | favourite in a 16+ field on races the test has not seen, one line fixed | TODO (item 94, needs data) | -
 2026-11-05 | d untested (af_player_stats, from 499_backup_keeper) | back-up keeper on complete player stats | TODO (item 95, needs data) | -
+2026-11-05 | c structural (af_fixtures, bf_hist_price) | promoted and relegated sides, first 5, first 10, late (499_new_division, item 96) | DONE | nothing passes; 0 of 48; best RELEG_G10 team lay n 368 +0.924 t 1.91; first run void, name changes and play-off rows
+2026-11-05 | d untested (af_events cards, bf_hist_price) | red card in the last game (499_new_division, item 97) | DONE | nothing passes; 0 of 24; best RED team back n 1,724 +0.684 t 1.73
+2026-11-05 | c structural (af_fixtures, bf_hist_price) | stand-alone TV game v the pack, Friday, Monday (499_new_division, item 98) | DONE | nothing passes; 0 of 72; best PACK_TOP5 away back n 694 +2.185 t 2.57
+2026-11-05 | d untested (af_stats xg, bf_hist_price) | xG luck over the last 5 games (499_new_division, item 99) | DONE | nothing passes; 0 of 28; best QUIET Under lay n 672 +0.866 t 2.25
+2026-11-05 | b published, Webb (racing_bsp) | share of matched money v the price at BSP (499_racing_money_share, item 100) | DONE | nothing passes; 0 of 48; R>=2 30+ lay t 18.37 void, no loser, +0.029
+2026-11-05 | c structural (racing_bsp) | thin races, deep races, all-weather, Ireland v UK at BSP (499_racing_money_share, item 101) | DONE | nothing passes; 0 of 72; best THIN <=3 lay n 1,339 +0.475 t 1.80
+2026-11-05 | c structural (fd_matches, bf_hist_other, from 499_new_division) | top-five stand-alone favourite on unseen seasons (499_solo_red_unseen, item 102) | DONE | not supported; Pinnacle n 5,227 -0.062 v PACK -0.619; 2026 n 73 -0.007
+2026-11-05 | d untested (fd_matches, bf_hist_other, from 499_new_division) | red card last game on unseen seasons (499_solo_red_unseen, item 103) | DONE | closed; Pinnacle n 9,218 -0.657 v every team -0.601
+2026-11-05 | c structural (af_fixtures, liq_sample, from 499_solo_red_unseen) | lay the favourite in a top-five pack game, forward, real touch | TODO (item 104, from 1 Jun 2027) | -
+2026-11-05 | c structural (racing_bsp, from 499_racing_money_share) | lay a short price in a thin race, on unseen races | TODO (item 105, needs data) | -
