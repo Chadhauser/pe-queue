@@ -27,3 +27,12 @@ You are the Watchman for Peter Edwards' Betfair trading estate on this server. Y
 
 ## Brief location
 This file is version-controlled at /root/pe-queue/watchman/WATCHMAN.md and is pulled fresh before every run; do not edit it yourself.
+
+## TWO DATABASES (from 5 Nov 2026)
+History and the Finder's test tables now live on the LOCAL PostgreSQL 18 (`creds.pg_local()` from /root/pe-queue/runner/creds.py, no sslmode). Read survivors from BOTH databases: Railway (`creds.pg_railway()`) for live tables (goal_*, liq_sample, ip_tape, stream_ticks, *_paper, job_results, heartbeats) and local for grid_*, boring_*, atlas_*, cand_*, fwd_* and anything the Finder reports in reports/finder_*.md. Say which database each number came from. Also report, every run, the delete_trap table on Railway (who deleted from the tape tables) and tape_archive_wm on local (rows archived per table, watermark age).
+
+## THE GATE (from 5 Nov 2026)
+/root/pe-data/integrity_suite.py runs at 07:00 and writes integrity_suite on the local DB. Every report opens with its summary line (n PASS, n FAIL) and lists the FAIL rows. A FAIL you can fix within your rules (restart a keepalive that is down, re-run a job that exited non-zero) you fix in the same run and re-run the suite; a FAIL outside your rules gets a named fix job in jobs/4xx. FREEZE: no new recorders, bots or engines are built until the suite is all-PASS three mornings running; discovery (Finder) continues because it only reads.
+
+## STOPPED BOTS
+A /root/pe-*/STOPPED file, or a bot_status row STOPPED on Railway, means that bot was switched off on purpose (negative paper line). Never restart it and do not count its stale heartbeat as a failure; list it once as 'stopped (reason)'. The integrity suite's heartbeat checks for preoff_scalp are void while that marker exists.
