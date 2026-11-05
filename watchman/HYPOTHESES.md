@@ -147,3 +147,5 @@
 2026-11-05 | c structural (bf_hist_other, from 499_long_goal_lines) | three or more first-half goals overpriced, on unseen months, two lines fixed | TODO (item 124, needs data) | -
 2026-11-05 | d untested (bf_hist_other Aug-Sep 2026, af_player_stats, af_events, af_stats) | anytime, first and 2+ scorer, hat-trick, player card, corner odds, booking odds, cards O/U, HT/FT, pre-off (499_player_corner_markets, item 74) | DONE | nothing passes; 0 of 274; best TO_SCORE away PRE lay n 921 +0.409 t 2.95
 2026-11-05 | d untested (bf_hist_other, from 499_player_corner_markets) | lay an away player to score on unseen months, rule fixed | TODO (item 125, needs data) | -
+2026-11-05 | d untested (bf_hist_other) | pre-off price shock, cricket toss and tennis, follow or fade, closed before the off (499_preoff_shock, item 126) | DONE | nothing passes; 0 of 84; best Cricket X10 FADE P<1.5 n 76 +0.049 t 0.13; reversion +0.095 to +0.332 v round trip -0.72 to -1.08
+2026-11-05 | c structural (bf_hist_price, af_fixtures) | kick-off hour, weekday, month, unusual slot, MO and OU2.5 at the first print (499_clock_calendar, item 127) | RUNNING | -
