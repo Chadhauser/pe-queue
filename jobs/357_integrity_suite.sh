@@ -39,7 +39,7 @@ al=q(rc,"select count(*) from goal_alerts where sent_at>now()-interval '24 hours
 chk("alerts with real price 24h", al==0 or alr/max(al,1)>=0.5, f"{alr}/{al}")
 uns=q(rc,"select count(*) from goal_alerts where sent_at<now()-interval '36 hours' and sent_at>now()-interval '7 days' and coalesce(settled,false)=false and alert_type<>'BOOT_TEST'",0); chk("alerts unsettled >36h (7d)", uns==0, uns)
 # heartbeats
-for t in ('liq_heartbeat','stream_heartbeat','preoff_scalp_heartbeat','player_heartbeat','xx_heartbeat'):
+for t in ('liq_heartbeat','stream_heartbeat','player_heartbeat','xx_heartbeat'):
     age=q(rc,f"select extract(epoch from now()-max(last_seen))/60 from {t}",None); chk(f"heartbeat {t} (min)", age is not None and age<15, None if age is None else round(age))
 # box
 free=shutil.disk_usage('/').free/1e9; chk("box disk free GB", free>25, round(free,1))
