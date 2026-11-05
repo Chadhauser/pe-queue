@@ -159,3 +159,7 @@
 2026-11-05 | a moves (bf_hist_other, from 499_goal_timing) | lay the trailer at a long price after two quick goals, on Jul-Sep 2026 (499_burst_trailer_unseen, item 135) | DONE | closed; ALL n 92 +0.080 t 0.26, won 0.054 v implied 0.054
 2026-11-05 | c structural (bf_hist_other, from 499_ko_cross_market) | BTTS cheap against MO and OU2.5 on the 2026 tape (499_btts_cheap_unseen, item 136) | DONE | too small; back Yes n 25 +1.492 t 0.91, h2 -0.146
 2026-11-05 | c structural (bf_hist_other, from 499_btts_cheap_unseen) | BTTS cheap at kick-off on older months as the loader reaches them, rule fixed | TODO (item 137, needs data) | -
+2026-11-05 | d untested (bf_hist_other, from 499_player_corner_markets) | lay an away player to score, Jun-Jul 2026, interim (499_away_scorer_unseen, item 125) | TODO, May to come | too small; n 10 +0.948 t 0.44; Aug-Sep now n 1,097 +0.286 t 2.22
+2026-11-05 | c structural (bf_hist_other, goal_timeline, from item 124) | three-plus first-half goals overpriced, Jun-Aug 2026 (499_fh3_older_months, item 138) | DONE | closed; FH25 lay n 775 -0.197 t -1.88; HTS Any Unquoted lay n 568 -0.252 t -1.90
+2026-11-05 | c structural (bf_hist_other, from 499_fh3_older_months) | back three-plus first-half goals in August, older Augusts, rule fixed | TODO (item 139, needs data) | -
+2026-11-05 | d untested (bf_hist_other, from 499_sep_load_times) | re-read the Aug and Sep 2026 leads on the finished load, rule fixed | TODO (item 140) | -
