@@ -198,3 +198,6 @@
 2026-11-05 | c lower tiers (from 499_tennis_preoff_flb) | Challenger tennis before the off (499_tennis_preoff_flb, item 176) | DONE | nothing passes; 0 of 22; best 1.7-2.2 back n 1,826 +0.174 t 0.81 h1 +0.201 h2 +0.148
 2026-11-05 | a moves (from 499_cricket_shock) | a short-priced cricket runner that jumps, on a real book, rule fixed | TODO (item 177, needs data) | -
 2026-11-05 | c lower tiers (from 499_tennis_preoff_flb) | back a Challenger runner at 1.7-2.2 on unseen months, rule fixed | TODO (item 178, needs data) | -
+2026-11-05 | a moves (af_events, bf_hist_price) | first goal by type, penalty or own goal v open play (item 179) | RUNNING | -
+2026-11-05 | c structural (af_fixtures, bf_hist_price) | goals earlier today or last round v Over and BTTS at the first print (item 180) | RUNNING | -
+2026-11-05 | d untested (af_events, bf_hist_price) | yellow cards at half-time as a state (item 181) | RUNNING | -
