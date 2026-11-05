@@ -172,4 +172,5 @@
 2026-11-05 | c structural (from 499_longtail_official) | lay Over 2.5 in youth games on unseen games, rule fixed | TODO (item 147, needs data) | -
 2026-11-05 | c structural (bf_hist_other, goal_timeline, from 499_result_coverage) | lay Over 2.5 before the off, all games, Aug as the test (499_lay_over25_all, item 148) | DONE | nothing passes; Aug n 4,255 -0.457 t -2.64
 2026-11-05 | c structural (bf_hist_other, goal_timeline, from 499_longtail_senior) | first-half Under 0.5 before the off, unseen games (499_fh05_under_unseen, item 149) | DONE | nothing passes; Under back n 3,023 -0.293 t -1.00; Over lay n 3,542 -0.243 t -0.87
-2026-11-05 | c structural (from 499_longtail_senior) | lay Under 3.5 in mid-liquidity senior games, unseen games, rule fixed | TODO (item 150) | -
+2026-11-05 | c structural (from 499_longtail_senior) | lay Under 3.5 in mid-liquidity senior games, unseen games (499_ou35_under_mid, item 150) | DONE | nothing passes; n 887 -0.092 t -0.18
+2026-11-05 | c structural (from 499_longtail_senior) | lay the underdog in thin senior games, unseen games, rule fixed | TODO (item 153) | -
