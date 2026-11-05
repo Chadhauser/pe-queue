@@ -188,3 +188,7 @@
 2026-11-05 | a moves (from 499_to_score_all_oct24) | lay a player to score at 20-200, May-Sep 2026 (499_to_score_long_unseen, item 166) | DONE | nothing passes; n 521 +0.134 t 1.97 tg 1.83
 2026-11-05 | c structural (from 499_oct24_lines) | back Under 2.5 in women's games, unseen (499_women_under_unseen, item 167) | TODO, needs more unseen games | too small; n 135 +1.176 t 0.93 h1 -0.645 h2 +2.970
 2026-11-05 | a moves (from 499_to_score_long_unseen) | lay a player to score at the real touch on player_liq (item 168) | TODO, from 11 Nov | -
+2026-11-05 | b Caan Berry (bf_hist_other) | racing pre-off follow and fade, two-year tape, closed before the off (499_racing_preoff_tape, item 169) | DONE | nothing passes; 0 of 40; best EARLY DRIFT <3 FOLLOW n 331 -0.128 t -1.98 h1 -0.208 h2 -0.048
+2026-11-05 | c early prices v the off (bf_hist_other, racing_bsp) | last print T-5 to T-1 to BSP (499_racing_preoff_tape, item 170) | DONE | nothing passes; 0 of 40; best DRIFT <3 lay n 530 -0.078 t -2.53 h1 -0.084 h2 -0.072
+2026-11-05 | a moves (bf_hist_other, tennis_results_2026) | tennis T2 and T3 on the BASIC tape (499_tennis_fav_trouble, item 171) | DONE | nothing passes; 0 of 12; best T2 lay 1.30-1.50 n 1,980 +0.058 t 0.28 h1 +0.332 h2 -0.216
+2026-11-05 | a moves (from 499_racing_preoff_tape) | lay a drifted 3-6 runner without crossing the spread, on a saved book, rule fixed | TODO (item 172, needs data) | -
