@@ -125,3 +125,10 @@
 2026-11-05 | d untested (fd_matches, bf_hist_other, from 499_new_division) | red card last game on unseen seasons (499_solo_red_unseen, item 103) | DONE | closed; Pinnacle n 9,218 -0.657 v every team -0.601
 2026-11-05 | c structural (af_fixtures, liq_sample, from 499_solo_red_unseen) | lay the favourite in a top-five pack game, forward, real touch | TODO (item 104, from 1 Jun 2027) | -
 2026-11-05 | c structural (racing_bsp, from 499_racing_money_share) | lay a short price in a thin race, on unseen races | TODO (item 105, needs data) | -
+2026-11-05 | b published, d untested (bf_hist_other Sep 2026, goal_timeline) | Over 0.5, CS 0-0 at 0-0 by minute, odd/even current parity (499_ou05_cs00, item 106) | DONE | nothing passes; 0 of 54; best PRE lay Under 0.5 n 2,549 +0.059 t 1.02; T60 back Over 0.5 n 644 -0.203
+2026-11-05 | d untested (bf_hist_other, tennis_results_2026) | previous-match load: long match, 60-minute gap, three sets v two, bye, easy win, champion, finalist (499_tennis_prev_load, item 107) | DONE | nothing passes; 0 of 126; best THREE CH DOG lay n 909 +0.418 t 1.77
+2026-11-05 | c structural (racing_bsp) | pre-play range ppmax/ppmin and ppwap's place in it, at BSP (499_racing_range, item 108) | DONE | nothing passes; 0 of 96; best place 6-12 WHIP15 lay n 1,534 +0.190 t 2.46; first run void
+2026-11-05 | a moves (tennis_matches, from 499_tennis_prev_load) | bye favourite on unseen dates at Pinnacle closes, ATP (499_bye_fav_unseen, item 109) | DONE | not supported; z -0.03, n 1,125 v 1,394
+2026-11-05 | a moves (opp_map, census) | first look at opp_map: best hindsight swings per selection, no signal to test directly | CLOSED | CS back-to-lay +25.95, MO +23.70 are hindsight, not earnings
+2026-11-05 | c structural (racing_bsp, from 499_racing_range) | lay a whipsawed place runner on unseen races, rule fixed | TODO (item 110, needs data) | -
+2026-11-05 | d untested (bf_hist_other, from 499_ou05_cs00 census) | AH and DNB on the Sep 2026 tape, reopening 0f for one month | TODO (item 111, runnable) | -
