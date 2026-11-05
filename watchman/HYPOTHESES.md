@@ -163,3 +163,10 @@
 2026-11-05 | c structural (bf_hist_other, goal_timeline, from item 124) | three-plus first-half goals overpriced, Jun-Aug 2026 (499_fh3_older_months, item 138) | DONE | closed; FH25 lay n 775 -0.197 t -1.88; HTS Any Unquoted lay n 568 -0.252 t -1.90
 2026-11-05 | c structural (bf_hist_other, from 499_fh3_older_months) | back three-plus first-half goals in August, older Augusts, rule fixed | TODO (item 139, needs data) | -
 2026-11-05 | d untested (bf_hist_other, from 499_sep_load_times) | re-read the Aug and Sep 2026 leads on the finished load, rule fixed | TODO (item 140) | -
+2026-11-05 | c structural (bf_hist_result, bf_hist_other) | long tail before the off, women, youth, senior by liquidity, official results (499_longtail_official, item 141) | DONE, PARTIAL | nothing passes; 0 of 52, senior lost to a bug; best YOUTH OU25 Over lay n 114 +2.683 t 1.70
+2026-11-05 | c structural (bf_hist_result, from 499_ko_cross_market) | cross-market gap before the off, whole feed (499_xmarket_official, item 142) | DONE | nothing passes; 0 of 32; best BTTS 0.02 CHEAP back Yes n 66 +1.407 t 1.64
+2026-11-05 | c structural (bf_hist_result, bf_hist_other) | late short prices in the long tail, no score (499_longtail_late, item 143) | DONE | nothing passes; 0 of 180; S_THIN OU25 T95 back n 48 t 6.03, read as unfillable prints
+2026-11-05 | c structural (from 499_longtail_official) | item 141's senior lines, code fixes only | TODO (item 144) | -
+2026-11-05 | a moves (from 499_longtail_late) | back the short side of OU2.5 late in a thin senior game, unseen months, then the touch, rule fixed | TODO (item 145, needs data) | -
+2026-11-05 | c structural (from 499_xmarket_official) | BTTS cheap before the off on unseen games, rule fixed | TODO (item 146, needs data) | -
+2026-11-05 | c structural (from 499_longtail_official) | lay Over 2.5 in youth games on unseen games, rule fixed | TODO (item 147, needs data) | -
