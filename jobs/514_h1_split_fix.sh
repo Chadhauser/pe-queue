@@ -79,11 +79,12 @@ print(f"cells reported {out} | runner-rows {tot_rows} | markets dropped (no clea
 print("NEXT DOOR (pre-registered): same map at in-play minute bands 0-15/15-30/30-45/HT/45-60/60-75/75+ (H1b), then by country (H1c).")
 PYFILE
 python3 -m py_compile fairprice_v0.py || { cp fairprice_v0.py.bak_514 fairprice_v0.py; echo "compile failed, restored"; exit 1; }
+for i in $(seq 1 90); do grep -q '"status": "running"' /root/pe-sports/team/hypotheses.json && pgrep -f fairprice_v0.py >/dev/null || break; sleep 60; done
 python3 - <<'PY'
 import json,psycopg2,sys; sys.path.insert(0,'/root/pe-queue/runner'); import creds
 p='/root/pe-sports/team/hypotheses.json'; r=json.load(open(p))
 for h in r['hypotheses']:
-    if h['id'].startswith('H1 fair price v0') and h['status']!='running': h['status']='proposed'; h.pop('not_before',None); h['note']='re-queued 514 (median split)'
+    if h['id'].startswith('H1 fair price v0'): h['status']='proposed'; h.pop('not_before',None); h['note']='re-queued 514 (median split)'
 json.dump(r,open(p,'w'),indent=1); print([(h['id'][:20],h['status']) for h in r['hypotheses']])
 c=psycopg2.connect(creds.pg_local()).cursor(); c.execute("SET statement_timeout='600s'")
 c.execute("select sport,y,m,status,loaded from bf_hist_months where status='DONE' and sport='Soccer' order by y,m"); r=c.fetchall(); print("Soccer months DONE:",[(y,m) for _,y,m,_,_ in r][:8],"...",[(y,m) for _,y,m,_,_ in r][-6:],"count",len(r))
