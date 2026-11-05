@@ -131,4 +131,6 @@
 2026-11-05 | a moves (tennis_matches, from 499_tennis_prev_load) | bye favourite on unseen dates at Pinnacle closes, ATP (499_bye_fav_unseen, item 109) | DONE | not supported; z -0.03, n 1,125 v 1,394
 2026-11-05 | a moves (opp_map, census) | first look at opp_map: best hindsight swings per selection, no signal to test directly | CLOSED | CS back-to-lay +25.95, MO +23.70 are hindsight, not earnings
 2026-11-05 | c structural (racing_bsp, from 499_racing_range) | lay a whipsawed place runner on unseen races, rule fixed | TODO (item 110, needs data) | -
-2026-11-05 | d untested (bf_hist_other, from 499_ou05_cs00 census) | AH and DNB on the Sep 2026 tape, reopening 0f for one month | TODO (item 111, runnable) | -
+2026-11-05 | d untested (bf_hist_other, from 499_ou05_cs00 census) | DNB on the Sep 2026 tape, reopening 0f for one month (499_dnb_sep_tape, item 111) | DONE | nothing passes; 0 of 28; best PRE DOG lay n 1,245 +0.097 t 0.56; AH blocked, no handicap on the table
+2026-11-05 | d untested (bf_hist_other, from 499_dnb_sep_tape) | Asian Handicap once the loader keeps the line | TODO (item 112, needs data) | -
+2026-11-05 | d untested (bf_hist_other, from 499_ou05_cs00 census) | HALF_TIME, DOUBLE_CHANCE, OU4.5, TEAM goals on the Sep 2026 tape | TODO (item 113, runnable) | -
