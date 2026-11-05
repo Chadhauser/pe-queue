@@ -133,4 +133,4 @@
 2026-11-05 | c structural (racing_bsp, from 499_racing_range) | lay a whipsawed place runner on unseen races, rule fixed | TODO (item 110, needs data) | -
 2026-11-05 | d untested (bf_hist_other, from 499_ou05_cs00 census) | DNB on the Sep 2026 tape, reopening 0f for one month (499_dnb_sep_tape, item 111) | DONE | nothing passes; 0 of 28; best PRE DOG lay n 1,245 +0.097 t 0.56; AH blocked, no handicap on the table
 2026-11-05 | d untested (bf_hist_other, from 499_dnb_sep_tape) | Asian Handicap once the loader keeps the line | TODO (item 112, needs data) | -
-2026-11-05 | d untested (bf_hist_other, from 499_ou05_cs00 census) | HALF_TIME, DOUBLE_CHANCE, OU4.5, TEAM goals on the Sep 2026 tape | TODO (item 113, runnable) | -
+2026-11-05 | d untested (bf_hist_other, from 499_ou05_cs00 census) | HALF_TIME, DOUBLE_CHANCE, OU4.5 on the Sep 2026 tape (499_sep_tape_rest, item 113) | DONE | nothing passes; 0 of 136; best DC T75 HA one apart back n 167 +0.762 t 2.09; TEAM handicaps too thin
