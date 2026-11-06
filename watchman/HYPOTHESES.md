@@ -244,4 +244,6 @@
 2026-11-06 | c structural (bf_hist_other, tennis_results_2026, from 499_old_fav) | back a 33-plus Challenger favourite under 1.5, unseen months, rule fixed | TODO (item 225, needs data) | -
 2026-11-06 | c structural (tennis_matches, from 499_tennis_home) | ATP home runner at Pinnacle closes, unseen dates (499_home_atp_close, item 226) | DONE | not supported; z -1.64 v bar -2; 3-6 band err -0.0542, z -2.30, best of four
 2026-11-06 | c structural (bf_hist_other, from 499_home_atp_close) | lay an ATP home outsider at 3-6, unseen months, rule fixed | TODO (item 227, needs data) | -
-2026-11-06 | c structural (tennis_results_2026, bf_hist_other, from 499_tennis_format) | Challenger runner dropping down from the ATP tour | TODO (item 228, runnable) | -
+2026-11-06 | c structural (tennis_results_2026, bf_hist_other, from 499_tennis_format) | Challenger runner dropping down from the ATP tour (499_ch_atp_drop, item 228) | DONE | nothing passes; 0 of 6; best <1.5 lay n 98 +1.879 t 0.96; z -1.14
+2026-11-06 | c structural (bf_hist_other, from 499_ch_atp_drop) | lay a Challenger favourite under 1.5 dropping from the ATP tour, unseen months, rule fixed | TODO (item 229, needs data) | -
+2026-11-06 | c structural (tennis_results_2026, bf_hist_other, from 499_ch_atp_drop) | ATP runner climbing from the Challenger tour (499_atp_climb, item 230) | RUNNING | -
