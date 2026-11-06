@@ -16,7 +16,7 @@ from lib_cand import step,line,back_settle,lay_settle
 pd.set_option('display.width',240); pd.set_option('display.max_rows',150); pd.set_option('display.max_columns',30)
 T0=time.time(); BUDGET=2100
 RANK={'1':0,'R128':5,'R64':6,'R32':7,'R16':8,'QF':9,'SF':10,'BR':10.5,'F':11,'RR':4,'Quarterfinals':9}
-TEAM=re.compile(r"davis cup|atp cup|united cup|laver cup|billie jean|fed cup|hopman|olympic|finals",re.I)
+TEAM=re.compile(r"davis cup|atp cup|united cup|laver cup|billie jean|bjk|fed cup|hopman|olympic|finals",re.I)
 def fold(s): return re.sub(r"[^a-z]","",unicodedata.normalize('NFKD',str(s)).encode('ascii','ignore').decode().lower())
 def walkover(score): return bool(re.search(r"W/O|WO|WALK",str(score).upper()))
 def retired(score): return bool(re.search(r"RET|ABD|ABN|DEF",str(score).upper()))
@@ -62,7 +62,7 @@ assert status([(D(10),False),(D(0),True),(D(-3),True)],CUR)=='FIT'          # th
 assert label('HURT','FIT')=='BACK_HURT' and label('HURT','NONE')=='BACK_HURT' and label('HURT','HURT') is None and label('FIT','FIT')=='CTRL' and label('FIT','HURT') is None and label('NONE','FIT') is None and label('LATE','FIT') is None
 assert hurt('6-1 3-2 RET') and hurt('6-1 3-2 Ret') and not hurt('6-1 6-2') and not hurt('W/O') and not hurt('6-1 ABD')
 assert band(1.49)=='<1.5' and band(1.5)=='1.5-2' and band(2.0)=='2-3' and band(3.0) is None
-assert TEAM.search('Davis Cup WG2 R1: BAR vs INA') and TEAM.search('WTA Finals') and TEAM.search('Billie Jean King Cup') and not TEAM.search('Wimbledon')
+assert TEAM.search('Davis Cup WG2 R1: BAR vs INA') and TEAM.search('WTA Finals') and TEAM.search('Billie Jean King Cup') and TEAM.search('BJK Cup G2 RR: ISR vs BIH') and TEAM.search('BJK Cup Playoffs: JPN vs UKR') and not TEAM.search('Wimbledon')
 assert entry([100.,1170.,1250.],[2.,3.,4.],1300.)==(3.0,4.0) and entry([1250.],[2.],1300.) is None
 assert abs(value('B',(2.0,1.9),True)-8.722)<1e-9 and value('B',(2.0,1.9),False)==-10.0 and abs(value('L',(2.0,2.2),False)-10/1.22*0.98)<1e-9 and value('L',(2.0,2.2),True)==-10.0 and value('B',(51.0,None),True) is None
 assert walkover('W/O') and retired('6-1 3-2 RET') and not retired('6-1 6-2')
