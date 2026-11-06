@@ -300,3 +300,6 @@
 2026-11-06 | audit (bf_hist_other) | item 276's line for junk prints (499_mo_short_overnight, item 281) | DONE | 3+ prints -0.525 t -8.00
 2026-11-06 | a moves (bf_hist_other, from 280) | the minute after a withdrawal, dated by the removal | TODO (item 282, needs recorder) | -
 2026-11-06 | c structural (bf_hist_other, cricket_matches, from 279) | item 268's other cricket bands on official results | TODO (item 283, from 8 Nov) | -
+2026-11-06 | c structural (bf_hist_other, af_fixtures) | cup-style ties between divisions, and summer friendlies, before the off (499_cup_ties, item 284) | RUNNING | -
+2026-11-06 | d untested (af_fixtures, bf_hist_price) | league table against the price (499_table_v_price, item 285) | RUNNING | -
+2026-11-06 | a moves (bf_hist_other, cricket_matches) | the T20 toss at the price just before the off (499_cricket_toss, item 286) | RUNNING | -
