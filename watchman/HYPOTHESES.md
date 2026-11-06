@@ -238,4 +238,10 @@
 2026-11-06 | c structural (bf_hist_other schedule, racing_bsp) | races 2-5 minutes from another, at BSP (499_race_clash, item 219) | DONE | nothing passes; 0 of 12; best FAV back n 1,330 +0.708 t 1.55 h1 +0.253 h2 +1.163
 2026-11-06 | c structural (tennis_matches, from 499_tennis_format) | younger favourite under 2.0 at Pinnacle closes, ATP, unseen dates (499_young_fav_old, item 220) | DONE | not supported; z 1.81 v bar 2; back -0.136 t -0.88 v control -0.473
 2026-11-06 | c structural (racing_bsp, from 499_race_clash) | back the favourite in a race 2-5 minutes from another, unseen races, rule fixed | TODO (item 221, needs data) | -
-2026-11-06 | c structural (tennis_results_2026, bf_hist_other, from 499_young_fav_old) | older favourite at the last pre-off print, 33 or more, 3+ years older | TODO (item 222, runnable) | -
+2026-11-06 | c structural (tennis_results_2026, bf_hist_other, from 499_young_fav_old) | older favourite at the last pre-off print, 33 or more, 3+ years older (499_old_fav, item 222) | DONE | nothing passes; 0 of 16; best of size 1.5-2 back ALL n 364 +0.180 t 0.41; Challenger err +0.0608, z 2.15
+2026-11-06 | c structural (tennis_results_2026, bf_hist_other) | home player at the last pre-off print (499_tennis_home, item 223) | DONE | nothing passes; 0 of 32; best of size 1.5-2 back CHALLENGER n 366 +0.266 t 0.61; ATP z -1.41
+2026-11-06 | c structural (from 499_old_fav) | Challenger favourite aged 30 to under 33 (499_near_old_ch, item 224) | DONE | not supported; z 0.21; 0 of 4
+2026-11-06 | c structural (bf_hist_other, tennis_results_2026, from 499_old_fav) | back a 33-plus Challenger favourite under 1.5, unseen months, rule fixed | TODO (item 225, needs data) | -
+2026-11-06 | c structural (tennis_matches, from 499_tennis_home) | ATP home runner at Pinnacle closes, unseen dates (499_home_atp_close, item 226) | DONE | not supported; z -1.64 v bar -2; 3-6 band err -0.0542, z -2.30, best of four
+2026-11-06 | c structural (bf_hist_other, from 499_home_atp_close) | lay an ATP home outsider at 3-6, unseen months, rule fixed | TODO (item 227, needs data) | -
+2026-11-06 | c structural (tennis_results_2026, bf_hist_other, from 499_tennis_format) | Challenger runner dropping down from the ATP tour | TODO (item 228, runnable) | -

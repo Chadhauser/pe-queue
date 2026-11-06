@@ -2,6 +2,7 @@
 set -o pipefail
 # 499_home_atp_close (Finder 2026-11-06, queue item 226, Finder's own, source c, from jobs/499_tennis_home.sh, jobs/499_young_fav_old.sh): ATP home runner at Pinnacle closes, on dates outside the tape window. Rule pushed before any odds were read. Read only. The number 499 is reused: 450-499 are all taken.
 # TABLES tennis_matches (Railway, results with Pinnacle closes), tennis_results_2026 (Railway, ioc and tournament name). Join as jobs/499_young_fav_old.sh: tour, both players (folded surname + first initial), tournament start -21 to +2 days from the match; a unique match only.
+# READ THE LAYS WITH CARE: a lay at a Pinnacle close collects Pinnacle's margin, which no exchange fill would (as item 74), so the lay lines flatter; ATP 1.5-2 favourites lay about +0.15 to +0.25 even in years when the error is near zero. Use the error and z, not the lay P&L.
 # TEST, fixed first: HOME won minus de-vigged fair, close under 6.0, sits below the control's (either runner, neither local, under 6.0) by z <= -2. Control holds both runners of a match, so its error is near zero by construction. Back and lay at the close shown, one tick, 2%, £10. Closes are a proxy, so no line here can pass the bar: support only earns a forward test.
 python3 - "$@" <<'PY' 2>&1 | grep --line-buffered -v -E "UserWarning|pd.read_sql"
 import resource; resource.setrlimit(resource.RLIMIT_AS,(1_500_000_000,1_500_000_000))  # this job only

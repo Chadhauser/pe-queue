@@ -31,7 +31,7 @@ def value(side,e,won):
     x=max(e[0],e[1]) if e[1] is not None else e[0]; a=step(x,1)
     return lay_settle(a,won)
 def band(p): return '<1.5' if p<1.5 else '1.5-2' if p<2 else None
-def old(af,ao):
+def near(af,ao):
     """Favourite 30 to under 33 and at least 3 years older than the opponent. Missing age: False."""
     if af is None or ao is None or af!=af or ao!=ao: return False
     return 30<=af<33 and af-ao>=3
@@ -42,7 +42,7 @@ def zdiff(a,b):
     a=np.asarray(a,float); b=np.asarray(b,float)
     return (a.mean()-b.mean())/np.sqrt(a.var(ddof=1)/len(a)+b.var(ddof=1)/len(b))
 # known answers, worked by hand
-assert old(30.,27.) and old(32.99,20.) and not old(33.,20.) and not old(29.99,20.) and not old(30.,27.01) and not old(27.,30.) and not old(None,30.) and not old(31.,float('nan'))
+assert near(30.,27.) and near(32.99,20.) and not near(33.,20.) and not near(29.99,20.) and not near(30.,27.01) and not near(27.,30.) and not near(None,30.) and not near(31.,float('nan'))
 assert band(1.49)=='<1.5' and band(1.5)=='1.5-2' and band(1.99)=='1.5-2' and band(2.0) is None
 assert entry([100.,1170.,1250.],[2.,3.,4.],1300.)==(3.0,4.0) and entry([1250.],[2.],1300.) is None
 assert abs(value('B',(2.0,1.9),True)-8.722)<1e-9 and value('B',(2.0,1.9),False)==-10.0 and abs(value('L',(2.0,2.2),False)-10/1.22*0.98)<1e-9 and value('L',(2.0,2.2),True)==-10.0 and value('B',(51.0,None),True) is None
@@ -97,7 +97,7 @@ for c_ in range(0,len(MID),800):
         if af!=af or ao!=ao or af is None or ao is None: SK['favourite in band, age missing']+=1; continue
         if T!='CHALLENGER': continue
         if af>=33: SK['33 or over, read by item 222, out']+=1; continue
-        st='OLD' if old(af,ao) else 'CTRL'; SK[f'in band {st}']+=1
+        st='NEAR' if near(af,ao) else 'CTRL'; SK[f'in band {st}']+=1
         e=ew if fav_w else el; fair=(1/pf)/(1/pf+1/po)
         for side in 'BL':
             v=value(side,e,fav_w)
@@ -110,9 +110,9 @@ if len(Y):
     wh=pd.to_datetime(Y.day).astype('int64').values; yl=line(Y.v.values,np.where(wh<np.median(wh),1,2))
     print(f"ENGINE CHECK, item 215 YOUNG <2 back, was n 1901 +0.169 t 1.04 h1 +0.178 h2 +0.160; now n {yl['n']} {yl['per10']:+.3f} t {yl['t']:.2f} h1 {yl['h1']:+.3f} h2 {yl['h2']:+.3f}",flush=True)
 R=pd.DataFrame(rows,columns='st band side tour day m ret won px fair fav v'.split())
-if R.empty or not (R.st=='OLD').any(): print("ERROR: no OLD rows, no verdict"); sys.exit(1)
+if R.empty or not (R.st=='NEAR').any(): print("ERROR: no NEAR rows, no verdict"); sys.exit(1)
 assert not R.duplicated(['st','band','side','m']).any(),"more than one bet per match per line"
-R['when']=pd.to_datetime(R.day).astype('int64'); print(f"dates {R.day.min()}..{R.day.max()}; markets {R.m.nunique()}; tours in OLD {R[R.st=='OLD'].tour.value_counts().to_dict()}",flush=True)
+R['when']=pd.to_datetime(R.day).astype('int64'); print(f"dates {R.day.min()}..{R.day.max()}; markets {R.m.nunique()}; tours in NEAR {R[R.st=='NEAR'].tour.value_counts().to_dict()}",flush=True)
 def tab(x,**k):
     md=np.median(x.when.values); hh=np.where(x.when.values<md,1,2); l=line(x.v.values,hh); xr=x[~x.ret].v
     top=x.fav.value_counts(normalize=True).head(3).sum()
@@ -122,15 +122,15 @@ for (st,b,side),x in R.groupby(['st','band','side']):
     for cut,xx in (('CHALLENGER',x),):
         if len(xx): out.append(tab(xx,st=st,band=b,side=side,cut=cut))
 S=pd.DataFrame(out).sort_values('t',ascending=False)
-A=S[S.st=='OLD']; C=S[S.st=='CTRL'].drop(columns='PASS')
-print(f"\n== ITEM 224, NEAR shown as OLD, {len(A)} lines of a possible 4, by t\n",A.round(3).to_string(index=False))
+A=S[S.st=='NEAR']; C=S[S.st=='CTRL'].drop(columns='PASS')
+print(f"\n== ITEM 224, {len(A)} lines of a possible 4, by t\n",A.round(3).to_string(index=False))
 print("\n-- control, other favourites, cannot pass\n",C.round(3).to_string(index=False))
-print("\n== OLD v control, won minus overround-free print, back rows, both bands")
+print("\n== NEAR v control, won minus overround-free print, back rows, both bands")
 for cut in ('CHALLENGER',):
-    x=R[(R.side=='B')&((R.tour==cut)|(cut=='ALL'))]; o=x[x.st=='OLD']; c=x[x.st=='CTRL']
+    x=R[(R.side=='B')&((R.tour==cut)|(cut=='ALL'))]; o=x[x.st=='NEAR']; c=x[x.st=='CTRL']
     if len(o)>1 and len(c)>1:
-        print(f"  {cut}: OLD n {len(o)} err {(o.won-o.fair).mean():+.4f} v CTRL n {len(c)} err {(c.won-c.fair).mean():+.4f}; z {zdiff(o.won-o.fair,c.won-c.fair):.2f}")
-print("\ntop OLD favourites, back rows:",R[(R.st=='OLD')&(R.side=='B')].fav.value_counts().head(8).to_dict())
+        print(f"  {cut}: NEAR n {len(o)} err {(o.won-o.fair).mean():+.4f} v CTRL n {len(c)} err {(c.won-c.fair).mean():+.4f}; z {zdiff(o.won-o.fair,c.won-c.fair):.2f}")
+print("\ntop NEAR favourites, back rows:",R[(R.st=='NEAR')&(R.side=='B')].fav.value_counts().head(8).to_dict())
 W=A[A.PASS]; print(f"\n== SURVIVORS: {len(W)} of {len(A)}\n",W.round(3).to_string(index=False) if len(W) else "none")
 print(f"total {time.time()-T0:.0f}s")
 PY
