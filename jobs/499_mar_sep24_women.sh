@@ -4,7 +4,7 @@ set -o pipefail
 SRC=/root/pe-queue/jobs/499_oct24_lines.sh
 W0="T_LO,T_HI=pd.Timestamp('2024-10-01',tz='UTC').timestamp()"
 C0="(3_500_000_000,3_500_000_000)"
-A0='y=J.reset_index(); y=y[(y.item==163)&(y.g=='"'"'YOUTH'"'"')'
+A0='out=[]'
 for s in "$W0" "$C0" "$A0"; do grep -qF "$s" "$SRC" || { echo "ERROR: line not found in source job: $s"; exit 1; }; done
 python3 - "$SRC" "$W0" "$C0" "$A0" <<'PY' | bash
 import sys
@@ -18,5 +18,6 @@ t=t.replace(k0,k0+"; MK=MK[[isinstance(group(e_),str) for e_ in MK.ev]]; print('
 add=("_o=pd.Timestamp('2024-10-01',tz='UTC').timestamp(); _j=pd.Timestamp('2024-07-01',tz='UTC').timestamp(); _x=R[(R.item==163)&(R.w=='T')&(R.g=='WOMEN')&(R.nm=='OU25 Under')&(R.side=='B')&(R.off<_o)]\n"
      "print('\\n== item 258, the one scored line: WOMEN OU25 Under back, Mar-Sep 2024'); print(pd.DataFrame([tab(_x)]).round(3).to_string(index=False) if len(_x) else 'n 0')\n"
      "print('\\n== of which Mar-Jun 2024, new months'); print(pd.DataFrame([tab(_x[_x.off<_j])]).round(3).to_string(index=False) if len(_x[_x.off<_j]) else 'n 0')\n")
+# REPAIR 2026-11-06 (queue item 258): the scored print moved to straight after R and tab() exist, before the per-item loop whose spearmanr crashes on women's and youth games alone. Nothing else changed, and a crash after the print does not lose the result.
 print(t.replace(a0,add+a0))
 PY

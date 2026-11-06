@@ -281,3 +281,12 @@
 2026-11-06 | c structural (bf_hist_other, bf_hist_result) | DNB and Double Chance v the price MO implies (499_derivative_gap, item 263) | DONE | nothing passes; 0 of 8; DNB G2 CHEAP back n 179 +2.078 t 2.66
 2026-11-06 | a moves (liq_sample, from 499_derivative_gap) | item 263's DNB gap at the real touch (499_dnb_touch, item 264) | DONE | pilot; 0 of 130 at the touch; median spread 4.51 points
 2026-11-06 | c structural (bf_hist_other, from 499_derivative_gap, 499_dnb_touch) | DNB v MO as one resting line, unseen months, rule fixed | TODO (item 265, needs data) | -
+2026-11-06 | queue re-read (bf_hist_other, bf_hist_result) | rule 167 on Mar-Sep 2024 (499_mar_sep24_women, item 258) | DONE, closes 167 | nothing passes; n 612 -0.742 t -1.58
+2026-11-06 | d census (bf_hist_other, goal_timeline) | team handicap, MO and BTTS, MO and OU2.5, Win to Nil, Odd or Even, pre-off, Sep 2026 (499_exotic_unread, item 266) | DONE | nothing passes; 0 of 72; Odd back n 147 +1.242 t 1.54
+2026-11-06 | c structural (bf_hist_other, from 263) | exact identities, handicap 1 and combination markets v MO, Sep 2026 (499_exotic_identity, item 267) | DONE | nothing passes; 0 of 10; handicap G2 DEAR lay n 30 +3.280 t 2.45
+2026-11-06 | d census (bf_hist_other) | cricket before the off to an inferred result, by band (499_cricket_preoff, item 268) | DONE | nothing passes; 0 of 24; 2R 6-20 lay n 547 +0.362 t 2.88
+2026-11-06 | c structural (bf_hist_other, from 258's context) | back Under 1.5 in women's games, unseen, rule fixed (499_women_ou15_unseen, item 269) | TODO, needs more unseen games | n 104 +1.393 t 0.62; senior control -0.730
+2026-11-06 | a moves (liq_sample) | item 269 at the real touch (499_women_ou15_touch, item 270) | DONE | pilot; 1 women's game, no read
+2026-11-06 | a moves (bf_hist_other, ip_tape, from 268) | lay the 2-runner cricket outsider at 3-20, one bet per game, stressed (499_cricket_outsider, 499_cricket_touch, item 271) | DONE | not a pass, the months chose it; n 2,147 +0.402 t 3.58; 5 ticks +0.191 t 1.74
+2026-11-06 | a moves (bf_hist_other, from 271) | the cricket outsider lay, unseen months, rule fixed | TODO (item 272, needs data) | -
+2026-11-06 | c structural (bf_hist_other, from 267) | handicap 1 identity, unseen months, rule fixed | TODO (item 273, needs data) | -
