@@ -247,4 +247,5 @@
 2026-11-06 | c structural (tennis_results_2026, bf_hist_other, from 499_tennis_format) | Challenger runner dropping down from the ATP tour (499_ch_atp_drop, item 228) | DONE | nothing passes; 0 of 6; best <1.5 lay n 98 +1.879 t 0.96; z -1.14
 2026-11-06 | c structural (bf_hist_other, from 499_ch_atp_drop) | lay a Challenger favourite under 1.5 dropping from the ATP tour, unseen months, rule fixed | TODO (item 229, needs data) | -
 2026-11-06 | c structural (tennis_results_2026, bf_hist_other, from 499_ch_atp_drop) | ATP runner climbing from the Challenger tour (499_atp_climb, item 230) | DONE | nothing passes; 0 of 6; best of size 2-3 back n 94 +0.650 t 0.52; z 1.12
-2026-11-06 | c structural (tennis_matches, from 499_atp_climb) | ATP runner climbing from the Challenger tour at Pinnacle closes, unseen dates (499_atp_climb_close, item 231) | RUNNING | -
+2026-11-06 | c structural (tennis_matches, from 499_atp_climb) | ATP runner climbing from the Challenger tour at Pinnacle closes, unseen dates (499_atp_climb_close, item 231) | DONE | not supported; z -0.75 v bar 2; bands disagree, 1.5-2 z 1.71, 2-3 z -1.89
+2026-11-06 | d untested (tennis_results_2026, bf_hist_other) | tennis runner back after retiring hurt (499_return_from_ret, item 232) | RUNNING | -
