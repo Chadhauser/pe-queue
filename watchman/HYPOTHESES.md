@@ -306,6 +306,6 @@
 2026-11-06 | c structural (bf_hist_other, af_fixtures, from 284) | a side on the tables away at a side below them (499_cup_minnow, item 287) | DONE | nothing passes; 0 of 32; KNOWN_AWAY KNOWN back n 67 +0.703 t 0.83
 2026-11-06 | d untested (bf_hist_other, bf_hist_result) | HT/FT by favourite and outsider role, every month (499_htft_roles, item 288) | DONE | nothing passes; 0 of 26; DO lay n 4,298 +0.066 t 1.44
 2026-11-06 | d untested (bf_hist_other) | the draw in three-runner cricket, pilot (499_cricket_draw, item 289) | DONE | pilot, 100 games, no lean
-2026-11-06 | c structural (bf_hist_other, bf_hist_result) | national teams before the off, and the finals (499_national_teams, item 290) | RUNNING | -
+2026-11-06 | c structural (bf_hist_other, bf_hist_result) | national teams before the off, and the finals (499_national_teams, item 290) | BLOCKED | about 113 markets, no official results, needs item 152
 2026-11-06 | audit (af_price_map) | is the price map pointing at the right game? (item 291) | DONE | 111 of 9,647 events name a youth, women's or reserve game but point at a senior fixture
 2026-11-06 | c structural (bf_hist_other, from 284, 287) | back the bigger club away in a cup, unseen months, rule fixed | TODO (item 292, needs data) | -
