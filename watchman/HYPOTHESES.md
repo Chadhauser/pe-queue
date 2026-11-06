@@ -290,3 +290,13 @@
 2026-11-06 | a moves (bf_hist_other, ip_tape, from 268) | lay the 2-runner cricket outsider at 3-20, one bet per game, stressed (499_cricket_outsider, 499_cricket_touch, item 271) | DONE | not a pass, the months chose it; n 2,147 +0.402 t 3.58; 5 ticks +0.191 t 1.74
 2026-11-06 | a moves (bf_hist_other, from 271) | the cricket outsider lay, unseen months, rule fixed | TODO (item 272, needs data) | -
 2026-11-06 | c structural (bf_hist_other, from 267) | handicap 1 identity, unseen months, rule fixed | TODO (item 273, needs data) | -
+2026-11-06 | c structural (bf_hist_other, bf_hist_result) | reserve sides, II, B, Reserves, Jong, before the off (499_reserve_sides, item 274) | DONE | nothing passes; 0 of 58; AWAY BTTS Yes back n 376 +0.778 t 1.81
+2026-11-06 | d census (bf_hist_other) | tennis doubles before the off, by band, inferred result (499_tennis_doubles, item 275) | DONE | nothing passes; listed lines are a scoring artefact, item 278
+2026-11-06 | c structural (bf_hist_other) | overnight print to T-5, racing and soccer (499_open_vs_off, item 276) | DONE | nothing passes; MO <1.5 lay +0.997 t 5.94 is junk prints, item 281
+2026-11-06 | a moves (bf_hist_other) | favourite after a withdrawal (499_nonrunner_reaction, item 277) | DONE | nothing passes; +0.263 t 3.78 is look-ahead, item 280
+2026-11-06 | audit (bf_hist_other, tennis_results_2026) | which scoring of an inferred result is honest (499_doubles_truth, item 278) | DONE | last-print odds -0.100 v official -0.122; resolved only +0.181; doubles +0.008 t 0.07
+2026-11-06 | audit (bf_hist_other, cricket_matches) | item 271 on official results (499_cricket_truth, item 279) | DONE | 490 official +0.452 t 2.16; all games at last-print odds +0.247 t 2.36; lead, not cleared
+2026-11-06 | audit (bf_hist_other) | item 277 for look-ahead (499_nonrunner_audit, item 280) | DONE | single + re-priced n 856 -0.395 t -6.08
+2026-11-06 | audit (bf_hist_other) | item 276's line for junk prints (499_mo_short_overnight, item 281) | DONE | 3+ prints -0.525 t -8.00
+2026-11-06 | a moves (bf_hist_other, from 280) | the minute after a withdrawal, dated by the removal | TODO (item 282, needs recorder) | -
+2026-11-06 | c structural (bf_hist_other, cricket_matches, from 279) | item 268's other cricket bands on official results | TODO (item 283, from 8 Nov) | -
