@@ -320,3 +320,18 @@
 2026-11-06 | a moves (liq_sample) | fade the jump, unseen games at the touch (499_fade_jump_touch, item 301) | DONE | nothing passes; MO n 108 -1.946, OU2.5 n 105 -1.475; follow control +1.2
 2026-11-06 | a moves (liq_sample, from 301) | follow the first-minutes move at the touch, games after 6 Nov, rule fixed | TODO (item 302, re-check 25 Nov) | -
 2026-11-06 | b methods (bf_hist_other, from 295) | lay a favourite with drifting prints, unseen months, rule fixed | TODO (item 303, needs data) | -
+2026-11-06 | queue re-read (bf_hist_other, bf_hist_result) | rule 146, Jan-Feb 2024 reach the n (499_jan_feb24_rules, item 146) | DONE, closed | nothing passes; n 390 -0.742 t -1.85
+2026-11-06 | d (tennis_results_2026, bf_hist_other) | longer match yesterday, more minutes this tournament; repeats item 107 (499_tennis_load, items 304, 305) | DONE | nothing passes; 0 of 48
+2026-11-06 | c (tennis_results_2026, bf_hist_other) | after a title, surface switch, best of five; repeat items 107, 211, 215 (499_tennis_load, items 306-308) | DONE | nothing passes; 0 of 60
+2026-11-06 | d (bf_hist_other, bf_hist_result) | rest from the tape's own schedule, repeats items 77, 78 by a new source (499_rest_gap_tape, item 309) | DONE | nothing passes; 0 of 10; BOTH OVER lay n 1,080 +0.482 t 1.41
+2026-11-06 | d (bf_hist_other, bf_hist_result) | reversed fixture 3-21 days after a win (499_rest_gap_tape, item 310) | DONE, closed by 318 | nothing passes; LOSER back n 175 +2.960 t 1.93
+2026-11-06 | c (bf_hist_other, bf_hist_result) | derby by shared name word (499_rest_gap_tape, item 311) | DONE, closed | too small; DERBY DRAW back n 108 +0.109
+2026-11-06 | c (tennis_matches) | HEAVY, TIRED, SWITCH at Pinnacle closes (499_tennis_load_close, item 312) | DONE | none supported; z -0.51, -0.41, 0.33
+2026-11-06 | d (tennis_results_2026, bf_hist_other) | left-hander, worse-ranked favourite, repeat item 215 (499_tennis_style, items 313, 314) | DONE | nothing passes; 0 of 40
+2026-11-06 | a (tennis_results_2026, bf_hist_other) | won the last match from a set down (499_tennis_style, item 315) | DONE, closed | nothing passes; 0 of 24
+2026-11-06 | c (tennis_matches) | left-hander 1.5-2 at Pinnacle closes (499_tennis_left_close, item 316) | DONE | not supported; n 496 z -0.63
+2026-11-06 | a (fd_matches) | rematch loser at Pinnacle closes (499_rematch_close, item 318) | DONE | not supported; n 267 z -1.37
+2026-11-06 | a (fd_matches) | both sides on short rest, Over at Pinnacle odds (499_both_tired_close, item 319) | DONE | not supported; n 4,473 z 0.87
+2026-11-06 | c (tennis_matches) | first match after a title under 1.5 at closes, repeat of 107's idea (499_title_close, item 320) | DONE | not supported; n 127 z 1.10
+2026-11-06 | d (tennis_results_2026, bf_hist_other) | tennis head-to-head, two straight wins, priced over 2.0 | TODO (item 321) | -
+2026-11-06 | c (bf_hist_other) | tennis by scheduled UTC hour | TODO (item 322) | -
