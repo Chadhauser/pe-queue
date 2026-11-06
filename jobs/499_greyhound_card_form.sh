@@ -214,19 +214,23 @@ for k,fl in ST.items():
         x=S[(S.bd==b)&S.err.notna()]; f=fl.reindex(x.index); o=x[f]; c=x[~f]
         if len(o)>1 and len(c)>1: print(f"  {k} {b}: n {len(o)} err {o.err.mean():+.4f} v rest n {len(c)} {c.err.mean():+.4f}; z {zdiff(o.err,c.err):.2f}")
 # item 235: choose on dates up to the median, trade after it
-E=R[(R.p<12)&R.err.notna()&R.trainer.notna()].copy(); med=np.median(E.when.values); A=E[E.when<=med]; Bb=E[E.when>med]
-g1=A.groupby('trainer').err.agg(['mean','size']); g1=g1[g1['size']>=100].sort_values('mean')
-print(f"\n== ITEM 235: median {pd.Timestamp(med,tz='UTC'):%Y-%m-%d}; trainers with 100+ runners before it {len(g1)}",flush=True)
-HOT=list(g1.index[-10:]); COLD=list(g1.index[:10])
-print(f"  HOT mean err first half {g1.loc[HOT,'mean'].mean():+.4f}, COLD {g1.loc[COLD,'mean'].mean():+.4f}; names are not printed in the report, only here for the log: HOT {HOT}; COLD {COLD}")
-g2=Bb.groupby('trainer').err.agg(['mean','size']); j=g1.join(g2,rsuffix='2',how='inner'); j=j[j.size2>=30]
-print(f"  persistence: rank corr of trainer err, first half v second, {j['mean'].corr(j['mean2'],method='spearman'):.3f} on {len(j)} trainers; second-half err HOT {Bb[Bb.trainer.isin(HOT)].err.mean():+.4f} COLD {Bb[Bb.trainer.isin(COLD)].err.mean():+.4f} all {Bb.err.mean():+.4f}")
-o2=[]
-for nm,tt,side in (('HOT',HOT,'B'),('COLD',COLD,'L'),('HOT',HOT,'L'),('COLD',COLD,'B')):
-    x=Bb[Bb.trainer.isin(tt)].assign(v=lambda d:d[side])
-    if len(x): o2.append(mk(x,group=nm,side=side,scored=(nm,side) in (('HOT','B'),('COLD','L'))))
-Z=pd.DataFrame(o2); Z.loc[~Z.scored,'PASS']=False; print(Z.round(3).to_string(index=False))
-Wn=T[T.PASS]; Wz=Z[Z.PASS]
-print(f"\n== SURVIVORS: {len(Wn)} of {len(T)} (233, 234), {len(Wz)} of 2 (235)\n",Wn.round(3).to_string(index=False) if len(Wn) else "none",Wz.round(3).to_string(index=False) if len(Wz) else "")
+# item 238, the next door, fixed before any trainer's price was read: same split and bar, err = won minus 1/print, so a race need not have every runner priced.
+Wz=[]
+for item,E in ((235,R[(R.p<12)&R.err.notna()&R.trainer.notna()].copy()),(238,R[(R.p<12)&R.trainer.notna()].assign(err=lambda d:d.won.astype(float)-1/d.p))):
+    med=np.median(E.when.values); A=E[E.when<=med]; Bb=E[E.when>med]
+    g1=A.groupby('trainer').err.agg(['mean','size']); g1=g1[g1['size']>=100].sort_values('mean')
+    print(f"\n== ITEM {item}: split at {A.mt.max():%Y-%m-%d}; runners {len(A)} + {len(Bb)}; trainers with 100+ runners before it {len(g1)}",flush=True)
+    if len(g1)<20: print(f"  fewer than 20 trainers, so top 10 and bottom 10 cannot be told apart: no lines scored"); continue
+    HOT=list(g1.index[-10:]); COLD=list(g1.index[:10])
+    print(f"  HOT mean err first half {g1.loc[HOT,'mean'].mean():+.4f}, COLD {g1.loc[COLD,'mean'].mean():+.4f}; HOT {HOT}; COLD {COLD}")
+    g2=Bb.groupby('trainer').err.agg(['mean','size']); j=g1.join(g2,rsuffix='2',how='inner'); j=j[j.size2>=30]
+    print(f"  persistence: rank corr of trainer err, first half v second, {j['mean'].corr(j['mean2'],method='spearman'):.3f} on {len(j)} trainers; second-half err HOT {Bb[Bb.trainer.isin(HOT)].err.mean():+.4f} COLD {Bb[Bb.trainer.isin(COLD)].err.mean():+.4f} all {Bb.err.mean():+.4f}")
+    o2=[]
+    for nm,tt,side in (('HOT',HOT,'B'),('COLD',COLD,'L'),('HOT',HOT,'L'),('COLD',COLD,'B')):
+        x=Bb[Bb.trainer.isin(tt)].assign(v=lambda d:d[side])
+        if len(x): o2.append(mk(x,group=nm,side=side,scored=(nm,side) in (('HOT','B'),('COLD','L'))))
+    Z=pd.DataFrame(o2); Z.loc[~Z.scored,'PASS']=False; print(Z.round(3).to_string(index=False)); Wz.append(Z[Z.PASS])
+Wn=T[T.PASS]; Wz=pd.concat(Wz) if Wz else pd.DataFrame()
+print(f"\n== SURVIVORS: {len(Wn)} of {len(T)} (233, 234), {len(Wz)} (235, 238)\n",Wn.round(3).to_string(index=False) if len(Wn) else "none",Wz.round(3).to_string(index=False) if len(Wz) else "")
 print(f"total {time.time()-T0:.0f}s")
 PY
