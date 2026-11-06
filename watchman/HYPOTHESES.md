@@ -309,3 +309,14 @@
 2026-11-06 | c structural (bf_hist_other, bf_hist_result) | national teams before the off, and the finals (499_national_teams, item 290) | BLOCKED | about 113 markets, no official results, needs item 152
 2026-11-06 | audit (af_price_map) | is the price map pointing at the right game? (item 291) | DONE | 111 of 9,647 events name a youth, women's or reserve game but point at a senior fixture
 2026-11-06 | c structural (bf_hist_other, from 284, 287) | back the bigger club away in a cup, unseen months, rule fixed | TODO (item 292, needs data) | -
+2026-11-06 | c structural (bf_hist_other, bf_hist_result) | same bet in two markets, pre-off, FH05 v HT 0-0 and six more (499_identity_exact, item 293) | DONE | nothing passes; 0 of 36; FH05 Under cheap back n 275 +2.140 t 2.00
+2026-11-06 | a moves (bf_hist_other, bf_hist_result) | the jump between last pre-off and first in-play print (499_flip_flow, item 294) | DONE | nothing passes; 0 of 60; DRAW UP 2-4 back n 292 +1.586 t 1.40
+2026-11-06 | b methods (bf_hist_other, bf_hist_result) | signed prints before the off, football, to result (499_flip_flow, item 295) | DONE | nothing passes; 0 of 32; FAV SELL ALL lay n 791 +0.462 t 1.33
+2026-11-06 | a moves (bf_hist_other) | in and out across half-time (499_ht_break, item 296) | DONE | nothing passes; 0 of 54; nearly all negative, moves under 1 point
+2026-11-06 | c structural (bf_hist_other, racing_bsp) | a race not off at T+3, at BSP (499_late_off, item 297) | DONE | nothing passes; 0 of 24; LATE3 FAV lay n 758 +0.760 t 2.28
+2026-11-06 | b methods (bf_hist_other) | signed prints closed before the off, four sports (499_flow_closed, item 298) | DONE | nothing passes; 0 of 16, every line negative
+2026-11-06 | c structural (bf_hist_other, racing_bsp) | item 297 on unseen races, real print, inferred result (499_late_off_unseen, item 299) | DONE | closed; n 1,447 -0.053 t -0.26
+2026-11-06 | a moves (liq_sample) | item 293's pairs at the real touch (499_identity_touch, item 300) | DONE | pilot; no game of 239 and 232 locks a profit
+2026-11-06 | a moves (liq_sample) | fade the jump, unseen games at the touch (499_fade_jump_touch, item 301) | DONE | nothing passes; MO n 108 -1.946, OU2.5 n 105 -1.475; follow control +1.2
+2026-11-06 | a moves (liq_sample, from 301) | follow the first-minutes move at the touch, games after 6 Nov, rule fixed | TODO (item 302, re-check 25 Nov) | -
+2026-11-06 | b methods (bf_hist_other, from 295) | lay a favourite with drifting prints, unseen months, rule fixed | TODO (item 303, needs data) | -
