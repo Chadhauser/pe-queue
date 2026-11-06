@@ -300,6 +300,12 @@
 2026-11-06 | audit (bf_hist_other) | item 276's line for junk prints (499_mo_short_overnight, item 281) | DONE | 3+ prints -0.525 t -8.00
 2026-11-06 | a moves (bf_hist_other, from 280) | the minute after a withdrawal, dated by the removal | TODO (item 282, needs recorder) | -
 2026-11-06 | c structural (bf_hist_other, cricket_matches, from 279) | item 268's other cricket bands on official results | TODO (item 283, from 8 Nov) | -
-2026-11-06 | c structural (bf_hist_other, af_fixtures) | cup-style ties between divisions, and summer friendlies, before the off (499_cup_ties, item 284) | RUNNING | -
-2026-11-06 | d untested (af_fixtures, bf_hist_price) | league table against the price (499_table_v_price, item 285) | RUNNING | -
-2026-11-06 | a moves (bf_hist_other, cricket_matches) | the T20 toss at the price just before the off (499_cricket_toss, item 286) | RUNNING | -
+2026-11-06 | c structural (bf_hist_other, af_fixtures) | cup-style ties between divisions, and summer friendlies, before the off (499_cup_ties, item 284) | DONE | nothing passes; 0 of 52; DIVS lower at home HIGHER back n 60 +2.440 t 1.95
+2026-11-06 | d untested (af_fixtures, bf_hist_price) | league table against the price (499_table_v_price, item 285) | DONE | nothing passes; 0 of 20; DIS_A gap8+ LOWER back n 348 +0.633 t 0.99
+2026-11-06 | a moves (bf_hist_other, cricket_matches) | the T20 toss at the price just before the off (499_cricket_toss, item 286) | DONE | nothing passes; 0 of 10; TOSS winner back n 867 -0.379 t -1.00, won 0.544 v 0.515
+2026-11-06 | c structural (bf_hist_other, af_fixtures, from 284) | a side on the tables away at a side below them (499_cup_minnow, item 287) | DONE | nothing passes; 0 of 32; KNOWN_AWAY KNOWN back n 67 +0.703 t 0.83
+2026-11-06 | d untested (bf_hist_other, bf_hist_result) | HT/FT by favourite and outsider role, every month (499_htft_roles, item 288) | DONE | nothing passes; 0 of 26; DO lay n 4,298 +0.066 t 1.44
+2026-11-06 | d untested (bf_hist_other) | the draw in three-runner cricket, pilot (499_cricket_draw, item 289) | DONE | pilot, 100 games, no lean
+2026-11-06 | c structural (bf_hist_other, bf_hist_result) | national teams before the off, and the finals (499_national_teams, item 290) | RUNNING | -
+2026-11-06 | audit (af_price_map) | is the price map pointing at the right game? (item 291) | DONE | 111 of 9,647 events name a youth, women's or reserve game but point at a senior fixture
+2026-11-06 | c structural (bf_hist_other, from 284, 287) | back the bigger club away in a cup, unseen months, rule fixed | TODO (item 292, needs data) | -
