@@ -340,4 +340,5 @@
 2026-11-06 | a (coach_path) | MO runner moving with no goal, real touch (499_coach_nogoal, item 325) | DONE | nothing passes; 0 of 8; next-row exits all negative
 2026-11-06 | d (tennis_results_2026, bf_hist_other) | won the last match double-faulting heavily (499_tennis_df_last, item 326) | DONE | nothing passes; 0 of 24; 1.5-2 lay CHALLENGER n 72 +2.446 t 1.73
 2026-11-06 | d (tennis_results_2026, bf_hist_other) | item 323's Challenger lay, unseen months, rule fixed | TODO (item 327, needs data) | -
-2026-11-06 | a (coach_path) | Over line shortening with no goal, real touch, rule fixed | TODO (item 328) | -
+2026-11-06 | a (coach_path) | Over line shortening with no goal, real touch (499_coach_over_nogoal, item 328) | DONE | nothing passes; 0 of 12; OU35 lay n 103 -0.459 t -1.42; first read t 3.63 was drop bias
+2026-11-06 | c (xx_tape, liq_sample) | Betfair against Smarkets and Matchbook, does the other book lead | TODO (item 329) | -
