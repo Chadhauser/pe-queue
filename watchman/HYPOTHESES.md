@@ -263,3 +263,12 @@
 2026-11-06 | d census (bf_hist_result, bf_hist_other) | official greyhound results by re-reading 82,593 unresulted WIN markets, Sep 2024 to Apr 2026 | TODO (item 245, needs the loader owner) | -
 2026-11-06 | c structural (from 499_greyhound_kennel_slot) | lay a morning greyhound at 3-6 and a first-race one at 6-12, unseen races, rule fixed | TODO (item 246, needs data) | -
 2026-11-06 | a moves (bf_hist_other, from 499_greyhound_kennel_slot) | morning 3-6 lay, back before the off, no result needed, 20 months (499_greyhound_am_green, item 247) | DONE | nothing passes; 0 of 2; AM 3-6 n 21,226 +0.059 t 11.63 h1 +0.008 h2 +0.111, rest +0.041, z move 3.31; fails on size, spread unknown
+2026-11-06 | d untested (af_player_stats, bf_hist_price) | rotation, men with 60+ last time and 0 today, first in-play print (499_rotation_scorer, item 248) | DONE | nothing passes; best R2_3 DOG TEAM lay n 626 +0.522 t 2.67
+2026-11-06 | a moves (af_player_stats, bf_hist_price) | top scorer out, first in-play print (499_rotation_scorer, item 249) | DONE | nothing passes; S_OUT ALL OVER back n 122 +1.732 t 2.10
+2026-11-06 | a moves (af_player_stats, bf_hist_price) | top scorer back after a missed game (499_rotation_scorer, item 250) | DONE | too small; S_BACK ALL n 54
+2026-11-06 | c structural (bf_hist_other, af_player_stats) | recent shots and goals v TO_SCORE price, no fit (499_scorer_form, item 251) | DONE | PASS on prints, upper bound; DEAR 10-200 lay n 854 +0.269 t 4.28 h1 +0.234 h2 +0.310; up-prints +0.174 t 2.00; NOT YET
+2026-11-06 | a moves (bf_hist_other, from 499_greyhound_am_green) | item 247's drift, taker's prints only (499_greyhound_bounce, item 252) | DONE | nothing passes; AM 3-6 -0.426, -0.317 no extra tick; bounce
+2026-11-06 | a moves (bf_hist_other, from 499_rotation_scorer) | 248 and 249's best lines, unseen games (499_absence_unseen, item 253) | DONE | nothing passes; R2_3 DOG TEAM lay n 97 -0.121; S_OUT n 5, 4
+2026-11-06 | c structural (bf_hist_other, from 499_scorer_form) | item 251's model on first scorer and 2+ (499_scorer_form, item 254) | DONE | nothing passes; FGS DEAR 10-200 lay n 1,518 +0.107 t 2.39; 2+ n 175 -0.074
+2026-11-06 | c structural (player_liq, from 499_scorer_form) | item 251 at the real touch, once the empty recorder runs | TODO (item 255, needs the strategy chat) | -
+2026-11-06 | c structural (bf_hist_other, from 499_scorer_form, 499_absence_unseen) | item 251 and S_OUT on Jan to Apr 2026, unseen, rule fixed | TODO (item 256, needs data) | -
