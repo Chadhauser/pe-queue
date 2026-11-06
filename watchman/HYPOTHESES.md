@@ -272,3 +272,12 @@
 2026-11-06 | c structural (bf_hist_other, from 499_scorer_form) | item 251's model on first scorer and 2+ (499_scorer_form, item 254) | DONE | nothing passes; FGS DEAR 10-200 lay n 1,518 +0.107 t 2.39; 2+ n 175 -0.074
 2026-11-06 | c structural (player_liq, from 499_scorer_form) | item 251 at the real touch, once the empty recorder runs | TODO (item 255, needs the strategy chat) | -
 2026-11-06 | c structural (bf_hist_other, from 499_scorer_form, 499_absence_unseen) | item 251 and S_OUT on Jan to Apr 2026, unseen, rule fixed | TODO (item 256, needs data) | -
+2026-11-06 | queue re-read (bf_hist_other, bf_hist_result) | rules 145, 146 on Mar-Jun 2024, months now loaded (499_mar_jun24_rules, item 257) | DONE | nothing passes; 145 n 482 -0.490; 146 n 282 -0.413
+2026-11-06 | queue re-read (bf_hist_other, bf_hist_result) | rule 167 on Mar-Sep 2024 (499_mar_sep24_women, item 258) | TODO (item 258, job failed twice) | -
+2026-11-06 | c structural (bf_hist_other, from 499_scorer_form) | plain TO_SCORE lay tilt on Mar-Jun 2024, no model (499_to_score_mar_jun24, item 259) | DONE | nothing passes; 10-200 n 2,016 +0.081 t 1.67; up-prints about nil
+2026-11-06 | c structural (bf_hist_other, bf_hist_result) | prices at a tick-size change, 2, 3, 4, 6, 10 (499_ladder_slot, item 260) | DONE | nothing passes; 0 of 60; MO 3 AT back n 629 +1.251 t 2.20
+2026-11-06 | c structural (bf_hist_other, bf_hist_result) | crowded kick-off slot v lone game (499_ladder_slot, item 261) | DONE | nothing passes; 0 of 24; best LONE DOG 2.5-4 back n 2,113 +0.346 t 1.06
+2026-11-06 | c structural (from 499_ladder_slot) | back an MO runner printing exactly 3.0, unseen months, rule fixed | TODO (item 262, needs data) | -
+2026-11-06 | c structural (bf_hist_other, bf_hist_result) | DNB and Double Chance v the price MO implies (499_derivative_gap, item 263) | DONE | nothing passes; 0 of 8; DNB G2 CHEAP back n 179 +2.078 t 2.66
+2026-11-06 | a moves (liq_sample, from 499_derivative_gap) | item 263's DNB gap at the real touch (499_dnb_touch, item 264) | DONE | pilot; 0 of 130 at the touch; median spread 4.51 points
+2026-11-06 | c structural (bf_hist_other, from 499_derivative_gap, 499_dnb_touch) | DNB v MO as one resting line, unseen months, rule fixed | TODO (item 265, needs data) | -
