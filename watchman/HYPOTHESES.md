@@ -333,5 +333,11 @@
 2026-11-06 | a (fd_matches) | rematch loser at Pinnacle closes (499_rematch_close, item 318) | DONE | not supported; n 267 z -1.37
 2026-11-06 | a (fd_matches) | both sides on short rest, Over at Pinnacle odds (499_both_tired_close, item 319) | DONE | not supported; n 4,473 z 0.87
 2026-11-06 | c (tennis_matches) | first match after a title under 1.5 at closes, repeat of 107's idea (499_title_close, item 320) | DONE | not supported; n 127 z 1.10
-2026-11-06 | d (tennis_results_2026, bf_hist_other) | tennis head-to-head, two straight wins, priced over 2.0 | TODO (item 321) | -
-2026-11-06 | c (bf_hist_other) | tennis by scheduled UTC hour | TODO (item 322) | -
+2026-11-06 | d (tennis_results_2026, bf_hist_other) | tennis head-to-head, two straight wins, priced over 2.0 (499_tennis_h2h_hour, item 321) | DONE | nothing passes; 0 of 16; SWEEP 3-6 back ALL n 62 +1.692 t 0.83
+2026-11-06 | c (bf_hist_other) | tennis by scheduled UTC hour (499_tennis_h2h_hour, item 322) | DONE | nothing passes; 0 of 32; best 00-05 DOG lay CHALLENGER n 415 +0.471 t 1.37
+2026-11-06 | d (tennis_results_2026, bf_hist_other) | won the last match on fewer points than the loser (499_tennis_lucky_win, item 323) | DONE | nothing passes; 0 of 24; 2-3 lay CHALLENGER n 66 +2.281 t 2.42
+2026-11-06 | d (tennis_matches) | head-to-head sweep 3-6 at Pinnacle closes, ATP (499_h2h_close, item 324) | DONE | not supported; n 33 z -1.29; WTA closes not on the box
+2026-11-06 | a (coach_path) | MO runner moving with no goal, real touch (499_coach_nogoal, item 325) | DONE | nothing passes; 0 of 8; next-row exits all negative
+2026-11-06 | d (tennis_results_2026, bf_hist_other) | won the last match double-faulting heavily (499_tennis_df_last, item 326) | DONE | nothing passes; 0 of 24; 1.5-2 lay CHALLENGER n 72 +2.446 t 1.73
+2026-11-06 | d (tennis_results_2026, bf_hist_other) | item 323's Challenger lay, unseen months, rule fixed | TODO (item 327, needs data) | -
+2026-11-06 | a (coach_path) | Over line shortening with no goal, real touch, rule fixed | TODO (item 328) | -
