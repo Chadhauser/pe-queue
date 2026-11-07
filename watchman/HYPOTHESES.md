@@ -422,3 +422,10 @@
 2026-11-07 | a (same) | item 399 on unseen races | BLOCKED (item 400) | closed, artefact
 2026-11-07 | a (cricket_fav_tape, from 395) | cricket outsider lay on books of £2,000 or more matched, real touch | TODO (item 402, from 21 Nov) | -
 2026-11-07 | audit (ip_reopen, ip_tape, stream_ticks) | REST recorders replay old books: bf_tennis_log, cricket_fav_tape, ip_tape, ip_reopen; stream clean (499_tennis_log_no_replay, item 401) | DONE | tennis verdicts hold, X10 triggers 145 to 59
+2026-11-07 | c structural (bf_hist_other, af_events) | back FH25 Over at 15 min at 0-0, two Augusts (499_fh3_augs, item 139) | DONE | nothing passes; n 717 -0.714 t -0.45
+2026-11-07 | d (af_events, bf_hist_other) | lay Over 2.5 at 0-0 HT after 2-3 yellows, unseen (499_ht_cards_unseen, item 184) | DONE | nothing passes; n 861 +0.020 t 0.13; first read void, look-ahead
+2026-11-07 | a (af_events, bf_hist_other) | back Over 2.5 ten minutes after a first-goal penalty, unseen (499_goal_type_unseen, item 185) | DONE | nothing passes; n 338 -0.481 t -0.79
+2026-11-07 | a (af_events, bf_hist_other, from 84) | back Over 2.5 after a missed penalty, unseen (499_goal_type_unseen, item 403) | DONE | under n; n 57 -0.413; af_events short of missed penalties in season 2023 too
+2026-11-07 | a (af_events, bf_hist_other, from 84) | lay opponent after a VAR goal off at level, unseen (499_var_off_unseen, item 404) | DONE | nothing passes; n 282 +0.323 t 0.67, h2 negative
+2026-11-07 | c (bf_hist_other, from 124, 138, 139) | lay FH25 Over at 15 min at 0-0, 15 older months (499_fh3_lay_older, item 405) | DONE | nothing passes; n 5,489 +0.060 t 1.07; first read void, look-ahead
+2026-11-07 | a (af_events, bf_hist_other, from 184) | back Over 2.5 at 0-0 HT after 4+ first-half yellows, older seasons, rule fixed | TODO (item 406, first read about 8 Nov) | -
