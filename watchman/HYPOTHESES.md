@@ -345,3 +345,4 @@
 2026-11-07 | c (af_events, bf_hist_price) | stop-start second half, added time, price at 85 (499_late_state, item 333) | RUNNING | -
 2026-11-07 | d (af_events, bf_hist_price) | the booked side at minute 70 (499_late_state, item 334) | RUNNING | -
 2026-11-07 | d (af_stats raw, bf_hist_price) | team style, fouls, box shots, pass accuracy, first price (499_style_raw, item 335) | RUNNING | -
+2026-11-07 | c (af_fixtures, bf_hist_price) | a team's own first-half share against FH05 and FH15 (499_fh_share, item 336) | RUNNING | -
