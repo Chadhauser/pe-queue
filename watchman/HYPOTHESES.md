@@ -449,4 +449,5 @@
 2026-11-07 | c (bf_hist_other, af_fixtures, from item 342's control) | lay the Draw at its first in-play print near kick-off, three leagues, later months, rule fixed | DONE | nothing passes; n 727 +0.191 t 0.93; near-print split reads as chance
 2026-11-07 | c (bf_hist_other, af_fixtures, from item 425) | item 425's Draw lay on games it did not read, rule fixed | TODO (item 426, re-check 1 Dec) | -
 2026-11-07 | c (fd_matches) | a league's opening round at the closes (499_season_open, item 427) | DONE | nothing passes, 0 of 20
-2026-11-07 | c (fd_matches, bf_hist_other, from item 427) | a league's opening round on the tape (499_season_open, item 428) | TODO | no result, job crashed before any tape price
+2026-11-07 | c (fd_matches, bf_hist_other, from item 427) | a league's opening round on the tape (499_season_open, item 428) | DONE | nothing passes, 0 of 10; best Under back n 326 +0.457 t 0.77, h1 negative
+2026-11-07 | c (bf_hist_other, fd_matches, from items 83, 427, 428) | lay Over 2.5 in a season's first three rounds, months before Apr 2023 only (item 429) | TODO (re-check 12 Nov) | -

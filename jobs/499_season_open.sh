@@ -1,7 +1,7 @@
 #!/bin/bash
 set -o pipefail
 # 499_season_open (Finder 2026-11-07, queue items 427, 428, Finder's own, source c): a league's opening round, all sides, at Pinnacle and Betfair closes on fd_matches, then at real pre-off prints on bf_hist_other. Rule pushed in the queue before any price. Read only. No tables written. Prints only, so a pass is an upper bound.
-# NOTE 2026-11-07: crashes at the top-five print, before the tape section. Y.div is the DataFrame method, not the column. Fix for the next run: Y['div'].isin(TOP). Item 427's 20 scored lines print before this line.
+# NOTE 2026-11-07: crashed at the top-five print, before the tape section: Y.div is the DataFrame method, not the column. FIXED 2026-11-07 22:10 UTC (next run): Y['div'].isin(TOP). Rule unchanged.
 python3 - "$@" <<'PY' 2>&1 | grep --line-buffered -v -E "UserWarning|pd.read_sql"
 import resource; resource.setrlimit(resource.RLIMIT_AS,(2_500_000_000,2_500_000_000))
 import sys,time,datetime as dtm,psycopg2,pandas as pd,numpy as np
@@ -81,7 +81,7 @@ L['PASS']=[(s=='G1' and passes(n,a,b,t,h1,h2,m) and x>=.15) for s,n,a,b,t,h1,h2,
 print("\n== ITEM 427 G1, scored, 20 lines, best t first"); print(L[L.st=='G1'].sort_values('t',ascending=False).drop(columns=['st']).round(3).to_string(index=False))
 print("\n== G2_3, printed, not scored"); print(L[L.st=='G2_3'].sort_values('t',ascending=False).head(10).drop(columns=['st','PASS']).round(3).to_string(index=False))
 print("\n== CONTROL, cannot pass"); print(L[L.st=='CONTROL'].drop(columns=['st','PASS','excess','ctl']).round(3).to_string(index=False))
-TOP={'E0','SP1','I1','D1','F1'}; x=Y[(Y.st=='G1')&Y.div.isin(TOP)]; o=[]
+TOP={'E0','SP1','I1','D1','F1'}; x=Y[(Y.st=='G1')&Y['div'].isin(TOP)]; o=[]
 for r,c in SRC['PIN'].items():
     cols=[SRC['PIN'][q] for q in BOOK[r]]; z=x.dropna(subset=cols)
     if len(z)<30: continue
