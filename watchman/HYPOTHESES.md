@@ -352,7 +352,7 @@
 2026-11-07 | c (xx_tape, liq_sample) | other book's lead in play (499_xx_arb_ip, item 331) | DONE | nothing passes; Smarkets n 294 -0.423, Matchbook n 281 -0.626
 2026-11-07 | b value (xx_tape, liq_sample) | Matchbook price beats Betfair's mid, hold to result (499_xx_value, item 332) | DONE | too small; n 8 +0.687 t 0.14
 2026-11-07 | a moves (xx_tape, liq_sample) | Betfair moves, thin book has not, take the stale price, rule fixed | TODO (item 339, from 8 Nov) | -
-2026-11-07 | d (af_stats, bf_hist_other, from 499_style_raw) | Draw between two high-foul sides, unseen games (499_foul_draw_unseen, item 339) | DONE | below the bar, lean held; n 846 +0.494 t 0.87, won 0.303 v 0.279
+2026-11-07 | d (af_stats, bf_hist_other, from 499_style_raw) | Draw between two high-foul sides, unseen games (499_foul_draw_unseen, item 344) | DONE | below the bar, lean held; n 846 +0.494 t 0.87, won 0.303 v 0.279
 2026-11-07 | d (af_stats, bf_hist_other, from 499_foul_draw_unseen) | is the high-foul Draw a league effect (499_foul_draw_league, item 340) | DONE | lead only; REL and FOUL HIGH n 413 +0.920 t 1.16, FOUL HIGH only n 401 +0.031
 2026-11-07 | d (af_stats, bf_hist_price, from 499_foul_draw_league) | Draw where fouls are high and high for the league, item 335's games (499_foul_rel_seen, item 341) | DONE | nothing passes; n 867 +0.188 t 0.34; no gap against FOUL HIGH only
 2026-11-07 | d (af_stats, bf_hist_other, from 499_foul_draw_unseen) | Draw between two high-foul sides, older months, rule fixed | TODO (item 342, needs data) | -
