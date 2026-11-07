@@ -341,10 +341,14 @@
 2026-11-06 | d (tennis_results_2026, bf_hist_other) | won the last match double-faulting heavily (499_tennis_df_last, item 326) | DONE | nothing passes; 0 of 24; 1.5-2 lay CHALLENGER n 72 +2.446 t 1.73
 2026-11-06 | d (tennis_results_2026, bf_hist_other) | item 323's Challenger lay, unseen months, rule fixed | TODO (item 327, needs data) | -
 2026-11-06 | a (coach_path) | Over line shortening with no goal, real touch (499_coach_over_nogoal, item 328) | DONE | nothing passes; 0 of 12; OU35 lay n 103 -0.459 t -1.42; first read t 3.63 was drop bias
-2026-11-06 | c (xx_tape, liq_sample) | Betfair against Smarkets and Matchbook, does the other book lead | TODO (item 329) | -
+2026-11-06 | c (xx_tape, liq_sample) | Betfair against Smarkets and Matchbook, does the other book lead, pre-off (499_xx_lead, item 329) | DONE | nothing passes; Matchbook LEAD n 97 -0.550 t -10.21; no Smarkets pre-off rows
 2026-11-07 | c (af_events, bf_hist_price) | stop-start second half, added time, price at 85 (499_late_state, item 333) | RUNNING | -
 2026-11-07 | d (af_events, bf_hist_price) | the booked side at minute 70 (499_late_state, item 334) | RUNNING | -
 2026-11-07 | d (af_stats raw, bf_hist_price) | team style, fouls, box shots, pass accuracy, first price (499_style_raw, item 335) | RUNNING | -
 2026-11-07 | c (af_fixtures, bf_hist_price) | a team's own first-half share against FH05 and FH15 (499_fh_share, item 336) | RUNNING | -
 2026-11-07 | c (af_fixtures, bf_hist_price) | goals streak, O2.5 and BTTS 4 of 5, no goal or clean sheet in 3 (499_goal_streak, item 337) | RUNNING | -
 2026-11-07 | a (af_fixtures, bf_hist_other, from 499_goal_streak) | back Over 2.5 after two Under runs, unseen games (499_streak_unseen, item 338) | RUNNING | -
+2026-11-07 | c (xx_tape, liq_sample) | pre-off two-book arb, Betfair and Matchbook (499_xx_arb_ip, item 330) | DONE | nothing passes; 1 signal in 10,323 rows, next row -0.302
+2026-11-07 | c (xx_tape, liq_sample) | other book's lead in play (499_xx_arb_ip, item 331) | DONE | nothing passes; Smarkets n 294 -0.423, Matchbook n 281 -0.626
+2026-11-07 | b value (xx_tape, liq_sample) | Matchbook price beats Betfair's mid, hold to result (499_xx_value, item 332) | DONE | too small; n 8 +0.687 t 0.14
+2026-11-07 | a moves (xx_tape, liq_sample) | Betfair moves, thin book has not, take the stale price, rule fixed | TODO (item 333, from 8 Nov) | -
