@@ -448,5 +448,5 @@
 2026-11-07 | a (stream_ticks, from item 423) | item 423's 5-minute entry at back_px on the stream, rule fixed | TODO (item 424, from 26 Nov) | no result; job too slow on stream_ticks, stopped
 2026-11-07 | c (bf_hist_other, af_fixtures, from item 342's control) | lay the Draw at its first in-play print near kick-off, three leagues, later months, rule fixed | DONE | nothing passes; n 727 +0.191 t 0.93; near-print split reads as chance
 2026-11-07 | c (bf_hist_other, af_fixtures, from item 425) | item 425's Draw lay on games it did not read, rule fixed | TODO (item 426, re-check 1 Dec) | -
-2026-11-07 | c (fd_matches) | a league's opening round at the closes (499_season_open, item 427) | RUNNING
-2026-11-07 | c (fd_matches, bf_hist_other, from item 427) | a league's opening round on the tape (499_season_open, item 428) | RUNNING
+2026-11-07 | c (fd_matches) | a league's opening round at the closes (499_season_open, item 427) | DONE | nothing passes, 0 of 20
+2026-11-07 | c (fd_matches, bf_hist_other, from item 427) | a league's opening round on the tape (499_season_open, item 428) | TODO | no result, job crashed before any tape price
