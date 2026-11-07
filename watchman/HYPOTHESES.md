@@ -376,3 +376,4 @@
 2026-11-07 | d (racing_bsp, from 499_course_winner) | lay a course winner at 5.0 or under, unseen races, rule fixed | TODO (item 360, needs data) | -
 2026-11-07 | d (bf_hist_other, from 499_tennis_own_error) | lay a tennis player who has beaten their price, unseen months, rule fixed | TODO (item 361, needs data) | -
 2026-11-07 | a (cricket_matches, from 499_cricket_own_error) | item 357's OUT lines on official results, rule fixed | TODO (item 362, from 8 Nov) | -
+2026-11-07 | queue 0i (goal_live_predictions, goal_alerts, liq_sample) | engine patch check, last run (499_engine_patch_check) | DONE | nothing passes; 27 alerts v 300; settled n 16 -1.998, sum -31.97; real_price in band 5 of 16
