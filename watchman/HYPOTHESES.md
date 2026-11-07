@@ -356,3 +356,4 @@
 2026-11-07 | d (af_stats, bf_hist_other, from 499_foul_draw_unseen) | is the high-foul Draw a league effect (499_foul_draw_league, item 340) | DONE | lead only; REL and FOUL HIGH n 413 +0.920 t 1.16, FOUL HIGH only n 401 +0.031
 2026-11-07 | d (af_stats, bf_hist_price, from 499_foul_draw_league) | Draw where fouls are high and high for the league, item 335's games (499_foul_rel_seen, item 341) | DONE | nothing passes; n 867 +0.188 t 0.34; no gap against FOUL HIGH only
 2026-11-07 | d (af_stats, bf_hist_other, from 499_foul_draw_unseen) | Draw between two high-foul sides, older months, rule fixed | TODO (item 342, needs data) | -
+2026-11-07 | d (af_lineups, liq_sample) | back three against the goal line | TODO (item 343, needs data) | -
