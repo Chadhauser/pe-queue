@@ -435,5 +435,5 @@
 2026-11-07 | audit (bf_hist_other) | item 407 on the first qualifying print (499_ht_identity_audit, item 410) | DONE | lean kept, cannot pass; win rate follows MO, not the HT/FT print
 2026-11-07 | a (liq_sample) | item 407 at the real touch, spread and locks (499_ht_identity_touch, item 411) | DONE | spread 6.94 v 0.85 points; 18 locks of 16,898 snapshots, 9 on one game
 2026-11-07 | a (liq_sample) | quote inside HT/FT, hedge on MO (499_ht_quote_hedge, item 412) | DONE | nothing passes, pilot; 37 fills, all four lines negative; fills inferred from sampled prints
-2026-11-07 | c (bf_hist_other, from 410) | back HT/FT 2 points under MO at the break, older months, rule fixed | TODO (item 413, about 8 Nov) | -
-2026-11-07 | c (bf_hist_other, from 409) | lay Over 2.5 in a youth game with one goal at half-time, older months, rule fixed | TODO (item 414, about 8 Nov) | -
+2026-11-07 | c (bf_hist_other, from 410) | back HT/FT 2 points under MO at the break, older months, rule fixed | TODO (item 420, about 8 Nov) | -
+2026-11-07 | c (bf_hist_other, from 409) | lay Over 2.5 in a youth game with one goal at half-time, older months, rule fixed | TODO (item 421, about 8 Nov) | -
