@@ -357,3 +357,12 @@
 2026-11-07 | d (af_stats, bf_hist_price, from 499_foul_draw_league) | Draw where fouls are high and high for the league, item 335's games (499_foul_rel_seen, item 341) | DONE | nothing passes; n 867 +0.188 t 0.34; no gap against FOUL HIGH only
 2026-11-07 | d (af_stats, bf_hist_other, from 499_foul_draw_unseen) | Draw between two high-foul sides, older months, rule fixed | TODO (item 342, needs data) | -
 2026-11-07 | d (af_lineups, liq_sample) | back three against the goal line | TODO (item 343, needs data) | -
+2026-11-07 | d (af_fixtures, bf_hist_price) | how the last game went, blew a half-time lead or came back (499_last_game_script, item 345) | DONE | nothing passes; 0 of 12; RALLY under 2.0 lay n 155 +2.114 t 1.66
+2026-11-07 | d (af_stats raw, bf_hist_price) | offsides and keeper saves, first price (499_style_off_saves, item 346) | DONE | nothing passes; 0 of 26; OFF HIGH Under lay n 1,898 +0.296 t 1.29
+2026-11-07 | d (af_fixtures, bf_hist_price) | a run of home or away games, first price (499_last_game_script, item 347) | DONE | nothing passes; 0 of 12; BOTH home lay n 789 +0.494 t 1.43
+2026-11-07 | a (af_events, bf_hist_price) | team late-goal habit, Draw and leader at 70 (499_late_habit, item 348) | DONE | nothing passes; 0 of 8; HIGH Draw level back n 466 +0.573 t 1.17
+2026-11-07 | d (af_stats, bf_hist_other, from 499_style_off_saves) | offsides on unseen games (499_off_unseen, item 349) | DONE | did not hold; HIGH Over back n 958 -0.437 t -1.41
+2026-11-07 | d (af_stats raw, bf_hist_price) | possession without shots, shots from range (499_sterile_poss, item 350) | DONE | nothing passes; 0 of 16; DIRECT all back n 1,291 +0.317 t 0.70
+2026-11-07 | d (af_fixtures, bf_hist_other, from 499_script_run_unseen) | lay home when both on a run, short side after a comeback, unseen (499_script_run_unseen, item 351) | DONE | kept sign, below the bar; BOTH home lay n 318 +0.511 t 0.96; RALLY under 2.0 lay n 89 +2.790 t 1.43
+2026-11-07 | d (af_fixtures, bf_hist_other, from 499_script_run_unseen) | lay home when both on a run, older months, rule fixed | TODO (item 352, needs data) | -
+2026-11-07 | d (af_fixtures) | a team's game after extra time | BLOCKED | 120 AET or PEN games in two seasons, no domestic cups on the box
