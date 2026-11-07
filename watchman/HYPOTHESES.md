@@ -429,3 +429,11 @@
 2026-11-07 | a (af_events, bf_hist_other, from 84) | lay opponent after a VAR goal off at level, unseen (499_var_off_unseen, item 404) | DONE | nothing passes; n 282 +0.323 t 0.67, h2 negative
 2026-11-07 | c (bf_hist_other, from 124, 138, 139) | lay FH25 Over at 15 min at 0-0, 15 older months (499_fh3_lay_older, item 405) | DONE | nothing passes; n 5,489 +0.060 t 1.07; first read void, look-ahead
 2026-11-07 | a (af_events, bf_hist_other, from 184) | back Over 2.5 at 0-0 HT after 4+ first-half yellows, older seasons, rule fixed | TODO (item 406, first read about 8 Nov) | -
+2026-11-07 | c (bf_hist_other, bf_hist_result) | at half-time, HT/FT X/F against MO F (499_ht_identity, item 407) | DONE | nothing passes; first print G2 CHEAP back n 354 +2.333 t 1.43; first read kept the largest gap, a look-ahead
+2026-11-07 | c (bf_hist_other, bf_hist_result) | at half-time, DC, DNB, U0.5, CS 0-0, U1.5 same-bet pairs (499_ht_identity, item 408) | DONE | nothing passes; 0 of 29; DNB G2 CHEAP back n 58 +2.191 t 1.63
+2026-11-07 | c (bf_hist_other, bf_hist_result) | women's and youth goal lines at the break (499_ht_women_youth, item 409) | DONE | nothing passes; 0 of 16; YOUTH G1 O2.5 lay n 396 +0.880 t 1.40
+2026-11-07 | audit (bf_hist_other) | item 407 on the first qualifying print (499_ht_identity_audit, item 410) | DONE | lean kept, cannot pass; win rate follows MO, not the HT/FT print
+2026-11-07 | a (liq_sample) | item 407 at the real touch, spread and locks (499_ht_identity_touch, item 411) | DONE | spread 6.94 v 0.85 points; 18 locks of 16,898 snapshots, 9 on one game
+2026-11-07 | a (liq_sample) | quote inside HT/FT, hedge on MO (499_ht_quote_hedge, item 412) | DONE | nothing passes, pilot; 37 fills, all four lines negative; fills inferred from sampled prints
+2026-11-07 | c (bf_hist_other, from 410) | back HT/FT 2 points under MO at the break, older months, rule fixed | TODO (item 413, about 8 Nov) | -
+2026-11-07 | c (bf_hist_other, from 409) | lay Over 2.5 in a youth game with one goal at half-time, older months, rule fixed | TODO (item 414, about 8 Nov) | -
