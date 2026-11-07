@@ -414,9 +414,11 @@
 2026-11-07 | a (finder_rlog, finder_rresults) | item 380's first touch on 30 s rows, older races (499_touch_log_inplay, item 392) | DONE | NXT void, dead book; SAME Q 1.1 n 95 -0.322 t -1.02, Q 1.2 n 129 0.000; weakens item 380, item 382 stands
 2026-11-07 | a (stream_ticks, finder_rresults) | horse at 1.1 whose back collapses past 2.0 (499_touch_collapse, item 393) | DONE | too small; 5 of 119, 4 won, 0.800 v 0.444, median £2.74 on show
 2026-11-07 | a (stream_ticks, from 393) | back the collapse on unseen races, rule fixed | TODO (item 394, from 10 Nov) | -
-2026-11-07 | a (cricket_fav_tape, from 271) | cricket outsider lay at the real touch, rule fixed | TODO (item 395, from 8 Nov) | -
-2026-11-07 | d census (ip_reopen, racing_results) | racing, runner the first in-play book moves most, real touch, held to result (499_reopen_racing, item 396) | RUNNING | -
-2026-11-07 | a (cricket_fav_tape, from 362) | cricket outsider first touching 1.5 in play, lay at the real touch (499_cricket_touch_inplay, item 397) | RUNNING | -
-2026-11-07 | a (ip_reopen, finder_tlog) | tennis large move across a suspension, follow or fade at the real touch (499_reopen_tennis, item 398) | RUNNING | -
-2026-11-07 | a (ip_reopen, racing_results, from 396 and 393) | racing, book restored after the race is decided, back the 1.01 horse, lay the beaten one (499_reopen_restored, item 399) | RUNNING | -
-2026-11-07 | a (same) | item 399 on unseen races | TODO (item 400, from 21 Nov) | -
+2026-11-07 | a (cricket_fav_tape, from 271) | cricket outsider lay at the real touch (499_cricket_touch_preoff, item 395) | DONE | nothing passes; n 55 -0.874 t -1.13; cost £0.28 mean, £0.15 median
+2026-11-07 | d census (ip_reopen, racing_results) | racing, runner the first in-play book moves most, real touch, held to result (499_reopen_racing, item 396) | STRUCK | replayed book states, 90% of reopens; DRIFT back +10.255 t 3.37 not a read
+2026-11-07 | a (cricket_fav_tape, from 362) | cricket outsider first touching 1.5 in play, lay at the real touch (499_cricket_touch_inplay, item 397) | DONE | nothing passes; n 92 -4.025 t -3.56, at the print -0.495
+2026-11-07 | a (ip_reopen, finder_tlog) | tennis large move across a suspension, follow or fade at the real touch (499_reopen_tennis, item 398) | VOID | no real exit, reopens at a match's end, 67% replays
+2026-11-07 | a (ip_reopen, racing_results, from 396 and 393) | racing, book restored after the race is decided, back the 1.01 horse, lay the beaten one (499_reopen_restored, item 399) | STRUCK | old snapshot; total matched falls at 59 of 59 rows; WINNER back +12.311 t 6.49 not a read
+2026-11-07 | a (same) | item 399 on unseen races | BLOCKED (item 400) | closed, artefact
+2026-11-07 | a (cricket_fav_tape, from 395) | cricket outsider lay on books of £2,000 or more matched, real touch | TODO (item 402, from 21 Nov) | -
+2026-11-07 | audit (ip_reopen, ip_tape, stream_ticks) | REST recorders replay old books: bf_tennis_log, cricket_fav_tape, ip_tape, ip_reopen; stream clean (499_tennis_log_no_replay, item 401) | DONE | tennis verdicts hold, X10 triggers 145 to 59
