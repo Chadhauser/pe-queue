@@ -415,3 +415,6 @@
 2026-11-07 | a (stream_ticks, finder_rresults) | horse at 1.1 whose back collapses past 2.0 (499_touch_collapse, item 393) | DONE | too small; 5 of 119, 4 won, 0.800 v 0.444, median £2.74 on show
 2026-11-07 | a (stream_ticks, from 393) | back the collapse on unseen races, rule fixed | TODO (item 394, from 10 Nov) | -
 2026-11-07 | a (cricket_fav_tape, from 271) | cricket outsider lay at the real touch, rule fixed | TODO (item 395, from 8 Nov) | -
+2026-11-07 | d census (ip_reopen, racing_results) | racing, runner the first in-play book moves most, real touch, held to result (499_reopen_racing, item 396) | RUNNING | -
+2026-11-07 | a (cricket_fav_tape, from 362) | cricket outsider first touching 1.5 in play, lay at the real touch (499_cricket_touch_inplay, item 397) | RUNNING | -
+2026-11-07 | a (ip_reopen, finder_tlog) | tennis large move across a suspension, follow or fade at the real touch (499_reopen_tennis, item 398) | RUNNING | -
