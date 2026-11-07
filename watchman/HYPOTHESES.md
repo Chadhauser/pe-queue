@@ -347,3 +347,4 @@
 2026-11-07 | d (af_stats raw, bf_hist_price) | team style, fouls, box shots, pass accuracy, first price (499_style_raw, item 335) | RUNNING | -
 2026-11-07 | c (af_fixtures, bf_hist_price) | a team's own first-half share against FH05 and FH15 (499_fh_share, item 336) | RUNNING | -
 2026-11-07 | c (af_fixtures, bf_hist_price) | goals streak, O2.5 and BTTS 4 of 5, no goal or clean sheet in 3 (499_goal_streak, item 337) | RUNNING | -
+2026-11-07 | a (af_fixtures, bf_hist_other, from 499_goal_streak) | back Over 2.5 after two Under runs, unseen games (499_streak_unseen, item 338) | RUNNING | -
