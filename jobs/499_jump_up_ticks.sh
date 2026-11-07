@@ -1,0 +1,145 @@
+#!/bin/bash
+set -o pipefail
+# 499_jump_up_ticks (Finder 2026-11-07, queue item 415, Finder's own, source a; results from jobs/499_tick_touch_clean.sh): item 414 on the stream: where does the book sit when the first in-play print is 2 to 4 points over the last pre-off print, and what does a back get? Pilot, cannot reach the bar. Rule pushed before this job read a price. Reads stream_ticks, liq_sample, Railway goal_timeline. Writes only temp tables.
+python3 - "$@" <<'PY' 2>&1 | grep --line-buffered -v -E "UserWarning|pd.read_sql"
+import resource; resource.setrlimit(resource.RLIMIT_AS,(2_000_000_000,2_000_000_000))
+import sys,time,datetime,bisect,psycopg2,warnings,pandas as pd,numpy as np
+from collections import Counter,defaultdict
+warnings.filterwarnings('ignore')
+sys.path.insert(0,'/root/pe-queue/runner'); sys.path.insert(0,'/root/pe-queue/jobs'); import creds
+from lib_cand import step,back_settle,line,norm,loose
+from lib_official import group
+pd.set_option('display.width',220); pd.set_option('display.max_columns',30)
+T0=time.time()
+def bk(p,w):
+    a=step(p,-1); return float('nan') if a<=1.01 else back_settle(a,w)
+def score(p,prob): return bk(p,True)*prob+bk(p,False)*(1-prob)
+def gap_pts(pre,ip): return 100*(1/pre-1/ip)
+def first_print(ticks,pre_tv):
+    """ticks time-ordered (t,back,lay,ltp,tv). First tick where traded volume rises over pre_tv with an ltp: the tape's first in-play print. Index or None."""
+    for i,x in enumerate(ticks):
+        if x[3] is not None and x[4] is not None and x[4]>pre_tv: return i
+    return None
+def touch_at(ticks,t0,d,span=30):
+    """First tick at or after t0+d, up to t0+d+span, with a back price. (t,back,lay) or None."""
+    for x in ticks:
+        if t0+d<=x[0]<=t0+d+span and x[1] is not None: return (x[0],x[1],x[2])
+    return None
+def rest_fill(ticks,i,px,span=60):
+    """A back rested at px is filled only if a later print within span seconds goes strictly over px, so queue position is not assumed."""
+    t0=ticks[i][0]
+    for x in ticks[i+1:]:
+        if x[0]>t0+span: return False
+        if x[3] is not None and x[3]>px: return True
+    return False
+def suspended_between(s,a,b):
+    """s sorted suspension times; any in (a,b]."""
+    return bisect.bisect_right(s,b)>bisect.bisect_right(s,a)
+def infer(last):
+    if not last: return {},False
+    lo=min(last,key=last.get)
+    if last[lo]<=1.03: return {s:(1.0 if s==lo else 0.0) for s in last},True
+    tot=sum(1/v for v in last.values()); return {s:(1/v)/tot for s,v in last.items()},False
+def by_score(h,a,sh,sa,names):
+    w=h if sh>sa else a if sa>sh else None; out={}; hit=False
+    for s,n in names.items():
+        won=('draw' in str(n).lower()) if w is None else (n==w)
+        out[s]=1.0 if won else 0.0; hit=hit or won
+    return out if hit else None
+# known answers, worked by hand
+_t=[(0.,2.0,2.1,2.0,100.),(5.,2.0,2.1,2.0,100.),(9.,2.0,2.1,2.1,120.),(16.,None,2.1,2.1,120.),(20.,2.02,2.1,2.2,130.),(80.,2.02,2.1,2.3,140.)]
+assert first_print(_t,100.)==2 and first_print(_t,999.) is None and first_print([(0.,2.,2.1,None,200.)],100.) is None
+assert touch_at(_t,9.,6.)==(20.,2.02,2.1) and touch_at(_t,9.,80.) is None and touch_at(_t,0.,0.)==(0.,2.0,2.1)
+assert rest_fill(_t,2,2.1) is True and rest_fill(_t,2,2.2) is False and rest_fill(_t,2,2.2,span=80) is True   # 2.2 is not strictly over 2.2; 2.3 at t=80 is outside 60 s, inside 80
+assert suspended_between([17.],9.,20.) and not suspended_between([17.],17.,20.) and not suspended_between([],0.,9.)
+assert abs(bk(2.0,True)-10*.99*.98)<1e-9 and bk(2.0,False)==-10.0 and bk(1.02,True)!=bk(1.02,True)
+assert abs(score(2.0,0.5)-(10*.99*.98-10)/2)<1e-9
+assert by_score('A','B',2,1,{1:'A',2:'B',3:'The Draw'})=={1:1.0,2:0.0,3:0.0} and by_score('A','B',1,1,{1:'A',2:'B',3:'The Draw'})=={1:0.0,2:0.0,3:1.0} and by_score('Ax','B',2,1,{1:'A',2:'B',3:'The Draw'}) is None
+assert infer({1:1.02,2:40.})[0]=={1:1.0,2:0.0} and not infer({1:2.,2:2.})[1]
+print("checks: OK",flush=True)
+if len(sys.argv)>1 and sys.argv[1]=='asserts-only': sys.exit(0)
+con=psycopg2.connect(creds.pg_local()); con.autocommit=True; cur=con.cursor(); cur.execute("SET work_mem='64MB'; SET statement_timeout='2400s'")
+cur.execute("""CREATE TEMP TABLE o AS SELECT market_id,min(pt) off FROM stream_ticks WHERE sport='football' AND mkt='MO' AND inplay AND pt IS NOT NULL GROUP BY 1""")
+cur.execute("CREATE INDEX ON o (market_id)"); cur.execute("ANALYZE o")
+cur.execute("""SELECT DISTINCT ON (s.market_id,s.sel_id) s.market_id,s.sel_id,extract(epoch from s.pt)::float8,s.ltp::float8,s.tv::float8 FROM stream_ticks s JOIN o USING(market_id)
+ WHERE s.sport='football' AND s.mkt='MO_PRE' AND NOT s.inplay AND s.status='OPEN' AND s.ltp IS NOT NULL AND s.tv IS NOT NULL AND s.pt<o.off AND s.pt>=o.off-interval '600 seconds' ORDER BY s.market_id,s.sel_id,s.pt DESC""")
+PRE={(m,int(s)):(t,l,v) for m,s,t,l,v in cur.fetchall()}; print("pre runners",len(PRE),f"{time.time()-T0:.0f}s",flush=True)
+cur.execute("""SELECT s.market_id,s.sel_id,extract(epoch from s.pt)::float8,s.back_px::float8,s.lay_px::float8,s.ltp::float8,s.tv::float8,extract(epoch from o.off)::float8 FROM stream_ticks s JOIN o USING(market_id)
+ WHERE s.sport='football' AND s.mkt='MO' AND s.inplay AND s.status='OPEN' AND s.pt>=o.off AND s.pt<=o.off+interval '320 seconds' ORDER BY s.market_id,s.sel_id,s.pt""")
+TK=defaultdict(list); OFF={}
+for m,s,t,b,l,lt,tv,off in cur.fetchall():
+    TK[(m,int(s))].append((t,b,l,lt,tv)); OFF[m]=off
+print("in-play runners",len(TK),"markets",len(OFF),f"{time.time()-T0:.0f}s",flush=True)
+cur.execute("""SELECT DISTINCT s.market_id,extract(epoch from s.pt)::float8 FROM stream_ticks s JOIN o USING(market_id) WHERE s.sport='football' AND s.mkt='MO' AND s.inplay AND s.status='SUSPENDED' AND s.pt>=o.off AND s.pt<=o.off+interval '320 seconds'""")
+SUS=defaultdict(list)
+for m,t in cur.fetchall(): SUS[m].append(t)
+for m in SUS: SUS[m].sort()
+cur.execute("""SELECT DISTINCT ON (market_id,sel_id) market_id,sel_id,back_px::float8 FROM stream_ticks WHERE sport='football' AND mkt='MO' AND inplay AND status='OPEN' AND back_px IS NOT NULL ORDER BY market_id,sel_id,pt DESC""")
+L=defaultdict(dict)
+for m,s,b in cur.fetchall(): L[m][int(s)]=b
+cur.execute("""SELECT DISTINCT ON (market_id,sel_id) market_id,sel_id,sel FROM stream_ticks WHERE sport='football' AND mkt='MO' AND inplay AND sel IS NOT NULL ORDER BY market_id,sel_id,pt DESC""")
+SN=defaultdict(dict)
+for m,s,n in cur.fetchall(): SN[m][int(s)]=n
+cur.execute("SELECT DISTINCT ON (market_id) market_id,event_name,ts::date FROM liq_sample WHERE mkt='MO' AND event_name IS NOT NULL ORDER BY market_id,ts")
+NM={m:(e,d) for m,e,d in cur.fetchall()}; con.close()
+FIN={}
+try:
+    rc=psycopg2.connect(creds.pg_railway(),sslmode='require'); k=rc.cursor(); k.execute("SET statement_timeout='600s'")
+    k.execute("""SELECT DISTINCT ON (fixture_id) fixture_id,home_team,away_team,captured_at::date,score_home,score_away,status,minute FROM goal_timeline WHERE captured_at>'2026-10-25' ORDER BY fixture_id,captured_at DESC""")
+    G=k.fetchall(); rc.close()
+    for f,h,a,d,sh,sa,st,mn in G:
+        if st=='2H' and mn is not None and mn>=85 and sh is not None and sa is not None: FIN.setdefault(d,[]).append((norm(h),norm(a),(h,a,sh,sa)))
+    print("goal_timeline fixtures",len(G),"usable finals",sum(len(v) for v in FIN.values()),f"{time.time()-T0:.0f}s",flush=True)
+except Exception as e:
+    print("goal_timeline not read, falling back to prices only:",type(e).__name__,flush=True)
+def final_of(m):
+    if m not in NM or ' v ' not in NM[m][0]: return None
+    e,d=NM[m]; h,a=e.split(' v ',1); c=[]
+    for dd in (d,d-datetime.timedelta(days=1),d+datetime.timedelta(days=1)): c+=FIN.get(dd,[])
+    return loose(norm(h),norm(a),c) if c else None
+PR={}; src=Counter()
+for m,last in L.items():
+    pr,res=infer(last); fin=final_of(m); got=None
+    if fin is not None:
+        bh,ba=NM[m][0].split(' v ',1); got=by_score(bh,ba,fin[2],fin[3],SN.get(m,{}))
+    if got is not None:
+        for s in last: got.setdefault(s,0.0)
+        PR[m]=(got,True,'goal'); src['goal']+=1
+    else: PR[m]=(pr,res,'last' if res else 'odds'); src['last' if res else 'odds']+=1
+print("results",dict(src),flush=True)
+C=Counter(); best={}
+for (m,s),tk in TK.items():
+    if (m,s) not in PRE or m not in PR or s not in PR[m][0]: C['no pre or result']+=1; continue
+    if m not in NM or group(NM[m][0]): C['women, youth or no name']+=1; continue
+    pt,pl,pv=PRE[(m,s)]; i=first_print(tk,pv)
+    if i is None or tk[i][0]>OFF[m]+180: C['no in-play print in 180 s']+=1; continue
+    g=gap_pts(pl,tk[i][3])
+    if not 2<=g<4: C['not UP 2-4']+=1; continue
+    C['UP 2-4']+=1
+    if m not in best or g>best[m][0]: best[m]=(g,s,i,pt,pl)
+rows=[]
+for m,(g,s,i,pt,pl) in best.items():
+    tk=TK[(m,s)]; t,b0,l0,lt,_=tk[i]; prob=PR[m][0][s]; d=dict(m=m,ev=NM[m][0],s=s,t=t,g=g,ltp=lt,b0=b0,l0=l0,prob=prob,how=PR[m][2],res=PR[m][1],age=t-pt)
+    if lt>50: C['over 50']+=1; continue
+    d['vP']=score(lt,prob)                                       # the tape's way, at the print
+    d['v0']=score(b0,prob) if b0 else np.nan                     # the touch on the print's own tick
+    for lab,de in (('v3',3.),('v6',6.),('v10',10.)):
+        x=touch_at(tk,t,de)
+        d[lab]=np.nan if x is None or suspended_between(SUS.get(m,[]),t,x[0]) or x[1]>50 else score(x[1],prob)
+    d['vR']=score(lt,prob) if rest_fill(tk,i,lt) else np.nan      # rested at the print, one tick adverse on top, filled only on a print through it
+    rows.append(d)
+print("counts",dict(C),f"{time.time()-T0:.0f}s",flush=True)
+Z=pd.DataFrame(rows)
+if Z.empty: print("no trades"); sys.exit(0)
+print("games",len(Z),"dates",pd.to_datetime(Z.t.min(),unit='s'),"to",pd.to_datetime(Z.t.max(),unit='s'),"result source",Z.how.value_counts().to_dict())
+h=np.where(Z.t<=Z.t.median(),1,2); o=[]
+for lab,nm in (('vP','at the print, tape'),('v0','back_px on the print tick'),('v3','back_px 3 s on'),('v6','back_px 6 s on'),('v10','back_px 10 s on'),('vR','rested at the print, filled through')):
+    m=Z[lab].notna().values; v=Z[lab].values[m]
+    if m.sum()<2: o.append(dict(line=nm,n=int(m.sum()))); continue
+    d=line(v,h[m]); o.append(dict(line=nm,n=d['n'],per10=round(d['per10'],3),t=round(d['t'],2),h1=round(d['h1'],3),h2=round(d['h2'],3),no_top=round(np.delete(v,v.argmax()).mean(),3),won=round(Z.prob.values[m].mean(),3),imp_print=round((1/Z.ltp.values[m]).mean(),3)))
+print(f"\n== ITEM 415, pilot, cannot pass\n",pd.DataFrame(o).to_string(index=False))
+w=Z[Z.b0.notna()&Z.l0.notna()&(Z.l0>Z.b0)]
+print(f"\nbook on the print's tick, n {len(w)}: spread median {(100*(1/w.b0-1/w.l0)).median():.2f} points; print at or over lay {(w.ltp>=w.l0).mean():.3f}; print at or under back {(w.ltp<=w.b0).mean():.3f}; back_px implied less print implied, median {(100*(1/w.b0-1/w.ltp)).median():+.2f} points; lay within 5% of back {(w.l0<=w.b0*1.05).mean():.3f}")
+print(f"age of the pre-off print, median {Z.age.median():.0f} s")
+print("\n== SURVIVORS: pilot, none can pass",flush=True); print(f"total {time.time()-T0:.0f}s")
+PY

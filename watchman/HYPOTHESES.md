@@ -437,3 +437,9 @@
 2026-11-07 | a (liq_sample) | quote inside HT/FT, hedge on MO (499_ht_quote_hedge, item 412) | DONE | nothing passes, pilot; 37 fills, all four lines negative; fills inferred from sampled prints
 2026-11-07 | c (bf_hist_other, from 410) | back HT/FT 2 points under MO at the break, older months, rule fixed | TODO (item 420, about 8 Nov) | -
 2026-11-07 | c (bf_hist_other, from 409) | lay Over 2.5 in a youth game with one goal at half-time, older months, rule fixed | TODO (item 421, about 8 Nov) | -
+2026-11-07 | b (bf_hist_other, from 499_flip_flow) | lay a favourite drifting before the off, Jun-Dec 2023 (499_flip_flow_unseen, item 303) | DONE | closed; n 471 -0.343 t -0.72
+2026-11-07 | c (bf_hist_other schedule, racing_bsp) | a course's first meeting after a gap, at BSP (499_course_gap, item 413) | DONE | nothing passes; 0 of 48; G1 FAV lay n 866 +0.428 t 1.61
+2026-11-07 | c (racing_bsp, from 499_course_gap) | lay the favourite on a course's second day, races 413 did not read (499_course_gap_unseen, item 416) | DONE | closed; n 63 -1.826 t -1.82
+2026-11-07 | a (bf_hist_other, bf_hist_result, from items 294, 303) | back MO runner after first in-play print 2-4 points up (499_jump_up_back, item 414) | DONE, audit | prints hold, n 1,500 +1.321 t 3.21, all three years; touch n 24 -7.819
+2026-11-07 | a (stream_ticks, from item 414) | where the book sits at that print (499_jump_up_ticks, item 415) | DONE, pilot | n 69 at print -1.393, back_px 6 s -1.925; 54% of prints at the lay, spread 1.40
+2026-11-07 | a (stream_ticks, from items 414, 415) | item 414 forward at the touch and resting, rule fixed | TODO (item 417, from 26 Nov) | -
