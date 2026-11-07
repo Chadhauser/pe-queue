@@ -405,3 +405,13 @@
 2026-11-07 | a (stream_ticks, liq_sample CS) | first touch, football, settled from correct score (499_tick_touch_cs, item 387) | DONE | nothing passes; 0 of 40; OU25 Q 1.1 back +0.087 t 0.59 n 326; 18.5% unresolved
 2026-11-07 | a (stream_ticks, racing_results) | item 380's lines with a real book at the signal (499_tick_touch_racing_clean, item 388) | DONE | lead holds, same races; Q 1.1 n 97 +0.565 t 4.82; Q 1.2 n 120 +1.088 t 5.44
 2026-11-07 | a (stream_ticks, racing_bsp, from 499_tick_touch_level) | first touch on the racing place market, rule fixed | TODO (item 389, needs the recorder) | -
+2026-11-07 | d census (pg_class v jobs/) | tables no Finder job has read: bf_racing_log, bf_tennis_log, bf_price_log, ip_reopen, cricket_fav_tape, racing_form_features | DONE | real touch since Aug-Sep 2026 found; golf_markets no pre-off price; no overseas racing on the box
+2026-11-07 | b Webb (finder_rlog, racing_bsp) | morning money at the real touch (499_touch_log_racing, item 17) | DONE | nothing passes; 13:00 R<0.5 n 700 -0.100 t -8.37; no extra tick -0.066; job 463's +0.20 was the spread
+2026-11-07 | b Webb (finder_rlog, racing_bsp) | morning money by resting (499_touch_log_racing, item 390) | DONE | nothing passes; 13:00 n 335 -0.052 t -2.69; control -0.114
+2026-11-07 | a (finder_rlog) | lay a drifted 3-6 runner without crossing (499_touch_log_racing, item 172) | DONE | nothing passes; n 112 -0.174 t -3.41; FLAT control -0.149
+2026-11-07 | a (finder_tlog) | tennis X10 pre-off shock, fade by resting (499_touch_log_tennis, item 129) | DONE | nothing passes; n 64 -2.057 t -6.98; median spread at trigger 18%
+2026-11-07 | a (finder_tlog) | tennis X5, X10 shock on a tight book, follow or fade (499_touch_log_tennis2, item 391) | DONE | nothing passes; X5 FADE n 100 -0.534, FOLLOW n 100 -0.599
+2026-11-07 | a (finder_rlog, finder_rresults) | item 380's first touch on 30 s rows, older races (499_touch_log_inplay, item 392) | DONE | NXT void, dead book; SAME Q 1.1 n 95 -0.322 t -1.02, Q 1.2 n 129 0.000; weakens item 380, item 382 stands
+2026-11-07 | a (stream_ticks, finder_rresults) | horse at 1.1 whose back collapses past 2.0 (499_touch_collapse, item 393) | DONE | too small; 5 of 119, 4 won, 0.800 v 0.444, median £2.74 on show
+2026-11-07 | a (stream_ticks, from 393) | back the collapse on unseen races, rule fixed | TODO (item 394, from 10 Nov) | -
+2026-11-07 | a (cricket_fav_tape, from 271) | cricket outsider lay at the real touch, rule fixed | TODO (item 395, from 8 Nov) | -
