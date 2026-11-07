@@ -387,3 +387,15 @@
 2026-11-07 | c (bf_hist_other) | women's cricket favourite and outsider lay, unseen months, rule fixed | TODO (item 369, needs data, re-check 1 Dec 2026) | -
 2026-11-07 | c (bf_hist_other) | cricket, the same two teams again within 3 days (499_cricket_rematch, item 370) | DONE | nothing passes; 0 of 8; previous LOSER lay n 885 +0.260 t 0.83
 2026-11-07 | d (racing_bsp, from 499_race_distance) | lay a short price over 1m1f-1m4f on the flat, unseen races, rule fixed | TODO (item 371, needs data) | -
+2026-11-07 | b (racing_bsp) | rest a bet in running, lay the field low, back it high (499_rest_inplay, item 372) | DONE | nothing passes; 0 of 258; win LAY 2.0 n 18,817 -3.887, fills on nearly every winner
+2026-11-07 | b (racing_bsp, bf_hist_other) | the last race of the card, full card (499_last_race, item 373) | DONE | nothing passes; 0 of 36; LAST_MEET 30+ lay n 1,782 +0.029 t 1.24
+2026-11-07 | c (racing_bsp, af_fixtures, bf_hist_price) | the Saturday after UK payday (499_payday, item 374) | DONE | nothing passes; 0 of 24; PAY 3-6 back n 977 +0.729 t by race 1.43
+2026-11-07 | c (ip_tape) | riskless cross between neighbouring alternative lines, other sports (499_alt_line_arb, item 375) | DONE | nothing passes; 99 episodes in 26.4M rows, 1 lasted 5 s
+2026-11-07 | d (tennis_matches) | ranking rise or fall at Pinnacle closes, ATP (499_rank_trend, item 376) | DONE | not supported; 0 of 8; FALLER 3-6 z 1.08
+2026-11-07 | d (greyhound_racecards_today, bf_hist_other) | greyhound sex, colour, reserve, sire, dam (499_greyhound_sex_sire, item 377) | DONE | nothing passes; 0 of 42; black <3 lay n 1,813 +0.555 t by race 2.61 v control +0.331
+2026-11-07 | d (bf_hist_other) | corner lines, OU8.5, FH3.5 before the off (499_corner_lines, item 378) | BLOCKED | no official results; corners Sep 2026 only
+2026-11-07 | a (ip_tape, racing_results) | first in-play touch of a level, frames (499_ip_touch_level, item 379) | DONE | cannot read; clean frames 33.7 s apart
+2026-11-07 | a (stream_ticks, racing_results) | first in-play touch of a level, ticks (499_tick_touch_level, item 380) | DONE | a lead under n; 0 of 48; Q 1.1 back n 99 +0.742 t by race 4.93; Q 1.2 back n 126 +0.898 t 3.79
+2026-11-07 | a (stream_ticks) | size and losers on item 380's two lines (499_tick_touch_level, item 381) | DONE | median £47 and £35 on show; 1 and 8 losers
+2026-11-07 | a (stream_ticks, finder_touch_entries) | back at the first touch of 1.1 and 1.2, unseen races, rule fixed | TODO (item 382, needs the stream restarted) | -
+2026-11-07 | a (bf_hist_other, racing_bsp) | first low print on the minute tape (499_ip_low_print_all, item 383) | DONE | no read; the low print is nearly always the post, median 1.01
