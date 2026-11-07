@@ -366,3 +366,13 @@
 2026-11-07 | d (af_fixtures, bf_hist_other, from 499_script_run_unseen) | lay home when both on a run, short side after a comeback, unseen (499_script_run_unseen, item 351) | DONE | kept sign, below the bar; BOTH home lay n 318 +0.511 t 0.96; RALLY under 2.0 lay n 89 +2.790 t 1.43
 2026-11-07 | d (af_fixtures, bf_hist_other, from 499_script_run_unseen) | lay home when both on a run, older months, rule fixed | TODO (item 352, needs data) | -
 2026-11-07 | d (af_fixtures) | a team's game after extra time | BLOCKED | 120 AET or PEN games in two seasons, no domestic cups on the box
+2026-11-07 | d (bf_hist_other, tennis_results_2026) | a tennis player's own price error, walked forward (499_tennis_own_error, item 353) | DONE | nothing passes; 0 of 16; HIGH lay ALL n 894 +0.244 t 0.52; reads as reversion
+2026-11-07 | d (bf_hist_other) | a cricket team's own price error, walked forward (499_cricket_own_error, item 354) | DONE | nothing passes; 0 of 4, all negative
+2026-11-07 | d (af_stats, bf_hist_price) | corners, yellows, blocked shots, first price (499_style_cor_yel, item 355) | DONE | nothing passes; 0 of 36; YEL HIGH Under lay n 1,503 +0.535 t 1.96
+2026-11-07 | d (racing_bsp) | course winner, ran here, new to the course, at BSP (499_course_winner, item 356) | DONE | nothing passes; 0 of 24; CW <=5 lay n 1,053 +0.347 t 1.62
+2026-11-07 | a (bf_hist_other) | cricket, first in-play touch of a price, hold to result (499_cricket_own_error, item 357) | DONE | nothing passes; 0 of 16; OUT 1.5 lay +0.516 t 1.85 all, -0.330 t -1.18 resolved, no lead
+2026-11-07 | d (af_stats, bf_hist_other) | Over 2.5 between two high-yellow sides, unseen (499_yel_over_unseen, item 358) | DONE | did not hold; n 784 +0.142 t 0.38 h2 -0.879
+2026-11-07 | d (tennis_matches) | player price error reverts, Pinnacle closes, unseen dates (499_tennis_error_close, item 359) | DONE | not supported; HIGH z -1.00, LOW z 0.68
+2026-11-07 | d (racing_bsp, from 499_course_winner) | lay a course winner at 5.0 or under, unseen races, rule fixed | TODO (item 360, needs data) | -
+2026-11-07 | d (bf_hist_other, from 499_tennis_own_error) | lay a tennis player who has beaten their price, unseen months, rule fixed | TODO (item 361, needs data) | -
+2026-11-07 | a (cricket_matches, from 499_cricket_own_error) | item 357's OUT lines on official results, rule fixed | TODO (item 362, from 8 Nov) | -
