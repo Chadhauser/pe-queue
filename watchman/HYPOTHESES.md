@@ -428,22 +428,23 @@
 2026-11-07 | a (af_events, bf_hist_other, from 84) | back Over 2.5 after a missed penalty, unseen (499_goal_type_unseen, item 403) | DONE | under n; n 57 -0.413; af_events short of missed penalties in season 2023 too
 2026-11-07 | a (af_events, bf_hist_other, from 84) | lay opponent after a VAR goal off at level, unseen (499_var_off_unseen, item 404) | DONE | nothing passes; n 282 +0.323 t 0.67, h2 negative
 2026-11-07 | c (bf_hist_other, from 124, 138, 139) | lay FH25 Over at 15 min at 0-0, 15 older months (499_fh3_lay_older, item 405) | DONE | nothing passes; n 5,489 +0.060 t 1.07; first read void, look-ahead
-2026-11-07 | a (af_events, bf_hist_other, from 184) | back Over 2.5 at 0-0 HT after 4+ first-half yellows, older seasons, rule fixed | TODO (item 406, first read about 8 Nov) | -
+2026-11-07 | a (af_events, bf_hist_other, from 184) | back Over 2.5 at 0-0 HT after 4+ first-half yellows, older seasons, rule fixed | TODO (item 406, re-check 14 Nov) | May-Jul 2023 n 9 -4.424 t -0.79
 2026-11-07 | c (bf_hist_other, bf_hist_result) | at half-time, HT/FT X/F against MO F (499_ht_identity, item 407) | DONE | nothing passes; first print G2 CHEAP back n 354 +2.333 t 1.43; first read kept the largest gap, a look-ahead
 2026-11-07 | c (bf_hist_other, bf_hist_result) | at half-time, DC, DNB, U0.5, CS 0-0, U1.5 same-bet pairs (499_ht_identity, item 408) | DONE | nothing passes; 0 of 29; DNB G2 CHEAP back n 58 +2.191 t 1.63
 2026-11-07 | c (bf_hist_other, bf_hist_result) | women's and youth goal lines at the break (499_ht_women_youth, item 409) | DONE | nothing passes; 0 of 16; YOUTH G1 O2.5 lay n 396 +0.880 t 1.40
 2026-11-07 | audit (bf_hist_other) | item 407 on the first qualifying print (499_ht_identity_audit, item 410) | DONE | lean kept, cannot pass; win rate follows MO, not the HT/FT print
 2026-11-07 | a (liq_sample) | item 407 at the real touch, spread and locks (499_ht_identity_touch, item 411) | DONE | spread 6.94 v 0.85 points; 18 locks of 16,898 snapshots, 9 on one game
 2026-11-07 | a (liq_sample) | quote inside HT/FT, hedge on MO (499_ht_quote_hedge, item 412) | DONE | nothing passes, pilot; 37 fills, all four lines negative; fills inferred from sampled prints
-2026-11-07 | c (bf_hist_other, from 410) | back HT/FT 2 points under MO at the break, older months, rule fixed | TODO (item 420, about 8 Nov) | -
-2026-11-07 | c (bf_hist_other, from 409) | lay Over 2.5 in a youth game with one goal at half-time, older months, rule fixed | TODO (item 421, about 8 Nov) | -
+2026-11-07 | c (bf_hist_other, from 410) | back HT/FT 2 points under MO at the break, older months, rule fixed | TODO (item 420, re-check 14 Nov) | May 2023 n 32 -2.235 t -1.21
+2026-11-07 | c (bf_hist_other, from 409) | lay Over 2.5 in a youth game with one goal at half-time, older months, rule fixed | TODO (item 421, re-check 14 Nov) | May 2023 n 13 +2.316 t 0.69
 2026-11-07 | b (bf_hist_other, from 499_flip_flow) | lay a favourite drifting before the off, Jun-Dec 2023 (499_flip_flow_unseen, item 303) | DONE | closed; n 471 -0.343 t -0.72
 2026-11-07 | c (bf_hist_other schedule, racing_bsp) | a course's first meeting after a gap, at BSP (499_course_gap, item 413) | DONE | nothing passes; 0 of 48; G1 FAV lay n 866 +0.428 t 1.61
 2026-11-07 | c (racing_bsp, from 499_course_gap) | lay the favourite on a course's second day, races 413 did not read (499_course_gap_unseen, item 416) | DONE | closed; n 63 -1.826 t -1.82
 2026-11-07 | a (bf_hist_other, bf_hist_result, from items 294, 303) | back MO runner after first in-play print 2-4 points up (499_jump_up_back, item 414) | DONE, audit | prints hold, n 1,500 +1.321 t 3.21, all three years; touch n 24 -7.819
 2026-11-07 | a (stream_ticks, from item 414) | where the book sits at that print (499_jump_up_ticks, item 415) | DONE, pilot | n 69 at print -1.393, back_px 6 s -1.925; 54% of prints at the lay, spread 1.40
 2026-11-07 | a (stream_ticks, from items 414, 415) | item 414 forward at the touch and resting, rule fixed | TODO (item 417, from 26 Nov) | -
-2026-11-07 | a (bf_hist_other, from item 414) | item 414 on May 2023, the first unseen month, rule fixed | RUNNING (item 422, 499_jump_up_delay) | -
-2026-11-07 | a (bf_hist_other, from items 414, 415) | item 414 entered 5 minutes later, a print the gap did not choose, rule fixed | RUNNING (item 423, 499_jump_up_delay) | -
-2026-11-07 | a (stream_ticks, from item 423) | item 423's 5-minute entry at back_px on the stream, rule fixed | RUNNING (item 424, 499_jump_up_delay_touch) | -
-2026-11-07 | c (bf_hist_other, af_fixtures, from item 342's control) | lay the Draw at its first in-play print near kick-off, three leagues, later months, rule fixed | RUNNING (item 425, 499_draw_early_print) | -
+2026-11-07 | a (bf_hist_other, from item 414) | item 414 on May 2023, the first unseen month, rule fixed | TODO (item 422, 499_jump_up_delay, re-check 14 Nov) | May 2023 n 132 +0.346 t 0.26, h2 negative
+2026-11-07 | a (bf_hist_other, from items 414, 415) | item 414 entered 5 minutes later, a print the gap did not choose, rule fixed | TODO (item 423, 499_jump_up_delay, re-check 14 Nov) | May 2023 D5 n 114 +0.277; audit D5 n 1,214 +1.076 t 2.36; 2026 -0.180 n 125
+2026-11-07 | a (stream_ticks, from item 423) | item 423's 5-minute entry at back_px on the stream, rule fixed | TODO (item 424, from 26 Nov) | no result; job too slow on stream_ticks, stopped
+2026-11-07 | c (bf_hist_other, af_fixtures, from item 342's control) | lay the Draw at its first in-play print near kick-off, three leagues, later months, rule fixed | DONE | nothing passes; n 727 +0.191 t 0.93; near-print split reads as chance
+2026-11-07 | c (bf_hist_other, af_fixtures, from item 425) | item 425's Draw lay on games it did not read, rule fixed | TODO (item 426, re-check 1 Dec) | -
