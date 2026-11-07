@@ -377,3 +377,13 @@
 2026-11-07 | d (bf_hist_other, from 499_tennis_own_error) | lay a tennis player who has beaten their price, unseen months, rule fixed | TODO (item 361, needs data) | -
 2026-11-07 | a (cricket_matches, from 499_cricket_own_error) | item 357's OUT lines on official results, rule fixed | TODO (item 362, from 8 Nov) | -
 2026-11-07 | queue 0i (goal_live_predictions, goal_alerts, liq_sample) | engine patch check, last run (499_engine_patch_check) | DONE | nothing passes; 27 alerts v 300; settled n 16 -1.998, sum -31.97; real_price in band 5 of 16
+2026-11-07 | c (bf_hist_other, bf_hist_result, from 499_ladder_slot) | back an MO runner printing exactly 3.0, unseen months, scored (499_oct23_feb24_262_265, item 262) | DONE | did not hold; n 387 -0.071 t -0.10 h1 +0.690 h2 -0.820
+2026-11-07 | d (racing_bsp) | race distance by price band at BSP (499_race_distance, item 363) | DONE | nothing passes; 0 of 56; FLAT 1m1f-1m4f <=5 lay n 3,313 +0.213 t 1.62
+2026-11-07 | c (racing_bsp) | bank-holiday cards at BSP (499_race_distance, item 364) | DONE | nothing passes; 0 of 8; HOLIDAY >15 back n 2,151 +2.106 t 0.89 h1 -0.979
+2026-11-07 | c (af_fixtures, bf_hist_price, fd_matches) | the Christmas football programme, 26 Dec to 2 Jan (499_xmas_football, item 365) | DONE | nothing passes; 0 of 10; OVER lay n 337 +0.150 t 0.28
+2026-11-07 | c (bf_hist_other) | women's cricket before the off, by band (499_cricket_women, item 366) | DONE | nothing passes; 0 of 10; W 6-20 lay n 181 +0.722 t 4.42 fails n; W <1.5 back n 710 +0.466 t 2.65
+2026-11-07 | a (bf_hist_other, cricket_matches) | item 366's two lines at 1, 3, 5 ticks, official, thin v thick (499_cricket_women_stress, item 367) | DONE | cannot pass; W 6-20 lay 5 ticks +0.393 t 2.31; W <1.5 back 5 ticks +0.047 t 0.26; official 36 games only
+2026-11-07 | c (bf_hist_other) | is item 367 thinness, men's thin games (499_cricket_men_thin, item 368) | DONE | no; M 6-20 lay THIN n 185 +0.042 t 0.19; M <1.5 back THIN n 867 +0.057 t 0.35
+2026-11-07 | c (bf_hist_other) | women's cricket favourite and outsider lay, unseen months, rule fixed | TODO (item 369, needs data, re-check 1 Dec 2026) | -
+2026-11-07 | c (bf_hist_other) | cricket, the same two teams again within 3 days (499_cricket_rematch, item 370) | DONE | nothing passes; 0 of 8; previous LOSER lay n 885 +0.260 t 0.83
+2026-11-07 | d (racing_bsp, from 499_race_distance) | lay a short price over 1m1f-1m4f on the flat, unseen races, rule fixed | TODO (item 371, needs data) | -
