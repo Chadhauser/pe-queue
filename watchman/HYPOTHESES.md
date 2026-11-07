@@ -443,3 +443,5 @@
 2026-11-07 | a (bf_hist_other, bf_hist_result, from items 294, 303) | back MO runner after first in-play print 2-4 points up (499_jump_up_back, item 414) | DONE, audit | prints hold, n 1,500 +1.321 t 3.21, all three years; touch n 24 -7.819
 2026-11-07 | a (stream_ticks, from item 414) | where the book sits at that print (499_jump_up_ticks, item 415) | DONE, pilot | n 69 at print -1.393, back_px 6 s -1.925; 54% of prints at the lay, spread 1.40
 2026-11-07 | a (stream_ticks, from items 414, 415) | item 414 forward at the touch and resting, rule fixed | TODO (item 417, from 26 Nov) | -
+2026-11-07 | a (bf_hist_other, from item 414) | item 414 on May 2023, the first unseen month, rule fixed | RUNNING (item 422, 499_jump_up_delay) | -
+2026-11-07 | a (bf_hist_other, from items 414, 415) | item 414 entered 5 minutes later, a print the gap did not choose, rule fixed | RUNNING (item 423, 499_jump_up_delay) | -
