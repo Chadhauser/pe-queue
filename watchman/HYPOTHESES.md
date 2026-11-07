@@ -399,3 +399,9 @@
 2026-11-07 | a (stream_ticks) | size and losers on item 380's two lines (499_tick_touch_level, item 381) | DONE | median £47 and £35 on show; 1 and 8 losers
 2026-11-07 | a (stream_ticks, finder_touch_entries) | back at the first touch of 1.1 and 1.2, unseen races, rule fixed | TODO (item 382, needs the stream restarted) | -
 2026-11-07 | a (bf_hist_other, racing_bsp) | first low print on the minute tape (499_ip_low_print_all, item 383) | DONE | no read; the low print is nearly always the post, median 1.01
+2026-11-07 | a (stream_ticks) | first in-play touch, football MO and OU25, tennis MO (499_tick_touch_other, item 384) | DONE | nothing passes; 0 of 60; tennis Q 1.1 back n 606 -0.487 t -2.52; football signal junk, no read
+2026-11-07 | a (stream_ticks, goal_timeline) | first touch, football, real book at the signal (499_tick_touch_clean, item 385) | DONE | nothing passes; 0 of 40; MO Q 1.1 back n 590 -0.526 t -3.65; OU25 too few results
+2026-11-07 | a (stream_ticks, goal_timeline) | first touch, OU25, result from the market (499_tick_touch_ou25, item 386) | DONE, struck | 2 numeric passes, Q 1.1 back n 340 +0.407 t 3.86, struck: late third goals dropped
+2026-11-07 | a (stream_ticks, liq_sample CS) | first touch, football, settled from correct score (499_tick_touch_cs, item 387) | DONE | nothing passes; 0 of 40; OU25 Q 1.1 back +0.087 t 0.59 n 326; 18.5% unresolved
+2026-11-07 | a (stream_ticks, racing_results) | item 380's lines with a real book at the signal (499_tick_touch_racing_clean, item 388) | DONE | lead holds, same races; Q 1.1 n 97 +0.565 t 4.82; Q 1.2 n 120 +1.088 t 5.44
+2026-11-07 | a (stream_ticks, racing_bsp, from 499_tick_touch_level) | first touch on the racing place market, rule fixed | TODO (item 389, needs the recorder) | -
