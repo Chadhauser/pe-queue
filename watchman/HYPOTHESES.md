@@ -451,3 +451,5 @@
 2026-11-07 | c (fd_matches) | a league's opening round at the closes (499_season_open, item 427) | DONE | nothing passes, 0 of 20
 2026-11-07 | c (fd_matches, bf_hist_other, from item 427) | a league's opening round on the tape (499_season_open, item 428) | DONE | nothing passes, 0 of 10; best Under back n 326 +0.457 t 0.77, h1 negative
 2026-11-07 | c (bf_hist_other, fd_matches, from items 83, 427, 428) | lay Over 2.5 in a season's first three rounds, months before Apr 2023 only (item 429) | TODO (re-check 12 Nov) | -
+2026-11-07 | a (af_events, bf_hist_price) | after a second-half equaliser to 1-1, back or lay the equaliser, the first scorer, the Draw (499_equaliser_side, 499_equaliser_stress, item 430) | DONE | nothing passes; 1 of 54 numeric, struck: FIRST lay n 1,683 +0.664 t 3.52 on stale prints, less top 1% t 1.53; PRICED n 1,140 +0.392 t 2.43
+2026-11-07 | a (bf_hist_other, af_events, from 430) | lay the first scorer once a second-half equaliser is priced in, unseen games, rule fixed | TODO (item 431, from 8 Nov) | -
