@@ -342,3 +342,6 @@
 2026-11-06 | d (tennis_results_2026, bf_hist_other) | item 323's Challenger lay, unseen months, rule fixed | TODO (item 327, needs data) | -
 2026-11-06 | a (coach_path) | Over line shortening with no goal, real touch (499_coach_over_nogoal, item 328) | DONE | nothing passes; 0 of 12; OU35 lay n 103 -0.459 t -1.42; first read t 3.63 was drop bias
 2026-11-06 | c (xx_tape, liq_sample) | Betfair against Smarkets and Matchbook, does the other book lead | TODO (item 329) | -
+2026-11-07 | c (af_events, bf_hist_price) | stop-start second half, added time, price at 85 (499_late_state, item 333) | RUNNING | -
+2026-11-07 | d (af_events, bf_hist_price) | the booked side at minute 70 (499_late_state, item 334) | RUNNING | -
+2026-11-07 | d (af_stats raw, bf_hist_price) | team style, fouls, box shots, pass accuracy, first price (499_style_raw, item 335) | RUNNING | -
