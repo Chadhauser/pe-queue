@@ -351,4 +351,4 @@
 2026-11-07 | c (xx_tape, liq_sample) | pre-off two-book arb, Betfair and Matchbook (499_xx_arb_ip, item 330) | DONE | nothing passes; 1 signal in 10,323 rows, next row -0.302
 2026-11-07 | c (xx_tape, liq_sample) | other book's lead in play (499_xx_arb_ip, item 331) | DONE | nothing passes; Smarkets n 294 -0.423, Matchbook n 281 -0.626
 2026-11-07 | b value (xx_tape, liq_sample) | Matchbook price beats Betfair's mid, hold to result (499_xx_value, item 332) | DONE | too small; n 8 +0.687 t 0.14
-2026-11-07 | a moves (xx_tape, liq_sample) | Betfair moves, thin book has not, take the stale price, rule fixed | TODO (item 333, from 8 Nov) | -
+2026-11-07 | a moves (xx_tape, liq_sample) | Betfair moves, thin book has not, take the stale price, rule fixed | TODO (item 339, from 8 Nov) | -
