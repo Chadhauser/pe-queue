@@ -445,3 +445,4 @@
 2026-11-07 | a (stream_ticks, from items 414, 415) | item 414 forward at the touch and resting, rule fixed | TODO (item 417, from 26 Nov) | -
 2026-11-07 | a (bf_hist_other, from item 414) | item 414 on May 2023, the first unseen month, rule fixed | RUNNING (item 422, 499_jump_up_delay) | -
 2026-11-07 | a (bf_hist_other, from items 414, 415) | item 414 entered 5 minutes later, a print the gap did not choose, rule fixed | RUNNING (item 423, 499_jump_up_delay) | -
+2026-11-07 | a (stream_ticks, from item 423) | item 423's 5-minute entry at back_px on the stream, rule fixed | RUNNING (item 424, 499_jump_up_delay_touch) | -
