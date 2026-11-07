@@ -418,3 +418,5 @@
 2026-11-07 | d census (ip_reopen, racing_results) | racing, runner the first in-play book moves most, real touch, held to result (499_reopen_racing, item 396) | RUNNING | -
 2026-11-07 | a (cricket_fav_tape, from 362) | cricket outsider first touching 1.5 in play, lay at the real touch (499_cricket_touch_inplay, item 397) | RUNNING | -
 2026-11-07 | a (ip_reopen, finder_tlog) | tennis large move across a suspension, follow or fade at the real touch (499_reopen_tennis, item 398) | RUNNING | -
+2026-11-07 | a (ip_reopen, racing_results, from 396 and 393) | racing, book restored after the race is decided, back the 1.01 horse, lay the beaten one (499_reopen_restored, item 399) | RUNNING | -
+2026-11-07 | a (same) | item 399 on unseen races | TODO (item 400, from 21 Nov) | -
