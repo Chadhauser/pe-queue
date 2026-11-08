@@ -469,3 +469,4 @@
 2026-11-08 | a (bf_hist_other, bf_hist_result, from 414) | item 414's jump-up back on Over/Under 2.5 at the off, a market the signal never read (499_jump_up_ou25, item 444) | DONE | nothing passes; ONE E1 n 1,365 -0.019 t -0.06 h1 +0.404 h2 -0.501; 2023 +0.556, 2024 -0.316, 2026 -1.573
 2026-11-08 | a (bf_hist_other, bf_hist_result, from 414, 444 controls) | lay a runner shortened 2-4 points at the off, MO and OU25, months before Mar 2023 (item 445) | TODO (re-check 12 Nov) | -
 2026-11-08 | re-reads (bf_hist_other, af_*, from 342, 352, 406, 420-423, 435) | April and March 2023, months no read had used (499_apr23_rereads, 499_mar23_rereads) | DONE, interim | nothing passes; every line under n 300; jump-up E1 Mar-May n 515 about +0.22
+2026-11-08 | a/c (bf_hist_other, bf_hist_result) | at the break, hold OU G+0.5 and G+1.5 to the result by half-time goal total G, OU4.5 included (499_ht_state_lines, item 446) | RUNNING | -
