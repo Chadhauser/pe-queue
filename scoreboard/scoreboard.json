@@ -136,6 +136,18 @@
    "verdict": "NOT YET",
    "next_door": "stop 0.2 ATR / exit at 11:00",
    "checked": "2026-11-08T10:54"
+  },
+  {
+   "name": "H7 stocks ORB, realistic fills (next-bar open, 2x cost)",
+   "n": 1563,
+   "mean_bps": "-0.059 R/day",
+   "t": -3.4,
+   "is_t": -2.94,
+   "oos_t": -1.77,
+   "control_t": -4.62,
+   "verdict": "NOT YET",
+   "next_door": "if control ~0 and real >0: stocks ORB stands with these fills; else withdraw both stock verdicts",
+   "checked": "2026-11-08T11:09"
   }
  ],
  "queue": [
@@ -149,7 +161,7 @@
   },
   {
    "id": "H7 realfill",
-   "status": "proposed"
+   "status": "verified"
   }
  ],
  "data_health": {
@@ -173,5 +185,5 @@
    "note": "fin_heartbeat 2026-11-06 23:40:04.253999+01:00 ok"
   }
  },
- "updated": "2026-11-08T10:54"
+ "updated": "2026-11-08T11:09"
 }

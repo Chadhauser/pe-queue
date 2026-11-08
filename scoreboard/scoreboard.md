@@ -1,4 +1,4 @@
-# FIN SCOREBOARD (Verifier-only) — 2026-11-08T10:54 UTC
+# FIN SCOREBOARD (Verifier-only) — 2026-11-08T11:09 UTC
 
 Money: live £0 | paper £0 | live edges 0
 
@@ -23,8 +23,9 @@ Money: live £0 | paper £0 | live edges 0
 | H5 Friday last hour, trade toward nearest $5 strike (dist>0.1%) | 258 | 0.8 | 0.35 | 0.01 | 0.69 | 1.97 | **NOT YET** | per test: widen threshold / other instrument |
 | H6 fade opening spike, tight stop, top-20 relvol stocks | 1562 | +0.051 R/day | 1.95 | 1.48 | 1.26 | 3.38 | **WORKS AT SMALL SIZE** | stop 0.2 ATR / exit at 11:00 |
 | H6 fade opening spike, tight stop, top-20 relvol stocks | 1563 | +0.051 R/day | 1.94 | 1.48 | 1.26 | 3.81 | **NOT YET** | stop 0.2 ATR / exit at 11:00 |
+| H7 stocks ORB, realistic fills (next-bar open, 2x cost) | 1563 | -0.059 R/day | -3.4 | -2.94 | -1.77 | -4.62 | **NOT YET** | if control ~0 and real >0: stocks ORB stands with these fills; else withdraw both stock verdicts |
 
 ## Queue
 - H1-5 mechanisms: verified
 - H6 fade-spike: verified
-- H7 realfill: proposed
+- H7 realfill: verified
