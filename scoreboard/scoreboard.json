@@ -1,7 +1,7 @@
 {
  "money": {
   "live_month": 0,
-  "paper_month": 0,
+  "paper_month": 191.47,
   "live_edges": 0
  },
  "verdicts": [
@@ -148,6 +148,18 @@
    "verdict": "NOT YET",
    "next_door": "if control ~0 and real >0: stocks ORB stands with these fills; else withdraw both stock verdicts",
    "checked": "2026-11-08T11:09"
+  },
+  {
+   "name": "ORB-QQQ v2 (stop-side guard, 6 gap days skipped)",
+   "n": 1396,
+   "mean_bps": "+0.165 R/trade",
+   "t": 2.41,
+   "is_t": 1.58,
+   "oos_t": 1.83,
+   "control_t": 1.31,
+   "verdict": "WORKS AT SMALL SIZE",
+   "next_door": "if withdrawn: ORB on SPY/IWM with the guard",
+   "checked": "2026-11-08T11:10"
   }
  ],
  "queue": [
@@ -161,6 +173,10 @@
   },
   {
    "id": "H7 realfill",
+   "status": "verified"
+  },
+  {
+   "id": "ORB-QQQ v2",
    "status": "verified"
   }
  ],
@@ -185,5 +201,68 @@
    "note": "fin_heartbeat 2026-11-06 23:40:04.253999+01:00 ok"
   }
  },
- "updated": "2026-11-08T11:09"
+ "updated": "2026-11-08T11:10",
+ "paper": {
+  "strategy": "ORB-QQQ (Zarattini-Aziz) $100 risk/trade, simulated on Alpaca IEX 1-min bars",
+  "label": "UNVERIFIED-PAPER",
+  "start": "2026-11-02",
+  "updated": "2026-11-08T11:10",
+  "days": [
+   {
+    "date": "2026-11-02",
+    "side": "short",
+    "entry": 695.09,
+    "stop": 695.55,
+    "exit": 695.55,
+    "reason": "stop",
+    "r_mult": -1.065,
+    "usd": -106.45
+   },
+   {
+    "date": "2026-11-03",
+    "side": "long",
+    "entry": 685.52,
+    "stop": 683.2,
+    "exit": 685.32,
+    "reason": "close",
+    "r_mult": -0.099,
+    "usd": -9.91
+   },
+   {
+    "date": "2026-11-04",
+    "side": "short",
+    "entry": 688.11,
+    "stop": 691.36,
+    "exit": 691.36,
+    "reason": "stop",
+    "r_mult": -1.009,
+    "usd": -100.92
+   },
+   {
+    "date": "2026-11-05",
+    "side": "short",
+    "entry": 678.31,
+    "stop": 683.64,
+    "exit": 648.05,
+    "reason": "close",
+    "r_mult": 5.672,
+    "usd": 567.17
+   },
+   {
+    "date": "2026-11-06",
+    "side": "short",
+    "entry": 656.45,
+    "stop": 658.88,
+    "exit": 658.88,
+    "reason": "stop",
+    "r_mult": -1.012,
+    "usd": -101.23
+   }
+  ],
+  "trades": 5,
+  "wins": 1,
+  "usd": 248.66,
+  "gbp": 191.47,
+  "fx": 0.77
+ }
 }
