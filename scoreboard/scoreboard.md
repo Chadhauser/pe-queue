@@ -1,4 +1,4 @@
-# FIN SCOREBOARD (Verifier-only) — 2026-11-08T16:09 UTC
+# FIN SCOREBOARD (Verifier-only) — 2026-11-08T16:20 UTC
 
 Money: live £0 | paper £191.47 | live edges 0
 
@@ -27,6 +27,8 @@ Money: live £0 | paper £191.47 | live edges 0
 | ORB-QQQ v2 (stop-side guard, 6 gap days skipped) | 1396 | +0.165 R/trade | 2.41 | 1.58 | 1.83 | 1.31 | **WORKS AT SMALL SIZE** | if withdrawn: ORB on SPY/IWM with the guard |
 | M1 QQQ gap DOWN >=0.7%: FADE (long) open->10:30. Mechanism: overnight gap | 225 | +3.16 bps/trade | 0.58 | 0.01 | 0.88 | 0.59 | **NOT YET** | widen/narrow threshold once, then sibling instrument, then dead |
 | M2 QQQ gap UP >=0.7%: FADE (short) open->10:30. | 265 | +0.84 bps/trade | 0.2 | 0.25 | -0.0 | -1.63 | **NOT YET** | widen/narrow threshold once, then sibling instrument, then dead |
+| M3 Lev-ETF rebalance, WIDER: |QQQ move 09:30->15:30|>=1.5% -> trade QQQ W | 213 | +0.17 bps/trade | 0.06 | 0.09 | -0.02 | -0.47 | **NOT YET** | widen/narrow threshold once, then sibling instrument, then dead |
+| M6 Lunch reversal: QQQ 11:30->13:30 move >=0.5% -> FADE 13:30->15:00. | 325 | -3.68 bps/trade | -1.2 | -1.71 | 0.13 | 0.19 | **NOT YET** | widen/narrow threshold once, then sibling instrument, then dead |
 
 ## Paper ledger — UNVERIFIED-PAPER — ORB-QQQ (Zarattini-Aziz) $100 risk/trade, simulated on Alpaca IEX 1-min bars — from 2026-11-02
 trades 5 | wins 1 | $+248.66 = £+191.47 (fx 0.77)
@@ -46,8 +48,8 @@ trades 5 | wins 1 | $+248.66 = £+191.47 (fx 0.77)
 - ORB-QQQ v2: verified
 - M1: verified
 - M2: verified
-- M3: proposed
-- M6: proposed
+- M3: verified
+- M6: verified
 - M7: proposed
 - M8: proposed
 - M9: proposed
