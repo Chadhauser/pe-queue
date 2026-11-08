@@ -280,6 +280,30 @@
    "verdict": "NOT YET",
    "next_door": "widen/narrow threshold once, then sibling instrument, then dead",
    "checked": "2026-11-08T16:50"
+  },
+  {
+   "name": "M13 Gap-and-go: QQQ opens OUTSIDE yesterday's high-low range -> continuati",
+   "n": 648,
+   "mean_bps": "-2.11 bps/trade",
+   "t": -0.47,
+   "is_t": -0.75,
+   "oos_t": 0.21,
+   "control_t": 0.05,
+   "verdict": "NOT YET",
+   "next_door": "widen/narrow threshold once, then sibling instrument, then dead",
+   "checked": "2026-11-08T17:00"
+  },
+  {
+   "name": "M14 Gap INSIDE range: QQQ gaps >=0.3% but opens inside yesterday's range -",
+   "n": 423,
+   "mean_bps": "-4.65 bps/trade",
+   "t": -1.29,
+   "is_t": -1.09,
+   "oos_t": -0.7,
+   "control_t": 0.05,
+   "verdict": "NOT YET",
+   "next_door": "widen/narrow threshold once, then sibling instrument, then dead",
+   "checked": "2026-11-08T17:00"
   }
  ],
  "queue": [
@@ -341,11 +365,11 @@
   },
   {
    "id": "M13",
-   "status": "proposed"
+   "status": "verified"
   },
   {
    "id": "M14",
-   "status": "proposed"
+   "status": "verified"
   },
   {
    "id": "M15",
@@ -393,7 +417,7 @@
    "note": "fin_heartbeat 2026-11-06 23:40:04.253999+01:00 ok"
   }
  },
- "updated": "2026-11-08T16:50",
+ "updated": "2026-11-08T17:00",
  "paper": {
   "strategy": "ORB-QQQ (Zarattini-Aziz) $100 risk/trade, simulated on Alpaca IEX 1-min bars",
   "label": "UNVERIFIED-PAPER",

@@ -1,4 +1,4 @@
-# FIN SCOREBOARD (Verifier-only) — 2026-11-08T16:50 UTC
+# FIN SCOREBOARD (Verifier-only) — 2026-11-08T17:00 UTC
 
 Money: live £0 | paper £191.47 | live edges 0
 
@@ -35,6 +35,8 @@ Money: live £0 | paper £191.47 | live edges 0
 | M10 SPY vs QQQ first-hour divergence >=0.4% -> convergence pair 10:30->clo | 310 | -0.92 bps/trade | -0.8 | -0.6 | -0.52 | -0.34 | **NOT YET** | widen/narrow threshold once, then sibling instrument, then dead |
 | M11 Turnaround Tuesday: Monday QQQ close-to-close <=-1% -> LONG Tuesday op | 41 | +12.73 bps/trade | 0.76 | 0.7 | 0.37 | 0.26 | **NOT YET** | widen/narrow threshold once, then sibling instrument, then dead |
 | M12 Open drive: QQQ first 15-min range >=0.6% and close in top/bottom 20%  | 257 | +4.69 bps/trade | 0.79 | 1.13 | -0.07 | -0.4 | **NOT YET** | widen/narrow threshold once, then sibling instrument, then dead |
+| M13 Gap-and-go: QQQ opens OUTSIDE yesterday's high-low range -> continuati | 648 | -2.11 bps/trade | -0.47 | -0.75 | 0.21 | 0.05 | **NOT YET** | widen/narrow threshold once, then sibling instrument, then dead |
+| M14 Gap INSIDE range: QQQ gaps >=0.3% but opens inside yesterday's range - | 423 | -4.65 bps/trade | -1.29 | -1.09 | -0.7 | 0.05 | **NOT YET** | widen/narrow threshold once, then sibling instrument, then dead |
 
 ## Paper ledger — UNVERIFIED-PAPER — ORB-QQQ (Zarattini-Aziz) $100 risk/trade, simulated on Alpaca IEX 1-min bars — from 2026-11-02
 trades 5 | wins 1 | $+248.66 = £+191.47 (fx 0.77)
@@ -62,8 +64,8 @@ trades 5 | wins 1 | $+248.66 = £+191.47 (fx 0.77)
 - M10: verified
 - M11: verified
 - M12: verified
-- M13: proposed
-- M14: proposed
+- M13: verified
+- M14: verified
 - M15: proposed
 - M20: proposed
 - M21: proposed
