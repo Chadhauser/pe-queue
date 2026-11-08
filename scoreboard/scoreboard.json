@@ -208,6 +208,30 @@
    "verdict": "NOT YET",
    "next_door": "widen/narrow threshold once, then sibling instrument, then dead",
    "checked": "2026-11-08T16:20"
+  },
+  {
+   "name": "M7 Last-hour momentum: QQQ 09:30->15:00 move >=1% -> WITH it 15:00->close",
+   "n": 416,
+   "mean_bps": "+4.23 bps/trade",
+   "t": 1.64,
+   "is_t": 1.56,
+   "oos_t": 0.71,
+   "control_t": -0.67,
+   "verdict": "WORKS AT SMALL SIZE",
+   "next_door": "widen/narrow threshold once, then sibling instrument, then dead",
+   "checked": "2026-11-08T16:30"
+  },
+  {
+   "name": "M8 TLT first hour >=0.3% -> QQQ 10:30-12:30 SAME sign (H3 tested opposite",
+   "n": 363,
+   "mean_bps": "+0.54 bps/trade",
+   "t": 0.15,
+   "is_t": 0.08,
+   "oos_t": 0.15,
+   "control_t": 1.1,
+   "verdict": "NOT YET",
+   "next_door": "widen/narrow threshold once, then sibling instrument, then dead",
+   "checked": "2026-11-08T16:30"
   }
  ],
  "queue": [
@@ -245,11 +269,11 @@
   },
   {
    "id": "M7",
-   "status": "proposed"
+   "status": "verified"
   },
   {
    "id": "M8",
-   "status": "proposed"
+   "status": "verified"
   },
   {
    "id": "M9",
@@ -321,7 +345,7 @@
    "note": "fin_heartbeat 2026-11-06 23:40:04.253999+01:00 ok"
   }
  },
- "updated": "2026-11-08T16:20",
+ "updated": "2026-11-08T16:30",
  "paper": {
   "strategy": "ORB-QQQ (Zarattini-Aziz) $100 risk/trade, simulated on Alpaca IEX 1-min bars",
   "label": "UNVERIFIED-PAPER",
