@@ -1,8 +1,3 @@
-2026-11-06 05:05:25 DATA BROKEN: ['alpaca_etf', 'alpaca_stocks']
-2026-11-06 05:15:25 DATA BROKEN: ['alpaca_etf', 'alpaca_stocks']
-2026-11-06 05:25:30 DATA BROKEN: ['alpaca_etf', 'alpaca_stocks']
-2026-11-06 05:35:32 DATA BROKEN: ['alpaca_etf', 'alpaca_stocks']
-2026-11-06 05:45:34 DATA BROKEN: ['alpaca_etf', 'alpaca_stocks']
 2026-11-06 05:55:34 DATA BROKEN: ['alpaca_etf', 'alpaca_stocks']
 2026-11-06 06:05:35 DATA BROKEN: ['alpaca_etf', 'alpaca_stocks']
 2026-11-06 06:15:36 DATA BROKEN: ['alpaca_etf', 'alpaca_stocks']
@@ -38,3 +33,8 @@
 2026-11-08 16:30:09 M7 -> ['WORKS AT SMALL SIZE']
 2026-11-08 16:30:09 M8 -> ['NOT YET']
 2026-11-08 16:30:09 mirror failed UndefinedTable('relation "job_results" does not exist\nLINE 1: DELETE FROM job_results WHERE job=\'FIN_SCOREBOARD\'\n   
+2026-11-08 16:40:09 building M9
+2026-11-08 16:40:09 building M10
+2026-11-08 16:40:13 M9 -> ['NOT YET']
+2026-11-08 16:40:13 M10 -> ['NOT YET']
+2026-11-08 16:40:13 mirror failed UndefinedTable('relation "job_results" does not exist\nLINE 1: DELETE FROM job_results WHERE job=\'FIN_SCOREBOARD\'\n   

@@ -1,4 +1,4 @@
-# FIN SCOREBOARD (Verifier-only) — 2026-11-08T16:30 UTC
+# FIN SCOREBOARD (Verifier-only) — 2026-11-08T16:40 UTC
 
 Money: live £0 | paper £191.47 | live edges 0
 
@@ -31,6 +31,8 @@ Money: live £0 | paper £191.47 | live edges 0
 | M6 Lunch reversal: QQQ 11:30->13:30 move >=0.5% -> FADE 13:30->15:00. | 325 | -3.68 bps/trade | -1.2 | -1.71 | 0.13 | 0.19 | **NOT YET** | widen/narrow threshold once, then sibling instrument, then dead |
 | M7 Last-hour momentum: QQQ 09:30->15:00 move >=1% -> WITH it 15:00->close | 416 | +4.23 bps/trade | 1.64 | 1.56 | 0.71 | -0.67 | **WORKS AT SMALL SIZE** | widen/narrow threshold once, then sibling instrument, then dead |
 | M8 TLT first hour >=0.3% -> QQQ 10:30-12:30 SAME sign (H3 tested opposite | 363 | +0.54 bps/trade | 0.15 | 0.08 | 0.15 | 1.1 | **NOT YET** | widen/narrow threshold once, then sibling instrument, then dead |
+| M9 IWM vs QQQ first-hour divergence >=0.5% -> long the LAGGARD, short the | 591 | -1.84 bps/trade | -1.5 | -0.25 | -1.97 | 0.01 | **NOT YET** | widen/narrow threshold once, then sibling instrument, then dead |
+| M10 SPY vs QQQ first-hour divergence >=0.4% -> convergence pair 10:30->clo | 310 | -0.92 bps/trade | -0.8 | -0.6 | -0.52 | -0.34 | **NOT YET** | widen/narrow threshold once, then sibling instrument, then dead |
 
 ## Paper ledger — UNVERIFIED-PAPER — ORB-QQQ (Zarattini-Aziz) $100 risk/trade, simulated on Alpaca IEX 1-min bars — from 2026-11-02
 trades 5 | wins 1 | $+248.66 = £+191.47 (fx 0.77)
@@ -54,8 +56,8 @@ trades 5 | wins 1 | $+248.66 = £+191.47 (fx 0.77)
 - M6: verified
 - M7: verified
 - M8: verified
-- M9: proposed
-- M10: proposed
+- M9: verified
+- M10: verified
 - M11: proposed
 - M12: proposed
 - M13: proposed
