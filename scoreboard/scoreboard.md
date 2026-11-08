@@ -1,4 +1,4 @@
-# FIN SCOREBOARD (Verifier-only) — 2026-11-08T17:10 UTC
+# FIN SCOREBOARD (Verifier-only) — 2026-11-08T17:20 UTC
 
 Money: live £0 | paper £191.47 | live edges 0
 
@@ -39,6 +39,8 @@ Money: live £0 | paper £191.47 | live edges 0
 | M14 Gap INSIDE range: QQQ gaps >=0.3% but opens inside yesterday's range - | 423 | -4.65 bps/trade | -1.29 | -1.09 | -0.7 | 0.05 | **NOT YET** | widen/narrow threshold once, then sibling instrument, then dead |
 | M15 VWAP reversion: QQQ at 10:00 >=0.4% from session VWAP -> FADE 10:00->1 | 169 | +0.09 bps/trade | 0.02 | 0.26 | -0.27 | 1.82 | **NOT YET** | widen/narrow threshold once, then sibling instrument, then dead |
 | M20 60-min ORB on QQQ: break of 09:30-10:30 range by 10:35 close -> contin | 270 | -1.26 bps/trade | -0.23 | 0.48 | -1.07 | 0.6 | **NOT YET** | widen/narrow threshold once, then sibling instrument, then dead |
+| M21 30-min ORB on QQQ: break of 09:30-10:00 range by 10:05 -> continuation | 440 | -1.28 bps/trade | -0.27 | -0.08 | -0.38 | 0.04 | **NOT YET** | widen/narrow threshold once, then sibling instrument, then dead |
+| M23 5-min ORB on SPY (ORB-QQQ next door), R-multiples. | 1478 | +0.13 R/trade | 1.76 | 2.12 | 0.27 | -0.89 | **WORKS AT SMALL SIZE** | widen/narrow threshold once, then sibling instrument, then dead |
 
 ## Paper ledger — UNVERIFIED-PAPER — ORB-QQQ (Zarattini-Aziz) $100 risk/trade, simulated on Alpaca IEX 1-min bars — from 2026-11-02
 trades 5 | wins 1 | $+248.66 = £+191.47 (fx 0.77)
@@ -70,7 +72,7 @@ trades 5 | wins 1 | $+248.66 = £+191.47 (fx 0.77)
 - M14: verified
 - M15: verified
 - M20: verified
-- M21: proposed
-- M23: proposed
+- M21: verified
+- M23: verified
 - M24: proposed
 - M25: proposed

@@ -1,8 +1,3 @@
-2026-11-08 11:09:43 H7 realfill -> ['NOT YET']
-2026-11-08 11:10:15 start: reset 0 running -> proposed
-2026-11-08 11:10:16 building ORB-QQQ v2
-2026-11-08 11:10:30 ORB-QQQ v2 -> ['WORKS AT SMALL SIZE']
-2026-11-08 16:09:56 start: reset 0 running -> proposed
 2026-11-08 16:09:56 building M1
 2026-11-08 16:09:56 building M2
 2026-11-08 16:09:59 M1 -> ['NOT YET']
@@ -38,3 +33,8 @@
 2026-11-08 17:10:21 M15 -> ['NOT YET']
 2026-11-08 17:10:21 M20 -> ['NOT YET']
 2026-11-08 17:10:21 mirror failed UndefinedTable('relation "job_results" does not exist\nLINE 1: DELETE FROM job_results WHERE job=\'FIN_SCOREBOARD\'\n   
+2026-11-08 17:20:21 building M21
+2026-11-08 17:20:21 building M23
+2026-11-08 17:20:28 M21 -> ['NOT YET']
+2026-11-08 17:20:28 M23 -> ['WORKS AT SMALL SIZE']
+2026-11-08 17:20:28 mirror failed UndefinedTable('relation "job_results" does not exist\nLINE 1: DELETE FROM job_results WHERE job=\'FIN_SCOREBOARD\'\n   

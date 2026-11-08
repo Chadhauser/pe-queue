@@ -328,6 +328,30 @@
    "verdict": "NOT YET",
    "next_door": "widen/narrow threshold once, then sibling instrument, then dead",
    "checked": "2026-11-08T17:10"
+  },
+  {
+   "name": "M21 30-min ORB on QQQ: break of 09:30-10:00 range by 10:05 -> continuation",
+   "n": 440,
+   "mean_bps": "-1.28 bps/trade",
+   "t": -0.27,
+   "is_t": -0.08,
+   "oos_t": -0.38,
+   "control_t": 0.04,
+   "verdict": "NOT YET",
+   "next_door": "widen/narrow threshold once, then sibling instrument, then dead",
+   "checked": "2026-11-08T17:20"
+  },
+  {
+   "name": "M23 5-min ORB on SPY (ORB-QQQ next door), R-multiples.",
+   "n": 1478,
+   "mean_bps": "+0.13 R/trade",
+   "t": 1.76,
+   "is_t": 2.12,
+   "oos_t": 0.27,
+   "control_t": -0.89,
+   "verdict": "WORKS AT SMALL SIZE",
+   "next_door": "widen/narrow threshold once, then sibling instrument, then dead",
+   "checked": "2026-11-08T17:20"
   }
  ],
  "queue": [
@@ -405,11 +429,11 @@
   },
   {
    "id": "M21",
-   "status": "proposed"
+   "status": "verified"
   },
   {
    "id": "M23",
-   "status": "proposed"
+   "status": "verified"
   },
   {
    "id": "M24",
@@ -441,7 +465,7 @@
    "note": "fin_heartbeat 2026-11-06 23:40:04.253999+01:00 ok"
   }
  },
- "updated": "2026-11-08T17:10",
+ "updated": "2026-11-08T17:20",
  "paper": {
   "strategy": "ORB-QQQ (Zarattini-Aziz) $100 risk/trade, simulated on Alpaca IEX 1-min bars",
   "label": "UNVERIFIED-PAPER",
