@@ -160,6 +160,30 @@
    "verdict": "WORKS AT SMALL SIZE",
    "next_door": "if withdrawn: ORB on SPY/IWM with the guard",
    "checked": "2026-11-08T11:10"
+  },
+  {
+   "name": "M1 QQQ gap DOWN >=0.7%: FADE (long) open->10:30. Mechanism: overnight gap",
+   "n": 225,
+   "mean_bps": "+3.16 bps/trade",
+   "t": 0.58,
+   "is_t": 0.01,
+   "oos_t": 0.88,
+   "control_t": 0.59,
+   "verdict": "NOT YET",
+   "next_door": "widen/narrow threshold once, then sibling instrument, then dead",
+   "checked": "2026-11-08T16:09"
+  },
+  {
+   "name": "M2 QQQ gap UP >=0.7%: FADE (short) open->10:30.",
+   "n": 265,
+   "mean_bps": "+0.84 bps/trade",
+   "t": 0.2,
+   "is_t": 0.25,
+   "oos_t": -0.0,
+   "control_t": -1.63,
+   "verdict": "NOT YET",
+   "next_door": "widen/narrow threshold once, then sibling instrument, then dead",
+   "checked": "2026-11-08T16:09"
   }
  ],
  "queue": [
@@ -178,6 +202,78 @@
   {
    "id": "ORB-QQQ v2",
    "status": "verified"
+  },
+  {
+   "id": "M1",
+   "status": "verified"
+  },
+  {
+   "id": "M2",
+   "status": "verified"
+  },
+  {
+   "id": "M3",
+   "status": "proposed"
+  },
+  {
+   "id": "M6",
+   "status": "proposed"
+  },
+  {
+   "id": "M7",
+   "status": "proposed"
+  },
+  {
+   "id": "M8",
+   "status": "proposed"
+  },
+  {
+   "id": "M9",
+   "status": "proposed"
+  },
+  {
+   "id": "M10",
+   "status": "proposed"
+  },
+  {
+   "id": "M11",
+   "status": "proposed"
+  },
+  {
+   "id": "M12",
+   "status": "proposed"
+  },
+  {
+   "id": "M13",
+   "status": "proposed"
+  },
+  {
+   "id": "M14",
+   "status": "proposed"
+  },
+  {
+   "id": "M15",
+   "status": "proposed"
+  },
+  {
+   "id": "M20",
+   "status": "proposed"
+  },
+  {
+   "id": "M21",
+   "status": "proposed"
+  },
+  {
+   "id": "M23",
+   "status": "proposed"
+  },
+  {
+   "id": "M24",
+   "status": "proposed"
+  },
+  {
+   "id": "M25",
+   "status": "proposed"
   }
  ],
  "data_health": {
@@ -201,7 +297,7 @@
    "note": "fin_heartbeat 2026-11-06 23:40:04.253999+01:00 ok"
   }
  },
- "updated": "2026-11-08T16:03",
+ "updated": "2026-11-08T16:09",
  "paper": {
   "strategy": "ORB-QQQ (Zarattini-Aziz) $100 risk/trade, simulated on Alpaca IEX 1-min bars",
   "label": "UNVERIFIED-PAPER",

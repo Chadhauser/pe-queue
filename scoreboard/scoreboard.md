@@ -1,4 +1,4 @@
-# FIN SCOREBOARD (Verifier-only) — 2026-11-08T16:03 UTC
+# FIN SCOREBOARD (Verifier-only) — 2026-11-08T16:09 UTC
 
 Money: live £0 | paper £191.47 | live edges 0
 
@@ -25,6 +25,8 @@ Money: live £0 | paper £191.47 | live edges 0
 | H6 fade opening spike, tight stop, top-20 relvol stocks | 1563 | +0.051 R/day | 1.94 | 1.48 | 1.26 | 3.81 | **NOT YET** | stop 0.2 ATR / exit at 11:00 |
 | H7 stocks ORB, realistic fills (next-bar open, 2x cost) | 1563 | -0.059 R/day | -3.4 | -2.94 | -1.77 | -4.62 | **NOT YET** | if control ~0 and real >0: stocks ORB stands with these fills; else withdraw both stock verdicts |
 | ORB-QQQ v2 (stop-side guard, 6 gap days skipped) | 1396 | +0.165 R/trade | 2.41 | 1.58 | 1.83 | 1.31 | **WORKS AT SMALL SIZE** | if withdrawn: ORB on SPY/IWM with the guard |
+| M1 QQQ gap DOWN >=0.7%: FADE (long) open->10:30. Mechanism: overnight gap | 225 | +3.16 bps/trade | 0.58 | 0.01 | 0.88 | 0.59 | **NOT YET** | widen/narrow threshold once, then sibling instrument, then dead |
+| M2 QQQ gap UP >=0.7%: FADE (short) open->10:30. | 265 | +0.84 bps/trade | 0.2 | 0.25 | -0.0 | -1.63 | **NOT YET** | widen/narrow threshold once, then sibling instrument, then dead |
 
 ## Paper ledger — UNVERIFIED-PAPER — ORB-QQQ (Zarattini-Aziz) $100 risk/trade, simulated on Alpaca IEX 1-min bars — from 2026-11-02
 trades 5 | wins 1 | $+248.66 = £+191.47 (fx 0.77)
@@ -42,3 +44,21 @@ trades 5 | wins 1 | $+248.66 = £+191.47 (fx 0.77)
 - H6 fade-spike: verified
 - H7 realfill: verified
 - ORB-QQQ v2: verified
+- M1: verified
+- M2: verified
+- M3: proposed
+- M6: proposed
+- M7: proposed
+- M8: proposed
+- M9: proposed
+- M10: proposed
+- M11: proposed
+- M12: proposed
+- M13: proposed
+- M14: proposed
+- M15: proposed
+- M20: proposed
+- M21: proposed
+- M23: proposed
+- M24: proposed
+- M25: proposed
