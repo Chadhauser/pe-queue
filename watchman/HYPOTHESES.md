@@ -459,4 +459,5 @@
 2026-11-07 | a (bf_hist_other, af_events, from 434) | the penalty-conceder back on months before Apr 2023, rule fixed | TODO (item 435, re-check 12 Nov) | -
 2026-11-08 | a (liq_sample, xx_ip_331, from 339) | fade a Betfair in-play 5% jump the other book does not confirm (499_xx_unconfirmed, item 436) | DONE | nothing passes; FADE Matchbook n 171 -0.909 t -1.78, FOLLOW -0.940; Smarkets FADE -1.411, FOLLOW -0.983
 2026-11-08 | c (xx_tape, liq_sample, from 339) | take the other book's stale touch after a Betfair 5% move (499_xx_stale, item 339) | DONE | nothing passes; Matchbook IP n 639 -1.496 t -14.96, Smarkets n 658 -1.459; repriced by next row 83-88%
-2026-11-08 | c (xx_tape, liq_sample, from 339, 436) | rest inside the wide book's spread pre-off, fill on a print through, hedge on Betfair (499_xx_rest, item 437) | TODO (needs xx_tape re-pull with ltp and sizes, Railway quiet) | -
+2026-11-08 | c (xx_tape, liq_sample, from 339, 436) | rest inside the wide book's spread pre-off, fill on a print through, hedge on Betfair (499_xx_rest, item 437) | BLOCKED | Matchbook ltp null on all 105,093 pre-off rows pulled; touch-through version is item 438
+2026-11-08 | c (xx_pre_437, liq_sample, from 437) | rest inside Matchbook's spread, filled when its own touch moves through, hedge on Betfair (499_xx_rest trade-touch, item 438) | TODO | -
