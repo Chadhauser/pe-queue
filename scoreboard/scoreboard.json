@@ -124,6 +124,18 @@
    "verdict": "WORKS AT SMALL SIZE",
    "next_door": "stop 0.2 ATR / exit at 11:00",
    "checked": "2026-11-06T07:09"
+  },
+  {
+   "name": "H6 fade opening spike, tight stop, top-20 relvol stocks",
+   "n": 1563,
+   "mean_bps": "+0.051 R/day",
+   "t": 1.94,
+   "is_t": 1.48,
+   "oos_t": 1.26,
+   "control_t": 3.81,
+   "verdict": "NOT YET",
+   "next_door": "stop 0.2 ATR / exit at 11:00",
+   "checked": "2026-11-08T10:54"
   }
  ],
  "queue": [
@@ -134,6 +146,10 @@
   {
    "id": "H6 fade-spike",
    "status": "verified"
+  },
+  {
+   "id": "H7 realfill",
+   "status": "proposed"
   }
  ],
  "data_health": {
@@ -157,5 +173,5 @@
    "note": "fin_heartbeat 2026-11-06 23:40:04.253999+01:00 ok"
   }
  },
- "updated": "2026-11-08T10:44"
+ "updated": "2026-11-08T10:54"
 }
