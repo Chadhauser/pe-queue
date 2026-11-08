@@ -256,6 +256,30 @@
    "verdict": "NOT YET",
    "next_door": "widen/narrow threshold once, then sibling instrument, then dead",
    "checked": "2026-11-08T16:40"
+  },
+  {
+   "name": "M11 Turnaround Tuesday: Monday QQQ close-to-close <=-1% -> LONG Tuesday op",
+   "n": 41,
+   "mean_bps": "+12.73 bps/trade",
+   "t": 0.76,
+   "is_t": 0.7,
+   "oos_t": 0.37,
+   "control_t": 0.26,
+   "verdict": "NOT YET",
+   "next_door": "widen/narrow threshold once, then sibling instrument, then dead",
+   "checked": "2026-11-08T16:50"
+  },
+  {
+   "name": "M12 Open drive: QQQ first 15-min range >=0.6% and close in top/bottom 20% ",
+   "n": 257,
+   "mean_bps": "+4.69 bps/trade",
+   "t": 0.79,
+   "is_t": 1.13,
+   "oos_t": -0.07,
+   "control_t": -0.4,
+   "verdict": "NOT YET",
+   "next_door": "widen/narrow threshold once, then sibling instrument, then dead",
+   "checked": "2026-11-08T16:50"
   }
  ],
  "queue": [
@@ -309,11 +333,11 @@
   },
   {
    "id": "M11",
-   "status": "proposed"
+   "status": "verified"
   },
   {
    "id": "M12",
-   "status": "proposed"
+   "status": "verified"
   },
   {
    "id": "M13",
@@ -369,7 +393,7 @@
    "note": "fin_heartbeat 2026-11-06 23:40:04.253999+01:00 ok"
   }
  },
- "updated": "2026-11-08T16:40",
+ "updated": "2026-11-08T16:50",
  "paper": {
   "strategy": "ORB-QQQ (Zarattini-Aziz) $100 risk/trade, simulated on Alpaca IEX 1-min bars",
   "label": "UNVERIFIED-PAPER",
