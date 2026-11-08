@@ -1,0 +1,161 @@
+{
+ "money": {
+  "live_month": 0,
+  "paper_month": 0,
+  "live_edges": 0
+ },
+ "verdicts": [
+  {
+   "name": "ORB-QQQ (Zarattini-Aziz, 501)",
+   "n": 1397,
+   "mean_bps": "+0.166 R/trade",
+   "t": 2.43,
+   "is_t": 1.59,
+   "oos_t": 1.84,
+   "control_t": -0.26,
+   "verdict": "WORKS AT SMALL SIZE",
+   "next_door": "prop-firm MC: 52-63% pass at $100 risk (502/504); combine with any new WORKS before evaluation",
+   "checked": "2026-11-04"
+  },
+  {
+   "name": "ORB stocks-in-play top-20 (505)",
+   "n": 1558,
+   "mean_bps": "+0.037 R/day",
+   "t": 2.16,
+   "is_t": 1.08,
+   "oos_t": 2.11,
+   "control_t": 3.42,
+   "verdict": "NOT YET",
+   "next_door": "H6 fade-spike test (control anomaly) in queue",
+   "checked": "2026-11-04"
+  },
+  {
+   "name": "Intraday grammar sweep 7,070 cells (503)",
+   "n": 7070,
+   "mean_bps": "best t 3.27 GLD gap",
+   "t": 3.27,
+   "is_t": null,
+   "oos_t": null,
+   "control_t": 0,
+   "verdict": "NOT YET",
+   "next_door": "mechanism tests H1-H5 in queue",
+   "checked": "2026-11-03"
+  },
+  {
+   "name": "Mallik TQQQ/SQQQ rules (500)",
+   "n": 4206,
+   "mean_bps": "sma150 L/C 35.9% CAGR",
+   "t": 2.63,
+   "is_t": null,
+   "oos_t": 2.63,
+   "control_t": 0,
+   "verdict": "WORKS AT SMALL SIZE",
+   "next_door": "200-day filter halves TQQQ drawdown; own-capital only, not prop-firm",
+   "checked": "2026-11-01"
+  },
+  {
+   "name": "H1 lev-ETF rebalance (|move by 15:30|>=1%, trade with it to close)",
+   "n": 456,
+   "mean_bps": -1.5,
+   "t": -0.91,
+   "is_t": -0.21,
+   "oos_t": -1.23,
+   "control_t": 2.25,
+   "verdict": "NOT YET",
+   "next_door": "per test: widen threshold / other instrument",
+   "checked": "2026-11-06T06:54"
+  },
+  {
+   "name": "H2 BTC overnight >=1% -> QQQ open->close same sign",
+   "n": 854,
+   "mean_bps": 5.8,
+   "t": 1.51,
+   "is_t": 1.3,
+   "oos_t": 0.78,
+   "control_t": -1.54,
+   "verdict": "WORKS AT SMALL SIZE",
+   "next_door": "per test: widen threshold / other instrument",
+   "checked": "2026-11-06T06:54"
+  },
+  {
+   "name": "H3 TLT first-hour >=0.3% -> QQQ 10:30-12:30 OPPOSITE sign",
+   "n": 464,
+   "mean_bps": -0.7,
+   "t": -0.23,
+   "is_t": 0.01,
+   "oos_t": -0.41,
+   "control_t": 1.19,
+   "verdict": "NOT YET",
+   "next_door": "per test: widen threshold / other instrument",
+   "checked": "2026-11-06T06:54"
+  },
+  {
+   "name": "H4 last trading day of month, long 15:00->close",
+   "n": 77,
+   "mean_bps": 0.4,
+   "t": 0.06,
+   "is_t": -0.21,
+   "oos_t": 0.33,
+   "control_t": -0.97,
+   "verdict": "NOT YET",
+   "next_door": "per test: widen threshold / other instrument",
+   "checked": "2026-11-06T06:54"
+  },
+  {
+   "name": "H5 Friday last hour, trade toward nearest $5 strike (dist>0.1%)",
+   "n": 258,
+   "mean_bps": 0.8,
+   "t": 0.35,
+   "is_t": 0.01,
+   "oos_t": 0.69,
+   "control_t": 1.97,
+   "verdict": "NOT YET",
+   "next_door": "per test: widen threshold / other instrument",
+   "checked": "2026-11-06T06:54"
+  },
+  {
+   "name": "H6 fade opening spike, tight stop, top-20 relvol stocks",
+   "n": 1562,
+   "mean_bps": "+0.051 R/day",
+   "t": 1.95,
+   "is_t": 1.48,
+   "oos_t": 1.26,
+   "control_t": 3.38,
+   "verdict": "WORKS AT SMALL SIZE",
+   "next_door": "stop 0.2 ATR / exit at 11:00",
+   "checked": "2026-11-06T07:09"
+  }
+ ],
+ "queue": [
+  {
+   "id": "H1-5 mechanisms",
+   "status": "verified"
+  },
+  {
+   "id": "H6 fade-spike",
+   "status": "verified"
+  }
+ ],
+ "data_health": {
+  "alpaca_etf": {
+   "status": "ok",
+   "last": "2026-11-06 21:59",
+   "rows_24h": 0
+  },
+  "alpaca_stocks": {
+   "status": "ok",
+   "last": "2026-11-06 20:59",
+   "rows_24h": 0
+  },
+  "yf1m": {
+   "status": "ok",
+   "last": "2026-11-06 21:59",
+   "rows_24h": 0
+  },
+  "local_pg": {
+   "status": "ok",
+   "note": "fin_heartbeat 2026-11-06 23:40:04.253999+01:00 ok"
+  }
+ },
+ "updated": "2026-11-08T10:44"
+}
