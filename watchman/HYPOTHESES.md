@@ -482,3 +482,4 @@
 2026-11-08 | a (bf_hist_other, bf_hist_result, from 452) | back Under 3.5 at 70 min at three goals, months before 2023, rule fixed | TODO (item 453, re-check 12 Nov) | item 452 control n 725 +0.928 t 1.47 both halves positive
 2026-11-08 | b/d (bf_hist_other, bf_hist_result, from 106) | back or lay Under 0.5 at 0-0 at five windows, Jan 2023-Sep 2026, rule fixed (499_ou05_late_full, item 454) | DONE | nothing passes; 0 of 10; 37,039 games, Under won within 0.6 points of implied at every window; best E35 back n 8,475 -0.261
 2026-11-08 | c structural (liq_sample OU05, from 454) | rest a back or lay inside the OU0.5 spread at 0-0 by match minute, fill on a trade-through | TODO (item 455, re-check 22 Nov) | item 454 prints fair, crossing loses the cost
+2026-11-08 | c/d (bf_hist_other, bf_hist_result) | MO pre-match drift, enter 24/6/2 h before KO by price band, trade out at the last pre-off print, rule fixed (499_mo_premarket_drift, item 456) | RUNNING | -
