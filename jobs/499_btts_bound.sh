@@ -3,7 +3,8 @@ set -o pipefail
 # 499_btts_bound (Finder 2026-11-08, 22:40 UTC run, lane A, queue item 472, Finder's own, source c structural; built from jobs/499_nogoal_move.sh).
 # At 1-0 or 0-1, BTTS Yes needs only the trailer to score, and the trailer cannot draw or win without scoring, so P(Yes) >= P(Draw) + P(trailer wins) exactly.
 # GAP = MO Draw implied + MO trailer implied (each runner's last print in the 60 s before the BTTS Yes print, no forward fill) - BTTS Yes implied at that print.
-# One goal on the tape: first OU0.5 Over print at 1.05 or under = goal time g1 (an Over print above 1.05 earlier, so the game was 0-0 on the tape);
+# One goal on the tape: g1 = the last in-play OU0.5 Over print (the market closes at the first goal), with OU1.5 prints after it (fixed once after the first
+# run found almost no OU0.5 print at 1.05 or under; no price had been scored);
 # at entry no OU1.5 Over print at 1.10 or under at or before the entry print, and an OU1.5 Over print above 1.10 in the 300 s before it (added before any
 # price was read, so a second goal the OU1.5 book has not printed cannot pass as fresh: a guard, not a cut).
 # Scorer = the side whose MO implied rose more than 0.05 from its last print in [g1-600, g1-120] to its first in [g1, g1+180]; neither -> game skipped.
@@ -27,13 +28,13 @@ def klass(g):
     if g>=0.02: return 'GAP2'
     if g>=0: return 'CTRL'
     return None
-def goal_time(ot,op):
-    """first OU0.5 Over print at 1.05 or under, with an Over print above 1.05 before it; None otherwise"""
-    k=np.nonzero(op<=1.05)[0]
-    if len(k)==0: return None
-    k=int(k[0])
-    if not (op[:k]>1.05).any(): return None
-    return float(ot[k])
+def goal_time(ot,op,ut):
+    """FIX (first run, 8 Nov): the tape's OU0.5 market closes at the first goal, so an Over print at 1.05 or under almost never exists
+    (1,157 of 1,190 games on 1-10 Apr 2023). g1 = the last in-play OU0.5 Over print, kept only if OU1.5 Over prints after it
+    (the game went on); a close for thinness, not a goal, is caught by the scorer check (MO implied must jump > 0.05 at g1)."""
+    if len(ot)==0: return None
+    g=float(ot[-1])
+    return g if (ut>g).any() else None
 def one_goal(ut,up,te):
     """no OU1.5 Over print at 1.10 or under at or before te, and one above 1.10 in [te-300, te]"""
     if ((ut<=te)&(up<=1.10)).any(): return False
@@ -41,7 +42,7 @@ def one_goal(ut,up,te):
 # known answers, worked by hand
 # Draw 4.0 (0.25) + trailer 5.0 (0.20) = 0.45; BTTS Yes 2.5 (0.40) -> GAP 0.05 GAP2; Yes 2.2 (0.4545) -> GAP -0.0045 None; Yes 2.25 (0.4444) -> 0.0056 CTRL
 assert abs(gap(4.0,5.0,2.5)-0.05)<1e-9 and klass(gap(4.0,5.0,2.5))=='GAP2' and klass(gap(4.0,5.0,2.2)) is None and klass(gap(4.0,5.0,2.25))=='CTRL'
-assert goal_time(np.array([10.,20.,30.]),np.array([1.5,1.04,1.01]))==20. and goal_time(np.array([10.,20.]),np.array([1.03,1.02])) is None and goal_time(np.array([10.]),np.array([1.5])) is None
+assert goal_time(np.array([10.,20.,30.]),np.array([1.5,1.4,1.3]),np.array([5.,40.]))==30. and goal_time(np.array([10.,20.]),np.array([1.5,1.4]),np.array([5.,15.])) is None and goal_time(np.array([]),np.array([]),np.array([5.])) is None
 ut=np.array([100.,250.,400.]); up=np.array([1.8,1.7,1.05])
 assert one_goal(ut,up,300) and not one_goal(ut,up,400) and not one_goal(ut,up,600) and not one_goal(ut,up,90)
 # back 2.5 -> 2.48: wins 14.8*0.98 = 14.504; lay 2.5 -> 2.52: stake 10/1.52, wins 6.447 after 2%, loses 10
@@ -80,7 +81,7 @@ for lo,hi in chunks():
         ov=g[(g.mt=='OVER_UNDER_05')&g.sel.astype(str).str.startswith('Over')]; uv=g[(g.mt=='OVER_UNDER_15')&g.sel.astype(str).str.startswith('Over')]
         if ov.empty or uv.empty: C['no OU0.5 or OU1.5 Over print']+=1; continue
         ov=ov[ov.market_id==sorted(ov.market_id.unique())[0]]; uv=uv[uv.market_id==sorted(uv.market_id.unique())[0]]
-        g1=goal_time(ov.tt.values,ov.ltp.values)
+        g1=goal_time(ov.tt.values,ov.ltp.values,uv.tt.values)
         if g1 is None: C['no first goal on OU0.5']+=1; continue
         ip0=float(mo.tt.min()); hn,an=[s.strip() for s in ev.split(' v ',1)]
         S={}
