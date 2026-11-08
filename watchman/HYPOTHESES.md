@@ -457,3 +457,4 @@
 2026-11-07 | d (af_events, bf_hist_price, from 430-432) | priced-in guard on older af-minute goal-entry leads, item 179 first (499_goal_type_guard, item 433) | DONE | item 179 not an artefact: PEN OTHER back MOVED n 456 +6.321 t 1.72, UNMOVED -0.532; 84 and 130 already closed by 404 and 135
 2026-11-07 | a (bf_hist_other, af_events, from 179, 433) | back the side that conceded a first-goal penalty, moved prints, unseen games (499_pen_other_unseen, item 434) | DONE | nothing passes; n 447 +2.509 t 1.21 h1 +0.488 h2 +3.962; control -0.622
 2026-11-07 | a (bf_hist_other, af_events, from 434) | the penalty-conceder back on months before Apr 2023, rule fixed | TODO (item 435, re-check 12 Nov) | -
+2026-11-08 | a (liq_sample, xx_ip_331, from 339) | fade a Betfair in-play 5% jump the other book does not confirm (499_xx_unconfirmed, item 436) | TODO | -
