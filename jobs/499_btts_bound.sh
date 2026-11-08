@@ -57,8 +57,10 @@ def chunks():
     a=pd.Timestamp(2022,10,1)
     while a<pd.Timestamp(2026,11,1):
         b=a+pd.offsets.MonthBegin(1)
-        for c0,c1 in ((a,a+pd.Timedelta(days=10)),(a+pd.Timedelta(days=10),a+pd.Timedelta(days=20)),(a+pd.Timedelta(days=20),b)):
-            yield str(c0.date()),str(c1.date())
+        # crash fix (second run, 8 Nov): MemoryError on the 2026-09-11 10-day chunk, so 5-day chunks
+        c0=a
+        while c0<b:
+            c1=min(c0+pd.Timedelta(days=5),b); yield str(c0.date()),str(c1.date()); c0=c1
         a=b
 for lo,hi in chunks():
     X=pd.read_sql("""SELECT market_id,event_id,event_name ev,market_type mt,sel,ts,ltp::float8 ltp FROM bf_hist_other
