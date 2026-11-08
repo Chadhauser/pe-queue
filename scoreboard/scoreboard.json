@@ -304,6 +304,30 @@
    "verdict": "NOT YET",
    "next_door": "widen/narrow threshold once, then sibling instrument, then dead",
    "checked": "2026-11-08T17:00"
+  },
+  {
+   "name": "M15 VWAP reversion: QQQ at 10:00 >=0.4% from session VWAP -> FADE 10:00->1",
+   "n": 169,
+   "mean_bps": "+0.09 bps/trade",
+   "t": 0.02,
+   "is_t": 0.26,
+   "oos_t": -0.27,
+   "control_t": 1.82,
+   "verdict": "NOT YET",
+   "next_door": "widen/narrow threshold once, then sibling instrument, then dead",
+   "checked": "2026-11-08T17:10"
+  },
+  {
+   "name": "M20 60-min ORB on QQQ: break of 09:30-10:30 range by 10:35 close -> contin",
+   "n": 270,
+   "mean_bps": "-1.26 bps/trade",
+   "t": -0.23,
+   "is_t": 0.48,
+   "oos_t": -1.07,
+   "control_t": 0.6,
+   "verdict": "NOT YET",
+   "next_door": "widen/narrow threshold once, then sibling instrument, then dead",
+   "checked": "2026-11-08T17:10"
   }
  ],
  "queue": [
@@ -373,11 +397,11 @@
   },
   {
    "id": "M15",
-   "status": "proposed"
+   "status": "verified"
   },
   {
    "id": "M20",
-   "status": "proposed"
+   "status": "verified"
   },
   {
    "id": "M21",
@@ -417,7 +441,7 @@
    "note": "fin_heartbeat 2026-11-06 23:40:04.253999+01:00 ok"
   }
  },
- "updated": "2026-11-08T17:00",
+ "updated": "2026-11-08T17:10",
  "paper": {
   "strategy": "ORB-QQQ (Zarattini-Aziz) $100 risk/trade, simulated on Alpaca IEX 1-min bars",
   "label": "UNVERIFIED-PAPER",
