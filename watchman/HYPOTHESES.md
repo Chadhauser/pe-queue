@@ -504,3 +504,4 @@
 2026-11-08 | c structural (bf_hist_other, bfsp_history, from 468-469) | limit-on-close at BSP on the PLACE market (item 470) | BLOCKED | tape holds racing WIN only; loader would need PLACE files
 2026-11-08 | c structural (bf_hist_other, bfsp_history, from 468-469) | back a 6-12 BSP drifter (BSP >= 1.25 x last print), months no read has used (item 471) | TODO (first look 1 Dec) | four halves positive, pooled n 2,778 about +0.69, t under 1
 2026-11-08 | c structural (bf_hist_other, bf_hist_result, new) | back BTTS Yes at 1-0 when its print implies less than MO Draw + MO trailer, an exact bound (499_btts_bound, item 472) | TODO (from 9 Nov) | Mar 2023 week: BTTS in-play prints on 773 markets, about 14 each, thin
+2026-11-08 | c structural (bf_hist_price, af_events, new) | back the current result on MO when Under (goals+0.5) prints shorter than it, an exact bound; lay the Under, and the pair (499_under_bound, item 473) | RUNNING | -
