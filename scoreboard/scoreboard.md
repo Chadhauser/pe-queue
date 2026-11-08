@@ -1,4 +1,4 @@
-# FIN SCOREBOARD (Verifier-only) — 2026-11-08T17:20 UTC
+# FIN SCOREBOARD (Verifier-only) — 2026-11-08T17:30 UTC
 
 Money: live £0 | paper £191.47 | live edges 0
 
@@ -41,6 +41,8 @@ Money: live £0 | paper £191.47 | live edges 0
 | M20 60-min ORB on QQQ: break of 09:30-10:30 range by 10:35 close -> contin | 270 | -1.26 bps/trade | -0.23 | 0.48 | -1.07 | 0.6 | **NOT YET** | widen/narrow threshold once, then sibling instrument, then dead |
 | M21 30-min ORB on QQQ: break of 09:30-10:00 range by 10:05 -> continuation | 440 | -1.28 bps/trade | -0.27 | -0.08 | -0.38 | 0.04 | **NOT YET** | widen/narrow threshold once, then sibling instrument, then dead |
 | M23 5-min ORB on SPY (ORB-QQQ next door), R-multiples. | 1478 | +0.13 R/trade | 1.76 | 2.12 | 0.27 | -0.89 | **WORKS AT SMALL SIZE** | widen/narrow threshold once, then sibling instrument, then dead |
+| M24 5-min ORB on IWM, R-multiples. | 1336 | +0.16 R/trade | 2.29 | 2.96 | 0.04 | -0.84 | **WORKS AT SMALL SIZE** | widen/narrow threshold once, then sibling instrument, then dead |
+| M25 5-min ORB on TQQQ (3x: same signal, levered instrument; checks the edg | 933 | -0.06 R/trade | -0.77 | -1.02 | -0.03 | 0.68 | **NOT YET** | widen/narrow threshold once, then sibling instrument, then dead |
 
 ## Paper ledger — UNVERIFIED-PAPER — ORB-QQQ (Zarattini-Aziz) $100 risk/trade, simulated on Alpaca IEX 1-min bars — from 2026-11-02
 trades 5 | wins 1 | $+248.66 = £+191.47 (fx 0.77)
@@ -74,5 +76,5 @@ trades 5 | wins 1 | $+248.66 = £+191.47 (fx 0.77)
 - M20: verified
 - M21: verified
 - M23: verified
-- M24: proposed
-- M25: proposed
+- M24: verified
+- M25: verified

@@ -1,8 +1,3 @@
-2026-11-08 16:09:56 building M1
-2026-11-08 16:09:56 building M2
-2026-11-08 16:09:59 M1 -> ['NOT YET']
-2026-11-08 16:09:59 M2 -> ['NOT YET']
-2026-11-08 16:09:59 mirror failed UndefinedTable('relation "job_results" does not exist\nLINE 1: DELETE FROM job_results WHERE job=\'FIN_SCOREBOARD\'\n   
 2026-11-08 16:19:59 building M3
 2026-11-08 16:19:59 building M6
 2026-11-08 16:20:04 M3 -> ['NOT YET']
@@ -38,3 +33,8 @@
 2026-11-08 17:20:28 M21 -> ['NOT YET']
 2026-11-08 17:20:28 M23 -> ['WORKS AT SMALL SIZE']
 2026-11-08 17:20:28 mirror failed UndefinedTable('relation "job_results" does not exist\nLINE 1: DELETE FROM job_results WHERE job=\'FIN_SCOREBOARD\'\n   
+2026-11-08 17:30:28 building M24
+2026-11-08 17:30:28 building M25
+2026-11-08 17:30:36 M24 -> ['WORKS AT SMALL SIZE']
+2026-11-08 17:30:36 M25 -> ['NOT YET']
+2026-11-08 17:30:36 mirror failed UndefinedTable('relation "job_results" does not exist\nLINE 1: DELETE FROM job_results WHERE job=\'FIN_SCOREBOARD\'\n   
