@@ -36,7 +36,14 @@ MULTI_LINE={'ASIAN_HANDICAP','GOAL_LINE','ASIAN_HANDICAP_HT','HANDICAP','CORNER_
 con=psycopg2.connect(creds.pg_local(),sslmode='prefer'); cur=con.cursor(); cur.execute("SET statement_timeout=0; SET work_mem='512MB'")
 cur.execute("SELECT sport, market_type, count(DISTINCT market_id) FROM bf_hist_other GROUP BY 1,2 HAVING count(DISTINCT market_id)>=200 ORDER BY 1, 3 DESC"); types=cur.fetchall()
 print("sport x type combinations:",len(types),"| sports:",sorted({s for s,_,_ in types}),flush=True)
-cur.execute("DROP TABLE IF EXISTS fair_price_calib; CREATE TABLE fair_price_calib (sport TEXT, market_type TEXT, band INT, band_lo NUMERIC, band_hi NUMERIC, n_is INT, rate_is NUMERIC, p_mean_is NUMERIC, n_oos INT, rate_oos NUMERIC, p_mean_oos NUMERIC, fair_factor NUMERIC, winners_mean NUMERIC, built_at TIMESTAMPTZ DEFAULT now())"); con.commit()
+import os
+ONLY=set(x for x in os.environ.get('FP_SPORTS','').split(',') if x); EXCL=set(x for x in os.environ.get('FP_EXCLUDE','').split(',') if x)
+if ONLY or EXCL:   # partial run (football first, then the rest): keep the table, replace only these sports' rows
+    types=[t for t in types if (not ONLY or t[0] in ONLY) and t[0] not in EXCL]
+    cur.execute("CREATE TABLE IF NOT EXISTS fair_price_calib (sport TEXT, market_type TEXT, band INT, band_lo NUMERIC, band_hi NUMERIC, n_is INT, rate_is NUMERIC, p_mean_is NUMERIC, n_oos INT, rate_oos NUMERIC, p_mean_oos NUMERIC, fair_factor NUMERIC, winners_mean NUMERIC, built_at TIMESTAMPTZ DEFAULT now())")
+    cur.execute("ALTER TABLE fair_price_calib ADD COLUMN IF NOT EXISTS sport TEXT; ALTER TABLE fair_price_calib ADD COLUMN IF NOT EXISTS winners_mean NUMERIC")
+    cur.execute("DELETE FROM fair_price_calib WHERE coalesce(sport,'Soccer') = ANY(%s)",(sorted({t[0] for t in types}),)); con.commit(); print("partial run, sports:",sorted({t[0] for t in types}),flush=True)
+else: cur.execute("DROP TABLE IF EXISTS fair_price_calib; CREATE TABLE fair_price_calib (sport TEXT, market_type TEXT, band INT, band_lo NUMERIC, band_hi NUMERIC, n_is INT, rate_is NUMERIC, p_mean_is NUMERIC, n_oos INT, rate_oos NUMERIC, p_mean_oos NUMERIC, fair_factor NUMERIC, winners_mean NUMERIC, built_at TIMESTAMPTZ DEFAULT now())"); con.commit()
 T0=datetime.datetime.now(datetime.UTC); out=0; tot_rows=0; skipped_ml=[]
 for sport,mt,nmk in types:
     if mt in MULTI_LINE: skipped_ml.append(f"{sport}/{mt}"); continue
@@ -133,7 +140,22 @@ for h in r['hypotheses']:
     if h['id'].startswith('H1 fair price v0'): h['status']='proposed'; h['id']='H1 fair price v1 (all sports, all single-line markets, k winners)'; h.pop('not_before',None)
 json.dump(r,open(p,'w'),indent=1); print([h['id'][:40]+':'+h['status'] for h in r['hypotheses']])
 PY
-if pgrep -f fairprice_v0.py >/dev/null; then echo "H1 already running under the daemon — not started twice; its RESULT lines land on the scoreboard"; else cd /root/pe-sports/team && timeout 14000 python3 fairprice_v0.py 2>&1 | tee /root/pe-sports/team/fairprice_v1_first_run.log | grep -v "^RESULT" | tail -60
-fi
-echo "RESULT lines: $(grep -c '^RESULT' /root/pe-sports/team/fairprice_v1_first_run.log)"; python3 /root/pe-sports/team/verifier_cells.py
+pkill -f fairprice_v0.py; sleep 2   # one writer at a time; the daemon's cycle re-runs it later anyway
+cd /root/pe-sports/team
+echo "== FOOTBALL FIRST (Peter 08:20: a failure in one sport must not cost the day) =="
+FP_SPORTS=Soccer timeout 7000 python3 fairprice_v0.py > fairprice_v1_football.log 2>&1; echo "football exit $?"
+grep -v "^RESULT" fairprice_v1_football.log | tail -40
+echo "-- FOOTBALL SCOREBOARD LINES (cells n>=300, sorted by t) --"
+python3 - <<'PY2'
+import json
+rows=[json.loads(l[7:]) for l in open('/root/pe-sports/team/fairprice_v1_football.log') if l.startswith('RESULT ')]
+rows.sort(key=lambda r:-r['t']); print(f"{len(rows)} football cells")
+print("| line | n | £/£10 | t | IS | OOS | control t |"); print("|---|---|---|---|---|---|---|")
+for r in rows[:25]: print(f"| {r['name'][:70]} | {r['n']} | {r['mean_per10']:+.3f} | {r['t']} | {r['is_mean']:+.3f} | {r['oos_mean']:+.3f} | {r['control_t']} |")
+PY2
+python3 /root/pe-sports/team/verifier_cells.py
+echo "== THEN EVERY OTHER SPORT =="
+FP_EXCLUDE=Soccer timeout 12000 python3 fairprice_v0.py > fairprice_v1_others.log 2>&1; echo "other sports exit $?"
+grep -v "^RESULT" fairprice_v1_others.log | tail -40
+echo "other-sport RESULT lines: $(grep -c '^RESULT' fairprice_v1_others.log)"; python3 /root/pe-sports/team/verifier_cells.py
 echo "544 done"
