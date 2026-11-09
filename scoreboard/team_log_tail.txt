@@ -1,4 +1,3 @@
-2026-11-09 15:40:54 DATA BROKEN: ['alpaca_etf', 'alpaca_stocks', 'yf1m']
 2026-11-09 15:50:54 DATA BROKEN: ['alpaca_etf', 'alpaca_stocks', 'yf1m']
 2026-11-09 16:00:54 DATA BROKEN: ['alpaca_etf', 'alpaca_stocks', 'yf1m']
 2026-11-09 16:10:54 DATA BROKEN: ['alpaca_etf', 'alpaca_stocks', 'yf1m']
@@ -38,3 +37,4 @@
 2026-11-09 21:50:58 DATA BROKEN: ['alpaca_etf', 'alpaca_stocks', 'yf1m']
 2026-11-09 22:00:58 DATA BROKEN: ['alpaca_etf', 'alpaca_stocks', 'yf1m']
 2026-11-09 22:10:58 DATA BROKEN: ['alpaca_etf', 'alpaca_stocks', 'yf1m']
+2026-11-09 22:20:58 DATA BROKEN: ['alpaca_etf', 'alpaca_stocks', 'yf1m']
