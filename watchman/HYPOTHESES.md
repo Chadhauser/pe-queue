@@ -511,3 +511,4 @@
 2026-11-08 | a moves (bf_hist_other, from 414, 422) | item 451 jump-up favourite back on unseen months | DONE | nothing passes; pooled unseen Oct 2022-Jan 2023 n 334 about +0.11
 2026-11-08 | c structural (liq_sample, from 474-476) | rest a back one tick above the touch on the late 1-0 leader under 1.2, 3-6 min after a first goal at 76'+ (item 477) | TODO (re-check 22 Nov) | 476 under 1.2 n 195 +0.335 t 1.75 at prints
 2026-11-09 | c structural (liq_sample, from 472) | back BTTS Yes at 1-0 when the real back touch breaks the MO Draw + trailer bound, book open (item 478) | TODO (re-check 22 Nov) | 472 print read was closed-market artefact; liq_sample BTTS 1,880 games 31 Oct-8 Nov
+2026-11-09 | a moves (bf_hist_other, bf_hist_result, from 445) | lay the MO runner that shortened 2-4 points at the off, green out 10-15 min later (499_dn24_green_exit, item 479) | RUNNING | 445 to result n 971 +0.365 t 1.21, FAV n 488 +0.817
