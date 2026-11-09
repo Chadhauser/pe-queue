@@ -1,5 +1,3 @@
-2026-11-08 22:00:39 mirror failed UndefinedTable('relation "job_results" does not exist\nLINE 1: DELETE FROM job_results WHERE job=\'FIN_SCOREBOARD\'\n   
-2026-11-08 22:10:39 mirror failed UndefinedTable('relation "job_results" does not exist\nLINE 1: DELETE FROM job_results WHERE job=\'FIN_SCOREBOARD\'\n   
 2026-11-08 22:20:40 mirror failed UndefinedTable('relation "job_results" does not exist\nLINE 1: DELETE FROM job_results WHERE job=\'FIN_SCOREBOARD\'\n   
 2026-11-08 22:30:40 mirror failed UndefinedTable('relation "job_results" does not exist\nLINE 1: DELETE FROM job_results WHERE job=\'FIN_SCOREBOARD\'\n   
 2026-11-08 22:40:40 mirror failed UndefinedTable('relation "job_results" does not exist\nLINE 1: DELETE FROM job_results WHERE job=\'FIN_SCOREBOARD\'\n   
@@ -38,3 +36,5 @@
 2026-11-09 02:00:43 mirror failed UndefinedTable('relation "job_results" does not exist\nLINE 1: DELETE FROM job_results WHERE job=\'FIN_SCOREBOARD\'\n   
 2026-11-09 02:10:43 DATA BROKEN: ['alpaca_etf', 'alpaca_stocks', 'yf1m']
 2026-11-09 02:10:43 mirror failed UndefinedTable('relation "job_results" does not exist\nLINE 1: DELETE FROM job_results WHERE job=\'FIN_SCOREBOARD\'\n   
+2026-11-09 02:20:43 DATA BROKEN: ['alpaca_etf', 'alpaca_stocks', 'yf1m']
+2026-11-09 02:20:43 mirror failed UndefinedTable('relation "job_results" does not exist\nLINE 1: DELETE FROM job_results WHERE job=\'FIN_SCOREBOARD\'\n   
