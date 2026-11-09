@@ -1,4 +1,4 @@
-# FIN SCOREBOARD (Verifier-only) — 2026-11-09T09:40 UTC
+# FIN SCOREBOARD (Verifier-only) — 2026-11-09T09:50 UTC
 
 Money: live £0 | paper £191.47 | live edges 0
 
