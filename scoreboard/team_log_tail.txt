@@ -1,4 +1,3 @@
-2026-11-09 05:10:46 DATA BROKEN: ['alpaca_etf', 'alpaca_stocks', 'yf1m']
 2026-11-09 05:10:46 mirror failed UndefinedTable('relation "job_results" does not exist\nLINE 1: DELETE FROM job_results WHERE job=\'FIN_SCOREBOARD\'\n   
 2026-11-09 05:20:46 DATA BROKEN: ['alpaca_etf', 'alpaca_stocks', 'yf1m']
 2026-11-09 05:20:46 mirror failed UndefinedTable('relation "job_results" does not exist\nLINE 1: DELETE FROM job_results WHERE job=\'FIN_SCOREBOARD\'\n   
@@ -38,3 +37,4 @@
 2026-11-09 09:50:49 DATA BROKEN: ['alpaca_etf', 'alpaca_stocks', 'yf1m']
 2026-11-09 10:00:50 DATA BROKEN: ['alpaca_etf', 'alpaca_stocks', 'yf1m']
 2026-11-09 10:10:50 DATA BROKEN: ['alpaca_etf', 'alpaca_stocks', 'yf1m']
+2026-11-09 10:20:50 DATA BROKEN: ['alpaca_etf', 'alpaca_stocks', 'yf1m']
