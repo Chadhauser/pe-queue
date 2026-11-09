@@ -34,6 +34,7 @@ KEEP=[  # pattern -> why the bot cannot go live without it
 OUT_OF_SCOPE=r'operators|pe-fin|fin_team|procintel|edge-letter|edgeletter|apt|certbot|logrotate|^\s*$|^\s*#'
 def cls(cmd):
     if re.search(OUT_OF_SCOPE,cmd): return 'OUT OF SCOPE',''
+    if re.search(r'FINDER|finder',cmd): return 'PAUSE','the Finder test lane — paused until the bot is live'
     for pat,why in KEEP:
         if re.search(pat,cmd): return 'KEEP',why
     if '/root/pe-' in cmd or 'pe-' in cmd: return 'PAUSE','not needed for the fair-price bot to go live (stage 3 or a test)'
