@@ -520,6 +520,30 @@
    "verdict": "NOT YET",
    "next_door": "widen/narrow threshold once, then sibling pair, then dead",
    "checked": "2026-11-10T08:41"
+  },
+  {
+   "name": "F3 Asia range breakout: EUR_USD 00:00-07:00 range, break by 07:05 -> cont",
+   "n": 48,
+   "mean_bps": "+2.65 bps/trade",
+   "t": 0.94,
+   "is_t": 1.06,
+   "oos_t": 0.25,
+   "control_t": -1.66,
+   "verdict": "NOT YET",
+   "next_door": "widen/narrow threshold once, then sibling pair, then dead",
+   "checked": "2026-11-10T08:51"
+  },
+  {
+   "name": "F4 Asia-session reversal: GBP_USD 00:00->07:00 move >=0.3% -> FADE 07:00-",
+   "n": 56,
+   "mean_bps": "-1.68 bps/trade",
+   "t": -0.52,
+   "is_t": 1.04,
+   "oos_t": -1.9,
+   "control_t": -0.49,
+   "verdict": "NOT YET",
+   "next_door": "widen/narrow threshold once, then sibling pair, then dead",
+   "checked": "2026-11-10T08:51"
   }
  ],
  "queue": [
@@ -661,11 +685,11 @@
   },
   {
    "id": "F3",
-   "status": "proposed"
+   "status": "verified"
   },
   {
    "id": "F4",
-   "status": "proposed"
+   "status": "verified"
   },
   {
    "id": "F5",
@@ -706,14 +730,14 @@
   "yf1m": {
    "status": "ok",
    "last": "2026-11-09 22:00",
-   "rows_24h": 790
+   "rows_24h": 780
   },
   "local_pg": {
    "status": "ok",
    "note": "fin_heartbeat 2026-11-09 23:40:04.961808+01:00 ok"
   }
  },
- "updated": "2026-11-10T08:41",
+ "updated": "2026-11-10T08:51",
  "paper": {
   "strategy": "ORB-QQQ (Zarattini-Aziz) $100 risk/trade, simulated on Alpaca IEX 1-min bars",
   "label": "UNVERIFIED-PAPER",

@@ -1,11 +1,11 @@
-# FIN SCOREBOARD (Verifier-only) — 2026-11-10T08:41 UTC
+# FIN SCOREBOARD (Verifier-only) — 2026-11-10T08:51 UTC
 
 Money: live £0 | paper £474.45 | live edges 0
 
 ## Data health
 - alpaca_etf: ok | last 2026-11-09 21:55 | rows24h 404 
 - alpaca_stocks: ok | last 2026-11-09 21:55 | rows24h 395 
-- yf1m: ok | last 2026-11-09 22:00 | rows24h 790 
+- yf1m: ok | last 2026-11-09 22:00 | rows24h 780 
 - local_pg: ok | last None | rows24h None fin_heartbeat 2026-11-09 23:40:04.961808+01:00 ok
 
 ## Verdicts (gates: t>=2.5 single / 3.5 sweep, both halves >0, n>=200, |control t|<=2)
@@ -55,6 +55,8 @@ Money: live £0 | paper £474.45 | live edges 0
 | M7b Last-hour momentum, WIDER: QQQ 09:30->15:00 move >=1.5% -> WITH it 15: | 189 | +10.52 bps/trade | 2.31 | 1.61 | 1.65 | 0.51 | **WORKS AT SMALL SIZE** | door 3: sibling instrument (SPY), then dead |
 | F1 London open range: EUR_USD 07:00-08:00 UTC range, break by 08:05 -> co | 116 | -2.26 bps/trade | -1.16 | 0.06 | -1.74 | -0.45 | **NOT YET** | widen/narrow threshold once, then sibling pair, then dead |
 | F2 London open range on GBP_USD, same shape. | 110 | -3.92 bps/trade | -1.67 | -1.46 | -0.85 | -1.17 | **NOT YET** | widen/narrow threshold once, then sibling pair, then dead |
+| F3 Asia range breakout: EUR_USD 00:00-07:00 range, break by 07:05 -> cont | 48 | +2.65 bps/trade | 0.94 | 1.06 | 0.25 | -1.66 | **NOT YET** | widen/narrow threshold once, then sibling pair, then dead |
+| F4 Asia-session reversal: GBP_USD 00:00->07:00 move >=0.3% -> FADE 07:00- | 56 | -1.68 bps/trade | -0.52 | 1.04 | -1.9 | -0.49 | **NOT YET** | widen/narrow threshold once, then sibling pair, then dead |
 
 ## Paper ledger — UNVERIFIED-PAPER — ORB-QQQ (Zarattini-Aziz) $100 risk/trade, simulated on Alpaca IEX 1-min bars — from 2026-11-02
 trades 6 | wins 2 | $+616.17 = £+474.45 (fx 0.77)
@@ -103,8 +105,8 @@ trades 6 | wins 2 | $+616.17 = £+474.45 (fx 0.77)
 - M7b: verified
 - F1: verified
 - F2: verified
-- F3: proposed
-- F4: proposed
+- F3: verified
+- F4: verified
 - F5: proposed
 - F6: proposed
 - F7: proposed
