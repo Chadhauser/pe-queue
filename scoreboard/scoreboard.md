@@ -1,11 +1,11 @@
-# FIN SCOREBOARD (Verifier-only) — 2026-11-10T07:31 UTC
+# FIN SCOREBOARD (Verifier-only) — 2026-11-10T07:41 UTC
 
 Money: live £0 | paper £474.45 | live edges 0
 
 ## Data health
 - alpaca_etf: ok | last 2026-11-09 21:55 | rows24h 404 
 - alpaca_stocks: ok | last 2026-11-09 21:55 | rows24h 395 
-- yf1m: ok | last 2026-11-09 22:00 | rows24h 860 
+- yf1m: ok | last 2026-11-09 22:00 | rows24h 850 
 - local_pg: ok | last None | rows24h None fin_heartbeat 2026-11-09 23:40:04.961808+01:00 ok
 
 ## Verdicts (gates: t>=2.5 single / 3.5 sweep, both halves >0, n>=200, |control t|<=2)
@@ -43,6 +43,8 @@ Money: live £0 | paper £474.45 | live edges 0
 | M23 5-min ORB on SPY (ORB-QQQ next door), R-multiples. | 1478 | +0.13 R/trade | 1.76 | 2.12 | 0.27 | -0.89 | **WORKS AT SMALL SIZE** | widen/narrow threshold once, then sibling instrument, then dead |
 | M24 5-min ORB on IWM, R-multiples. | 1336 | +0.16 R/trade | 2.29 | 2.96 | 0.04 | -0.84 | **WORKS AT SMALL SIZE** | widen/narrow threshold once, then sibling instrument, then dead |
 | M25 5-min ORB on TQQQ (3x: same signal, levered instrument; checks the edg | 933 | -0.06 R/trade | -0.77 | -1.02 | -0.03 | 0.68 | **NOT YET** | widen/narrow threshold once, then sibling instrument, then dead |
+| C1 Weekend gap: BTC Fri 21:00 UTC -> Mon 00:00 move >=2% -> FADE Mon 00:0 | at 50bps t -1.66 | 94 | -24.43 bps/trade | -0.63 | -0.86 | 0.43 | 0.88 | **NOT YET** | widen/narrow threshold once, then ETH/SOL, then dead |
+| C2 US equity open effect: BTC 13:00->13:30 UTC move >=0.5% -> WITH it 13: | at 50bps t -3.93 | 291 | -1.85 bps/trade | -0.17 | -0.0 | -0.28 | 1.08 | **NOT YET** | widen/narrow threshold once, then ETH/SOL, then dead |
 
 ## Paper ledger — UNVERIFIED-PAPER — ORB-QQQ (Zarattini-Aziz) $100 risk/trade, simulated on Alpaca IEX 1-min bars — from 2026-11-02
 trades 6 | wins 2 | $+616.17 = £+474.45 (fx 0.77)
@@ -79,3 +81,13 @@ trades 6 | wins 2 | $+616.17 = £+474.45 (fx 0.77)
 - M23: verified
 - M24: verified
 - M25: verified
+- C1: verified
+- C2: verified
+- C3: proposed
+- C4: proposed
+- C5: proposed
+- C6: proposed
+- C7: proposed
+- C8: proposed
+- H2b: proposed
+- M7b: proposed

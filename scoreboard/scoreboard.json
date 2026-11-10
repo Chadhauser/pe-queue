@@ -376,6 +376,30 @@
    "verdict": "NOT YET",
    "next_door": "widen/narrow threshold once, then sibling instrument, then dead",
    "checked": "2026-11-08T17:30"
+  },
+  {
+   "name": "C1 Weekend gap: BTC Fri 21:00 UTC -> Mon 00:00 move >=2% -> FADE Mon 00:0 | at 50bps t -1.66",
+   "n": 94,
+   "mean_bps": "-24.43 bps/trade",
+   "t": -0.63,
+   "is_t": -0.86,
+   "oos_t": 0.43,
+   "control_t": 0.88,
+   "verdict": "NOT YET",
+   "next_door": "widen/narrow threshold once, then ETH/SOL, then dead",
+   "checked": "2026-11-10T07:41"
+  },
+  {
+   "name": "C2 US equity open effect: BTC 13:00->13:30 UTC move >=0.5% -> WITH it 13: | at 50bps t -3.93",
+   "n": 291,
+   "mean_bps": "-1.85 bps/trade",
+   "t": -0.17,
+   "is_t": -0.0,
+   "oos_t": -0.28,
+   "control_t": 1.08,
+   "verdict": "NOT YET",
+   "next_door": "widen/narrow threshold once, then ETH/SOL, then dead",
+   "checked": "2026-11-10T07:41"
   }
  ],
  "queue": [
@@ -466,6 +490,46 @@
   {
    "id": "M25",
    "status": "verified"
+  },
+  {
+   "id": "C1",
+   "status": "verified"
+  },
+  {
+   "id": "C2",
+   "status": "verified"
+  },
+  {
+   "id": "C3",
+   "status": "proposed"
+  },
+  {
+   "id": "C4",
+   "status": "proposed"
+  },
+  {
+   "id": "C5",
+   "status": "proposed"
+  },
+  {
+   "id": "C6",
+   "status": "proposed"
+  },
+  {
+   "id": "C7",
+   "status": "proposed"
+  },
+  {
+   "id": "C8",
+   "status": "proposed"
+  },
+  {
+   "id": "H2b",
+   "status": "proposed"
+  },
+  {
+   "id": "M7b",
+   "status": "proposed"
   }
  ],
  "data_health": {
@@ -482,14 +546,14 @@
   "yf1m": {
    "status": "ok",
    "last": "2026-11-09 22:00",
-   "rows_24h": 860
+   "rows_24h": 850
   },
   "local_pg": {
    "status": "ok",
    "note": "fin_heartbeat 2026-11-09 23:40:04.961808+01:00 ok"
   }
  },
- "updated": "2026-11-10T07:31",
+ "updated": "2026-11-10T07:41",
  "paper": {
   "strategy": "ORB-QQQ (Zarattini-Aziz) $100 risk/trade, simulated on Alpaca IEX 1-min bars",
   "label": "UNVERIFIED-PAPER",
