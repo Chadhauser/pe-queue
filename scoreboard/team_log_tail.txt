@@ -1,5 +1,3 @@
-2026-11-10 08:01:20 building C5
-2026-11-10 08:01:20 building C6
 2026-11-10 08:01:28 C5 -> ['NOT YET']
 2026-11-10 08:01:28 C6 -> ['NOT YET']
 2026-11-10 08:11:29 building C7
@@ -38,3 +36,5 @@
 2026-11-10 14:12:06 mirror failed OperationalError('connection to server at "127.0.0.1", port 5432 failed: Connection refused\n\tIs the server running on 
 2026-11-10 14:22:06 DATA BROKEN: ['local_pg']
 2026-11-10 14:22:06 mirror failed OperationalError('connection to server at "127.0.0.1", port 5432 failed: Connection refused\n\tIs the server running on 
+2026-11-10 14:32:06 DATA BROKEN: ['local_pg']
+2026-11-10 14:32:06 mirror failed OperationalError('connection to server at "127.0.0.1", port 5432 failed: Connection refused\n\tIs the server running on 
