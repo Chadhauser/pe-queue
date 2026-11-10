@@ -496,6 +496,30 @@
    "verdict": "WORKS AT SMALL SIZE",
    "next_door": "door 3: sibling instrument (SPY), then dead",
    "checked": "2026-11-10T08:21"
+  },
+  {
+   "name": "F1 London open range: EUR_USD 07:00-08:00 UTC range, break by 08:05 -> co",
+   "n": 116,
+   "mean_bps": "-2.26 bps/trade",
+   "t": -1.16,
+   "is_t": 0.06,
+   "oos_t": -1.74,
+   "control_t": -0.45,
+   "verdict": "NOT YET",
+   "next_door": "widen/narrow threshold once, then sibling pair, then dead",
+   "checked": "2026-11-10T08:41"
+  },
+  {
+   "name": "F2 London open range on GBP_USD, same shape.",
+   "n": 110,
+   "mean_bps": "-3.92 bps/trade",
+   "t": -1.67,
+   "is_t": -1.46,
+   "oos_t": -0.85,
+   "control_t": -1.17,
+   "verdict": "NOT YET",
+   "next_door": "widen/narrow threshold once, then sibling pair, then dead",
+   "checked": "2026-11-10T08:41"
   }
  ],
  "queue": [
@@ -626,6 +650,46 @@
   {
    "id": "M7b",
    "status": "verified"
+  },
+  {
+   "id": "F1",
+   "status": "verified"
+  },
+  {
+   "id": "F2",
+   "status": "verified"
+  },
+  {
+   "id": "F3",
+   "status": "proposed"
+  },
+  {
+   "id": "F4",
+   "status": "proposed"
+  },
+  {
+   "id": "F5",
+   "status": "proposed"
+  },
+  {
+   "id": "F6",
+   "status": "proposed"
+  },
+  {
+   "id": "F7",
+   "status": "proposed"
+  },
+  {
+   "id": "F8",
+   "status": "proposed"
+  },
+  {
+   "id": "F9",
+   "status": "proposed"
+  },
+  {
+   "id": "F10",
+   "status": "proposed"
   }
  ],
  "data_health": {
@@ -642,14 +706,14 @@
   "yf1m": {
    "status": "ok",
    "last": "2026-11-09 22:00",
-   "rows_24h": 800
+   "rows_24h": 790
   },
   "local_pg": {
    "status": "ok",
    "note": "fin_heartbeat 2026-11-09 23:40:04.961808+01:00 ok"
   }
  },
- "updated": "2026-11-10T08:31",
+ "updated": "2026-11-10T08:41",
  "paper": {
   "strategy": "ORB-QQQ (Zarattini-Aziz) $100 risk/trade, simulated on Alpaca IEX 1-min bars",
   "label": "UNVERIFIED-PAPER",
