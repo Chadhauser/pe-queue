@@ -1,11 +1,11 @@
-# FIN SCOREBOARD (Verifier-only) — 2026-11-10T08:11 UTC
+# FIN SCOREBOARD (Verifier-only) — 2026-11-10T08:21 UTC
 
 Money: live £0 | paper £474.45 | live edges 0
 
 ## Data health
 - alpaca_etf: ok | last 2026-11-09 21:55 | rows24h 404 
 - alpaca_stocks: ok | last 2026-11-09 21:55 | rows24h 395 
-- yf1m: ok | last 2026-11-09 22:00 | rows24h 820 
+- yf1m: ok | last 2026-11-09 22:00 | rows24h 810 
 - local_pg: ok | last None | rows24h None fin_heartbeat 2026-11-09 23:40:04.961808+01:00 ok
 
 ## Verdicts (gates: t>=2.5 single / 3.5 sweep, both halves >0, n>=200, |control t|<=2)
@@ -51,6 +51,8 @@ Money: live £0 | paper £474.45 | live edges 0
 | C6 ORB at US open on BTC: 13:30-13:45 UTC range, break by 13:50 close ->  | at 50bps t -7.49 | 589 | -24.35 bps/trade | -2.83 | -1.82 | -2.31 | 0.3 | **NOT YET** | widen/narrow threshold once, then ETH/SOL, then dead |
 | C7 Daily-close momentum: BTC 00:00->23:00 UTC move >=3% -> WITH it 23:00- | at 50bps t -8.57 | 411 | +0.56 bps/trade | 0.12 | 1.04 | -1.87 | 0.87 | **NOT YET** | widen/narrow threshold once, then ETH/SOL, then dead |
 | C8 Monday open: BTC Sun 00:00->24:00 UTC move >=2% -> FADE Mon 00:00->12: | at 50bps t -1.20 | 81 | -8.60 bps/trade | -0.21 | -0.2 | -0.08 | 0.39 | **NOT YET** | widen/narrow threshold once, then ETH/SOL, then dead |
+| H2b BTC overnight (21:00 prev -> 09:25 ET) >=2% -> QQQ 09:30->11:00 SAME s | 342 | -2.43 bps/trade | -0.62 | 0.39 | -1.51 | 2.42 | **NOT YET** | door 3: sibling instrument (SPY), then dead |
+| M7b Last-hour momentum, WIDER: QQQ 09:30->15:00 move >=1.5% -> WITH it 15: | 189 | +10.52 bps/trade | 2.31 | 1.61 | 1.65 | 0.51 | **WORKS AT SMALL SIZE** | door 3: sibling instrument (SPY), then dead |
 
 ## Paper ledger — UNVERIFIED-PAPER — ORB-QQQ (Zarattini-Aziz) $100 risk/trade, simulated on Alpaca IEX 1-min bars — from 2026-11-02
 trades 6 | wins 2 | $+616.17 = £+474.45 (fx 0.77)
@@ -95,5 +97,5 @@ trades 6 | wins 2 | $+616.17 = £+474.45 (fx 0.77)
 - C6: verified
 - C7: verified
 - C8: verified
-- H2b: proposed
-- M7b: proposed
+- H2b: verified
+- M7b: verified

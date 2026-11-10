@@ -472,6 +472,30 @@
    "verdict": "NOT YET",
    "next_door": "widen/narrow threshold once, then ETH/SOL, then dead",
    "checked": "2026-11-10T08:11"
+  },
+  {
+   "name": "H2b BTC overnight (21:00 prev -> 09:25 ET) >=2% -> QQQ 09:30->11:00 SAME s",
+   "n": 342,
+   "mean_bps": "-2.43 bps/trade",
+   "t": -0.62,
+   "is_t": 0.39,
+   "oos_t": -1.51,
+   "control_t": 2.42,
+   "verdict": "NOT YET",
+   "next_door": "door 3: sibling instrument (SPY), then dead",
+   "checked": "2026-11-10T08:21"
+  },
+  {
+   "name": "M7b Last-hour momentum, WIDER: QQQ 09:30->15:00 move >=1.5% -> WITH it 15:",
+   "n": 189,
+   "mean_bps": "+10.52 bps/trade",
+   "t": 2.31,
+   "is_t": 1.61,
+   "oos_t": 1.65,
+   "control_t": 0.51,
+   "verdict": "WORKS AT SMALL SIZE",
+   "next_door": "door 3: sibling instrument (SPY), then dead",
+   "checked": "2026-11-10T08:21"
   }
  ],
  "queue": [
@@ -597,11 +621,11 @@
   },
   {
    "id": "H2b",
-   "status": "proposed"
+   "status": "verified"
   },
   {
    "id": "M7b",
-   "status": "proposed"
+   "status": "verified"
   }
  ],
  "data_health": {
@@ -618,14 +642,14 @@
   "yf1m": {
    "status": "ok",
    "last": "2026-11-09 22:00",
-   "rows_24h": 820
+   "rows_24h": 810
   },
   "local_pg": {
    "status": "ok",
    "note": "fin_heartbeat 2026-11-09 23:40:04.961808+01:00 ok"
   }
  },
- "updated": "2026-11-10T08:11",
+ "updated": "2026-11-10T08:21",
  "paper": {
   "strategy": "ORB-QQQ (Zarattini-Aziz) $100 risk/trade, simulated on Alpaca IEX 1-min bars",
   "label": "UNVERIFIED-PAPER",
