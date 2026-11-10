@@ -1,12 +1,12 @@
-# FIN SCOREBOARD (Verifier-only) — 2026-11-10T14:52 UTC
+# FIN SCOREBOARD (Verifier-only) — 2026-11-10T15:02 UTC
 
 Money: live £0 | paper £474.45 | live edges 0
 
 ## Data health
-- alpaca_etf: ok | last 2026-11-09 21:55 | rows24h 375 
-- alpaca_stocks: ok | last 2026-11-09 21:55 | rows24h 370 
-- yf1m: ok | last 2026-11-09 22:00 | rows24h 428 
-- local_pg: BROKEN | last None | rows24h None OperationalError('connection to server at "127.0.0.1", port 5432 failed: Connect
+- alpaca_etf: ok | last 2026-11-09 21:55 | rows24h 365 
+- alpaca_stocks: ok | last 2026-11-09 21:55 | rows24h 360 
+- yf1m: ok | last 2026-11-09 22:00 | rows24h 418 
+- local_pg: ok | last None | rows24h None fin_heartbeat 2026-11-09 23:40:04.961808+01:00 ok
 
 ## Verdicts (gates: t>=2.5 single / 3.5 sweep, both halves >0, n>=200, |control t|<=2)
 
