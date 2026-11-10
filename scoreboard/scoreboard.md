@@ -1,11 +1,11 @@
-# FIN SCOREBOARD (Verifier-only) — 2026-11-10T22:42 UTC
+# FIN SCOREBOARD (Verifier-only) — 2026-11-10T22:52 UTC
 
-Money: live £0 | paper £474.45 | live edges 0
+Money: live £0 | paper £396.7 | live edges 0
 
 ## Data health
 - alpaca_etf: ok | last 2026-11-10 21:25 | rows24h 389 
 - alpaca_stocks: ok | last 2026-11-10 20:59 | rows24h 398 
-- yf1m: ok | last 2026-11-09 22:00 | rows24h 0 
+- yf1m: ok | last 2026-11-10 21:59 | rows24h 1370 
 - local_pg: ok | last None | rows24h None fin_heartbeat 2026-11-10 23:40:06.640230+01:00 ok
 
 ## Verdicts (gates: t>=2.5 single / 3.5 sweep, both halves >0, n>=200, |control t|<=2)
@@ -65,7 +65,7 @@ Money: live £0 | paper £474.45 | live edges 0
 | F10 Gold NY-open momentum: XAU_USD 13:30->14:00 UTC move >=0.3% -> WITH it | 125 | +4.50 bps/trade | 0.86 | 0.86 | 0.37 | -0.15 | **NOT YET** | widen/narrow threshold once, then sibling pair, then dead |
 
 ## Paper ledger — UNVERIFIED-PAPER — ORB-QQQ (Zarattini-Aziz) $100 risk/trade, simulated on Alpaca IEX 1-min bars — from 2026-11-02
-trades 6 | wins 2 | $+616.17 = £+474.45 (fx 0.77)
+trades 7 | wins 2 | $+515.20 = £+396.70 (fx 0.77)
 
 | date | side | entry | stop | exit | reason | R | $ |
 |---|---|---|---|---|---|---|---|
@@ -75,6 +75,7 @@ trades 6 | wins 2 | $+616.17 = £+474.45 (fx 0.77)
 | 2026-11-05 | short | 678.31 | 683.64 | 648.05 | close | 5.672 | 567.17 |
 | 2026-11-06 | short | 656.45 | 658.88 | 658.88 | stop | -1.012 | -101.23 |
 | 2026-11-09 | long | 665.73 | 662.19 | 678.77 | close | 3.675 | 367.51 |
+| 2026-11-10 | long | 673.09 | 670.0 | 670.0 | stop | -1.01 | -100.97 |
 
 ## Queue
 - H1-5 mechanisms: verified
