@@ -792,7 +792,7 @@
   "alpaca_etf": {
    "status": "ok",
    "last": "2026-11-09 21:55",
-   "rows_24h": 5
+   "rows_24h": 2
   },
   "alpaca_stocks": {
    "status": "ok",
@@ -802,14 +802,14 @@
   "yf1m": {
    "status": "ok",
    "last": "2026-11-09 22:00",
-   "rows_24h": 48
+   "rows_24h": 38
   },
   "local_pg": {
    "status": "ok",
    "note": "fin_heartbeat 2026-11-09 23:40:04.961808+01:00 ok"
   }
  },
- "updated": "2026-11-10T21:12",
+ "updated": "2026-11-10T21:22",
  "paper": {
   "strategy": "ORB-QQQ (Zarattini-Aziz) $100 risk/trade, simulated on Alpaca IEX 1-min bars",
   "label": "UNVERIFIED-PAPER",
