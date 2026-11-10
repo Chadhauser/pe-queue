@@ -400,6 +400,30 @@
    "verdict": "NOT YET",
    "next_door": "widen/narrow threshold once, then ETH/SOL, then dead",
    "checked": "2026-11-10T07:41"
+  },
+  {
+   "name": "C3 Asia-session reversal: BTC 00:00->08:00 UTC move >=1.5% -> FADE 08:00- | at 50bps t -5.75",
+   "n": 388,
+   "mean_bps": "-18.33 bps/trade",
+   "t": -1.81,
+   "is_t": -1.03,
+   "oos_t": -2.06,
+   "control_t": -0.77,
+   "verdict": "NOT YET",
+   "next_door": "widen/narrow threshold once, then ETH/SOL, then dead",
+   "checked": "2026-11-10T07:51"
+  },
+  {
+   "name": "C4 Funding-time drift: BTC 07:00->08:00 UTC move >=0.5% (pre-funding) ->  | at 50bps t -9.75",
+   "n": 368,
+   "mean_bps": "-12.49 bps/trade",
+   "t": -2.32,
+   "is_t": -0.72,
+   "oos_t": -3.45,
+   "control_t": -0.91,
+   "verdict": "NOT YET",
+   "next_door": "widen/narrow threshold once, then ETH/SOL, then dead",
+   "checked": "2026-11-10T07:51"
   }
  ],
  "queue": [
@@ -501,11 +525,11 @@
   },
   {
    "id": "C3",
-   "status": "proposed"
+   "status": "verified"
   },
   {
    "id": "C4",
-   "status": "proposed"
+   "status": "verified"
   },
   {
    "id": "C5",
@@ -546,14 +570,14 @@
   "yf1m": {
    "status": "ok",
    "last": "2026-11-09 22:00",
-   "rows_24h": 850
+   "rows_24h": 840
   },
   "local_pg": {
    "status": "ok",
    "note": "fin_heartbeat 2026-11-09 23:40:04.961808+01:00 ok"
   }
  },
- "updated": "2026-11-10T07:41",
+ "updated": "2026-11-10T07:51",
  "paper": {
   "strategy": "ORB-QQQ (Zarattini-Aziz) $100 risk/trade, simulated on Alpaca IEX 1-min bars",
   "label": "UNVERIFIED-PAPER",
