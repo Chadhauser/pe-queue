@@ -568,6 +568,30 @@
    "verdict": "NOT YET",
    "next_door": "widen/narrow threshold once, then sibling pair, then dead",
    "checked": "2026-11-10T09:01"
+  },
+  {
+   "name": "F7 Friday afternoon fade: GBP_USD Fri 07:00->15:00 move >=0.4% -> FADE 15",
+   "n": 34,
+   "mean_bps": "+0.24 bps/trade",
+   "t": 0.05,
+   "is_t": 1.17,
+   "oos_t": -0.73,
+   "control_t": -0.63,
+   "verdict": "NOT YET",
+   "next_door": "widen/narrow threshold once, then sibling pair, then dead",
+   "checked": "2026-11-10T09:11"
+  },
+  {
+   "name": "F8 USD/JPY Tokyo open momentum: 00:00->00:30 UTC move >=0.15% -> WITH it ",
+   "n": 78,
+   "mean_bps": "-3.59 bps/trade",
+   "t": -0.94,
+   "is_t": -1.74,
+   "oos_t": 0.55,
+   "control_t": -0.29,
+   "verdict": "NOT YET",
+   "next_door": "widen/narrow threshold once, then sibling pair, then dead",
+   "checked": "2026-11-10T09:11"
   }
  ],
  "queue": [
@@ -725,11 +749,11 @@
   },
   {
    "id": "F7",
-   "status": "proposed"
+   "status": "verified"
   },
   {
    "id": "F8",
-   "status": "proposed"
+   "status": "verified"
   },
   {
    "id": "F9",
@@ -754,14 +778,14 @@
   "yf1m": {
    "status": "ok",
    "last": "2026-11-09 22:00",
-   "rows_24h": 770
+   "rows_24h": 760
   },
   "local_pg": {
    "status": "ok",
    "note": "fin_heartbeat 2026-11-09 23:40:04.961808+01:00 ok"
   }
  },
- "updated": "2026-11-10T09:01",
+ "updated": "2026-11-10T09:11",
  "paper": {
   "strategy": "ORB-QQQ (Zarattini-Aziz) $100 risk/trade, simulated on Alpaca IEX 1-min bars",
   "label": "UNVERIFIED-PAPER",

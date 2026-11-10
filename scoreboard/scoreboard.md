@@ -1,11 +1,11 @@
-# FIN SCOREBOARD (Verifier-only) — 2026-11-10T09:01 UTC
+# FIN SCOREBOARD (Verifier-only) — 2026-11-10T09:11 UTC
 
 Money: live £0 | paper £474.45 | live edges 0
 
 ## Data health
 - alpaca_etf: ok | last 2026-11-09 21:55 | rows24h 404 
 - alpaca_stocks: ok | last 2026-11-09 21:55 | rows24h 395 
-- yf1m: ok | last 2026-11-09 22:00 | rows24h 770 
+- yf1m: ok | last 2026-11-09 22:00 | rows24h 760 
 - local_pg: ok | last None | rows24h None fin_heartbeat 2026-11-09 23:40:04.961808+01:00 ok
 
 ## Verdicts (gates: t>=2.5 single / 3.5 sweep, both halves >0, n>=200, |control t|<=2)
@@ -59,6 +59,8 @@ Money: live £0 | paper £474.45 | live edges 0
 | F4 Asia-session reversal: GBP_USD 00:00->07:00 move >=0.3% -> FADE 07:00- | 56 | -1.68 bps/trade | -0.52 | 1.04 | -1.9 | -0.49 | **NOT YET** | widen/narrow threshold once, then sibling pair, then dead |
 | F5 NY overlap momentum: EUR_USD 12:30->13:30 UTC move >=0.2% -> WITH it 1 | 65 | -4.96 bps/trade | -1.44 | -0.88 | -1.13 | 0.45 | **NOT YET** | widen/narrow threshold once, then sibling pair, then dead |
 | F6 London fix: EUR_USD 15:00->15:55 UTC move >=0.15% -> FADE 16:00->17:00 | 114 | +0.06 bps/trade | 0.06 | -0.36 | 0.48 | -0.03 | **NOT YET** | widen/narrow threshold once, then sibling pair, then dead |
+| F7 Friday afternoon fade: GBP_USD Fri 07:00->15:00 move >=0.4% -> FADE 15 | 34 | +0.24 bps/trade | 0.05 | 1.17 | -0.73 | -0.63 | **NOT YET** | widen/narrow threshold once, then sibling pair, then dead |
+| F8 USD/JPY Tokyo open momentum: 00:00->00:30 UTC move >=0.15% -> WITH it  | 78 | -3.59 bps/trade | -0.94 | -1.74 | 0.55 | -0.29 | **NOT YET** | widen/narrow threshold once, then sibling pair, then dead |
 
 ## Paper ledger — UNVERIFIED-PAPER — ORB-QQQ (Zarattini-Aziz) $100 risk/trade, simulated on Alpaca IEX 1-min bars — from 2026-11-02
 trades 6 | wins 2 | $+616.17 = £+474.45 (fx 0.77)
@@ -111,7 +113,7 @@ trades 6 | wins 2 | $+616.17 = £+474.45 (fx 0.77)
 - F4: verified
 - F5: verified
 - F6: verified
-- F7: proposed
-- F8: proposed
+- F7: verified
+- F8: verified
 - F9: proposed
 - F10: proposed
