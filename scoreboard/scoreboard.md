@@ -1,11 +1,11 @@
-# FIN SCOREBOARD (Verifier-only) — 2026-11-10T07:51 UTC
+# FIN SCOREBOARD (Verifier-only) — 2026-11-10T08:01 UTC
 
 Money: live £0 | paper £474.45 | live edges 0
 
 ## Data health
 - alpaca_etf: ok | last 2026-11-09 21:55 | rows24h 404 
 - alpaca_stocks: ok | last 2026-11-09 21:55 | rows24h 395 
-- yf1m: ok | last 2026-11-09 22:00 | rows24h 840 
+- yf1m: ok | last 2026-11-09 22:00 | rows24h 830 
 - local_pg: ok | last None | rows24h None fin_heartbeat 2026-11-09 23:40:04.961808+01:00 ok
 
 ## Verdicts (gates: t>=2.5 single / 3.5 sweep, both halves >0, n>=200, |control t|<=2)
@@ -47,6 +47,8 @@ Money: live £0 | paper £474.45 | live edges 0
 | C2 US equity open effect: BTC 13:00->13:30 UTC move >=0.5% -> WITH it 13: | at 50bps t -3.93 | 291 | -1.85 bps/trade | -0.17 | -0.0 | -0.28 | 1.08 | **NOT YET** | widen/narrow threshold once, then ETH/SOL, then dead |
 | C3 Asia-session reversal: BTC 00:00->08:00 UTC move >=1.5% -> FADE 08:00- | at 50bps t -5.75 | 388 | -18.33 bps/trade | -1.81 | -1.03 | -2.06 | -0.77 | **NOT YET** | widen/narrow threshold once, then ETH/SOL, then dead |
 | C4 Funding-time drift: BTC 07:00->08:00 UTC move >=0.5% (pre-funding) ->  | at 50bps t -9.75 | 368 | -12.49 bps/trade | -2.32 | -0.72 | -3.45 | -0.91 | **NOT YET** | widen/narrow threshold once, then ETH/SOL, then dead |
+| C5 BTC leads ETH: BTC 13:30->14:30 UTC move >=1% -> ETH WITH it 14:30->16 | at 50bps t -5.03 | 287 | -17.70 bps/trade | -1.54 | -1.68 | -0.31 | -1.84 | **NOT YET** | widen/narrow threshold once, then ETH/SOL, then dead |
+| C6 ORB at US open on BTC: 13:30-13:45 UTC range, break by 13:50 close ->  | at 50bps t -7.49 | 589 | -24.35 bps/trade | -2.83 | -1.82 | -2.31 | 0.3 | **NOT YET** | widen/narrow threshold once, then ETH/SOL, then dead |
 
 ## Paper ledger — UNVERIFIED-PAPER — ORB-QQQ (Zarattini-Aziz) $100 risk/trade, simulated on Alpaca IEX 1-min bars — from 2026-11-02
 trades 6 | wins 2 | $+616.17 = £+474.45 (fx 0.77)
@@ -87,8 +89,8 @@ trades 6 | wins 2 | $+616.17 = £+474.45 (fx 0.77)
 - C2: verified
 - C3: verified
 - C4: verified
-- C5: proposed
-- C6: proposed
+- C5: verified
+- C6: verified
 - C7: proposed
 - C8: proposed
 - H2b: proposed

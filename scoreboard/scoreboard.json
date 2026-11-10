@@ -424,6 +424,30 @@
    "verdict": "NOT YET",
    "next_door": "widen/narrow threshold once, then ETH/SOL, then dead",
    "checked": "2026-11-10T07:51"
+  },
+  {
+   "name": "C5 BTC leads ETH: BTC 13:30->14:30 UTC move >=1% -> ETH WITH it 14:30->16 | at 50bps t -5.03",
+   "n": 287,
+   "mean_bps": "-17.70 bps/trade",
+   "t": -1.54,
+   "is_t": -1.68,
+   "oos_t": -0.31,
+   "control_t": -1.84,
+   "verdict": "NOT YET",
+   "next_door": "widen/narrow threshold once, then ETH/SOL, then dead",
+   "checked": "2026-11-10T08:01"
+  },
+  {
+   "name": "C6 ORB at US open on BTC: 13:30-13:45 UTC range, break by 13:50 close ->  | at 50bps t -7.49",
+   "n": 589,
+   "mean_bps": "-24.35 bps/trade",
+   "t": -2.83,
+   "is_t": -1.82,
+   "oos_t": -2.31,
+   "control_t": 0.3,
+   "verdict": "NOT YET",
+   "next_door": "widen/narrow threshold once, then ETH/SOL, then dead",
+   "checked": "2026-11-10T08:01"
   }
  ],
  "queue": [
@@ -533,11 +557,11 @@
   },
   {
    "id": "C5",
-   "status": "proposed"
+   "status": "verified"
   },
   {
    "id": "C6",
-   "status": "proposed"
+   "status": "verified"
   },
   {
    "id": "C7",
@@ -570,14 +594,14 @@
   "yf1m": {
    "status": "ok",
    "last": "2026-11-09 22:00",
-   "rows_24h": 840
+   "rows_24h": 830
   },
   "local_pg": {
    "status": "ok",
    "note": "fin_heartbeat 2026-11-09 23:40:04.961808+01:00 ok"
   }
  },
- "updated": "2026-11-10T07:51",
+ "updated": "2026-11-10T08:01",
  "paper": {
   "strategy": "ORB-QQQ (Zarattini-Aziz) $100 risk/trade, simulated on Alpaca IEX 1-min bars",
   "label": "UNVERIFIED-PAPER",
