@@ -1,11 +1,11 @@
-# FIN SCOREBOARD (Verifier-only) — 2026-11-11T19:02 UTC
+# FIN SCOREBOARD (Verifier-only) — 2026-11-11T19:12 UTC
 
 Money: live £0 | paper £396.7 | live edges 0
 
 ## Data health
-- alpaca_etf: ok | last 2026-11-10 21:25 | rows24h 117 
-- alpaca_stocks: ok | last 2026-11-10 20:59 | rows24h 117 
-- yf1m: ok | last 2026-11-10 21:59 | rows24h 177 
+- alpaca_etf: ok | last 2026-11-10 21:25 | rows24h 107 
+- alpaca_stocks: ok | last 2026-11-10 20:59 | rows24h 107 
+- yf1m: ok | last 2026-11-10 21:59 | rows24h 167 
 - local_pg: ok | last None | rows24h None fin_heartbeat 2026-11-10 23:40:06.640230+01:00 ok
 
 ## Verdicts (gates: t>=2.5 single / 3.5 sweep, both halves >0, n>=200, |control t|<=2)
