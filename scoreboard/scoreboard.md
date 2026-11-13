@@ -1,13 +1,13 @@
-# FIN SCOREBOARD (Verifier-only) — 2026-11-13T22:40 UTC
+# FIN SCOREBOARD (Verifier-only) — 2026-11-13T22:50 UTC
 
-Money: live £0 | paper £466.6 | live edges 0
+Money: live £0 | paper £754.45 | live edges 0
 
 ## Data health
 - alpaca_etf: ok | last 2026-11-13 21:57 | rows24h 404 
 - alpaca_stocks: ok | last 2026-11-13 20:59 | rows24h 392 
-- yf1m: ok | last 2026-11-12 21:59 | rows24h 0 
+- yf1m: ok | last 2026-11-13 21:59 | rows24h 1370 
 - oanda_fx: BROKEN | last 2026-11-10 21:41 | rows24h 0 
-- alpaca_crypto: ok | last 2026-11-12 23:14 | rows24h 34 
+- alpaca_crypto: ok | last 2026-11-12 23:14 | rows24h 24 
 - local_pg: ok | last None | rows24h None fin_heartbeat 2026-11-13 22:40:04.292019+00:00 ok
 
 ## Verdicts (gates: t>=2.5 single / 3.5 sweep, both halves >0, n>=200, |control t|<=2)
@@ -70,7 +70,7 @@ Money: live £0 | paper £466.6 | live edges 0
 | MC Lucid 50K, 1 MNQ contract (last 2 years, 467 days): pass 4583% bust 5416% median 72d | 467 | $+12/day | 0 | 0 | 0 | 0 | **NOT YET** | if pass <40%: price the 100K/150K tiers (deeper cushion) before any fee |
 
 ## Paper ledger — UNVERIFIED-PAPER — ORB-QQQ (Zarattini-Aziz) $100 risk/trade, simulated on Alpaca IEX 1-min bars — from 2026-11-02
-trades 8 | wins 3 | $+605.97 = £+466.60 (fx 0.77)
+trades 9 | wins 4 | $+979.80 = £+754.45 (fx 0.77)
 
 | date | side | entry | stop | exit | reason | R | $ |
 |---|---|---|---|---|---|---|---|
@@ -83,6 +83,7 @@ trades 8 | wins 3 | $+605.97 = £+466.60 (fx 0.77)
 | 2026-11-10 | long | 673.09 | 670.0 | 670.0 | stop | -1.01 | -100.97 |
 | 2026-11-11 | - |  |  |  | no signal (doji open) |  |  |
 | 2026-11-12 | long | 684.28 | 680.0 | 688.2 | close | 0.908 | 90.77 |
+| 2026-11-13 | short | 686.83 | 688.64 | 680.01 | close | 3.738 | 373.83 |
 
 ## Queue
 - H1-5 mechanisms: verified

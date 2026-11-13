@@ -1,7 +1,7 @@
 {
  "money": {
   "live_month": 0,
-  "paper_month": 466.6,
+  "paper_month": 754.45,
   "live_edges": 0
  },
  "verdicts": [
@@ -841,8 +841,8 @@
   },
   "yf1m": {
    "status": "ok",
-   "last": "2026-11-12 21:59",
-   "rows_24h": 0
+   "last": "2026-11-13 21:59",
+   "rows_24h": 1370
   },
   "oanda_fx": {
    "status": "BROKEN",
@@ -852,19 +852,19 @@
   "alpaca_crypto": {
    "status": "ok",
    "last": "2026-11-12 23:14",
-   "rows_24h": 34
+   "rows_24h": 24
   },
   "local_pg": {
    "status": "ok",
    "note": "fin_heartbeat 2026-11-13 22:40:04.292019+00:00 ok"
   }
  },
- "updated": "2026-11-13T22:40",
+ "updated": "2026-11-13T22:50",
  "paper": {
   "strategy": "ORB-QQQ (Zarattini-Aziz) $100 risk/trade, simulated on Alpaca IEX 1-min bars",
   "label": "UNVERIFIED-PAPER",
   "start": "2026-11-02",
-  "updated": "2026-11-12T22:45",
+  "updated": "2026-11-13T22:45",
   "days": [
    {
     "date": "2026-11-02",
@@ -949,12 +949,22 @@
     "reason": "close",
     "r_mult": 0.908,
     "usd": 90.77
+   },
+   {
+    "date": "2026-11-13",
+    "side": "short",
+    "entry": 686.83,
+    "stop": 688.64,
+    "exit": 680.01,
+    "reason": "close",
+    "r_mult": 3.738,
+    "usd": 373.83
    }
   ],
-  "trades": 8,
-  "wins": 3,
-  "usd": 605.97,
-  "gbp": 466.6,
+  "trades": 9,
+  "wins": 4,
+  "usd": 979.8,
+  "gbp": 754.45,
   "fx": 0.77
  }
 }
