@@ -73,3 +73,7 @@ def report():
     app,user,pw=betfair(); k=apifootball()
     return f"local_pg={'yes' if pg_local() else 'NO'} railway_pg={'yes' if pg_railway() else 'NO'} | betfair app_key={'yes' if app else 'NO'} username={'yes' if user else 'NO'} password={'yes' if pw else 'NO'} | api-football key={'yes' if k else 'NO'}"
 if __name__=='__main__': print(report())
+
+# 536: trading database now local; Railway kept as pg_railway_remote() for the hourly sync
+pg_railway_remote = pg_railway
+def pg_railway(): return pg_local()
