@@ -4,7 +4,8 @@
 exec 9>/root/pe-queue-state/runner.lock; flock -n 9 || exit 0
 # children must not inherit the lock fd (a daemon started by a job would hold the queue shut)
 cd /root/pe-queue || exit 1
-git pull -q 2>>/root/pe-queue-state/git.err || true
+git config pull.rebase false; git config rebase.autoStash true   # 564: merge mode + autostash so a stray edit or a failed push can never wedge the pull again
+git pull -q --no-edit 2>>/root/pe-queue-state/git.err || true
 mkdir -p /root/pe-queue-state /root/pe-queue-logs
 python3 /root/pe-queue/runner/report.py heartbeat >/dev/null 2>&1
 # progress reporter (independent of this lock) — installed once, idempotent
