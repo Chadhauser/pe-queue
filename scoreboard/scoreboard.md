@@ -1,11 +1,13 @@
-# FIN SCOREBOARD (Verifier-only) — 2026-11-13T13:43 UTC
+# FIN SCOREBOARD (Verifier-only) — 2026-11-13T13:50 UTC
 
 Money: live £0 | paper £466.6 | live edges 0
 
 ## Data health
-- alpaca_etf: ok | last 2026-11-12 21:29 | rows24h 396 
+- alpaca_etf: ok | last 2026-11-12 21:29 | rows24h 395 
 - alpaca_stocks: ok | last 2026-11-12 20:59 | rows24h 405 
-- yf1m: ok | last 2026-11-12 21:59 | rows24h 496 
+- yf1m: ok | last 2026-11-12 21:59 | rows24h 489 
+- oanda_fx: BROKEN | last 2026-11-10 21:41 | rows24h 0 
+- alpaca_crypto: ok | last 2026-11-12 23:14 | rows24h 564 
 - local_pg: ok | last None | rows24h None fin_heartbeat 2026-11-12 22:40:04.388373+00:00 ok
 
 ## Verdicts (gates: t>=2.5 single / 3.5 sweep, both halves >0, n>=200, |control t|<=2)
@@ -63,6 +65,9 @@ Money: live £0 | paper £466.6 | live edges 0
 | F8 USD/JPY Tokyo open momentum: 00:00->00:30 UTC move >=0.15% -> WITH it  | 78 | -3.59 bps/trade | -0.94 | -1.74 | 0.55 | -0.29 | **NOT YET** | widen/narrow threshold once, then sibling pair, then dead |
 | F9 Gold London open range: XAU_USD 07:00-08:00 range, break by 08:05 -> c | 107 | -3.12 bps/trade | -0.6 | 0.97 | -1.25 | 0.3 | **NOT YET** | widen/narrow threshold once, then sibling pair, then dead |
 | F10 Gold NY-open momentum: XAU_USD 13:30->14:00 UTC move >=0.3% -> WITH it | 125 | +4.50 bps/trade | 0.86 | 0.86 | 0.37 | -0.15 | **NOT YET** | widen/narrow threshold once, then sibling pair, then dead |
+| MC Lucid 50K, 1 MNQ contract (ALL, 1399 days): pass 4732% bust 5216% median 107d | 1399 | $+9/day | 0 | 0 | 0 | 0 | **NOT YET** | if pass <40%: price the 100K/150K tiers (deeper cushion) before any fee |
+| MC Lucid 50K, 1 MNQ contract (OOS second half, 700 days): pass 4729% bust 5262% median 86d | 700 | $+11/day | 0 | 0 | 0 | 0 | **NOT YET** | if pass <40%: price the 100K/150K tiers (deeper cushion) before any fee |
+| MC Lucid 50K, 1 MNQ contract (last 2 years, 467 days): pass 4583% bust 5416% median 72d | 467 | $+12/day | 0 | 0 | 0 | 0 | **NOT YET** | if pass <40%: price the 100K/150K tiers (deeper cushion) before any fee |
 
 ## Paper ledger — UNVERIFIED-PAPER — ORB-QQQ (Zarattini-Aziz) $100 risk/trade, simulated on Alpaca IEX 1-min bars — from 2026-11-02
 trades 8 | wins 3 | $+605.97 = £+466.60 (fx 0.77)
@@ -122,3 +127,4 @@ trades 8 | wins 3 | $+605.97 = £+466.60 (fx 0.77)
 - F8: verified
 - F9: verified
 - F10: verified
+- MC Lucid 1-contract: verified

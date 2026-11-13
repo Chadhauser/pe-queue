@@ -616,6 +616,42 @@
    "verdict": "NOT YET",
    "next_door": "widen/narrow threshold once, then sibling pair, then dead",
    "checked": "2026-11-10T09:22"
+  },
+  {
+   "name": "MC Lucid 50K, 1 MNQ contract (ALL, 1399 days): pass 4732% bust 5216% median 107d",
+   "n": 1399,
+   "mean_bps": "$+9/day",
+   "t": 0,
+   "is_t": 0,
+   "oos_t": 0,
+   "control_t": 0,
+   "verdict": "NOT YET",
+   "next_door": "if pass <40%: price the 100K/150K tiers (deeper cushion) before any fee",
+   "checked": "2026-11-13T13:50"
+  },
+  {
+   "name": "MC Lucid 50K, 1 MNQ contract (OOS second half, 700 days): pass 4729% bust 5262% median 86d",
+   "n": 700,
+   "mean_bps": "$+11/day",
+   "t": 0,
+   "is_t": 0,
+   "oos_t": 0,
+   "control_t": 0,
+   "verdict": "NOT YET",
+   "next_door": "if pass <40%: price the 100K/150K tiers (deeper cushion) before any fee",
+   "checked": "2026-11-13T13:50"
+  },
+  {
+   "name": "MC Lucid 50K, 1 MNQ contract (last 2 years, 467 days): pass 4583% bust 5416% median 72d",
+   "n": 467,
+   "mean_bps": "$+12/day",
+   "t": 0,
+   "is_t": 0,
+   "oos_t": 0,
+   "control_t": 0,
+   "verdict": "NOT YET",
+   "next_door": "if pass <40%: price the 100K/150K tiers (deeper cushion) before any fee",
+   "checked": "2026-11-13T13:50"
   }
  ],
  "queue": [
@@ -786,13 +822,17 @@
   {
    "id": "F10",
    "status": "verified"
+  },
+  {
+   "id": "MC Lucid 1-contract",
+   "status": "verified"
   }
  ],
  "data_health": {
   "alpaca_etf": {
    "status": "ok",
    "last": "2026-11-12 21:29",
-   "rows_24h": 396
+   "rows_24h": 395
   },
   "alpaca_stocks": {
    "status": "ok",
@@ -802,14 +842,24 @@
   "yf1m": {
    "status": "ok",
    "last": "2026-11-12 21:59",
-   "rows_24h": 496
+   "rows_24h": 489
+  },
+  "oanda_fx": {
+   "status": "BROKEN",
+   "last": "2026-11-10 21:41",
+   "rows_24h": 0
+  },
+  "alpaca_crypto": {
+   "status": "ok",
+   "last": "2026-11-12 23:14",
+   "rows_24h": 564
   },
   "local_pg": {
    "status": "ok",
    "note": "fin_heartbeat 2026-11-12 22:40:04.388373+00:00 ok"
   }
  },
- "updated": "2026-11-13T13:43",
+ "updated": "2026-11-13T13:50",
  "paper": {
   "strategy": "ORB-QQQ (Zarattini-Aziz) $100 risk/trade, simulated on Alpaca IEX 1-min bars",
   "label": "UNVERIFIED-PAPER",
