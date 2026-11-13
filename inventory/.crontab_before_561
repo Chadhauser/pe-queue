@@ -1,0 +1,165 @@
+0 9-20 * * * /usr/bin/python3 /root/trading/golf_price_collector.py >> /root/logs/golf.log 2>&1
+0 19 * * * /usr/bin/python3 /root/trading/daily_racing_results.py >> /root/logs/racing.log 2>&1
+0 23 * * * /usr/bin/python3 /root/trading/cricket_results.py >> /root/logs/cricket.log 2>&1
+0 22 * * * /usr/bin/python3 /root/trading/golf_results.py >> /root/logs/golf_results.log 2>&1
+30 23 * * * /usr/bin/python3 /root/trading/tennis_results.py >> /root/logs/tennis.log 2>&1
+#PAUSED-543 @reboot cd ~/pe-logger && nohup python3 server_price_logger.py >> logger.log 2>&1 &
+#PAUSED-543 @reboot cd ~/pe-logger && nohup python3 racing_price_logger.py >> racing.log 2>&1 &
+#PAUSED-543 @reboot cd ~/pe-logger && nohup python3 tennis_price_logger.py >> tennis.log 2>&1 &
+*/5 * * * * cd /root/pe-logger && /usr/bin/python3 watchdog.py >> watchdog.log 2>&1
+#PAUSED-543 15 2 * * * cd /root/pe-logger && /usr/bin/python3 profit_hunt.py >> hunt.log 2>&1
+#PAUSED-543 40 * * * * cd /root/pe-logger && /usr/bin/python3 racing_results.py >> results.log 2>&1
+# Finance Clearly operator: 06:00 UTC daily. Server clock is Europe/Berlin and this cron has no CRON_TZ, so fire at 07:00 and 08:00 local and let the UTC guard pick the right one across DST.
+# Edge Letter operator: 06:30 UTC daily (same UTC guard as above; server is Europe/Berlin)
+# Backlinks engine: 07:00 UTC daily (same UTC guard; server is Europe/Berlin). Live reads + drafts only: send needs
+# FC_OUTREACH_LIVE and FC_OUTREACH_FROM, both deliberately unset until Peter has read the drafts (decisions.md 2026-09-26).
+# DSPT lead campaign (leads/dspt.yml). All steps honour DRY_RUN and the campaign's live_env flags.
+#   pull: 1st of the month, 05:00 London        letters: weekdays 09:00 London
+#   calls brief: 06:30 London (Mon-Fri)         Tammy's replies: hourly 09:00-18:00 London
+#   inbox: hourly 08:00-18:00 London            report: Monday 07:00 London
+0 4,5,6 1 * 5 [ "$(TZ=Europe/London date +\%H)" = "05" ] && cd /root/operators && DRY_RUN=0 ./run.sh dspt pull >> runs/cron.log 2>&1
+0 8,9,10 * * 5 [ "$(TZ=Europe/London date +\%H)" = "09" ] && cd /root/operators && DRY_RUN=0 ./run.sh dspt letters >> runs/cron.log 2>&1
+30 5,6,7 * * 5 [ "$(TZ=Europe/London date +\%H)" = "06" ] && cd /root/operators && DRY_RUN=0 ./run.sh dspt calls >> runs/cron.log 2>&1
+5 10,18 * * 5 H=$(TZ=Europe/London date +\%H); [ "$H" -ge 09 ] && [ "$H" -le 18 ] && cd /root/operators && DRY_RUN=0 ./run.sh dspt calls --replies gmail >> runs/cron.log 2>&1
+35 9,18 * * 5 H=$(TZ=Europe/London date +\%H); [ "$H" -ge 08 ] && [ "$H" -le 18 ] && cd /root/operators && DRY_RUN=0 ./run.sh dspt inbox >> runs/cron.log 2>&1
+0 6,7,8 * * 5 [ "$(TZ=Europe/London date +\%H)" = "07" ] && cd /root/operators && DRY_RUN=0 ./run.sh dspt report >> runs/cron.log 2>&1
+30 10 * * * cd /root/bfsp && /usr/bin/python3 racing_bsp_paper.py 3 >> racing_bsp.log 2>&1
+#PAUSED-543 45 2 * * * /root/pe-logger/cs_dutch_paper.sh >> /root/pe-logger/csdutch.log 2>&1
+#PAUSED-543 45 2 * * * /root/pe-logger/cs_dutch_paper.sh >> /root/pe-logger/csdutch.log 2>&1
+#PAUSED-543 @reboot cd /root/pe-logger && nohup python3 golf_price_logger.py >> golf.log 2>&1 &
+#PAUSED-543 50 2 * * * /root/pe-logger/tennis_lay_paper.sh >> /root/pe-logger/tennislay.log 2>&1
+#PAUSED-543 @reboot cd /root/pe-push && nohup python3 send_push.py >> push.log 2>&1 &
+#PAUSED-543 @reboot cd /root/pe-bot && nohup python3 trade_bot.py >> bot.log 2>&1 &
+#PAUSED-543 @reboot cd /root/pe-tennis && nohup python3 tennis_bot.py >> tennis.log 2>&1 &
+#PAUSED-543 50 2 * * * cd /root/pe-logger && python3 cs_map_refresh.py >> csq.log 2>&1 && python3 cs_q_paper.py >> csq.log 2>&1
+# site-metrics: Monday 06:15 London writes the weekly Search Console + GA4 reports; Monday 07:30 London emails the Finance Clearly
+# analytics (GA4 by channel + Search Console) to Peter (decisions.md 2026-10-05). Server is Europe/Berlin; the TZ guard lets one through.
+# Operators email (orchestrator): 07:30 UTC daily, plain Python, no model — to peter@edwardsbros.co.uk (decisions.md 2026-10-07).
+# Server is Europe/Berlin; fires 08:30 and 09:30 local and the UTC guard lets exactly one through.
+# Money team: Fridays 06:00 UTC (decisions.md 2026-10-18). Same UTC guard (server is Europe/Berlin). MONEY_TEAM_LIVE gates its
+# publishing and its email; run.sh's lock queues it behind the finance-clearly run that fires in the same minute.
+#PAUSED-543 0 7 * * * cd /root/pe-prematch && python3 fts_collector.py morning >> prematch.log 2>&1
+#PAUSED-543 15 7 * * * cd /root/pe-prematch && python3 prematch_bot.py morning >> prematch.log 2>&1
+#PAUSED-543 30 23 * * * cd /root/pe-prematch && python3 fts_collector.py evening >> prematch.log 2>&1
+#PAUSED-543 45 23 * * * cd /root/pe-prematch && python3 prematch_bot.py settle >> prematch.log 2>&1
+*/2 * * * * /bin/bash /root/pe-queue/runner/runner.sh >> /root/pe-queue-state/runner.out 2>&1
+* * * * * /root/pe-liq/keepalive.sh
+*/5 * * * * /bin/bash /root/pe-queue/runner/progress.sh >/dev/null 2>&1
+#PAUSED-543 * * * * * /root/pe-pg/keepalive.sh
+#PAUSED-543 50 19,20 * * * [ "$(TZ=Europe/London date +\%H)" = "19" ] && cd /root/pe-report && python3 pg_report.py >> report.log 2>&1
+* * * * * /root/pe-ip/keepalive.sh
+CRON_TZ=Europe/London
+#PAUSED-543 0 17 * * 5 cd /root/pe-report && python3 weekend_card.py >> weekend_card.log 2>&1
+* * * * * /root/pe-xx/keepalive.sh
+#PAUSED-543 * * * * * /root/pe-push/m1_keepalive.sh
+#PAUSED-543 30 23 * * * cd /root/pe-report && python3 cleared_sync.py >> cleared_sync.log 2>&1
+#PAUSED-543 30 4 * * * cd /root/pe-report && python3 retention.py >> retention.log 2>&1
+#PAUSED-543 0 3 * * * cd /root/pe-cs && python3 qgreen_paper.py >> qgreen.log 2>&1
+#PAUSED-543 55 23 * * * cd /root/pe-autopsy && python3 autopsy.py >> autopsy.log 2>&1
+#PAUSED-543 @reboot sleep 120 && /root/pe-factory/resume.sh
+#PAUSED-543 30 3 * * * /root/pe-factory/resume.sh
+#PAUSED-543 0 */2 * * * /root/pe-factory/resume.sh
+CRON_TZ=Europe/London
+#PAUSED-543 20 7 * * * cd /root/pe-report && python3 morning.py >> morning.log 2>&1
+#PAUSED-543 * * * * * /root/pe-race/keepalive.sh
+#PAUSED-543 35 4 * * * cd /root/pe-race && python3 retention.py >> race.log 2>&1
+#PAUSED-543 15 5 * * * cd /root/pe-factory && python3 copy_pros.py >> copy_pros.log 2>&1
+#PAUSED-543 * * * * * /root/pe-clv/keepalive.sh
+#PAUSED-543 40 5 * * * cd /root/pe-clv && python3 settle.py >> clv.log 2>&1
+#PAUSED-543 10 3 * * * cd /root/pe-cs && python3 cs_late_paper.py >> cs_late_paper.log 2>&1
+#PAUSED-543 * * * * * /root/pe-stats/keepalive.sh
+#PAUSED-543 40 3 * * * cd /root/pe-factory && python3 inplay_factory.py >> inplay_factory.log 2>&1
+#PAUSED-543 * * * * * /root/pe-tennis2/keepalive.sh
+#PAUSED-543 50 5 * * * cd /root/pe-tennis2 && python3 settle.py >> dog.log 2>&1
+#PAUSED-543 * * * * * /root/pe-cricket/keepalive.sh
+#PAUSED-543 55 5 * * * cd /root/pe-cricket && python3 settle.py >> cricket.log 2>&1
+#PAUSED-543 45 4 * * * cd /root/pe-cricket && python3 -c "import sys,psycopg2;sys.path.insert(0,'/root/pe-bot');from bot_core import DB;c=psycopg2.connect(DB,sslmode='require');c.autocommit=True;c.cursor().execute(\"DELETE FROM cricket_fav_tape WHERE ts<now()-interval '14 days'\")" >> cricket.log 2>&1
+# procintel health email: 08:00 London daily (server is Europe/Berlin; TZ guard lets exactly one through). Query runs as procintel, read-only.
+# DISABLED 2026-10-27 (Peter: no automated email to tenders@): 0 8,9,10 * * * [ "$(TZ=Europe/London date +\%H)" = "08" ] && /root/bin/procintel-health >> /root/logs/procintel-health.log 2>&1
+#PAUSED-543 * * * * * /root/pe-race/keepalive_mm.sh
+#PAUSED-543 58 5 * * * cd /root/pe-factory && python3 robustness.py >> robustness.log 2>&1
+#PAUSED-543 20 3 * * * cd /root/pe-cs && python3 stats_join.py >> stats_join.log 2>&1
+#PAUSED-543 * * * * * /root/pe-ltd/keepalive.sh
+#PAUSED-543 * * * * * /root/pe-ltd/keepalive_live.sh
+#PAUSED-543 * * * * * /root/pe-stats/keepalive_espn.sh
+#PAUSED-543 * * * * * /root/pe-xg/keepalive.sh
+#PAUSED-543 * * * * * /root/pe-xg/keepalive_lo.sh
+#PAUSED-543 * * * * * /root/pe-xg/keepalive_lo_live.sh
+* * * * * /root/pe-stream/keepalive.sh
+#PAUSED-543 * * * * * /root/pe-race/keepalive_mm_stream.sh
+#PAUSED-543 40 4 * * * cd /root/pe-factory && python3 opp_map.py 3 >> opp_map.log 2>&1
+#PAUSED-543 45 6 * * * cd /root/pe-push && python3 digest.py >> digest.log 2>&1
+#PAUSED-543 * * * * * /root/pe-xg/keepalive_s9.sh
+#PAUSED-543 30 3 * * * /root/pe-factory/retention.sh >> /root/pe-factory/retention.log 2>&1
+# procintel daily: 06:30 UTC ingest as procintel. Server is Europe/Berlin, so UTC guard.
+# 2026-10-27: the Mon-Fri Today email to tenders@ is DISABLED (Peter); procintel-daily only ingests and emails peter@ on failure.
+30 * * * * [ "$(TZ=UTC date +\%H)" = 06 ] && /root/bin/procintel-daily >> /root/logs/procintel-daily.log 2>&1
+#PAUSED-543 35 5 * * * cd /root/pe-factory && python3 t2_nightly.py >> t2.log 2>&1
+#PAUSED-543 30 6,9,11,13,15,17,19,21,23 * * * python3 /root/pe-push/integrity.py --push >> /root/pe-push/integrity.log 2>&1
+40 23 * * 1-5 cd /root/pe-fin && python3 fin_paper.py >> /root/pe-fin/fin_paper.log 2>&1
+0 8 * * * cd /root/pe-fin && python3 fin_watchdog.py >> fin_watchdog.log 2>&1
+*/5 * * * * python3 /root/pe-push/watchdog.py >> /root/pe-push/watchdog.log 2>&1
+#PAUSED-543 * * * * * /root/pe-race/keepalive_mm_size.sh
+#PAUSED-543 50 3 * * * python3 /root/pe-race/mm_kpis.py > /root/pe-race/mm_kpis.txt 2>&1
+#PAUSED-543 40 6 * * * python3 /root/pe-push/shelf_daily.py >> /root/pe-push/shelf_daily.log 2>&1
+@reboot cd /root/pe-fin && nohup ./duka_loop.sh > /dev/null 2>&1 &
+*/5 * * * * pgrep -f duka_loop.sh > /dev/null || (cd /root/pe-fin && nohup ./duka_loop.sh > /dev/null 2>&1 &)
+50 23 * * * cd /root/pe-fin && python3 yf1m_collect.py >> yf1m.log 2>&1
+#PAUSED-543 35 23 * * * cd /root/pe-coach && python3 coach_tape.py >> /root/pe-coach/coach.log 2>&1
+17 * * * * /root/pe-watchman/run.sh
+40 2,8,14,20 * * * /root/pe-finder/run.sh
+20 3,9,15,21 * * * FINDER_LANE=B /root/pe-finder/run.sh
+0 5,11,17,23 * * * FINDER_LANE=C /root/pe-finder/run.sh
+40 5,11,17,23 * * * FINDER_LANE=D /root/pe-finder/run.sh
+@reboot nohup /root/pe-hist/keepalive_hist.sh >/dev/null 2>&1 &
+*/10 * * * * pgrep -f keepalive_hist.sh >/dev/null || nohup /root/pe-hist/keepalive_hist.sh >/dev/null 2>&1 &
+#PAUSED-543 @reboot nohup /root/pe-player/keepalive_player.sh >/dev/null 2>&1 &
+#PAUSED-543 */10 * * * * pgrep -f keepalive_player.sh >/dev/null || nohup /root/pe-player/keepalive_player.sh >/dev/null 2>&1 &
+#PAUSED-543 40 6 * * * cd /root/pe-data && python3 paper_ledger.py >> ledger.log 2>&1
+0 7 * * * cd /root/pe-data && python3 integrity_suite.py >> integrity.log 2>&1
+@reboot nohup /root/pe-fin/team/run_team.sh &
+*/10 * * * * pgrep -f 'fin_team.py' >/dev/null || nohup /root/pe-fin/team/run_team.sh &
+30 23 * * 1-5 cd /root/pe-fin/team && python3 alpaca_daily.py >> alpaca_daily.log 2>&1
+@reboot nohup /root/pe-sports/team/run_team.sh &
+*/10 * * * * pgrep -f 'sports_team.py' >/dev/null || nohup /root/pe-sports/team/run_team.sh &
+40 9 * * * python3 /root/pe-data/bsp_daily.py >> /root/pe-data/bsp_daily.log 2>&1
+#PAUSED-543 20 */3 * * * python3 /root/pe-data/af_daily.py >> /root/pe-data/af_daily.log 2>&1
+@reboot nohup /root/pe-fin/team/serve.sh &
+*/5 * * * * /root/pe-fin/team/publish.sh; pgrep -f 'http.server 8787' >/dev/null || nohup /root/pe-fin/team/serve.sh &
+45 23 * * 1-5 cd /root/pe-fin/team && /usr/bin/python3 paper_orb.py >> paper.log 2>&1
+* * * * * timeout 50 /usr/bin/python3 /root/pe-guard/railway_guard.py >> /root/pe-guard/railway_guard.cron.log 2>&1
+*/5 * * * * pgrep -f 'desk.py' >/dev/null || nohup /root/pe-sports/desk/run_desk.sh >/dev/null 2>&1 &
+*/30 * * * * /usr/bin/python3 /root/pe-sports/team/verifier_cells.py >> /root/pe-sports/team/verifier_cells.log 2>&1
+*/5 * * * * pgrep -f 'bookie_v2.py' >/dev/null || nohup /root/pe-sports/bookie/run_bookie_v2.sh >/dev/null 2>&1 &
+#PAUSED-543 */5 * * * * pgrep -f 'brain/monitor_ht.py' >/dev/null || nohup /root/pe-brain/run_monitor_ht.sh >/dev/null 2>&1 &
+#PAUSED-543 */5 * * * * pgrep -f 'brain/stats_collector.py' >/dev/null || nohup /root/pe-brain/run_stats_collector.sh >/dev/null 2>&1 &
+7 * * * * timeout 3000 /usr/bin/python3 /root/pe-migrate/sync_railway.py goal_alerts,m1_alerts,real_trades >> /root/pe-migrate/sync.cron.log 2>&1
+40 4 * * * cd /root/pe-sports/team && timeout 7000 /usr/bin/python3 replay_fills.py >> replay_fills.log 2>&1
+15 * * * * cd /root/pe-hist && timeout 72000 /usr/bin/python3 loader_adv.py >> loader_adv.log 2>&1
+15 0 * * * cd /root/pe-fin && /usr/bin/python3 crypto_pull.py >> crypto_pull.log 2>&1
+30 0 * * 2-6 cd /root/pe-fin && /usr/bin/python3 oanda_pull.py >> oanda_pull.log 2>&1
+35 3 * * * KEEP_DAYS=5 timeout 7000 /usr/bin/python3 /root/pe-archive/archive_tape.py >> /root/pe-archive/archive.log 2>&1
+*/30 * * * * /usr/bin/python3 /root/pe-sports/team/verifier_cells_inplay.py >> /root/pe-sports/team/verifier_cells_inplay.log 2>&1
+25 13 * * 1-5 cd /root/pe-fin/bot && /usr/bin/python3 orb_mnq_bot.py >> cron.log 2>&1
+# operators-block: installed by run.sh (install_cron) from cron/operators.crontab on every run — edit THIS file, commit, and the
+# next run on the server reinstalls it. Lines for other operators (trading, pe-logger, dspt, bfsp) are never touched.
+# Server clock is Europe/Berlin: each line fires at two local hours and a date guard lets the right UTC/London hour through.
+# --- the morning burst (unchanged) ---
+0 7,8 * * *     [ "$(date -u +\%H)" = "06" ] && cd /root/operators && DRY_RUN=0 ./run.sh finance-clearly >> runs/cron.log 2>&1
+30 7,8 * * *    [ "$(date -u +\%H)" = "06" ] && cd /root/operators && DRY_RUN=0 ./run.sh edge-letter >> runs/cron.log 2>&1
+30 6,7,8 * * 1-5 [ "$(TZ=Europe/London date +\%H)" = "06" ] && cd /root/operators && DRY_RUN=0 ./run.sh lead-triggers >> runs/cron.log 2>&1
+0 8,9 * * *     [ "$(date -u +\%H)" = "07" ] && cd /root/operators && DRY_RUN=0 ./run.sh backlinks >> runs/cron.log 2>&1
+30 8,9 * * *    [ "$(date -u +\%H)" = "07" ] && cd /root/operators && DRY_RUN=0 ./run.sh orchestrator >> runs/cron.log 2>&1
+45 7,8,9 * * 1-5 [ "$(TZ=Europe/London date +\%H)" = "07" ] && cd /root/operators && DRY_RUN=0 ./run.sh insolvency-screener >> runs/cron.log 2>&1
+15 6,7,8 * * 1  [ "$(TZ=Europe/London date +\%H)" = "06" ] && cd /root/operators && DRY_RUN=0 ./run.sh site-metrics >> runs/cron.log 2>&1
+30 7,8,9 * * 1  [ "$(TZ=Europe/London date +\%H)" = "07" ] && cd /root/operators && DRY_RUN=0 ./run.sh site-metrics email >> runs/cron.log 2>&1
+0 7,8 * * 5     [ "$(date -u +\%H)" = "06" ] && cd /root/operators && DRY_RUN=0 ./run.sh money-team >> runs/cron.log 2>&1
+# --- added 5 Nov 2026 (Peter: the money team works through the day; one scoreboard only the Verifier writes) ---
+45 6,7 * * *    [ "$(date -u +\%H)" = "05" ] && cd /root/operators && DRY_RUN=0 ./run.sh site-metrics scoreboard >> runs/cron.log 2>&1
+30 11,12 * * *  [ "$(date -u +\%H)" = "10" ] && cd /root/operators && DRY_RUN=0 DISTRIBUTION_PUBLISH_LIVE=1 ./run.sh distribution pages >> runs/cron.log 2>&1
+30 14,15 * * *  [ "$(date -u +\%H)" = "13" ] && cd /root/operators && DRY_RUN=0 DISTRIBUTION_PUBLISH_LIVE=1 ./run.sh distribution pages >> runs/cron.log 2>&1
+30 17,18 * * *  [ "$(date -u +\%H)" = "16" ] && cd /root/operators && DRY_RUN=0 DISTRIBUTION_PUBLISH_LIVE=1 ./run.sh distribution pages >> runs/cron.log 2>&1
+0 21,22 * * *   [ "$(date -u +\%H)" = "20" ] && cd /root/operators && DRY_RUN=0 ./run.sh site-metrics scoreboard >> runs/cron.log 2>&1
+0 7,8 * * 3,6   [ "$(date -u +\%H)" = "06" ] && cd /root/operators && DRY_RUN=0 ./run.sh patent-scan weekly >> runs/cron.log 2>&1
+15 6,7 * * *    [ "$(date -u +\%H)" = "05" ] && cd /root/operators && DRY_RUN=0 ./run.sh distribution gaps >> runs/cron.log 2>&1
+*/10 * * * * /root/pe-fin/team/diag.sh
