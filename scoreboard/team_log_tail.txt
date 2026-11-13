@@ -1,4 +1,3 @@
-2026-11-10 09:11:55 F7 -> ['NOT YET']
 2026-11-10 09:11:55 F8 -> ['NOT YET']
 2026-11-10 09:21:55 building F9
 2026-11-10 09:21:55 building F10
@@ -38,3 +37,4 @@
 2026-11-13 16:10:26 DATA BROKEN: ['oanda_fx']
 2026-11-13 16:20:26 DATA BROKEN: ['oanda_fx']
 2026-11-13 16:30:26 DATA BROKEN: ['oanda_fx']
+2026-11-13 16:40:26 DATA BROKEN: ['oanda_fx']
