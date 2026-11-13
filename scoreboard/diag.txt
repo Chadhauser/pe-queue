@@ -1,0 +1,75 @@
+DIAG 2026-11-13T13:50 UTC
+
+## bot log (last 15)
+2026-11-10 09:52:08 AUTH FAILED 200 {'errorText': 'Incorrect username or password. Please try again, noting that passwords are case-sensitive.'}
+2026-11-11 07:25:02 AUTH FAILED 200 {'errorText': 'Incorrect username or password. Please try again, noting that passwords are case-sensitive.'}
+2026-11-12 07:25:02 AUTH FAILED 200 {'errorText': 'Incorrect username or password. Please try again, noting that passwords are case-sensitive.'}
+2026-11-13 07:25:01 AUTH FAILED 200 {'errorText': 'Incorrect username or password. Please try again, noting that passwords are case-sensitive.'}
+2026-11-13 08:50:09 AUTH FAILED 200 {'errorText': 'Incorrect username or password. Please try again, noting that passwords are case-sensitive.'}
+
+## bot cron.log (last 5)
+2026-11-11 07:25:02 AUTH FAILED 200 {'errorText': 'Incorrect username or password. Please try again, noting that passwords are case-sensitive.'}
+2026-11-12 07:25:02 AUTH FAILED 200 {'errorText': 'Incorrect username or password. Please try again, noting that passwords are case-sensitive.'}
+2026-11-13 07:25:01 AUTH FAILED 200 {'errorText': 'Incorrect username or password. Please try again, noting that passwords are case-sensitive.'}
+
+## bot trades
+[]
+
+## last bot --check
+2026-11-13 08:50:09 AUTH FAILED 200 {'errorText': 'Incorrect username or password. Please try again, noting that passwords are case-sensitive.'}
+exit 1
+
+## crontab (fin lines)
+40 23 * * 1-5 cd /root/pe-fin && python3 fin_paper.py >> /root/pe-fin/fin_paper.log 2>&1
+0 8 * * * cd /root/pe-fin && python3 fin_watchdog.py >> fin_watchdog.log 2>&1
+@reboot cd /root/pe-fin && nohup ./duka_loop.sh > /dev/null 2>&1 &
+*/5 * * * * pgrep -f duka_loop.sh > /dev/null || (cd /root/pe-fin && nohup ./duka_loop.sh > /dev/null 2>&1 &)
+50 23 * * * cd /root/pe-fin && python3 yf1m_collect.py >> yf1m.log 2>&1
+40 2,8,14,20 * * * /root/pe-finder/run.sh
+20 3,9,15,21 * * * FINDER_LANE=B /root/pe-finder/run.sh
+0 5,11,17,23 * * * FINDER_LANE=C /root/pe-finder/run.sh
+40 5,11,17,23 * * * FINDER_LANE=D /root/pe-finder/run.sh
+@reboot nohup /root/pe-fin/team/run_team.sh &
+*/10 * * * * pgrep -f 'fin_team.py' >/dev/null || nohup /root/pe-fin/team/run_team.sh &
+30 23 * * 1-5 cd /root/pe-fin/team && python3 alpaca_daily.py >> alpaca_daily.log 2>&1
+@reboot nohup /root/pe-fin/team/serve.sh &
+*/5 * * * * /root/pe-fin/team/publish.sh; pgrep -f 'http.server 8787' >/dev/null || nohup /root/pe-fin/team/serve.sh &
+45 23 * * 1-5 cd /root/pe-fin/team && /usr/bin/python3 paper_orb.py >> paper.log 2>&1
+15 0 * * * cd /root/pe-fin && /usr/bin/python3 crypto_pull.py >> crypto_pull.log 2>&1
+30 0 * * 2-6 cd /root/pe-fin && /usr/bin/python3 oanda_pull.py >> oanda_pull.log 2>&1
+25 13 * * 1-5 cd /root/pe-fin/bot && /usr/bin/python3 orb_mnq_bot.py >> cron.log 2>&1
+*/10 * * * * /root/pe-fin/team/diag.sh
+
+## postgres
+active
+
+## data on disk (months)
+/root/pe-data/alpaca/QQQ: 131 files, last 1m_2026-11.parquet
+/root/pe-data/alpaca/BTCUSD: 71 files, last 1m_2026-11.parquet
+/root/pe-data/oanda/EUR_USD: 83 files, last 1m_2026-11.parquet
+/root/pe-data/oanda/XAU_USD: 83 files, last 1m_2026-11.parquet
+
+## daemon
+466865 python3 fin_team.py
+
+## team.log tail
+2026-11-10 14:32:06 mirror failed OperationalError('connection to server at "127.0.0.1", port 5432 failed: Connection refused\n\tIs the server running on 
+2026-11-10 14:42:06 DATA BROKEN: ['local_pg']
+2026-11-10 14:42:06 mirror failed OperationalError('connection to server at "127.0.0.1", port 5432 failed: Connection refused\n\tIs the server running on 
+2026-11-10 14:52:06 DATA BROKEN: ['local_pg']
+2026-11-10 14:52:06 mirror failed OperationalError('connection to server at "127.0.0.1", port 5432 failed: Connection refused\n\tIs the server running on 
+2026-11-13 13:50:10 start: reset 0 running -> proposed
+2026-11-13 13:50:12 DATA BROKEN: ['oanda_fx']
+2026-11-13 13:50:12 building MC Lucid 1-contract
+
+## oanda_pull.log tail
+USD_CAD 2026-11 bars 9999 spread 0.0002
+USD_CAD months on disk 83
+XAU_USD 2026-11 bars 9999 spread 0.47522
+XAU_USD months on disk 83
+
+## crypto_pull.log tail
+SOLUSD 2023-10 bars 0
+SOLUSD 2023-09 bars 0
+SOLUSD 2023-08 bars 0
+SOLUSD months on disk 59
