@@ -1,4 +1,4 @@
-DIAG 2026-11-13T14:00 UTC
+DIAG 2026-11-13T14:10 UTC
 
 ## bot log (last 15)
 2026-11-10 09:52:08 AUTH FAILED 200 {'errorText': 'Incorrect username or password. Please try again, noting that passwords are case-sensitive.'}
@@ -53,7 +53,6 @@ active
 466865 python3 fin_team.py
 
 ## team.log tail
-2026-11-10 14:42:06 DATA BROKEN: ['local_pg']
 2026-11-10 14:42:06 mirror failed OperationalError('connection to server at "127.0.0.1", port 5432 failed: Connection refused\n\tIs the server running on 
 2026-11-10 14:52:06 DATA BROKEN: ['local_pg']
 2026-11-10 14:52:06 mirror failed OperationalError('connection to server at "127.0.0.1", port 5432 failed: Connection refused\n\tIs the server running on 
@@ -61,6 +60,7 @@ active
 2026-11-13 13:50:12 DATA BROKEN: ['oanda_fx']
 2026-11-13 13:50:12 building MC Lucid 1-contract
 2026-11-13 13:50:23 MC Lucid 1-contract -> ['NOT YET', 'NOT YET', 'NOT YET']
+2026-11-13 14:00:23 DATA BROKEN: ['oanda_fx']
 
 ## oanda_pull.log tail
 USD_CAD 2026-11 bars 9999 spread 0.0002
