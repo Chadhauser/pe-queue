@@ -802,14 +802,14 @@
   "yf1m": {
    "status": "ok",
    "last": "2026-11-12 21:59",
-   "rows_24h": 1256
+   "rows_24h": 1246
   },
   "local_pg": {
    "status": "ok",
    "note": "fin_heartbeat 2026-11-12 22:40:04.388373+00:00 ok"
   }
  },
- "updated": "2026-11-13T00:53",
+ "updated": "2026-11-13T01:03",
  "paper": {
   "strategy": "ORB-QQQ (Zarattini-Aziz) $100 risk/trade, simulated on Alpaca IEX 1-min bars",
   "label": "UNVERIFIED-PAPER",
