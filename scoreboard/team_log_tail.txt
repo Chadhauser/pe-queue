@@ -1,4 +1,3 @@
-2026-11-10 14:52:06 mirror failed OperationalError('connection to server at "127.0.0.1", port 5432 failed: Connection refused\n\tIs the server running on 
 2026-11-13 13:50:10 start: reset 0 running -> proposed
 2026-11-13 13:50:12 DATA BROKEN: ['oanda_fx']
 2026-11-13 13:50:12 building MC Lucid 1-contract
@@ -38,3 +37,4 @@
 2026-11-13 19:20:29 DATA BROKEN: ['oanda_fx']
 2026-11-13 19:30:29 DATA BROKEN: ['oanda_fx']
 2026-11-13 19:40:29 DATA BROKEN: ['oanda_fx']
+2026-11-13 19:50:29 DATA BROKEN: ['oanda_fx']
