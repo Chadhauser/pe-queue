@@ -498,30 +498,6 @@
    "checked": "2026-11-10T08:21"
   },
   {
-   "name": "F5 NY overlap momentum: EUR_USD 12:30->13:30 UTC move >=0.2% -> WITH it 1",
-   "n": 65,
-   "mean_bps": "-4.96 bps/trade",
-   "t": -1.44,
-   "is_t": -0.88,
-   "oos_t": -1.13,
-   "control_t": 0.45,
-   "verdict": "NOT YET",
-   "next_door": "widen/narrow threshold once, then sibling pair, then dead",
-   "checked": "2026-11-10T09:01"
-  },
-  {
-   "name": "F6 London fix: EUR_USD 15:00->15:55 UTC move >=0.15% -> FADE 16:00->17:00",
-   "n": 114,
-   "mean_bps": "+0.06 bps/trade",
-   "t": 0.06,
-   "is_t": -0.36,
-   "oos_t": 0.48,
-   "control_t": -0.03,
-   "verdict": "NOT YET",
-   "next_door": "widen/narrow threshold once, then sibling pair, then dead",
-   "checked": "2026-11-10T09:01"
-  },
-  {
    "name": "F7 Friday afternoon fade: GBP_USD Fri 07:00->15:00 move >=0.4% -> FADE 15",
    "n": 34,
    "mean_bps": "+0.24 bps/trade",
@@ -640,6 +616,30 @@
    "verdict": "NOT YET",
    "next_door": "widen/narrow threshold once, then sibling pair, then dead",
    "checked": "2026-11-14T16:01"
+  },
+  {
+   "name": "F5 NY overlap momentum: EUR_USD 12:30->13:30 UTC move >=0.2% -> WITH it 1",
+   "n": 220,
+   "mean_bps": "-4.42 bps/trade",
+   "t": -2.14,
+   "is_t": -1.49,
+   "oos_t": -1.58,
+   "control_t": -0.9,
+   "verdict": "NOT YET",
+   "next_door": "widen/narrow threshold once, then sibling pair, then dead",
+   "checked": "2026-11-14T16:11"
+  },
+  {
+   "name": "F6 London fix: EUR_USD 15:00->15:55 UTC move >=0.15% -> FADE 16:00->17:00",
+   "n": 323,
+   "mean_bps": "-1.01 bps/trade",
+   "t": -1.46,
+   "is_t": -1.35,
+   "oos_t": -0.63,
+   "control_t": 0.13,
+   "verdict": "NOT YET",
+   "next_door": "widen/narrow threshold once, then sibling pair, then dead",
+   "checked": "2026-11-14T16:11"
   }
  ],
  "queue": [
@@ -789,11 +789,11 @@
   },
   {
    "id": "F5",
-   "status": "proposed"
+   "status": "verified"
   },
   {
    "id": "F6",
-   "status": "proposed"
+   "status": "verified"
   },
   {
    "id": "F7",
@@ -820,34 +820,34 @@
   "alpaca_etf": {
    "status": "ok",
    "last": "2026-11-13 21:57",
-   "rows_24h": 294
+   "rows_24h": 283
   },
   "alpaca_stocks": {
    "status": "ok",
    "last": "2026-11-13 20:59",
-   "rows_24h": 299
+   "rows_24h": 288
   },
   "yf1m": {
    "status": "ok",
    "last": "2026-11-13 21:59",
-   "rows_24h": 359
+   "rows_24h": 348
   },
   "oanda_fx": {
    "status": "ok",
    "last": "2026-11-13 21:59",
-   "rows_24h": 359
+   "rows_24h": 348
   },
   "alpaca_crypto": {
    "status": "ok",
    "last": "2026-11-13 23:14",
-   "rows_24h": 434
+   "rows_24h": 423
   },
   "local_pg": {
    "status": "ok",
    "note": "fin_heartbeat 2026-11-13 22:40:04.292019+00:00 ok"
   }
  },
- "updated": "2026-11-14T16:01",
+ "updated": "2026-11-14T16:11",
  "paper": {
   "strategy": "ORB-QQQ (Zarattini-Aziz) $100 risk/trade, simulated on Alpaca IEX 1-min bars",
   "label": "UNVERIFIED-PAPER",
