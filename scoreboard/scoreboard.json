@@ -700,6 +700,18 @@
    "verdict": "WORKS",
    "next_door": "threshold once, then liquidity band (ADV $30-100m), then dead; any WORKS must survive a next-day-open fill check before trading",
    "checked": "2026-11-14T19:02"
+  },
+  {
+   "name": "K6 Quarter-end unwind, small caps (clustered): last trading day of quarte | by-date t -3.08 n 23",
+   "n": 33907,
+   "mean_bps": "-97.3 bps/trade",
+   "t": -5.83,
+   "is_t": -24.57,
+   "oos_t": -3.0,
+   "control_t": -1.22,
+   "verdict": "NOT YET",
+   "next_door": "threshold once, then liquidity band (ADV $30-100m), then dead; any WORKS must survive a next-day-open fill check before trading",
+   "checked": "2026-11-14T19:12"
   }
  ],
  "queue": [
@@ -893,45 +905,45 @@
   },
   {
    "id": "K5",
-   "status": "proposed"
+   "status": "failed"
   },
   {
    "id": "K6",
-   "status": "proposed"
+   "status": "verified"
   }
  ],
  "data_health": {
   "alpaca_etf": {
    "status": "ok",
    "last": "2026-11-13 21:57",
-   "rows_24h": 124
+   "rows_24h": 114
   },
   "alpaca_stocks": {
    "status": "ok",
    "last": "2026-11-13 20:59",
-   "rows_24h": 117
+   "rows_24h": 107
   },
   "yf1m": {
    "status": "ok",
    "last": "2026-11-13 21:59",
-   "rows_24h": 177
+   "rows_24h": 167
   },
   "oanda_fx": {
    "status": "ok",
    "last": "2026-11-13 21:59",
-   "rows_24h": 177
+   "rows_24h": 167
   },
   "alpaca_crypto": {
    "status": "ok",
    "last": "2026-11-13 23:14",
-   "rows_24h": 252
+   "rows_24h": 242
   },
   "local_pg": {
    "status": "ok",
    "note": "fin_heartbeat 2026-11-13 22:40:04.292019+00:00 ok"
   }
  },
- "updated": "2026-11-14T19:02",
+ "updated": "2026-11-14T19:12",
  "paper": {
   "strategy": "ORB-QQQ (Zarattini-Aziz) $100 risk/trade, simulated on Alpaca IEX 1-min bars",
   "label": "UNVERIFIED-PAPER",

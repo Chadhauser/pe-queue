@@ -1,13 +1,13 @@
-# FIN SCOREBOARD (Verifier-only) — 2026-11-14T19:02 UTC
+# FIN SCOREBOARD (Verifier-only) — 2026-11-14T19:12 UTC
 
 Money: live £0 | paper £754.45 | live edges 0
 
 ## Data health
-- alpaca_etf: ok | last 2026-11-13 21:57 | rows24h 124 
-- alpaca_stocks: ok | last 2026-11-13 20:59 | rows24h 117 
-- yf1m: ok | last 2026-11-13 21:59 | rows24h 177 
-- oanda_fx: ok | last 2026-11-13 21:59 | rows24h 177 
-- alpaca_crypto: ok | last 2026-11-13 23:14 | rows24h 252 
+- alpaca_etf: ok | last 2026-11-13 21:57 | rows24h 114 
+- alpaca_stocks: ok | last 2026-11-13 20:59 | rows24h 107 
+- yf1m: ok | last 2026-11-13 21:59 | rows24h 167 
+- oanda_fx: ok | last 2026-11-13 21:59 | rows24h 167 
+- alpaca_crypto: ok | last 2026-11-13 23:14 | rows24h 242 
 - local_pg: ok | last None | rows24h None fin_heartbeat 2026-11-13 22:40:04.292019+00:00 ok
 
 ## Verdicts (gates: t>=2.5 single / 3.5 sweep, both halves >0, n>=200, |control t|<=2)
@@ -72,6 +72,7 @@ Money: live £0 | paper £754.45 | live edges 0
 | K2 Overnight gap fade, small caps, NO earnings within a day: |gap| >=5% - | by-date t 19.98 n 1473 | 41135 | +167.8 bps/trade | 23.25 | 29.48 | 9.85 | -0.67 | **WORKS** | threshold once, then liquidity band (ADV $30-100m), then dead; any WORKS must survive a next-day-open fill check before trading |
 | K3 Earnings gap continuation, small caps: |gap| >=5% on the reaction day  | by-date t -3.09 n 1077 | 8760 | -39.7 bps/trade | -4.02 | -2.76 | -2.91 | 0.2 | **NOT YET** | threshold once, then liquidity band (ADV $30-100m), then dead; any WORKS must survive a next-day-open fill check before trading |
 | K4 Short-term reversal, small caps (clustered): 5-day return <= -15% -> L | by-date t 3.78 n 1464 | 59306 | +145.6 bps/trade | 3.78 | 8.49 | 6.3 | 0.25 | **WORKS** | threshold once, then liquidity band (ADV $30-100m), then dead; any WORKS must survive a next-day-open fill check before trading |
+| K6 Quarter-end unwind, small caps (clustered): last trading day of quarte | by-date t -3.08 n 23 | 33907 | -97.3 bps/trade | -5.83 | -24.57 | -3.0 | -1.22 | **NOT YET** | threshold once, then liquidity band (ADV $30-100m), then dead; any WORKS must survive a next-day-open fill check before trading |
 
 ## Paper ledger — UNVERIFIED-PAPER — ORB-QQQ (Zarattini-Aziz) $100 risk/trade, simulated on Alpaca IEX 1-min bars — from 2026-11-02
 trades 9 | wins 4 | $+979.80 = £+754.45 (fx 0.77)
@@ -137,5 +138,5 @@ trades 9 | wins 4 | $+979.80 = £+754.45 (fx 0.77)
 - K2: verified
 - K3: verified
 - K4: verified
-- K5: proposed
-- K6: proposed
+- K5: failed
+- K6: verified
