@@ -1,4 +1,4 @@
-DIAG 2026-11-14T18:40 UTC
+DIAG 2026-11-14T18:50 UTC
 
 ## bot log (last 15)
 2026-11-10 09:52:08 AUTH FAILED 200 {'errorText': 'Incorrect username or password. Please try again, noting that passwords are case-sensitive.'}
@@ -39,6 +39,7 @@ exit 1
 30 0 * * 2-6 cd /root/pe-fin && /usr/bin/python3 oanda_pull.py >> oanda_pull.log 2>&1
 25 13 * * 1-5 cd /root/pe-fin/bot && /usr/bin/python3 orb_mnq_bot.py >> cron.log 2>&1
 */10 * * * * /root/pe-fin/team/diag.sh
+10 2 * * 0 cd /root/pe-fin/team && /usr/bin/python3 crumbs_pull.py >> crumbs_pull.log 2>&1
 
 ## postgres
 active
