@@ -498,30 +498,6 @@
    "checked": "2026-11-10T08:21"
   },
   {
-   "name": "F1 London open range: EUR_USD 07:00-08:00 UTC range, break by 08:05 -> co",
-   "n": 116,
-   "mean_bps": "-2.26 bps/trade",
-   "t": -1.16,
-   "is_t": 0.06,
-   "oos_t": -1.74,
-   "control_t": -0.45,
-   "verdict": "NOT YET",
-   "next_door": "widen/narrow threshold once, then sibling pair, then dead",
-   "checked": "2026-11-10T08:41"
-  },
-  {
-   "name": "F2 London open range on GBP_USD, same shape.",
-   "n": 110,
-   "mean_bps": "-3.92 bps/trade",
-   "t": -1.67,
-   "is_t": -1.46,
-   "oos_t": -0.85,
-   "control_t": -1.17,
-   "verdict": "NOT YET",
-   "next_door": "widen/narrow threshold once, then sibling pair, then dead",
-   "checked": "2026-11-10T08:41"
-  },
-  {
    "name": "F3 Asia range breakout: EUR_USD 00:00-07:00 range, break by 07:05 -> cont",
    "n": 48,
    "mean_bps": "+2.65 bps/trade",
@@ -606,18 +582,6 @@
    "checked": "2026-11-10T09:22"
   },
   {
-   "name": "F10 Gold NY-open momentum: XAU_USD 13:30->14:00 UTC move >=0.3% -> WITH it",
-   "n": 125,
-   "mean_bps": "+4.50 bps/trade",
-   "t": 0.86,
-   "is_t": 0.86,
-   "oos_t": 0.37,
-   "control_t": -0.15,
-   "verdict": "NOT YET",
-   "next_door": "widen/narrow threshold once, then sibling pair, then dead",
-   "checked": "2026-11-10T09:22"
-  },
-  {
    "name": "MC Lucid 50K, 1 MNQ contract (ALL, 1399 days): pass 4732% bust 5216% median 107d",
    "n": 1399,
    "mean_bps": "$+9/day",
@@ -652,6 +616,30 @@
    "verdict": "NOT YET",
    "next_door": "if pass <40%: price the 100K/150K tiers (deeper cushion) before any fee",
    "checked": "2026-11-13T13:50"
+  },
+  {
+   "name": "F1 London open range: EUR_USD 07:00-08:00 UTC range, break by 08:05 -> co",
+   "n": 340,
+   "mean_bps": "-3.16 bps/trade",
+   "t": -2.96,
+   "is_t": -0.97,
+   "oos_t": -3.51,
+   "control_t": 1.33,
+   "verdict": "NOT YET",
+   "next_door": "widen/narrow threshold once, then sibling pair, then dead",
+   "checked": "2026-11-14T15:50"
+  },
+  {
+   "name": "F2 London open range on GBP_USD, same shape.",
+   "n": 336,
+   "mean_bps": "-2.68 bps/trade",
+   "t": -2.07,
+   "is_t": -1.05,
+   "oos_t": -2.14,
+   "control_t": 1.04,
+   "verdict": "NOT YET",
+   "next_door": "widen/narrow threshold once, then sibling pair, then dead",
+   "checked": "2026-11-14T15:50"
   }
  ],
  "queue": [
@@ -793,35 +781,35 @@
   },
   {
    "id": "F3",
-   "status": "verified"
+   "status": "proposed"
   },
   {
    "id": "F4",
-   "status": "verified"
+   "status": "proposed"
   },
   {
    "id": "F5",
-   "status": "verified"
+   "status": "proposed"
   },
   {
    "id": "F6",
-   "status": "verified"
+   "status": "proposed"
   },
   {
    "id": "F7",
-   "status": "verified"
+   "status": "proposed"
   },
   {
    "id": "F8",
-   "status": "verified"
+   "status": "proposed"
   },
   {
    "id": "F9",
-   "status": "verified"
+   "status": "proposed"
   },
   {
    "id": "F10",
-   "status": "verified"
+   "status": "proposed"
   },
   {
    "id": "MC Lucid 1-contract",
@@ -832,34 +820,34 @@
   "alpaca_etf": {
    "status": "ok",
    "last": "2026-11-13 21:57",
-   "rows_24h": 314
+   "rows_24h": 304
   },
   "alpaca_stocks": {
    "status": "ok",
    "last": "2026-11-13 20:59",
-   "rows_24h": 319
+   "rows_24h": 309
   },
   "yf1m": {
    "status": "ok",
    "last": "2026-11-13 21:59",
-   "rows_24h": 379
+   "rows_24h": 369
   },
   "oanda_fx": {
    "status": "ok",
    "last": "2026-11-13 21:59",
-   "rows_24h": 379
+   "rows_24h": 369
   },
   "alpaca_crypto": {
    "status": "ok",
    "last": "2026-11-13 23:14",
-   "rows_24h": 454
+   "rows_24h": 444
   },
   "local_pg": {
    "status": "ok",
    "note": "fin_heartbeat 2026-11-13 22:40:04.292019+00:00 ok"
   }
  },
- "updated": "2026-11-14T15:40",
+ "updated": "2026-11-14T15:50",
  "paper": {
   "strategy": "ORB-QQQ (Zarattini-Aziz) $100 risk/trade, simulated on Alpaca IEX 1-min bars",
   "label": "UNVERIFIED-PAPER",
