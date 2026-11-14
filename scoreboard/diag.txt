@@ -1,4 +1,4 @@
-DIAG 2026-11-14T15:50 UTC
+DIAG 2026-11-14T16:00 UTC
 
 ## bot log (last 15)
 2026-11-10 09:52:08 AUTH FAILED 200 {'errorText': 'Incorrect username or password. Please try again, noting that passwords are case-sensitive.'}
@@ -53,14 +53,14 @@ active
 466865 python3 fin_team.py
 
 ## team.log tail
-2026-11-14 13:50:47 DATA BROKEN: ['oanda_fx']
-2026-11-14 14:00:48 DATA BROKEN: ['oanda_fx']
-2026-11-14 14:10:48 DATA BROKEN: ['oanda_fx']
-2026-11-14 14:20:48 DATA BROKEN: ['oanda_fx']
 2026-11-14 14:30:48 DATA BROKEN: ['oanda_fx']
 2026-11-14 14:40:49 DATA BROKEN: ['oanda_fx']
 2026-11-14 14:50:49 DATA BROKEN: ['oanda_fx']
 2026-11-14 15:00:49 DATA BROKEN: ['oanda_fx']
+2026-11-14 15:50:50 building F1
+2026-11-14 15:50:50 building F2
+2026-11-14 15:50:56 F1 -> ['NOT YET']
+2026-11-14 15:50:56 F2 -> ['NOT YET']
 
 ## oanda_pull.log tail
 USD_CAD 2026-11 bars 9999 spread 0.0002
