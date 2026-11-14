@@ -676,6 +676,30 @@
    "verdict": "WORKS",
    "next_door": "threshold once, then liquidity band (ADV $30-100m), then dead; any WORKS must survive a next-day-open fill check before trading",
    "checked": "2026-11-14T18:52"
+  },
+  {
+   "name": "K3 Earnings gap continuation, small caps: |gap| >=5% on the reaction day  | by-date t -3.09 n 1077",
+   "n": 8760,
+   "mean_bps": "-39.7 bps/trade",
+   "t": -4.02,
+   "is_t": -2.76,
+   "oos_t": -2.91,
+   "control_t": 0.2,
+   "verdict": "NOT YET",
+   "next_door": "threshold once, then liquidity band (ADV $30-100m), then dead; any WORKS must survive a next-day-open fill check before trading",
+   "checked": "2026-11-14T19:02"
+  },
+  {
+   "name": "K4 Short-term reversal, small caps (clustered): 5-day return <= -15% -> L | by-date t 3.78 n 1464",
+   "n": 59306,
+   "mean_bps": "+145.6 bps/trade",
+   "t": 3.78,
+   "is_t": 8.49,
+   "oos_t": 6.3,
+   "control_t": 0.25,
+   "verdict": "WORKS",
+   "next_door": "threshold once, then liquidity band (ADV $30-100m), then dead; any WORKS must survive a next-day-open fill check before trading",
+   "checked": "2026-11-14T19:02"
   }
  ],
  "queue": [
@@ -861,11 +885,11 @@
   },
   {
    "id": "K3",
-   "status": "proposed"
+   "status": "verified"
   },
   {
    "id": "K4",
-   "status": "proposed"
+   "status": "verified"
   },
   {
    "id": "K5",
@@ -880,34 +904,34 @@
   "alpaca_etf": {
    "status": "ok",
    "last": "2026-11-13 21:57",
-   "rows_24h": 134
+   "rows_24h": 124
   },
   "alpaca_stocks": {
    "status": "ok",
    "last": "2026-11-13 20:59",
-   "rows_24h": 128
+   "rows_24h": 117
   },
   "yf1m": {
    "status": "ok",
    "last": "2026-11-13 21:59",
-   "rows_24h": 188
+   "rows_24h": 177
   },
   "oanda_fx": {
    "status": "ok",
    "last": "2026-11-13 21:59",
-   "rows_24h": 188
+   "rows_24h": 177
   },
   "alpaca_crypto": {
    "status": "ok",
    "last": "2026-11-13 23:14",
-   "rows_24h": 263
+   "rows_24h": 252
   },
   "local_pg": {
    "status": "ok",
    "note": "fin_heartbeat 2026-11-13 22:40:04.292019+00:00 ok"
   }
  },
- "updated": "2026-11-14T18:52",
+ "updated": "2026-11-14T19:02",
  "paper": {
   "strategy": "ORB-QQQ (Zarattini-Aziz) $100 risk/trade, simulated on Alpaca IEX 1-min bars",
   "label": "UNVERIFIED-PAPER",
