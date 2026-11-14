@@ -1,13 +1,13 @@
-# FIN SCOREBOARD (Verifier-only) — 2026-11-14T15:50 UTC
+# FIN SCOREBOARD (Verifier-only) — 2026-11-14T16:01 UTC
 
 Money: live £0 | paper £754.45 | live edges 0
 
 ## Data health
-- alpaca_etf: ok | last 2026-11-13 21:57 | rows24h 304 
-- alpaca_stocks: ok | last 2026-11-13 20:59 | rows24h 309 
-- yf1m: ok | last 2026-11-13 21:59 | rows24h 369 
-- oanda_fx: ok | last 2026-11-13 21:59 | rows24h 369 
-- alpaca_crypto: ok | last 2026-11-13 23:14 | rows24h 444 
+- alpaca_etf: ok | last 2026-11-13 21:57 | rows24h 294 
+- alpaca_stocks: ok | last 2026-11-13 20:59 | rows24h 299 
+- yf1m: ok | last 2026-11-13 21:59 | rows24h 359 
+- oanda_fx: ok | last 2026-11-13 21:59 | rows24h 359 
+- alpaca_crypto: ok | last 2026-11-13 23:14 | rows24h 434 
 - local_pg: ok | last None | rows24h None fin_heartbeat 2026-11-13 22:40:04.292019+00:00 ok
 
 ## Verdicts (gates: t>=2.5 single / 3.5 sweep, both halves >0, n>=200, |control t|<=2)
@@ -55,8 +55,6 @@ Money: live £0 | paper £754.45 | live edges 0
 | C8 Monday open: BTC Sun 00:00->24:00 UTC move >=2% -> FADE Mon 00:00->12: | at 50bps t -1.20 | 81 | -8.60 bps/trade | -0.21 | -0.2 | -0.08 | 0.39 | **NOT YET** | widen/narrow threshold once, then ETH/SOL, then dead |
 | H2b BTC overnight (21:00 prev -> 09:25 ET) >=2% -> QQQ 09:30->11:00 SAME s | 342 | -2.43 bps/trade | -0.62 | 0.39 | -1.51 | 2.42 | **NOT YET** | door 3: sibling instrument (SPY), then dead |
 | M7b Last-hour momentum, WIDER: QQQ 09:30->15:00 move >=1.5% -> WITH it 15: | 189 | +10.52 bps/trade | 2.31 | 1.61 | 1.65 | 0.51 | **WORKS AT SMALL SIZE** | door 3: sibling instrument (SPY), then dead |
-| F3 Asia range breakout: EUR_USD 00:00-07:00 range, break by 07:05 -> cont | 48 | +2.65 bps/trade | 0.94 | 1.06 | 0.25 | -1.66 | **NOT YET** | widen/narrow threshold once, then sibling pair, then dead |
-| F4 Asia-session reversal: GBP_USD 00:00->07:00 move >=0.3% -> FADE 07:00- | 56 | -1.68 bps/trade | -0.52 | 1.04 | -1.9 | -0.49 | **NOT YET** | widen/narrow threshold once, then sibling pair, then dead |
 | F5 NY overlap momentum: EUR_USD 12:30->13:30 UTC move >=0.2% -> WITH it 1 | 65 | -4.96 bps/trade | -1.44 | -0.88 | -1.13 | 0.45 | **NOT YET** | widen/narrow threshold once, then sibling pair, then dead |
 | F6 London fix: EUR_USD 15:00->15:55 UTC move >=0.15% -> FADE 16:00->17:00 | 114 | +0.06 bps/trade | 0.06 | -0.36 | 0.48 | -0.03 | **NOT YET** | widen/narrow threshold once, then sibling pair, then dead |
 | F7 Friday afternoon fade: GBP_USD Fri 07:00->15:00 move >=0.4% -> FADE 15 | 34 | +0.24 bps/trade | 0.05 | 1.17 | -0.73 | -0.63 | **NOT YET** | widen/narrow threshold once, then sibling pair, then dead |
@@ -67,6 +65,8 @@ Money: live £0 | paper £754.45 | live edges 0
 | MC Lucid 50K, 1 MNQ contract (last 2 years, 467 days): pass 4583% bust 5416% median 72d | 467 | $+12/day | 0 | 0 | 0 | 0 | **NOT YET** | if pass <40%: price the 100K/150K tiers (deeper cushion) before any fee |
 | F1 London open range: EUR_USD 07:00-08:00 UTC range, break by 08:05 -> co | 340 | -3.16 bps/trade | -2.96 | -0.97 | -3.51 | 1.33 | **NOT YET** | widen/narrow threshold once, then sibling pair, then dead |
 | F2 London open range on GBP_USD, same shape. | 336 | -2.68 bps/trade | -2.07 | -1.05 | -2.14 | 1.04 | **NOT YET** | widen/narrow threshold once, then sibling pair, then dead |
+| F3 Asia range breakout: EUR_USD 00:00-07:00 range, break by 07:05 -> cont | 184 | +0.19 bps/trade | 0.14 | 0.15 | 0.05 | -0.9 | **NOT YET** | widen/narrow threshold once, then sibling pair, then dead |
+| F4 Asia-session reversal: GBP_USD 00:00->07:00 move >=0.3% -> FADE 07:00- | 175 | -1.48 bps/trade | -0.67 | 0.06 | -1.22 | -2.04 | **NOT YET** | widen/narrow threshold once, then sibling pair, then dead |
 
 ## Paper ledger — UNVERIFIED-PAPER — ORB-QQQ (Zarattini-Aziz) $100 risk/trade, simulated on Alpaca IEX 1-min bars — from 2026-11-02
 trades 9 | wins 4 | $+979.80 = £+754.45 (fx 0.77)
@@ -119,8 +119,8 @@ trades 9 | wins 4 | $+979.80 = £+754.45 (fx 0.77)
 - M7b: verified
 - F1: verified
 - F2: verified
-- F3: proposed
-- F4: proposed
+- F3: verified
+- F4: verified
 - F5: proposed
 - F6: proposed
 - F7: proposed
