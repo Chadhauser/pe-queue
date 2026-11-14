@@ -1,13 +1,13 @@
-# FIN SCOREBOARD (Verifier-only) — 2026-11-14T16:21 UTC
+# FIN SCOREBOARD (Verifier-only) — 2026-11-14T16:31 UTC
 
 Money: live £0 | paper £754.45 | live edges 0
 
 ## Data health
-- alpaca_etf: ok | last 2026-11-13 21:57 | rows24h 273 
-- alpaca_stocks: ok | last 2026-11-13 20:59 | rows24h 278 
-- yf1m: ok | last 2026-11-13 21:59 | rows24h 338 
-- oanda_fx: ok | last 2026-11-13 21:59 | rows24h 338 
-- alpaca_crypto: ok | last 2026-11-13 23:14 | rows24h 413 
+- alpaca_etf: ok | last 2026-11-13 21:57 | rows24h 263 
+- alpaca_stocks: ok | last 2026-11-13 20:59 | rows24h 268 
+- yf1m: ok | last 2026-11-13 21:59 | rows24h 328 
+- oanda_fx: ok | last 2026-11-13 21:59 | rows24h 328 
+- alpaca_crypto: ok | last 2026-11-13 23:14 | rows24h 403 
 - local_pg: ok | last None | rows24h None fin_heartbeat 2026-11-13 22:40:04.292019+00:00 ok
 
 ## Verdicts (gates: t>=2.5 single / 3.5 sweep, both halves >0, n>=200, |control t|<=2)
@@ -55,7 +55,6 @@ Money: live £0 | paper £754.45 | live edges 0
 | C8 Monday open: BTC Sun 00:00->24:00 UTC move >=2% -> FADE Mon 00:00->12: | at 50bps t -1.20 | 81 | -8.60 bps/trade | -0.21 | -0.2 | -0.08 | 0.39 | **NOT YET** | widen/narrow threshold once, then ETH/SOL, then dead |
 | H2b BTC overnight (21:00 prev -> 09:25 ET) >=2% -> QQQ 09:30->11:00 SAME s | 342 | -2.43 bps/trade | -0.62 | 0.39 | -1.51 | 2.42 | **NOT YET** | door 3: sibling instrument (SPY), then dead |
 | M7b Last-hour momentum, WIDER: QQQ 09:30->15:00 move >=1.5% -> WITH it 15: | 189 | +10.52 bps/trade | 2.31 | 1.61 | 1.65 | 0.51 | **WORKS AT SMALL SIZE** | door 3: sibling instrument (SPY), then dead |
-| F9 Gold London open range: XAU_USD 07:00-08:00 range, break by 08:05 -> c | 107 | -3.12 bps/trade | -0.6 | 0.97 | -1.25 | 0.3 | **NOT YET** | widen/narrow threshold once, then sibling pair, then dead |
 | MC Lucid 50K, 1 MNQ contract (ALL, 1399 days): pass 4732% bust 5216% median 107d | 1399 | $+9/day | 0 | 0 | 0 | 0 | **NOT YET** | if pass <40%: price the 100K/150K tiers (deeper cushion) before any fee |
 | MC Lucid 50K, 1 MNQ contract (OOS second half, 700 days): pass 4729% bust 5262% median 86d | 700 | $+11/day | 0 | 0 | 0 | 0 | **NOT YET** | if pass <40%: price the 100K/150K tiers (deeper cushion) before any fee |
 | MC Lucid 50K, 1 MNQ contract (last 2 years, 467 days): pass 4583% bust 5416% median 72d | 467 | $+12/day | 0 | 0 | 0 | 0 | **NOT YET** | if pass <40%: price the 100K/150K tiers (deeper cushion) before any fee |
@@ -67,6 +66,8 @@ Money: live £0 | paper £754.45 | live edges 0
 | F6 London fix: EUR_USD 15:00->15:55 UTC move >=0.15% -> FADE 16:00->17:00 | 323 | -1.01 bps/trade | -1.46 | -1.35 | -0.63 | 0.13 | **NOT YET** | widen/narrow threshold once, then sibling pair, then dead |
 | F7 Friday afternoon fade: GBP_USD Fri 07:00->15:00 move >=0.4% -> FADE 15 | 88 | +1.73 bps/trade | 0.42 | 0.95 | -0.92 | -2.54 | **NOT YET** | widen/narrow threshold once, then sibling pair, then dead |
 | F8 USD/JPY Tokyo open momentum: 00:00->00:30 UTC move >=0.15% -> WITH it  | 194 | -2.59 bps/trade | -1.21 | -1.65 | 0.12 | 0.09 | **NOT YET** | widen/narrow threshold once, then sibling pair, then dead |
+| F9 Gold London open range: XAU_USD 07:00-08:00 range, break by 08:05 -> c | 339 | -0.66 bps/trade | -0.25 | 0.9 | -0.99 | 0.32 | **NOT YET** | widen/narrow threshold once, then sibling pair, then dead |
+| F10 Gold NY-open momentum: XAU_USD 13:30->14:00 UTC move >=0.3% -> WITH it | 387 | -1.49 bps/trade | -0.47 | -0.09 | -0.61 | 0.55 | **NOT YET** | widen/narrow threshold once, then sibling pair, then dead |
 
 ## Paper ledger — UNVERIFIED-PAPER — ORB-QQQ (Zarattini-Aziz) $100 risk/trade, simulated on Alpaca IEX 1-min bars — from 2026-11-02
 trades 9 | wins 4 | $+979.80 = £+754.45 (fx 0.77)
@@ -125,6 +126,6 @@ trades 9 | wins 4 | $+979.80 = £+754.45 (fx 0.77)
 - F6: verified
 - F7: verified
 - F8: verified
-- F9: proposed
-- F10: proposed
+- F9: verified
+- F10: verified
 - MC Lucid 1-contract: verified

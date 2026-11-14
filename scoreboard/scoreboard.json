@@ -498,18 +498,6 @@
    "checked": "2026-11-10T08:21"
   },
   {
-   "name": "F9 Gold London open range: XAU_USD 07:00-08:00 range, break by 08:05 -> c",
-   "n": 107,
-   "mean_bps": "-3.12 bps/trade",
-   "t": -0.6,
-   "is_t": 0.97,
-   "oos_t": -1.25,
-   "control_t": 0.3,
-   "verdict": "NOT YET",
-   "next_door": "widen/narrow threshold once, then sibling pair, then dead",
-   "checked": "2026-11-10T09:22"
-  },
-  {
    "name": "MC Lucid 50K, 1 MNQ contract (ALL, 1399 days): pass 4732% bust 5216% median 107d",
    "n": 1399,
    "mean_bps": "$+9/day",
@@ -640,6 +628,30 @@
    "verdict": "NOT YET",
    "next_door": "widen/narrow threshold once, then sibling pair, then dead",
    "checked": "2026-11-14T16:21"
+  },
+  {
+   "name": "F9 Gold London open range: XAU_USD 07:00-08:00 range, break by 08:05 -> c",
+   "n": 339,
+   "mean_bps": "-0.66 bps/trade",
+   "t": -0.25,
+   "is_t": 0.9,
+   "oos_t": -0.99,
+   "control_t": 0.32,
+   "verdict": "NOT YET",
+   "next_door": "widen/narrow threshold once, then sibling pair, then dead",
+   "checked": "2026-11-14T16:31"
+  },
+  {
+   "name": "F10 Gold NY-open momentum: XAU_USD 13:30->14:00 UTC move >=0.3% -> WITH it",
+   "n": 387,
+   "mean_bps": "-1.49 bps/trade",
+   "t": -0.47,
+   "is_t": -0.09,
+   "oos_t": -0.61,
+   "control_t": 0.55,
+   "verdict": "NOT YET",
+   "next_door": "widen/narrow threshold once, then sibling pair, then dead",
+   "checked": "2026-11-14T16:31"
   }
  ],
  "queue": [
@@ -805,11 +817,11 @@
   },
   {
    "id": "F9",
-   "status": "proposed"
+   "status": "verified"
   },
   {
    "id": "F10",
-   "status": "proposed"
+   "status": "verified"
   },
   {
    "id": "MC Lucid 1-contract",
@@ -820,34 +832,34 @@
   "alpaca_etf": {
    "status": "ok",
    "last": "2026-11-13 21:57",
-   "rows_24h": 273
+   "rows_24h": 263
   },
   "alpaca_stocks": {
    "status": "ok",
    "last": "2026-11-13 20:59",
-   "rows_24h": 278
+   "rows_24h": 268
   },
   "yf1m": {
    "status": "ok",
    "last": "2026-11-13 21:59",
-   "rows_24h": 338
+   "rows_24h": 328
   },
   "oanda_fx": {
    "status": "ok",
    "last": "2026-11-13 21:59",
-   "rows_24h": 338
+   "rows_24h": 328
   },
   "alpaca_crypto": {
    "status": "ok",
    "last": "2026-11-13 23:14",
-   "rows_24h": 413
+   "rows_24h": 403
   },
   "local_pg": {
    "status": "ok",
    "note": "fin_heartbeat 2026-11-13 22:40:04.292019+00:00 ok"
   }
  },
- "updated": "2026-11-14T16:21",
+ "updated": "2026-11-14T16:31",
  "paper": {
   "strategy": "ORB-QQQ (Zarattini-Aziz) $100 risk/trade, simulated on Alpaca IEX 1-min bars",
   "label": "UNVERIFIED-PAPER",
