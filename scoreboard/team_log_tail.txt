@@ -1,4 +1,3 @@
-2026-11-13 22:40:32 DATA BROKEN: ['oanda_fx']
 2026-11-13 22:50:32 DATA BROKEN: ['oanda_fx']
 2026-11-13 23:00:32 DATA BROKEN: ['oanda_fx']
 2026-11-13 23:10:32 DATA BROKEN: ['oanda_fx']
@@ -38,3 +37,4 @@
 2026-11-14 04:50:36 DATA BROKEN: ['oanda_fx']
 2026-11-14 05:00:36 DATA BROKEN: ['oanda_fx']
 2026-11-14 05:10:37 DATA BROKEN: ['oanda_fx']
+2026-11-14 05:20:37 DATA BROKEN: ['oanda_fx']
