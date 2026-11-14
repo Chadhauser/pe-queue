@@ -1,4 +1,4 @@
-DIAG 2026-11-14T15:10 UTC
+DIAG 2026-11-14T15:20 UTC
 
 ## bot log (last 15)
 2026-11-10 09:52:08 AUTH FAILED 200 {'errorText': 'Incorrect username or password. Please try again, noting that passwords are case-sensitive.'}
@@ -47,7 +47,7 @@ active
 /root/pe-data/alpaca/QQQ: 131 files, last 1m_2026-11.parquet
 /root/pe-data/alpaca/BTCUSD: 71 files, last 1m_2026-11.parquet
 /root/pe-data/oanda/EUR_USD: 83 files, last 1m_2026-11.parquet
-/root/pe-data/oanda/XAU_USD: 83 files, last 1m_2026-11.parquet
+/root/pe-data/oanda/XAU_USD: 0 files, last 
 
 ## daemon
 466865 python3 fin_team.py
