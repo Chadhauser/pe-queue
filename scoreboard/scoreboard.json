@@ -652,6 +652,30 @@
    "verdict": "NOT YET",
    "next_door": "widen/narrow threshold once, then sibling pair, then dead",
    "checked": "2026-11-14T16:31"
+  },
+  {
+   "name": "K1 PEAD small caps: earnings reaction day |close-to-close| >=5% -> SAME s | by-date t -0.70 n 1164",
+   "n": 10738,
+   "mean_bps": "-2.8 bps/trade",
+   "t": -0.24,
+   "is_t": 0.34,
+   "oos_t": -0.58,
+   "control_t": 0.48,
+   "verdict": "NOT YET",
+   "next_door": "threshold once, then liquidity band (ADV $30-100m), then dead; any WORKS must survive a next-day-open fill check before trading",
+   "checked": "2026-11-14T18:52"
+  },
+  {
+   "name": "K2 Overnight gap fade, small caps, NO earnings within a day: |gap| >=5% - | by-date t 19.98 n 1473",
+   "n": 41135,
+   "mean_bps": "+167.8 bps/trade",
+   "t": 23.25,
+   "is_t": 29.48,
+   "oos_t": 9.85,
+   "control_t": -0.67,
+   "verdict": "WORKS",
+   "next_door": "threshold once, then liquidity band (ADV $30-100m), then dead; any WORKS must survive a next-day-open fill check before trading",
+   "checked": "2026-11-14T18:52"
   }
  ],
  "queue": [
@@ -826,40 +850,64 @@
   {
    "id": "MC Lucid 1-contract",
    "status": "verified"
+  },
+  {
+   "id": "K1",
+   "status": "verified"
+  },
+  {
+   "id": "K2",
+   "status": "verified"
+  },
+  {
+   "id": "K3",
+   "status": "proposed"
+  },
+  {
+   "id": "K4",
+   "status": "proposed"
+  },
+  {
+   "id": "K5",
+   "status": "proposed"
+  },
+  {
+   "id": "K6",
+   "status": "proposed"
   }
  ],
  "data_health": {
   "alpaca_etf": {
    "status": "ok",
    "last": "2026-11-13 21:57",
-   "rows_24h": 144
+   "rows_24h": 134
   },
   "alpaca_stocks": {
    "status": "ok",
    "last": "2026-11-13 20:59",
-   "rows_24h": 138
+   "rows_24h": 128
   },
   "yf1m": {
    "status": "ok",
    "last": "2026-11-13 21:59",
-   "rows_24h": 198
+   "rows_24h": 188
   },
   "oanda_fx": {
    "status": "ok",
    "last": "2026-11-13 21:59",
-   "rows_24h": 198
+   "rows_24h": 188
   },
   "alpaca_crypto": {
    "status": "ok",
    "last": "2026-11-13 23:14",
-   "rows_24h": 273
+   "rows_24h": 263
   },
   "local_pg": {
    "status": "ok",
    "note": "fin_heartbeat 2026-11-13 22:40:04.292019+00:00 ok"
   }
  },
- "updated": "2026-11-14T18:41",
+ "updated": "2026-11-14T18:52",
  "paper": {
   "strategy": "ORB-QQQ (Zarattini-Aziz) $100 risk/trade, simulated on Alpaca IEX 1-min bars",
   "label": "UNVERIFIED-PAPER",

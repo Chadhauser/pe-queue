@@ -1,13 +1,13 @@
-# FIN SCOREBOARD (Verifier-only) — 2026-11-14T18:41 UTC
+# FIN SCOREBOARD (Verifier-only) — 2026-11-14T18:52 UTC
 
 Money: live £0 | paper £754.45 | live edges 0
 
 ## Data health
-- alpaca_etf: ok | last 2026-11-13 21:57 | rows24h 144 
-- alpaca_stocks: ok | last 2026-11-13 20:59 | rows24h 138 
-- yf1m: ok | last 2026-11-13 21:59 | rows24h 198 
-- oanda_fx: ok | last 2026-11-13 21:59 | rows24h 198 
-- alpaca_crypto: ok | last 2026-11-13 23:14 | rows24h 273 
+- alpaca_etf: ok | last 2026-11-13 21:57 | rows24h 134 
+- alpaca_stocks: ok | last 2026-11-13 20:59 | rows24h 128 
+- yf1m: ok | last 2026-11-13 21:59 | rows24h 188 
+- oanda_fx: ok | last 2026-11-13 21:59 | rows24h 188 
+- alpaca_crypto: ok | last 2026-11-13 23:14 | rows24h 263 
 - local_pg: ok | last None | rows24h None fin_heartbeat 2026-11-13 22:40:04.292019+00:00 ok
 
 ## Verdicts (gates: t>=2.5 single / 3.5 sweep, both halves >0, n>=200, |control t|<=2)
@@ -68,6 +68,8 @@ Money: live £0 | paper £754.45 | live edges 0
 | F8 USD/JPY Tokyo open momentum: 00:00->00:30 UTC move >=0.15% -> WITH it  | 194 | -2.59 bps/trade | -1.21 | -1.65 | 0.12 | 0.09 | **NOT YET** | widen/narrow threshold once, then sibling pair, then dead |
 | F9 Gold London open range: XAU_USD 07:00-08:00 range, break by 08:05 -> c | 339 | -0.66 bps/trade | -0.25 | 0.9 | -0.99 | 0.32 | **NOT YET** | widen/narrow threshold once, then sibling pair, then dead |
 | F10 Gold NY-open momentum: XAU_USD 13:30->14:00 UTC move >=0.3% -> WITH it | 387 | -1.49 bps/trade | -0.47 | -0.09 | -0.61 | 0.55 | **NOT YET** | widen/narrow threshold once, then sibling pair, then dead |
+| K1 PEAD small caps: earnings reaction day |close-to-close| >=5% -> SAME s | by-date t -0.70 n 1164 | 10738 | -2.8 bps/trade | -0.24 | 0.34 | -0.58 | 0.48 | **NOT YET** | threshold once, then liquidity band (ADV $30-100m), then dead; any WORKS must survive a next-day-open fill check before trading |
+| K2 Overnight gap fade, small caps, NO earnings within a day: |gap| >=5% - | by-date t 19.98 n 1473 | 41135 | +167.8 bps/trade | 23.25 | 29.48 | 9.85 | -0.67 | **WORKS** | threshold once, then liquidity band (ADV $30-100m), then dead; any WORKS must survive a next-day-open fill check before trading |
 
 ## Paper ledger — UNVERIFIED-PAPER — ORB-QQQ (Zarattini-Aziz) $100 risk/trade, simulated on Alpaca IEX 1-min bars — from 2026-11-02
 trades 9 | wins 4 | $+979.80 = £+754.45 (fx 0.77)
@@ -129,3 +131,9 @@ trades 9 | wins 4 | $+979.80 = £+754.45 (fx 0.77)
 - F9: verified
 - F10: verified
 - MC Lucid 1-contract: verified
+- K1: verified
+- K2: verified
+- K3: proposed
+- K4: proposed
+- K5: proposed
+- K6: proposed
