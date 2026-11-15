@@ -1,4 +1,4 @@
-DIAG 2026-11-15T15:10 UTC
+DIAG 2026-11-15T15:20 UTC
 
 ## bot log (last 15)
 (no bot log yet)
@@ -35,6 +35,7 @@ CHECK OK paper account PA3WJYBZY equity 100000 status ACTIVE
 */10 * * * * /root/pe-fin/team/diag.sh
 10 2 * * 0 cd /root/pe-fin/team && /usr/bin/python3 crumbs_pull.py >> crumbs_pull.log 2>&1
 25 13 * * 1-5 cd /root/pe-fin/bot && /usr/bin/python3 orb_alpaca_bot.py >> cron.log 2>&1
+20 13 * * 1-5 cd /root/pe-fin/bot && /usr/bin/python3 k2_gapfade_bot.py >> k2_cron.log 2>&1
 
 ## postgres
 active
