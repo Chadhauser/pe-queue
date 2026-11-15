@@ -1,0 +1,21 @@
+import sys
+sys.path.insert(0, '/root/pe-queue/runner')
+import creds, psycopg2
+c = psycopg2.connect(creds.pg_local()); c.autocommit = True; k = c.cursor()
+k.execute("SET work_mem='64MB'; SET statement_timeout='300s'")
+k.execute("select sport,mkt,inplay,count(*),count(distinct market_id),min(pt),max(pt) from stream_ticks group by 1,2,3 order by 4 desc limit 30")
+for r in k.fetchall(): print(r)
+for t in ('stream_ticks', 'liq_sample', 'ip_tape', 'goal_timeline'):
+    k.execute("select column_name from information_schema.columns where table_name=%s order by ordinal_position", (t,))
+    print(t, [x[0] for x in k.fetchall()])
+k.execute("select market_type,count(*),count(distinct market_id),min(ts),max(ts) from liq_sample group by 1 order by 2 desc limit 12")
+for r in k.fetchall(): print(r)
+k.execute("select sport,count(*),count(distinct event_name),min(ts),max(ts) from ip_tape group by 1 order by 2 desc limit 12")
+for r in k.fetchall(): print(r)
+k.execute("select table_name from information_schema.tables where table_schema='public' and (table_name ilike '%result%' or table_name ilike '%tennis%' or table_name ilike '%settle%') order by 1")
+print([x[0] for x in k.fetchall()])
+c.close()
+r = psycopg2.connect(creds.pg_railway(), sslmode='require'); q = r.cursor(); q.execute("SET statement_timeout='120s'")
+q.execute("select table_name from information_schema.tables where table_schema='public' and (table_name ilike '%result%' or table_name ilike '%settle%') order by 1")
+print('railway', [x[0] for x in q.fetchall()])
+r.close()

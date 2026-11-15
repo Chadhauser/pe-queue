@@ -1,0 +1,75 @@
+"""Shared credential lookup for queue jobs. Reads what is ALREADY on this server, in this order:
+process environment -> /etc/environment -> ~/.bashrc, ~/.profile, ~/.bash_profile (export lines) -> .env files under /root/pe-* ->
+module constants in /root/pe-bot/bot_core.py. Never prints values."""
+import os, re, glob, sys
+def _file_vars(path):
+    d={}
+    try:
+        for ln in open(path, errors='ignore'):
+            m=re.match(r'^\s*(?:export\s+)?([A-Za-z_][A-Za-z0-9_]*)\s*=\s*(.*?)\s*$', ln)
+            if m and not ln.lstrip().startswith('#'):
+                v=m.group(2).strip().strip('"').strip("'")
+                if v and v not in ('VALUE','PASTE_KEY_HERE','PASTE_HERE'): d.setdefault(m.group(1), v)
+    except Exception: pass
+    return d
+def all_vars():
+    d=dict(os.environ)
+    for f in ['/etc/environment', os.path.expanduser('~/.bashrc'), os.path.expanduser('~/.profile'), os.path.expanduser('~/.bash_profile'),
+              os.path.expanduser('~/.pam_environment')] + glob.glob('/root/pe-*/.env*') + glob.glob('/root/pe-*/*.env') + glob.glob('/root/*/.env'):
+        for k,v in _file_vars(f).items(): d.setdefault(k, v)
+    try:
+        sys.path.insert(0,'/root/pe-bot'); import bot_core
+        for k in dir(bot_core):
+            if k.isupper() and isinstance(getattr(bot_core,k), str): d.setdefault(k, getattr(bot_core,k))
+    except Exception: pass
+    return d
+def first(d, names):
+    for n in names:
+        if d.get(n): return d[n]
+    return None
+def betfair():
+    d=all_vars()
+    app=first(d,['BETFAIR_APP_KEY','BF_APP_KEY','APP_KEY','BETFAIR_APPKEY'])
+    user=first(d,['BETFAIR_USERNAME','BETFAIR_USER','BF_USERNAME','BF_USER','USERNAME'])
+    pw=first(d,['BETFAIR_PASSWORD','BETFAIR_PASS','BF_PASSWORD','BF_PASS','PASSWORD'])
+    return app,user,pw
+AF_NAMES=['API_FOOTBALL_KEY','APIFOOTBALL_KEY','APISPORTS_KEY','API_SPORTS_KEY','RAPIDAPI_KEY','X_RAPIDAPI_KEY','API_FOOTBALL','FOOTBALL_API_KEY','APIFOOTBALL']
+def apifootball():
+    d=all_vars()
+    return first(d,AF_NAMES)
+def apifootball_all():
+    """Every distinct candidate key value found under any plausible name, in any file (newest .env lines first). Never prints values."""
+    d=all_vars(); out=[]
+    for n in AF_NAMES:
+        v=d.get(n)
+        if v and v not in out: out.append(v)
+    import glob as _g
+    for f in _g.glob('/root/pe-*/.env*')+_g.glob('/root/*/.env'):
+        for k,v in _file_vars(f).items():
+            if k.upper() in AF_NAMES and v not in out: out.append(v)
+    return out
+def apifootball_sources():
+    """Which file holds which API-Football-named variable (names and files only, never values)."""
+    import glob as _g
+    rows=[]
+    for f in ['/etc/environment', os.path.expanduser('~/.bashrc'), os.path.expanduser('~/.profile')]+_g.glob('/root/pe-*/.env*')+_g.glob('/root/*/.env'):
+        for k,v in _file_vars(f).items():
+            if k.upper() in AF_NAMES: rows.append((f,k,len(v)))
+    for k in os.environ:
+        if k.upper() in AF_NAMES: rows.append(('process env',k,len(os.environ[k])))
+    return rows
+
+def pg_railway():
+    """DSN of the Railway Postgres (the engine's live tables). Never prints it."""
+    d=all_vars()
+    return first(d,['DB','DATABASE_URL','PG_DSN','POSTGRES_URL','DB_URL'])
+def pg_local():
+    """DSN of the Postgres on this box (history and tape tables, from 4 Nov 2026). Written by jobs/337. None if not installed yet."""
+    for f in ['/root/.pe_local_pg.env']:
+        v=_file_vars(f).get('PE_LOCAL_PG')
+        if v: return v
+    return None
+def report():
+    app,user,pw=betfair(); k=apifootball()
+    return f"local_pg={'yes' if pg_local() else 'NO'} railway_pg={'yes' if pg_railway() else 'NO'} | betfair app_key={'yes' if app else 'NO'} username={'yes' if user else 'NO'} password={'yes' if pw else 'NO'} | api-football key={'yes' if k else 'NO'}"
+if __name__=='__main__': print(report())

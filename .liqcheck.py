@@ -1,0 +1,15 @@
+import sys, psycopg2
+sys.path.insert(0, '/root/pe-queue/runner')
+import creds
+c = psycopg2.connect(creds.pg_local())
+cur = c.cursor()
+cur.execute("select table_name from information_schema.tables where table_schema='public' and table_name like '%liq%'")
+print('local tables', cur.fetchall())
+c.close()
+c = psycopg2.connect(creds.pg_railway(), connect_timeout=30)
+cur = c.cursor()
+cur.execute("SET statement_timeout='150s'")
+cur.execute("select column_name from information_schema.columns where table_name='liq_sample' order by ordinal_position")
+print('railway liq_sample', [r[0] for r in cur.fetchall()])
+cur.execute("select count(*), count(distinct market_id), min(ts), max(ts) from liq_sample where market_type='HALF_TIME_FULL_TIME' and ts > now() - interval '2 days'")
+print('HTFT last 2 days', cur.fetchall())

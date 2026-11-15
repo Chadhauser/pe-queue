@@ -1,0 +1,40 @@
+import sys
+sys.path.insert(0, '/root/pe-queue/runner')
+import creds, psycopg2
+c = psycopg2.connect(creds.pg_railway(), connect_timeout=20); c.autocommit = True
+cur = c.cursor()
+cur.execute("SET statement_timeout='180s'")
+print('== racing_results')
+cur.execute("select * from racing_results limit 2")
+cols = [d[0] for d in cur.description]; print(' ', cols)
+for r in cur.fetchall(): print('  ', str(tuple(r))[:320])
+for d in cols:
+    if d in ('race_date', 'date', 'off_time', 'race_time', 'off_dt', 'created_at', 'fetched_at'):
+        cur.execute(f"select min({d}),max({d}),count(*) from racing_results"); print('  ', d, cur.fetchone())
+print('== tennis log cadence, one week')
+cur.execute("""select inplay, count(*), count(distinct market_id), count(distinct (market_id,captured_at))
+               from bf_tennis_log where captured_at>='2026-10-20' and captured_at<'2026-10-27' group by 1""")
+print(' ', cur.fetchall())
+print('== one tennis market')
+cur.execute("""select market_id from bf_tennis_log where captured_at>='2026-10-25' and captured_at<'2026-10-25 01:00' limit 1""")
+m = cur.fetchone()[0]
+cur.execute("select distinct captured_at,inplay from bf_tennis_log where market_id=%s order by 1", (m,))
+rows = cur.fetchall(); print(' ', m, len(rows), rows[0][0], rows[-1][0])
+for a, b in zip(rows[20:26], rows[21:27]): print('   gap', (b[0]-a[0]).total_seconds(), a[1])
+print('== golf_markets')
+cur.execute("select market_type,market_year,count(distinct market_id),count(bsp),count(last_price_traded),count(*) from golf_markets group by 1,2 order by 1,2")
+print(' ', cur.fetchall()[:20])
+print('== racing log: runs of racing_bsp overlap, one day test of the market id join')
+cur.execute("""select count(distinct market_id) from bf_racing_log where captured_at>='2026-10-05' and captured_at<'2026-10-06'""")
+print('  log markets 5 Oct', cur.fetchone())
+cur.execute("""select distinct market_id from bf_racing_log where captured_at>='2026-10-05' and captured_at<'2026-10-06'""")
+ids = [int(r[0].split('.')[1]) for r in cur.fetchall()]
+L = psycopg2.connect(creds.pg_local()); lc = L.cursor()
+lc.execute("select count(distinct event_id),min(event_dt),max(event_dt) from racing_bsp where event_id = any(%s) and lower(market)='win'", (ids,))
+print('  in racing_bsp, win', lc.fetchone())
+lc.execute("select market,count(*) from racing_bsp group by 1")
+print(' ', lc.fetchall())
+lc.execute("select to_char(event_dt::timestamp,'YYYY-MM'),count(distinct event_id) from racing_bsp where event_dt::timestamp>='2026-08-01' and lower(market)='win' group by 1 order by 1")
+print('  win races by month', lc.fetchall())
+lc.execute("select min(event_dt),max(event_dt) from racing_bsp")
+print(' ', lc.fetchone())

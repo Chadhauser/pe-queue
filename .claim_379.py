@@ -1,0 +1,6 @@
+p = '/root/pe-queue/watchman/FINDER_QUEUE.md'
+t = open(p).read().rstrip('\n').split('\n')
+assert not any(l.startswith('379. ') for l in t)
+t.append("379. RUNNING 2026-11-07 (Finder's own, source a, from item 372; tables ip_tape, racing_results; job 499_ip_touch_level; items 26, 33, 48 and 70 read a shortening from the off, none read a first touch of a fixed level with a delay) **A horse's first in-play touch of a price level, at the real touch.** Rationale: item 372 shows a horse trading under 2.0 in running wins 0.688 of the time, against about 0.50 implied, and a resting lay there loses -£3.89 per £10, n 18,817; the same fact might pay a taker if the price can still be had just after the touch. Rule fixed before any price is scored: UK/IE races with one winner, replay frames dropped as job 497, one entry per runner per level, Q in 3, 2, 1.5, 1.3, 1.2, 1.1, first clean frame with back_px <= Q after a frame above it, fill at the first clean frame at least 2 s later, back at its back_px or lay at its lay_px, one tick adverse, 2%, £10, to result. Lines ALL, and MOVE where the first in-play back_px was at least 1.5 x Q. Halves by date median, standard bar on the t by race.")
+open(p, 'w').write('\n'.join(t) + '\n')
+print('ok')

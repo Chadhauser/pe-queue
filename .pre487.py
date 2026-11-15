@@ -1,0 +1,15 @@
+import sys, time, psycopg2
+sys.path.insert(0,'/root/pe-queue/runner'); import creds
+con=psycopg2.connect(creds.pg_local()); cur=con.cursor()
+cur.execute("SET work_mem='64MB'; SET statement_timeout='300s'")
+cur.execute("select indexname, indexdef from pg_indexes where tablename in ('bf_hist_other','bf_hist_result','finder_unseen_mk_1109')")
+for r in cur.fetchall(): print(r)
+cur.execute("select pid, state, now()-query_start, left(query,120) from pg_stat_activity where state<>'idle' and pid<>pg_backend_pid()")
+for r in cur.fetchall(): print('ACT',r)
+cur.execute("select count(*), min(loaded_at), max(loaded_at) from finder_unseen_mk_1109")
+print('unseen', cur.fetchone())
+cur.execute("select column_name from information_schema.columns where table_name='finder_unseen_mk_1109'")
+print([r[0] for r in cur.fetchall()])
+t=time.time()
+cur.execute("explain select market_id, sel, ts, ltp from bf_hist_other where sport='Soccer' and market_type='OVER_UNDER_45' and market_time>='2024-05-01' and market_time<'2026-10-01' and not inplay")
+for r in cur.fetchall(): print(r[0])

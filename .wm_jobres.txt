@@ -1,0 +1,129 @@
+### 553_timezone_dupes_stream — ok — finished 2026-11-12 11:52 UTC
+```
+== 1. timezone ==
+db timezone was: Europe/Berlin
+recorder rows since cutover stored 1 h EARLY (not rewritten: 7 GB disk free, a 12M-row update would not fit) — STATED HOLE: liq_sample timestamps 10-12 Nov are one hour early: (10930395, datetime.datetime(2026, 11, 10, 7, 0, 23, 41815, tzinfo=datetime.timezone(datetime.timedelta(seconds=3600))), datetime.datetime(2026, 11, 12, 11, 41, 22, 707978, tzinfo=datetime.timezone(datetime.timedelta(seconds=3600))))
+db timezone now: UTC
+== 2. tape_archive: source == destination since the cutover — off; duplicates removed ==
+tape_archive cron removed
+liq_sample duplicate keys since 9 Nov: 7666900
+  deleted 7672476
+ip_tape dedupe: column "sel" does not exist
+LINE 1: select count(*) from (select ts, market_id, sel, count(*) fr...
+                    
+stream_ticks duplicate keys since 9 Nov: 16089236
+stream_ticks dedupe: server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while process
+== 3. recorder back, proof ==
+2899515 python3 liq_recorder.py
+LOCAL liq_sample last 3 min: 5949 max 2026-11-12 11:52:22.539129+00:00 now 2026-11-12 11:52:47.823053+00:00 | PROOF PASS
+heartbeat: [(datetime.datetime(2026, 11, 12, 11, 52, 32, 545356, tzinfo=datetime.timezone.utc), 432)]
+== 4. stream: catalogue overflow guard ==
+bf_chunk imported into stream_client
+stream restarted by keepalive
+== 5. team scripts over a plain socket ==
+fairprice_inplay.py:1
+fairprice_country.py:1
+fairprice_v0.py:1
+compile ok
+== 6. the numbers ==
+PASSED cells by sport: [('Soccer', 18)]
+map cells by sport: [('Soccer', 356)]
+desk in-play cells: 0
+TAKER by cell: [('CORRECT_SCORE', 'BACK', 3, 3, Decimal('10.15')), ('BOTH_TEAMS_TO_SCORE', 'LAY', 2, 2, Decimal('0.90')), ('OVER_UNDER_25', 'BACK', 2, 2, Decimal('1.94')), ('OVER_UNDER_25', 'LAY', 2, 2, Decimal('3.92')), ('BOTH_TEAMS_TO_SCORE', 'BACK', 1, 1, Decimal('-2.00')), ('OVER_UNDER_45', 'LAY', 1, 1, Decimal('-0.20'))]
+TAKER by status: [('settled', 11, Decimal('14.71'))]
+DESK calls: []
+history months: [('LISTFAIL', 18), ('EMPTY', 76), ('PARTIAL', 9), ('DONE', 128)]
+/dev/sda1       145G  140G  4.4G  97% /
+553 done
+exit=0 secs=641
+```
+
+### 554_disk_emergency — ok — finished 2026-11-12 14:04 UTC
+```
+== 1. non-database ==
+/dev/sda1       145G  136G  8.7G  94% /
+== 2. dump + drop tables the bot does not need ==
+dropped public.bf_price_log 3.7 GB -> /root/pe-archive/tables/public.bf_price_log.sql.zst (221 MB)
+dropped public.finder_rlog 2.1 GB -> /root/pe-archive/tables/public.finder_rlog.sql.zst (62 MB)
+dropped public.bf_racing_log 1.9 GB -> /root/pe-archive/tables/public.bf_racing_log.sql.zst (83 MB)
+dropped public.bf_tennis_log 1.8 GB -> /root/pe-archive/tables/public.bf_tennis_log.sql.zst (70 MB)
+dropped public.finder_tlog 1.7 GB -> /root/pe-archive/tables/public.finder_tlog.sql.zst (53 MB)
+dropped public.goal_timeline 0.6 GB -> /root/pe-archive/tables/public.goal_timeline.sql.zst (32 MB)
+dropped public.goal_live_predictions 0.5 GB -> /root/pe-archive/tables/public.goal_live_predictions.sql.zst (44 MB)
+dropped public.xx_ip_331 0.2 GB -> /root/pe-archive/tables/public.xx_ip_331.sql.zst (8 MB)
+dropped public.bf_golf_log 0.2 GB -> /root/pe-archive/tables/public.bf_golf_log.sql.zst (10 MB)
+dropped public.fd_matches 0.2 GB -> /root/pe-archive/tables/public.fd_matches.sql.zst (36 MB)
+dropped public.factory_trades 0.2 GB -> /root/pe-archive/tables/public.factory_trades.sql.zst (7 MB)
+dropped public.ch_accounts 0.2 GB -> /root/pe-archive/tables/public.ch_accounts.sql.zst (30 MB)
+dropped public.af_events 0.2 GB -> /root/pe-archive/tables/public.af_events.sql.zst (18 MB)
+dropped public.racing_tape 0.1 GB -> /root/pe-archive/tables/public.racing_tape.sql.zst (11 MB)
+dropped public.runners 0.1 GB -> /root/pe-archive/tables/public.runners.sql.zst (11 MB)
+dropped public.bfsp_history 0.1 GB -> /root/pe-archive/tables/public.bfsp_history.sql.zst (19 MB)
+dropped public.af_stats 0.1 GB -> /root/pe-archive/tables/public.af_stats.sql.zst (8 MB)
+freed from drops: 14.0 GB
+/dev/sda1       145G  124G   22G  86% /
+== 3. rebuild-and-swap the live tapes to the last 5 days ==
+stream_ticks: vacuumed
+ip_tape 2026-11-06: 77409 rows -> /root/pe-archive/ip_tape/2026-11-06.csv.zst (0 MB), deleted
+ip_tape: vacuumed
+liq_sample 2026-11-06: 108409 rows -> /root/pe-archive/liq_sample/2026-11-06.csv.zst (1 MB), deleted
+liq_sample: vacuumed
+Traceback (most recent call last):
+  File "<stdin>", line 7, in <module>
+TypeError: unsupported operand type(s) for *: 'decimal.Decimal' and 'float'
+recorders back: 10 processes
+/dev/sda1       145G  123G   22G  86% /
+LOCAL liq_sample last 2 min: 4083
+LOCAL stream_ticks last 2 min: 16536
+LOCAL xx_tape last 2 min: 4535
+LOCAL ip_tape last 2 min: 1258
+database GB: 96.4
+554 done
+exit=0 secs=367
+```
+
+### 555_numbers_stream_report — ok — finished 2026-11-12 17:15 UTC
+```
+2026-11-08 17:23:44 TOO_MUCH_DATA on ['ASIAN_HANDICAP', 'CORRECT_SCORE'] inplay=None -> 200 markets in 1 calls, desc dropped 0, failed leaves 0
+== the numbers ==
+<stdin>:3: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+# Numbers — 2026-11-12 17:15 UTC (job 555, read from the tables)
+
+## Fair-price map
+
+| sport | map cells | passed cells (bot) |
+|---|---|---|
+| Soccer | 356 | 18 |
+
+Desk in-play cells: 0
+
+## Bot v2 TAKER (paper, £2, passed cells, last 2 min pre-off)
+
+| market | side | bets | settled | won | £ | £ per £100 |
+|---|---|---|---|---|---|---|
+| OVER_UNDER_25 | LAY | 3 | 2 | 0 | +3.92 | +98.00 |
+| BOTH_TEAMS_TO_SCORE | LAY | 3 | 2 | 1 | +0.90 | +22.50 |
+| CORRECT_SCORE | BACK | 3 | 3 | 2 | +10.15 | +169.17 |
+| OVER_UNDER_25 | BACK | 3 | 2 | 2 | +1.94 | +48.50 |
+| BOTH_TEAMS_TO_SCORE | BACK | 2 | 1 | 0 | -2.00 | -100.00 |
+| FIRST_HALF_GOALS_15 | LAY | 1 | 0 | 0 | +0.00 | n/a |
+| OVER_UNDER_45 | LAY | 1 | 1 | 1 | -0.20 | -10.00 |
+
+Taker by status: [('filled', 5, Decimal('0.00')), ('settled', 11, Decimal('14.71'))]
+Maker v2 (9-10 Nov, off): [('expired', 9, Decimal('0.00')), ('settled', 7, Decimal('-0.06'))]
+
+## Desk
+ [('FADE', 'closed', 9, Decimal('0.36')), ('FADE', 'open', 6, Decimal('0.00'))]
+
+## History loader
+ [('LISTFAIL', 17), ('EMPTY', 76), ('PARTIAL', 10), ('DONE', 128)] | files 24h: 50063
+
+## Disk/DB
+ 97.5 GB database
+error: cannot pull with rebase: You have unstaged changes.
+error: Please commit or stash them.
+555 done
+exit=0 secs=61
+```

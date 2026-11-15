@@ -1,0 +1,10 @@
+p = '/root/pe-queue/watchman/FINDER_QUEUE.md'
+t = open(p).read().rstrip('\n').split('\n')
+assert not any(l.startswith(('381. ', '382. ', '383. ')) for l in t)
+t.extend([
+ "381. RUNNING 2026-11-07 (Finder's own, source a, from item 380; job 499_tick_touch_level, no new line) **Can item 380's back at 1.1 and 1.2 be sized, and who lost.** Size on show at the fill, time left in the race, the losers, on the same entries as item 380, delay 1 s; a description, not a test.",
+ "382. TODO (needs data — stream_ticks racing after 7 Nov 09:00 UTC, about 33 races a day; re-run from 10 Nov, every 3 days, as the table rolls at about 5 days; about 0.6 entries a race, so n 300 unseen on Q 1.1 about 22 Nov; Finder's own, source a; tables stream_ticks, racing_results, finder_touch_entries; job 499_tick_touch_level unchanged) **Back a horse a second after its first in-play touch of 1.1 and of 1.2, on races the test has not seen.** Rationale: item 380, Q 1.1 back delay 1 s n 99 +0.742 t by race 4.93 h1 +0.756 h2 +0.729, won 0.990 v 0.918; Q 1.2 n 126 +0.898 t 3.79 h1 +1.289 h2 +0.507, won 0.937 v 0.850; both under n 300, and two of 48 lines. Rule fixed now, no new cuts: as item 380, Q 1.1 and Q 1.2 back, delay 1 s, delay 3 s as the stress, UNSEEN rows only, standard bar. Each run saves its entries to finder_touch_entries, so nothing is lost when the ticks roll.",
+ "383. RUNNING 2026-11-07 (Finder's own, source a, from item 380; tables bf_hist_other, racing_bsp; job 499_ip_low_print_all; a cross-check, cannot pass) **The first low in-play print on the 25-month racing tape.** Rationale: item 380 has 166 races; the minute tape has thousands. Rule fixed before any price is scored: first in-play print <= Q after a print above it, Q as item 380, fill at the worse of that print and the next within 120 s, one tick adverse, 2%, £10, result from racing_bsp by course, time and runner. Minute prints, and one can fall after the post, so this reads the win rate against the price, no more.",
+])
+open(p, 'w').write('\n'.join(t) + '\n')
+print('ok')

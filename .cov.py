@@ -1,0 +1,18 @@
+import sys
+sys.path.insert(0, '/root/pe-queue/runner')
+import creds, psycopg2
+c = psycopg2.connect(creds.pg_local())
+k = c.cursor()
+k.execute("SET statement_timeout='600s'")
+k.execute("select date_trunc('month',kickoff)::date, count(*) from af_fixtures where kickoff < '2023-09-01' group by 1 order by 1")
+print('af_fixtures by month before Sep 2023', k.fetchall()[-8:])
+k.execute("select column_name from information_schema.columns where table_name='af_fixtures'")
+print([r[0] for r in k.fetchall()])
+k.execute("select column_name, data_type from information_schema.columns where table_name='bf_hist_result'")
+print(k.fetchall())
+k.execute("select column_name, data_type from information_schema.columns where table_name='bf_hist_other'")
+print(k.fetchall())
+k.execute("select indexname, indexdef from pg_indexes where tablename='bf_hist_other'")
+for r in k.fetchall(): print(r)
+k.execute("select tablename from pg_tables where schemaname='public' and tablename like 'load%'")
+print(k.fetchall())

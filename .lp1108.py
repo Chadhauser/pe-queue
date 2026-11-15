@@ -1,0 +1,15 @@
+import sys, shutil
+sys.path.insert(0, '/root/pe-queue/runner')
+import creds, psycopg2
+c = psycopg2.connect(creds.pg_local()); cur = c.cursor()
+cur.execute("SET statement_timeout='120s'")
+cur.execute("select sport,y,m,status,files,loaded,updated::timestamp(0) from bf_hist_months where sport='Soccer' and status not in ('DONE','DONE_PRICE','EMPTY') and now()-updated<interval '6 hours' order by y,m")
+for r in cur.fetchall(): print('ACTIVE', *r)
+cur.execute("select sport,y,m,status,files from bf_hist_months where sport='Soccer' and status in ('DONE','DONE_PRICE') and updated>now()-interval '12 hours'")
+for r in cur.fetchall(): print('DONE<12h', *r)
+cur.execute("select count(*) filter (where loaded_at>now()-interval '1 hour'), max(loaded_at)::timestamp(0) from bf_hist_other_files where loaded_at>now()-interval '24 hours'")
+n1, last = cur.fetchone(); print('files last hour', n1, 'per min', round(n1/60), 'last', last)
+cur.execute("select count(*) from bf_hist_months where status not in ('DONE','DONE_PRICE','EMPTY') and now()-updated>interval '6 hours'")
+print('stale months', cur.fetchone()[0])
+cur.execute("select pg_size_pretty(pg_database_size(current_database()))"); print('db', cur.fetchone()[0])
+print('disk free GB', shutil.disk_usage('/').free // 2**30)

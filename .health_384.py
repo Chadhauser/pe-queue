@@ -1,0 +1,15 @@
+import sys
+sys.path.insert(0, '/root/pe-queue/runner')
+import creds, psycopg2
+c = psycopg2.connect(creds.pg_local()); k = c.cursor(); k.execute("SET statement_timeout='300s'")
+k.execute("select max(pt),count(distinct market_id) filter (where pt>now()-interval '1 hour'),count(*) filter (where pt>now()-interval '1 hour') from stream_ticks where pt>now()-interval '6 hours'")
+print('local stream_ticks newest, markets and rows last hour', k.fetchone())
+k.execute("select max(ts) from liq_sample where ts>now()-interval '6 hours'"); print('local liq_sample newest', k.fetchone())
+k.execute("select count(*) from finder_touch_cs"); print('finder_touch_cs', k.fetchone())
+k.execute("select count(*) from finder_touch_other"); print('finder_touch_other', k.fetchone())
+k.execute("select count(*) from finder_touch_clean"); print('finder_touch_clean', k.fetchone())
+c.close()
+r = psycopg2.connect(creds.pg_railway(), sslmode='require'); q = r.cursor(); q.execute("SET statement_timeout='120s'")
+q.execute("select max(ts_recv),count(distinct market_id),count(*) from stream_ticks where ts_recv>now()-interval '15 minutes'")
+print('railway stream_ticks last 15 min: newest, markets, rows', q.fetchone())
+r.close()
