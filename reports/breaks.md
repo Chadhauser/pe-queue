@@ -13,3 +13,5 @@
 2026-11-15T11:20 BREAK: queue cannot pull (Merge with strategy ort failed.);
 2026-11-15T12:20 BREAK: queue cannot pull (Merge with strategy ort failed.);
 2026-11-15T13:20 BREAK: queue cannot pull (Merge with strategy ort failed.);
+2026-11-15T14:20 HEALED:  aborted a stuck rebase/merge;
+2026-11-15T14:20 BREAK: queue cannot pull (Merge with strategy ort failed.);
