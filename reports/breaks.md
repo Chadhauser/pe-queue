@@ -7,3 +7,4 @@
 2026-11-14T18:20 BREAK: failed jobs 523_fin_crumbs_smallcaps;
 2026-11-15T05:20 BREAK: stream tape stopped;
 2026-11-15T06:20 BREAK: stream tape stopped;
+2026-11-15T09:20 BREAK: failed jobs 579_archive_offbox;
