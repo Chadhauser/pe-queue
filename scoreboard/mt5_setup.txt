@@ -20,3 +20,7 @@
 13:57:26 attach: INIT False (-10003, 'IPC initialize failed, MetaTrader 5 x64 not found') VERSION (0, 0, '') 
 13:58:26 bridge log: 2026-11-16 13:55:23 initialize failed (-10003, 'IPC initialize failed, MetaTrader 5 x64 not found') 2026-11-16 13:57:49 initialize failed (-10003, 'IPC initialize failed, MetaTrader 5 x64 not found') 
 13:58:26 DONE 535
+14:00:17 536: MT5 login found on the box (demo)
+14:02:07 bridge: 2026-11-16 14:02:01 initialize failed (-10003, "IPC initialize failed, Pipe server didn't answer in 60 sec") 
+14:02:17 NOT YET: no heartbeat — see bridge log above
+14:02:17 DONE 536
