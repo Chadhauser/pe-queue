@@ -1,0 +1,18 @@
+niceness of this job: 19
+--- FOMC dates: last 5 in /root/pe-data/events/fomc.csv
+2026-04-29
+2026-06-17
+2026-07-29
+2026-09-16
+2026-10-28
+--- FINQ cron
+*/2 * * * * nice -n 19 ionice -c3 /root/pe-finq/repo/fin/runner/fin_runner.sh >> /root/pe-finq/state/runner.out 2>&1 # FINQ
+* * * * * cd /root/pe-finq/repo/fin/bots && nice -n 19 ionice -c3 timeout 300 /usr/bin/python3 tick.py >> /root/pe-finq/state/tick.out 2>&1 # FINQ
+--- today's state
+{
+ "date": "2026-11-16",
+ "done": []
+}--- tick errors (last 10)
+--- tick.out tail
+/dev/sda1       968G  145G  823G  15% /
+exit=0 secs=0
