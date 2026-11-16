@@ -1,3 +1,8 @@
 2026-11-16 15:00:06 M7B no signal -1.04%
 2026-11-16 15:50:55 POST /orders -> 422 {'code': 42210000, 'message': 'asset "OMH" is not tradable'}
 2026-11-16 15:50:57 K4 new ['CDNL', 'PSFE', 'XGN', 'VMAR', 'NPCE', 'CADL', 'AEHL', 'APPS', 'CTGO']
+2026-11-16 15:58:02 GET /positions/QQQ -> 404 {'code': 40410000, 'message': 'position does not exist'}
+2026-11-16 15:58:03 GET /positions/SPY -> 404 {'code': 40410000, 'message': 'position does not exist'}
+2026-11-16 15:58:03 GET /positions/IWM -> 404 {'code': 40410000, 'message': 'position does not exist'}
+2026-11-16 15:58:04 E1S {'note': 'no FOMC next (2026-11-17)'}
+2026-11-16 15:59:02 GET /positions/QQQM -> 404 {'code': 40410000, 'message': 'position does not exist'}
