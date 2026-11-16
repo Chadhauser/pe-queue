@@ -724,6 +724,30 @@
    "verdict": "NOT YET",
    "next_door": "MT5 bridge (Saturday item 4) sized with the winning rule",
    "checked": "2026-11-16T10:02"
+  },
+  {
+   "name": "E1s Pre-FOMC drift, SPY: LONG close(day before) -> close(FOMC de | vs ordinary day +19.5 bps",
+   "n": 273,
+   "mean_bps": "+21.6 bps/event",
+   "t": 3.09,
+   "is_t": 3.32,
+   "oos_t": 1.02,
+   "control_t": 0.89,
+   "verdict": "WORKS",
+   "next_door": "E1: post-statement 14:00-16:00 continuation; M7: none (door 3 was the last)",
+   "checked": "2026-11-16T12:52"
+  },
+  {
+   "name": "E1q Pre-FOMC drift, QQQ (same rule). | vs ordinary day +28.4 bps",
+   "n": 225,
+   "mean_bps": "+30.8 bps/event",
+   "t": 2.75,
+   "is_t": 2.33,
+   "oos_t": 1.46,
+   "control_t": -0.55,
+   "verdict": "WORKS",
+   "next_door": "E1: post-statement 14:00-16:00 continuation; M7: none (door 3 was the last)",
+   "checked": "2026-11-16T12:52"
   }
  ],
  "queue": [
@@ -926,6 +950,34 @@
   {
    "id": "PORTFOLIO lab",
    "status": "verified"
+  },
+  {
+   "id": "E1s",
+   "status": "verified"
+  },
+  {
+   "id": "E1q",
+   "status": "verified"
+  },
+  {
+   "id": "E1t",
+   "status": "proposed"
+  },
+  {
+   "id": "E1g",
+   "status": "proposed"
+  },
+  {
+   "id": "M7S",
+   "status": "proposed"
+  },
+  {
+   "id": "M7I",
+   "status": "proposed"
+  },
+  {
+   "id": "M7P",
+   "status": "proposed"
   }
  ],
  "data_health": {
@@ -952,14 +1004,14 @@
   "alpaca_crypto": {
    "status": "ok",
    "last": "2026-11-15 23:14",
-   "rows_24h": 632
+   "rows_24h": 622
   },
   "local_pg": {
    "status": "ok",
    "note": "fin_heartbeat 2026-11-13 22:40:04.292019+00:00 ok"
   }
  },
- "updated": "2026-11-16T12:42",
+ "updated": "2026-11-16T12:52",
  "paper": {
   "strategy": "ORB-QQQ (Zarattini-Aziz) $100 risk/trade, simulated on Alpaca IEX 1-min bars",
   "label": "UNVERIFIED-PAPER",

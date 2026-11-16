@@ -6,3 +6,4 @@
 10:07:08 PASS stage 3: /root/.mt5wine/drive_c/Program Files/MetaTrader 5/terminal64.exe
 10:07:08 stage 4: Windows Python + MetaTrader5 package inside Wine
 12:50:18 FAIL: MetaTrader5 package import
+12:54:25 533 stage 4b: embeddable Python fallback

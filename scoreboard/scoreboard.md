@@ -1,4 +1,4 @@
-# FIN SCOREBOARD (Verifier-only) — 2026-11-16T12:42 UTC
+# FIN SCOREBOARD (Verifier-only) — 2026-11-16T12:52 UTC
 
 Money: live £0 | paper £754.45 | live edges 0
 
@@ -7,7 +7,7 @@ Money: live £0 | paper £754.45 | live edges 0
 - alpaca_stocks: ok | last 2026-11-13 20:59 | rows24h 0 
 - yf1m: ok | last 2026-11-13 21:59 | rows24h 0 
 - oanda_fx: ok | last 2026-11-13 21:59 | rows24h 0 
-- alpaca_crypto: ok | last 2026-11-15 23:14 | rows24h 632 
+- alpaca_crypto: ok | last 2026-11-15 23:14 | rows24h 622 
 - local_pg: ok | last None | rows24h None fin_heartbeat 2026-11-13 22:40:04.292019+00:00 ok
 
 ## Verdicts (gates: t>=2.5 single / 3.5 sweep, both halves >0, n>=200, |control t|<=2)
@@ -74,6 +74,8 @@ Money: live £0 | paper £754.45 | live edges 0
 | K4 Short-term reversal, small caps (clustered): 5-day return <= -15% -> L | by-date t 3.78 n 1464 | 59306 | +145.6 bps/trade | 3.78 | 8.49 | 6.3 | 0.25 | **WORKS** | threshold once, then liquidity band (ADV $30-100m), then dead; any WORKS must survive a next-day-open fill check before trading |
 | K6 Quarter-end unwind, small caps (clustered): last trading day of quarte | by-date t -3.08 n 23 | 33907 | -97.3 bps/trade | -5.83 | -24.57 | -3.0 | -1.22 | **NOT YET** | threshold once, then liquidity band (ADV $30-100m), then dead; any WORKS must survive a next-day-open fill check before trading |
 | PORTFOLIO best sizing: quarter-Kelly (ORB 0.006, M7b 3.00x) fit on 1st half | 2nd-half Calmar 1.74 maxDD -18.1% (control: n/a, diagnostic) | 1584 | CAGR +31.5% | 0 | 0 | 0 | 0 | **NOT YET** | MT5 bridge (Saturday item 4) sized with the winning rule |
+| E1s Pre-FOMC drift, SPY: LONG close(day before) -> close(FOMC de | vs ordinary day +19.5 bps | 273 | +21.6 bps/event | 3.09 | 3.32 | 1.02 | 0.89 | **WORKS** | E1: post-statement 14:00-16:00 continuation; M7: none (door 3 was the last) |
+| E1q Pre-FOMC drift, QQQ (same rule). | vs ordinary day +28.4 bps | 225 | +30.8 bps/event | 2.75 | 2.33 | 1.46 | -0.55 | **WORKS** | E1: post-statement 14:00-16:00 continuation; M7: none (door 3 was the last) |
 
 ## Paper ledger — UNVERIFIED-PAPER — ORB-QQQ (Zarattini-Aziz) $100 risk/trade, simulated on Alpaca IEX 1-min bars — from 2026-11-02
 trades 9 | wins 4 | $+979.80 = £+754.45 (fx 0.77)
@@ -148,3 +150,10 @@ trades 9 | wins 4 | $+979.80 = £+754.45 (fx 0.77)
 - K5: failed
 - K6: verified
 - PORTFOLIO lab: verified
+- E1s: verified
+- E1q: verified
+- E1t: proposed
+- E1g: proposed
+- M7S: proposed
+- M7I: proposed
+- M7P: proposed
