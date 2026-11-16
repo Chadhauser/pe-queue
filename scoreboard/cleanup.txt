@@ -1,0 +1,6 @@
+690 2026-11-16T14:56 UTC
+/dev/sda1       145G  134G   11G  93% /
+wine left: none | .mt5wine: gone
+fin processes: 3 | fin cron lines: 0
+/dev/sda1       145G  130G   15G  90% /
+DONE 690
