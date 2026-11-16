@@ -73,8 +73,12 @@ def jsave(p, obj):
 def cfg(): return jload(CFG_PATH, {'ORB': True, 'ORB_SPY': True, 'ORB_IWM': True, 'M7B': True, 'K2': True, 'K4': True, 'E1S': True})
 def fomc_dates():
     import pandas as pd
-    try: return set(str(d.date()) for d in pd.to_datetime(pd.read_csv('/root/pe-data/events/fomc.csv').date))
-    except Exception: return set()
+    out = set()
+    # past decision days come from the minutes archive; upcoming ones (no minutes yet) from fomc_upcoming.csv next to this file
+    for f in ('/root/pe-data/events/fomc.csv', os.path.join(os.path.dirname(os.path.abspath(__file__)), 'fomc_upcoming.csv')):
+        try: out |= set(str(d.date()) for d in pd.to_datetime(pd.read_csv(f).date))
+        except Exception: pass
+    return out
 def next_trading_day(day):
     sc, cal = api('GET', '/calendar', params={'start': str(day + dt.timedelta(days=1)), 'end': str(day + dt.timedelta(days=10))})
     return cal[0]['date'] if sc == 200 and cal else None
