@@ -31,3 +31,4 @@
 14:12:16 DONE 538
 14:18:13 540: swapping Ubuntu wine for WineHQ wine-staging
 14:19:28 wine now: wine-11.22 (Staging) at /usr/bin/wine
+14:29:30 prefix updated
