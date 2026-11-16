@@ -712,6 +712,18 @@
    "verdict": "NOT YET",
    "next_door": "threshold once, then liquidity band (ADV $30-100m), then dead; any WORKS must survive a next-day-open fill check before trading",
    "checked": "2026-11-14T19:12"
+  },
+  {
+   "name": "PORTFOLIO best sizing: quarter-Kelly (ORB 0.006, M7b 3.00x) fit on 1st half | 2nd-half Calmar 1.74 maxDD -18.1% (control: n/a, diagnostic)",
+   "n": 1584,
+   "mean_bps": "CAGR +31.5%",
+   "t": 0,
+   "is_t": 0,
+   "oos_t": 0,
+   "control_t": 0,
+   "verdict": "NOT YET",
+   "next_door": "MT5 bridge (Saturday item 4) sized with the winning rule",
+   "checked": "2026-11-16T10:02"
   }
  ],
  "queue": [
@@ -910,40 +922,44 @@
   {
    "id": "K6",
    "status": "verified"
+  },
+  {
+   "id": "PORTFOLIO lab",
+   "status": "verified"
   }
  ],
  "data_health": {
   "alpaca_etf": {
-   "status": "BROKEN",
+   "status": "ok",
    "last": "2026-11-13 21:57",
    "rows_24h": 0
   },
   "alpaca_stocks": {
-   "status": "BROKEN",
+   "status": "ok",
    "last": "2026-11-13 20:59",
    "rows_24h": 0
   },
   "yf1m": {
-   "status": "BROKEN",
+   "status": "ok",
    "last": "2026-11-13 21:59",
    "rows_24h": 0
   },
   "oanda_fx": {
-   "status": "BROKEN",
+   "status": "ok",
    "last": "2026-11-13 21:59",
    "rows_24h": 0
   },
   "alpaca_crypto": {
    "status": "ok",
    "last": "2026-11-15 23:14",
-   "rows_24h": 801
+   "rows_24h": 792
   },
   "local_pg": {
    "status": "ok",
    "note": "fin_heartbeat 2026-11-13 22:40:04.292019+00:00 ok"
   }
  },
- "updated": "2026-11-16T09:53",
+ "updated": "2026-11-16T10:02",
  "paper": {
   "strategy": "ORB-QQQ (Zarattini-Aziz) $100 risk/trade, simulated on Alpaca IEX 1-min bars",
   "label": "UNVERIFIED-PAPER",
