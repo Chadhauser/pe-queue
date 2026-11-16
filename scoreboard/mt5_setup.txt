@@ -24,3 +24,4 @@
 14:02:07 bridge: 2026-11-16 14:02:01 initialize failed (-10003, "IPC initialize failed, Pipe server didn't answer in 60 sec") 
 14:02:17 NOT YET: no heartbeat — see bridge log above
 14:02:17 DONE 536
+14:04:16 538: terminal started with demo login config; waiting for authorisation

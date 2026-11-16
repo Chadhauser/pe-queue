@@ -1,0 +1,10 @@
+BOTS 2026-11-16T14:04 UTC | NY 09:04
+/root/pe-fin/bot/orb_alpaca_bot.py:1
+/root/pe-fin/bot/k2_gapfade_bot.py:1
+running:
+1306734 /usr/bin/python3 orb_alpaca_bot.py
+1306737 /usr/bin/python3 k2_gapfade_bot.py
+--- orb log
+2026-11-16 07:25:02 market closed today
+--- k2 log
+2026-11-16 07:20:04 market closed
