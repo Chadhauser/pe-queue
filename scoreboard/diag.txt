@@ -1,4 +1,4 @@
-DIAG 2026-11-16T13:50 UTC
+DIAG 2026-11-16T14:00 UTC
 
 ## bot log (last 15)
 2026-11-16 07:25:02 market closed today
@@ -82,5 +82,9 @@ SOLUSD 2023-08 bars 0
 SOLUSD months on disk 59
 
 ## mt5 bridge log
+2026-11-16 13:55:23 initialize failed (-10003, 'IPC initialize failed, MetaTrader 5 x64 not found')
+2026-11-16 13:57:49 initialize failed (-10003, 'IPC initialize failed, MetaTrader 5 x64 not found')
+2026-11-16 13:58:49 initialize failed (-10003, 'IPC initialize failed, MetaTrader 5 x64 not found')
+2026-11-16 13:59:49 initialize failed (-10003, 'IPC initialize failed, MetaTrader 5 x64 not found')
 
 ## mt5 heartbeat
