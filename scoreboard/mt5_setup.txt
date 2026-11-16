@@ -12,3 +12,5 @@
 12:58:13 python version: 3.10.11 (tags/v3.10.11:7d4cc5a, Apr  5 2023, 00:38:17) [MSC v.1929 64 bit (AMD64)] 
 12:58:16 pip version: pip 26.3 from C:\Program Files\Python310\Lib\site-packages\pip (python 3.10) 
 12:58:21 pip list: metatrader5 5.0.6231 numpy       2.2.6 
+13:54:14 import error: wine: Call from 00006FFFFF483F07 to unimplemented function ucrtbase.dll.crealf, aborting wine: Unimplemented function ucrtbase.dll.crealf called at address 00006FFFFF483F07 (thread 010c), starting debugger... 
+13:54:14 fix (a): pip install numpy then MetaTrader5 (errors shown)
