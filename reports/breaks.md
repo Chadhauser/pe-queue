@@ -37,6 +37,4 @@
 2026-11-16T16:20 BREAK: goal monitor not running;
 2026-11-16T17:20 BREAK: goal monitor not running;
 
-## 2026-11-16 21:15 UTC | fin paper bots | settle counted a stray QQQ trade
-- What: tonight's settle booked ORB -$51.51 / 1 trade. That QQQ trade was the OLD bot's (relaunched by job 537 this morning, flattened by 541), not the new tick, which missed today's ORB window (deployed 10:02 NY).
-- Fix: settle and bots.md now count ORB/ORB_SPY/ORB_IWM/M7B only when the tick itself entered that day. Two new offline tests (I1, I2) fail on the old code and pass on the new: 23/23 PASS. Sports untouched.
+2026-11-16T21:15 FIN BREAK+FIX: paper settle counted the old bot's QQQ trade (-$51.51) as a new ORB trade; settle now counts only the tick's own entries; offline tests 23/23 PASS; sports untouched;
