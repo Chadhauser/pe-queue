@@ -1,0 +1,32 @@
+== 539 2026-11-16T14:14 | wine wine-9.0 (Ubuntu 9.0~repack-4build3)
+== processes
+1244836    04:07:53 19076 Xvfb :99 -screen 0 1280x1024x24
+1309085       09:53 14240 start.exe /exec /root/.mt5wine/drive_c/Program Files/MetaTrader 5/terminal64.exe /portable
+1309094       09:53 16460 /usr/lib/wine/wineserver64 -p0
+1309159       09:52 146308 C:\Program Files\MetaTrader 5\terminal64.exe /portable /config:Z:\root\pe-fin\mt5\login.ini
+1309547       08:45 14168 start.exe /exec /root/.mt5wine/drive_c/Program Files/Python310/python.exe
+1309550       08:45 72464 C:\Program Files\Python310\python.exe Z:/root/pe-fin/mt5/mt5_bridge.py
+1309552       08:44 145948 C:/Program Files/MetaTrader 5/terminal64.exe
+1310070       06:03 146000 C:/Program Files/MetaTrader 5/terminal64.exe
+1310635       03:53 14224 start.exe /exec /root/.mt5wine/drive_c/Program Files/Python310/python.exe
+1310641       03:53 72492 C:\Program Files\Python310\python.exe Z:/root/pe-fin/mt5/mt5_bridge.py
+1310649       03:51 146108 C:/Program Files/MetaTrader 5/terminal64.exe /portable
+1310687       03:22 145796 C:/Program Files/MetaTrader 5/terminal64.exe
+1311362       01:10 145992 C:/Program Files/MetaTrader 5/terminal64.exe /portable
+1311462       00:42 145980 C:/Program Files/MetaTrader 5/terminal64.exe
+== install dir
+total 233776
+drwxr-xr-x 6 root root      4096 Nov 16 11:07 .
+drwxr-xr-x 8 root root      4096 Nov 16 13:54 ..
+drwxr-xr-x 3 root root      4096 Nov 16 11:07 Bases
+drwxr-xr-x 2 root root      4096 Nov 16 11:07 Config
+-rwxr-xr-x 1 root root  70236888 Nov 16 11:07 MetaEditor64.exe
+drwxr-xr-x 5 root root      4096 Nov 16 11:07 Profiles
+drwxr-xr-x 2 root root      4096 Nov 16 11:07 Sounds
+-rw-r--r-- 1 root root    410598 Nov 16 11:07 Terminal.ico
+-rwxr-xr-x 1 root root  24292560 Nov 16 11:07 metatester64.exe
+-rwxr-xr-x 1 root root 120622992 Nov 16 11:07 terminal64.exe
+-rwxr-xr-x 1 root root  23784536 Nov 16 11:06 uninstall.exe
+== log files touched in last 3h
+screenshot 1 saved
+== restart terminal in foreground for 90s with Wine errors on
