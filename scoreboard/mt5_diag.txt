@@ -30,3 +30,7 @@ drwxr-xr-x 2 root root      4096 Nov 16 11:07 Sounds
 == log files touched in last 3h
 screenshot 1 saved
 == restart terminal in foreground for 90s with Wine errors on
+exit 124 ; wine output (last 40 lines, de-duplicated):
+screenshot 2 (taken after 90s) saved
+== logs after foreground run
+DONE 539
