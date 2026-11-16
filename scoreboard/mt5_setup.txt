@@ -1,1 +1,7 @@
 10:04:08 stage 1: packages (wine 32+64, xvfb)
+10:06:16 PASS stage 1: wine-9.0 (Ubuntu 9.0~repack-4build3)
+10:06:18 stage 2: wine prefix
+10:06:37 PASS stage 2: prefix at /root/.mt5wine
+10:06:37 stage 3: MetaTrader 5
+10:07:08 PASS stage 3: /root/.mt5wine/drive_c/Program Files/MetaTrader 5/terminal64.exe
+10:07:08 stage 4: Windows Python + MetaTrader5 package inside Wine
