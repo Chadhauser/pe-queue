@@ -1,4 +1,4 @@
-DIAG 2026-11-16T12:50 UTC
+DIAG 2026-11-16T13:00 UTC
 
 ## bot log (last 15)
 2026-11-16 07:25:02 market closed today
@@ -41,6 +41,12 @@ CHECK OK paper account PA3WJYBZY equity 100000 status ACTIVE
 10 2 * * 0 cd /root/pe-fin/team && /usr/bin/python3 crumbs_pull.py >> crumbs_pull.log 2>&1
 25 13 * * 1-5 cd /root/pe-fin/bot && /usr/bin/python3 orb_alpaca_bot.py >> cron.log 2>&1
 20 13 * * 1-5 cd /root/pe-fin/bot && /usr/bin/python3 k2_gapfade_bot.py >> k2_cron.log 2>&1
+*/5 * * * * /root/pe-fin/mt5/run_bridge.sh
+33 14,20 * * 1-5 cd /root/pe-fin/team && /usr/bin/python3 ig_cost_probe.py >> ig_probe.log 2>&1
+38 14 * * 1-5 cd /root/pe-fin/team && /usr/bin/python3 ig_cost_probe.py >> ig_probe.log 2>&1
+20 13 * * 1-5 cd /root/pe-fin/team && /usr/bin/python3 mt5_runner.py >> /root/pe-fin/mt5/runner_cron.log 2>&1
+35 20 * * 1-5 cd /root/pe-fin/bot && /usr/bin/python3 k4_reversal_bot.py >> k4_cron.log 2>&1
+30 21 * * 1-5 cd /root/pe-fin/bot && /usr/bin/python3 k4_reversal_bot.py --settle >> k4_cron.log 2>&1
 
 ## postgres
 active
@@ -52,17 +58,16 @@ active
 /root/pe-data/oanda/XAU_USD: 83 files, last 1m_2026-11.parquet
 
 ## daemon
-1235613 python3 fin_team.py
 
 ## team.log tail
-2026-11-16 09:13:53 DATA BROKEN: ['alpaca_etf', 'alpaca_stocks', 'yf1m', 'oanda_fx']
-2026-11-16 09:23:54 DATA BROKEN: ['alpaca_etf', 'alpaca_stocks', 'yf1m', 'oanda_fx']
-2026-11-16 09:33:54 DATA BROKEN: ['alpaca_etf', 'alpaca_stocks', 'yf1m', 'oanda_fx']
-2026-11-16 09:43:54 DATA BROKEN: ['alpaca_etf', 'alpaca_stocks', 'yf1m', 'oanda_fx']
 2026-11-16 09:53:54 DATA BROKEN: ['alpaca_etf', 'alpaca_stocks', 'yf1m', 'oanda_fx']
 2026-11-16 10:02:18 start: reset 0 running -> proposed
 2026-11-16 10:02:19 building PORTFOLIO lab
 2026-11-16 10:02:28 PORTFOLIO lab -> ['NOT YET']
+2026-11-16 12:52:31 building E1s
+2026-11-16 12:52:31 building E1q
+2026-11-16 12:52:33 E1s -> ['WORKS']
+2026-11-16 12:52:33 E1q -> ['WORKS']
 
 ## oanda_pull.log tail
 USD_CAD 2026-11 bars 9999 spread 0.0002
@@ -75,3 +80,7 @@ SOLUSD 2023-10 bars 0
 SOLUSD 2023-09 bars 0
 SOLUSD 2023-08 bars 0
 SOLUSD months on disk 59
+
+## mt5 bridge log
+
+## mt5 heartbeat
