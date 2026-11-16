@@ -16,7 +16,7 @@ import boto3, botocore
 from botocore.config import Config
 E,K,S=os.environ['ARCHIVE_S3_ENDPOINT'],os.environ['ARCHIVE_S3_KEY'],os.environ['ARCHIVE_S3_SECRET']
 print("boto3",boto3.__version__,"botocore",botocore.__version__,"endpoint",E)
-tries=[("v4 path default region",dict(region_name='default',config=Config(signature_version='s3v4',s3={'addressing_style':'path'},request_checksum_calculation='when_required',response_checksum_validation='when_required'))),
+tries=[("v4 path default region",dict(region_name='default',config=Config(signature_version='s3v4',s3={'addressing_style':'path'}))),
        ("v4 virtual-host",dict(region_name='default',config=Config(signature_version='s3v4',s3={'addressing_style':'virtual'}))),
        ("v2 signature path",dict(region_name='default',config=Config(signature_version='s3',s3={'addressing_style':'path'}))),
        ("v4 region eu2 path",dict(region_name='eu2',config=Config(signature_version='s3v4',s3={'addressing_style':'path'}))),
