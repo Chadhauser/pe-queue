@@ -1,4 +1,4 @@
-# FIN SCOREBOARD (Verifier-only) — 2026-11-16T12:22 UTC
+# FIN SCOREBOARD (Verifier-only) — 2026-11-16T12:32 UTC
 
 Money: live £0 | paper £754.45 | live edges 0
 
@@ -7,7 +7,7 @@ Money: live £0 | paper £754.45 | live edges 0
 - alpaca_stocks: ok | last 2026-11-13 20:59 | rows24h 0 
 - yf1m: ok | last 2026-11-13 21:59 | rows24h 0 
 - oanda_fx: ok | last 2026-11-13 21:59 | rows24h 0 
-- alpaca_crypto: ok | last 2026-11-15 23:14 | rows24h 652 
+- alpaca_crypto: ok | last 2026-11-15 23:14 | rows24h 642 
 - local_pg: ok | last None | rows24h None fin_heartbeat 2026-11-13 22:40:04.292019+00:00 ok
 
 ## Verdicts (gates: t>=2.5 single / 3.5 sweep, both halves >0, n>=200, |control t|<=2)
@@ -90,6 +90,12 @@ trades 9 | wins 4 | $+979.80 = £+754.45 (fx 0.77)
 | 2026-11-11 | - |  |  |  | no signal (doji open) |  |  |
 | 2026-11-12 | long | 684.28 | 680.0 | 688.2 | close | 0.908 | 90.77 |
 | 2026-11-13 | short | 686.83 | 688.64 | 680.01 | close | 3.738 | 373.83 |
+
+## Bot — Alpaca PAPER, ORB on QQQ shares, $100 risk — 0 days, $+0.00
+
+| date | side | qty | R pts | stop | target | pnl $ |
+|---|---|---|---|---|---|---|
+| 2026-11-16 | market closed |  |  |  |  |  |
 
 ## Queue
 - H1-5 mechanisms: verified
