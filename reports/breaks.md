@@ -31,3 +31,5 @@
 2026-11-16T12:20 HEALED:  runner clone was behind origin (jobs 528_fin_fomc_drift_m7door3 529_fin_mt5_bridge 530_fin_ig_client  unseen) - pulled;
 2026-11-16T12:20 BREAK: job runner not cycling for 136 min (lock held or hung);
 2026-11-16T13:20 BREAK: failed jobs 527_fin_mt5_install, 533_fin_mt5_python_fallback;
+2026-11-16T14:20 HEALED:  committed stray edits and pulled;
+2026-11-16T14:20 BREAK: disk under 10 GB free (9);
