@@ -14,3 +14,9 @@
 12:58:21 pip list: metatrader5 5.0.6231 numpy       2.2.6 
 13:54:14 import error: wine: Call from 00006FFFFF483F07 to unimplemented function ucrtbase.dll.crealf, aborting wine: Unimplemented function ucrtbase.dll.crealf called at address 00006FFFFF483F07 (thread 010c), starting debugger... 
 13:54:14 fix (a): pip install numpy then MetaTrader5 (errors shown)
+13:55:17 numpy:   WARNING: Failed to remove contents in a temporary directory 'C:\Program Files\Python310\Lib\site-packages\~umpy'.   You can safely remove it manually. Successfully installed numpy-2.0.2 
+13:56:17 MetaTrader5: Requirement already satisfied: MetaTrader5 in c:\program files\python310\lib\site-packages (5.0.6231) Requirement already satisfied: numpy>=1.7 in c:\program files\python310\lib\site-packages (from MetaTrader5) (2.0.2) 
+13:56:21 PASS fix (a): 5.0.6231
+13:57:26 attach: INIT False (-10003, 'IPC initialize failed, MetaTrader 5 x64 not found') VERSION (0, 0, '') 
+13:58:26 bridge log: 2026-11-16 13:55:23 initialize failed (-10003, 'IPC initialize failed, MetaTrader 5 x64 not found') 2026-11-16 13:57:49 initialize failed (-10003, 'IPC initialize failed, MetaTrader 5 x64 not found') 
+13:58:26 DONE 535
