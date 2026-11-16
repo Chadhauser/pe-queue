@@ -28,3 +28,5 @@
 2026-11-16T10:20 BREAK: job runner not cycling for 16 min (lock held or hung);
 2026-11-16T11:20 HEALED:  runner clone was behind origin (jobs 528_fin_fomc_drift_m7door3 529_fin_mt5_bridge 530_fin_ig_client  unseen) - pulled;
 2026-11-16T11:20 BREAK: job runner not cycling for 76 min (lock held or hung);
+2026-11-16T12:20 HEALED:  runner clone was behind origin (jobs 528_fin_fomc_drift_m7door3 529_fin_mt5_bridge 530_fin_ig_client  unseen) - pulled;
+2026-11-16T12:20 BREAK: job runner not cycling for 136 min (lock held or hung);
