@@ -1,16 +1,21 @@
-DIAG 2026-11-16T12:20 UTC
+DIAG 2026-11-16T12:30 UTC
 
 ## bot log (last 15)
-(no bot log yet)
+2026-11-16 07:25:02 market closed today
 
 ## bot cron.log (last 5)
 2026-11-11 07:25:02 AUTH FAILED 200 {'errorText': 'Incorrect username or password. Please try again, noting that passwords are case-sensitive.'}
 2026-11-12 07:25:02 AUTH FAILED 200 {'errorText': 'Incorrect username or password. Please try again, noting that passwords are case-sensitive.'}
 2026-11-13 07:25:01 AUTH FAILED 200 {'errorText': 'Incorrect username or password. Please try again, noting that passwords are case-sensitive.'}
+2026-11-16 07:25:02 market closed today
 
 ## bot trades
-[]
-
+[
+ {
+  "date": "2026-11-16",
+  "note": "market closed"
+ }
+]
 ## last bot --check
 CHECK OK paper account PA3WJYBZY equity 100000 status ACTIVE
 
