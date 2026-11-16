@@ -25,3 +25,7 @@
 14:02:17 NOT YET: no heartbeat — see bridge log above
 14:02:17 DONE 536
 14:04:16 538: terminal started with demo login config; waiting for authorisation
+14:10:16 terminal log: 
+14:12:06 bridge: 2026-11-16 14:11:59 initialize failed (-10003, "IPC initialize failed, Pipe server didn't answer in 60 sec") 
+14:12:16 NOT YET: no fresh heartbeat
+14:12:16 DONE 538
