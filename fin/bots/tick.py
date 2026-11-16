@@ -258,8 +258,10 @@ def settle(st, day, op):
     def pnl(pred):
         f = [x for x in fills if pred(x)]
         return (round(sum(q * p * (1 if s == 'sell' else -1) for _, s, q, p, _ in f), 2) if f else None), len(f)
-    res = {'ORB': pnl(lambda x: x[0] == 'QQQ'), 'ORB_SPY': pnl(lambda x: x[0] == 'SPY'), 'ORB_IWM': pnl(lambda x: x[0] == 'IWM'),
-           'M7B': pnl(lambda x: x[0] == 'QQQM'), 'K2': pnl(lambda x: x[0] in k2)}
+    mine = lambda k: bool(st.get(k, {}).get('order_id'))                   # count a symbol only if this tick entered it today
+    res = {k: (pnl(lambda x, s_=sym: x[0] == s_) if mine(k) else (None, 0))
+           for k, sym in (('ORB', 'QQQ'), ('ORB_SPY', 'SPY'), ('ORB_IWM', 'IWM'), ('M7B', 'QQQM'))}
+    res['K2'] = pnl(lambda x: x[0] in k2)
     done = price_book(os.path.join(BOTS, 'k4_book.json')); e1done = price_book(os.path.join(BOTS, 'e1_book.json'))
     st['settle'] = {k: {'pnl_usd': v[0], 'fills': v[1]} for k, v in res.items()}; st['settle']['K4_closed_priced_today'] = done; st['settle']['E1_closed_priced_today'] = e1done
     log(f"SETTLE {st['settle']}")
@@ -300,7 +302,7 @@ def summary():
     for f in sorted(x for x in os.listdir(BOTS) if x.startswith('day_')):
         d = jload(os.path.join(BOTS, f), {}); s_ = d.get('settle', {})
         for k in K:
-            if k in s_ and s_[k]['fills']:
+            if k in s_ and s_[k]['fills'] and (k == 'K2' or d.get(k, {}).get('order_id')):   # stray fills (old bot, manual) never count
                 n = len(d.get('K2', {}).get('legs', [])) if k == 'K2' else 1
                 rows.append((d['date'], k, s_[k]['pnl_usd'], n))
     tot = {k: (round(sum(r[2] for r in rows if r[1] == k), 2), sum(r[3] for r in rows if r[1] == k)) for k in K}
