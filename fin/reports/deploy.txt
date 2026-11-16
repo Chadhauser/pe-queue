@@ -1,6 +1,6 @@
-15:02:08 disk free 839 GB | memory 17 GB | cores 6
-15:02:10 own clone at /root/pe-finq/repo, head 8e96021
-15:02:12 offline bot test: 19/19 PASS
-15:02:12 CHECK 200 PA3WJYBZY
-15:02:12 cron: 2 FINQ lines (runner every 2 min, bot tick every minute) | old fin cron lines: 0
-15:02:12 wine on box: none
+17:10:08 disk free 823 GB | memory 17 GB | cores 6
+17:10:09 own clone at /root/pe-finq/repo, head 4570276
+17:10:11 offline bot test: 21/21 PASS
+17:10:11 CHECK 200 PA3WJYBZY
+17:10:11 cron: 2 FINQ lines (runner every 2 min, bot tick every minute) | old fin cron lines: 0
+17:10:11 wine on box: none
