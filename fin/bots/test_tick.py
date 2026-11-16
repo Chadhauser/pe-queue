@@ -50,7 +50,8 @@ def install(f, uni_rows, earnings, closes):
     T.now = lambda: f.clock[0]
     T.sleep = lambda x: f.clock.__setitem__(0, f.clock[0] + dt.timedelta(seconds=max(0, x)))
     T.free_gb = lambda: f.disk
-    T.bars_1m = lambda sym, a, b: [dict(o=500, h=501.5, l=499.5, c=501, t='x')] * 5 if sym == 'QQQ' else []
+    T.bars_1m = lambda sym, a, b: [dict(o=500, h=501.5, l=499.5, c=501, t='x')] * 5 if sym in ('QQQ', 'SPY', 'IWM') else []
+    T.fomc_dates = lambda: {'2026-11-18'}
     def snaps(syms):
         out = {}
         for sym in syms:
@@ -69,6 +70,8 @@ def run_day(f, day, start=(9, 29), end=(16, 20)):
 def prices(sym, t):
     h = t.hour * 60 + t.minute
     base = {'QQQ': 501 if h < 15 * 60 else (508 if h < 15 * 60 + 58 else 503), 'QQQM': 210 if h < 15 * 60 + 59 else 211,
+            'SPY': 501 if h < 15 * 60 + 58 else 503, 'IWM': 501 if h < 15 * 60 + 58 else 503,
+            'VOO': 400 if t.date() == dt.date(2026, 11, 17) else 404,
             'AAA': 11 if h < 15 * 60 + 55 else 10.5, 'BBB': 20.5, 'CCC': 4.5, 'DDD': 7 if h < 15 * 60 + 55 else 7.2, 'EEE': 8, 'FFF': 9}
     return base[sym]
 uni = {'AAA': 10, 'BBB': 20, 'CCC': 5, 'DDD': 8, 'EEE': 8.1, 'FFF': 9}
@@ -89,14 +92,17 @@ s = st['settle']
 check('A5 settle ORB +132.00 (66 x (503-501))', s['ORB']['pnl_usd'] == 132.0, s['ORB'])
 check('A6 settle M7B +47.00 (47 x (211-210))', s['M7B']['pnl_usd'] == 47.0, s['M7B'])
 check('A7 settle K2 +36.70 (45 x 0.5 + 71 x 0.2)', s['K2']['pnl_usd'] == 36.7, s['K2'])
-check('A8 only EEE left open (K4 hold), QQQ/QQQM/K2 names flat', f.pos == {'EEE': 62}, f.pos)
+check('A8 only EEE (K4 hold) and VOO (E1, FOMC tomorrow 18 Nov: $10k//400 = 25) left open', f.pos == {'EEE': 62, 'VOO': 25}, f.pos)
+check('A9 ORB on SPY and IWM: 66 each, +132.00 each', st['ORB_SPY'].get('qty') == 66 and st['ORB_IWM'].get('qty') == 66 and s['ORB_SPY']['pnl_usd'] == 132.0 and s['ORB_IWM']['pnl_usd'] == 132.0, (s['ORB_SPY'], s['ORB_IWM']))
 n_orders = len(f.orders)
 # ---- B: idempotent — run the whole day again, no new orders
 run_day(f, day); check('B1 re-running every tick adds no orders', len(f.orders) == n_orders, len(f.orders) - n_orders)
 # ---- C: disk under 25 GB on the next day -> no entries, K4 not entered, flats still run
 day2 = day + dt.timedelta(days=1); f.disk = 20.0; f.pos['QQQ'] = 10   # pretend a stray QQQ position exists
 run_day(f, day2); st2 = json.load(open(os.path.join(TMP, 'bots', f'day_{day2}.json')))
-check('C1 disk 20 GB: ORB/K2/M7B blocked', all(st2[k].get('note') == 'entries blocked' for k in ('ORB', 'K2', 'M7B')), {k: st2[k] for k in ('ORB', 'K2', 'M7B')})
+check('C1 disk 20 GB: ORB/ORB_SPY/ORB_IWM/K2/M7B blocked', all(st2[k].get('note') == 'entries blocked' for k in ('ORB', 'ORB_SPY', 'ORB_IWM', 'K2', 'M7B')), {k: st2.get(k) for k in ('ORB', 'ORB_SPY', 'ORB_IWM', 'K2', 'M7B')})
+e1 = json.load(open(os.path.join(TMP, 'bots', 'e1_book.json')))
+check('C4 FOMC day 18 Nov: E1 exit still runs with disk low; VOO sold, pnl +100.00 (25 x (404-400))', not e1['open'] and e1['closed'][0].get('pnl_usd') == 100.0 and 'VOO' not in f.pos, e1)
 check('C2 disk 20 GB: K4 makes no new buys', st2['K4']['new'] == [], st2['K4'])
 check('C3 disk 20 GB: ORB flatten still closes the stray QQQ', 'QQQ' not in f.pos, f.pos)
 # ---- D: Saturday -> nothing

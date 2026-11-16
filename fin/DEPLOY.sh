@@ -17,7 +17,7 @@ git pull -q --rebase origin main; say "own clone at $R, head $(git rev-parse --s
 chmod +x $R/fin/runner/fin_runner.sh
 # 2. offline test on the box (fake broker, no network) — must be 19/19
 cd $R/fin/bots && T=$(timeout 300 python3 test_tick.py 2>&1 | tail -1); say "offline bot test: $T"
-echo "$T" | grep -q "19/19 PASS" || { say "FAIL: offline test did not pass — not deploying"; exit 1; }
+echo "$T" | grep -qE "^([0-9]+)/\1 PASS$" || { say "FAIL: offline test did not pass — not deploying"; exit 1; }
 # 3. paper account reachable (paper endpoint only)
 say "$(cd $R/fin/bots && timeout 60 python3 tick.py --check 2>&1 | tail -1)"
 # 4. make sure no old fin bot is still scheduled or running (the old long-running bots are replaced by the tick)
