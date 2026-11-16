@@ -1,4 +1,4 @@
-DIAG 2026-11-16T08:50 UTC
+DIAG 2026-11-16T09:00 UTC
 
 ## bot log (last 15)
 (no bot log yet)
@@ -50,7 +50,6 @@ active
 466865 python3 fin_team.py
 
 ## team.log tail
-2026-11-16 07:33:52 DATA BROKEN: ['alpaca_etf', 'alpaca_stocks', 'yf1m', 'oanda_fx']
 2026-11-16 07:43:52 DATA BROKEN: ['alpaca_etf', 'alpaca_stocks', 'yf1m', 'oanda_fx']
 2026-11-16 07:53:52 DATA BROKEN: ['alpaca_etf', 'alpaca_stocks', 'yf1m', 'oanda_fx']
 2026-11-16 08:03:52 DATA BROKEN: ['alpaca_etf', 'alpaca_stocks', 'yf1m', 'oanda_fx']
@@ -58,6 +57,7 @@ active
 2026-11-16 08:23:53 DATA BROKEN: ['alpaca_etf', 'alpaca_stocks', 'yf1m', 'oanda_fx']
 2026-11-16 08:33:53 DATA BROKEN: ['alpaca_etf', 'alpaca_stocks', 'yf1m', 'oanda_fx']
 2026-11-16 08:43:53 DATA BROKEN: ['alpaca_etf', 'alpaca_stocks', 'yf1m', 'oanda_fx']
+2026-11-16 08:53:53 DATA BROKEN: ['alpaca_etf', 'alpaca_stocks', 'yf1m', 'oanda_fx']
 
 ## oanda_pull.log tail
 USD_CAD 2026-11 bars 9999 spread 0.0002
