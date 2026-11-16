@@ -29,3 +29,5 @@
 14:12:06 bridge: 2026-11-16 14:11:59 initialize failed (-10003, "IPC initialize failed, Pipe server didn't answer in 60 sec") 
 14:12:16 NOT YET: no fresh heartbeat
 14:12:16 DONE 538
+14:18:13 540: swapping Ubuntu wine for WineHQ wine-staging
+14:19:28 wine now: wine-11.22 (Staging) at /usr/bin/wine

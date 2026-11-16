@@ -1,4 +1,4 @@
-DIAG 2026-11-16T14:10 UTC
+DIAG 2026-11-16T14:20 UTC
 
 ## bot log (last 15)
 2026-11-16 07:25:02 market closed today
@@ -41,7 +41,6 @@ CHECK OK paper account PA3WJYBZY equity 100000 status ACTIVE
 20 13 * * 1-5 cd /root/pe-fin/team && /usr/bin/python3 mt5_runner.py >> /root/pe-fin/mt5/runner_cron.log 2>&1
 35 20 * * 1-5 cd /root/pe-fin/bot && /usr/bin/python3 k4_reversal_bot.py >> k4_cron.log 2>&1
 30 21 * * 1-5 cd /root/pe-fin/bot && /usr/bin/python3 k4_reversal_bot.py --settle >> k4_cron.log 2>&1
-*/5 * * * * /root/pe-fin/mt5/run_bridge.sh
 
 ## postgres
 active
@@ -77,8 +76,8 @@ SOLUSD 2023-08 bars 0
 SOLUSD months on disk 59
 
 ## mt5 bridge log
-2026-11-16 14:02:01 initialize failed (-10003, "IPC initialize failed, Pipe server didn't answer in 60 sec")
-2026-11-16 14:07:06 initialize failed (-10003, "IPC initialize failed, Pipe server didn't answer in 60 sec")
-2026-11-16 14:09:46 initialize failed (-10003, "IPC initialize failed, Pipe server didn't answer in 60 sec")
+2026-11-16 14:11:59 initialize failed (-10003, "IPC initialize failed, Pipe server didn't answer in 60 sec")
+2026-11-16 14:12:27 initialize failed (-10003, "IPC initialize failed, Pipe server didn't answer in 60 sec")
+2026-11-16 14:17:06 initialize failed (-10003, "IPC initialize failed, Pipe server didn't answer in 60 sec")
 
 ## mt5 heartbeat
