@@ -6,6 +6,15 @@ exec 9>/root/pe-queue-state/runner.lock; flock -n 9 || exit 0
 cd /root/pe-queue || exit 1
 git config pull.rebase false; git config rebase.autoStash true   # 564: merge mode + autostash so a stray edit or a failed push can never wedge the pull again
 git pull -q --no-edit 2>>/root/pe-queue-state/git.err || true
+# 583: a refused pull must not leave the runner blind. If we are behind origin/main, move aside untracked files the repo also holds and pull again.
+git fetch -q origin 2>>/root/pe-queue-state/git.err || true
+if [ "$(git rev-parse HEAD)" != "$(git rev-parse origin/main)" ] && ! git merge-base --is-ancestor origin/main HEAD 2>/dev/null; then
+  mkdir -p /root/pe-queue-state/aside
+  git ls-files --others --exclude-standard | while read f; do git cat-file -e origin/main:"$f" 2>/dev/null && { mkdir -p "/root/pe-queue-state/aside/$(dirname "$f")"; mv "$f" "/root/pe-queue-state/aside/$f"; echo "$(date -u +%FT%H:%M) aside: $f" >> /root/pe-queue-state/git.err; }; done
+  git merge --abort 2>/dev/null; git rebase --abort 2>/dev/null
+  git pull -q --no-rebase --no-edit -X theirs 2>>/root/pe-queue-state/git.err || echo "$(date -u +%FT%H:%M) pull still failing after aside" >> /root/pe-queue-state/git.err
+fi
+git rev-parse --short HEAD > /root/pe-queue-state/runner_head 2>/dev/null; touch /root/pe-queue-state/runner_cycle
 mkdir -p /root/pe-queue-state /root/pe-queue-logs
 python3 /root/pe-queue/runner/report.py heartbeat >/dev/null 2>&1
 # progress reporter (independent of this lock) — installed once, idempotent
@@ -20,6 +29,7 @@ for job in $fresh $retry; do
   [ -f "/root/pe-queue-state/done/$name" ] && continue
   mkdir -p /root/pe-queue-state/done
   python3 /root/pe-queue/runner/report.py start "$name"
+  echo "$name" > /root/pe-queue-state/runner_current
   start=$(date +%s)
   # hard cap: no job may hold the queue for more than 3 h (248 held it 90+ min by running a recorder keepalive in the foreground)
   cap=10800; [ -f "/root/pe-queue-state/waiting/$name" ] && cap=1200   # re-polling jobs get 20 min per cycle, fresh jobs 3 h
