@@ -38,3 +38,8 @@
 2026-11-16T17:20 BREAK: goal monitor not running;
 
 2026-11-16T21:15 FIN BREAK+FIX: paper settle counted the old bot's QQQ trade (-$51.51) as a new ORB trade; settle now counts only the tick's own entries; offline tests 23/23 PASS; sports untouched;
+2026-11-17T02:20 HEALED:  committed stray edits and pulled;
+2026-11-17T03:20 HEALED:  committed stray edits and pulled;
+2026-11-17T04:20 HEALED:  committed stray edits and pulled;
+2026-11-17T05:20 HEALED:  committed stray edits and pulled;
+2026-11-17T05:20 BREAK: in-play tape stopped;
