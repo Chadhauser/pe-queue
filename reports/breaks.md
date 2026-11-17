@@ -45,3 +45,5 @@
 2026-11-17T05:20 BREAK: in-play tape stopped;
 2026-11-17T06:20 HEALED:  committed stray edits and pulled;
 2026-11-17T06:20 BREAK: in-play tape stopped;
+2026-11-17T07:20 HEALED:  committed stray edits and pulled; restarted the bot (heartbeat 42 min old);
+2026-11-17T07:20 BREAK: stream tape stopped; in-play tape stopped; bot process not running;
