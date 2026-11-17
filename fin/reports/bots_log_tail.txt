@@ -7,3 +7,7 @@
 2026-11-16 15:58:04 E1S {'note': 'no FOMC next (2026-11-17)'}
 2026-11-16 15:59:02 GET /positions/QQQM -> 404 {'code': 40410000, 'message': 'position does not exist'}
 2026-11-16 16:10:02 SETTLE {'ORB': {'pnl_usd': -51.51, 'fills': 2}, 'ORB_SPY': {'pnl_usd': None, 'fills': 0}, 'ORB_IWM': {'pnl_usd': None, 'fills': 0}, 'M7B': {'pnl_usd': None, 'fills': 0}, 'K2': {'pnl_usd': None, 'fills': 0}, 'K4_closed_priced_today': 0, 'E1_closed_priced_today': 0}
+2026-11-17 09:31:07 POST /orders -> 422 {'code': 42210000, 'message': 'asset "LUCK" cannot be sold short'}
+2026-11-17 09:31:08 POST /orders -> 422 {'code': 42210000, 'message': 'asset "OMH" is not tradable'}
+2026-11-17 09:31:10 POST /orders -> 422 {'code': 42210000, 'message': 'asset "FCUV" cannot be sold short'}
+2026-11-17 09:31:10 K2 scanned 1627 legs [('LUCK', 'sell'), ('CING', 'sell'), ('OMH', 'buy'), ('JBI', 'buy'), ('ANNX', 'buy'), ('SCZM', 'sell'), ('NEWP', 'buy'), ('KURA', 'sell'), ('FCUV', 'sell'), ('MTA', 'buy')]
