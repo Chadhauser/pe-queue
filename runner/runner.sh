@@ -2,6 +2,7 @@
 # PE job runner. Cron every 2 min. Pulls the queue repo, runs each new jobs/*.sh once, in order,
 # one at a time, and files the log + status into Postgres (job_results) where Claude reads it.
 exec 9>/root/pe-queue-state/runner.lock; flock -n 9 || exit 0
+export PGAPPNAME=batch_queue   # 639 (Peter's yes 17 Nov 07:09): the query guard gives batch connections a 3h cap instead of LIMIT_S
 # children must not inherit the lock fd (a daemon started by a job would hold the queue shut)
 cd /root/pe-queue || exit 1
 git config pull.rebase false; git config rebase.autoStash true   # 564: merge mode + autostash so a stray edit or a failed push can never wedge the pull again
