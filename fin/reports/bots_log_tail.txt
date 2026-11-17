@@ -15,3 +15,6 @@
 2026-11-17 09:35:06 ORB_SPY sell 89 SPY ~737.69 stop 738.81 target 726.49 -> 200
 2026-11-17 15:00:06 M7B sell 37 QQQM (QQQ move -1.68%) -> 200
 2026-11-17 15:50:56 K4 new ['CUE', 'SDOT', 'PSIG', 'IEP', 'ATYR', 'FBYD', 'LVLU', 'DNA', 'FTH', 'VIR']
+2026-11-17 15:55:02 GET /positions/LUCK -> 404 {'code': 40410000, 'message': 'position does not exist'}
+2026-11-17 15:55:04 GET /positions/OMH -> 404 {'code': 40410000, 'message': 'position does not exist'}
+2026-11-17 15:55:09 GET /positions/FCUV -> 404 {'code': 40410000, 'message': 'position does not exist'}
