@@ -18,3 +18,7 @@
 2026-11-17 15:55:02 GET /positions/LUCK -> 404 {'code': 40410000, 'message': 'position does not exist'}
 2026-11-17 15:55:04 GET /positions/OMH -> 404 {'code': 40410000, 'message': 'position does not exist'}
 2026-11-17 15:55:09 GET /positions/FCUV -> 404 {'code': 40410000, 'message': 'position does not exist'}
+2026-11-17 15:58:02 GET /positions/QQQ -> 404 {'code': 40410000, 'message': 'position does not exist'}
+2026-11-17 15:58:03 GET /positions/SPY -> 404 {'code': 40410000, 'message': 'position does not exist'}
+2026-11-17 15:58:03 GET /positions/IWM -> 404 {'code': 40410000, 'message': 'position does not exist'}
+2026-11-17 15:58:04 E1S {'note': 'no FOMC next (2026-11-18)'}
