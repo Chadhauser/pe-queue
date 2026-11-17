@@ -49,3 +49,6 @@
 2026-11-17T07:20 BREAK: stream tape stopped; in-play tape stopped; bot process not running;
 2026-11-17T08:20 HEALED:  committed stray edits and pulled; restarted the bot (heartbeat 102 min old);
 2026-11-17T08:20 BREAK: stream tape stopped; in-play tape stopped; bot process not running;
+2026-11-17T09:20 HEALED:  committed stray edits and pulled;
+2026-11-17T10:20 HEALED:  committed stray edits and pulled;
+2026-11-17T14:20 BREAK: no bot bets in 6 hours while football is on (51 match-odds markets on the tape);
