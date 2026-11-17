@@ -58,3 +58,4 @@
 2026-11-17T18:20 BREAK: no bot bets in 6 hours while football is on (90 match-odds markets on the tape);
 2026-11-17T19:20 BREAK: no bot bets in 6 hours while football is on (86 match-odds markets on the tape);
 2026-11-17T20:01 FIN BREAK+FIX: K2 sent 3 of 10 orders Alpaca rejects (LUCK/FCUV not shortable, OMH not tradable) and counted all 10 as trades; K2/K4 now pre-check tradable/shortable and fill from the next names, only accepted orders count; offline tests 26/26 PASS; sports untouched;
+2026-11-17T20:20 BREAK: no bot bets in 6 hours while football is on (76 match-odds markets on the tape);
