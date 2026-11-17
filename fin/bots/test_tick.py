@@ -26,7 +26,9 @@ class Fake:
                 d += dt.timedelta(days=1)
             return 200, rows
         if method == 'POST' and path == '/orders':
-            j = kw['json']; o = s.fill(j['symbol'], j['side'], int(j['qty']), j.get('client_order_id', ''))
+            j = kw['json']
+            if j['symbol'] in getattr(s, 'reject', ()): return 422, {'message': 'asset cannot be sold short'}
+            o = s.fill(j['symbol'], j['side'], int(j['qty']), j.get('client_order_id', ''))
             if j.get('order_class') == 'bracket': o['legs'] = []          # legs stay open (not hit) in these tests
             return 200, o
         if method == 'GET' and path == '/orders':
@@ -61,6 +63,7 @@ def install(f, uni_rows, earnings, closes):
     T.snapshots = snaps
     T.universe = lambda: (list(uni_rows), earnings)
     T.daily_closes = lambda syms, today: closes
+    T.assets = lambda: {k: (True, True) for k in uni_rows}
 
 def run_day(f, day, start=(9, 29), end=(16, 20)):
     t = dt.datetime.combine(day, dt.time(*start), tzinfo=NY); stop = dt.datetime.combine(day, dt.time(*end), tzinfo=NY)
@@ -134,4 +137,16 @@ s2 = st2.get('settle', {}); check('I1 day 2 stray QQQ flatten: ORB settle not co
 T.summary(); md = open(os.path.join(TMP, 'bots', 'bots.md')).read()
 check('I2 bots.md has no ORB row for day 2', f'| {day2} | ORB |' not in md, [l for l in md.splitlines() if str(day2) in l])
 print(md)
+# ---- J: K2/K4 skip names Alpaca won't let us trade (17 Nov: LUCK/FCUV not shortable, OMH not tradable -> 3 of 10 rejected)
+uni_all = list(T.universe()[0]); T.assets = lambda: {k: (True, k != 'AAA') for k in uni_all}
+dj = dt.date(2026, 11, 30); run_day(f, dj, end=(9, 40)); stj = json.load(open(os.path.join(TMP, 'bots', f'day_{dj}.json')))
+lj = {l['sym']: l['side'] for l in stj.get('K2', {}).get('legs', [])}
+check('J1 K2 skips AAA (gap up, not shortable) and still fades DDD (buy)', 'AAA' not in lj and lj.get('DDD') == 'buy', lj)
+T.assets = lambda: {k: (k != 'EEE', True) for k in uni_all}; dk = dt.date(2026, 12, 1); run_day(f, dk, start=(15, 49), end=(15, 58))
+stk = json.load(open(os.path.join(TMP, 'bots', f'day_{dk}.json')))
+check('J2 K4 skips EEE when not tradable', 'EEE' not in stk.get('K4', {}).get('new', ['EEE']), stk.get('K4'))
+T.assets = lambda: {k: (True, True) for k in uni_all}; f.reject = {'DDD'}; dl = dt.date(2026, 12, 2); run_day(f, dl, end=(16, 20)); f.reject = set()
+stl = json.load(open(os.path.join(TMP, 'bots', f'day_{dl}.json'))); ok = sum(1 for l in stl['K2']['legs'] if l['status'] < 300)
+T.summary(); md2 = open(os.path.join(TMP, 'bots', 'bots.md')).read(); row = [l for l in md2.splitlines() if l.startswith(f'| {dl} | K2 |')]
+check('J3 a rejected K2 leg (DDD 422) is not counted as a trade', any(l['sym'] == 'DDD' and l['status'] == 422 for l in stl['K2']['legs']) and row and row[0].endswith(f'| {ok} |') and ok == len(stl['K2']['legs']) - 1, (row, ok))
 print(f"\n{sum(1 for r in RES if r[1])}/{len(RES)} PASS"); shutil.rmtree(TMP); sys.exit(0 if all(r[1] for r in RES) else 1)

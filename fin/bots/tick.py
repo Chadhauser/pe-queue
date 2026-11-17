@@ -61,6 +61,16 @@ def universe():
     ed = jload('/root/pe-data/crumbs/earnings_dates.json', {})
     return uni, ed
 
+def assets():
+    """sym -> (tradable, shortable) from Alpaca, cached per day. Unknown symbols count as not tradable."""
+    p = os.path.join(BOTS, f'assets_{now():%Y-%m-%d}.json'); a = jload(p, None)
+    if a is None:
+        sc, rows = api('GET', '/assets', params={'status': 'active', 'asset_class': 'us_equity'})
+        a = {r['symbol']: [bool(r.get('tradable')), bool(r.get('shortable') and r.get('easy_to_borrow'))] for r in (rows if sc == 200 and isinstance(rows, list) else [])}
+        if a: jsave(p, a)
+    return a or {}
+def can(A, s): return A.get(s, [False, False]) if A else [True, True]     # asset list unreachable: don't block, let the broker decide
+
 # ---------------------------------------------------------------- helpers
 def jload(p, d):
     try:
@@ -156,7 +166,7 @@ def k4_book(): return jload(os.path.join(BOTS, 'k4_book.json'), {'open': [], 'cl
 
 def k2_entry(st, day, op):
     uni, ed = universe(); held = {p['sym'] for p in k4_book()['open']}
-    snap = snapshots(uni); cands = []
+    snap = snapshots(uni); cands = []; A = assets()
     for s, v in snap.items():
         try:
             prev = v['prevDailyBar']['c']; lt = v['latestTrade']; px = lt['p']
@@ -164,6 +174,8 @@ def k2_entry(st, day, op):
             if pd.Timestamp(lt['t']) < pd.Timestamp(op): continue                                # no print yet today
             gap = px / prev - 1
             if abs(gap) < 0.05 or px < 3 or s in held or s in ETF_SYMS: continue
+            tr, sh = can(A, s)
+            if not tr or (gap > 0 and not sh): continue                                       # can't buy / can't short it
             if any(abs((pd.Timestamp(x).date() - day).days) <= 1 for x in ed.get(s, [])): continue
             cands.append(dict(sym=s, px=px, gap=gap))
         except Exception: continue
@@ -193,12 +205,12 @@ def k4_run(st, day, entries):
         held = {p['sym'] for p in keep} | {p['sym'] for p in book['closed'] if p.get('exit_date') == str(day)}   # no same-day re-buy
         d = daily_closes(uni, day)
         if len(d) >= 5:
-            ref = d.iloc[-5]; snap = snapshots(uni); cands = []
+            ref = d.iloc[-5]; snap = snapshots(uni); cands = []; A = assets()
             import pandas as pd
             for s, v in snap.items():
                 try:
                     px = v['latestTrade']['p']; r5 = px / ref[s] - 1
-                    if pd.isna(r5) or r5 > -0.15 or px < 3 or s in held or s in k2 or s in ETF_SYMS: continue
+                    if pd.isna(r5) or r5 > -0.15 or px < 3 or s in held or s in k2 or s in ETF_SYMS or not can(A, s)[0]: continue
                     if any(abs((pd.Timestamp(x).date() - day).days) <= 1 for x in ed.get(s, [])): continue
                     cands.append(dict(sym=s, px=px, r5=r5))
                 except Exception: continue
@@ -303,7 +315,7 @@ def summary():
         d = jload(os.path.join(BOTS, f), {}); s_ = d.get('settle', {})
         for k in K:
             if k in s_ and s_[k]['fills'] and (k == 'K2' or d.get(k, {}).get('order_id')):   # stray fills (old bot, manual) never count
-                n = len(d.get('K2', {}).get('legs', [])) if k == 'K2' else 1
+                n = sum(1 for l in d.get('K2', {}).get('legs', []) if l.get('status', 0) < 300) if k == 'K2' else 1   # rejected legs are not trades
                 rows.append((d['date'], k, s_[k]['pnl_usd'], n))
     tot = {k: (round(sum(r[2] for r in rows if r[1] == k), 2), sum(r[3] for r in rows if r[1] == k)) for k in K}
     for k, path in (('K4', 'k4_book.json'), ('E1S', 'e1_book.json')):
