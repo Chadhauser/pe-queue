@@ -26,3 +26,4 @@
 2026-11-18 09:31:10 K2 scanned 1627 legs [('ARDT', 'buy'), ('VRA', 'buy'), ('PRPO', 'buy'), ('ANGX', 'sell'), ('ASTL', 'buy'), ('PEPG', 'sell'), ('JACK', 'buy'), ('ECVT', 'buy'), ('SCZM', 'buy'), ('OGC', 'buy')]
 2026-11-18 09:35:05 ORB sell 45 QQQ ~660.065 stop 662.28 target 637.92 -> 200
 2026-11-18 09:35:07 ORB_IWM buy 88 IWM ~269.02 stop 267.89 target 280.32 -> 200
+2026-11-18 15:00:06 M7B no signal -0.39%
