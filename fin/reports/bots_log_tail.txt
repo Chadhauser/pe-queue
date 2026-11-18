@@ -33,3 +33,4 @@
 2026-11-18 15:58:04 DELETE /positions/IWM -> 403 {'available': '0', 'code': 40310000, 'existing_qty': '88', 'held_for_orders': '88', 'message': 'insufficient qty available for order (requested: 88, available: 
 2026-11-18 15:58:04 E1S {'note': 'no FOMC next (2026-11-19)'}
 2026-11-18 15:59:01 GET /positions/QQQM -> 404 {'code': 40410000, 'message': 'position does not exist'}
+2026-11-18 16:10:01 SETTLE {'ORB': {'pnl_usd': -124.39, 'fills': 2}, 'ORB_SPY': {'pnl_usd': None, 'fills': 0}, 'ORB_IWM': {'pnl_usd': -23698.4, 'fills': 1}, 'M7B': {'pnl_usd': None, 'fills': 0}, 'K2': {'pnl_usd': 28.22, 'fills': 20}, 'K4_closed_priced_today': 0, 'E1_closed_priced_today': 0}
