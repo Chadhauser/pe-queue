@@ -1,0 +1,34 @@
+niceness: 19
+--- earlier 504 output, if the shared runner kept it (read-only)
+--- fresh run
+  con=psycopg2.connect(DB,sslmode='prefer'); T=pd.read_sql("SELECT date, side, r_pts, pts, r_mult, reason FROM orb_qqq_trades ORDER BY date",con); con.close()
+trades 1397 | IS 698 OOS 699 | ALL mean R +0.166
+
+=== slices (IS = first half of days, OOS = second) ===
+             slice   n  meanR     t  is_n  is_meanR  is_t  oos_n  oos_meanR  oos_t
+    gap_b=gap<0.2% 353  0.001  0.01   172    -0.087 -0.46    181      0.084   0.43
+    gap_b=0.2-0.5% 396  0.172  1.31   179     0.053  0.31    217      0.270   1.42
+      gap_b=0.5-1% 376  0.260  2.06   198     0.394  2.04    178      0.111   0.70
+         gap_b=>1% 271  0.245  1.54   148     0.235  1.11    123      0.257   1.07
+gapdir=gap-against 738  0.147  1.53   377     0.091  0.70    361      0.206   1.45
+   gapdir=gap-with 659  0.187  1.94   321     0.224  1.60    338      0.151   1.14
+     r5_b=r5 small 460  0.240  1.69   219     0.136  0.70    241      0.335   1.62
+       r5_b=r5 mid 460  0.220  1.89   236     0.489  2.75    224     -0.064  -0.44
+     r5_b=r5 large 460  0.042  0.45   226    -0.173 -1.41    234      0.251   1.79
+     vol_b=vol low 460  0.248  2.08   151     0.166  0.85    309      0.288   1.93
+     vol_b=vol mid 460  0.054  0.47   189     0.072  0.40    271      0.041   0.28
+    vol_b=vol high 460  0.201  1.62   341     0.197  1.37    119      0.211   0.85
+         dow_b=Fri 276  0.292  1.78   138     0.176  0.87    138      0.408   1.57
+         dow_b=Mon 258 -0.001 -0.01   131    -0.175 -0.93    127      0.177   0.92
+         dow_b=Thu 279  0.263  1.63   139     0.426  1.76    140      0.102   0.48
+         dow_b=Tue 291  0.166  1.08   143     0.270  1.16    148      0.066   0.33
+         dow_b=Wed 293  0.101  0.69   147     0.050  0.25    146      0.152   0.71
+           side=-1 700  0.187  1.89   346     0.099  0.74    354      0.273   1.89
+            side=1 697  0.145  1.53   352     0.205  1.50    345      0.083   0.64
+
+IS-chosen filter: r5_b=r5 mid | IS meanR 0.489 t 2.75 -> OOS meanR -0.064 t -0.44 n 224
+Unfiltered OOS for comparison: (699, np.float64(0.179), np.float64(1.84))
+
+
+READ: a filter only counts if its OOS t holds up; if OOS collapses, the slice was noise and ORB stays unfiltered.
+exit=0 secs=6
