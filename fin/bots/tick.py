@@ -124,9 +124,25 @@ def cancel_open(sym):
     for o in (orders if sc == 200 and isinstance(orders, list) else []):
         api('DELETE', f"/orders/{o['id']}")
 def flatten(sym):
-    cancel_open(sym)
-    if position_qty(sym) != 0: api('DELETE', f'/positions/{sym}'); return True
-    return False
+    """Close a position. Bracket legs HOLD the shares and a cancel is asynchronous (18 Nov: IWM close refused 403, held overnight),
+    so cancel, wait for the release, close, and confirm flat; retry. Returns the closing order ids (for settle)."""
+    ids = []
+    for i in range(8):
+        cancel_open(sym)
+        if position_qty(sym) == 0: return ids
+        sleep(2)
+        sc, r = api('DELETE', f'/positions/{sym}')
+        if sc < 300:
+            if isinstance(r, dict) and r.get('id'): ids.append(r['id'])
+            sleep(2)
+            if position_qty(sym) == 0: return ids
+    log(f'FLATTEN FAILED {sym}: still open after 8 tries'); return ids
+def stray_flat(st):
+    """At the open, close anything left in the intraday symbols from a previous day; those fills never count (settle skips them)."""
+    for sym in ('QQQ', 'SPY', 'IWM', 'QQQM'):
+        if position_qty(sym) != 0:
+            log(f'STRAY {sym} left from a previous day: closing at the open')
+            st.setdefault('stray_ids', []).extend(flatten(sym)); st.setdefault('stray', []).append(sym)
 
 # ---------------------------------------------------------------- strategies
 def orb_entry(st, day, op, sym='QQQ', key='ORB'):
@@ -259,16 +275,20 @@ def settle(st, day, op):
     """P&L per strategy for the day from filled orders (symbols are disjoint by design). UNVERIFIED-PAPER."""
     sc, orders = api('GET', '/orders', params={'status': 'closed', 'after': (op - dt.timedelta(hours=1)).isoformat(),
                                                'limit': 500, 'nested': 'true', 'direction': 'asc'})
-    fills = []
+    fills = []; stray = set(st.get('stray_ids', []))
     def walk(os_):
         for o in os_:
             if o.get('filled_qty') and float(o['filled_qty']) > 0 and o.get('filled_avg_price'):
+                if o.get('id') in stray: continue                          # closing a previous day's leftover is not today's trade
                 fills.append((o['symbol'], o['side'], float(o['filled_qty']), float(o['filled_avg_price']), o.get('client_order_id') or ''))
             walk(o.get('legs') or [])
     walk(orders if sc == 200 and isinstance(orders, list) else [])
     k2 = {l['sym'] for l in st.get('K2', {}).get('legs', [])}
     def pnl(pred):
-        f = [x for x in fills if pred(x)]
+        f = [x for x in fills if pred(x)]; net = {}
+        for sy, s, q, _, _ in f: net[sy] = net.get(sy, 0) + (q if s == 'buy' else -q)
+        bad = sorted(sy for sy, n in net.items() if abs(n) > 1e-6)         # bought and sold must match, or the "P&L" is just the cost of the shares
+        if bad: log(f'SETTLE UNFLAT {bad}: not closed, not counted'); f = [x for x in f if x[0] not in bad]
         return (round(sum(q * p * (1 if s == 'sell' else -1) for _, s, q, p, _ in f), 2) if f else None), len(f)
     mine = lambda k: bool(st.get(k, {}).get('order_id'))                   # count a symbol only if this tick entered it today
     res = {k: (pnl(lambda x, s_=sym: x[0] == s_) if mine(k) else (None, 0))
@@ -292,6 +312,7 @@ def tick():
         try: fn()
         except Exception: log(f'{name} ERROR ' + traceback.format_exc()[-400:])
         jsave(sp, st)
+    run('stray_flat', op + dt.timedelta(seconds=5), op + dt.timedelta(minutes=3), lambda: stray_flat(st), needs_entry=False)
     if C.get('K2'):  run('K2_entry', op + dt.timedelta(minutes=1), op + dt.timedelta(minutes=15), lambda: k2_entry(st, day, op))
     for sym, key in (('QQQ', 'ORB'), ('SPY', 'ORB_SPY'), ('IWM', 'ORB_IWM')):
         if C.get(key): run(f'{key}_entry', op + dt.timedelta(minutes=5, seconds=5), op + dt.timedelta(minutes=30), lambda s_=sym, k_=key: orb_entry(st, day, op, s_, k_))
@@ -314,7 +335,7 @@ def summary():
     for f in sorted(x for x in os.listdir(BOTS) if x.startswith('day_')):
         d = jload(os.path.join(BOTS, f), {}); s_ = d.get('settle', {})
         for k in K:
-            if k in s_ and s_[k]['fills'] and (k == 'K2' or d.get(k, {}).get('order_id')):   # stray fills (old bot, manual) never count
+            if k in s_ and s_[k]['fills'] and s_[k]['pnl_usd'] is not None and (k == 'K2' or d.get(k, {}).get('order_id')):   # stray fills (old bot, manual) never count
                 n = sum(1 for l in d.get('K2', {}).get('legs', []) if l.get('status', 0) < 300) if k == 'K2' else 1   # rejected legs are not trades
                 rows.append((d['date'], k, s_[k]['pnl_usd'], n))
     tot = {k: (round(sum(r[2] for r in rows if r[1] == k), 2), sum(r[3] for r in rows if r[1] == k)) for k in K}

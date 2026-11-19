@@ -10,7 +10,7 @@ def check(name, ok, got=''): RES.append((name, ok, got)); print(('PASS ' if ok e
 
 class Fake:
     def __init__(s, clock, prices, half=False, disk=100.0):
-        s.clock = clock; s.px = prices; s.orders = []; s.pos = {}; s.half = half; s.disk = disk; s.n = 0
+        s.clock = clock; s.px = prices; s.orders = []; s.pos = {}; s.half = half; s.disk = disk; s.n = 0; s.held = {}; s.stuck = set()
     def fill(s, sym, side, qty, coid=''):
         p = s.px(sym, s.clock[0]); s.n += 1
         o = dict(id=f'o{s.n}', t=s.clock[0], symbol=sym, side=side, filled_qty=str(qty), filled_avg_price=str(p), client_order_id=coid, status='filled', legs=[])
@@ -29,10 +29,10 @@ class Fake:
             j = kw['json']
             if j['symbol'] in getattr(s, 'reject', ()): return 422, {'message': 'asset cannot be sold short'}
             o = s.fill(j['symbol'], j['side'], int(j['qty']), j.get('client_order_id', ''))
-            if j.get('order_class') == 'bracket': o['legs'] = []          # legs stay open (not hit) in these tests
+            if j.get('order_class') == 'bracket': o['legs'] = []; s.held[o['id']] = [j['symbol'], None]   # legs stay open and HOLD the shares (Alpaca: held_for_orders)
             return 200, o
         if method == 'GET' and path == '/orders':
-            if kw['params']['status'] == 'open': return 200, []
+            if kw['params']['status'] == 'open': return 200, [{'id': i} for i, (sy, c) in s.held.items() if sy == kw['params'].get('symbols') and c is None]
             after = dt.datetime.fromisoformat(kw['params']['after'])
             return 200, [o for o in s.orders if o['t'] >= after]
         if method == 'GET' and path.startswith('/orders/'):
@@ -42,8 +42,15 @@ class Fake:
             return (200, {'qty': str(s.pos[sym])}) if sym in s.pos else (404, {})
         if method == 'DELETE' and path.startswith('/positions/'):
             sym = path.split('/')[-1]; q = s.pos.get(sym, 0)
-            if q: s.fill(sym, 'sell' if q > 0 else 'buy', abs(q))
+            # a cancel only releases the shares once the clock has moved on (Alpaca cancels are asynchronous: 18 Nov IWM 403)
+            if sym in s.stuck or any(sy == sym and (c is None or c >= s.clock[0]) for sy, c in s.held.values()):
+                return 403, {'message': 'insufficient qty available for order', 'held_for_orders': str(abs(q))}
+            if q: return 200, s.fill(sym, 'sell' if q > 0 else 'buy', abs(q))
             return 200, {}
+        if method == 'DELETE' and path.startswith('/orders/'):
+            oid = path.split('/')[-1]
+            if oid in s.held and s.held[oid][1] is None: s.held[oid][1] = s.clock[0]
+            return 204, {}
         if method == 'DELETE': return 204, {}
         raise Exception(f'unexpected {method} {path}')
 
@@ -149,4 +156,10 @@ T.assets = lambda: {k: (True, True) for k in uni_all}; f.reject = {'DDD'}; dl = 
 stl = json.load(open(os.path.join(TMP, 'bots', f'day_{dl}.json'))); ok = sum(1 for l in stl['K2']['legs'] if l['status'] < 300)
 T.summary(); md2 = open(os.path.join(TMP, 'bots', 'bots.md')).read(); row = [l for l in md2.splitlines() if l.startswith(f'| {dl} | K2 |')]
 check('J3 a rejected K2 leg (DDD 422) is not counted as a trade', any(l['sym'] == 'DDD' and l['status'] == 422 for l in stl['K2']['legs']) and row and row[0].endswith(f'| {ok} |') and ok == len(stl['K2']['legs']) - 1, (row, ok))
+# ---- K: a close the broker refuses all day (18 Nov: IWM held overnight, settle booked -$23,698 = the cost of the shares)
+f.stuck = {'IWM'}; dm = dt.date(2026, 12, 3); run_day(f, dm); stm = json.load(open(os.path.join(TMP, 'bots', f'day_{dm}.json')))
+T.summary(); md3 = open(os.path.join(TMP, 'bots', 'bots.md')).read()
+check('K1 IWM never closed: no P&L booked, no row in bots.md, QQQ still +132.00', stm['settle']['ORB_IWM']['pnl_usd'] is None and f'| {dm} | ORB_IWM |' not in md3 and stm['settle']['ORB']['pnl_usd'] == 132.0 and f.pos.get('IWM') == 66, (stm['settle'], f.pos))
+f.stuck = set(); dn = dt.date(2026, 12, 4); run_day(f, dn); stn = json.load(open(os.path.join(TMP, 'bots', f'day_{dn}.json')))
+check('K2 next open: leftover IWM closed at 09:30, not counted; that day IWM ORB is +132.00 and flat', stn.get('stray') == ['IWM'] and stn['settle']['ORB_IWM'] == {'pnl_usd': 132.0, 'fills': 2} and 'IWM' not in f.pos, (stn.get('stray'), stn['settle']['ORB_IWM'], f.pos))
 print(f"\n{sum(1 for r in RES if r[1])}/{len(RES)} PASS"); shutil.rmtree(TMP); sys.exit(0 if all(r[1] for r in RES) else 1)

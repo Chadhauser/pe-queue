@@ -97,3 +97,4 @@
 2026-11-19T06:20 BREAK: goal monitor not running;
 2026-11-19T07:20 HEALED:  committed stray edits and pulled;
 2026-11-19T08:20 BREAK: queue cannot pull (from the remote, but no such ref was fetched.);
+2026-11-19T08:55 FIN BREAK+FIX: 18 Nov IWM ORB close refused 403 (bracket legs held the shares; cancel is async), 88 IWM held overnight and settle booked -$23,698.40 (share cost, one-sided fill). Fix: flatten cancels, waits, closes, confirms, retries; settle never counts a symbol whose buys and sells do not match; leftovers closed at the next open and not counted; 18 Nov IWM row voided (fin job 003). 28/28 PASS; sports untouched;
