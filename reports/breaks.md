@@ -98,4 +98,11 @@
 2026-11-19T07:20 HEALED:  committed stray edits and pulled;
 2026-11-19T08:20 BREAK: queue cannot pull (from the remote, but no such ref was fetched.);
 2026-11-19T08:55 FIN BREAK+FIX: 18 Nov IWM ORB close refused 403 (bracket legs held the shares; cancel is async), 88 IWM held overnight and settle booked -$23,698.40 (share cost, one-sided fill). Fix: flatten cancels, waits, closes, confirms, retries; settle never counts a symbol whose buys and sells do not match; leftovers closed at the next open and not counted; 18 Nov IWM row voided (fin job 003). 28/28 PASS; sports untouched;
+<<<<<<< Updated upstream
 2026-11-19T14:41 FIN BREAK+FIX: open-time close of the 88 leftover IWM failed (retry cancelled its own closing order before it filled); flatten now keeps its own order and waits up to 30s; new slow-close test fails on old code, 29/29 PASS on new; 88 sold 14:40:15Z at 269.64, IWM position 0, not counted; sports untouched;
+=======
+2026-11-19T10:20 HEALED:  committed stray edits and pulled;
+2026-11-19T11:20 HEALED:  committed stray edits and pulled;
+2026-11-19T14:20 HEALED:  committed stray edits and pulled;
+>>>>>>> Stashed changes
+2026-11-19T15:20 BREAK: failed jobs 674_railway_copy_status, 675_stop_the_five_day_trim; queue cannot pull (fatal: Exiting because of an unresolved conflict.);
