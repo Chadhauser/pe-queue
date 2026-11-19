@@ -1,0 +1,24 @@
+IWM position qty 88.0
+QQQ position qty 24.0
+SPY position qty 54.0
+2026-11-19 09:38:03 GET /positions/QQQM -> 404 {'code': 40410000, 'message': 'position does not exist'}
+QQQM position qty 0.0
+[('sell', '0', None, 'canceled', None), ('sell', '0', None, 'canceled', None), ('buy', '141', '271.308582', 'filled', '2026-11-19T14:35:27.573198Z'), ('sell', '0', None, 'canceled', None), ('sell', '141', '270.765887', 'filled', '2026-11-19T14:36:55.410838Z')]
+2026-11-19 09:30:06 STRAY IWM left from a previous day: closing at the open
+2026-11-19 09:30:16 DELETE /positions/IWM -> 403 {'available': '0', 'code': 40310000, 'existing_qty': '88', 'held_for_orders': '88', 'message': 'insufficient qty available for order (requested: 88, available: 
+2026-11-19 09:30:16 DELETE /orders/638070b2-f3eb-431a-96c2-c925e47a0500 -> 422 {'code': 42210000, 'message': 'order pending cancel'}
+2026-11-19 09:30:19 DELETE /positions/IWM -> 403 {'available': '0', 'code': 40310000, 'existing_qty': '88', 'held_for_orders': '88', 'message': 'insufficient qty available for order (requested: 88, available: 
+2026-11-19 09:30:20 DELETE /orders/638070b2-f3eb-431a-96c2-c925e47a0500 -> 422 {'code': 42210000, 'message': 'order pending cancel'}
+2026-11-19 09:30:22 DELETE /positions/IWM -> 403 {'available': '0', 'code': 40310000, 'existing_qty': '88', 'held_for_orders': '88', 'message': 'insufficient qty available for order (requested: 88, available: 
+2026-11-19 09:30:23 DELETE /orders/638070b2-f3eb-431a-96c2-c925e47a0500 -> 422 {'code': 42210000, 'message': 'order pending cancel'}
+2026-11-19 09:30:25 DELETE /positions/IWM -> 403 {'available': '0', 'code': 40310000, 'existing_qty': '88', 'held_for_orders': '88', 'message': 'insufficient qty available for order (requested: 88, available: 
+2026-11-19 09:30:34 DELETE /positions/IWM -> 403 {'available': '0', 'code': 40310000, 'existing_qty': '88', 'held_for_orders': '88', 'message': 'insufficient qty available for order (requested: 88, available: 
+2026-11-19 09:30:35 DELETE /orders/d7c822bd-c801-4324-9a3c-bf9e5d7486e3 -> 422 {'code': 42210000, 'message': 'order pending cancel'}
+2026-11-19 09:30:37 DELETE /positions/IWM -> 403 {'available': '0', 'code': 40310000, 'existing_qty': '88', 'held_for_orders': '88', 'message': 'insufficient qty available for order (requested: 88, available: 
+2026-11-19 09:30:37 FLATTEN FAILED IWM: still open after 8 tries
+2026-11-19 09:31:07 K2 scanned 1627 legs [('SA', 'buy'), ('IIIV', 'sell'), ('FCUV', 'buy'), ('DMRC', 'sell'), ('MNSO', 'buy'), ('KOPN', 'sell'), ('QUIK', 'sell'), ('FWDI', 'sell')]
+2026-11-19 09:35:05 ORB buy 24 QQQ ~674.68 stop 670.67 target 714.78 -> 200
+2026-11-19 09:35:06 ORB_SPY buy 54 SPY ~739.21 stop 737.37 target 757.61 -> 200
+2026-11-19 09:35:06 ORB_IWM buy 141 IWM ~271.475 stop 270.77 target 278.53 -> 200
+{'done': ['stray_flat', 'K2_entry', 'ORB_entry', 'ORB_SPY_entry', 'ORB_IWM_entry'], 'stray': ['IWM'], 'stray_ids': ['638070b2-f3eb-431a-96c2-c925e47a0500', 'd7c822bd-c801-4324-9a3c-bf9e5d7486e3'], 'ORB_IWM': {'side': 'buy', 'qty': 141, 'ref': 271.475, 'range': [270.77, 271.79], 'R': 0.705, 'stop': 270.77, 'target': 278.53, 'status': 200, 'order_id': 'b633b8ce-3bf1-44f3-8c6e-0581fac91fb7'}}
+exit=0 secs=2

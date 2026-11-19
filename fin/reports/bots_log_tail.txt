@@ -56,3 +56,4 @@
 2026-11-19 09:35:05 ORB buy 24 QQQ ~674.68 stop 670.67 target 714.78 -> 200
 2026-11-19 09:35:06 ORB_SPY buy 54 SPY ~739.21 stop 737.37 target 757.61 -> 200
 2026-11-19 09:35:06 ORB_IWM buy 141 IWM ~271.475 stop 270.77 target 278.53 -> 200
+2026-11-19 09:38:03 GET /positions/QQQM -> 404 {'code': 40410000, 'message': 'position does not exist'}
