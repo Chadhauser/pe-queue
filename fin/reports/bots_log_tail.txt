@@ -1,6 +1,3 @@
-2026-11-16 15:58:03 GET /positions/IWM -> 404 {'code': 40410000, 'message': 'position does not exist'}
-2026-11-16 15:58:04 E1S {'note': 'no FOMC next (2026-11-17)'}
-2026-11-16 15:59:02 GET /positions/QQQM -> 404 {'code': 40410000, 'message': 'position does not exist'}
 2026-11-16 16:10:02 SETTLE {'ORB': {'pnl_usd': -51.51, 'fills': 2}, 'ORB_SPY': {'pnl_usd': None, 'fills': 0}, 'ORB_IWM': {'pnl_usd': None, 'fills': 0}, 'M7B': {'pnl_usd': None, 'fills': 0}, 'K2': {'pnl_usd': None, 'fills': 0}, 'K4_closed_priced_today': 0, 'E1_closed_priced_today': 0}
 2026-11-17 09:31:07 POST /orders -> 422 {'code': 42210000, 'message': 'asset "LUCK" cannot be sold short'}
 2026-11-17 09:31:08 POST /orders -> 422 {'code': 42210000, 'message': 'asset "OMH" is not tradable'}
@@ -58,3 +55,6 @@
 2026-11-19 09:40:18 GET /positions/QQQM -> 404 {'code': 40410000, 'message': 'position does not exist'}
 2026-11-19 15:00:06 M7B sell 37 QQQM (QQQ move -3.54%) -> 200
 2026-11-19 15:51:00 K4 new ['PMCB', 'RETO', 'RTB', 'OWLT', 'EAF', 'CTEV', 'VRA', 'ENTA', 'NAKA', 'ALMU']
+2026-11-19 15:55:25 GET /positions/SA -> 404 {'code': 40410000, 'message': 'position does not exist'}
+2026-11-19 15:55:44 GET /positions/IIIV -> 404 {'code': 40410000, 'message': 'position does not exist'}
+2026-11-19 15:55:56 GET /positions/FCUV -> 404 {'code': 40410000, 'message': 'position does not exist'}
