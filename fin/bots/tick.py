@@ -119,23 +119,25 @@ def entries_allowed():
 def position_qty(sym):
     sc, p = api('GET', f'/positions/{sym}')
     return float(p.get('qty', 0)) if sc == 200 and isinstance(p, dict) else 0.0
-def cancel_open(sym):
+def cancel_open(sym, keep=()):
     sc, orders = api('GET', '/orders', params={'status': 'open', 'symbols': sym, 'nested': 'true', 'limit': 100})
     for o in (orders if sc == 200 and isinstance(orders, list) else []):
-        api('DELETE', f"/orders/{o['id']}")
+        if o['id'] not in keep: api('DELETE', f"/orders/{o['id']}")
 def flatten(sym):
     """Close a position. Bracket legs HOLD the shares and a cancel is asynchronous (18 Nov: IWM close refused 403, held overnight),
-    so cancel, wait for the release, close, and confirm flat; retry. Returns the closing order ids (for settle)."""
+    so cancel, wait for the release, close, and confirm flat; retry. Our own closing order is never cancelled and is given time to
+    fill (19 Nov: the retry cancelled the closing order before it filled at the open). Returns the closing order ids (for settle)."""
     ids = []
     for i in range(8):
-        cancel_open(sym)
+        cancel_open(sym, keep=ids)
         if position_qty(sym) == 0: return ids
         sleep(2)
         sc, r = api('DELETE', f'/positions/{sym}')
-        if sc < 300:
-            if isinstance(r, dict) and r.get('id'): ids.append(r['id'])
-            sleep(2)
-            if position_qty(sym) == 0: return ids
+        if sc < 300 and isinstance(r, dict) and r.get('id'): ids.append(r['id'])
+        if ids:
+            for _ in range(15):                                            # up to 30s for the closing order to fill
+                sleep(2)
+                if position_qty(sym) == 0: return ids
     log(f'FLATTEN FAILED {sym}: still open after 8 tries'); return ids
 def stray_flat(st):
     """At the open, close anything left in the intraday symbols from a previous day; those fills never count (settle skips them)."""

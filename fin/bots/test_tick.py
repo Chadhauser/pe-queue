@@ -10,13 +10,16 @@ def check(name, ok, got=''): RES.append((name, ok, got)); print(('PASS ' if ok e
 
 class Fake:
     def __init__(s, clock, prices, half=False, disk=100.0):
-        s.clock = clock; s.px = prices; s.orders = []; s.pos = {}; s.half = half; s.disk = disk; s.n = 0; s.held = {}; s.stuck = set()
+        s.clock = clock; s.px = prices; s.orders = []; s.pos = {}; s.half = half; s.disk = disk; s.n = 0; s.held = {}; s.stuck = set(); s.slow = 0; s.pend = {}
     def fill(s, sym, side, qty, coid=''):
         p = s.px(sym, s.clock[0]); s.n += 1
         o = dict(id=f'o{s.n}', t=s.clock[0], symbol=sym, side=side, filled_qty=str(qty), filled_avg_price=str(p), client_order_id=coid, status='filled', legs=[])
         s.orders.append(o); s.pos[sym] = s.pos.get(sym, 0) + (qty if side == 'buy' else -qty)
         if s.pos[sym] == 0: del s.pos[sym]
         return o
+    def settle_pend(s):
+        for oid, (sym, side, q, at_) in list(s.pend.items()):
+            if at_ <= s.clock[0]: del s.pend[oid]; o = s.fill(sym, side, q); o['id'] = oid
     def api(s, method, path, **kw):
         if path == '/calendar':
             a = dt.date.fromisoformat(kw['params']['start']); b = dt.date.fromisoformat(kw['params']['end']); rows = []
@@ -32,23 +35,29 @@ class Fake:
             if j.get('order_class') == 'bracket': o['legs'] = []; s.held[o['id']] = [j['symbol'], None]   # legs stay open and HOLD the shares (Alpaca: held_for_orders)
             return 200, o
         if method == 'GET' and path == '/orders':
-            if kw['params']['status'] == 'open': return 200, [{'id': i} for i, (sy, c) in s.held.items() if sy == kw['params'].get('symbols') and c is None]
+            if kw['params']['status'] == 'open':
+                s.settle_pend()
+                return 200, [{'id': i} for i, (sy, c) in s.held.items() if sy == kw['params'].get('symbols') and c is None] + [{'id': i} for i, v in s.pend.items() if v[0] == kw['params'].get('symbols')]
             after = dt.datetime.fromisoformat(kw['params']['after'])
             return 200, [o for o in s.orders if o['t'] >= after]
         if method == 'GET' and path.startswith('/orders/'):
             oid = path.split('/')[-1]; return 200, next(o for o in s.orders if o['id'] == oid)
         if method == 'GET' and path.startswith('/positions/'):
-            sym = path.split('/')[-1]
+            sym = path.split('/')[-1]; s.settle_pend()
             return (200, {'qty': str(s.pos[sym])}) if sym in s.pos else (404, {})
         if method == 'DELETE' and path.startswith('/positions/'):
             sym = path.split('/')[-1]; q = s.pos.get(sym, 0)
             # a cancel only releases the shares once the clock has moved on (Alpaca cancels are asynchronous: 18 Nov IWM 403)
             if sym in s.stuck or any(sy == sym and (c is None or c >= s.clock[0]) for sy, c in s.held.values()):
                 return 403, {'message': 'insufficient qty available for order', 'held_for_orders': str(abs(q))}
+            if any(v[0] == sym for v in s.pend.values()): return 403, {'message': 'insufficient qty available for order', 'held_for_orders': str(abs(q))}
+            if q and s.slow:                                               # 19 Nov: a closing order at the open takes seconds to fill and holds the shares meanwhile
+                s.n += 1; oid = f'p{s.n}'; s.pend[oid] = (sym, 'sell' if q > 0 else 'buy', abs(q), s.clock[0] + dt.timedelta(seconds=s.slow)); return 200, {'id': oid}
             if q: return 200, s.fill(sym, 'sell' if q > 0 else 'buy', abs(q))
             return 200, {}
         if method == 'DELETE' and path.startswith('/orders/'):
-            oid = path.split('/')[-1]
+            oid = path.split('/')[-1]; s.settle_pend()
+            if oid in s.pend: del s.pend[oid]; return 204, {}               # cancelling the closing order kills it
             if oid in s.held and s.held[oid][1] is None: s.held[oid][1] = s.clock[0]
             return 204, {}
         if method == 'DELETE': return 204, {}
@@ -162,4 +171,8 @@ T.summary(); md3 = open(os.path.join(TMP, 'bots', 'bots.md')).read()
 check('K1 IWM never closed: no P&L booked, no row in bots.md, QQQ still +132.00', stm['settle']['ORB_IWM']['pnl_usd'] is None and f'| {dm} | ORB_IWM |' not in md3 and stm['settle']['ORB']['pnl_usd'] == 132.0 and f.pos.get('IWM') == 66, (stm['settle'], f.pos))
 f.stuck = set(); dn = dt.date(2026, 12, 4); run_day(f, dn); stn = json.load(open(os.path.join(TMP, 'bots', f'day_{dn}.json')))
 check('K2 next open: leftover IWM closed at 09:30, not counted; that day IWM ORB is +132.00 and flat', stn.get('stray') == ['IWM'] and stn['settle']['ORB_IWM'] == {'pnl_usd': 132.0, 'fills': 2} and 'IWM' not in f.pos, (stn.get('stray'), stn['settle']['ORB_IWM'], f.pos))
+# ---- L: closing orders that take 10 seconds to fill (19 Nov: the retry cancelled its own closing order, leftover IWM stayed open)
+f.stuck = {'IWM'}; do = dt.date(2026, 12, 7); run_day(f, do); f.stuck = set(); f.slow = 10
+dp = dt.date(2026, 12, 8); run_day(f, dp); stp = json.load(open(os.path.join(TMP, 'bots', f'day_{dp}.json'))); f.slow = 0
+check('L1 slow closing orders: leftover IWM closed at the open, every position flat at the close, IWM ORB +132.00', stp.get('stray') == ['IWM'] and len(stp.get('stray_ids', [])) == 1 and stp['settle']['ORB_IWM'] == {'pnl_usd': 132.0, 'fills': 2} and stp['settle']['ORB']['pnl_usd'] == 132.0 and not any(k in f.pos for k in ('IWM', 'QQQ', 'SPY', 'QQQM')), (stp.get('stray'), stp.get('stray_ids'), stp['settle'], f.pos))
 print(f"\n{sum(1 for r in RES if r[1])}/{len(RES)} PASS"); shutil.rmtree(TMP); sys.exit(0 if all(r[1] for r in RES) else 1)
