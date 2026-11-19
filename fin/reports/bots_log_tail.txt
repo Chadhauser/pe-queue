@@ -1,8 +1,3 @@
-2026-11-16 16:10:02 SETTLE {'ORB': {'pnl_usd': -51.51, 'fills': 2}, 'ORB_SPY': {'pnl_usd': None, 'fills': 0}, 'ORB_IWM': {'pnl_usd': None, 'fills': 0}, 'M7B': {'pnl_usd': None, 'fills': 0}, 'K2': {'pnl_usd': None, 'fills': 0}, 'K4_closed_priced_today': 0, 'E1_closed_priced_today': 0}
-2026-11-17 09:31:07 POST /orders -> 422 {'code': 42210000, 'message': 'asset "LUCK" cannot be sold short'}
-2026-11-17 09:31:08 POST /orders -> 422 {'code': 42210000, 'message': 'asset "OMH" is not tradable'}
-2026-11-17 09:31:10 POST /orders -> 422 {'code': 42210000, 'message': 'asset "FCUV" cannot be sold short'}
-2026-11-17 09:31:10 K2 scanned 1627 legs [('LUCK', 'sell'), ('CING', 'sell'), ('OMH', 'buy'), ('JBI', 'buy'), ('ANNX', 'buy'), ('SCZM', 'sell'), ('NEWP', 'buy'), ('KURA', 'sell'), ('FCUV', 'sell'), ('MTA', 'buy')]
 2026-11-17 09:35:05 ORB sell 44 QQQ ~660.89 stop 663.15 target 638.29 -> 200
 2026-11-17 09:35:06 ORB_SPY sell 89 SPY ~737.69 stop 738.81 target 726.49 -> 200
 2026-11-17 15:00:06 M7B sell 37 QQQM (QQQ move -1.68%) -> 200
@@ -58,3 +53,8 @@
 2026-11-19 15:55:25 GET /positions/SA -> 404 {'code': 40410000, 'message': 'position does not exist'}
 2026-11-19 15:55:44 GET /positions/IIIV -> 404 {'code': 40410000, 'message': 'position does not exist'}
 2026-11-19 15:55:56 GET /positions/FCUV -> 404 {'code': 40410000, 'message': 'position does not exist'}
+2026-11-19 15:56:08 GET /positions/DMRC -> 404 {'code': 40410000, 'message': 'position does not exist'}
+2026-11-19 15:56:13 GET /positions/MNSO -> 404 {'code': 40410000, 'message': 'position does not exist'}
+2026-11-19 15:56:21 GET /positions/KOPN -> 404 {'code': 40410000, 'message': 'position does not exist'}
+2026-11-19 15:56:26 GET /positions/QUIK -> 404 {'code': 40410000, 'message': 'position does not exist'}
+2026-11-19 15:56:33 GET /positions/FWDI -> 404 {'code': 40410000, 'message': 'position does not exist'}
