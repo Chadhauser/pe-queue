@@ -1,0 +1,98 @@
+72:| K2 Overnight gap fade, small caps, NO earnings within a day: |gap| >=5% - | by-date t 19.98 n 1473 | 41135 | +167.8 bps/trade | 23.25 | 29.48 | 9.85 | -0.67 | **WORKS** | threshold once, then liquidity band (ADV $30-100m), then dead; any WORKS must survive a next-day-open fill check before trading |
+74:| K4 Short-term reversal, small caps (clustered): 5-day return <= -15% -> L | by-date t 3.78 n 1464 | 59306 | +145.6 bps/trade | 3.78 | 8.49 | 6.3 | 0.25 | **WORKS** | threshold once, then liquidity band (ADV $30-100m), then dead; any WORKS must survive a next-day-open fill check before trading |
+77:| E1s Pre-FOMC drift, SPY: LONG close(day before) -> close(FOMC de | vs ordinary day +19.5 bps | 273 | +21.6 bps/event | 3.09 | 3.32 | 1.02 | 0.89 | **WORKS** | E1: post-statement 14:00-16:00 continuation; M7: none (door 3 was the last) |
+78:| E1q Pre-FOMC drift, QQQ (same rule). | vs ordinary day +28.4 bps | 225 | +30.8 bps/event | 2.75 | 2.33 | 1.46 | -0.55 | **WORKS** | E1: post-statement 14:00-16:00 continuation; M7: none (door 3 was the last) |
+147:- K2: verified
+149:- K4: verified
+153:- E1s: verified
+154:- E1q: verified
+155:- E1t: proposed
+156:- E1g: proposed
+=== tail
+pen fill check before trading |
+| K4 Short-term reversal, small caps (clustered): 5-day return <= -15% -> L | by-date t 3.78 n 1464 | 59306 | +145.6 bps/trade | 3.78 | 8.49 | 6.3 | 0.25 | **WORKS** | threshold once, then liquidity band (ADV $30-100m), then dead; any WORKS must survive a next-day-open fill check before trading |
+| K6 Quarter-end unwind, small caps (clustered): last trading day of quarte | by-date t -3.08 n 23 | 33907 | -97.3 bps/trade | -5.83 | -24.57 | -3.0 | -1.22 | **NOT YET** | threshold once, then liquidity band (ADV $30-100m), then dead; any WORKS must survive a next-day-open fill check before trading |
+| PORTFOLIO best sizing: quarter-Kelly (ORB 0.006, M7b 3.00x) fit on 1st half | 2nd-half Calmar 1.74 maxDD -18.1% (control: n/a, diagnostic) | 1584 | CAGR +31.5% | 0 | 0 | 0 | 0 | **NOT YET** | MT5 bridge (Saturday item 4) sized with the winning rule |
+| E1s Pre-FOMC drift, SPY: LONG close(day before) -> close(FOMC de | vs ordinary day +19.5 bps | 273 | +21.6 bps/event | 3.09 | 3.32 | 1.02 | 0.89 | **WORKS** | E1: post-statement 14:00-16:00 continuation; M7: none (door 3 was the last) |
+| E1q Pre-FOMC drift, QQQ (same rule). | vs ordinary day +28.4 bps | 225 | +30.8 bps/event | 2.75 | 2.33 | 1.46 | -0.55 | **WORKS** | E1: post-statement 14:00-16:00 continuation; M7: none (door 3 was the last) |
+
+## Paper ledger — UNVERIFIED-PAPER — ORB-QQQ (Zarattini-Aziz) $100 risk/trade, simulated on Alpaca IEX 1-min bars — from 2026-11-02
+trades 9 | wins 4 | $+979.80 = £+754.45 (fx 0.77)
+
+| date | side | entry | stop | exit | reason | R | $ |
+|---|---|---|---|---|---|---|---|
+| 2026-11-02 | short | 695.09 | 695.55 | 695.55 | stop | -1.065 | -106.45 |
+| 2026-11-03 | long | 685.52 | 683.2 | 685.32 | close | -0.099 | -9.91 |
+| 2026-11-04 | short | 688.11 | 691.36 | 691.36 | stop | -1.009 | -100.92 |
+| 2026-11-05 | short | 678.31 | 683.64 | 648.05 | close | 5.672 | 567.17 |
+| 2026-11-06 | short | 656.45 | 658.88 | 658.88 | stop | -1.012 | -101.23 |
+| 2026-11-09 | long | 665.73 | 662.19 | 678.77 | close | 3.675 | 367.51 |
+| 2026-11-10 | long | 673.09 | 670.0 | 670.0 | stop | -1.01 | -100.97 |
+| 2026-11-11 | - |  |  |  | no signal (doji open) |  |  |
+| 2026-11-12 | long | 684.28 | 680.0 | 688.2 | close | 0.908 | 90.77 |
+| 2026-11-13 | short | 686.83 | 688.64 | 680.01 | close | 3.738 | 373.83 |
+
+## Bot — Alpaca PAPER, ORB on QQQ shares, $100 risk — 0 days, $+0.00
+
+| date | side | qty | R pts | stop | target | pnl $ |
+|---|---|---|---|---|---|---|
+| 2026-11-16 | market closed |  |  |  |  |  |
+
+## Queue
+- H1-5 mechanisms: verified
+- H6 fade-spike: verified
+- H7 realfill: verified
+- ORB-QQQ v2: verified
+- M1: verified
+- M2: verified
+- M3: verified
+- M6: verified
+- M7: verified
+- M8: verified
+- M9: verified
+- M10: verified
+- M11: verified
+- M12: verified
+- M13: verified
+- M14: verified
+- M15: verified
+- M20: verified
+- M21: verified
+- M23: verified
+- M24: verified
+- M25: verified
+- C1: verified
+- C2: verified
+- C3: verified
+- C4: verified
+- C5: verified
+- C6: verified
+- C7: verified
+- C8: verified
+- H2b: verified
+- M7b: verified
+- F1: verified
+- F2: verified
+- F3: verified
+- F4: verified
+- F5: verified
+- F6: verified
+- F7: verified
+- F8: verified
+- F9: verified
+- F10: verified
+- MC Lucid 1-contract: verified
+- K1: verified
+- K2: verified
+- K3: verified
+- K4: verified
+- K5: failed
+- K6: verified
+- PORTFOLIO lab: verified
+- E1s: verified
+- E1q: verified
+- E1t: proposed
+- E1g: proposed
+- M7S: proposed
+- M7I: proposed
+- M7P: proposedexit=0 secs=0
