@@ -110,3 +110,4 @@
 2026-11-19T17:20 BREAK: no bot bets in 6 hours while football is on (42 match-odds markets on the tape);
 2026-11-19T18:20 BREAK: no bot bets in 6 hours while football is on (48 match-odds markets on the tape);
 2026-11-19T19:20 BREAK: no bot bets in 6 hours while football is on (48 match-odds markets on the tape);
+2026-11-19T20:20 BREAK: no bot bets in 6 hours while football is on (42 match-odds markets on the tape);
