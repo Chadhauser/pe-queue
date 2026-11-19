@@ -1,6 +1,6 @@
-# The full grid, stage 1: Betfair history - 2026-11-19 17:40 UTC
+# The full grid, stage 1: Betfair history - 2026-11-19 18:07 UTC
 
-Market types finished: 23 of 29. Slices tested so far: 44,050. With 300 or more bets: 20,128. Profitable in both halves: 7,096.
+Market types finished: 27 of 29. Slices tested so far: 53,210. With 300 or more bets: 27,288. Profitable in both halves: 9,852.
 At the last traded price, 2% commission. Two families: hold to the result (back is per £100 staked, lay per £100 at risk) and in-and-out (enter at one time, exit at a later one, per £100 of the first stake). £ a month is at £10 a bet. UNVERIFIED until the same slice holds at real offered prices.
 
 ## Top 20 survivors by £ a month
