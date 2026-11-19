@@ -1,0 +1,14 @@
+offline test: 29/29 PASS
+IWM before 88.0
+2026-11-19 09:40:16 GET /positions/IWM -> 404 {'code': 40410000, 'message': 'position does not exist'}
+closing order ids ['caa4f768-bcf5-49a2-ab28-8c20a4580335']
+stray_ids now ['638070b2-f3eb-431a-96c2-c925e47a0500', 'd7c822bd-c801-4324-9a3c-bf9e5d7486e3', 'caa4f768-bcf5-49a2-ab28-8c20a4580335']
+order sell 88 269.64 filled 2026-11-19T14:40:15.926407873Z
+2026-11-19 09:40:17 GET /positions/IWM -> 404 {'code': 40410000, 'message': 'position does not exist'}
+IWM position qty 0.0
+QQQ position qty 24.0
+2026-11-19 09:40:18 GET /positions/SPY -> 404 {'code': 40410000, 'message': 'position does not exist'}
+SPY position qty 0.0
+2026-11-19 09:40:18 GET /positions/QQQM -> 404 {'code': 40410000, 'message': 'position does not exist'}
+QQQM position qty 0.0
+exit=0 secs=16
