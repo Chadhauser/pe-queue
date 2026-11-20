@@ -1,11 +1,12 @@
-# Grid progress - Friday 20 November 2026, 06:52 UTC
+# Grid progress - Friday 20 November 2026, 08:14 UTC
 
-Slices tested: 38,024. Slices surviving (300 or more bets, profit after commission in both halves): 3,892. Grid programs running now: 1.
+Slices tested: 66,326. Slices surviving (300 or more bets, profit after commission in both halves): 8,478. Grid programs running now: 2.
 History figures are at the last traded price and are candidates only; recorded-price figures are at the real price on offer. Nothing here is real money; no rule has passed the proof gate until the scoreboard says so.
 
 ## By source
 
-- history: 38,024 slices tested (19 market types or days finished), 14,258 with 300 or more bets, 3,892 profitable in both halves.
+- history: 56,496 slices tested (27 market types or days finished), 28,688 with 300 or more bets, 8,478 profitable in both halves.
+- recorded:betfair: 9,830 slices tested (2 days finished, 278 markets unsettled and left out), 3 with 300 or more bets, 0 profitable in both halves (0 more never lost a bet: flagged, not counted).
 
 ## Top 20 surviving slices by £ a month (at £10 a bet on history; at the real stake on recorded prices)
 
