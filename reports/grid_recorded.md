@@ -1,4 +1,4 @@
-# The full grid, stage 2: recorded prices - 2026-11-20 16:40 UTC
+# The full grid, stage 2: recorded prices - 2026-11-20 23:33 UTC
 
 Real prices on offer: back at the best back, lay at the best lay, only with £2+ on offer; stake = money on offer up to £50; a lay risks at most £50. 2% commission on winnings. Prices must be fresh (last quote inside a window just before the point). In-and-out with no fresh exit price is held to the result. Offering the price: rest one tick inside the spread, filled only if a later trade goes THROUGH the price. Depth from the market's matched £ at the point: thin under £2,000, deep £20,000+. Halves by date. £ a month = real-stake £ over all days the source has data x 30.4. A bet needs at least £1 of stake (Betfair minimum), so lays above about 51 are not placed. Paper only, UNVERIFIED until it passes the proof gate.
 
