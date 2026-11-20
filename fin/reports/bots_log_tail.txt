@@ -1,10 +1,3 @@
-2026-11-18 15:58:04 DELETE /positions/IWM -> 403 {'available': '0', 'code': 40310000, 'existing_qty': '88', 'held_for_orders': '88', 'message': 'insufficient qty available for order (requested: 88, available: 
-2026-11-18 15:58:04 E1S {'note': 'no FOMC next (2026-11-19)'}
-2026-11-18 15:59:01 GET /positions/QQQM -> 404 {'code': 40410000, 'message': 'position does not exist'}
-2026-11-18 16:10:01 SETTLE {'ORB': {'pnl_usd': -124.39, 'fills': 2}, 'ORB_SPY': {'pnl_usd': None, 'fills': 0}, 'ORB_IWM': {'pnl_usd': -23698.4, 'fills': 1}, 'M7B': {'pnl_usd': None, 'fills': 0}, 'K2': {'pnl_usd': 28.22, 'fills': 20}, 'K4_closed_priced_today': 0, 'E1_closed_priced_today': 0}
-2026-11-19 03:52:06 GET /positions/QQQ -> 404 {'code': 40410000, 'message': 'position does not exist'}
-2026-11-19 03:52:06 GET /positions/SPY -> 404 {'code': 40410000, 'message': 'position does not exist'}
-2026-11-19 03:52:06 GET /positions/QQQM -> 404 {'code': 40410000, 'message': 'position does not exist'}
 2026-11-19 09:30:05 GET /positions/QQQ -> 404 {'code': 40410000, 'message': 'position does not exist'}
 2026-11-19 09:30:06 GET /positions/SPY -> 404 {'code': 40410000, 'message': 'position does not exist'}
 2026-11-19 09:30:06 STRAY IWM left from a previous day: closing at the open
@@ -58,3 +51,10 @@
 2026-11-20 15:55:32 GET /positions/SVRA -> 404 {'code': 40410000, 'message': 'position does not exist'}
 2026-11-20 15:55:51 GET /positions/TDAY -> 404 {'code': 40410000, 'message': 'position does not exist'}
 2026-11-20 15:56:01 GET /positions/SVV -> 404 {'code': 40410000, 'message': 'position does not exist'}
+2026-11-20 15:56:15 GET /positions/GRRR -> 404 {'code': 40410000, 'message': 'position does not exist'}
+2026-11-20 15:56:25 GET /positions/AUNA -> 404 {'code': 40410000, 'message': 'position does not exist'}
+2026-11-20 15:56:30 GET /positions/NEWP -> 404 {'code': 40410000, 'message': 'position does not exist'}
+2026-11-20 15:56:38 GET /positions/MEI -> 404 {'code': 40410000, 'message': 'position does not exist'}
+2026-11-20 15:56:45 GET /positions/DMRC -> 404 {'code': 40410000, 'message': 'position does not exist'}
+2026-11-20 15:56:50 GET /positions/BGS -> 404 {'code': 40410000, 'message': 'position does not exist'}
+2026-11-20 15:56:55 GET /positions/XMAX -> 404 {'code': 40410000, 'message': 'position does not exist'}
