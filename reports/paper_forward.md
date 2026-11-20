@@ -1,0 +1,15 @@
+# Forward paper - Friday 20 November 2026, 14:05 UTC
+
+Ways that passed the league test, tracked on NEW days only (days after they passed), towards the proof gate: 100 settled paper orders, profit after commission overall and in each half, in line with the test, then Peter's yes. Paper only.
+
+- In football match result markets, lay the draw two minutes before the start, and back it again 30 seconds after the market reopens following the first big event; with no goal it is held to the result. (on paper since 2026-11-19): 0 of 100 orders settled, £0 so far; first half -, second half -.
+- In football match result markets, lay the draw two minutes before the start, and back it again 120 seconds after the market reopens following the first big event; with no goal it is held to the result. (on paper since 2026-11-19): 0 of 100 orders settled, £0 so far; first half -, second half -.
+- In football match result markets, lay the draw 60 seconds after it starts, and back it again 30 seconds after the market reopens following the first big event; with no goal it is held to the result. (on paper since 2026-11-19): 0 of 100 orders settled, £0 so far; first half -, second half -.
+- In football match result markets, lay the draw 60 seconds after it starts, and back it again 120 seconds after the market reopens following the first big event; with no goal it is held to the result. (on paper since 2026-11-19): 0 of 100 orders settled, £0 so far; first half -, second half -.
+- On Betfair, in football match result markets, lay a selection rated a 20-30% chance in the first third of play and back it again in the middle third of play. (on paper since 2026-11-19): 0 of 100 orders settled, £0 so far; first half -, second half -.
+- On Betfair, in football match result markets, lay every selection rated a 20-30% chance 1 hour before and hold it to the result. (on paper since 2026-11-19): 0 of 100 orders settled, £0 so far; first half -, second half -.
+- On Betfair, in football match result markets, lay every selection rated a 20-30% chance 2 minutes before and hold it to the result. (on paper since 2026-11-19): 0 of 100 orders settled, £0 so far; first half -, second half -.
+- On Betfair, in football match result markets, lay a selection rated a 20-30% chance 2 minutes before and back it again in the middle third of play. (on paper since 2026-11-19): 0 of 100 orders settled, £0 so far; first half -, second half -.
+- On Betfair, in football match result markets, lay a selection rated a 20-30% chance 10 minutes before and back it again in the first third of play. (on paper since 2026-11-19): 0 of 100 orders settled, £0 so far; first half -, second half -.
+- On Betfair, in football match result markets, lay every selection rated a 20-30% chance 10 minutes before and hold it to the result. (on paper since 2026-11-19): 0 of 100 orders settled, £0 so far; first half -, second half -.
+- On Betfair, in football match result markets, lay a selection rated a 20-30% chance 2 minutes before and back it again in the first third of play. (on paper since 2026-11-19): 0 of 100 orders settled, £0 so far; first half -, second half -.
