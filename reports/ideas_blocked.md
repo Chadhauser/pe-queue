@@ -25,3 +25,24 @@ league table (see /root/pe-builder/IDEAS.md for the full list with ticks). Measu
 | 11. Early and late season | Early-season against late-season | We have 20 days (31 Oct to 19 Nov). Needs recorded prices across a whole season. |
 | 11. Tennis surface and round | Surface (clay, grass, hard) and round | Neither is in the market or tournament names. Needs a tournament-to-surface table and the round per match. Tennis level (ITF, Challenger, ATP, WTA) is in the table. |
 | 11. Going for Irish and all-weather detail | Going for races without a racecard | Going comes from racecards_today only (see the racing names line). |
+
+# Session 4 (20 Nov 2026): facts about the match - late, thin or unjoinable
+
+Full source list with dates, rows, join counts and delays: reports/stats_inventory.md.
+
+| Fact | What cannot be done | The one thing missing |
+|---|---|---|
+| Live expected goals after 9 Nov | Expected-goals ways on 10-19 Nov (456 of our 2,341 matches have live expected goals, nearly all 2-9 Nov) | The sofascore collector (ip_stats) stopped at 04:13 on 9 Nov; espn_stats stopped 15 Nov. Needs those collectors running again. |
+| Reacting to a goal, card or chance from a feed | Any trade timed by the feed's own news of a goal | Every live feed is 1.3 to 2.7 minutes behind the market on a goal (median; 4 to 8 minutes at the 90th percentile), polled every 65 to 181 s. Needs a feed under 10 seconds behind. The feeds are used only as a slow record of who is creating chances. |
+| Red cards | Red-card ways have almost nothing to trade (11 linked matches with a red card in the live feed) | Live cards come only from goal_live_predictions (13 fixtures since 31 Oct); af_events has 115 red cards but is fetched after full time, so when it was known is unknown. Needs the card events fetched live, with the time received. |
+| Corners and cards markets | Trading corners or bookings from their running counts | No corners or bookings market is in the recorded prices. Needs CORNER and BOOKING markets on the recorder (the running corner count is in espn_stats and goal_stats_live). |
+| Next goal | Next-goal trades from the rate of chances | Still not recorded (session 3). The rate of chances is used on over/under instead. |
+| Fair price 24 hours before | Pre-match fair-price trades at 24 h | Football prices are recorded from 0.5 to 3 hours before kick-off only (session 3). 1 h, 10 min and 2 min are in the table. |
+| Team news | Trading line-up news before kick-off | af_lineups is fetched after the match (890 fixtures). Needs line-ups fetched when they are announced, about an hour before kick-off, with the time received. |
+| Fair price outside 29 leagues | Pre-match fair-price ways for most of our matches | api-football results cover 29 leagues: 199 of our 2,341 matches get a fair price. Understat expected goals end 24 May 2026; FTS files end 7 Oct. Needs results (and expected goals) for the other leagues we record. |
+| api-football link rate | In-play facts for most of our matches | Of our 2,341 matches 724 link to an api-football fixture (0 ambiguous, none guessed); the rest are leagues api-football does not follow here, or names that fail the strict match (e.g. 'Flamengo' / 'Flamengo RJ'). goal_timeline has almost nothing 10-13 Nov. Needs more leagues on the collector; a longer hand alias list would add a few. |
+| Racing facts after 9 Nov | Draw, jockey and trainer form on 10-19 Nov | racecards_today stops 9 Nov and runners (results) stops 8 Nov, so racing facts cover 7 days (1,881 runners). Draw bias only for flat races of 6 or more with 30 earlier races at the course and distance (620 runners). Needs both feeds daily again. |
+| Tennis facts | Serve numbers, set scores, ranking against price | No live score at all; results with ranks end 25 Sep; our tennis markets name players by surname only. Needs a point-by-point feed and a player-id link to Betfair. |
+| Cricket facts | Run rate, wickets in hand | cricket_matches_today stopped 21 Oct; the ball-by-ball table (tb_cricket_balls) is empty. Needs a live cricket score feed. |
+| Golf leaderboards | Leaderboard position against price | golf_leaderboards_today holds one fetch per event (5 events since 1 Nov), not a running leaderboard. Needs the leaderboard polled during the rounds. |
+| Market-id links that disagree | 25 sofascore and 31 espn matches | The collector's market id points to a match whose team names do not agree (e.g. an under-19 market tagged with the senior match). Rejected, listed in grid/cache/fact_links_rejected_*.csv. |
