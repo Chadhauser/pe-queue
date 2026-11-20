@@ -1,4 +1,3 @@
-2026-11-18 15:00:06 M7B no signal -0.39%
 2026-11-18 15:50:55 K4 new ['HY', 'BRUN', 'TMS', 'DUOT', 'WW', 'ALOY', 'FGI', 'MOVE', 'PICS', 'NANO']
 2026-11-18 15:58:02 GET /positions/QQQ -> 404 {'code': 40410000, 'message': 'position does not exist'}
 2026-11-18 15:58:03 GET /positions/SPY -> 404 {'code': 40410000, 'message': 'position does not exist'}
@@ -58,3 +57,4 @@
 2026-11-20 09:35:06 ORB_SPY sell 62 SPY ~712.05 stop 713.65 target 696.05 -> 200
 2026-11-20 09:35:06 ORB_IWM buy 78 IWM ~263.9 stop 262.63 target 276.6 -> 200
 2026-11-20 15:00:06 M7B sell 39 QQQM (QQQ move -3.66%) -> 200
+2026-11-20 15:51:14 K4 new ['PRE', 'FCUV', 'OMEX', 'FWDI', 'BUUU', 'RRGB', 'OCC', 'HELP', 'ABTC', 'ABX']
