@@ -20,9 +20,9 @@ Money: £0 so far, paper only. Nothing here has passed the proof gate.
 - Family 3: an offer fills only when a later trade goes THROUGH it; a trade AT the price does not fill.
 
 ## Running now
-- run_grid_recorded.sh, restarted about 09:10 UTC on clean tables. Watch.list line "gridrec". grid_history.py was left running, untouched.
+- run_grid_recorded.sh, restarted about 08:10 UTC on clean tables. Watch.list line "gridrec". grid_history.py was left running, untouched.
 - Each Betfair day takes 2-5 min (5 GB peak memory); Smarkets and Matchbook days take about 1 min.
-- First pass: Betfair 31 Oct-18 Nov, then Smarkets and Matchbook 3-18 Nov. It should finish about 11:30 UTC; after that it adds a day every 6 h.
+- First pass: Betfair 31 Oct-18 Nov, then Smarkets and Matchbook 3-18 Nov. It should finish about 10:30 UTC (log times are CET, UTC+1); after that it adds a day every 6 h.
 - Checked by me: 31 Oct, 10 Nov and 18 Nov (Betfair), 16 Nov (Smarkets and Matchbook). Results by price band look sane (backs at 90-100% lose about 1 per £100), and 10 Nov gave identical results twice.
 
 ## Not done yet, and why
