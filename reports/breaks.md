@@ -127,3 +127,4 @@
 2026-11-20T17:20 HEALED:  committed stray edits and pulled;
 2026-11-20T17:20 BREAK: no bot bets in 6 hours while football is on (145 match-odds markets on the tape);
 2026-11-20T18:20 BREAK: no bot bets in 6 hours while football is on (160 match-odds markets on the tape);
+2026-11-20T19:20 BREAK: no bot bets in 6 hours while football is on (160 match-odds markets on the tape);
