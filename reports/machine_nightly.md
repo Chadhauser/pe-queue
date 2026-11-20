@@ -1,40 +1,41 @@
-# The machine — nightly run 2026-11-19 07:10 UTC
+# The machine — nightly run 2026-11-20 01:31 UTC
 
 ## 1. Results
 
-Markets to settle tonight 266: settled 266, not closed yet 0. Markets with a result in total: 1207.
+Markets to settle tonight 1052: settled 1040, not closed yet 0. Markets with a result in total: 2247.
 
 ## 2. Real-price cells (bet the price actually on offer, held to the result)
 
-Runner prices at a real touch: 4,641 on 782 settled markets, 2026-11-17 to 2026-11-18; older half before 2026-11-18, newer half from it.
-Cells with 30+ bets: 43. Profitable on both halves: 8. (The Verifier gate decides WORKS: n 300+, t 3.5+.)
+Runner prices at a real touch: 11,225 on 1,668 settled markets, 2026-11-17 to 2026-11-19; older half before 2026-11-18, newer half from it.
+Cells with 30+ bets: 84. Profitable on both halves: 8. (The Verifier gate decides WORKS: n 300+, t 3.5+.)
 
 | cell | bets | £ at £2 | £ per £10 | t | older n / £10 | newer n / £10 | control t |
 |---|---|---|---|---|---|---|---|
-| CORRECT_SCORE 2min LAY p0.00-0.05 intl | 80 | +2.93 | +0.183 | 11.66 | 33 / +0.179 | 47 / +0.186 | 0.0 |
-| CORRECT_SCORE 30min LAY p0.00-0.05 intl | 79 | +2.75 | +0.174 | 11.23 | 31 / +0.168 | 48 / +0.178 | 0.0 |
-| HALF_TIME_FULL_TIME 2min LAY p0.00-0.05 intl | 42 | +1.52 | +0.180 | 10.67 | 18 / +0.139 | 24 / +0.212 | 0.0 |
-| HALF_TIME_FULL_TIME 30min LAY p0.00-0.05 intl | 48 | +1.57 | +0.164 | 10.44 | 23 / +0.140 | 25 / +0.186 | 0.0 |
-| HALF_TIME_SCORE 30min LAY p0.00-0.05 intl | 33 | +1.11 | +0.168 | 6.93 | 19 / +0.177 | 14 / +0.154 | 0.0 |
-| HALF_TIME_SCORE 2min LAY p0.00-0.05 intl | 35 | +1.19 | +0.170 | 6.87 | 18 / +0.161 | 17 / +0.179 | 0.0 |
-| HALF_TIME_FULL_TIME 2min LAY p0.05-0.10 all | 32 | +1.85 | +0.290 | 0.87 | 6 / +0.804 | 26 / +0.171 | -1.3 |
-| HALF_TIME_FULL_TIME 30min LAY p0.05-0.10 all | 49 | +1.23 | +0.126 | 0.42 | 7 / +0.779 | 42 / +0.017 | -3.06 |
+| OVER_UNDER_05 30min BACK p0.95-1.00 all | 31 | +1.49 | +0.240 | 12.52 | 3 / +0.196 | 28 / +0.245 | 0.0 |
+| OVER_UNDER_55 30min BACK p0.95-1.00 all | 30 | +1.16 | +0.193 | 10.42 | 2 / +0.147 | 28 / +0.196 | 0.0 |
+| HALF_TIME_FULL_TIME 2min LAY p0.05-0.10 all | 99 | +7.49 | +0.378 | 2.5 | 6 / +0.804 | 93 / +0.351 | -3.09 |
+| CORRECT_SCORE 30min LAY p0.00-0.05 intl | 154 | +4.07 | +0.132 | 1.97 | 31 / +0.168 | 123 / +0.123 | -2.41 |
+| BOTH_TEAMS_TO_SCORE 30min LAY p0.45-0.50 all | 34 | +15.94 | +2.344 | 1.58 | 2 / +8.305 | 32 / +1.971 | -1.92 |
+| HALF_TIME_FULL_TIME 30min LAY p0.05-0.10 all | 119 | +4.93 | +0.207 | 1.18 | 7 / +0.779 | 112 / +0.172 | -2.56 |
+| CORRECT_SCORE 2min LAY p0.00-0.05 intl | 158 | +2.57 | +0.081 | 0.89 | 33 / +0.179 | 125 / +0.056 | -2.24 |
+| HALF_TIME_SCORE 2min LAY p0.05-0.10 all | 77 | +1.87 | +0.121 | 0.45 | 5 / +0.694 | 72 / +0.082 | -0.39 |
 
 ## 3. Loser review (what the losers share; the fix is learned on the older half and judged on the newer half)
 
-- **bot v2.2 taker**: 44 settled, £-18.25 (older half £-14.56, newer half £-3.69).
+- **bot v2.2 taker**: 66 settled, £-5.29 (older half £-12.09, newer half £+6.79).
   - losers share hr = 19: 5 bets, £-16.60
-  - losers share side = LAY: 37 bets, £-15.62
-  - losers share sport = football: 16 bets, £-15.53
-  - fix learned on older half: drop sport = football -> older £-14.56 to £+2.30; JUDGED on newer half £-3.69 to £-5.02 -> not adopted
-- **small bites**: 1763 settled, £-29.27 (older half £+98.88, newer half £-128.15).
-  - losers share cell = DRIFT_FADE k5 H10: 625 bets, £-36.85
-  - losers share side = back: 1763 bets, £-29.27
-  - losers share liq = 5k-50k: 566 bets, £-28.76
-  - fix learned on older half: drop pband = 2-3 -> older £+98.88 to £+109.81; JUDGED on newer half £-128.15 to £-120.05 -> not adopted
-- **coherence paper**: 23 settled, £-3.48 (older half £-6.72, newer half £+3.24).
-  - losers share side = BACK: 10 bets, £-20.00
-  - losers share cell = CORRECT_SCORE cs_aoa: 7 bets, £-14.00
-  - fix learned on older half: drop side = BACK -> older £-6.72 to £+5.28; JUDGED on newer half £+3.24 to £+11.24 -> ADOPTED on paper
+  - losers share sport = football: 20 bets, £-15.15
+  - losers share mkt = BOTH_TEAMS_TO_SCORE: 5 bets, £-8.02
+  - fix learned on older half: drop sport = football -> older £-12.09 to £+0.74; JUDGED on newer half £+6.79 to £+9.12 -> ADOPTED on paper
+- **small bites**: 2157 settled, £-114.54 (older half £+102.01, newer half £-216.55).
+  - losers share side = back: 2157 bets, £-114.54
+  - losers share liq = <5k: 1300 bets, £-103.13
+  - losers share mkt = OU25: 1160 bets, £-66.01
+  - fix learned on older half: drop pband = 2-3 -> older £+102.01 to £+123.08; JUDGED on newer half £-216.55 to £-201.37 -> not adopted
+- **coherence paper**: 34 settled, £-10.72 (older half £-7.32, newer half £-3.40).
+  - losers share side = BACK: 16 bets, £-32.00
+  - losers share cell = CORRECT_SCORE cs_aoa: 11 bets, £-22.00
+  - losers share cell = BOTH_TEAMS_TO_SCORE btts: 5 bets, £-4.20
+  - fix learned on older half: drop side = BACK -> older £-7.32 to £+8.68; JUDGED on newer half £-3.40 to £+12.60 -> ADOPTED on paper
 
-Adopted fixes tracked forward on the scoreboard: 1.
+Adopted fixes tracked forward on the scoreboard: 2.
