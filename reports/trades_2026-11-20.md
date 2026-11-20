@@ -2279,14 +2279,14 @@
 | 15:50 | ASO Chlef v USM Khenchela | USM Khenchela | back | 3.90 | £50.00 | closed at 4.10, waiting for the result | - |
 | 15:50 | Triglav v NK Dren Vrhnika | Draw/Draw | lay | 17.50 | £3.03 | open | - |
 | 15:50 | Dinamo Tbilisi v Torpedo Kutaisi | Torp Kutaisi/Draw | lay | 30.00 | £1.72 | open | - |
-| 15:50 | ES Setif v US Biskra | US Biskra/US Biskra | lay | 16.50 | £3.23 | open | - |
+| 15:50 | Dravinja Kostroj v Ilirija Extra-Lux | Ilirija E-L/D Kostroj | lay | 48.00 | £1.06 | open | - |
 | 15:50 | Dinamo Tbilisi v Torpedo Kutaisi | Torp Kutaisi/Dinamo Tbilisi | lay | 32.00 | £1.61 | open | - |
 | 15:50 | ES Setif v US Biskra | The Draw | back | 3.55 | £16.82 | closed at 3.75, waiting for the result | - |
 | 15:50 | Septemvri v Lokomotiv Plovdiv | The Draw | back | 3.05 | £24.37 | closed at 3.10, waiting for the result | - |
 | 15:50 | Dinamo Tbilisi v Torpedo Kutaisi | Dinamo Tbilisi | back | 1.48 | £8.89 | closed at 1.49, waiting for the result | - |
 | 15:50 | ES Setif v US Biskra | Draw/US Biskra | lay | 19.00 | £2.78 | open | - |
 | 15:50 | ES Setif v US Biskra | US Biskra/Draw | lay | 29.00 | £1.79 | open | - |
-| 15:50 | Dinamo Tbilisi v Torpedo Kutaisi | Dinamo Tbilisi/Draw | lay | 27.00 | £1.92 | open | - |
+| 15:50 | ES Setif v US Biskra | US Biskra/US Biskra | lay | 16.50 | £3.23 | open | - |
 | 15:50 | ASO Chlef v USM Khenchela | ASO Chlef/Draw | lay | 20.00 | £2.63 | open | - |
 | 15:50 | ASO Chlef v USM Khenchela | USM Khenchela/ASO Chlef | lay | 44.00 | £1.16 | open | - |
 | 15:50 | Al Wehdat v Al Arabi (Jor) | The Draw | back | 5.10 | £3.00 | closed at 5.60, waiting for the result | - |
@@ -2296,7 +2296,7 @@
 | 15:50 | Al Wehdat v Al Arabi (Jor) | Al Arabi (Jor)/Draw | lay | 50.00 | £1.02 | open | - |
 | 15:50 | Dravinja Kostroj v Ilirija Extra-Lux | D Kostroj/Ilirija E-L | lay | 46.00 | £1.11 | open | - |
 | 15:50 | Dravinja Kostroj v Ilirija Extra-Lux | Ilirija E-L/Draw | lay | 23.00 | £2.27 | open | - |
-| 15:50 | Dravinja Kostroj v Ilirija Extra-Lux | Ilirija E-L/D Kostroj | lay | 48.00 | £1.06 | open | - |
+| 15:50 | Dinamo Tbilisi v Torpedo Kutaisi | Dinamo Tbilisi/Draw | lay | 27.00 | £1.92 | open | - |
 | 15:50 | ASO Chlef v USM Khenchela | USM Khenchela/Draw | lay | 23.00 | £2.27 | open | - |
 | 15:50 | Dinamo Tbilisi v Torpedo Kutaisi | Torp Kutaisi/Torp Kutaisi | lay | 16.00 | £3.33 | open | - |
 | 15:50 | Qalali v Etihad Al Reef | The Draw | lay | 4.90 | £12.82 | closed at 4.60, waiting for the result | - |
@@ -2313,12 +2313,12 @@
 | 15:57 | Kahraba Ismailia v Ceramica Cleopatra | Kahraba Ismailia | lay | 26.00 | £2.00 | open | - |
 | 15:58 | FK Proleter Zrenjanin v FK Borac Cacak | FK Borac Cacak | back | 2.90 | £6.16 | open | - |
 | 15:58 | ASO Chlef v USM Khenchela | ASO Chlef | back | 2.20 | £50.00 | open | - |
-| 15:58 | Al Wehdat v Al Arabi (Jor) | Al Wehdat | back | 1.35 | £33.46 | open | - |
 | 15:58 | ES Setif v US Biskra | ES Setif | back | 1.71 | £7.00 | open | - |
 | 15:58 | Dinamo Tbilisi v Torpedo Kutaisi | Dinamo Tbilisi | lay | 1.49 | £102.04 | closed at 1.46, waiting for the result | - |
-| 15:58 | ES Setif v US Biskra | The Draw | lay | 3.75 | £18.18 | closed at 3.35, waiting for the result | - |
+| 15:58 | Al Wehdat v Al Arabi (Jor) | Al Wehdat | back | 1.35 | £33.46 | open | - |
 | 15:58 | FK Proleter Zrenjanin v FK Borac Cacak | FK Borac Cacak | lay | 2.96 | £25.51 | closed at 2.92, waiting for the result | - |
 | 15:58 | FK Proleter Zrenjanin v FK Borac Cacak | FK Proleter Zrenjanin | lay | 2.98 | £25.25 | closed at 2.82, waiting for the result | - |
+| 15:58 | ES Setif v US Biskra | The Draw | lay | 3.75 | £18.18 | closed at 3.35, waiting for the result | - |
 | 15:58 | Al Wehdat v Al Arabi (Jor) | Al Wehdat | lay | 1.37 | £74.59 | open | - |
 | 15:58 | Septemvri v Lokomotiv Plovdiv | The Draw | lay | 3.10 | £23.81 | closed at 3.00, waiting for the result | - |
 | 15:58 | FK Potkozarje Aleksandrovac v Famos Vojkovici | The Draw | lay | 11.00 | £5.00 | open | - |
@@ -2329,10 +2329,10 @@
 | 16:00 | FK Pribram v Usti Nad Labem | The Draw | lay | 3.85 | £3.90 | open | - |
 | 16:00 | Independiente (Ecu) v Macara | Macara | lay | 7.80 | £4.00 | open | - |
 | 16:00 | FK Pribram v Usti Nad Labem | Usti Nad Labem | back | 3.05 | £2.90 | closed at 3.20, waiting for the result | - |
-| 16:00 | Chrobry Glogow v Puszcza Niepolomice | Chrobry Glogow | back | 2.38 | £3.30 | closed at 2.44, waiting for the result | - |
 | 16:00 | MFK Karvina v Banik Ostrava B | MFK Karvina | back | 1.52 | £8.00 | closed at 1.55, waiting for the result | - |
 | 16:00 | Independiente (Ecu) v Macara | The Draw | back | 4.40 | £5.37 | closed at 4.60, waiting for the result | - |
 | 16:00 | Piast Gliwice v Korona Kielce | The Draw | back | 3.85 | £4.00 | closed at 3.90, waiting for the result | - |
+| 16:00 | Chrobry Glogow v Puszcza Niepolomice | Chrobry Glogow | back | 2.38 | £3.30 | closed at 2.44, waiting for the result | - |
 | 16:00 | 76 Igdir Belediyespor v Umraniyespor | The Draw | back | 4.00 | £27.39 | closed at 4.20, waiting for the result | - |
 | 16:00 | Lechia Zielona Gora v Chojniczanka Chojnice | Chojniczanka Chojnice | back | 2.94 | £2.52 | closed at 3.05, waiting for the result | - |
 | 16:00 | Lechia Zielona Gora v Chojniczanka Chojnice | Chojniczanka Chojnice | lay | 3.05 | £24.39 | closed at 2.92, waiting for the result | - |
@@ -2345,9 +2345,9 @@
 | 16:00 | St. Patrick F.C. v Gzira United FC | Gzira United FC | back | 3.50 | £3.60 | closed at 3.70, waiting for the result | - |
 | 16:01 | 76 Igdir Belediyespor v Umraniyespor | Any Other Away Win | back | 50.00 | £4.02 | open | - |
 | 16:01 | 76 Igdir Belediyespor v Umraniyespor | Any Other Home Win | back | 11.00 | £12.80 | open | - |
+| 16:02 | Piast Gliwice v Korona Kielce | 0 - 3 | back | 38.00 | £3.13 | open | - |
 | 16:02 | Piast Gliwice v Korona Kielce | Any Other Away Win | back | 16.00 | £45.10 | open | - |
 | 16:02 | Piast Gliwice v Korona Kielce | 0 - 2 | back | 19.00 | £32.03 | open | - |
-| 16:02 | Piast Gliwice v Korona Kielce | 0 - 3 | back | 38.00 | £3.13 | open | - |
 | 16:02 | Independiente (Ecu) v Macara | 0 - 1 | back | 24.00 | £15.91 | open | - |
 | 16:02 | MFK Karvina v Banik Ostrava B | 0 - 1 | back | 29.00 | £2.60 | open | - |
 | 16:03 | Botosani v FC Voluntari | The Draw | lay | 14.50 | £3.70 | open | - |
@@ -2355,12 +2355,12 @@
 | 16:04 | FC Shirak v FC Gandzasar | FC Gandzasar | lay | 36.00 | £1.43 | open | - |
 | 16:06 | Piast Gliwice v Korona Kielce | 3 - 2 | back | 28.00 | £31.86 | open | - |
 | 16:10 | Chrobry Glogow v Puszcza Niepolomice | 0 - 2 | back | 20.00 | £10.24 | open | - |
-| 16:10 | Chrobry Glogow v Puszcza Niepolomice | 1 - 3 | back | 36.00 | £8.24 | open | - |
-| 16:10 | Chrobry Glogow v Puszcza Niepolomice | 3 - 2 | back | 38.00 | £8.24 | open | - |
-| 16:10 | Chrobry Glogow v Puszcza Niepolomice | 3 - 1 | back | 24.00 | £8.24 | open | - |
-| 16:10 | Chrobry Glogow v Puszcza Niepolomice | 2 - 2 | back | 16.50 | £18.72 | open | - |
-| 16:10 | Chrobry Glogow v Puszcza Niepolomice | Any Other Away Win | back | 38.00 | £8.24 | open | - |
 | 16:10 | Chrobry Glogow v Puszcza Niepolomice | 1 - 2 | back | 13.00 | £8.56 | open | - |
+| 16:10 | Chrobry Glogow v Puszcza Niepolomice | Any Other Away Win | back | 38.00 | £8.24 | open | - |
+| 16:10 | Chrobry Glogow v Puszcza Niepolomice | 1 - 3 | back | 36.00 | £8.24 | open | - |
+| 16:10 | Chrobry Glogow v Puszcza Niepolomice | 3 - 1 | back | 24.00 | £8.24 | open | - |
+| 16:10 | Chrobry Glogow v Puszcza Niepolomice | 3 - 2 | back | 38.00 | £8.24 | open | - |
+| 16:10 | Chrobry Glogow v Puszcza Niepolomice | 2 - 2 | back | 16.50 | £18.72 | open | - |
 | 16:12 | Septemvri v Lokomotiv Plovdiv | Under 2.5 Goals | back | 1.40 | £50.00 | closed at 1.41, waiting for the result | - |
 | 16:14 | KS Skenderbeu Korce v Egnatia Rrogozhine | KS Skenderbeu Korce | back | 1.27 | £23.62 | open | - |
 | 16:14 | Independiente (Ecu) v Macara | 3 - 3 | back | 90.00 | £4.98 | open | - |
@@ -2368,20 +2368,19 @@
 | 16:15 | Al Ahli (UAE) v Ajman Club | The Draw | lay | 18.50 | £2.86 | open | - |
 | 16:17 | Kahraba Ismailia v Ceramica Cleopatra | Ceramica Cleopatra | back | 1.25 | £50.00 | open | - |
 | 16:18 | 76 Igdir Belediyespor v Umraniyespor | 3 - 0 | back | 17.00 | £3.93 | open | - |
-| 16:20 | Wolverhampton 20th Nov | Offiahs Boy | back | 25.00 | £3.94 | lost | -£3.94 |
-| 16:20 | Wolverhampton 20th Nov | Port Noir | back | 80.00 | £22.62 | lost | -£22.62 |
-| 16:20 | Wolverhampton 20th Nov | Wrist Art | back | 26.00 | £11.03 | lost | -£11.03 |
-| 16:20 | Wolverhampton 20th Nov | Dumfries | back | 12.00 | £50.00 | lost | -£50.00 |
-| 16:20 | Wolverhampton 20th Nov | Maith Mar Or | back | 34.00 | £11.09 | lost | -£11.09 |
-| 16:20 | Wolverhampton 20th Nov | King David | lay | 9.80 | £5.68 | won | +£5.57 |
-| 16:20 | Wolverhampton 20th Nov | Pitney | lay | 6.20 | £9.62 | lost | -£50.00 |
 | 16:20 | Wolverhampton 20th Nov | Age Of Time | lay | 8.20 | £6.94 | won | +£6.81 |
+| 16:20 | Wolverhampton 20th Nov | Pitney | lay | 6.20 | £9.62 | lost | -£50.00 |
+| 16:20 | Wolverhampton 20th Nov | King David | lay | 9.80 | £5.68 | won | +£5.57 |
 | 16:20 | Wolverhampton 20th Nov | Molly Valentine | back | 44.00 | £3.32 | lost | -£3.32 |
+| 16:20 | Wolverhampton 20th Nov | Dumfries | back | 12.00 | £50.00 | lost | -£50.00 |
+| 16:20 | Wolverhampton 20th Nov | Wrist Art | back | 26.00 | £11.03 | lost | -£11.03 |
+| 16:20 | Wolverhampton 20th Nov | Port Noir | back | 80.00 | £22.62 | lost | -£22.62 |
+| 16:20 | Wolverhampton 20th Nov | Offiahs Boy | back | 25.00 | £3.94 | lost | -£3.94 |
+| 16:20 | Wolverhampton 20th Nov | Maith Mar Or | back | 34.00 | £11.09 | lost | -£11.09 |
 | 16:20 | Wolverhampton 20th Nov | Shielas Well | back | 13.50 | £5.11 | lost | -£5.11 |
-| 16:20 | Wolverhampton 20th Nov | Borderline Madness | back | 13.00 | £32.02 | lost | -£32.02 |
+| 16:20 | Al Tadhamon v Al-Jazira (Kuwait) | Draw/Al Jazira(Kuw) | lay | 14.50 | £3.70 | open | - |
 | 16:20 | Wolverhampton 20th Nov | Ignition | back | 40.00 | £16.84 | lost | -£16.84 |
 | 16:20 | Al Tadhamon v Al-Jazira (Kuwait) | Al Tadhamon/Draw | lay | 24.00 | £2.17 | open | - |
-| 16:20 | Al Tadhamon v Al-Jazira (Kuwait) | Draw/Al Jazira(Kuw) | lay | 14.50 | £3.70 | open | - |
 | 16:20 | Al Tadhamon v Al-Jazira (Kuwait) | Al Jazira(Kuw)/Draw | lay | 25.00 | £2.08 | open | - |
 | 16:20 | Al Tadhamon v Al-Jazira (Kuwait) | Al Jazira(Kuw)/Al Tadhamon | lay | 44.00 | £1.16 | open | - |
 | 16:20 | Isa Town FC v Busaiteen Club | Busaiteen Club/Draw | lay | 23.00 | £2.27 | open | - |
@@ -2389,6 +2388,7 @@
 | 16:20 | Isa Town FC v Busaiteen Club | Isa Town FC/Busaiteen Club | lay | 48.00 | £1.06 | open | - |
 | 16:20 | Isa Town FC v Busaiteen Club | Isa Town FC/Draw | lay | 22.00 | £2.38 | open | - |
 | 16:20 | Isa Town FC v Busaiteen Club | The Draw | back | 3.95 | £5.60 | closed at 4.40, waiting for the result | - |
+| 16:20 | Wolverhampton 20th Nov | Borderline Madness | back | 13.00 | £32.02 | lost | -£32.02 |
 | 16:20 | ES Setif v US Biskra | ES Setif | back | 1.80 | £2.00 | closed at 1.93, waiting for the result | - |
 | 16:20 | Dravinja Kostroj v Ilirija Extra-Lux | Dravinja Kostroj | lay | 2.96 | £18.00 | open | - |
 | 16:20 | Al Gharafa v Al Arabi (QAT) | The Draw | lay | 4.60 | £13.89 | closed at 4.30, waiting for the result | - |
@@ -2401,54 +2401,53 @@
 | 16:21 | Septemvri v Lokomotiv Plovdiv | Lokomotiv Plovdiv | lay | 3.00 | £25.00 | open | - |
 | 16:21 | Septemvri v Lokomotiv Plovdiv | Lokomotiv Plovdiv | back | 2.92 | £6.00 | closed at 3.35, waiting for the result | - |
 | 16:21 | Dinamo Tbilisi v Torpedo Kutaisi | The Draw | back | 3.75 | £9.00 | closed at 3.80, waiting for the result | - |
-| 16:21 | FK Proleter Zrenjanin v FK Borac Cacak | FK Proleter Zrenjanin | lay | 3.05 | £24.39 | open | - |
-| 16:21 | FK Proleter Zrenjanin v FK Borac Cacak | FK Borac Cacak | lay | 3.30 | £21.74 | open | - |
+| 16:21 | FK Proleter Zrenjanin v FK Borac Cacak | The Draw | back | 2.82 | £20.24 | closed at 2.94, waiting for the result | - |
 | 16:21 | FK Proleter Zrenjanin v FK Borac Cacak | The Draw | lay | 3.05 | £24.39 | open | - |
 | 16:21 | FK Proleter Zrenjanin v FK Borac Cacak | FK Proleter Zrenjanin | back | 2.92 | £2.55 | closed at 3.20, waiting for the result | - |
-| 16:21 | FK Proleter Zrenjanin v FK Borac Cacak | The Draw | back | 2.82 | £20.24 | closed at 2.94, waiting for the result | - |
+| 16:21 | FK Proleter Zrenjanin v FK Borac Cacak | FK Proleter Zrenjanin | lay | 3.05 | £24.39 | open | - |
+| 16:21 | FK Proleter Zrenjanin v FK Borac Cacak | FK Borac Cacak | lay | 3.30 | £21.74 | open | - |
 | 16:22 | Piast Gliwice v Korona Kielce | 1 - 3 | back | 24.00 | £16.22 | open | - |
 | 16:22 | Piast Gliwice v Korona Kielce | 2 - 3 | back | 30.00 | £15.94 | open | - |
 | 16:23 | Botosani v FC Voluntari | The Draw | lay | 16.00 | £3.33 | closed at 14.50, waiting for the result | - |
 | 16:24 | FC Shirak v FC Gandzasar | FC Shirak | back | 1.19 | £18.00 | open | - |
-| 16:25 | Wolverhampton 20th Nov | Molly Valentine | back | 42.00 | £14.52 | lost | -£13.46 |
 | 16:25 | Wolverhampton 20th Nov | Borderline Madness | back | 12.50 | £36.24 | lost | -£32.39 |
 | 16:25 | Wolverhampton 20th Nov | Dumfries | back | 12.00 | £44.69 | lost | -£40.52 |
 | 16:25 | Wolverhampton 20th Nov | Pitney | back | 6.00 | £50.00 | won | +£196.00 |
-| 16:25 | Wolverhampton 20th Nov | Maith Mar Or | back | 32.00 | £43.26 | lost | -£41.83 |
 | 16:25 | Wolverhampton 20th Nov | Ignition | back | 36.00 | £22.59 | lost | -£21.43 |
-| 16:25 | Wolverhampton 20th Nov | Pitney | lay | 6.20 | £9.62 | lost | -£1.22 |
-| 16:25 | Wolverhampton 20th Nov | King David | back | 9.60 | £17.47 | lost | -£11.66 |
+| 16:25 | Wolverhampton 20th Nov | Molly Valentine | back | 42.00 | £14.52 | lost | -£13.46 |
+| 16:25 | Wolverhampton 20th Nov | Maith Mar Or | back | 32.00 | £43.26 | lost | -£41.83 |
 | 16:25 | Wolverhampton 20th Nov | Book Of Life | back | 4.50 | £50.00 | lost | -£34.85 |
-| 16:25 | Wolverhampton 20th Nov | Molly Valentine | lay | 44.00 | £1.16 | level | +£0.00 |
-| 16:25 | Wolverhampton 20th Nov | Maith Mar Or | lay | 34.00 | £1.52 | level | +£0.00 |
+| 16:25 | Wolverhampton 20th Nov | Pitney | lay | 6.20 | £9.62 | lost | -£1.22 |
 | 16:25 | Wolverhampton 20th Nov | Dumfries | lay | 12.50 | £4.35 | won | +£0.71 |
+| 16:25 | Wolverhampton 20th Nov | Maith Mar Or | lay | 34.00 | £1.52 | level | +£0.00 |
+| 16:25 | Wolverhampton 20th Nov | King David | back | 9.60 | £17.47 | lost | -£11.66 |
+| 16:25 | Wolverhampton 20th Nov | Molly Valentine | lay | 44.00 | £1.16 | level | +£0.00 |
+| 16:28 | Wolverhampton 20th Nov | Wrist Art | lay | 29.00 | £1.79 | won | +£1.75 |
 | 16:28 | Isa Town FC v Busaiteen Club | Isa Town FC | back | 2.16 | £50.00 | open | - |
+| 16:28 | Al Tadhamon v Al-Jazira (Kuwait) | Al Tadhamon | back | 1.92 | £12.73 | open | - |
 | 16:28 | Isa Town FC v Busaiteen Club | Busaiteen Club | lay | 3.45 | £20.00 | closed at 1.16, waiting for the result | - |
 | 16:28 | Wolverhampton 20th Nov | Book Of Life | lay | 4.50 | £14.29 | won | +£14.00 |
 | 16:28 | Wolverhampton 20th Nov | Molly Valentine | lay | 46.00 | £1.11 | won | +£1.09 |
 | 16:28 | Wolverhampton 20th Nov | Dumfries | lay | 13.50 | £4.00 | won | +£3.92 |
-| 16:28 | Wolverhampton 20th Nov | Wrist Art | lay | 29.00 | £1.79 | won | +£1.75 |
 | 16:28 | Wolverhampton 20th Nov | Offiahs Boy | lay | 27.00 | £1.92 | lost | -£0.07 |
-| 16:28 | Wolverhampton 20th Nov | Maith Mar Or | lay | 32.00 | £1.61 | won | +£1.58 |
-| 16:28 | Al Tadhamon v Al-Jazira (Kuwait) | Al Tadhamon | back | 1.92 | £12.73 | open | - |
+| 16:28 | Wolverhampton 20th Nov | Maith Mar Or | back | 30.00 | £3.57 | lost | -£2.14 |
+| 16:28 | Wolverhampton 20th Nov | Shielas Well | lay | 15.00 | £3.57 | lost | -£3.18 |
 | 16:28 | Wolverhampton 20th Nov | Borderline Madness | lay | 12.50 | £4.35 | won | +£1.43 |
 | 16:28 | Wolverhampton 20th Nov | Ignition | lay | 40.00 | £1.28 | level | +£0.00 |
 | 16:28 | Wolverhampton 20th Nov | Age Of Time | lay | 8.20 | £6.94 | won | +£3.42 |
 | 16:28 | Wolverhampton 20th Nov | Pitney | lay | 6.40 | £9.26 | lost | -£34.93 |
 | 16:28 | Wolverhampton 20th Nov | King David | lay | 9.40 | £5.95 | lost | -£0.26 |
 | 16:28 | Wolverhampton 20th Nov | King David | back | 9.20 | £9.85 | lost | -£4.04 |
-| 16:28 | Wolverhampton 20th Nov | Maith Mar Or | back | 30.00 | £3.57 | lost | -£2.14 |
-| 16:28 | Wolverhampton 20th Nov | Shielas Well | lay | 15.00 | £3.57 | lost | -£3.18 |
+| 16:28 | Wolverhampton 20th Nov | Maith Mar Or | lay | 32.00 | £1.61 | won | +£1.58 |
 | 16:29 | Wolverhampton 20th Nov | Pitney | lay | 5.40 | £11.36 | lost | -£50.00 |
-| 16:29 | Wolverhampton 20th Nov | Port Noir | back | 90.00 | £8.90 | lost | -£8.90 |
 | 16:29 | Wolverhampton 20th Nov | Offiahs Boy | lay | 21.00 | £2.50 | won | +£2.45 |
+| 16:29 | Wolverhampton 20th Nov | Port Noir | back | 90.00 | £8.90 | lost | -£8.90 |
 | 16:29 | Wolverhampton 20th Nov | Age Of Time | back | 7.60 | £50.00 | lost | -£42.65 |
 | 16:29 | Wolverhampton 20th Nov | Pitney | back | 5.30 | £16.99 | won | +£22.60 |
 | 16:29 | Wolverhampton 20th Nov | Book Of Life | back | 4.20 | £50.00 | lost | -£34.85 |
 | 16:29 | Isa Town FC v Busaiteen Club | The Draw | lay | 4.40 | £2.71 | closed at 4.30, waiting for the result | - |
 | 16:30 | SV Darmstadt v FC Heidenheim | The Draw | back | 4.20 | £31.66 | closed at 4.30, waiting for the result | - |
 | 16:30 | St Polten v Voitsberg | Voitsberg | lay | 3.45 | £11.70 | closed at 3.35, waiting for the result | - |
-| 16:30 | St Polten v Voitsberg | St Polten | lay | 2.26 | £4.94 | closed at 2.24, waiting for the result | - |
 | 16:30 | Floridsdorfer AC v Austria Wien (A) | Floridsdorfer Ac | lay | 2.24 | £13.20 | closed at 2.18, waiting for the result | - |
 | 16:30 | SV Darmstadt v FC Heidenheim | SV Darmstadt | lay | 3.55 | £6.83 | closed at 3.50, waiting for the result | - |
 | 16:30 | Arminia Bielefeld v FC Magdeburg | The Draw | lay | 3.75 | £18.18 | closed at 3.70, waiting for the result | - |
@@ -2456,16 +2455,17 @@
 | 16:30 | St Polten v Voitsberg | The Draw | back | 3.75 | £18.58 | closed at 3.90, waiting for the result | - |
 | 16:30 | SV Darmstadt v FC Heidenheim | FC Heidenheim | back | 2.08 | £50.00 | closed at 2.10, waiting for the result | - |
 | 16:30 | Arminia Bielefeld v FC Magdeburg | Arminia Bielefeld | back | 2.22 | £50.00 | closed at 2.26, waiting for the result | - |
-| 16:30 | KSV 1919 v WSC Hertha Wels | Ksv 1919 | back | 2.98 | £4.48 | open | - |
+| 16:30 | St Polten v Voitsberg | St Polten | lay | 2.26 | £4.94 | closed at 2.24, waiting for the result | - |
 | 16:30 | FK Auda v FK Riga | The Draw | back | 3.90 | £9.71 | open | - |
 | 16:30 | Al Ahli v Al Nassr | The Draw | back | 4.10 | £50.00 | closed at 4.30, waiting for the result | - |
-| 16:30 | Rapid Vienna (Am) v FC Blau Weiss Linz | The Draw | back | 5.90 | £6.13 | open | - |
 | 16:30 | Rapid Vienna (Am) v FC Blau Weiss Linz | Rapid Vienna (Am) | back | 8.20 | £3.41 | open | - |
 | 16:30 | AF Elbasani v Dinamo Tirana | Dinamo Tirana | lay | 2.90 | £2.55 | open | - |
-| 16:30 | Al Ahli v Al Nassr | Al Ahli | lay | 3.00 | £25.00 | closed at 2.80, waiting for the result | - |
-| 16:30 | KSV 1919 v WSC Hertha Wels | Ksv 1919 | lay | 3.10 | £23.81 | closed at 3.85, waiting for the result | - |
-| 16:30 | AF Elbasani v Dinamo Tirana | The Draw | back | 3.45 | £3.67 | open | - |
 | 16:30 | AF Elbasani v Dinamo Tirana | AF Elbasani | lay | 2.80 | £5.40 | open | - |
+| 16:30 | Rapid Vienna (Am) v FC Blau Weiss Linz | The Draw | back | 5.90 | £6.13 | open | - |
+| 16:30 | Al Ahli v Al Nassr | Al Ahli | lay | 3.00 | £25.00 | closed at 2.80, waiting for the result | - |
+| 16:30 | AF Elbasani v Dinamo Tirana | The Draw | back | 3.45 | £3.67 | open | - |
+| 16:30 | KSV 1919 v WSC Hertha Wels | Ksv 1919 | back | 2.98 | £4.48 | open | - |
+| 16:30 | KSV 1919 v WSC Hertha Wels | Ksv 1919 | lay | 3.10 | £23.81 | closed at 3.85, waiting for the result | - |
 | 16:30 | Arminia Bielefeld v FC Magdeburg | 3 - 0 | back | 27.00 | £50.00 | open | - |
 | 16:30 | Al Ahli v Al Nassr | 0 - 0 | back | 26.00 | £50.00 | open | - |
 | 16:30 | Al Ahli v Al Nassr | Any Other Home Win | back | 15.50 | £50.00 | open | - |
@@ -2474,11 +2474,11 @@
 | 16:30 | Arminia Bielefeld v FC Magdeburg | Any Other Away Win | back | 29.00 | £5.07 | open | - |
 | 16:30 | Rapid Vienna (Am) v FC Blau Weiss Linz | 2 - 0 | back | 85.00 | £29.03 | open | - |
 | 16:30 | Rapid Vienna (Am) v FC Blau Weiss Linz | 1 - 2 | back | 9.80 | £34.59 | open | - |
-| 16:30 | Rapid Vienna (Am) v FC Blau Weiss Linz | 0 - 3 | back | 12.00 | £5.17 | open | - |
 | 16:30 | Rapid Vienna (Am) v FC Blau Weiss Linz | 3 - 0 | back | 190.00 | £26.66 | open | - |
+| 16:30 | Rapid Vienna (Am) v FC Blau Weiss Linz | 0 - 3 | back | 12.00 | £5.17 | open | - |
 | 16:30 | Rapid Vienna (Am) v FC Blau Weiss Linz | 3 - 3 | back | 75.00 | £32.28 | open | - |
-| 16:30 | Rapid Vienna (Am) v FC Blau Weiss Linz | 3 - 1 | back | 90.00 | £50.00 | open | - |
 | 16:30 | Rapid Vienna (Am) v FC Blau Weiss Linz | 2 - 3 | back | 24.00 | £40.86 | open | - |
+| 16:30 | Rapid Vienna (Am) v FC Blau Weiss Linz | 3 - 1 | back | 90.00 | £50.00 | open | - |
 | 16:30 | Qalali v Etihad Al Reef | Over 2.5 Goals | lay | 6.80 | £8.62 | open | - |
 | 16:30 | Al Ahli v Al Nassr | 1 - 3 | back | 19.50 | £50.00 | open | - |
 | 16:30 | ES Setif v US Biskra | The Draw | lay | 2.94 | £25.77 | open | - |
@@ -2486,11 +2486,11 @@
 | 16:30 | Piast Gliwice v Korona Kielce | 2 - 2 | back | 14.00 | £33.37 | open | - |
 | 16:31 | Al-Ittihad (BRN) v Buri FC | Over 2.5 Goals | lay | 1.53 | £7.80 | open | - |
 | 16:31 | Wolverhampton 20th Nov | Offiahs Boy | lay | 17.50 | £3.03 | won | +£2.97 |
-| 16:31 | Wolverhampton 20th Nov | Shielas Well | lay | 10.00 | £5.56 | won | +£5.44 |
 | 16:31 | Wolverhampton 20th Nov | King David | lay | 9.60 | £2.49 | won | +£2.44 |
-| 16:31 | Wolverhampton 20th Nov | Borderline Madness | lay | 19.00 | £2.78 | won | +£2.72 |
-| 16:31 | Wolverhampton 20th Nov | Shielas Well | back | 9.60 | £7.24 | won | +£1.47 |
+| 16:31 | Wolverhampton 20th Nov | Shielas Well | lay | 10.00 | £5.56 | won | +£5.44 |
 | 16:31 | Wolverhampton 20th Nov | Offiahs Boy | back | 16.00 | £2.24 | lost | -£2.24 |
+| 16:31 | Wolverhampton 20th Nov | Shielas Well | back | 9.60 | £7.24 | won | +£1.47 |
+| 16:31 | Wolverhampton 20th Nov | Borderline Madness | lay | 19.00 | £2.78 | won | +£2.72 |
 | 16:31 | Svrcina v Ot Virtanen | Dalibor Svrcina | lay | 4.30 | £15.15 | open | - |
 | 16:31 | Septemvri v Lokomotiv Plovdiv | The Draw | lay | 2.58 | £11.62 | open | - |
 | 16:31 | Wolverhampton 20th Nov | Pitney | back | 6.60 | £4.99 | won | +£27.39 |
@@ -2504,10 +2504,10 @@
 | 16:32 | Wolverhampton 20th Nov | Age Of Time | back | 16.50 | £15.98 | lost | -£15.98 |
 | 16:32 | Wolverhampton 20th Nov | Book Of Life | lay | 3.80 | £10.41 | won | +£1.32 |
 | 16:32 | Wolverhampton 20th Nov | Offiahs Boy | back | 27.00 | £2.06 | lost | -£2.06 |
+| 16:32 | St Polten v Voitsberg | Any Other Home Win | back | 13.50 | £10.85 | open | - |
+| 16:32 | St Polten v Voitsberg | 0 - 3 | back | 55.00 | £1.80 | open | - |
 | 16:32 | St Polten v Voitsberg | 0 - 2 | back | 24.00 | £19.17 | open | - |
 | 16:32 | St Polten v Voitsberg | 0 - 0 | back | 16.00 | £50.00 | open | - |
-| 16:32 | St Polten v Voitsberg | 0 - 3 | back | 55.00 | £1.80 | open | - |
-| 16:32 | St Polten v Voitsberg | Any Other Home Win | back | 13.50 | £10.85 | open | - |
 | 16:32 | Wolverhampton 20th Nov | Pitney | lay | 6.00 | £2.27 | lost | -£5.95 |
 | 16:32 | SV Darmstadt v FC Heidenheim | 3 - 1 | back | 30.00 | £50.00 | open | - |
 | 16:32 | Wolverhampton 20th Nov | King David | back | 11.00 | £3.41 | lost | -£3.41 |
@@ -2519,13 +2519,13 @@
 | 16:34 | SV Darmstadt v FC Heidenheim | Any Other Draw | back | 240.00 | £50.00 | open | - |
 | 16:34 | SV Darmstadt v FC Heidenheim | 3 - 3 | back | 44.00 | £50.00 | open | - |
 | 16:34 | AF Elbasani v Dinamo Tirana | 3 - 3 | back | 95.00 | £2.94 | open | - |
-| 16:35 | win (1.265760587) | Invincible Irish | lay | 5.60 | £10.87 | open | - |
-| 16:35 | win (1.265760587) | Space Dreamer | back | 18.50 | £37.80 | open | - |
+| 16:35 | win (1.265760587) | Mickian Thomas | back | 42.00 | £2.47 | open | - |
+| 16:35 | win (1.265760587) | Sorrento Sunset | back | 55.00 | £9.07 | open | - |
+| 16:35 | win (1.265760587) | Matriarchal | back | 12.50 | £33.72 | open | - |
 | 16:35 | win (1.265760587) | Rejoinder | back | 12.00 | £32.30 | open | - |
 | 16:35 | win (1.265760587) | Boysofwallstreet | back | 100.00 | £5.27 | open | - |
-| 16:35 | win (1.265760587) | Sorrento Sunset | back | 55.00 | £9.07 | open | - |
-| 16:35 | win (1.265760587) | Mickian Thomas | back | 42.00 | £2.47 | open | - |
-| 16:35 | win (1.265760587) | Matriarchal | back | 12.50 | £33.72 | open | - |
+| 16:35 | win (1.265760587) | Space Dreamer | back | 18.50 | £37.80 | open | - |
+| 16:35 | win (1.265760587) | Invincible Irish | lay | 5.60 | £10.87 | open | - |
 | 16:35 | Chrobry Glogow v Puszcza Niepolomice | 0 - 0 | back | 12.00 | £2.40 | open | - |
 | 16:35 | Chrobry Glogow v Puszcza Niepolomice | 0 - 1 | back | 11.50 | £2.72 | open | - |
 | 16:35 | Ley Romero Gormaz v Iren Burillo | Irene Burillo | lay | 17.00 | £3.12 | open | - |
@@ -2558,10 +2558,10 @@
 | 16:43 | win (1.265760587) | Space Dreamer | lay | 21.00 | £2.50 | open | - |
 | 16:43 | win (1.265760587) | Matriarchal | lay | 13.00 | £4.17 | closed at 30.00, waiting for the result | - |
 | 16:43 | win (1.265760587) | Mickian Thomas | lay | 50.00 | £1.02 | open | - |
-| 16:44 | win (1.265760587) | Invincible Irish | lay | 4.70 | £13.51 | open | - |
-| 16:44 | win (1.265760587) | Matriarchal | lay | 11.00 | £5.00 | open | - |
 | 16:44 | win (1.265760587) | Invincible Irish | back | 4.60 | £50.00 | closed at 4.70, waiting for the result | - |
 | 16:44 | win (1.265760587) | Matriarchal | back | 10.00 | £50.00 | closed at 11.00, waiting for the result | - |
+| 16:44 | win (1.265760587) | Invincible Irish | lay | 4.70 | £13.51 | open | - |
+| 16:44 | win (1.265760587) | Matriarchal | lay | 11.00 | £5.00 | open | - |
 | 16:44 | Arminia Bielefeld v FC Magdeburg | 0 - 0 | back | 17.00 | £50.00 | open | - |
 | 16:44 | St Polten v Voitsberg | 3 - 2 | back | 29.00 | £12.06 | open | - |
 | 16:44 | St Polten v Voitsberg | Any Other Away Win | back | 27.00 | £19.24 | open | - |
@@ -2574,51 +2574,51 @@
 | 16:48 | Isa Town FC v Busaiteen Club | Busaiteen Club | back | 1.87 | £9.59 | closed at 1.93, waiting for the result | - |
 | 16:48 | St Polten v Voitsberg | 2 - 3 | back | 38.00 | £5.67 | open | - |
 | 16:49 | 76 Igdir Belediyespor v Umraniyespor | 3 - 1 | back | 17.00 | £1.05 | open | - |
+| 16:50 | Lechia Zielona Gora v Chojniczanka Chojnice | Lechia Ziel Go/Draw | lay | 22.00 | £2.38 | open | - |
+| 16:50 | MFK Karvina v Banik Ostrava B | FC Ostrava B/Draw | lay | 34.00 | £1.52 | open | - |
+| 16:50 | MFK Karvina v Banik Ostrava B | MFK Karvina/Draw | lay | 32.00 | £1.61 | open | - |
+| 16:50 | MFK Karvina v Banik Ostrava B | FC Ostrava B/MFK Karvina | lay | 36.00 | £1.43 | open | - |
 | 16:50 | Chrobry Glogow v Puszcza Niepolomice | Puszcza Niepol/Chrobry Glogow | lay | 42.00 | £1.22 | open | - |
 | 16:50 | MFK Karvina v Banik Ostrava B | Draw/Draw | lay | 13.50 | £4.00 | open | - |
-| 16:50 | MFK Karvina v Banik Ostrava B | FC Ostrava B/FC Ostrava B | lay | 18.50 | £2.86 | open | - |
-| 16:50 | Lechia Zielona Gora v Chojniczanka Chojnice | Choj Chojn/Draw | lay | 22.00 | £2.38 | open | - |
-| 16:50 | MFK Karvina v Banik Ostrava B | FC Ostrava B/MFK Karvina | lay | 36.00 | £1.43 | open | - |
-| 16:50 | MFK Karvina v Banik Ostrava B | MFK Karvina/Draw | lay | 32.00 | £1.61 | open | - |
-| 16:50 | MFK Karvina v Banik Ostrava B | FC Ostrava B/Draw | lay | 34.00 | £1.52 | open | - |
-| 16:50 | Lechia Zielona Gora v Chojniczanka Chojnice | Lechia Ziel Go/Draw | lay | 22.00 | £2.38 | open | - |
 | 16:50 | Independiente (Ecu) v Macara | Macara/Draw | lay | 26.00 | £2.00 | open | - |
+| 16:50 | Chrobry Glogow v Puszcza Niepolomice | Chrobry Glogow/Draw | lay | 20.00 | £2.63 | open | - |
+| 16:50 | MFK Karvina v Banik Ostrava B | FC Ostrava B/FC Ostrava B | lay | 18.50 | £2.86 | open | - |
 | 16:50 | Independiente (Ecu) v Macara | Macara/Macara | lay | 15.50 | £3.45 | open | - |
-| 16:50 | win (1.265760955) | Butterfly Beach | lay | 7.60 | £7.58 | open | - |
-| 16:50 | Independiente (Ecu) v Macara | Independ (Ecu)/Draw | lay | 23.00 | £2.27 | open | - |
 | 16:50 | Independiente (Ecu) v Macara | Macara/Independ (Ecu) | lay | 34.00 | £1.52 | open | - |
+| 16:50 | Independiente (Ecu) v Macara | Independ (Ecu)/Draw | lay | 23.00 | £2.27 | open | - |
+| 16:50 | Chrobry Glogow v Puszcza Niepolomice | Draw/Puszcza Niepol | lay | 11.00 | £5.00 | open | - |
 | 16:50 | Lechia Zielona Gora v Chojniczanka Chojnice | Choj Chojn/Lechia Ziel Go | lay | 44.00 | £1.16 | open | - |
 | 16:50 | win (1.265760955) | Beatrice Briannie | back | 30.00 | £17.14 | open | - |
 | 16:50 | win (1.265760955) | Navona Grey | back | 16.00 | £10.25 | open | - |
-| 16:50 | Chrobry Glogow v Puszcza Niepolomice | Chrobry Glogow/Draw | lay | 20.00 | £2.63 | open | - |
+| 16:50 | win (1.265760955) | Butterfly Beach | lay | 7.60 | £7.58 | open | - |
 | 16:50 | Lechia Zielona Gora v Chojniczanka Chojnice | The Draw | back | 3.90 | £6.64 | open | - |
 | 16:50 | Piast Gliwice v Korona Kielce | The Draw | back | 3.70 | £50.00 | closed at 3.75, waiting for the result | - |
 | 16:50 | Independiente (Ecu) v Macara | Macara | back | 7.00 | £50.00 | closed at 7.60, waiting for the result | - |
 | 16:50 | Independiente (Ecu) v Macara | Draw/Macara | lay | 19.50 | £2.70 | open | - |
-| 16:50 | Chrobry Glogow v Puszcza Niepolomice | Draw/Puszcza Niepol | lay | 11.00 | £5.00 | open | - |
-| 16:50 | Piast Gliwice v Korona Kielce | Korona Kielce/Draw | lay | 18.00 | £2.94 | open | - |
-| 16:50 | Piast Gliwice v Korona Kielce | Korona Kielce/Piast Gliwice | lay | 36.00 | £1.43 | open | - |
+| 16:50 | Chrobry Glogow v Puszcza Niepolomice | Puszcza Niepol/Draw | lay | 21.00 | £2.50 | open | - |
+| 16:50 | Lechia Zielona Gora v Chojniczanka Chojnice | Choj Chojn/Draw | lay | 22.00 | £2.38 | open | - |
+| 16:50 | Piast Gliwice v Korona Kielce | Piast Gliwice/Korona Kielce | lay | 36.00 | £1.43 | open | - |
 | 16:50 | 76 Igdir Belediyespor v Umraniyespor | The Draw | back | 3.70 | £13.79 | closed at 3.55, waiting for the result | - |
-| 16:50 | St. Patrick F.C. v Gzira United FC | The Draw | back | 3.55 | £5.50 | closed at 3.85, waiting for the result | - |
+| 16:50 | Piast Gliwice v Korona Kielce | Korona Kielce/Piast Gliwice | lay | 36.00 | £1.43 | open | - |
 | 16:50 | St. Patrick F.C. v Gzira United FC | St. Patrick F.C. | back | 2.20 | £2.20 | closed at 2.40, waiting for the result | - |
 | 16:50 | Piast Gliwice v Korona Kielce | Piast Gliwice | back | 2.62 | £47.70 | closed at 2.66, waiting for the result | - |
 | 16:50 | MFK Karvina v Banik Ostrava B | Banik Ostrava B | back | 6.80 | £5.61 | closed at 7.40, waiting for the result | - |
 | 16:50 | MFK Karvina v Banik Ostrava B | MFK Karvina | back | 1.47 | £2.49 | closed at 1.50, waiting for the result | - |
 | 16:50 | Chrobry Glogow v Puszcza Niepolomice | Puszcza Niepolomice | back | 4.00 | £6.40 | closed at 4.30, waiting for the result | - |
-| 16:50 | Chrobry Glogow v Puszcza Niepolomice | Puszcza Niepol/Draw | lay | 21.00 | £2.50 | open | - |
+| 16:50 | FK Pribram v Usti Nad Labem | FK Pribram/Draw | lay | 23.00 | £2.27 | open | - |
 | 16:50 | St. Patrick F.C. v Gzira United FC | Gzira Utd FC/St Patrick FC | lay | 46.00 | £1.11 | open | - |
 | 16:50 | St. Patrick F.C. v Gzira United FC | Gzira Utd FC/Draw | lay | 24.00 | £2.17 | open | - |
-| 16:50 | FK Pribram v Usti Nad Labem | FK Pribram/Draw | lay | 23.00 | £2.27 | open | - |
+| 16:50 | St. Patrick F.C. v Gzira United FC | The Draw | back | 3.55 | £5.50 | closed at 3.85, waiting for the result | - |
 | 16:50 | 76 Igdir Belediyespor v Umraniyespor | I Belediyespor/Draw | lay | 21.00 | £2.50 | open | - |
 | 16:50 | 76 Igdir Belediyespor v Umraniyespor | Draw/Umraniyespor | lay | 13.00 | £4.17 | open | - |
 | 16:50 | 76 Igdir Belediyespor v Umraniyespor | Umraniyespor/Draw | lay | 22.00 | £2.38 | open | - |
 | 16:50 | 76 Igdir Belediyespor v Umraniyespor | Umraniyespor/I Belediyespor | lay | 38.00 | £1.35 | open | - |
 | 16:50 | FK Pribram v Usti Nad Labem | Usti nad Labem/Draw | lay | 23.00 | £2.27 | open | - |
+| 16:50 | St. Patrick F.C. v Gzira United FC | St Patrick FC/Draw | lay | 23.00 | £2.27 | open | - |
 | 16:50 | FK Pribram v Usti Nad Labem | FK Pribram/Usti Nad Labem | lay | 50.00 | £1.02 | open | - |
 | 16:50 | FK Pribram v Usti Nad Labem | Usti Nad Labem/FK Pribram | lay | 44.00 | £1.16 | open | - |
 | 16:50 | Piast Gliwice v Korona Kielce | Piast Gliwice/Draw | lay | 18.50 | £2.86 | open | - |
-| 16:50 | St. Patrick F.C. v Gzira United FC | St Patrick FC/Draw | lay | 23.00 | £2.27 | open | - |
-| 16:50 | Piast Gliwice v Korona Kielce | Piast Gliwice/Korona Kielce | lay | 36.00 | £1.43 | open | - |
+| 16:50 | Piast Gliwice v Korona Kielce | Korona Kielce/Draw | lay | 18.00 | £2.94 | open | - |
 | 16:50 | MAS Taborsko v Slavia Praha B | The Draw | lay | 5.10 | £12.20 | open | - |
 | 16:50 | Rapid Vienna (Am) v FC Blau Weiss Linz | 2 - 2 | back | 21.00 | £17.77 | open | - |
 | 16:50 | SV Darmstadt v FC Heidenheim | 3 - 2 | back | 32.00 | £50.00 | open | - |
@@ -2638,65 +2638,65 @@
 | 16:55 | MAS Taborsko v Slavia Praha B | Slavia Praha B | lay | 13.00 | £4.17 | open | - |
 | 16:55 | Arminia Bielefeld v FC Magdeburg | 0 - 1 | back | 15.00 | £50.00 | open | - |
 | 16:56 | Dinamo Tbilisi v Torpedo Kutaisi | Torpedo Kutaisi | lay | 2.84 | £27.17 | open | - |
-| 16:56 | Dinamo Tbilisi v Torpedo Kutaisi | The Draw | lay | 3.30 | £21.74 | open | - |
 | 16:56 | Dinamo Tbilisi v Torpedo Kutaisi | Dinamo Tbilisi | lay | 2.98 | £25.25 | open | - |
+| 16:56 | Dinamo Tbilisi v Torpedo Kutaisi | The Draw | lay | 3.30 | £21.74 | open | - |
 | 16:56 | ASO Chlef v USM Khenchela | ASO Chlef | lay | 2.86 | £3.15 | closed at 4.10, waiting for the result | - |
 | 16:57 | KSV 1919 v WSC Hertha Wels | 3 - 3 | back | 65.00 | £1.28 | open | - |
 | 16:57 | win (1.265760955) | Oliaku | lay | 3.05 | £24.39 | closed at 3.35, waiting for the result | - |
 | 16:57 | Nijboer/Nikles v Drzewiecki/Matuszewski | Nijboer/Nikles | lay | 3.40 | £16.76 | open | - |
-| 16:58 | MFK Karvina v Banik Ostrava B | MFK Karvina | back | 1.47 | £24.92 | open | - |
 | 16:58 | Piast Gliwice v Korona Kielce | The Draw | lay | 3.75 | £18.18 | closed at 3.65, waiting for the result | - |
+| 16:58 | MFK Karvina v Banik Ostrava B | MFK Karvina | back | 1.47 | £24.92 | open | - |
 | 16:58 | Piast Gliwice v Korona Kielce | Piast Gliwice | lay | 2.66 | £30.12 | closed at 2.72, waiting for the result | - |
 | 16:58 | 76 Igdir Belediyespor v Umraniyespor | The Draw | lay | 3.80 | £17.86 | closed at 5.80, waiting for the result | - |
+| 16:58 | Lechia Zielona Gora v Chojniczanka Chojnice | Chojniczanka Chojnice | lay | 3.05 | £24.39 | closed at 2.84, waiting for the result | - |
 | 16:58 | 76 Igdir Belediyespor v Umraniyespor | 76 Igdir Belediyespor | lay | 1.94 | £33.48 | closed at 1.23, waiting for the result | - |
-| 16:58 | Independiente (Ecu) v Macara | Macara | lay | 7.60 | £7.58 | open | - |
 | 16:58 | win (1.265760955) | Navona Grey | lay | 15.00 | £3.57 | open | - |
 | 16:58 | win (1.265760955) | Beatrice Briannie | lay | 36.00 | £1.43 | open | - |
 | 16:58 | win (1.265760955) | Butterfly Beach | lay | 7.40 | £7.81 | open | - |
 | 16:58 | win (1.265760955) | Butterfly Beach | back | 7.20 | £13.73 | closed at 6.40, waiting for the result | - |
-| 16:58 | Lechia Zielona Gora v Chojniczanka Chojnice | Chojniczanka Chojnice | lay | 3.05 | £24.39 | closed at 2.84, waiting for the result | - |
+| 16:58 | Independiente (Ecu) v Macara | Macara | lay | 7.60 | £7.58 | open | - |
 | 16:58 | Isa Town FC v Busaiteen Club | The Draw | lay | 4.30 | £15.15 | open | - |
 | 16:59 | win (1.265760955) | Navona Grey | back | 14.50 | £23.37 | closed at 15.50, waiting for the result | - |
 | 16:59 | win (1.265760955) | Frantic | back | 2.16 | £50.00 | closed at 2.26, waiting for the result | - |
 | 16:59 | win (1.265760955) | Butterfly Beach | back | 6.00 | £50.00 | closed at 6.40, waiting for the result | - |
 | 16:59 | St. Patrick F.C. v Gzira United FC | The Draw | lay | 3.85 | £17.54 | open | - |
-| 17:00 | Aarhus Fremad v Hobro | Aarhus Fremad | back | 2.16 | £36.14 | closed at 2.18, waiting for the result | - |
-| 17:00 | CD Teruel v Hercules CF | The Draw | back | 3.05 | £6.00 | closed at 3.15, waiting for the result | - |
 | 17:00 | CD Teruel v Hercules CF | Hercules CF | back | 2.58 | £17.98 | closed at 2.68, waiting for the result | - |
 | 17:00 | Molde v Bodo Glimt | Molde | back | 4.20 | £33.47 | closed at 4.30, waiting for the result | - |
-| 17:00 | AGF v Lyngby | The Draw | lay | 4.60 | £6.47 | closed at 4.30, waiting for the result | - |
+| 17:00 | Azam FC v Singida Black Stars SC | The Draw | lay | 4.60 | £2.76 | open | - |
+| 17:00 | CD Teruel v Hercules CF | The Draw | back | 3.05 | £6.00 | closed at 3.15, waiting for the result | - |
 | 17:00 | Molde v Bodo Glimt | Bodo Glimt | lay | 1.76 | £65.79 | closed at 1.74, waiting for the result | - |
 | 17:00 | AGF v Lyngby | AGF | lay | 1.72 | £16.48 | closed at 1.70, waiting for the result | - |
-| 17:00 | Azam FC v Singida Black Stars SC | The Draw | lay | 4.60 | £2.76 | open | - |
 | 17:00 | CD Teruel v Hercules CF | CD Teruel | lay | 3.40 | £20.00 | closed at 2.90, waiting for the result | - |
-| 17:00 | Azam FC v Singida Black Stars SC | Singida Black Stars SC | back | 7.60 | £2.94 | open | - |
-| 17:00 | CD Teruel v Hercules CF | Hercules CF | lay | 2.66 | £30.12 | closed at 2.94, waiting for the result | - |
-| 17:00 | Kolding IF v AaB | Kolding IF | lay | 3.05 | £6.71 | closed at 3.15, waiting for the result | - |
-| 17:00 | Kolding IF v AaB | The Draw | lay | 3.40 | £20.83 | closed at 3.55, waiting for the result | - |
-| 17:00 | Kolding IF v AaB | AaB | lay | 2.76 | £28.41 | closed at 2.44, waiting for the result | - |
-| 17:00 | AGF v Lyngby | Lyngby | back | 5.00 | £50.00 | closed at 16.50, waiting for the result | - |
-| 17:00 | Molde v Bodo Glimt | The Draw | back | 5.20 | £29.52 | closed at 13.00, waiting for the result | - |
-| 17:00 | TSV Havelse v Viktoria Koln | The Draw | back | 5.70 | £50.00 | open | - |
-| 17:00 | TSV Havelse v Viktoria Koln | TSV Havelse | back | 6.80 | £50.00 | open | - |
+| 17:00 | AGF v Lyngby | The Draw | lay | 4.60 | £6.47 | closed at 4.30, waiting for the result | - |
 | 17:00 | CD Teruel v Hercules CF | The Draw | lay | 3.15 | £13.00 | closed at 3.10, waiting for the result | - |
+| 17:00 | Aarhus Fremad v Hobro | Aarhus Fremad | back | 2.16 | £36.14 | closed at 2.18, waiting for the result | - |
+| 17:00 | Kolding IF v AaB | Kolding IF | lay | 3.05 | £6.71 | closed at 3.15, waiting for the result | - |
+| 17:00 | Azam FC v Singida Black Stars SC | Singida Black Stars SC | back | 7.60 | £2.94 | open | - |
+| 17:00 | TSV Havelse v Viktoria Koln | The Draw | back | 5.70 | £50.00 | open | - |
+| 17:00 | Molde v Bodo Glimt | The Draw | back | 5.20 | £29.52 | closed at 13.00, waiting for the result | - |
+| 17:00 | TSV Havelse v Viktoria Koln | TSV Havelse | back | 6.80 | £50.00 | open | - |
+| 17:00 | Kolding IF v AaB | AaB | lay | 2.76 | £28.41 | closed at 2.44, waiting for the result | - |
+| 17:00 | CD Teruel v Hercules CF | Hercules CF | lay | 2.66 | £30.12 | closed at 2.94, waiting for the result | - |
+| 17:00 | Kolding IF v AaB | The Draw | lay | 3.40 | £20.83 | closed at 3.55, waiting for the result | - |
+| 17:00 | AGF v Lyngby | Lyngby | back | 5.00 | £50.00 | closed at 16.50, waiting for the result | - |
 | 17:00 | Al-Zawraa v Al Talaba | Over 2.5 Goals | lay | 1.80 | £20.00 | open | - |
-| 17:00 | AGF v Lyngby | 0 - 3 | back | 95.00 | £37.75 | open | - |
-| 17:00 | AGF v Lyngby | 3 - 3 | back | 65.00 | £24.70 | open | - |
 | 17:00 | AGF v Lyngby | 3 - 0 | back | 17.00 | £1.20 | open | - |
 | 17:00 | AGF v Lyngby | 3 - 1 | back | 15.00 | £21.25 | open | - |
+| 17:00 | AGF v Lyngby | 3 - 3 | back | 65.00 | £24.70 | open | - |
+| 17:00 | AGF v Lyngby | 0 - 3 | back | 95.00 | £37.75 | open | - |
 | 17:00 | 76 Igdir Belediyespor v Umraniyespor | The Draw | lay | 3.80 | £2.51 | closed at 1.08, waiting for the result | - |
 | 17:00 | 76 Igdir Belediyespor v Umraniyespor | Umraniyespor | lay | 4.90 | £12.82 | closed at 18.00, waiting for the result | - |
 | 17:01 | SV Darmstadt v FC Heidenheim | 0 - 3 | back | 25.00 | £15.58 | open | - |
 | 17:01 | win (1.265760955) | Beatrice Briannie | back | 27.00 | £2.11 | open | - |
 | 17:01 | SV Darmstadt v FC Heidenheim | 1 - 3 | back | 17.00 | £50.00 | open | - |
 | 17:02 | SV Darmstadt v FC Heidenheim | 0 - 1 | back | 15.50 | £47.42 | open | - |
-| 17:05 | win (1.265760600) | El Fontenaro | back | 25.00 | £13.21 | open | - |
 | 17:05 | win (1.265760600) | One Cool Bear | lay | 7.00 | £8.33 | open | - |
+| 17:05 | win (1.265760600) | Inishmot Prince | back | 32.00 | £15.08 | open | - |
 | 17:05 | win (1.265760600) | Steel Magnolia | back | 26.00 | £11.53 | open | - |
 | 17:05 | win (1.265760600) | Are You In Or Out | back | 80.00 | £3.63 | open | - |
 | 17:05 | win (1.265760600) | Rodeeve | back | 46.00 | £2.32 | open | - |
 | 17:05 | win (1.265760600) | Sovereign Banter | back | 12.50 | £39.73 | open | - |
-| 17:05 | win (1.265760600) | Inishmot Prince | back | 32.00 | £15.08 | open | - |
+| 17:05 | win (1.265760600) | El Fontenaro | back | 25.00 | £13.21 | open | - |
 | 17:05 | win (1.265760600) | Zabriskie Point | back | 11.50 | £50.00 | open | - |
 | 17:05 | win (1.265760600) | Gonirianbotharleat | back | 32.00 | £9.52 | open | - |
 | 17:05 | win (1.265760600) | Subiaco | back | 12.50 | £12.72 | open | - |
@@ -2716,25 +2716,25 @@
 | 17:09 | AF Elbasani v Dinamo Tirana | 3 - 2 | back | 40.00 | £2.93 | open | - |
 | 17:09 | AF Elbasani v Dinamo Tirana | Any Other Home Win | back | 26.00 | £2.93 | open | - |
 | 17:09 | AF Elbasani v Dinamo Tirana | 0 - 3 | back | 38.00 | £2.93 | open | - |
-| 17:10 | win (1.265760600) | Gonirianbotharleat | back | 38.00 | £10.92 | closed at 44.00, waiting for the result | - |
-| 17:10 | win (1.265760600) | Surpass And Shine | back | 3.25 | £50.00 | closed at 3.40, waiting for the result | - |
 | 17:10 | win (1.265760600) | Subiaco | back | 12.50 | £41.01 | closed at 13.00, waiting for the result | - |
+| 17:10 | win (1.265760600) | Inishmot Prince | back | 36.00 | £13.09 | closed at 38.00, waiting for the result | - |
 | 17:10 | win (1.265760600) | One Cool Bear | back | 7.00 | £50.00 | closed at 7.20, waiting for the result | - |
 | 17:10 | win (1.265760600) | Steel Magnolia | back | 25.00 | £37.13 | closed at 26.00, waiting for the result | - |
 | 17:10 | win (1.265760600) | Treasured Royal | back | 16.50 | £21.99 | closed at 17.00, waiting for the result | - |
 | 17:10 | win (1.265760600) | Rodeeve | back | 40.00 | £15.70 | open | - |
 | 17:10 | win (1.265760600) | All Hail | back | 65.00 | £8.34 | open | - |
 | 17:10 | win (1.265760600) | Inishmot Prince | lay | 38.00 | £1.35 | closed at 40.00, waiting for the result | - |
-| 17:10 | win (1.265760600) | Inishmot Prince | back | 36.00 | £13.09 | closed at 38.00, waiting for the result | - |
-| 17:10 | win (1.265760600) | Surpass And Shine | lay | 3.30 | £21.74 | closed at 2.94, waiting for the result | - |
 | 17:10 | win (1.265760600) | One Cool Bear | lay | 7.20 | £8.06 | closed at 6.00, waiting for the result | - |
+| 17:10 | win (1.265760600) | Surpass And Shine | lay | 3.30 | £21.74 | closed at 2.94, waiting for the result | - |
+| 17:10 | win (1.265760600) | Surpass And Shine | back | 3.25 | £50.00 | closed at 3.40, waiting for the result | - |
 | 17:10 | win (1.265760600) | Gonirianbotharleat | lay | 42.00 | £1.22 | closed at 46.00, waiting for the result | - |
 | 17:10 | win (1.265760600) | Subiaco | lay | 13.00 | £4.17 | closed at 14.00, waiting for the result | - |
 | 17:10 | win (1.265760600) | Treasured Royal | lay | 17.50 | £3.03 | closed at 16.50, waiting for the result | - |
-| 17:10 | win (1.265760600) | Steel Magnolia | lay | 27.00 | £1.92 | closed at 30.00, waiting for the result | - |
 | 17:10 | win (1.265760600) | Rodeeve | lay | 44.00 | £1.16 | open | - |
 | 17:10 | win (1.265760600) | El Fontenaro | back | 26.00 | £2.04 | closed at 34.00, waiting for the result | - |
 | 17:10 | win (1.265760600) | Sovereign Banter | back | 11.00 | £15.78 | closed at 12.00, waiting for the result | - |
+| 17:10 | win (1.265760600) | Steel Magnolia | lay | 27.00 | £1.92 | closed at 30.00, waiting for the result | - |
+| 17:10 | win (1.265760600) | Gonirianbotharleat | back | 38.00 | £10.92 | closed at 44.00, waiting for the result | - |
 | 17:10 | SV Darmstadt v FC Heidenheim | 2 - 1 | back | 14.50 | £50.00 | open | - |
 | 17:10 | SV Darmstadt v FC Heidenheim | 2 - 0 | back | 30.00 | £50.00 | open | - |
 | 17:11 | Molde v Bodo Glimt | Any Other Home Win | back | 13.00 | £50.00 | open | - |
@@ -2742,20 +2742,20 @@
 | 17:12 | Arminia Bielefeld v FC Magdeburg | Any Other Home Win | back | 13.50 | £29.62 | open | - |
 | 17:12 | TSV Havelse v Viktoria Koln | Any Other Home Win | back | 46.00 | £8.50 | open | - |
 | 17:12 | Molde v Bodo Glimt | 0 - 3 | back | 25.00 | £50.00 | open | - |
+| 17:13 | win (1.265760600) | Inishmot Prince | lay | 40.00 | £1.28 | closed at 38.00, waiting for the result | - |
 | 17:13 | win (1.265760600) | Steel Magnolia | lay | 24.00 | £2.17 | open | - |
 | 17:13 | win (1.265760600) | Rodeeve | lay | 48.00 | £1.06 | open | - |
 | 17:13 | win (1.265760600) | El Fontenaro | lay | 23.00 | £2.27 | open | - |
 | 17:13 | win (1.265760600) | Sovereign Banter | lay | 11.50 | £4.76 | open | - |
-| 17:13 | win (1.265760600) | Inishmot Prince | lay | 40.00 | £1.28 | closed at 38.00, waiting for the result | - |
 | 17:13 | win (1.265760600) | The Cosy Corner | lay | 15.00 | £3.57 | open | - |
 | 17:13 | win (1.265760600) | Zabriskie Point | lay | 15.00 | £3.57 | open | - |
-| 17:13 | win (1.265760600) | Treasured Royal | lay | 16.50 | £2.60 | open | - |
+| 17:13 | win (1.265760600) | Gonirianbotharleat | lay | 34.00 | £1.52 | open | - |
 | 17:13 | win (1.265760600) | Subiaco | lay | 13.50 | £4.00 | open | - |
+| 17:13 | win (1.265760600) | Treasured Royal | lay | 16.50 | £2.60 | open | - |
 | 17:13 | win (1.265760600) | One Cool Bear | lay | 6.60 | £8.93 | open | - |
 | 17:13 | win (1.265760600) | Inishmot Prince | back | 36.00 | £2.82 | closed at 42.00, waiting for the result | - |
 | 17:13 | win (1.265760600) | Surpass And Shine | back | 3.45 | £17.81 | closed at 2.98, waiting for the result | - |
 | 17:13 | win (1.265760600) | Sovereign Banter | back | 11.00 | £11.58 | closed at 12.00, waiting for the result | - |
-| 17:13 | win (1.265760600) | Gonirianbotharleat | lay | 34.00 | £1.52 | open | - |
 | 17:13 | SV Darmstadt v FC Heidenheim | 3 - 0 | back | 55.00 | £49.54 | open | - |
 | 17:13 | win (1.265760600) | Surpass And Shine | lay | 3.15 | £23.26 | closed at 2.00, waiting for the result | - |
 | 17:14 | win (1.265760600) | The Cosy Corner | lay | 11.50 | £4.76 | open | - |
@@ -2766,37 +2766,36 @@
 | 17:14 | win (1.265760600) | One Cool Bear | back | 6.00 | £50.00 | closed at 6.20, waiting for the result | - |
 | 17:14 | win (1.265760600) | Surpass And Shine | back | 3.00 | £50.00 | closed at 2.98, waiting for the result | - |
 | 17:15 | win (1.265760600) | Zabriskie Point | lay | 14.50 | £3.70 | open | - |
-| 17:15 | win (1.265760600) | The Cosy Corner | lay | 15.50 | £2.09 | open | - |
-| 17:15 | win (1.265760600) | One Cool Bear | lay | 9.00 | £4.72 | open | - |
 | 17:15 | win (1.265760600) | Treasured Royal | back | 9.20 | £4.90 | open | - |
 | 17:15 | win (1.265760600) | Surpass And Shine | back | 2.30 | £50.00 | open | - |
+| 17:15 | win (1.265760600) | The Cosy Corner | lay | 15.50 | £2.09 | open | - |
+| 17:15 | win (1.265760600) | One Cool Bear | lay | 9.00 | £4.72 | open | - |
 | 17:16 | Septemvri v Lokomotiv Plovdiv | Under 2.5 Goals | back | 1.05 | £50.00 | open | - |
 | 17:16 | win (1.265760600) | Surpass And Shine | lay | 1.08 | £229.04 | open | - |
 | 17:17 | Moller v Tr Boyer | Elmer Moller | lay | 3.60 | £19.23 | closed at 3.20, waiting for the result | - |
 | 17:19 | Wolverhampton 20th Nov | Noble Light | lay | 2.04 | £48.08 | closed at 2.18, waiting for the result | - |
-| 17:19 | 76 Igdir Belediyespor v Umraniyespor | Umraniyespor | back | 17.00 | £4.60 | open | - |
 | 17:19 | 76 Igdir Belediyespor v Umraniyespor | 76 Igdir Belediyespor | back | 1.27 | £23.62 | closed at 1.29, waiting for the result | - |
-| 17:20 | Floridsdorfer AC v Austria Wien (A) | A Wien(A)/Floridsdorfer | lay | 42.00 | £1.22 | open | - |
-| 17:20 | FK Auda v FK Riga | FK Riga/Draw | lay | 24.00 | £2.17 | open | - |
-| 17:20 | FK Auda v FK Riga | FK Auda/FK Riga | lay | 36.00 | £1.43 | open | - |
-| 17:20 | FK Auda v FK Riga | Draw/FK Auda | lay | 17.00 | £3.12 | open | - |
-| 17:20 | FK Auda v FK Riga | FK Auda/Draw | lay | 26.00 | £2.00 | open | - |
-| 17:20 | SV Darmstadt v FC Heidenheim | SV Darmstadt/Draw | lay | 17.50 | £3.03 | open | - |
-| 17:20 | SV Darmstadt v FC Heidenheim | FC Heidenheim/SV Darmstadt | lay | 38.00 | £1.35 | open | - |
-| 17:20 | SV Darmstadt v FC Heidenheim | FC Heidenheim/Draw | lay | 17.50 | £3.03 | open | - |
-| 17:20 | Floridsdorfer AC v Austria Wien (A) | A Wien(A)/Draw | lay | 21.00 | £2.50 | open | - |
-| 17:20 | SV Darmstadt v FC Heidenheim | Draw/SV Darmstadt | lay | 12.00 | £4.55 | open | - |
-| 17:20 | AF Elbasani v Dinamo Tirana | AF Elbasani/Draw | lay | 22.00 | £2.38 | open | - |
-| 17:20 | Arminia Bielefeld v FC Magdeburg | FC Magdeburg/Draw | lay | 18.50 | £2.86 | open | - |
-| 17:20 | SV Darmstadt v FC Heidenheim | SV Darmstadt/FC Heidenheim | lay | 26.00 | £2.00 | open | - |
+| 17:19 | 76 Igdir Belediyespor v Umraniyespor | Umraniyespor | back | 17.00 | £4.60 | open | - |
 | 17:20 | Floridsdorfer AC v Austria Wien (A) | Floridsdorfer/Draw | lay | 20.00 | £2.63 | open | - |
-| 17:20 | Rapid Vienna (Am) v FC Blau Weiss Linz | Draw/Draw | lay | 11.50 | £4.18 | closed at 2.90, waiting for the result | - |
-| 17:20 | Rapid Vienna (Am) v FC Blau Weiss Linz | R Vienna (Am)/R Vienna (Am) | lay | 20.00 | £2.63 | closed at 5.60, waiting for the result | - |
+| 17:20 | SV Darmstadt v FC Heidenheim | Draw/SV Darmstadt | lay | 12.00 | £4.55 | open | - |
+| 17:20 | SV Darmstadt v FC Heidenheim | SV Darmstadt/Draw | lay | 17.50 | £3.03 | open | - |
+| 17:20 | SV Darmstadt v FC Heidenheim | FC Heidenheim/Draw | lay | 17.50 | £3.03 | open | - |
+| 17:20 | SV Darmstadt v FC Heidenheim | FC Heidenheim/SV Darmstadt | lay | 38.00 | £1.35 | open | - |
+| 17:20 | SV Darmstadt v FC Heidenheim | SV Darmstadt/FC Heidenheim | lay | 26.00 | £2.00 | open | - |
+| 17:20 | FK Auda v FK Riga | FK Auda/Draw | lay | 26.00 | £2.00 | open | - |
+| 17:20 | FK Auda v FK Riga | Draw/FK Auda | lay | 17.00 | £3.12 | open | - |
+| 17:20 | FK Auda v FK Riga | FK Auda/FK Riga | lay | 36.00 | £1.43 | open | - |
+| 17:20 | AF Elbasani v Dinamo Tirana | AF Elbasani/Draw | lay | 22.00 | £2.38 | open | - |
+| 17:20 | FK Auda v FK Riga | FK Riga/Draw | lay | 24.00 | £2.17 | open | - |
+| 17:20 | Floridsdorfer AC v Austria Wien (A) | A Wien(A)/Floridsdorfer | lay | 42.00 | £1.22 | open | - |
+| 17:20 | Floridsdorfer AC v Austria Wien (A) | A Wien(A)/Draw | lay | 21.00 | £2.50 | open | - |
+| 17:20 | Rapid Vienna (Am) v FC Blau Weiss Linz | Draw/R Vienna (Am) | lay | 27.00 | £1.92 | closed at 5.60, waiting for the result | - |
+| 17:20 | Wolverhampton 20th Nov | My Amanah | back | 10.50 | £50.00 | open | - |
 | 17:20 | Rapid Vienna (Am) v FC Blau Weiss Linz | R Vienna (Am)/Draw | lay | 34.00 | £1.52 | closed at 3.80, waiting for the result | - |
+| 17:20 | Rapid Vienna (Am) v FC Blau Weiss Linz | Draw/Draw | lay | 11.50 | £4.18 | closed at 2.90, waiting for the result | - |
 | 17:20 | Rapid Vienna (Am) v FC Blau Weiss Linz | R Vienna (Am)/FC BW Linz | lay | 29.00 | £1.79 | closed at 3.90, waiting for the result | - |
 | 17:20 | Rapid Vienna (Am) v FC Blau Weiss Linz | FC BW Linz/Draw | lay | 27.00 | £1.92 | closed at 44.00, waiting for the result | - |
 | 17:20 | Wolverhampton 20th Nov | Lavender Bay | back | 20.00 | £29.05 | open | - |
-| 17:20 | Wolverhampton 20th Nov | My Amanah | back | 10.50 | £50.00 | open | - |
 | 17:20 | Wolverhampton 20th Nov | Edith The Fair | back | 40.00 | £9.55 | open | - |
 | 17:20 | Wolverhampton 20th Nov | Rose Deer | back | 12.00 | £19.42 | open | - |
 | 17:20 | Wolverhampton 20th Nov | Diablesa | back | 50.00 | £10.57 | open | - |
@@ -2805,43 +2804,44 @@
 | 17:20 | FK Auda v FK Riga | FK Auda | back | 5.10 | £4.30 | open | - |
 | 17:20 | FK Auda v FK Riga | The Draw | back | 4.10 | £7.04 | open | - |
 | 17:20 | FK Auda v FK Riga | FK Riga | back | 1.73 | £2.02 | open | - |
-| 17:20 | Rapid Vienna (Am) v FC Blau Weiss Linz | Draw/R Vienna (Am) | lay | 27.00 | £1.92 | closed at 5.60, waiting for the result | - |
+| 17:20 | Arminia Bielefeld v FC Magdeburg | FC Magdeburg/Draw | lay | 18.50 | £2.86 | open | - |
+| 17:20 | Rapid Vienna (Am) v FC Blau Weiss Linz | R Vienna (Am)/R Vienna (Am) | lay | 20.00 | £2.63 | closed at 5.60, waiting for the result | - |
 | 17:20 | Arminia Bielefeld v FC Magdeburg | FC Magdeburg/A Bielefeld | lay | 34.00 | £1.52 | open | - |
-| 17:20 | AF Elbasani v Dinamo Tirana | AF Elbasani/Dinamo Tirana | lay | 50.00 | £1.02 | open | - |
+| 17:20 | Arminia Bielefeld v FC Magdeburg | FC Magdeburg | back | 3.50 | £50.00 | closed at 3.60, waiting for the result | - |
 | 17:20 | AF Elbasani v Dinamo Tirana | Dinamo Tirana/AF Elbasani | lay | 50.00 | £1.02 | open | - |
 | 17:20 | 1. FC Union Berlin (W) v Leverkusen (W) | Leverkusen (W) | back | 1.91 | £11.00 | open | - |
 | 17:20 | Al Ahli v Al Nassr | Al Nassr | back | 2.42 | £50.00 | closed at 2.48, waiting for the result | - |
 | 17:20 | Rapid Vienna (Am) v FC Blau Weiss Linz | The Draw | back | 6.40 | £6.42 | closed at 6.60, waiting for the result | - |
 | 17:20 | Al Ahli v Al Nassr | The Draw | back | 4.30 | £50.00 | closed at 4.30, waiting for the result | - |
 | 17:20 | KSV 1919 v WSC Hertha Wels | The Draw | back | 4.00 | £38.96 | closed at 4.20, waiting for the result | - |
-| 17:20 | Arminia Bielefeld v FC Magdeburg | FC Magdeburg | back | 3.50 | £50.00 | closed at 3.60, waiting for the result | - |
 | 17:20 | Arminia Bielefeld v FC Magdeburg | The Draw | back | 3.75 | £3.07 | closed at 3.85, waiting for the result | - |
 | 17:20 | SV Darmstadt v FC Heidenheim | SV Darmstadt | back | 3.70 | £50.00 | closed at 3.80, waiting for the result | - |
-| 17:20 | SV Darmstadt v FC Heidenheim | FC Heidenheim | back | 2.02 | £50.00 | closed at 2.02, waiting for the result | - |
+| 17:20 | Arminia Bielefeld v FC Magdeburg | A Bielefeld/FC Magdeburg | lay | 50.00 | £1.02 | open | - |
 | 17:20 | St Polten v Voitsberg | The Draw | back | 3.85 | £13.14 | closed at 4.00, waiting for the result | - |
 | 17:20 | Al Ahli v Al Nassr | Al Ahli/Draw | lay | 19.00 | £2.78 | open | - |
 | 17:20 | Al Ahli v Al Nassr | Al Ahli/Al Nassr | lay | 32.00 | £1.61 | open | - |
-| 17:20 | Arminia Bielefeld v FC Magdeburg | A Bielefeld/FC Magdeburg | lay | 50.00 | £1.02 | open | - |
-| 17:20 | Al Ahli v Al Nassr | Al Nassr/Al Ahli | lay | 38.00 | £1.35 | open | - |
 | 17:20 | Al Ahli v Al Nassr | Al Nassr/Draw | lay | 19.00 | £2.78 | open | - |
+| 17:20 | Al Ahli v Al Nassr | Al Nassr/Al Ahli | lay | 38.00 | £1.35 | open | - |
+| 17:20 | KSV 1919 v WSC Hertha Wels | KSV 1919/Herta Wels | lay | 36.00 | £1.43 | open | - |
+| 17:20 | SV Darmstadt v FC Heidenheim | FC Heidenheim | back | 2.02 | £50.00 | closed at 2.02, waiting for the result | - |
+| 17:20 | KSV 1919 v WSC Hertha Wels | Herta Wels/Draw | lay | 19.50 | £2.70 | open | - |
 | 17:20 | KSV 1919 v WSC Hertha Wels | Herta Wels/KSV 1919 | lay | 50.00 | £1.02 | open | - |
 | 17:20 | Arminia Bielefeld v FC Magdeburg | A Bielefeld/Draw | lay | 18.00 | £2.94 | open | - |
 | 17:20 | AF Elbasani v Dinamo Tirana | Dinamo Tirana/Draw | lay | 21.00 | £2.50 | open | - |
 | 17:20 | St Polten v Voitsberg | St Polten/Voitsberg | lay | 46.00 | £1.11 | open | - |
 | 17:20 | St Polten v Voitsberg | Voitsberg/St Polten | lay | 32.00 | £1.61 | open | - |
-| 17:20 | KSV 1919 v WSC Hertha Wels | KSV 1919/Herta Wels | lay | 36.00 | £1.43 | open | - |
-| 17:20 | St Polten v Voitsberg | Voitsberg/Draw | lay | 19.50 | £2.70 | open | - |
 | 17:20 | St Polten v Voitsberg | St Polten/Draw | lay | 18.50 | £2.86 | open | - |
+| 17:20 | AF Elbasani v Dinamo Tirana | AF Elbasani/Dinamo Tirana | lay | 50.00 | £1.02 | open | - |
+| 17:20 | 1. FC Union Berlin (W) v Leverkusen (W) | Union Berlin W/Leverkusen (W) | lay | 36.00 | £1.43 | open | - |
 | 17:20 | 1. FC Union Berlin (W) v Leverkusen (W) | Union Berlin W/Draw | lay | 23.00 | £2.27 | open | - |
 | 17:20 | 1. FC Union Berlin (W) v Leverkusen (W) | Draw/Union Berlin W | lay | 12.50 | £4.35 | open | - |
 | 17:20 | 1. FC Union Berlin (W) v Leverkusen (W) | Leverkusen (W)/Draw | lay | 23.00 | £2.27 | open | - |
 | 17:20 | KSV 1919 v WSC Hertha Wels | Draw/KSV 1919 | lay | 11.00 | £5.00 | open | - |
 | 17:20 | KSV 1919 v WSC Hertha Wels | KSV 1919/Draw | lay | 20.00 | £2.63 | open | - |
-| 17:20 | KSV 1919 v WSC Hertha Wels | Herta Wels/Draw | lay | 19.50 | £2.70 | open | - |
-| 17:20 | 1. FC Union Berlin (W) v Leverkusen (W) | Union Berlin W/Leverkusen (W) | lay | 36.00 | £1.43 | open | - |
+| 17:20 | St Polten v Voitsberg | Voitsberg/Draw | lay | 19.50 | £2.70 | open | - |
 | 17:20 | TSV Havelse v Viktoria Koln | 0 - 1 | back | 15.50 | £3.79 | open | - |
-| 17:21 | Chrobry Glogow v Puszcza Niepolomice | Puszcza Niepolomice | back | 4.00 | £11.65 | closed at 4.10, waiting for the result | - |
 | 17:21 | Chrobry Glogow v Puszcza Niepolomice | The Draw | lay | 3.00 | £10.00 | closed at 3.55, waiting for the result | - |
+| 17:21 | Chrobry Glogow v Puszcza Niepolomice | Puszcza Niepolomice | back | 4.00 | £11.65 | closed at 4.10, waiting for the result | - |
 | 17:21 | Piast Gliwice v Korona Kielce | Korona Kielce | back | 3.15 | £35.71 | closed at 3.25, waiting for the result | - |
 | 17:21 | Piast Gliwice v Korona Kielce | Korona Kielce | lay | 3.20 | £22.73 | closed at 8.40, waiting for the result | - |
 | 17:21 | Piast Gliwice v Korona Kielce | Piast Gliwice | lay | 2.60 | £31.25 | closed at 1.53, waiting for the result | - |
@@ -2851,67 +2851,67 @@
 | 17:23 | Lechia Zielona Gora v Chojniczanka Chojnice | Chojniczanka Chojnice | back | 2.88 | £5.07 | closed at 2.96, waiting for the result | - |
 | 17:23 | Lechia Zielona Gora v Chojniczanka Chojnice | Lechia Zielona Gora | back | 2.64 | £5.90 | closed at 2.90, waiting for the result | - |
 | 17:23 | Lechia Zielona Gora v Chojniczanka Chojnice | Under 2.5 Goals | lay | 1.77 | £27.84 | closed at 1.22, waiting for the result | - |
-| 17:24 | FK Pribram v Usti Nad Labem | The Draw | lay | 3.40 | £10.02 | open | - |
 | 17:24 | FK Pribram v Usti Nad Labem | Usti Nad Labem | back | 2.54 | £21.50 | closed at 2.64, waiting for the result | - |
+| 17:24 | FK Pribram v Usti Nad Labem | The Draw | lay | 3.40 | £10.02 | open | - |
 | 17:24 | FK Pribram v Usti Nad Labem | FK Pribram | lay | 3.35 | £21.28 | open | - |
 | 17:24 | FK Pribram v Usti Nad Labem | Usti Nad Labem | lay | 2.62 | £30.86 | open | - |
 | 17:24 | Independiente (Ecu) v Macara | Macara | lay | 3.15 | £23.26 | closed at 2.40, waiting for the result | - |
 | 17:24 | Independiente (Ecu) v Macara | Independiente (Ecu) | lay | 2.58 | £15.35 | closed at 3.60, waiting for the result | - |
 | 17:24 | Independiente (Ecu) v Macara | Macara | back | 3.05 | £9.34 | closed at 3.05, waiting for the result | - |
 | 17:24 | Independiente (Ecu) v Macara | The Draw | back | 3.50 | £14.08 | closed at 3.55, waiting for the result | - |
-| 17:25 | Wolverhampton 20th Nov | Rose Deer | back | 10.50 | £50.00 | closed at 9.80, waiting for the result | - |
+| 17:25 | Wolverhampton 20th Nov | My Amanah | back | 9.20 | £50.00 | closed at 12.50, waiting for the result | - |
 | 17:25 | Wolverhampton 20th Nov | Edith The Fair | back | 40.00 | £27.13 | closed at 44.00, waiting for the result | - |
 | 17:25 | Wolverhampton 20th Nov | Lavender Bay | back | 18.00 | £20.50 | closed at 21.00, waiting for the result | - |
 | 17:25 | Wolverhampton 20th Nov | Diablesa | back | 40.00 | £11.65 | closed at 32.00, waiting for the result | - |
-| 17:25 | Wolverhampton 20th Nov | My Amanah | back | 9.20 | £50.00 | closed at 12.50, waiting for the result | - |
+| 17:25 | Wolverhampton 20th Nov | Rose Deer | back | 10.50 | £50.00 | closed at 9.80, waiting for the result | - |
 | 17:25 | Wolverhampton 20th Nov | Sa Llagosta | back | 170.00 | £8.71 | open | - |
+| 17:25 | Wolverhampton 20th Nov | Velora | back | 65.00 | £12.22 | open | - |
 | 17:25 | Wolverhampton 20th Nov | My Amanah | lay | 9.40 | £5.95 | closed at 12.00, waiting for the result | - |
-| 17:25 | Wolverhampton 20th Nov | Diablesa | lay | 42.00 | £1.22 | closed at 30.00, waiting for the result | - |
 | 17:25 | Wolverhampton 20th Nov | Lavender Bay | lay | 18.50 | £2.86 | closed at 20.00, waiting for the result | - |
 | 17:25 | Wolverhampton 20th Nov | Noble Light | back | 2.28 | £50.00 | closed at 2.24, waiting for the result | - |
 | 17:25 | Wolverhampton 20th Nov | Lady Phillips | back | 4.50 | £50.00 | closed at 4.50, waiting for the result | - |
-| 17:25 | Wolverhampton 20th Nov | Velora | back | 65.00 | £12.22 | open | - |
+| 17:25 | Wolverhampton 20th Nov | Diablesa | lay | 42.00 | £1.22 | closed at 30.00, waiting for the result | - |
 | 17:26 | Wolverhampton 20th Nov | Lady Phillips | lay | 4.50 | £14.29 | closed at 4.20, waiting for the result | - |
 | 17:26 | AGF v Lyngby | 0 - 1 | back | 23.00 | £17.98 | open | - |
-| 17:28 | Rapid Vienna (Am) v FC Blau Weiss Linz | The Draw | lay | 6.60 | £8.93 | closed at 7.00, waiting for the result | - |
-| 17:28 | St Polten v Voitsberg | The Draw | lay | 4.00 | £16.67 | closed at 3.60, waiting for the result | - |
-| 17:28 | St Polten v Voitsberg | St Polten | lay | 2.20 | £41.67 | closed at 2.40, waiting for the result | - |
-| 17:28 | Floridsdorfer AC v Austria Wien (A) | The Draw | lay | 3.65 | £18.87 | closed at 3.35, waiting for the result | - |
+| 17:28 | KSV 1919 v WSC Hertha Wels | The Draw | lay | 4.20 | £15.62 | closed at 3.90, waiting for the result | - |
 | 17:28 | SV Darmstadt v FC Heidenheim | SV Darmstadt | lay | 3.80 | £17.86 | closed at 7.80, waiting for the result | - |
 | 17:28 | Arminia Bielefeld v FC Magdeburg | Arminia Bielefeld | lay | 2.22 | £40.98 | closed at 2.06, waiting for the result | - |
-| 17:28 | KSV 1919 v WSC Hertha Wels | The Draw | lay | 4.20 | £15.62 | closed at 3.90, waiting for the result | - |
+| 17:28 | St Polten v Voitsberg | St Polten | lay | 2.20 | £41.67 | closed at 2.40, waiting for the result | - |
+| 17:28 | St Polten v Voitsberg | The Draw | lay | 4.00 | £16.67 | closed at 3.60, waiting for the result | - |
 | 17:28 | Rapid Vienna (Am) v FC Blau Weiss Linz | FC Blau Weiss Linz | lay | 1.34 | £147.06 | closed at 1.27, waiting for the result | - |
-| 17:28 | Wolverhampton 20th Nov | Rose Deer | back | 9.60 | £49.88 | closed at 9.80, waiting for the result | - |
-| 17:28 | Wolverhampton 20th Nov | Lady Phillips | lay | 4.50 | £14.29 | open | - |
+| 17:28 | Floridsdorfer AC v Austria Wien (A) | The Draw | lay | 3.65 | £18.87 | closed at 3.35, waiting for the result | - |
+| 17:28 | Al Ahli v Al Nassr | Al Nassr | lay | 2.48 | £33.78 | closed at 2.46, waiting for the result | - |
+| 17:28 | Rapid Vienna (Am) v FC Blau Weiss Linz | The Draw | lay | 6.60 | £8.93 | closed at 7.00, waiting for the result | - |
 | 17:28 | Wolverhampton 20th Nov | My Amanah | lay | 11.50 | £4.76 | closed at 30.00, waiting for the result | - |
+| 17:28 | Wolverhampton 20th Nov | Lady Phillips | lay | 4.50 | £14.29 | open | - |
 | 17:28 | Wolverhampton 20th Nov | Time To Approach | lay | 42.00 | £1.22 | open | - |
 | 17:28 | Wolverhampton 20th Nov | Diablesa | lay | 38.00 | £1.35 | open | - |
 | 17:28 | Wolverhampton 20th Nov | Edith The Fair | lay | 38.00 | £1.35 | open | - |
 | 17:28 | Wolverhampton 20th Nov | Rose Deer | lay | 10.00 | £5.56 | open | - |
 | 17:28 | Wolverhampton 20th Nov | Noble Light | back | 2.28 | £50.00 | closed at 2.24, waiting for the result | - |
-| 17:28 | Al Ahli v Al Nassr | Al Nassr | lay | 2.48 | £33.78 | closed at 2.46, waiting for the result | - |
-| 17:29 | Wolverhampton 20th Nov | Diablesa | lay | 29.00 | £1.79 | open | - |
-| 17:29 | Wolverhampton 20th Nov | Time To Approach | lay | 44.00 | £1.16 | open | - |
-| 17:29 | Wolverhampton 20th Nov | Rose Deer | lay | 9.40 | £5.95 | open | - |
-| 17:29 | Wolverhampton 20th Nov | Time To Approach | back | 42.00 | £12.70 | closed at 44.00, waiting for the result | - |
-| 17:29 | Wolverhampton 20th Nov | Rose Deer | back | 9.20 | £30.16 | closed at 9.80, waiting for the result | - |
+| 17:28 | Wolverhampton 20th Nov | Rose Deer | back | 9.60 | £49.88 | closed at 9.80, waiting for the result | - |
 | 17:29 | Wolverhampton 20th Nov | Lady Phillips | back | 4.30 | £50.00 | closed at 4.50, waiting for the result | - |
+| 17:29 | Wolverhampton 20th Nov | Rose Deer | back | 9.20 | £30.16 | closed at 9.80, waiting for the result | - |
+| 17:29 | Wolverhampton 20th Nov | Time To Approach | back | 42.00 | £12.70 | closed at 44.00, waiting for the result | - |
 | 17:29 | Wolverhampton 20th Nov | Diablesa | back | 27.00 | £16.65 | closed at 32.00, waiting for the result | - |
+| 17:29 | Wolverhampton 20th Nov | Rose Deer | lay | 9.40 | £5.95 | open | - |
+| 17:29 | Wolverhampton 20th Nov | Time To Approach | lay | 44.00 | £1.16 | open | - |
+| 17:29 | Wolverhampton 20th Nov | Diablesa | lay | 29.00 | £1.79 | open | - |
 | 17:29 | 76 Igdir Belediyespor v Umraniyespor | Over 2.5 Goals | back | 1.17 | £50.00 | closed at 1.18, waiting for the result | - |
 | 17:29 | 76 Igdir Belediyespor v Umraniyespor | The Draw | lay | 3.20 | £22.73 | open | - |
-| 17:30 | Stade Nyonnais v FC Wil | FC Wil | lay | 1.75 | £43.46 | closed at 1.74, waiting for the result | - |
-| 17:30 | Stade Lausanne-Ouchy v Kriens | Kriens | lay | 7.80 | £4.00 | closed at 7.20, waiting for the result | - |
-| 17:30 | Stade Lausanne-Ouchy v Kriens | Stade Lausanne-Ouchy | lay | 1.46 | £5.18 | closed at 1.45, waiting for the result | - |
-| 17:30 | Rapperswil-Jona v Aarau | Aarau | lay | 2.22 | £5.92 | closed at 2.18, waiting for the result | - |
-| 17:30 | Neuchatel Xamax v Etoile Carouge | Neuchatel Xamax | back | 2.28 | £14.93 | open | - |
-| 17:30 | Farul Constanta v Universitatea Cluj | The Draw | lay | 3.50 | £9.60 | closed at 3.45, waiting for the result | - |
-| 17:30 | Rapperswil-Jona v Aarau | Rapperswil-Jona | lay | 3.30 | £21.74 | closed at 3.15, waiting for the result | - |
-| 17:30 | Rapperswil-Jona v Aarau | The Draw | back | 4.10 | £15.66 | open | - |
 | 17:30 | Stade Lausanne-Ouchy v Kriens | The Draw | back | 5.40 | £6.00 | closed at 3.20, waiting for the result | - |
 | 17:30 | Stade Lausanne-Ouchy v Kriens | Kriens | back | 7.20 | £50.00 | closed at 6.00, waiting for the result | - |
-| 17:30 | Stade Nyonnais v FC Wil | The Draw | lay | 4.80 | £9.35 | closed at 4.50, waiting for the result | - |
 | 17:30 | Farul Constanta v Universitatea Cluj | Universitatea Cluj | lay | 2.70 | £4.79 | closed at 2.94, waiting for the result | - |
 | 17:30 | Farul Constanta v Universitatea Cluj | Farul Constanta | lay | 3.00 | £25.00 | closed at 2.64, waiting for the result | - |
+| 17:30 | Rapperswil-Jona v Aarau | Rapperswil-Jona | lay | 3.30 | £21.74 | closed at 3.15, waiting for the result | - |
+| 17:30 | Rapperswil-Jona v Aarau | The Draw | back | 4.10 | £15.66 | open | - |
+| 17:30 | Neuchatel Xamax v Etoile Carouge | Neuchatel Xamax | back | 2.28 | £14.93 | open | - |
+| 17:30 | Stade Nyonnais v FC Wil | FC Wil | lay | 1.75 | £43.46 | closed at 1.74, waiting for the result | - |
+| 17:30 | Stade Nyonnais v FC Wil | The Draw | lay | 4.80 | £9.35 | closed at 4.50, waiting for the result | - |
+| 17:30 | Rapperswil-Jona v Aarau | Aarau | lay | 2.22 | £5.92 | closed at 2.18, waiting for the result | - |
+| 17:30 | Stade Lausanne-Ouchy v Kriens | Stade Lausanne-Ouchy | lay | 1.46 | £5.18 | closed at 1.45, waiting for the result | - |
+| 17:30 | Stade Lausanne-Ouchy v Kriens | Kriens | lay | 7.80 | £4.00 | closed at 7.20, waiting for the result | - |
+| 17:30 | Farul Constanta v Universitatea Cluj | The Draw | lay | 3.50 | £9.60 | closed at 3.45, waiting for the result | - |
 | 17:30 | Farul Constanta v Universitatea Cluj | Any Other Away Win | back | 23.00 | £6.67 | open | - |
 | 17:30 | Farul Constanta v Universitatea Cluj | 0 - 0 | back | 13.00 | £8.78 | open | - |
 | 17:30 | Aarhus Fremad v Hobro | 1 - 3 | back | 46.00 | £4.14 | open | - |
@@ -2921,9 +2921,9 @@
 | 17:31 | Piast Gliwice v Korona Kielce | The Draw | lay | 3.25 | £22.22 | open | - |
 | 17:31 | St Polten v Voitsberg | The Draw | lay | 4.00 | £16.67 | open | - |
 | 17:31 | Floridsdorfer AC v Austria Wien (A) | The Draw | lay | 3.70 | £18.52 | closed at 1.98, waiting for the result | - |
-| 17:31 | Kolding IF v AaB | 2 - 1 | back | 12.00 | £28.50 | open | - |
 | 17:31 | Kolding IF v AaB | 1 - 0 | back | 9.80 | £8.52 | open | - |
 | 17:31 | Kolding IF v AaB | 2 - 0 | back | 18.00 | £11.57 | open | - |
+| 17:31 | Kolding IF v AaB | 2 - 1 | back | 12.00 | £28.50 | open | - |
 | 17:31 | TSV Havelse v Viktoria Koln | 2 - 2 | back | 18.00 | £7.42 | open | - |
 | 17:31 | Wolverhampton 20th Nov | Velora | back | 36.00 | £2.69 | open | - |
 | 17:31 | Wolverhampton 20th Nov | Time To Approach | back | 27.00 | £7.75 | open | - |
@@ -2931,8 +2931,8 @@
 | 17:31 | Piast Gliwice v Korona Kielce | Under 2.5 Goals | back | 1.53 | £50.00 | closed at 1.53, waiting for the result | - |
 | 17:31 | Wolverhampton 20th Nov | Lady Phillips | back | 5.60 | £3.48 | open | - |
 | 17:32 | Wolverhampton 20th Nov | Lavender Bay | lay | 17.50 | £3.00 | open | - |
-| 17:32 | Wolverhampton 20th Nov | Noble Light | lay | 1.63 | £2.51 | closed at 1.64, waiting for the result | - |
 | 17:32 | Wolverhampton 20th Nov | My Amanah | back | 30.00 | £3.59 | open | - |
+| 17:32 | Wolverhampton 20th Nov | Noble Light | lay | 1.63 | £2.51 | closed at 1.64, waiting for the result | - |
 | 17:32 | Wolverhampton 20th Nov | Diablesa | back | 180.00 | £2.58 | open | - |
 | 17:32 | Wolverhampton 20th Nov | Time To Approach | lay | 21.00 | £2.50 | open | - |
 | 17:32 | Wolverhampton 20th Nov | Velora | back | 55.00 | £2.76 | open | - |
@@ -2944,10 +2944,10 @@
 | 17:33 | SV Darmstadt v FC Heidenheim | Under 2.5 Goals | back | 2.92 | £50.00 | closed at 2.86, waiting for the result | - |
 | 17:33 | Kolding IF v AaB | 3 - 0 | back | 44.00 | £4.91 | open | - |
 | 17:33 | Wolverhampton 20th Nov | My Amanah | lay | 1.13 | £384.62 | open | - |
-| 17:35 | win (1.265760593) | Angel Invincible | back | 26.00 | £12.19 | open | - |
-| 17:35 | win (1.265760593) | Marcescence | lay | 9.80 | £5.68 | open | - |
 | 17:35 | win (1.265760593) | Dear Theodosia | lay | 9.40 | £5.95 | open | - |
 | 17:35 | win (1.265760593) | Closefield Beau | lay | 5.70 | £10.64 | open | - |
+| 17:35 | win (1.265760593) | Angel Invincible | back | 26.00 | £12.19 | open | - |
+| 17:35 | win (1.265760593) | Marcescence | lay | 9.80 | £5.68 | open | - |
 | 17:35 | AGF v Lyngby | 1 - 2 | back | 18.50 | £14.94 | open | - |
 | 17:35 | Al Ahli v Al Nassr | Under 2.5 Goals | back | 2.42 | £50.00 | closed at 2.44, waiting for the result | - |
 | 17:35 | Arminia Bielefeld v FC Magdeburg | Under 2.5 Goals | back | 2.08 | £50.00 | closed at 2.10, waiting for the result | - |
@@ -2957,28 +2957,28 @@
 | 17:40 | win (1.265760593) | Angel Invincible | back | 30.00 | £30.38 | closed at 34.00, waiting for the result | - |
 | 17:40 | win (1.265760593) | Prince Of Peppard | back | 3.90 | £50.00 | closed at 4.10, waiting for the result | - |
 | 17:40 | win (1.265760593) | Cloughleagh Bridge | back | 65.00 | £22.26 | open | - |
-| 17:40 | win (1.265760593) | Bull Shark | back | 3.25 | £50.00 | closed at 3.10, waiting for the result | - |
 | 17:40 | win (1.265760593) | Closefield Beau | back | 4.90 | £50.00 | closed at 6.20, waiting for the result | - |
-| 17:40 | win (1.265760593) | Angel Invincible | lay | 34.00 | £1.52 | closed at 26.00, waiting for the result | - |
+| 17:40 | win (1.265760593) | Bull Shark | back | 3.25 | £50.00 | closed at 3.10, waiting for the result | - |
 | 17:40 | win (1.265760593) | Bull Shark | lay | 3.30 | £9.33 | closed at 3.05, waiting for the result | - |
+| 17:40 | win (1.265760593) | Angel Invincible | lay | 34.00 | £1.52 | closed at 26.00, waiting for the result | - |
 | 17:40 | win (1.265760593) | Prince Of Peppard | lay | 3.95 | £12.70 | closed at 4.10, waiting for the result | - |
 | 17:40 | win (1.265760593) | Marcescence | lay | 11.00 | £5.00 | closed at 7.80, waiting for the result | - |
 | 17:40 | win (1.265760593) | Dear Theodosia | back | 9.80 | £41.74 | closed at 11.00, waiting for the result | - |
 | 17:40 | win (1.265760593) | Closefield Beau | lay | 5.00 | £7.33 | closed at 6.00, waiting for the result | - |
 | 17:41 | Aarhus Fremad v Hobro | Any Other Home Win | back | 18.50 | £2.30 | open | - |
 | 17:42 | win (1.265760593) | Bull Shark | lay | 2.82 | £27.47 | closed at 3.10, waiting for the result | - |
-| 17:42 | Stade Lausanne-Ouchy v Kriens | Any Other Away Win | back | 65.00 | £15.37 | open | - |
 | 17:42 | Stade Lausanne-Ouchy v Kriens | 0 - 1 | back | 32.00 | £50.00 | open | - |
+| 17:42 | Stade Lausanne-Ouchy v Kriens | Any Other Away Win | back | 65.00 | £15.37 | open | - |
 | 17:42 | Rapperswil-Jona v Aarau | 0 - 0 | back | 27.00 | £1.19 | open | - |
 | 17:42 | Rapperswil-Jona v Aarau | 3 - 0 | back | 48.00 | £1.19 | open | - |
-| 17:43 | win (1.265760593) | Prince Of Peppard | lay | 4.60 | £13.89 | open | - |
-| 17:43 | win (1.265760593) | Angel Invincible | lay | 34.00 | £1.52 | closed at 8.40, waiting for the result | - |
 | 17:43 | win (1.265760593) | Marcescence | lay | 10.00 | £5.56 | closed at 3.45, waiting for the result | - |
+| 17:43 | win (1.265760593) | Angel Invincible | lay | 34.00 | £1.52 | closed at 8.40, waiting for the result | - |
+| 17:43 | win (1.265760593) | Prince Of Peppard | lay | 4.60 | £13.89 | open | - |
 | 17:44 | win (1.265760593) | Angel Invincible | lay | 28.00 | £1.85 | open | - |
-| 17:44 | win (1.265760593) | Bull Shark | back | 3.10 | £50.00 | closed at 3.10, waiting for the result | - |
-| 17:44 | win (1.265760593) | Angel Invincible | back | 26.00 | £18.31 | closed at 28.00, waiting for the result | - |
 | 17:44 | win (1.265760593) | Marcescence | back | 8.00 | £41.23 | closed at 8.20, waiting for the result | - |
 | 17:44 | win (1.265760593) | Marcescence | lay | 8.20 | £6.94 | open | - |
+| 17:44 | win (1.265760593) | Bull Shark | back | 3.10 | £50.00 | closed at 3.10, waiting for the result | - |
+| 17:44 | win (1.265760593) | Angel Invincible | back | 26.00 | £18.31 | closed at 28.00, waiting for the result | - |
 | 17:44 | SV Darmstadt v FC Heidenheim | Over 2.5 Goals | back | 1.23 | £50.00 | closed at 1.24, waiting for the result | - |
 | 17:45 | Floridsdorfer AC v Austria Wien (A) | Over 2.5 Goals | back | 1.51 | £50.00 | closed at 1.52, waiting for the result | - |
 | 17:45 | TSV Havelse v Viktoria Koln | 2 - 0 | back | 70.00 | £11.95 | open | - |
@@ -2991,7 +2991,6 @@
 | 17:47 | win (1.265760593) | Closefield Beau | back | 6.40 | £13.34 | open | - |
 | 17:49 | 76 Igdir Belediyespor v Umraniyespor | The Draw | lay | 2.70 | £14.32 | closed at 2.60, waiting for the result | - |
 | 17:49 | Rapid Vienna (Am) v FC Blau Weiss Linz | Over 2.5 Goals | back | 1.05 | £50.00 | closed at 1.06, waiting for the result | - |
-| 17:50 | Kolding IF v AaB | Kolding IF/AaB | lay | 42.00 | £1.22 | open | - |
 | 17:50 | Kolding IF v AaB | Kolding IF/Draw | lay | 19.50 | £2.70 | open | - |
 | 17:50 | Aarhus Fremad v Hobro | Hobro/Aarhus Fremad | lay | 44.00 | £1.16 | closed at 2.80, waiting for the result | - |
 | 17:50 | Aarhus Fremad v Hobro | Aarhus Fremad/Draw | lay | 22.00 | £2.38 | closed at 4.80, waiting for the result | - |
@@ -3000,28 +2999,29 @@
 | 17:50 | Wolverhampton 20th Nov | Mesolithic | back | 18.50 | £27.80 | open | - |
 | 17:50 | Wolverhampton 20th Nov | Red Kateryna | back | 200.00 | £2.50 | open | - |
 | 17:50 | Wolverhampton 20th Nov | El Kahlaa | back | 13.50 | £21.16 | open | - |
-| 17:50 | Wolverhampton 20th Nov | Fifth Amendment | lay | 10.00 | £5.56 | open | - |
-| 17:50 | Wolverhampton 20th Nov | Speaking Tree | back | 75.00 | £4.66 | open | - |
 | 17:50 | Wolverhampton 20th Nov | Catalistic | back | 320.00 | £2.16 | open | - |
-| 17:50 | Wolverhampton 20th Nov | Sayidah Iffraaj | lay | 7.60 | £7.58 | open | - |
+| 17:50 | Wolverhampton 20th Nov | Speaking Tree | back | 75.00 | £4.66 | open | - |
 | 17:50 | Kolding IF v AaB | AaB/Kolding IF | lay | 50.00 | £1.02 | open | - |
+| 17:50 | Wolverhampton 20th Nov | Sayidah Iffraaj | lay | 7.60 | £7.58 | open | - |
+| 17:50 | Wolverhampton 20th Nov | Fifth Amendment | lay | 10.00 | £5.56 | open | - |
 | 17:50 | Azam FC v Singida Black Stars SC | Azam FC | back | 1.52 | £2.25 | open | - |
 | 17:50 | AGF v Lyngby | Lyngby | back | 5.10 | £50.00 | closed at 5.20, waiting for the result | - |
 | 17:50 | Azam FC v Singida Black Stars SC | The Draw | back | 4.10 | £2.00 | closed at 4.40, waiting for the result | - |
 | 17:50 | CD Teruel v Hercules CF | The Draw | back | 3.10 | £24.78 | closed at 3.20, waiting for the result | - |
 | 17:50 | Wolverhampton 20th Nov | Lunar Storm | back | 75.00 | £2.81 | open | - |
 | 17:50 | Kolding IF v AaB | AaB/Draw | lay | 18.50 | £2.86 | open | - |
+| 17:50 | Kolding IF v AaB | Kolding IF/AaB | lay | 42.00 | £1.22 | open | - |
 | 17:50 | Azam FC v Singida Black Stars SC | Azam FC/Draw | lay | 30.00 | £1.72 | open | - |
-| 17:50 | Aarhus Fremad v Hobro | The Draw | back | 3.40 | £6.89 | closed at 3.45, waiting for the result | - |
 | 17:50 | Azam FC v Singida Black Stars SC | Singida Black Stars SC | back | 8.20 | £2.00 | open | - |
 | 17:50 | AGF v Lyngby | The Draw | back | 4.40 | £23.56 | closed at 4.60, waiting for the result | - |
 | 17:50 | Molde v Bodo Glimt | The Draw | back | 5.10 | £50.00 | closed at 5.20, waiting for the result | - |
 | 17:50 | CD Teruel v Hercules CF | CD Teruel | back | 2.92 | £8.02 | closed at 2.98, waiting for the result | - |
-| 17:50 | TSV Havelse v Viktoria Koln | TSV Havelse | back | 7.60 | £5.00 | closed at 7.20, waiting for the result | - |
 | 17:50 | Azam FC v Singida Black Stars SC | Singida Black/Singida Black | lay | 21.00 | £2.50 | open | - |
+| 17:50 | Aarhus Fremad v Hobro | The Draw | back | 3.40 | £6.89 | closed at 3.45, waiting for the result | - |
+| 17:50 | Aarhus Fremad v Hobro | Aarhus Fremad | back | 2.18 | £22.24 | closed at 2.22, waiting for the result | - |
 | 17:50 | AGF v Lyngby | Lyngby/Draw | lay | 22.00 | £2.38 | open | - |
 | 17:50 | AGF v Lyngby | Draw/Lyngby | lay | 15.00 | £3.57 | open | - |
-| 17:50 | Aarhus Fremad v Hobro | Aarhus Fremad | back | 2.18 | £22.24 | closed at 2.22, waiting for the result | - |
+| 17:50 | TSV Havelse v Viktoria Koln | TSV Havelse | back | 7.60 | £5.00 | closed at 7.20, waiting for the result | - |
 | 17:50 | AGF v Lyngby | AGF/Draw | lay | 21.00 | £2.50 | open | - |
 | 17:50 | Molde v Bodo Glimt | Bodo Glimt/Draw | lay | 20.00 | £2.63 | open | - |
 | 17:50 | Molde v Bodo Glimt | Draw/Draw | lay | 14.50 | £3.70 | open | - |
@@ -3029,14 +3029,14 @@
 | 17:50 | Molde v Bodo Glimt | Draw/Molde | lay | 14.50 | £3.70 | open | - |
 | 17:50 | Molde v Bodo Glimt | Molde/Draw | lay | 20.00 | £2.63 | open | - |
 | 17:50 | Molde v Bodo Glimt | Molde/Bodo Glimt | lay | 20.00 | £2.63 | open | - |
-| 17:50 | Azam FC v Singida Black Stars SC | Draw/Singida Black | lay | 24.00 | £2.17 | open | - |
 | 17:50 | AGF v Lyngby | Lyngby/AGF | lay | 30.00 | £1.72 | open | - |
+| 17:50 | Azam FC v Singida Black Stars SC | Draw/Singida Black | lay | 24.00 | £2.17 | open | - |
 | 17:50 | Arminia Bielefeld v FC Magdeburg | The Draw | back | 3.85 | £17.68 | closed at 3.90, waiting for the result | - |
 | 17:50 | St Polten v Voitsberg | Voitsberg | lay | 3.25 | £22.22 | closed at 1.75, waiting for the result | - |
 | 17:50 | Wolverhampton 20th Nov | Zhuri | lay | 1.68 | £73.53 | closed at 1.68, waiting for the result | - |
-| 17:50 | Al Ahli v Al Nassr | Al Ahli | back | 6.40 | £2.25 | closed at 6.60, waiting for the result | - |
 | 17:50 | Al Ahli v Al Nassr | Al Nassr | back | 1.57 | £50.00 | closed at 1.58, waiting for the result | - |
 | 17:50 | Al Ahli v Al Nassr | The Draw | back | 4.80 | £13.05 | closed at 4.80, waiting for the result | - |
+| 17:50 | Al Ahli v Al Nassr | Al Ahli | back | 6.40 | £2.25 | closed at 6.60, waiting for the result | - |
 | 17:50 | Rapid Vienna (Am) v FC Blau Weiss Linz | FC Blau Weiss Linz | back | 1.35 | £50.00 | open | - |
 | 17:51 | Stade Lausanne-Ouchy v Kriens | 0 - 0 | back | 29.00 | £6.68 | open | - |
 | 17:51 | FK Auda v FK Riga | The Draw | back | 3.50 | £2.52 | closed at 3.60, waiting for the result | - |
@@ -3062,9 +3062,9 @@
 | 17:55 | Wolverhampton 20th Nov | Mesolithic | back | 16.00 | £17.65 | closed at 13.50, waiting for the result | - |
 | 17:55 | Wolverhampton 20th Nov | El Kahlaa | back | 11.50 | £50.00 | closed at 8.60, waiting for the result | - |
 | 17:55 | Wolverhampton 20th Nov | Speaking Tree | back | 70.00 | £15.36 | open | - |
-| 17:55 | Wolverhampton 20th Nov | El Kahlaa | lay | 12.00 | £4.55 | closed at 8.40, waiting for the result | - |
-| 17:55 | Wolverhampton 20th Nov | Lunar Storm | back | 60.00 | £18.05 | open | - |
 | 17:55 | Wolverhampton 20th Nov | Fifth Amendment | lay | 10.00 | £5.56 | closed at 13.00, waiting for the result | - |
+| 17:55 | Wolverhampton 20th Nov | Lunar Storm | back | 60.00 | £18.05 | open | - |
+| 17:55 | Wolverhampton 20th Nov | El Kahlaa | lay | 12.00 | £4.55 | closed at 8.40, waiting for the result | - |
 | 17:55 | Wolverhampton 20th Nov | Zhuri | lay | 1.72 | £69.44 | closed at 1.87, waiting for the result | - |
 | 17:55 | Wolverhampton 20th Nov | Sayidah Iffraaj | lay | 7.80 | £7.35 | closed at 6.40, waiting for the result | - |
 | 17:55 | Wolverhampton 20th Nov | Ortenzian Twilight | back | 140.00 | £6.54 | open | - |
@@ -3076,12 +3076,12 @@
 | 17:58 | CD Teruel v Hercules CF | The Draw | lay | 3.15 | £15.96 | closed at 2.98, waiting for the result | - |
 | 17:58 | Aarhus Fremad v Hobro | Aarhus Fremad | lay | 2.24 | £40.32 | closed at 2.30, waiting for the result | - |
 | 17:58 | Molde v Bodo Glimt | The Draw | lay | 5.20 | £11.90 | closed at 5.00, waiting for the result | - |
-| 17:58 | Wolverhampton 20th Nov | Sayidah Iffraaj | lay | 8.40 | £6.76 | closed at 5.30, waiting for the result | - |
+| 17:58 | Wolverhampton 20th Nov | El Kahlaa | lay | 10.50 | £5.26 | closed at 13.50, waiting for the result | - |
 | 17:58 | Aarhus Fremad v Hobro | The Draw | lay | 3.50 | £20.00 | closed at 3.20, waiting for the result | - |
 | 17:58 | Wolverhampton 20th Nov | Fifth Amendment | lay | 11.00 | £5.00 | closed at 27.00, waiting for the result | - |
-| 17:58 | Wolverhampton 20th Nov | El Kahlaa | lay | 10.50 | £5.26 | closed at 13.50, waiting for the result | - |
-| 17:58 | Wolverhampton 20th Nov | Mesolithic | lay | 21.00 | £2.50 | open | - |
 | 17:58 | Molde v Bodo Glimt | Bodo Glimt | lay | 1.76 | £65.79 | closed at 1.73, waiting for the result | - |
+| 17:58 | Wolverhampton 20th Nov | Mesolithic | lay | 21.00 | £2.50 | open | - |
+| 17:58 | Wolverhampton 20th Nov | Sayidah Iffraaj | lay | 8.40 | £6.76 | closed at 5.30, waiting for the result | - |
 | 17:58 | Wolverhampton 20th Nov | Mesolithic | back | 20.00 | £3.40 | closed at 13.50, waiting for the result | - |
 | 17:59 | Wolverhampton 20th Nov | Mesolithic | lay | 13.50 | £4.00 | open | - |
 | 17:59 | Wolverhampton 20th Nov | El Kahlaa | lay | 8.40 | £6.76 | open | - |
@@ -3094,51 +3094,51 @@
 | 17:59 | Dinamo Tbilisi v Torpedo Kutaisi | Under 2.5 Goals | back | 1.04 | £50.00 | open | - |
 | 17:59 | Stade Nyonnais v FC Wil | Any Other Home Win | back | 32.00 | £7.37 | open | - |
 | 18:00 | Den Bosch v VVV Venlo | Den Bosch | back | 2.34 | £14.00 | closed at 2.40, waiting for the result | - |
+| 18:00 | MC Oran v JS Saoura | MC Oran | lay | 1.66 | £3.00 | open | - |
 | 18:00 | Helmond Sport v FC Dordrecht | The Draw | back | 3.90 | £12.00 | closed at 4.10, waiting for the result | - |
 | 18:00 | Annecy v Clermont | Clermont | back | 3.50 | £3.87 | closed at 3.60, waiting for the result | - |
+| 18:00 | Annecy v Clermont | The Draw | back | 3.40 | £9.16 | closed at 3.45, waiting for the result | - |
 | 18:00 | Lierse v SC Lokeren-Temse | SC Lokeren-Temse | back | 1.92 | £2.00 | closed at 1.96, waiting for the result | - |
 | 18:00 | Lierse v SC Lokeren-Temse | Lierse | back | 3.85 | £50.00 | closed at 4.10, waiting for the result | - |
-| 18:00 | Vitesse Arnhem v Jong AZ Alkmaar | The Draw | lay | 4.50 | £12.70 | open | - |
-| 18:00 | FK Mornar v FK Sutjeska | FK Mornar | lay | 2.36 | £2.00 | open | - |
-| 18:00 | MC Oran v JS Saoura | MC Oran | lay | 1.66 | £3.00 | open | - |
-| 18:00 | Vitesse Arnhem v Jong AZ Alkmaar | Vitesse Arnhem | lay | 1.90 | £4.11 | open | - |
 | 18:00 | Fulham U21 v Sporting CP U21 | The Draw | lay | 5.60 | £9.06 | open | - |
+| 18:00 | FK Mornar v FK Sutjeska | FK Mornar | lay | 2.36 | £2.00 | open | - |
+| 18:00 | Vitesse Arnhem v Jong AZ Alkmaar | The Draw | lay | 4.50 | £12.70 | open | - |
+| 18:00 | FC Oss v Roda JC | FC Oss | lay | 3.85 | £17.54 | closed at 3.80, waiting for the result | - |
+| 18:00 | Club Brugge B v Excelsior Virton | The Draw | lay | 4.20 | £4.32 | open | - |
 | 18:00 | Club Brugge B v Excelsior Virton | Club Brugge B | lay | 2.22 | £2.05 | open | - |
 | 18:00 | Den Bosch v VVV Venlo | The Draw | lay | 4.40 | £14.71 | open | - |
 | 18:00 | Metz v Boulogne | Metz | lay | 2.46 | £4.28 | open | - |
 | 18:00 | Metz v Boulogne | The Draw | lay | 3.45 | £20.41 | open | - |
-| 18:00 | Helmond Sport v FC Dordrecht | Helmond Sport | lay | 2.40 | £35.71 | open | - |
 | 18:00 | Lierse v SC Lokeren-Temse | The Draw | lay | 4.50 | £14.29 | open | - |
 | 18:00 | FC Volendam v Jong Ajax Amsterdam | Jong Ajax Amsterdam | lay | 3.85 | £9.00 | closed at 3.70, waiting for the result | - |
 | 18:00 | De Graafschap v MVV Maastricht | MVV Maastricht | lay | 3.80 | £9.00 | closed at 3.80, waiting for the result | - |
-| 18:00 | FC Oss v Roda JC | FC Oss | lay | 3.85 | £17.54 | closed at 3.80, waiting for the result | - |
 | 18:00 | Guingamp v Rodez | Rodez | back | 3.65 | £31.92 | closed at 3.75, waiting for the result | - |
-| 18:00 | Club Brugge B v Excelsior Virton | The Draw | lay | 4.20 | £4.32 | open | - |
+| 18:00 | Vitesse Arnhem v Jong AZ Alkmaar | Vitesse Arnhem | lay | 1.90 | £4.11 | open | - |
 | 18:00 | FC Oss v Roda JC | Roda JC | back | 1.94 | £50.00 | closed at 1.94, waiting for the result | - |
-| 18:00 | Annecy v Clermont | The Draw | back | 3.40 | £9.16 | closed at 3.45, waiting for the result | - |
+| 18:00 | Helmond Sport v FC Dordrecht | Helmond Sport | lay | 2.40 | £35.71 | open | - |
 | 18:00 | De Graafschap v MVV Maastricht | De Graafschap | back | 2.00 | £2.80 | closed at 2.04, waiting for the result | - |
 | 18:00 | Fulham U21 v Sporting CP U21 | Fulham U21 | back | 5.90 | £2.22 | open | - |
 | 18:00 | Fulham U21 v Sporting CP U21 | The Draw | back | 5.30 | £18.81 | open | - |
 | 18:00 | MC Oran v JS Saoura | JS Saoura | back | 8.20 | £2.42 | open | - |
 | 18:00 | West Brom U21 v Coventry City U21 | The Draw | back | 4.70 | £25.86 | closed at 3.25, waiting for the result | - |
-| 18:00 | Bristol City U21 v Norwich U21 | Bristol City U21 | lay | 2.96 | £6.00 | open | - |
+| 18:00 | Red Star v Pau | The Draw | back | 3.50 | £5.88 | closed at 3.55, waiting for the result | - |
+| 18:00 | Queens Park Rangers U21 v Blackburn U21 | Queens Park Rangers U21 | lay | 2.78 | £2.00 | open | - |
 | 18:00 | Leeds United U21 v Charlton U21 | Charlton U21 | lay | 3.20 | £3.00 | open | - |
 | 18:00 | Club Brugge B v Excelsior Virton | Excelsior Virton | lay | 3.30 | £9.00 | open | - |
 | 18:00 | Jong FC Utrecht v Emmen | Jong FC Utrecht | lay | 2.62 | £11.94 | closed at 2.52, waiting for the result | - |
 | 18:00 | Almere City v NAC Breda | Almere City | lay | 3.10 | £13.42 | closed at 3.25, waiting for the result | - |
-| 18:00 | Jong FC Utrecht v Emmen | Emmen | lay | 2.62 | £30.86 | closed at 2.62, waiting for the result | - |
-| 18:00 | Queens Park Rangers U21 v Blackburn U21 | Queens Park Rangers U21 | lay | 2.78 | £2.00 | open | - |
+| 18:00 | Bristol City U21 v Norwich U21 | Bristol City U21 | lay | 2.96 | £6.00 | open | - |
+| 18:00 | Helmond Sport v FC Dordrecht | FC Dordrecht | lay | 3.15 | £14.86 | closed at 3.10, waiting for the result | - |
 | 18:00 | Den Bosch v VVV Venlo | VVV Venlo | lay | 2.92 | £7.00 | closed at 3.05, waiting for the result | - |
 | 18:00 | Metz v Boulogne | Boulogne | lay | 3.35 | £19.00 | closed at 3.25, waiting for the result | - |
 | 18:00 | Bristol City U21 v Norwich U21 | The Draw | back | 4.10 | £12.25 | open | - |
 | 18:00 | Ipswich Town U21 v Porto U21 | Porto U21 | back | 1.99 | £4.00 | open | - |
 | 18:00 | MC Oran v JS Saoura | The Draw | back | 3.60 | £11.00 | closed at 3.80, waiting for the result | - |
-| 18:00 | Red Star v Pau | The Draw | back | 3.50 | £5.88 | closed at 3.55, waiting for the result | - |
 | 18:00 | Almere City v NAC Breda | The Draw | back | 4.10 | £7.65 | closed at 4.20, waiting for the result | - |
 | 18:00 | Almere City v NAC Breda | NAC Breda | back | 2.30 | £50.00 | closed at 2.34, waiting for the result | - |
 | 18:00 | Jong FC Utrecht v Emmen | The Draw | back | 4.40 | £4.19 | closed at 4.60, waiting for the result | - |
 | 18:00 | FC Volendam v Jong Ajax Amsterdam | FC Volendam | back | 1.86 | £15.00 | closed at 1.90, waiting for the result | - |
-| 18:00 | Helmond Sport v FC Dordrecht | FC Dordrecht | lay | 3.15 | £14.86 | closed at 3.10, waiting for the result | - |
+| 18:00 | Jong FC Utrecht v Emmen | Emmen | lay | 2.62 | £30.86 | closed at 2.62, waiting for the result | - |
 | 18:00 | Metz v Boulogne | 3 - 3 | back | 85.00 | £50.00 | open | - |
 | 18:00 | Metz v Boulogne | 0 - 2 | back | 21.00 | £50.00 | open | - |
 | 18:00 | Metz v Boulogne | Any Other Away Win | back | 32.00 | £16.63 | open | - |
@@ -3190,54 +3190,54 @@
 | 18:05 | Dundalk 20th Nov | Alissam | lay | 8.80 | £6.41 | open | - |
 | 18:05 | Dundalk 20th Nov | Celtic Motif | back | 10.50 | £49.28 | closed at 1.89, waiting for the result | - |
 | 18:05 | Dundalk 20th Nov | Apache Outlaw | back | 21.00 | £23.52 | open | - |
-| 18:05 | Dundalk 20th Nov | Tax Me Later | back | 32.00 | £18.46 | open | - |
+| 18:05 | Dundalk 20th Nov | Goal Exceeded | back | 11.50 | £31.24 | open | - |
 | 18:05 | Dundalk 20th Nov | Kullazain | back | 50.00 | £14.35 | open | - |
 | 18:05 | Dundalk 20th Nov | Send Harry | back | 17.00 | £13.21 | open | - |
 | 18:05 | Dundalk 20th Nov | Arryaaf | back | 75.00 | £4.58 | open | - |
 | 18:05 | Dundalk 20th Nov | El Rehaiby | back | 20.00 | £10.13 | open | - |
-| 18:05 | Dundalk 20th Nov | Goal Exceeded | back | 11.50 | £31.24 | open | - |
+| 18:05 | Dundalk 20th Nov | Tax Me Later | back | 32.00 | £18.46 | open | - |
 | 18:06 | Bristol City U21 v Norwich U21 | 1 - 0 | back | 21.00 | £4.85 | open | - |
 | 18:06 | Bristol City U21 v Norwich U21 | 2 - 1 | back | 13.00 | £4.85 | open | - |
 | 18:06 | Bristol City U21 v Norwich U21 | Any Other Home Win | back | 11.50 | £4.85 | open | - |
 | 18:06 | Heracles v Jong PSV Eindhoven | 2 - 1 | back | 13.00 | £14.36 | open | - |
 | 18:06 | Vitesse Arnhem v Jong AZ Alkmaar | Any Other Draw | back | 180.00 | £17.11 | open | - |
 | 18:06 | Vitesse Arnhem v Jong AZ Alkmaar | 3 - 3 | back | 44.00 | £16.38 | open | - |
-| 18:06 | Jong FC Utrecht v Emmen | Any Other Home Win | back | 9.80 | £50.00 | open | - |
 | 18:06 | Jong FC Utrecht v Emmen | 0 - 1 | back | 20.00 | £25.73 | open | - |
+| 18:06 | Jong FC Utrecht v Emmen | Any Other Home Win | back | 9.80 | £50.00 | open | - |
 | 18:06 | Jong FC Utrecht v Emmen | 0 - 2 | back | 22.00 | £32.21 | open | - |
 | 18:07 | Vitesse Arnhem v Jong AZ Alkmaar | 0 - 0 | back | 27.00 | £50.00 | open | - |
 | 18:08 | FC Volendam v Jong Ajax Amsterdam | 0 - 3 | back | 65.00 | £27.33 | open | - |
 | 18:08 | Metz v Boulogne | 3 - 0 | back | 30.00 | £50.00 | open | - |
 | 18:09 | De Graafschap v MVV Maastricht | 3 - 3 | back | 48.00 | £18.96 | open | - |
-| 18:10 | Dundalk 20th Nov | Celtic Motif | back | 10.00 | £7.57 | closed at 9.00, waiting for the result | - |
-| 18:10 | Dundalk 20th Nov | El Rehaiby | lay | 28.00 | £1.85 | closed at 20.00, waiting for the result | - |
-| 18:10 | Dundalk 20th Nov | Eddie G | lay | 10.00 | £5.56 | closed at 8.60, waiting for the result | - |
-| 18:10 | Dundalk 20th Nov | City House | lay | 4.10 | £16.13 | closed at 4.00, waiting for the result | - |
-| 18:10 | Dundalk 20th Nov | Arryaaf | back | 65.00 | £2.69 | open | - |
-| 18:10 | Dundalk 20th Nov | Alissam | back | 7.60 | £15.29 | closed at 7.20, waiting for the result | - |
-| 18:10 | Dundalk 20th Nov | Chicago Pope | back | 7.60 | £23.82 | closed at 9.40, waiting for the result | - |
-| 18:10 | Dundalk 20th Nov | Goal Exceeded | back | 10.50 | £14.92 | closed at 8.40, waiting for the result | - |
-| 18:10 | Dundalk 20th Nov | El Rehaiby | back | 27.00 | £8.16 | closed at 27.00, waiting for the result | - |
-| 18:10 | Dundalk 20th Nov | Eddie G | back | 9.80 | £19.60 | closed at 10.50, waiting for the result | - |
 | 18:10 | Dundalk 20th Nov | City House | back | 4.00 | £50.00 | closed at 4.20, waiting for the result | - |
+| 18:10 | Dundalk 20th Nov | Eddie G | back | 9.80 | £19.60 | closed at 10.50, waiting for the result | - |
+| 18:10 | Dundalk 20th Nov | El Rehaiby | back | 27.00 | £8.16 | closed at 27.00, waiting for the result | - |
+| 18:10 | Dundalk 20th Nov | Goal Exceeded | back | 10.50 | £14.92 | closed at 8.40, waiting for the result | - |
+| 18:10 | Dundalk 20th Nov | Chicago Pope | back | 7.60 | £23.82 | closed at 9.40, waiting for the result | - |
+| 18:10 | Dundalk 20th Nov | Celtic Motif | back | 10.00 | £7.57 | closed at 9.00, waiting for the result | - |
+| 18:10 | Dundalk 20th Nov | Arryaaf | back | 65.00 | £2.69 | open | - |
+| 18:10 | Dundalk 20th Nov | City House | lay | 4.10 | £16.13 | closed at 4.00, waiting for the result | - |
+| 18:10 | Dundalk 20th Nov | Eddie G | lay | 10.00 | £5.56 | closed at 8.60, waiting for the result | - |
+| 18:10 | Dundalk 20th Nov | El Rehaiby | lay | 28.00 | £1.85 | closed at 20.00, waiting for the result | - |
+| 18:10 | Dundalk 20th Nov | Alissam | back | 7.60 | £15.29 | closed at 7.20, waiting for the result | - |
 | 18:10 | Vitesse Arnhem v Jong AZ Alkmaar | 0 - 3 | back | 70.00 | £21.99 | open | - |
 | 18:10 | Farul Constanta v Universitatea Cluj | 1 - 2 | back | 11.00 | £6.72 | open | - |
 | 18:10 | FK Pribram v Usti Nad Labem | Under 2.5 Goals | back | 1.16 | £50.00 | closed at 1.17, waiting for the result | - |
 | 18:11 | MFK Karvina v Banik Ostrava B | Over 2.5 Goals | back | 1.25 | £50.00 | closed at 1.29, waiting for the result | - |
 | 18:12 | De Graafschap v MVV Maastricht | 0 - 1 | back | 20.00 | £9.48 | open | - |
-| 18:13 | Dundalk 20th Nov | Send Harry | back | 17.50 | £9.75 | closed at 22.00, waiting for the result | - |
-| 18:13 | Dundalk 20th Nov | Chicago Pope | lay | 9.20 | £6.10 | open | - |
+| 18:13 | Dundalk 20th Nov | Goal Exceeded | lay | 9.00 | £6.25 | closed at 3.65, waiting for the result | - |
+| 18:13 | Dundalk 20th Nov | Apache Outlaw | lay | 34.00 | £1.52 | closed at 6.80, waiting for the result | - |
+| 18:13 | Dundalk 20th Nov | Send Harry | lay | 19.00 | £2.78 | open | - |
+| 18:13 | Dundalk 20th Nov | Alissam | lay | 7.80 | £7.35 | closed at 26.00, waiting for the result | - |
 | 18:13 | Dundalk 20th Nov | Celtic Motif | lay | 9.60 | £5.81 | open | - |
 | 18:13 | Dundalk 20th Nov | Eddie G | lay | 8.60 | £2.77 | open | - |
-| 18:13 | Dundalk 20th Nov | Alissam | lay | 7.80 | £7.35 | closed at 26.00, waiting for the result | - |
-| 18:13 | Dundalk 20th Nov | Goal Exceeded | lay | 9.00 | £6.25 | closed at 3.65, waiting for the result | - |
-| 18:13 | Dundalk 20th Nov | Send Harry | lay | 19.00 | £2.78 | open | - |
-| 18:13 | Dundalk 20th Nov | Apache Outlaw | lay | 34.00 | £1.52 | closed at 6.80, waiting for the result | - |
+| 18:13 | Dundalk 20th Nov | Chicago Pope | lay | 9.20 | £6.10 | open | - |
+| 18:13 | Dundalk 20th Nov | Send Harry | back | 17.50 | £9.75 | closed at 22.00, waiting for the result | - |
 | 18:14 | Dundalk 20th Nov | Goal Exceeded | lay | 8.00 | £7.14 | open | - |
 | 18:14 | Dundalk 20th Nov | Eddie G | lay | 8.40 | £6.76 | open | - |
-| 18:14 | Dundalk 20th Nov | El Rehaiby | lay | 24.00 | £2.17 | open | - |
-| 18:14 | Dundalk 20th Nov | City House | back | 3.90 | £50.00 | closed at 4.10, waiting for the result | - |
 | 18:14 | Dundalk 20th Nov | Celtic Motif | lay | 9.20 | £6.10 | open | - |
+| 18:14 | Dundalk 20th Nov | City House | back | 3.90 | £50.00 | closed at 4.10, waiting for the result | - |
+| 18:14 | Dundalk 20th Nov | El Rehaiby | lay | 24.00 | £2.17 | open | - |
 | 18:14 | Dundalk 20th Nov | Eddie G | back | 8.00 | £50.00 | closed at 8.80, waiting for the result | - |
 | 18:14 | Dundalk 20th Nov | Celtic Motif | back | 9.00 | £11.53 | closed at 9.00, waiting for the result | - |
 | 18:14 | Dundalk 20th Nov | El Rehaiby | back | 23.00 | £10.66 | closed at 21.00, waiting for the result | - |
@@ -3247,29 +3247,29 @@
 | 18:14 | Red Star v Pau | 0 - 1 | back | 12.50 | £23.19 | open | - |
 | 18:14 | Vitesse Arnhem v Jong AZ Alkmaar | 0 - 1 | back | 22.00 | £35.14 | open | - |
 | 18:15 | Yverdon Sport v Winterthur | The Draw | lay | 4.00 | £16.67 | closed at 3.85, waiting for the result | - |
-| 18:15 | Yverdon Sport v Winterthur | Winterthur | lay | 2.90 | £26.32 | closed at 3.00, waiting for the result | - |
 | 18:15 | Yverdon Sport v Winterthur | Yverdon Sport | lay | 2.52 | £32.89 | closed at 2.46, waiting for the result | - |
+| 18:15 | Yverdon Sport v Winterthur | Winterthur | lay | 2.90 | £26.32 | closed at 3.00, waiting for the result | - |
 | 18:15 | Nancy v Dijon | 1 - 2 | back | 17.00 | £50.00 | open | - |
 | 18:15 | FC Volendam v Jong Ajax Amsterdam | 2 - 3 | back | 27.00 | £32.57 | open | - |
 | 18:15 | Nancy v Dijon | 0 - 2 | back | 36.00 | £50.00 | open | - |
 | 18:15 | Stade Lausanne-Ouchy v Kriens | 1 - 0 | back | 12.00 | £3.18 | open | - |
-| 18:15 | Dundalk 20th Nov | Celtic Motif | lay | 9.80 | £2.49 | open | - |
-| 18:15 | Dundalk 20th Nov | Goal Exceeded | lay | 8.80 | £3.05 | open | - |
+| 18:15 | Dundalk 20th Nov | Arryaaf | back | 55.00 | £2.38 | open | - |
+| 18:15 | Dundalk 20th Nov | Alissam | back | 5.90 | £50.00 | open | - |
+| 18:15 | Dundalk 20th Nov | Chicago Pope | lay | 9.40 | £5.71 | open | - |
 | 18:15 | Dundalk 20th Nov | El Rehaiby | lay | 17.50 | £2.53 | open | - |
 | 18:15 | Dundalk 20th Nov | Eddie G | lay | 10.50 | £2.68 | open | - |
-| 18:15 | Dundalk 20th Nov | Alissam | back | 5.90 | £50.00 | open | - |
-| 18:15 | Dundalk 20th Nov | Arryaaf | back | 55.00 | £2.38 | open | - |
-| 18:15 | Dundalk 20th Nov | Chicago Pope | lay | 9.40 | £5.71 | open | - |
+| 18:15 | Dundalk 20th Nov | Goal Exceeded | lay | 8.80 | £3.05 | open | - |
+| 18:15 | Dundalk 20th Nov | Celtic Motif | lay | 9.80 | £2.49 | open | - |
 | 18:16 | Dundalk 20th Nov | Send Harry | lay | 18.50 | £2.86 | open | - |
-| 18:16 | Dundalk 20th Nov | Goal Exceeded | back | 8.80 | £50.00 | open | - |
 | 18:16 | Dundalk 20th Nov | Celtic Motif | back | 6.80 | £2.45 | open | - |
 | 18:16 | Dundalk 20th Nov | Chicago Pope | back | 8.40 | £3.09 | open | - |
+| 18:16 | Dundalk 20th Nov | Goal Exceeded | back | 8.80 | £50.00 | open | - |
 | 18:16 | Nancy v Dijon | 2 - 0 | back | 12.00 | £50.00 | open | - |
 | 18:16 | Nancy v Dijon | 3 - 1 | back | 16.00 | £50.00 | open | - |
 | 18:16 | Barrientos/Kestelboim v Arias/Carou | Arias/Carou | lay | 6.20 | £9.62 | open | - |
 | 18:16 | Nancy v Dijon | 3 - 0 | back | 17.50 | £50.00 | open | - |
-| 18:16 | Dundalk 20th Nov | El Rehaiby | lay | 8.80 | £3.00 | open | - |
 | 18:16 | Dundalk 20th Nov | Celtic Motif | lay | 8.80 | £6.41 | open | - |
+| 18:16 | Dundalk 20th Nov | El Rehaiby | lay | 8.80 | £3.00 | open | - |
 | 18:16 | Dundalk 20th Nov | Apache Outlaw | lay | 14.00 | £2.16 | open | - |
 | 18:16 | Dundalk 20th Nov | City House | lay | 3.45 | £6.69 | open | - |
 | 18:16 | Dundalk 20th Nov | City House | back | 5.10 | £2.00 | open | - |
@@ -3286,9 +3286,10 @@
 | 18:18 | Den Bosch v VVV Venlo | 0 - 0 | back | 38.00 | £3.99 | open | - |
 | 18:19 | Aarhus Fremad v Hobro | The Draw | lay | 3.10 | £2.00 | open | - |
 | 18:19 | Aarhus Fremad v Hobro | Aarhus Fremad | back | 2.26 | £20.99 | open | - |
+| 18:19 | CD Teruel v Hercules CF | The Draw | back | 2.72 | £28.00 | closed at 2.82, waiting for the result | - |
 | 18:19 | CD Teruel v Hercules CF | CD Teruel | lay | 2.86 | £26.88 | closed at 10.50, waiting for the result | - |
 | 18:19 | CD Teruel v Hercules CF | The Draw | lay | 2.86 | £26.88 | closed at 3.90, waiting for the result | - |
-| 18:19 | CD Teruel v Hercules CF | The Draw | back | 2.72 | £28.00 | closed at 2.82, waiting for the result | - |
+| 18:20 | Stade Lausanne-Ouchy v Kriens | Stade L.O/Draw | lay | 28.00 | £1.85 | open | - |
 | 18:20 | Farul Constanta v Universitatea Cluj | U Cluj/Draw | lay | 18.50 | £2.86 | open | - |
 | 18:20 | Neuchatel Xamax v Etoile Carouge | Neuch Xamax/Etoile Carouge | lay | 50.00 | £1.02 | open | - |
 | 18:20 | Neuchatel Xamax v Etoile Carouge | Etoile Carouge/Neuch Xamax | lay | 36.00 | £1.43 | open | - |
@@ -3297,9 +3298,8 @@
 | 18:20 | win (1.265760982) | King Casper | back | 40.00 | £12.52 | open | - |
 | 18:20 | win (1.265760982) | Hitched | back | 16.50 | £27.55 | open | - |
 | 18:20 | win (1.265760982) | Youarenotforgiven | back | 40.00 | £16.35 | open | - |
-| 18:20 | win (1.265760982) | Prince Rasam | back | 46.00 | £5.07 | open | - |
 | 18:20 | win (1.265760982) | Tonal | back | 10.50 | £50.00 | open | - |
-| 18:20 | Stade Lausanne-Ouchy v Kriens | Stade L.O/Draw | lay | 28.00 | £1.85 | open | - |
+| 18:20 | win (1.265760982) | Prince Rasam | back | 46.00 | £5.07 | open | - |
 | 18:20 | win (1.265760982) | Banner Beauty | back | 150.00 | £4.48 | open | - |
 | 18:20 | win (1.265760982) | Dovey Moon | back | 30.00 | £30.90 | open | - |
 | 18:20 | win (1.265760982) | Kalamunda | back | 10.50 | £50.00 | open | - |
@@ -3307,24 +3307,24 @@
 | 18:20 | Stade Lausanne-Ouchy v Kriens | Stade Lausanne-Ouchy | back | 1.46 | £50.00 | closed at 1.48, waiting for the result | - |
 | 18:20 | win (1.265760982) | Epictetus | back | 18.50 | £50.00 | open | - |
 | 18:20 | Stade Lausanne-Ouchy v Kriens | Kriens/Kriens | lay | 17.50 | £3.03 | open | - |
-| 18:20 | Stade Lausanne-Ouchy v Kriens | Kriens | back | 7.40 | £3.82 | closed at 7.80, waiting for the result | - |
+| 18:20 | Farul Constanta v Universitatea Cluj | Farul Constan/U Cluj | lay | 44.00 | £1.16 | open | - |
 | 18:20 | Stade Lausanne-Ouchy v Kriens | Kriens/Draw | lay | 30.00 | £1.72 | open | - |
 | 18:20 | Farul Constanta v Universitatea Cluj | Farul Constanta | back | 2.68 | £3.72 | open | - |
-| 18:20 | Rapperswil-Jona v Aarau | Aarau | back | 2.26 | £16.50 | closed at 2.30, waiting for the result | - |
+| 18:20 | Stade Lausanne-Ouchy v Kriens | Draw/Kriens | lay | 24.00 | £2.17 | open | - |
+| 18:20 | Stade Lausanne-Ouchy v Kriens | Kriens | back | 7.40 | £3.82 | closed at 7.80, waiting for the result | - |
 | 18:20 | Rapperswil-Jona v Aarau | Rapperswil-Joa/Draw | lay | 21.00 | £2.50 | open | - |
 | 18:20 | Rapperswil-Jona v Aarau | Aarau/Rapperswil-Joa | lay | 42.00 | £1.22 | open | - |
 | 18:20 | Rapperswil-Jona v Aarau | Rapperswil-Joa/Aarau | lay | 32.00 | £1.61 | open | - |
 | 18:20 | Rapperswil-Jona v Aarau | Aarau/Draw | lay | 21.00 | £2.50 | open | - |
-| 18:20 | Stade Lausanne-Ouchy v Kriens | Draw/Kriens | lay | 24.00 | £2.17 | open | - |
 | 18:20 | Stade Nyonnais v FC Wil | FC Wil/Draw | lay | 23.00 | £2.27 | open | - |
+| 18:20 | Rapperswil-Jona v Aarau | Aarau | back | 2.26 | £16.50 | closed at 2.30, waiting for the result | - |
 | 18:20 | Stade Nyonnais v FC Wil | Stade Nyonnais/Draw | lay | 24.00 | £2.17 | open | - |
 | 18:20 | Stade Nyonnais v FC Wil | Draw/Stade Nyonnais | lay | 15.50 | £3.45 | open | - |
 | 18:20 | Farul Constanta v Universitatea Cluj | Farul Constan/Draw | lay | 19.00 | £2.78 | open | - |
 | 18:20 | Farul Constanta v Universitatea Cluj | U Cluj/Farul Constan | lay | 46.00 | £1.11 | open | - |
-| 18:20 | Farul Constanta v Universitatea Cluj | Farul Constan/U Cluj | lay | 44.00 | £1.16 | open | - |
+| 18:20 | Stade Nyonnais v FC Wil | Stade Nyonnais/FC Wil | lay | 30.00 | £1.72 | open | - |
 | 18:20 | Stade Lausanne-Ouchy v Kriens | Draw/Draw | lay | 12.50 | £4.35 | open | - |
 | 18:20 | Stade Lausanne-Ouchy v Kriens | Kriens/Stade L.O | lay | 29.00 | £1.79 | open | - |
-| 18:20 | Stade Nyonnais v FC Wil | Stade Nyonnais/FC Wil | lay | 30.00 | £1.72 | open | - |
 | 18:20 | TSV Havelse v Viktoria Koln | The Draw | back | 4.80 | £7.78 | closed at 8.60, waiting for the result | - |
 | 18:20 | TSV Havelse v Viktoria Koln | TSV Havelse | back | 6.40 | £50.00 | closed at 19.50, waiting for the result | - |
 | 18:20 | Arminia Bielefeld v FC Magdeburg | The Draw | lay | 7.00 | £8.33 | closed at 6.80, waiting for the result | - |
@@ -3349,21 +3349,21 @@
 | 18:24 | Jong FC Utrecht v Emmen | 0 - 0 | back | 32.00 | £9.21 | open | - |
 | 18:24 | L Bronzetti v Strakhova | Valeriya Strakhova | lay | 9.00 | £2.00 | open | - |
 | 18:24 | Vitesse Arnhem v Jong AZ Alkmaar | 1 - 2 | back | 15.50 | £13.67 | open | - |
-| 18:25 | win (1.265760982) | Kalamunda | back | 12.00 | £50.00 | closed at 12.50, waiting for the result | - |
+| 18:25 | win (1.265760982) | Youarenotforgiven | back | 44.00 | £12.49 | closed at 44.00, waiting for the result | - |
 | 18:25 | win (1.265760982) | Epictetus | back | 15.50 | £50.00 | closed at 13.00, waiting for the result | - |
 | 18:25 | win (1.265760982) | Tonal | back | 10.00 | £50.00 | closed at 9.00, waiting for the result | - |
 | 18:25 | win (1.265760982) | Prince Rasam | back | 42.00 | £12.87 | closed at 30.00, waiting for the result | - |
 | 18:25 | win (1.265760982) | Dovey Moon | back | 28.00 | £23.06 | closed at 24.00, waiting for the result | - |
 | 18:25 | win (1.265760982) | Great Blasket | back | 4.20 | £50.00 | closed at 4.30, waiting for the result | - |
 | 18:25 | win (1.265760982) | King Casper | back | 38.00 | £28.67 | closed at 27.00, waiting for the result | - |
-| 18:25 | win (1.265760982) | Youarenotforgiven | back | 44.00 | £12.49 | closed at 44.00, waiting for the result | - |
+| 18:25 | win (1.265760982) | Kalamunda | back | 12.00 | £50.00 | closed at 12.50, waiting for the result | - |
 | 18:25 | win (1.265760982) | Kalamunda | lay | 12.50 | £4.35 | closed at 14.00, waiting for the result | - |
 | 18:25 | win (1.265760982) | Dovey Moon | lay | 30.00 | £1.72 | closed at 22.00, waiting for the result | - |
 | 18:25 | win (1.265760982) | Prince Rasam | lay | 44.00 | £1.16 | closed at 28.00, waiting for the result | - |
 | 18:25 | win (1.265760982) | Epictetus | lay | 16.00 | £3.33 | closed at 12.50, waiting for the result | - |
 | 18:25 | win (1.265760982) | Great Blasket | lay | 4.30 | £15.15 | closed at 4.20, waiting for the result | - |
-| 18:25 | win (1.265760982) | King Casper | lay | 40.00 | £1.28 | closed at 25.00, waiting for the result | - |
 | 18:25 | win (1.265760982) | Banner Beauty | back | 130.00 | £3.69 | open | - |
+| 18:25 | win (1.265760982) | King Casper | lay | 40.00 | £1.28 | closed at 25.00, waiting for the result | - |
 | 18:25 | Arminia Bielefeld v FC Magdeburg | Arminia Bielefeld | lay | 17.50 | £3.03 | open | - |
 | 18:25 | FC Oss v Roda JC | 3 - 1 | back | 36.00 | £5.88 | open | - |
 | 18:25 | Jong FC Utrecht v Emmen | Any Other Away Win | back | 9.80 | £19.77 | open | - |
@@ -3375,10 +3375,10 @@
 | 18:27 | Helmond Sport v FC Dordrecht | 1 - 3 | back | 27.00 | £21.54 | open | - |
 | 18:27 | Annecy v Clermont | 0 - 1 | back | 12.00 | £3.95 | open | - |
 | 18:28 | Rapperswil-Jona v Aarau | The Draw | lay | 4.00 | £16.67 | closed at 3.70, waiting for the result | - |
+| 18:28 | Stade Lausanne-Ouchy v Kriens | Stade Lausanne-Ouchy | back | 1.45 | £32.86 | open | - |
 | 18:28 | Neuchatel Xamax v Etoile Carouge | Neuchatel Xamax | back | 2.14 | £50.00 | open | - |
 | 18:28 | Rapperswil-Jona v Aarau | Aarau | back | 2.26 | £50.00 | open | - |
 | 18:28 | Stade Nyonnais v FC Wil | FC Wil | back | 1.79 | £50.00 | open | - |
-| 18:28 | Stade Lausanne-Ouchy v Kriens | Stade Lausanne-Ouchy | back | 1.45 | £32.86 | open | - |
 | 18:28 | Stade Lausanne-Ouchy v Kriens | Kriens | lay | 7.80 | £7.35 | closed at 7.80, waiting for the result | - |
 | 18:28 | Stade Lausanne-Ouchy v Kriens | Stade Lausanne-Ouchy | lay | 1.46 | £108.70 | closed at 1.42, waiting for the result | - |
 | 18:28 | Neuchatel Xamax v Etoile Carouge | Neuchatel Xamax | lay | 2.16 | £43.10 | closed at 2.30, waiting for the result | - |
@@ -3395,60 +3395,60 @@
 | 18:28 | win (1.265760982) | Dovey Moon | back | 24.00 | £13.90 | closed at 24.00, waiting for the result | - |
 | 18:28 | win (1.265760982) | Great Blasket | back | 4.20 | £33.68 | closed at 4.30, waiting for the result | - |
 | 18:28 | win (1.265760982) | Great Blasket | lay | 4.30 | £15.15 | open | - |
-| 18:29 | win (1.265760982) | King Casper | lay | 26.00 | £2.00 | open | - |
+| 18:29 | win (1.265760982) | Epictetus | lay | 12.50 | £4.35 | open | - |
+| 18:29 | win (1.265760982) | Tonal | lay | 8.80 | £6.41 | open | - |
 | 18:29 | win (1.265760982) | Prince Rasam | lay | 28.00 | £1.85 | open | - |
 | 18:29 | win (1.265760982) | Dovey Moon | lay | 23.00 | £2.12 | open | - |
-| 18:29 | win (1.265760982) | Epictetus | back | 12.00 | £20.40 | closed at 13.00, waiting for the result | - |
-| 18:29 | win (1.265760982) | Tonal | lay | 8.80 | £6.41 | open | - |
+| 18:29 | win (1.265760982) | King Casper | lay | 26.00 | £2.00 | open | - |
+| 18:29 | win (1.265760982) | Tonal | back | 8.60 | £27.41 | closed at 9.00, waiting for the result | - |
 | 18:29 | win (1.265760982) | Prince Rasam | back | 27.00 | £6.89 | closed at 30.00, waiting for the result | - |
 | 18:29 | win (1.265760982) | Dovey Moon | back | 22.00 | £17.16 | closed at 24.00, waiting for the result | - |
 | 18:29 | win (1.265760982) | King Casper | back | 24.00 | £14.58 | closed at 27.00, waiting for the result | - |
 | 18:29 | win (1.265760982) | Banner Beauty | back | 120.00 | £8.45 | open | - |
-| 18:29 | win (1.265760982) | Tonal | back | 8.60 | £27.41 | closed at 9.00, waiting for the result | - |
-| 18:29 | win (1.265760982) | Epictetus | lay | 12.50 | £4.35 | open | - |
+| 18:29 | win (1.265760982) | Epictetus | back | 12.00 | £20.40 | closed at 13.00, waiting for the result | - |
 | 18:29 | Guingamp v Rodez | 2 - 0 | back | 14.00 | £35.93 | open | - |
 | 18:29 | Aarhus Fremad v Hobro | The Draw | lay | 2.82 | £3.82 | open | - |
 | 18:29 | TSV Havelse v Viktoria Koln | Over 2.5 Goals | back | 1.05 | £50.00 | closed at 1.07, waiting for the result | - |
 | 18:30 | SV Austria Salzburg v Admira Wacker | SV Austria Salzburg | lay | 2.46 | £15.00 | closed at 2.38, waiting for the result | - |
-| 18:30 | Pogon Szczecin v Slask Wroclaw | Pogon Szczecin | lay | 1.80 | £8.04 | closed at 1.78, waiting for the result | - |
-| 18:30 | Pogon Szczecin v Slask Wroclaw | Slask Wroclaw | lay | 5.20 | £8.34 | closed at 5.10, waiting for the result | - |
-| 18:30 | Verona v Cesena | Verona | lay | 1.73 | £68.49 | closed at 1.70, waiting for the result | - |
-| 18:30 | Verona v Cesena | The Draw | lay | 4.10 | £16.13 | closed at 4.00, waiting for the result | - |
-| 18:30 | Inverness CT v Ayr | Inverness CT | lay | 1.65 | £50.79 | closed at 1.64, waiting for the result | - |
-| 18:30 | Miedz Legnica v LKS Lodz | The Draw | lay | 3.80 | £16.32 | open | - |
-| 18:30 | Miedz Legnica v LKS Lodz | Miedz Legnica | lay | 2.50 | £9.00 | open | - |
-| 18:30 | FC Andorra v Leganes | The Draw | back | 3.95 | £22.89 | closed at 4.10, waiting for the result | - |
-| 18:30 | FC Andorra v Leganes | FC Andorra | back | 1.92 | £11.14 | closed at 1.92, waiting for the result | - |
-| 18:30 | Bayern Munich v FC Koln | The Draw | back | 16.00 | £50.00 | closed at 16.50, waiting for the result | - |
 | 18:30 | Bayern Munich v FC Koln | Bayern Munich | back | 1.10 | £50.00 | closed at 1.11, waiting for the result | - |
+| 18:30 | Bayern Munich v FC Koln | The Draw | back | 16.00 | £50.00 | closed at 16.50, waiting for the result | - |
+| 18:30 | FC Andorra v Leganes | FC Andorra | back | 1.92 | £11.14 | closed at 1.92, waiting for the result | - |
+| 18:30 | FC Andorra v Leganes | The Draw | back | 3.95 | £22.89 | closed at 4.10, waiting for the result | - |
+| 18:30 | Miedz Legnica v LKS Lodz | Miedz Legnica | lay | 2.50 | £9.00 | open | - |
 | 18:30 | Bayern Munich v FC Koln | FC Koln | back | 34.00 | £50.00 | closed at 36.00, waiting for the result | - |
+| 18:30 | Inverness CT v Ayr | Inverness CT | lay | 1.65 | £50.79 | closed at 1.64, waiting for the result | - |
+| 18:30 | Verona v Cesena | The Draw | lay | 4.10 | £16.13 | closed at 4.00, waiting for the result | - |
+| 18:30 | Verona v Cesena | Verona | lay | 1.73 | £68.49 | closed at 1.70, waiting for the result | - |
+| 18:30 | Pogon Szczecin v Slask Wroclaw | Slask Wroclaw | lay | 5.20 | £8.34 | closed at 5.10, waiting for the result | - |
+| 18:30 | Pogon Szczecin v Slask Wroclaw | Pogon Szczecin | lay | 1.80 | £8.04 | closed at 1.78, waiting for the result | - |
+| 18:30 | Miedz Legnica v LKS Lodz | The Draw | lay | 3.80 | £16.32 | open | - |
 | 18:30 | Liverpool Montevideo v Wanderers (Uru) | Wanderers (Uru) | back | 3.70 | £7.62 | closed at 3.85, waiting for the result | - |
-| 18:30 | Liverpool Montevideo v Wanderers (Uru) | Liverpool Montevideo | back | 2.16 | £50.00 | closed at 2.24, waiting for the result | - |
-| 18:30 | SV Austria Salzburg v Admira Wacker | Admira Wacker | back | 2.96 | £13.08 | open | - |
-| 18:30 | A.C. Trento S.C.S.D. v Cittadella | Cittadella | back | 2.90 | £2.00 | open | - |
-| 18:30 | Liverpool Montevideo v Wanderers (Uru) | The Draw | back | 3.50 | £5.22 | open | - |
-| 18:30 | SV Austria Salzburg v Admira Wacker | Admira Wacker | lay | 3.10 | £23.81 | open | - |
-| 18:30 | A.C. Trento S.C.S.D. v Cittadella | A.C. Trento S.C.S.D. | lay | 2.84 | £10.00 | closed at 2.56, waiting for the result | - |
 | 18:30 | A.C. Trento S.C.S.D. v Cittadella | Cittadella | lay | 2.96 | £25.51 | closed at 3.15, waiting for the result | - |
-| 18:30 | Miedz Legnica v LKS Lodz | LKS Lodz | lay | 3.20 | £20.00 | closed at 3.00, waiting for the result | - |
-| 18:30 | Casertana v Salernitana | Salernitana | lay | 3.25 | £22.22 | closed at 3.60, waiting for the result | - |
-| 18:30 | Casertana v Salernitana | Casertana | lay | 2.64 | £7.68 | closed at 2.38, waiting for the result | - |
-| 18:30 | Cerro v Nacional (Uru) | Cerro | back | 5.10 | £3.00 | closed at 1.84, waiting for the result | - |
-| 18:30 | Inverness CT v Ayr | Ayr | back | 6.00 | £50.00 | closed at 6.20, waiting for the result | - |
-| 18:30 | Pogon Szczecin v Slask Wroclaw | Slask Wroclaw | back | 5.10 | £50.00 | closed at 6.20, waiting for the result | - |
+| 18:30 | SV Austria Salzburg v Admira Wacker | Admira Wacker | back | 2.96 | £13.08 | open | - |
 | 18:30 | Verona v Cesena | Cesena | back | 5.80 | £31.39 | closed at 2.42, waiting for the result | - |
+| 18:30 | Pogon Szczecin v Slask Wroclaw | Slask Wroclaw | back | 5.10 | £50.00 | closed at 6.20, waiting for the result | - |
+| 18:30 | Inverness CT v Ayr | Ayr | back | 6.00 | £50.00 | closed at 6.20, waiting for the result | - |
+| 18:30 | Cerro v Nacional (Uru) | Cerro | back | 5.10 | £3.00 | closed at 1.84, waiting for the result | - |
+| 18:30 | Casertana v Salernitana | Casertana | lay | 2.64 | £7.68 | closed at 2.38, waiting for the result | - |
+| 18:30 | Liverpool Montevideo v Wanderers (Uru) | Liverpool Montevideo | back | 2.16 | £50.00 | closed at 2.24, waiting for the result | - |
+| 18:30 | Miedz Legnica v LKS Lodz | LKS Lodz | lay | 3.20 | £20.00 | closed at 3.00, waiting for the result | - |
+| 18:30 | A.C. Trento S.C.S.D. v Cittadella | A.C. Trento S.C.S.D. | lay | 2.84 | £10.00 | closed at 2.56, waiting for the result | - |
+| 18:30 | SV Austria Salzburg v Admira Wacker | Admira Wacker | lay | 3.10 | £23.81 | open | - |
+| 18:30 | Liverpool Montevideo v Wanderers (Uru) | The Draw | back | 3.50 | £5.22 | open | - |
+| 18:30 | A.C. Trento S.C.S.D. v Cittadella | Cittadella | back | 2.90 | £2.00 | open | - |
+| 18:30 | Casertana v Salernitana | Salernitana | lay | 3.25 | £22.22 | closed at 3.60, waiting for the result | - |
 | 18:30 | TSV Havelse v Viktoria Koln | The Draw | lay | 28.00 | £1.85 | open | - |
 | 18:30 | FC Andorra v Leganes | Any Other Away Win | back | 42.00 | £40.45 | open | - |
 | 18:30 | Bayern Munich v FC Koln | 2 - 0 | back | 15.50 | £50.00 | open | - |
 | 18:30 | St. Patrick F.C. v Gzira United FC | Over 2.5 Goals | lay | 1.99 | £13.00 | closed at 4.80, waiting for the result | - |
 | 18:30 | Pogon Szczecin v Slask Wroclaw | 1 - 2 | back | 18.00 | £2.79 | open | - |
 | 18:30 | Pogon Szczecin v Slask Wroclaw | 0 - 2 | back | 36.00 | £48.18 | open | - |
-| 18:30 | Racing Club (Uru) v Central Espanol | Any Other Away Win | back | 70.00 | £21.45 | open | - |
-| 18:30 | Racing Club (Uru) v Central Espanol | 0 - 2 | back | 29.00 | £13.54 | open | - |
-| 18:30 | Racing Club (Uru) v Central Espanol | 0 - 1 | back | 13.00 | £50.00 | open | - |
-| 18:30 | Racing Club (Uru) v Central Espanol | 0 - 3 | back | 90.00 | £21.45 | open | - |
-| 18:30 | Racing Club (Uru) v Central Espanol | 3 - 3 | back | 120.00 | £21.83 | open | - |
 | 18:30 | Racing Club (Uru) v Central Espanol | 0 - 0 | back | 10.50 | £21.45 | open | - |
+| 18:30 | Racing Club (Uru) v Central Espanol | 3 - 3 | back | 120.00 | £21.83 | open | - |
+| 18:30 | Racing Club (Uru) v Central Espanol | 0 - 3 | back | 90.00 | £21.45 | open | - |
+| 18:30 | Racing Club (Uru) v Central Espanol | 0 - 1 | back | 13.00 | £50.00 | open | - |
+| 18:30 | Racing Club (Uru) v Central Espanol | 0 - 2 | back | 29.00 | £13.54 | open | - |
+| 18:30 | Racing Club (Uru) v Central Espanol | Any Other Away Win | back | 70.00 | £21.45 | open | - |
 | 18:30 | De Graafschap v MVV Maastricht | 0 - 2 | back | 30.00 | £10.77 | open | - |
 | 18:30 | Jong FC Utrecht v Emmen | 0 - 3 | back | 38.00 | £14.26 | open | - |
 | 18:30 | Almere City v NAC Breda | 3 - 3 | back | 42.00 | £4.91 | open | - |
@@ -3475,10 +3475,10 @@
 | 18:31 | Vitesse Arnhem v Jong AZ Alkmaar | 0 - 2 | back | 34.00 | £9.72 | open | - |
 | 18:31 | Fulham U21 v Sporting CP U21 | 0 - 3 | back | 15.50 | £3.51 | open | - |
 | 18:32 | Rapperswil-Jona v Aarau | Under 2.5 Goals | lay | 2.64 | £30.49 | open | - |
+| 18:32 | Liverpool Montevideo v Wanderers (Uru) | Any Other Away Win | back | 36.00 | £1.98 | open | - |
+| 18:32 | Liverpool Montevideo v Wanderers (Uru) | 0 - 1 | back | 14.50 | £15.39 | open | - |
 | 18:32 | Liverpool Montevideo v Wanderers (Uru) | 3 - 3 | back | 80.00 | £29.31 | open | - |
 | 18:32 | Liverpool Montevideo v Wanderers (Uru) | 2 - 0 | back | 13.00 | £29.31 | open | - |
-| 18:32 | Liverpool Montevideo v Wanderers (Uru) | 0 - 1 | back | 14.50 | £15.39 | open | - |
-| 18:32 | Liverpool Montevideo v Wanderers (Uru) | Any Other Away Win | back | 36.00 | £1.98 | open | - |
 | 18:32 | FC Andorra v Leganes | 0 - 1 | back | 17.00 | £26.65 | open | - |
 | 18:32 | Helmond Sport v FC Dordrecht | 3 - 2 | back | 25.00 | £7.42 | open | - |
 | 18:33 | Guingamp v Rodez | Any Other Home Win | back | 10.50 | £16.70 | open | - |
@@ -3488,8 +3488,8 @@
 | 18:33 | Red Star v Pau | Any Other Away Win | back | 55.00 | £18.44 | open | - |
 | 18:33 | Red Star v Pau | 1 - 3 | back | 48.00 | £18.44 | open | - |
 | 18:33 | Annecy v Clermont | 3 - 0 | back | 28.00 | £15.20 | open | - |
-| 18:34 | Stade Lausanne-Ouchy v Kriens | Kriens | lay | 7.80 | £7.35 | open | - |
 | 18:34 | Stade Lausanne-Ouchy v Kriens | The Draw | lay | 5.80 | £10.42 | open | - |
+| 18:34 | Stade Lausanne-Ouchy v Kriens | Kriens | lay | 7.80 | £7.35 | open | - |
 | 18:34 | Stade Lausanne-Ouchy v Kriens | Under 2.5 Goals | lay | 3.10 | £23.81 | open | - |
 | 18:34 | FK Pribram v Usti Nad Labem | Over 2.5 Goals | lay | 7.20 | £8.06 | open | - |
 | 18:34 | Independiente (Ecu) v Macara | Over 2.5 Goals | lay | 4.10 | £16.13 | closed at 17.50, waiting for the result | - |
@@ -3505,16 +3505,16 @@
 | 18:35 | Lierse v SC Lokeren-Temse | 2 - 2 | back | 14.00 | £3.74 | open | - |
 | 18:35 | Lierse v SC Lokeren-Temse | 2 - 0 | back | 32.00 | £3.74 | open | - |
 | 18:36 | FC Andorra v Leganes | 1 - 2 | back | 16.00 | £22.37 | open | - |
-| 18:36 | Cerro v Nacional (Uru) | Any Other Away Win | back | 9.80 | £28.46 | open | - |
 | 18:36 | Cerro v Nacional (Uru) | 2 - 0 | back | 36.00 | £28.46 | open | - |
-| 18:36 | Cerro v Nacional (Uru) | 3 - 3 | back | 95.00 | £28.46 | open | - |
+| 18:36 | Cerro v Nacional (Uru) | Any Other Away Win | back | 9.80 | £28.46 | open | - |
 | 18:36 | Cerro v Nacional (Uru) | 1 - 0 | back | 16.00 | £28.46 | open | - |
+| 18:36 | Cerro v Nacional (Uru) | 3 - 3 | back | 95.00 | £28.46 | open | - |
 | 18:38 | FC Andorra v Leganes | 0 - 2 | back | 32.00 | £46.50 | open | - |
 | 18:38 | FC Andorra v Leganes | 2 - 3 | back | 46.00 | £43.96 | open | - |
 | 18:38 | FC Andorra v Leganes | 1 - 3 | back | 44.00 | £44.14 | open | - |
-| 18:38 | Miedz Legnica v LKS Lodz | 1 - 3 | back | 29.00 | £2.70 | open | - |
-| 18:38 | Miedz Legnica v LKS Lodz | 2 - 3 | back | 34.00 | £2.70 | open | - |
 | 18:38 | Miedz Legnica v LKS Lodz | 1 - 2 | back | 12.50 | £2.70 | open | - |
+| 18:38 | Miedz Legnica v LKS Lodz | 2 - 3 | back | 34.00 | £2.70 | open | - |
+| 18:38 | Miedz Legnica v LKS Lodz | 1 - 3 | back | 29.00 | £2.70 | open | - |
 | 18:38 | Miedz Legnica v LKS Lodz | 3 - 1 | back | 22.00 | £2.70 | open | - |
 | 18:38 | Miedz Legnica v LKS Lodz | 3 - 2 | back | 30.00 | £2.70 | open | - |
 | 18:38 | Casertana v Salernitana | 0 - 2 | back | 19.00 | £7.53 | open | - |
@@ -3525,8 +3525,8 @@
 | 18:40 | win (1.265760617) | Saxonian | back | 210.00 | £2.41 | open | - |
 | 18:40 | win (1.265760617) | Larry Curly Moe | back | 5.90 | £8.77 | closed at 8.20, waiting for the result | - |
 | 18:40 | win (1.265760617) | Unstoppable Army | back | 120.00 | £4.85 | open | - |
-| 18:40 | win (1.265760617) | Golden Idol | back | 5.10 | £11.74 | closed at 4.40, waiting for the result | - |
 | 18:40 | win (1.265760617) | Selosse | back | 15.00 | £10.68 | closed at 16.00, waiting for the result | - |
+| 18:40 | win (1.265760617) | Golden Idol | back | 5.10 | £11.74 | closed at 4.40, waiting for the result | - |
 | 18:40 | win (1.265760617) | Epic Arch | back | 21.00 | £11.03 | closed at 17.50, waiting for the result | - |
 | 18:40 | De Graafschap v MVV Maastricht | Any Other Away Win | back | 21.00 | £6.52 | open | - |
 | 18:41 | Helmond Sport v FC Dordrecht | 3 - 0 | back | 28.00 | £8.47 | open | - |
@@ -3535,54 +3535,54 @@
 | 18:42 | Helmond Sport v FC Dordrecht | Any Other Away Win | back | 17.00 | £5.05 | open | - |
 | 18:42 | De Graafschap v MVV Maastricht | 0 - 0 | back | 25.00 | £7.34 | open | - |
 | 18:42 | win (1.265760617) | Sovereign Jazz | lay | 5.00 | £12.50 | closed at 6.80, waiting for the result | - |
-| 18:43 | win (1.265760617) | Victorious Star | lay | 50.00 | £1.02 | open | - |
 | 18:43 | win (1.265760617) | Sovereign Jazz | lay | 4.90 | £12.82 | open | - |
 | 18:43 | win (1.265760617) | Golden Idol | lay | 4.90 | £12.82 | open | - |
 | 18:43 | win (1.265760617) | Selosse | lay | 16.00 | £3.33 | closed at 7.20, waiting for the result | - |
+| 18:43 | win (1.265760617) | Victorious Star | lay | 50.00 | £1.02 | open | - |
 | 18:43 | win (1.265760617) | Warrior Of Siam | lay | 5.40 | £7.09 | closed at 4.60, waiting for the result | - |
-| 18:43 | win (1.265760617) | Larry Curly Moe | back | 8.40 | £2.09 | closed at 8.20, waiting for the result | - |
-| 18:43 | win (1.265760617) | Bridgetown Boy | lay | 8.20 | £6.94 | open | - |
 | 18:43 | win (1.265760617) | Larry Curly Moe | lay | 8.60 | £6.00 | open | - |
+| 18:43 | win (1.265760617) | Larry Curly Moe | back | 8.40 | £2.09 | closed at 8.20, waiting for the result | - |
 | 18:43 | win (1.265760617) | Bridgetown Boy | back | 7.80 | £2.48 | closed at 7.20, waiting for the result | - |
 | 18:43 | win (1.265760617) | Sovereign Jazz | back | 4.80 | £50.00 | closed at 8.20, waiting for the result | - |
+| 18:43 | win (1.265760617) | Bridgetown Boy | lay | 8.20 | £6.94 | open | - |
 | 18:43 | Den Bosch v VVV Venlo | 1 - 1 | back | 11.50 | £24.97 | open | - |
 | 18:43 | Chrobry Glogow v Puszcza Niepolomice | Under 2.5 Goals | back | 1.28 | £50.00 | closed at 1.29, waiting for the result | - |
+| 18:44 | win (1.265760617) | Bridgetown Boy | lay | 7.60 | £7.58 | open | - |
 | 18:44 | win (1.265760617) | Victorious Star | lay | 38.00 | £1.35 | open | - |
 | 18:44 | win (1.265760617) | Epic Arch | lay | 19.00 | £2.78 | open | - |
 | 18:44 | win (1.265760617) | Warrior Of Siam | lay | 5.00 | £12.50 | open | - |
 | 18:44 | win (1.265760617) | Golden Idol | lay | 4.00 | £16.67 | open | - |
-| 18:44 | win (1.265760617) | Bridgetown Boy | lay | 7.60 | £7.58 | open | - |
 | 18:44 | win (1.265760617) | Victorious Star | back | 36.00 | £17.05 | closed at 36.00, waiting for the result | - |
-| 18:44 | win (1.265760617) | Epic Arch | back | 18.00 | £14.84 | closed at 17.50, waiting for the result | - |
+| 18:44 | win (1.265760617) | Saxonian | back | 190.00 | £2.16 | open | - |
 | 18:44 | win (1.265760617) | Warrior Of Siam | back | 4.90 | £33.55 | closed at 5.00, waiting for the result | - |
 | 18:44 | win (1.265760617) | Golden Idol | back | 3.90 | £29.65 | closed at 4.40, waiting for the result | - |
 | 18:44 | win (1.265760617) | Bridgetown Boy | back | 7.40 | £15.60 | closed at 7.20, waiting for the result | - |
-| 18:44 | win (1.265760617) | Saxonian | back | 190.00 | £2.16 | open | - |
+| 18:44 | win (1.265760617) | Epic Arch | back | 18.00 | £14.84 | closed at 17.50, waiting for the result | - |
 | 18:44 | win (1.265760617) | Pauseathought | back | 120.00 | £2.60 | open | - |
 | 18:44 | win (1.265760617) | Theboysbirthday | back | 120.00 | £2.64 | open | - |
 | 18:44 | Heracles v Jong PSV Eindhoven | 1 - 2 | back | 55.00 | £12.88 | open | - |
 | 18:44 | Arminia Bielefeld v FC Magdeburg | Over 2.5 Goals | back | 1.31 | £50.00 | closed at 1.33, waiting for the result | - |
 | 18:44 | FC Andorra v Leganes | 2 - 2 | back | 16.00 | £23.24 | open | - |
-| 18:45 | Southend v Boreham Wood | Boreham Wood | lay | 2.18 | £9.00 | closed at 2.10, waiting for the result | - |
-| 18:45 | Southend v Boreham Wood | The Draw | lay | 4.60 | £12.86 | closed at 4.50, waiting for the result | - |
-| 18:45 | ESTAC Troyes v Le Havre | Le Havre | lay | 3.50 | £20.00 | closed at 3.45, waiting for the result | - |
-| 18:45 | ESTAC Troyes v Le Havre | ESTAC Troyes | lay | 2.32 | £37.88 | closed at 2.32, waiting for the result | - |
 | 18:45 | Cercle Brugge v Westerlo | Westerlo | lay | 3.35 | £21.28 | closed at 3.35, waiting for the result | - |
-| 18:45 | Cercle Brugge v Westerlo | The Draw | back | 4.00 | £50.00 | closed at 4.20, waiting for the result | - |
-| 18:45 | Balzan FC v Mosta | Mosta | back | 3.90 | £2.00 | open | - |
 | 18:45 | Southend v Boreham Wood | Southend | lay | 3.20 | £22.73 | closed at 3.40, waiting for the result | - |
+| 18:45 | Balzan FC v Mosta | Mosta | back | 3.90 | £2.00 | open | - |
+| 18:45 | Cercle Brugge v Westerlo | The Draw | back | 4.00 | £50.00 | closed at 4.20, waiting for the result | - |
 | 18:45 | Cercle Brugge v Westerlo | Cercle Brugge | back | 2.20 | £26.16 | closed at 2.24, waiting for the result | - |
-| 18:45 | Cercle Brugge v Westerlo | 3 - 2 | back | 24.00 | £50.00 | open | - |
+| 18:45 | ESTAC Troyes v Le Havre | ESTAC Troyes | lay | 2.32 | £37.88 | closed at 2.32, waiting for the result | - |
+| 18:45 | ESTAC Troyes v Le Havre | Le Havre | lay | 3.50 | £20.00 | closed at 3.45, waiting for the result | - |
+| 18:45 | Southend v Boreham Wood | The Draw | lay | 4.60 | £12.86 | closed at 4.50, waiting for the result | - |
+| 18:45 | Southend v Boreham Wood | Boreham Wood | lay | 2.18 | £9.00 | closed at 2.10, waiting for the result | - |
 | 18:45 | Cercle Brugge v Westerlo | 3 - 3 | back | 46.00 | £50.00 | open | - |
+| 18:45 | Cercle Brugge v Westerlo | 3 - 2 | back | 24.00 | £50.00 | open | - |
 | 18:45 | Southend v Boreham Wood | Any Other Home Win | back | 12.50 | £50.00 | open | - |
 | 18:45 | Arminia Bielefeld v FC Magdeburg | FC Magdeburg | back | 1.17 | £50.00 | open | - |
 | 18:45 | Floridsdorfer AC v Austria Wien (A) | Floridsdorfer Ac | back | 1.21 | £50.00 | open | - |
-| 18:45 | win (1.265760617) | Larry Curly Moe | lay | 10.00 | £3.61 | open | - |
-| 18:45 | win (1.265760617) | Selosse | lay | 18.50 | £2.86 | open | - |
 | 18:45 | win (1.265760617) | Selosse | back | 12.00 | £2.21 | open | - |
 | 18:45 | win (1.265760617) | Theboysbirthday | back | 80.00 | £15.22 | open | - |
-| 18:45 | win (1.265760617) | Larry Curly Moe | back | 7.20 | £2.11 | open | - |
+| 18:45 | win (1.265760617) | Selosse | lay | 18.50 | £2.86 | open | - |
+| 18:45 | win (1.265760617) | Larry Curly Moe | lay | 10.00 | £3.61 | open | - |
 | 18:45 | win (1.265760617) | Sovereign Jazz | back | 8.20 | £2.57 | open | - |
+| 18:45 | win (1.265760617) | Larry Curly Moe | back | 7.20 | £2.11 | open | - |
 | 18:46 | Al Ahli v Al Nassr | Over 2.5 Goals | back | 1.27 | £50.00 | open | - |
 | 18:46 | Red Star v Pau | 0 - 0 | back | 12.00 | £8.19 | open | - |
 | 18:46 | FC Oss v Roda JC | 1 - 0 | back | 17.50 | £3.16 | open | - |
@@ -3604,28 +3604,28 @@
 | 18:48 | FC Volendam v Jong Ajax Amsterdam | Any Other Away Win | back | 14.00 | £7.31 | open | - |
 | 18:49 | Southend v Boreham Wood | 3 - 1 | back | 26.00 | £50.00 | open | - |
 | 18:49 | CD Teruel v Hercules CF | The Draw | lay | 4.30 | £15.15 | closed at 3.95, waiting for the result | - |
-| 18:50 | Nancy v Dijon | Dijon/Nancy | lay | 32.00 | £1.61 | open | - |
-| 18:50 | Nancy v Dijon | Nancy/Draw | lay | 22.00 | £2.38 | open | - |
-| 18:50 | FC Oss v Roda JC | FC Oss/Draw | lay | 20.00 | £2.63 | open | - |
-| 18:50 | FC Oss v Roda JC | Roda JC/Draw | lay | 19.50 | £2.70 | open | - |
-| 18:50 | FC Oss v Roda JC | Roda JC/FC Oss | lay | 48.00 | £1.06 | open | - |
-| 18:50 | FC Oss v Roda JC | FC Oss/Roda JC | lay | 32.00 | £1.61 | open | - |
-| 18:50 | FC Oss v Roda JC | Draw/FC Oss | lay | 12.00 | £4.55 | open | - |
-| 18:50 | Metz v Boulogne | Metz/Draw | lay | 19.00 | £2.78 | open | - |
-| 18:50 | Metz v Boulogne | Metz/Boulogne | lay | 50.00 | £1.02 | open | - |
-| 18:50 | Metz v Boulogne | Boulogne/Metz | lay | 42.00 | £1.22 | open | - |
-| 18:50 | Metz v Boulogne | Boulogne/Draw | lay | 19.50 | £2.70 | open | - |
-| 18:50 | Guingamp v Rodez | Rodez/Draw | lay | 19.50 | £2.70 | open | - |
-| 18:50 | Guingamp v Rodez | Guingamp/Rodez | lay | 50.00 | £1.02 | open | - |
 | 18:50 | Annecy v Clermont | Clermont/Annecy | lay | 42.00 | £1.22 | open | - |
-| 18:50 | Jong FC Utrecht v Emmen | Jong Utrecht/Draw | lay | 19.00 | £2.78 | open | - |
-| 18:50 | Red Star v Pau | Red Star/Draw | lay | 20.00 | £2.63 | open | - |
+| 18:50 | Guingamp v Rodez | Guingamp/Rodez | lay | 50.00 | £1.02 | open | - |
+| 18:50 | Guingamp v Rodez | Rodez/Draw | lay | 19.50 | £2.70 | open | - |
+| 18:50 | Metz v Boulogne | Boulogne/Draw | lay | 19.50 | £2.70 | open | - |
+| 18:50 | Metz v Boulogne | Boulogne/Metz | lay | 42.00 | £1.22 | open | - |
+| 18:50 | Metz v Boulogne | Metz/Boulogne | lay | 50.00 | £1.02 | open | - |
+| 18:50 | FC Oss v Roda JC | Roda JC/FC Oss | lay | 48.00 | £1.06 | open | - |
+| 18:50 | FC Oss v Roda JC | Draw/FC Oss | lay | 12.00 | £4.55 | open | - |
+| 18:50 | FC Oss v Roda JC | FC Oss/Roda JC | lay | 32.00 | £1.61 | open | - |
+| 18:50 | Guingamp v Rodez | Rodez/Guingamp | lay | 34.00 | £1.52 | open | - |
+| 18:50 | FC Oss v Roda JC | Roda JC/Draw | lay | 19.50 | £2.70 | open | - |
+| 18:50 | FC Oss v Roda JC | FC Oss/Draw | lay | 20.00 | £2.63 | open | - |
+| 18:50 | Metz v Boulogne | Metz/Draw | lay | 19.00 | £2.78 | open | - |
+| 18:50 | Guingamp v Rodez | Guingamp/Draw | lay | 18.50 | £2.86 | open | - |
+| 18:50 | De Graafschap v MVV Maastricht | Draw/MVV Maastricht | lay | 13.00 | £4.17 | open | - |
 | 18:50 | Red Star v Pau | Pau/Draw | lay | 22.00 | £2.38 | open | - |
 | 18:50 | De Graafschap v MVV Maastricht | MVV Maastricht/De Graafschap | lay | 30.00 | £1.72 | open | - |
 | 18:50 | De Graafschap v MVV Maastricht | De Graafschap/Draw | lay | 21.00 | £2.50 | open | - |
-| 18:50 | De Graafschap v MVV Maastricht | Draw/MVV Maastricht | lay | 13.00 | £4.17 | open | - |
+| 18:50 | Nancy v Dijon | Nancy/Draw | lay | 22.00 | £2.38 | open | - |
 | 18:50 | De Graafschap v MVV Maastricht | MVV Maastricht/Draw | lay | 22.00 | £2.38 | open | - |
-| 18:50 | Nancy v Dijon | Draw/Dijon | lay | 14.50 | £3.70 | open | - |
+| 18:50 | Jong FC Utrecht v Emmen | Jong Utrecht/Draw | lay | 19.00 | £2.78 | open | - |
+| 18:50 | Vitesse Arnhem v Jong AZ Alkmaar | Jong AZ Alkmaa/Draw | lay | 21.00 | £2.50 | open | - |
 | 18:50 | Jong FC Utrecht v Emmen | Jong Utrecht/Emmen | lay | 32.00 | £1.61 | open | - |
 | 18:50 | Jong FC Utrecht v Emmen | Emmen/Jong Utrecht | lay | 34.00 | £1.52 | open | - |
 | 18:50 | Jong FC Utrecht v Emmen | Emmen/Draw | lay | 19.00 | £2.78 | open | - |
@@ -3633,11 +3633,11 @@
 | 18:50 | Vitesse Arnhem v Jong AZ Alkmaar | Vitesse Arnhem/Draw | lay | 20.00 | £2.63 | open | - |
 | 18:50 | Vitesse Arnhem v Jong AZ Alkmaar | Vitesse Arnhem/Jong AZ Alkmaa | lay | 42.00 | £1.22 | open | - |
 | 18:50 | Vitesse Arnhem v Jong AZ Alkmaar | Jong AZ Alkmaa/Vitesse Arnhem | lay | 25.00 | £2.08 | open | - |
-| 18:50 | Guingamp v Rodez | Guingamp/Draw | lay | 18.50 | £2.86 | open | - |
+| 18:50 | Red Star v Pau | Red Star/Draw | lay | 20.00 | £2.63 | open | - |
+| 18:50 | Nancy v Dijon | Dijon/Nancy | lay | 32.00 | £1.61 | open | - |
+| 18:50 | Heracles v Jong PSV Eindhoven | Jong PSV Eindhoven | back | 23.00 | £13.13 | closed at 25.00, waiting for the result | - |
 | 18:50 | Nancy v Dijon | Dijon/Draw | lay | 24.00 | £2.17 | open | - |
-| 18:50 | Lierse v SC Lokeren-Temse | SC Lokeren-Temse | back | 1.78 | £41.00 | closed at 1.80, waiting for the result | - |
-| 18:50 | Helmond Sport v FC Dordrecht | FC Dordrecht/Helmond Sport | lay | 34.00 | £1.52 | open | - |
-| 18:50 | Vitesse Arnhem v Jong AZ Alkmaar | Jong AZ Alkmaa/Draw | lay | 21.00 | £2.50 | open | - |
+| 18:50 | Vitesse Arnhem v Jong AZ Alkmaar | Draw/Jong AZ Alkmaa | lay | 13.00 | £4.17 | open | - |
 | 18:50 | Annecy v Clermont | Annecy | back | 2.40 | £50.00 | closed at 2.42, waiting for the result | - |
 | 18:50 | Nancy v Dijon | Dijon | back | 4.80 | £50.00 | closed at 5.00, waiting for the result | - |
 | 18:50 | Nancy v Dijon | The Draw | back | 3.95 | £50.00 | closed at 4.10, waiting for the result | - |
@@ -3645,15 +3645,14 @@
 | 18:50 | FC Oss v Roda JC | The Draw | back | 4.20 | £50.00 | closed at 4.30, waiting for the result | - |
 | 18:50 | Red Star v Pau | The Draw | back | 3.80 | £50.00 | closed at 3.85, waiting for the result | - |
 | 18:50 | Vitesse Arnhem v Jong AZ Alkmaar | Vitesse Arnhem | back | 1.86 | £50.00 | closed at 1.88, waiting for the result | - |
-| 18:50 | Heracles v Jong PSV Eindhoven | Jong PSV Eindhoven | back | 23.00 | £13.13 | closed at 25.00, waiting for the result | - |
 | 18:50 | FC Volendam v Jong Ajax Amsterdam | Jong Ajax Amsterdam | back | 4.30 | £32.35 | closed at 4.40, waiting for the result | - |
 | 18:50 | FC Volendam v Jong Ajax Amsterdam | The Draw | back | 5.00 | £25.58 | closed at 5.10, waiting for the result | - |
 | 18:50 | Jong FC Utrecht v Emmen | Emmen | back | 2.64 | £50.00 | closed at 2.64, waiting for the result | - |
 | 18:50 | Almere City v NAC Breda | The Draw | back | 4.10 | £50.00 | closed at 4.30, waiting for the result | - |
 | 18:50 | FK Mornar v FK Sutjeska | FK Sutjeska | back | 3.70 | £5.33 | closed at 3.90, waiting for the result | - |
-| 18:50 | Helmond Sport v FC Dordrecht | Helmond Sport/FC Dordrecht | lay | 40.00 | £1.28 | open | - |
 | 18:50 | Fulham U21 v Sporting CP U21 | Sporting Cp U21 | back | 1.92 | £2.69 | closed at 1.98, waiting for the result | - |
-| 18:50 | win (1.265760988) | Caravel | back | 21.00 | £41.53 | open | - |
+| 18:50 | Nancy v Dijon | Draw/Dijon | lay | 14.50 | £3.70 | open | - |
+| 18:50 | win (1.265760988) | Zambezi Shark | lay | 6.80 | £8.62 | open | - |
 | 18:50 | win (1.265760988) | Orfilia | back | 38.00 | £33.16 | open | - |
 | 18:50 | win (1.265760988) | Desert Legend | back | 55.00 | £5.02 | open | - |
 | 18:50 | win (1.265760988) | Better Nature | back | 32.00 | £50.00 | open | - |
@@ -3663,15 +3662,15 @@
 | 18:50 | win (1.265760988) | Star Bayside Boy | back | 65.00 | £12.22 | open | - |
 | 18:50 | Lierse v SC Lokeren-Temse | Lokeren/Draw | lay | 23.00 | £2.27 | open | - |
 | 18:50 | Lierse v SC Lokeren-Temse | Lierse/Lokeren | lay | 34.00 | £1.52 | open | - |
-| 18:50 | Lierse v SC Lokeren-Temse | Lierse/Draw | lay | 24.00 | £2.17 | open | - |
+| 18:50 | Lierse v SC Lokeren-Temse | SC Lokeren-Temse | back | 1.78 | £41.00 | closed at 1.80, waiting for the result | - |
 | 18:50 | Lierse v SC Lokeren-Temse | Draw/Lierse | lay | 15.00 | £3.57 | open | - |
 | 18:50 | Helmond Sport v FC Dordrecht | FC Dordrecht/Draw | lay | 19.00 | £2.78 | open | - |
-| 18:50 | Helmond Sport v FC Dordrecht | Helmond Sport/Draw | lay | 18.50 | £2.86 | open | - |
-| 18:50 | win (1.265760988) | Zambezi Shark | lay | 6.80 | £8.62 | open | - |
-| 18:50 | Vitesse Arnhem v Jong AZ Alkmaar | Draw/Jong AZ Alkmaa | lay | 13.00 | £4.17 | open | - |
-| 18:50 | Guingamp v Rodez | Rodez/Guingamp | lay | 34.00 | £1.52 | open | - |
-| 18:50 | FC Volendam v Jong Ajax Amsterdam | Jong Ajax/FC Volendam | lay | 22.00 | £2.38 | open | - |
-| 18:50 | Ipswich Town U21 v Porto U21 | Draw/Draw | lay | 10.50 | £5.26 | open | - |
+| 18:50 | Helmond Sport v FC Dordrecht | FC Dordrecht/Helmond Sport | lay | 34.00 | £1.52 | open | - |
+| 18:50 | Helmond Sport v FC Dordrecht | Helmond Sport/FC Dordrecht | lay | 40.00 | £1.28 | open | - |
+| 18:50 | win (1.265760988) | Caravel | back | 21.00 | £41.53 | open | - |
+| 18:50 | FC Volendam v Jong Ajax Amsterdam | FC Volendam/Draw | lay | 19.50 | £2.70 | open | - |
+| 18:50 | Lierse v SC Lokeren-Temse | Lierse/Draw | lay | 24.00 | £2.17 | open | - |
+| 18:50 | FC Volendam v Jong Ajax Amsterdam | FC Volendam/Jong Ajax | lay | 38.00 | £1.35 | open | - |
 | 18:50 | Fulham U21 v Sporting CP U21 | SportingCP U21/Fulham U21 | lay | 42.00 | £1.22 | open | - |
 | 18:50 | Fulham U21 v Sporting CP U21 | Draw/Draw | lay | 14.00 | £3.85 | open | - |
 | 18:50 | Ipswich Town U21 v Porto U21 | Ipswich T U21/Draw | lay | 18.00 | £2.94 | open | - |
@@ -3685,9 +3684,9 @@
 | 18:50 | MC Oran v JS Saoura | Draw/JS Saoura | lay | 22.00 | £2.38 | open | - |
 | 18:50 | MC Oran v JS Saoura | JS Saoura/JS Saoura | lay | 21.00 | £2.50 | open | - |
 | 18:50 | MC Oran v JS Saoura | JS Saoura/Draw | lay | 36.00 | £1.43 | open | - |
-| 18:50 | Ipswich Town U21 v Porto U21 | Porto U21/Draw | lay | 21.00 | £2.50 | open | - |
 | 18:50 | MC Oran v JS Saoura | MC Oran/Draw | lay | 30.00 | £1.72 | open | - |
-| 18:50 | FK Mornar v FK Sutjeska | FK Mornar/Draw | lay | 24.00 | £2.17 | open | - |
+| 18:50 | Ipswich Town U21 v Porto U21 | Draw/Draw | lay | 10.50 | £5.26 | open | - |
+| 18:50 | Bristol City U21 v Norwich U21 | Draw/Draw | lay | 13.00 | £4.17 | open | - |
 | 18:50 | Bristol City U21 v Norwich U21 | Bris City U21/Draw | lay | 21.00 | £2.50 | open | - |
 | 18:50 | FK Mornar v FK Sutjeska | FK Sutjeska/Draw | lay | 24.00 | £2.17 | open | - |
 | 18:50 | Annecy v Clermont | The Draw | back | 3.35 | £45.10 | closed at 3.40, waiting for the result | - |
@@ -3701,14 +3700,13 @@
 | 18:50 | West Brom U21 v Coventry City U21 | The Draw | back | 4.20 | £9.00 | open | - |
 | 18:50 | Burnley U21 v Fleetwood Town U21 | Fleetwood Town U21 | back | 3.45 | £10.00 | open | - |
 | 18:50 | Bristol City U21 v Norwich U21 | The Draw | back | 4.10 | £6.73 | open | - |
-| 18:50 | Bristol City U21 v Norwich U21 | Draw/Draw | lay | 13.00 | £4.17 | open | - |
-| 18:50 | Fulham U21 v Sporting CP U21 | Fulham U21/SportingCP U21 | lay | 25.00 | £2.08 | open | - |
+| 18:50 | FC Volendam v Jong Ajax Amsterdam | Jong Ajax/FC Volendam | lay | 22.00 | £2.38 | open | - |
+| 18:50 | FK Mornar v FK Sutjeska | FK Mornar/Draw | lay | 24.00 | £2.17 | open | - |
 | 18:50 | Ipswich Town U21 v Porto U21 | Draw/Ipswich T U21 | lay | 13.00 | £4.17 | open | - |
-| 18:50 | West Brom U21 v Coventry City U21 | West Brom U21/Coven City U21 | lay | 46.00 | £1.11 | open | - |
-| 18:50 | FC Volendam v Jong Ajax Amsterdam | FC Volendam/Jong Ajax | lay | 38.00 | £1.35 | open | - |
+| 18:50 | Helmond Sport v FC Dordrecht | Helmond Sport/Draw | lay | 18.50 | £2.86 | open | - |
+| 18:50 | Fulham U21 v Sporting CP U21 | Fulham U21/SportingCP U21 | lay | 25.00 | £2.08 | open | - |
 | 18:50 | FC Volendam v Jong Ajax Amsterdam | Draw/Draw | lay | 12.50 | £4.35 | open | - |
 | 18:50 | FC Volendam v Jong Ajax Amsterdam | Draw/Jong Ajax | lay | 14.50 | £3.70 | open | - |
-| 18:50 | FC Volendam v Jong Ajax Amsterdam | Jong Ajax/Draw | lay | 20.00 | £2.63 | open | - |
 | 18:50 | Den Bosch v VVV Venlo | Den Bosch/Draw | lay | 18.50 | £2.86 | open | - |
 | 18:50 | Den Bosch v VVV Venlo | VVV Venlo/Den Bosch | lay | 29.00 | £1.79 | open | - |
 | 18:50 | Den Bosch v VVV Venlo | Den Bosch/VVV Venlo | lay | 36.00 | £1.43 | open | - |
@@ -3718,24 +3716,26 @@
 | 18:50 | Almere City v NAC Breda | NAC Breda/Almere City | lay | 40.00 | £1.28 | open | - |
 | 18:50 | Almere City v NAC Breda | Almere City/Draw | lay | 21.00 | £2.50 | open | - |
 | 18:50 | Heracles v Jong PSV Eindhoven | Draw/Draw | lay | 23.00 | £2.27 | open | - |
-| 18:50 | Leeds United U21 v Charlton U21 | Draw/Charlton U21 | lay | 16.50 | £3.23 | open | - |
-| 18:50 | Heracles v Jong PSV Eindhoven | Jong PSV/Draw | lay | 50.00 | £1.02 | open | - |
 | 18:50 | Heracles v Jong PSV Eindhoven | Jong PSV/Heracles | lay | 38.00 | £1.35 | open | - |
-| 18:50 | FC Volendam v Jong Ajax Amsterdam | FC Volendam/Draw | lay | 19.50 | £2.70 | open | - |
-| 18:50 | West Brom U21 v Coventry City U21 | Coven City U21/West Brom U21 | lay | 32.00 | £1.61 | open | - |
-| 18:50 | Burnley U21 v Fleetwood Town U21 | Fleetwood U21/Burnley U21 | lay | 34.00 | £1.52 | open | - |
-| 18:50 | Burnley U21 v Fleetwood Town U21 | Fleetwood U21/Draw | lay | 24.00 | £2.17 | open | - |
+| 18:50 | Heracles v Jong PSV Eindhoven | Jong PSV/Draw | lay | 50.00 | £1.02 | open | - |
 | 18:50 | Den Bosch v VVV Venlo | VVV Venlo/Draw | lay | 18.50 | £2.86 | open | - |
+| 18:50 | West Brom U21 v Coventry City U21 | Coven City U21/Draw | lay | 22.00 | £2.38 | open | - |
+| 18:50 | FC Volendam v Jong Ajax Amsterdam | Jong Ajax/Draw | lay | 20.00 | £2.63 | open | - |
+| 18:50 | West Brom U21 v Coventry City U21 | West Brom U21/Draw | lay | 22.00 | £2.38 | open | - |
+| 18:50 | Leeds United U21 v Charlton U21 | Draw/Charlton U21 | lay | 16.50 | £3.23 | open | - |
+| 18:50 | Ipswich Town U21 v Porto U21 | Porto U21/Draw | lay | 21.00 | £2.50 | open | - |
+| 18:50 | West Brom U21 v Coventry City U21 | Draw/Coven City U21 | lay | 13.00 | £4.17 | open | - |
+| 18:50 | West Brom U21 v Coventry City U21 | West Brom U21/Coven City U21 | lay | 46.00 | £1.11 | open | - |
+| 18:50 | West Brom U21 v Coventry City U21 | Coven City U21/West Brom U21 | lay | 32.00 | £1.61 | open | - |
+| 18:50 | Burnley U21 v Fleetwood Town U21 | Fleetwood U21/Draw | lay | 24.00 | £2.17 | open | - |
+| 18:50 | Burnley U21 v Fleetwood Town U21 | Fleetwood U21/Burnley U21 | lay | 34.00 | £1.52 | open | - |
 | 18:50 | Burnley U21 v Fleetwood Town U21 | Burnley U21/Draw | lay | 23.00 | £2.27 | open | - |
 | 18:50 | Bristol City U21 v Norwich U21 | Bris City U21/Norwich U21 | lay | 30.00 | £1.72 | open | - |
-| 18:50 | Burnley U21 v Fleetwood Town U21 | Draw/Fleetwood U21 | lay | 14.50 | £3.70 | open | - |
+| 18:50 | Bristol City U21 v Norwich U21 | Norwich U21/Draw | lay | 21.00 | £2.50 | open | - |
 | 18:50 | Bristol City U21 v Norwich U21 | Norwich U21/Bris City U21 | lay | 36.00 | £1.43 | open | - |
 | 18:50 | Leeds United U21 v Charlton U21 | Leeds Utd U21/Draw | lay | 22.00 | £2.38 | open | - |
 | 18:50 | Leeds United U21 v Charlton U21 | Draw/Draw | lay | 13.50 | £4.00 | open | - |
-| 18:50 | West Brom U21 v Coventry City U21 | West Brom U21/Draw | lay | 22.00 | £2.38 | open | - |
-| 18:50 | West Brom U21 v Coventry City U21 | Draw/Coven City U21 | lay | 13.00 | £4.17 | open | - |
-| 18:50 | West Brom U21 v Coventry City U21 | Coven City U21/Draw | lay | 22.00 | £2.38 | open | - |
-| 18:50 | Bristol City U21 v Norwich U21 | Norwich U21/Draw | lay | 21.00 | £2.50 | open | - |
+| 18:50 | Burnley U21 v Fleetwood Town U21 | Draw/Fleetwood U21 | lay | 14.50 | £3.70 | open | - |
 | 18:50 | Rapperswil-Jona v Aarau | Rapperswil-Jona | lay | 2.92 | £26.04 | open | - |
 | 18:50 | Rapperswil-Jona v Aarau | Aarau | lay | 2.76 | £13.41 | open | - |
 | 18:50 | Rapperswil-Jona v Aarau | Rapperswil-Jona | back | 2.78 | £13.41 | closed at 2.90, waiting for the result | - |
@@ -3760,14 +3760,14 @@
 | 18:54 | Aarhus Fremad v Hobro | Hobro | lay | 21.00 | £2.50 | open | - |
 | 18:54 | CD Teruel v Hercules CF | CD Teruel | lay | 12.00 | £4.55 | open | - |
 | 18:55 | win (1.265760988) | Better Nature | back | 32.00 | £44.40 | closed at 36.00, waiting for the result | - |
-| 18:55 | win (1.265760988) | Alfey Moon | back | 13.00 | £39.71 | closed at 12.00, waiting for the result | - |
+| 18:55 | win (1.265760988) | Perfect Hope | back | 9.20 | £50.00 | closed at 8.80, waiting for the result | - |
 | 18:55 | win (1.265760988) | Zambezi Shark | back | 6.00 | £50.00 | closed at 8.80, waiting for the result | - |
 | 18:55 | win (1.265760988) | Star Bayside Boy | back | 60.00 | £12.05 | open | - |
-| 18:55 | win (1.265760988) | Perfect Hope | back | 9.20 | £50.00 | closed at 8.80, waiting for the result | - |
+| 18:55 | win (1.265760988) | Alfey Moon | back | 13.00 | £39.71 | closed at 12.00, waiting for the result | - |
 | 18:55 | win (1.265760988) | Perfect Hope | lay | 9.40 | £5.95 | closed at 8.60, waiting for the result | - |
+| 18:55 | win (1.265760988) | Kochella | back | 32.00 | £3.59 | closed at 44.00, waiting for the result | - |
 | 18:55 | win (1.265760988) | Better Nature | lay | 34.00 | £1.52 | closed at 36.00, waiting for the result | - |
 | 18:55 | win (1.265760988) | Zambezi Shark | lay | 6.20 | £9.62 | closed at 8.60, waiting for the result | - |
-| 18:55 | win (1.265760988) | Kochella | back | 32.00 | £3.59 | closed at 44.00, waiting for the result | - |
 | 18:55 | Molde v Bodo Glimt | The Draw | lay | 13.00 | £4.17 | open | - |
 | 18:55 | FC Andorra v Leganes | 2 - 0 | back | 11.50 | £29.08 | open | - |
 | 18:55 | Bayern Munich v FC Koln | 2 - 3 | back | 190.00 | £50.00 | open | - |
@@ -3776,51 +3776,51 @@
 | 18:57 | Miedz Legnica v LKS Lodz | 0 - 3 | back | 42.00 | £1.97 | open | - |
 | 18:57 | win (1.265760988) | Zambezi Shark | lay | 6.20 | £9.62 | closed at 8.20, waiting for the result | - |
 | 18:57 | Southend v Boreham Wood | 2 - 2 | back | 13.00 | £8.39 | open | - |
+| 18:58 | Lierse v SC Lokeren-Temse | Lierse | lay | 4.80 | £13.16 | closed at 4.30, waiting for the result | - |
 | 18:58 | Helmond Sport v FC Dordrecht | The Draw | lay | 3.95 | £16.95 | closed at 3.60, waiting for the result | - |
 | 18:58 | Annecy v Clermont | Annecy | lay | 2.42 | £35.21 | closed at 1.52, waiting for the result | - |
 | 18:58 | Annecy v Clermont | The Draw | lay | 3.40 | £20.83 | closed at 4.50, waiting for the result | - |
-| 18:58 | Lierse v SC Lokeren-Temse | Lierse | lay | 4.80 | £13.16 | closed at 4.30, waiting for the result | - |
-| 18:58 | Lierse v SC Lokeren-Temse | The Draw | lay | 4.50 | £12.00 | closed at 4.20, waiting for the result | - |
-| 18:58 | Lierse v SC Lokeren-Temse | SC Lokeren-Temse | back | 1.76 | £50.00 | open | - |
+| 18:58 | Metz v Boulogne | The Draw | lay | 3.55 | £19.61 | closed at 3.45, waiting for the result | - |
+| 18:58 | Den Bosch v VVV Venlo | Den Bosch | back | 2.26 | £50.00 | open | - |
 | 18:58 | MC Oran v JS Saoura | MC Oran | back | 1.68 | £50.00 | open | - |
 | 18:58 | Heracles v Jong PSV Eindhoven | Heracles | back | 1.14 | £50.00 | open | - |
 | 18:58 | Guingamp v Rodez | Guingamp | back | 2.10 | £50.00 | open | - |
-| 18:58 | Den Bosch v VVV Venlo | Den Bosch | back | 2.26 | £50.00 | open | - |
-| 18:58 | Metz v Boulogne | The Draw | lay | 3.55 | £19.61 | closed at 3.45, waiting for the result | - |
-| 18:58 | Fulham U21 v Sporting CP U21 | Sporting Cp U21 | back | 1.92 | £50.00 | open | - |
 | 18:58 | Den Bosch v VVV Venlo | Den Bosch | lay | 2.28 | £39.06 | closed at 2.24, waiting for the result | - |
-| 18:58 | win (1.265760988) | Kochella | lay | 42.00 | £1.22 | open | - |
-| 18:58 | Vitesse Arnhem v Jong AZ Alkmaar | The Draw | lay | 4.60 | £13.89 | closed at 4.30, waiting for the result | - |
+| 18:58 | Lierse v SC Lokeren-Temse | SC Lokeren-Temse | back | 1.76 | £50.00 | open | - |
+| 18:58 | Fulham U21 v Sporting CP U21 | Sporting Cp U21 | back | 1.92 | £50.00 | open | - |
 | 18:58 | Guingamp v Rodez | The Draw | lay | 3.90 | £17.24 | closed at 3.75, waiting for the result | - |
-| 18:58 | win (1.265760988) | Zambezi Shark | lay | 6.80 | £8.62 | open | - |
-| 18:58 | win (1.265760988) | Perfect Hope | lay | 9.00 | £6.25 | open | - |
-| 18:58 | win (1.265760988) | Alfey Moon | lay | 13.00 | £4.17 | open | - |
-| 18:58 | win (1.265760988) | Better Nature | lay | 42.00 | £1.22 | open | - |
+| 18:58 | Lierse v SC Lokeren-Temse | The Draw | lay | 4.50 | £12.00 | closed at 4.20, waiting for the result | - |
+| 18:58 | Almere City v NAC Breda | NAC Breda | lay | 2.22 | £12.89 | closed at 2.12, waiting for the result | - |
 | 18:58 | win (1.265760988) | Beechwood Glory | back | 4.90 | £13.79 | closed at 4.60, waiting for the result | - |
+| 18:58 | Vitesse Arnhem v Jong AZ Alkmaar | The Draw | lay | 4.60 | £13.89 | closed at 4.30, waiting for the result | - |
+| 18:58 | win (1.265760988) | Perfect Hope | lay | 9.00 | £6.25 | open | - |
+| 18:58 | win (1.265760988) | Kochella | lay | 42.00 | £1.22 | open | - |
+| 18:58 | win (1.265760988) | Alfey Moon | lay | 13.00 | £4.17 | open | - |
+| 18:58 | win (1.265760988) | Zambezi Shark | lay | 6.80 | £8.62 | open | - |
+| 18:58 | win (1.265760988) | Caravel | lay | 24.00 | £2.17 | open | - |
 | 18:58 | win (1.265760988) | Beechwood Glory | lay | 5.00 | £12.50 | open | - |
 | 18:58 | MC Oran v JS Saoura | The Draw | lay | 3.75 | £18.18 | open | - |
 | 18:58 | Almere City v NAC Breda | The Draw | lay | 4.30 | £15.15 | open | - |
 | 18:58 | Almere City v NAC Breda | Almere City | lay | 3.30 | £21.74 | closed at 3.25, waiting for the result | - |
-| 18:58 | Almere City v NAC Breda | NAC Breda | lay | 2.22 | £12.89 | closed at 2.12, waiting for the result | - |
-| 18:58 | win (1.265760988) | Caravel | lay | 24.00 | £2.17 | open | - |
-| 18:59 | win (1.265760988) | Alfey Moon | lay | 11.50 | £4.76 | open | - |
-| 18:59 | win (1.265760988) | Alfey Moon | back | 11.00 | £50.00 | closed at 12.00, waiting for the result | - |
-| 18:59 | win (1.265760988) | Printing Money | lay | 3.05 | £24.39 | open | - |
+| 18:58 | win (1.265760988) | Better Nature | lay | 42.00 | £1.22 | open | - |
 | 18:59 | win (1.265760988) | Beechwood Glory | back | 4.30 | £50.00 | closed at 4.60, waiting for the result | - |
 | 18:59 | win (1.265760988) | Printing Money | back | 3.00 | £50.00 | closed at 3.05, waiting for the result | - |
+| 18:59 | win (1.265760988) | Alfey Moon | back | 11.00 | £50.00 | closed at 12.00, waiting for the result | - |
+| 18:59 | win (1.265760988) | Printing Money | lay | 3.05 | £24.39 | open | - |
+| 18:59 | win (1.265760988) | Alfey Moon | lay | 11.50 | £4.76 | open | - |
 | 18:59 | FC Andorra v Leganes | 0 - 0 | back | 16.50 | £36.21 | open | - |
+| 18:59 | ESTAC Troyes v Le Havre | 1 - 3 | back | 36.00 | £50.00 | open | - |
+| 18:59 | ESTAC Troyes v Le Havre | 0 - 1 | back | 13.00 | £50.00 | open | - |
 | 18:59 | ESTAC Troyes v Le Havre | Any Other Away Win | back | 36.00 | £50.00 | open | - |
 | 18:59 | ESTAC Troyes v Le Havre | 1 - 2 | back | 13.50 | £50.00 | open | - |
-| 18:59 | ESTAC Troyes v Le Havre | 0 - 1 | back | 13.00 | £50.00 | open | - |
-| 18:59 | ESTAC Troyes v Le Havre | 1 - 3 | back | 36.00 | £50.00 | open | - |
-| 19:00 | Villarreal B v Gimnastic | The Draw | back | 4.10 | £9.75 | closed at 4.40, waiting for the result | - |
 | 19:00 | Barnsley v Sheff Wed | The Draw | lay | 4.30 | £15.15 | closed at 4.20, waiting for the result | - |
-| 19:00 | Barnsley v Sheff Wed | Sheff Wed | back | 2.10 | £50.00 | closed at 2.14, waiting for the result | - |
-| 19:00 | Villarreal B v Gimnastic | Villarreal B | lay | 1.68 | £19.57 | open | - |
-| 19:00 | Athletic Bilbao v Espanyol | The Draw | back | 4.90 | £50.00 | closed at 5.00, waiting for the result | - |
-| 19:00 | Athletic Bilbao v Espanyol | Espanyol | back | 8.20 | £50.00 | closed at 7.00, waiting for the result | - |
 | 19:00 | Villarreal B v Gimnastic | Gimnastic | back | 5.70 | £22.53 | open | - |
+| 19:00 | Athletic Bilbao v Espanyol | Espanyol | back | 8.20 | £50.00 | closed at 7.00, waiting for the result | - |
+| 19:00 | Athletic Bilbao v Espanyol | The Draw | back | 4.90 | £50.00 | closed at 5.00, waiting for the result | - |
 | 19:00 | Athletic Bilbao v Espanyol | Athletic Bilbao | back | 1.48 | £50.00 | closed at 1.49, waiting for the result | - |
+| 19:00 | Barnsley v Sheff Wed | Sheff Wed | back | 2.10 | £50.00 | closed at 2.14, waiting for the result | - |
+| 19:00 | Villarreal B v Gimnastic | The Draw | back | 4.10 | £9.75 | closed at 4.40, waiting for the result | - |
+| 19:00 | Villarreal B v Gimnastic | Villarreal B | lay | 1.68 | £19.57 | open | - |
 | 19:00 | Athletic Bilbao v Espanyol | Any Other Away Win | back | 130.00 | £50.00 | open | - |
 | 19:00 | Guingamp v Rodez | The Draw | lay | 3.95 | £6.76 | open | - |
 | 19:01 | Floridsdorfer AC v Austria Wien (A) | Over 2.5 Goals | lay | 2.18 | £23.67 | open | - |
@@ -3853,53 +3853,53 @@
 | 19:10 | St Polten v Voitsberg | Under 2.5 Goals | back | 1.71 | £50.00 | closed at 1.66, waiting for the result | - |
 | 19:10 | Barnsley v Sheff Wed | 3 - 3 | back | 44.00 | £50.00 | open | - |
 | 19:10 | Barnsley v Sheff Wed | 2 - 2 | back | 13.50 | £50.00 | open | - |
-| 19:13 | Yverdon Sport v Winterthur | Yverdon Sport | lay | 2.42 | £35.21 | closed at 1.66, waiting for the result | - |
 | 19:13 | Yverdon Sport v Winterthur | The Draw | lay | 4.00 | £16.67 | closed at 4.50, waiting for the result | - |
 | 19:13 | Yverdon Sport v Winterthur | Yverdon Sport | back | 2.36 | £23.08 | open | - |
+| 19:13 | Yverdon Sport v Winterthur | Yverdon Sport | lay | 2.42 | £35.21 | closed at 1.66, waiting for the result | - |
 | 19:14 | Aarhus Fremad v Hobro | Aarhus Fremad | back | 1.26 | £50.00 | open | - |
-| 19:15 | Real Madrid Castilla v Real Murcia | Real Murcia | lay | 3.90 | £3.00 | open | - |
 | 19:15 | Real Madrid Castilla v Real Murcia | Real Madrid Castilla | back | 2.18 | £3.00 | open | - |
+| 19:15 | Real Madrid Castilla v Real Murcia | Real Murcia | lay | 3.90 | £3.00 | open | - |
 | 19:15 | Southend v Boreham Wood | 1 - 0 | back | 25.00 | £50.00 | open | - |
 | 19:15 | Southend v Boreham Wood | 3 - 0 | back | 48.00 | £48.48 | open | - |
 | 19:15 | Athletic Bilbao v Espanyol | 1 - 3 | back | 120.00 | £50.00 | open | - |
 | 19:15 | Racing Club (Uru) v Central Espanol | 3 - 1 | back | 22.00 | £11.54 | open | - |
 | 19:16 | Metz v Boulogne | Under 2.5 Goals | back | 1.75 | £50.00 | closed at 1.74, waiting for the result | - |
 | 19:16 | AGF v Lyngby | AGF | back | 1.27 | £50.00 | open | - |
+| 19:16 | Liverpool Montevideo v Wanderers (Uru) | 3 - 1 | back | 20.00 | £13.92 | open | - |
 | 19:16 | Liverpool Montevideo v Wanderers (Uru) | 0 - 0 | back | 14.00 | £13.92 | open | - |
 | 19:16 | Liverpool Montevideo v Wanderers (Uru) | 1 - 0 | back | 10.00 | £13.92 | open | - |
-| 19:16 | Liverpool Montevideo v Wanderers (Uru) | 3 - 1 | back | 20.00 | £13.92 | open | - |
 | 19:19 | Guingamp v Rodez | The Draw | back | 4.20 | £3.26 | closed at 4.20, waiting for the result | - |
 | 19:19 | FC Volendam v Jong Ajax Amsterdam | Jong Ajax Amsterdam | back | 4.60 | £50.00 | closed at 12.00, waiting for the result | - |
 | 19:19 | FC Volendam v Jong Ajax Amsterdam | The Draw | back | 4.50 | £5.25 | closed at 6.80, waiting for the result | - |
-| 19:20 | SV Austria Salzburg v Admira Wacker | Austria S/Draw | lay | 22.00 | £2.38 | closed at 2.20, waiting for the result | - |
 | 19:20 | A.C. Trento S.C.S.D. v Cittadella | Cittadella/Trento | lay | 48.00 | £1.06 | closed at 1.05, waiting for the result | - |
-| 19:20 | A.C. Trento S.C.S.D. v Cittadella | Trento/Draw | lay | 19.00 | £2.78 | closed at 4.80, waiting for the result | - |
 | 19:20 | SV Austria Salzburg v Admira Wacker | Admira Wacker/Austria S | lay | 40.00 | £1.28 | closed at 2.58, waiting for the result | - |
+| 19:20 | SV Austria Salzburg v Admira Wacker | Austria S/Draw | lay | 22.00 | £2.38 | closed at 2.20, waiting for the result | - |
 | 19:20 | Inverness CT v Ayr | Ayr/Ayr | lay | 12.00 | £4.55 | closed at 2.90, waiting for the result | - |
-| 19:20 | FC Andorra v Leganes | FC Andorra/Draw | lay | 20.00 | £2.63 | closed at 2.80, waiting for the result | - |
-| 19:20 | Racing Club (Uru) v Central Espanol | Racing Club (Uru) | back | 2.00 | £50.00 | closed at 2.04, waiting for the result | - |
-| 19:20 | Inverness CT v Ayr | Draw/Ayr | lay | 15.50 | £3.45 | closed at 5.60, waiting for the result | - |
-| 19:20 | Inverness CT v Ayr | Inverness CT/Draw | lay | 20.00 | £2.63 | closed at 2.90, waiting for the result | - |
-| 19:20 | Inverness CT v Ayr | Ayr/Inverness CT | lay | 34.00 | £1.52 | closed at 2.90, waiting for the result | - |
-| 19:20 | A.C. Trento S.C.S.D. v Cittadella | Cittadella/Draw | lay | 19.00 | £2.78 | closed at 2.20, waiting for the result | - |
 | 19:20 | Inverness CT v Ayr | Ayr/Draw | lay | 22.00 | £2.38 | closed at 2.90, waiting for the result | - |
+| 19:20 | Inverness CT v Ayr | Ayr/Inverness CT | lay | 34.00 | £1.52 | closed at 2.90, waiting for the result | - |
+| 19:20 | Inverness CT v Ayr | Inverness CT/Draw | lay | 20.00 | £2.63 | closed at 2.90, waiting for the result | - |
+| 19:20 | A.C. Trento S.C.S.D. v Cittadella | Cittadella/Draw | lay | 19.00 | £2.78 | closed at 2.20, waiting for the result | - |
+| 19:20 | FC Andorra v Leganes | FC Andorra/Draw | lay | 20.00 | £2.63 | closed at 2.80, waiting for the result | - |
+| 19:20 | FC Andorra v Leganes | Leganes/FC Andorra | lay | 32.00 | £1.61 | closed at 1.97, waiting for the result | - |
+| 19:20 | Inverness CT v Ayr | Draw/Ayr | lay | 15.50 | £3.45 | closed at 5.60, waiting for the result | - |
 | 19:20 | Liverpool Montevideo v Wanderers (Uru) | Liverpool Mo/Wanderer (Uru) | lay | 50.00 | £1.02 | closed at 4.00, waiting for the result | - |
-| 19:20 | Liverpool Montevideo v Wanderers (Uru) | Liverpool Mo/Draw | lay | 19.00 | £2.78 | closed at 3.80, waiting for the result | - |
+| 19:20 | Casertana v Salernitana | Salernitana | back | 3.65 | £36.63 | closed at 3.75, waiting for the result | - |
 | 19:20 | Cerro v Nacional (Uru) | Cerro/Draw | lay | 26.00 | £2.00 | closed at 2.20, waiting for the result | - |
 | 19:20 | SV Austria Salzburg v Admira Wacker | Austria S/Admira Wacker | lay | 44.00 | £1.16 | closed at 3.20, waiting for the result | - |
 | 19:20 | Liverpool Montevideo v Wanderers (Uru) | Wanderer (Uru)/Draw | lay | 19.50 | £2.70 | closed at 2.42, waiting for the result | - |
-| 19:20 | Liverpool Montevideo v Wanderers (Uru) | Wanderer (Uru)/Liverpool Mo | lay | 38.00 | £1.35 | closed at 5.70, waiting for the result | - |
-| 19:20 | FC Andorra v Leganes | Leganes/FC Andorra | lay | 32.00 | £1.61 | closed at 1.97, waiting for the result | - |
+| 19:20 | Liverpool Montevideo v Wanderers (Uru) | Liverpool Mo/Draw | lay | 19.00 | £2.78 | closed at 3.80, waiting for the result | - |
 | 19:20 | Cerro v Nacional (Uru) | Draw/Cerro | lay | 15.50 | £3.45 | closed at 2.90, waiting for the result | - |
 | 19:20 | Cerro v Nacional (Uru) | Nacional (Uru)/Draw | lay | 24.00 | £2.17 | closed at 2.90, waiting for the result | - |
 | 19:20 | SV Austria Salzburg v Admira Wacker | Admira Wacker | back | 2.98 | £12.90 | open | - |
 | 19:20 | Inverness CT v Ayr | The Draw | back | 4.10 | £50.00 | closed at 4.30, waiting for the result | - |
 | 19:20 | Bayern Munich v FC Koln | The Draw | back | 15.00 | £50.00 | closed at 15.50, waiting for the result | - |
 | 19:20 | A.C. Trento S.C.S.D. v Cittadella | A.C. Trento S.C.S.D. | back | 2.58 | £44.00 | closed at 2.64, waiting for the result | - |
-| 19:20 | Casertana v Salernitana | Salernitana | back | 3.65 | £36.63 | closed at 3.75, waiting for the result | - |
-| 19:20 | Cerro v Nacional (Uru) | Cerro/Nacional (Uru) | lay | 38.00 | £1.35 | closed at 1.85, waiting for the result | - |
 | 19:20 | FC Andorra v Leganes | Draw/Leganes | lay | 12.00 | £4.55 | closed at 1.87, waiting for the result | - |
-| 19:20 | Miedz Legnica v LKS Lodz | LKS Lodz/Draw | lay | 21.00 | £2.50 | open | - |
+| 19:20 | Racing Club (Uru) v Central Espanol | Racing Club (Uru) | back | 2.00 | £50.00 | closed at 2.04, waiting for the result | - |
+| 19:20 | Cerro v Nacional (Uru) | Cerro/Nacional (Uru) | lay | 38.00 | £1.35 | closed at 1.85, waiting for the result | - |
+| 19:20 | SV Austria Salzburg v Admira Wacker | Admira Wacker/Draw | lay | 22.00 | £2.38 | closed at 2.20, waiting for the result | - |
+| 19:20 | Liverpool Montevideo v Wanderers (Uru) | Wanderer (Uru)/Liverpool Mo | lay | 38.00 | £1.35 | closed at 5.70, waiting for the result | - |
+| 19:20 | Verona v Cesena | Cesena/Verona | lay | 34.00 | £1.52 | closed at 3.50, waiting for the result | - |
 | 19:20 | Verona v Cesena | Cesena/Draw | lay | 24.00 | £2.17 | closed at 2.90, waiting for the result | - |
 | 19:20 | Inverness CT v Ayr | Ayr | back | 5.80 | £14.69 | closed at 5.90, waiting for the result | - |
 | 19:20 | FC Andorra v Leganes | Leganes | back | 4.40 | £26.78 | closed at 4.60, waiting for the result | - |
@@ -3909,39 +3909,39 @@
 | 19:20 | Pogon Szczecin v Slask Wroclaw | Pogon Szczecin/Draw | lay | 21.00 | £2.50 | open | - |
 | 19:20 | Pogon Szczecin v Slask Wroclaw | Slask Wroclaw/Draw | lay | 23.00 | £2.27 | open | - |
 | 19:20 | Pogon Szczecin v Slask Wroclaw | Draw/Slask Wroclaw | lay | 14.00 | £3.85 | open | - |
+| 19:20 | Pogon Szczecin v Slask Wroclaw | Slask Wroclaw/Pogon Szczecin | lay | 32.00 | £1.61 | open | - |
 | 19:20 | Bayern Munich v FC Koln | Draw/Draw | lay | 38.00 | £1.35 | open | - |
 | 19:20 | Racing Club (Uru) v Central Espanol | Draw/Cent. Espanol | lay | 12.00 | £4.55 | open | - |
 | 19:20 | Racing Club (Uru) v Central Espanol | Cent. Espanol/Draw | lay | 23.00 | £2.27 | open | - |
-| 19:20 | Racing Club (Uru) v Central Espanol | Rac Club (Uru)/Draw | lay | 21.00 | £2.50 | open | - |
-| 19:20 | Pogon Szczecin v Slask Wroclaw | Slask Wroclaw/Pogon Szczecin | lay | 32.00 | £1.61 | open | - |
-| 19:20 | Casertana v Salernitana | Salernitana/Draw | lay | 22.00 | £2.38 | open | - |
-| 19:20 | Verona v Cesena | Cesena/Verona | lay | 34.00 | £1.52 | closed at 3.50, waiting for the result | - |
+| 19:20 | A.C. Trento S.C.S.D. v Cittadella | Trento/Draw | lay | 19.00 | £2.78 | closed at 4.80, waiting for the result | - |
 | 19:20 | Racing Club (Uru) v Central Espanol | Cent. Espanol/Rac Club (Uru) | lay | 44.00 | £1.16 | open | - |
-| 19:20 | Verona v Cesena | Draw/Cesena | lay | 17.00 | £3.12 | closed at 2.24, waiting for the result | - |
-| 19:20 | Verona v Cesena | Cesena/Cesena | lay | 13.50 | £4.00 | closed at 2.12, waiting for the result | - |
-| 19:20 | Miedz Legnica v LKS Lodz | LKS Lodz/Miedz Legnica | lay | 40.00 | £1.28 | open | - |
-| 19:20 | Verona v Cesena | Verona/Draw | lay | 23.00 | £2.27 | closed at 2.80, waiting for the result | - |
-| 19:20 | Cerro v Nacional (Uru) | Cerro/Cerro | lay | 12.00 | £4.55 | open | - |
-| 19:20 | Miedz Legnica v LKS Lodz | Miedz Legnica/LKS Lodz | lay | 46.00 | £1.11 | open | - |
-| 19:20 | Casertana v Salernitana | Casertana/Draw | lay | 21.00 | £2.50 | open | - |
+| 19:20 | Casertana v Salernitana | Salernitana/Draw | lay | 22.00 | £2.38 | open | - |
 | 19:20 | Casertana v Salernitana | Salernitana/Casertana | lay | 44.00 | £1.16 | open | - |
+| 19:20 | Racing Club (Uru) v Central Espanol | Rac Club (Uru)/Draw | lay | 21.00 | £2.50 | open | - |
+| 19:20 | Verona v Cesena | Verona/Draw | lay | 23.00 | £2.27 | closed at 2.80, waiting for the result | - |
+| 19:20 | Casertana v Salernitana | Casertana/Draw | lay | 21.00 | £2.50 | open | - |
+| 19:20 | Miedz Legnica v LKS Lodz | Miedz Legnica/LKS Lodz | lay | 46.00 | £1.11 | open | - |
+| 19:20 | Cerro v Nacional (Uru) | Cerro/Cerro | lay | 12.00 | £4.55 | open | - |
 | 19:20 | Miedz Legnica v LKS Lodz | Miedz Legnica/Draw | lay | 19.50 | £2.70 | open | - |
-| 19:20 | SV Austria Salzburg v Admira Wacker | Admira Wacker/Draw | lay | 22.00 | £2.38 | closed at 2.20, waiting for the result | - |
-| 19:20 | Nancy v Dijon | The Draw | back | 3.55 | £16.90 | closed at 3.60, waiting for the result | - |
+| 19:20 | Miedz Legnica v LKS Lodz | LKS Lodz/Miedz Legnica | lay | 40.00 | £1.28 | open | - |
+| 19:20 | Miedz Legnica v LKS Lodz | LKS Lodz/Draw | lay | 21.00 | £2.50 | open | - |
+| 19:20 | Verona v Cesena | Cesena/Cesena | lay | 13.50 | £4.00 | closed at 2.12, waiting for the result | - |
+| 19:20 | Verona v Cesena | Draw/Cesena | lay | 17.00 | £3.12 | closed at 2.24, waiting for the result | - |
 | 19:20 | Nancy v Dijon | Dijon | back | 4.60 | £25.97 | closed at 5.00, waiting for the result | - |
+| 19:20 | Nancy v Dijon | The Draw | back | 3.55 | £16.90 | closed at 3.60, waiting for the result | - |
 | 19:20 | Nancy v Dijon | Under 2.5 Goals | lay | 1.77 | £64.94 | closed at 1.21, waiting for the result | - |
 | 19:20 | Rapperswil-Jona v Aarau | The Draw | lay | 4.40 | £6.94 | closed at 4.30, waiting for the result | - |
-| 19:20 | Metz v Boulogne | Boulogne | back | 3.30 | £50.00 | closed at 3.50, waiting for the result | - |
 | 19:20 | Metz v Boulogne | Boulogne | lay | 3.35 | £21.28 | closed at 3.95, waiting for the result | - |
 | 19:20 | Metz v Boulogne | Metz | lay | 2.56 | £32.05 | closed at 2.54, waiting for the result | - |
-| 19:21 | Den Bosch v VVV Venlo | VVV Venlo | back | 3.05 | £7.26 | open | - |
+| 19:20 | Metz v Boulogne | Boulogne | back | 3.30 | £50.00 | closed at 3.50, waiting for the result | - |
 | 19:21 | Den Bosch v VVV Venlo | VVV Venlo | lay | 3.15 | £23.26 | open | - |
 | 19:21 | Den Bosch v VVV Venlo | The Draw | back | 3.90 | £7.67 | open | - |
+| 19:21 | Den Bosch v VVV Venlo | VVV Venlo | back | 3.05 | £7.26 | open | - |
 | 19:21 | De Graafschap v MVV Maastricht | Over 2.5 Goals | lay | 1.88 | £5.44 | closed at 1.63, waiting for the result | - |
 | 19:21 | De Graafschap v MVV Maastricht | De Graafschap | back | 1.66 | £18.07 | closed at 1.66, waiting for the result | - |
 | 19:22 | Club Brugge B v Excelsior Virton | Excelsior Virton | back | 1.96 | £8.72 | closed at 1.98, waiting for the result | - |
-| 19:22 | Lierse v SC Lokeren-Temse | The Draw | back | 3.65 | £3.16 | closed at 3.95, waiting for the result | - |
 | 19:22 | Lierse v SC Lokeren-Temse | SC Lokeren-Temse | back | 1.86 | £5.07 | closed at 1.99, waiting for the result | - |
+| 19:22 | Lierse v SC Lokeren-Temse | The Draw | back | 3.65 | £3.16 | closed at 3.95, waiting for the result | - |
 | 19:22 | Lierse v SC Lokeren-Temse | Under 2.5 Goals | lay | 2.00 | £6.43 | closed at 1.40, waiting for the result | - |
 | 19:22 | Helmond Sport v FC Dordrecht | FC Dordrecht | back | 4.70 | £18.22 | closed at 4.70, waiting for the result | - |
 | 19:22 | FC Oss v Roda JC | Under 2.5 Goals | lay | 1.87 | £57.47 | closed at 1.25, waiting for the result | - |
@@ -3957,18 +3957,18 @@
 | 19:24 | Wendelken v Jor Lee | Harry Wendelken | lay | 5.30 | £11.63 | open | - |
 | 19:27 | Stade Nyonnais v FC Wil | The Draw | lay | 3.30 | £4.99 | closed at 1.80, waiting for the result | - |
 | 19:27 | FC Volendam v Jong Ajax Amsterdam | Over 2.5 Goals | back | 1.24 | £50.00 | closed at 1.26, waiting for the result | - |
-| 19:28 | Inverness CT v Ayr | Inverness CT | back | 1.68 | £50.00 | open | - |
+| 19:28 | Casertana v Salernitana | Casertana | back | 2.38 | £50.00 | open | - |
+| 19:28 | A.C. Trento S.C.S.D. v Cittadella | A.C. Trento S.C.S.D. | back | 2.56 | £21.71 | open | - |
 | 19:28 | Miedz Legnica v LKS Lodz | LKS Lodz | back | 3.00 | £50.00 | open | - |
 | 19:28 | Racing Club (Uru) v Central Espanol | Racing Club (Uru) | lay | 1.97 | £51.55 | closed at 2.00, waiting for the result | - |
 | 19:28 | FC Andorra v Leganes | Leganes | lay | 4.60 | £13.89 | closed at 5.00, waiting for the result | - |
-| 19:28 | Pogon Szczecin v Slask Wroclaw | Slask Wroclaw | lay | 5.20 | £11.90 | closed at 4.60, waiting for the result | - |
-| 19:28 | A.C. Trento S.C.S.D. v Cittadella | A.C. Trento S.C.S.D. | back | 2.56 | £21.71 | open | - |
+| 19:28 | Inverness CT v Ayr | Inverness CT | back | 1.68 | £50.00 | open | - |
+| 19:28 | Verona v Cesena | Cesena | lay | 6.60 | £8.93 | closed at 2.40, waiting for the result | - |
 | 19:28 | Bayern Munich v FC Koln | FC Koln | lay | 36.00 | £1.43 | closed at 36.00, waiting for the result | - |
 | 19:28 | Inverness CT v Ayr | The Draw | lay | 4.20 | £15.62 | closed at 3.80, waiting for the result | - |
+| 19:28 | Pogon Szczecin v Slask Wroclaw | Slask Wroclaw | lay | 5.20 | £11.90 | closed at 4.60, waiting for the result | - |
 | 19:28 | Inverness CT v Ayr | Ayr | lay | 6.20 | £9.62 | closed at 5.80, waiting for the result | - |
 | 19:28 | Miedz Legnica v LKS Lodz | The Draw | lay | 3.75 | £13.67 | open | - |
-| 19:28 | Verona v Cesena | Cesena | lay | 6.60 | £8.93 | closed at 2.40, waiting for the result | - |
-| 19:28 | Casertana v Salernitana | Casertana | back | 2.38 | £50.00 | open | - |
 | 19:28 | Barnsley v Sheff Wed | 3 - 1 | back | 30.00 | £21.46 | open | - |
 | 19:28 | Stade Lausanne-Ouchy v Kriens | The Draw | lay | 3.20 | £9.37 | closed at 6.00, waiting for the result | - |
 | 19:28 | Neuchatel Xamax v Etoile Carouge | The Draw | lay | 2.66 | £30.12 | open | - |
@@ -3988,8 +3988,8 @@
 | 19:31 | Bristol City U21 v Norwich U21 | The Draw | lay | 4.40 | £14.71 | open | - |
 | 19:31 | Den Bosch v VVV Venlo | The Draw | lay | 5.10 | £12.20 | open | - |
 | 19:31 | De Graafschap v MVV Maastricht | The Draw | lay | 4.10 | £16.13 | open | - |
-| 19:31 | FC Andorra v Leganes | The Draw | lay | 3.95 | £16.95 | closed at 4.90, waiting for the result | - |
 | 19:31 | FC Andorra v Leganes | Leganes | lay | 4.90 | £12.82 | closed at 5.60, waiting for the result | - |
+| 19:31 | FC Andorra v Leganes | The Draw | lay | 3.95 | £16.95 | closed at 4.90, waiting for the result | - |
 | 19:31 | Pogon Szczecin v Slask Wroclaw | The Draw | lay | 4.30 | £15.15 | open | - |
 | 19:31 | Pogon Szczecin v Slask Wroclaw | Slask Wroclaw | lay | 5.10 | £12.20 | closed at 4.60, waiting for the result | - |
 | 19:32 | Passaro v Herbert | Francesco Passaro | lay | 1.44 | £113.64 | open | - |
@@ -4012,35 +4012,35 @@
 | 19:33 | Wolverhampton 20th Nov | Tremolo | lay | 17.50 | £3.00 | open | - |
 | 19:34 | Roca Batalla v Th Seyboth Wild | Oriol Roca Batalla | lay | 9.20 | £6.10 | open | - |
 | 19:34 | Wolverhampton 20th Nov | Secret Santa | back | 4.30 | £9.76 | closed at 6.00, waiting for the result | - |
+| 19:34 | Wolverhampton 20th Nov | Asuka | lay | 1.75 | £11.47 | closed at 1.45, waiting for the result | - |
 | 19:34 | Wolverhampton 20th Nov | Tremolo | back | 42.00 | £2.96 | open | - |
 | 19:34 | Wolverhampton 20th Nov | Sword | back | 36.00 | £9.58 | open | - |
-| 19:34 | Wolverhampton 20th Nov | Asuka | lay | 1.75 | £11.47 | closed at 1.45, waiting for the result | - |
-| 19:35 | Southend v Boreham Wood | Southend/Draw | lay | 19.00 | £2.78 | open | - |
-| 19:35 | Southend v Boreham Wood | Boreham Wood | back | 2.08 | £11.05 | closed at 2.10, waiting for the result | - |
-| 19:35 | Dundalk 20th Nov | Dancing Steve | lay | 9.60 | £4.06 | open | - |
-| 19:35 | Dundalk 20th Nov | Usuario Amigo | lay | 9.20 | £6.10 | open | - |
-| 19:35 | Dundalk 20th Nov | Tribal Moon | lay | 8.40 | £6.76 | open | - |
-| 19:35 | Dundalk 20th Nov | Flying Fortress | lay | 6.60 | £8.93 | open | - |
-| 19:35 | Dundalk 20th Nov | Tero Drosa | lay | 6.80 | £8.62 | open | - |
-| 19:35 | Dundalk 20th Nov | Soaring Sun | lay | 9.40 | £5.95 | open | - |
-| 19:35 | Dundalk 20th Nov | Afloat | back | 80.00 | £4.64 | open | - |
-| 19:35 | Dundalk 20th Nov | Suerte | back | 29.00 | £5.71 | open | - |
-| 19:35 | Dundalk 20th Nov | Walhaan | back | 15.50 | £12.69 | open | - |
-| 19:35 | Dundalk 20th Nov | Justenzia | back | 20.00 | £7.81 | open | - |
-| 19:35 | Dundalk 20th Nov | Autocrat | back | 14.50 | £15.41 | open | - |
 | 19:35 | Dundalk 20th Nov | Stable Lane | back | 42.00 | £2.16 | open | - |
-| 19:35 | Southend v Boreham Wood | Boreham Wood/Draw | lay | 19.50 | £2.70 | open | - |
+| 19:35 | Dundalk 20th Nov | Autocrat | back | 14.50 | £15.41 | open | - |
+| 19:35 | Dundalk 20th Nov | Justenzia | back | 20.00 | £7.81 | open | - |
+| 19:35 | Dundalk 20th Nov | Walhaan | back | 15.50 | £12.69 | open | - |
+| 19:35 | Dundalk 20th Nov | Suerte | back | 29.00 | £5.71 | open | - |
+| 19:35 | Dundalk 20th Nov | Afloat | back | 80.00 | £4.64 | open | - |
 | 19:35 | Dundalk 20th Nov | Pepper Noir | back | 120.00 | £3.41 | open | - |
+| 19:35 | Dundalk 20th Nov | Tero Drosa | lay | 6.80 | £8.62 | open | - |
+| 19:35 | Southend v Boreham Wood | Southend/Draw | lay | 19.00 | £2.78 | open | - |
+| 19:35 | Dundalk 20th Nov | Flying Fortress | lay | 6.60 | £8.93 | open | - |
+| 19:35 | Dundalk 20th Nov | Tribal Moon | lay | 8.40 | £6.76 | open | - |
+| 19:35 | Dundalk 20th Nov | Usuario Amigo | lay | 9.20 | £6.10 | open | - |
+| 19:35 | Dundalk 20th Nov | Dancing Steve | lay | 9.60 | £4.06 | open | - |
+| 19:35 | Southend v Boreham Wood | Boreham Wood | back | 2.08 | £11.05 | closed at 2.10, waiting for the result | - |
+| 19:35 | Dundalk 20th Nov | Soaring Sun | lay | 9.40 | £5.95 | open | - |
+| 19:35 | Southend v Boreham Wood | Boreham Wood/Draw | lay | 19.50 | £2.70 | open | - |
+| 19:35 | ESTAC Troyes v Le Havre | Le Havre/ESTAC Troyes | lay | 36.00 | £1.43 | open | - |
 | 19:35 | Southend v Boreham Wood | Draw/Draw | lay | 11.00 | £5.00 | open | - |
 | 19:35 | ESTAC Troyes v Le Havre | ESTAC Troyes | back | 2.30 | £50.00 | closed at 2.28, waiting for the result | - |
 | 19:35 | Cercle Brugge v Westerlo | The Draw | back | 4.10 | £18.21 | closed at 4.20, waiting for the result | - |
-| 19:35 | Southend v Boreham Wood | Southend | back | 3.40 | £19.24 | closed at 3.50, waiting for the result | - |
+| 19:35 | Southend v Boreham Wood | Boreham Wood/Southend | lay | 34.00 | £1.52 | open | - |
 | 19:35 | ESTAC Troyes v Le Havre | ESTAC Troyes/Draw | lay | 18.50 | £2.86 | open | - |
 | 19:35 | Balzan FC v Mosta | Mosta/Draw | lay | 24.00 | £2.17 | open | - |
 | 19:35 | Balzan FC v Mosta | Draw/Mosta | lay | 13.50 | £4.00 | open | - |
-| 19:35 | Southend v Boreham Wood | Boreham Wood/Southend | lay | 34.00 | £1.52 | open | - |
 | 19:35 | Balzan FC v Mosta | Mosta/Balzan FC | lay | 44.00 | £1.16 | open | - |
-| 19:35 | ESTAC Troyes v Le Havre | Le Havre/ESTAC Troyes | lay | 36.00 | £1.43 | open | - |
+| 19:35 | Southend v Boreham Wood | Southend | back | 3.40 | £19.24 | closed at 3.50, waiting for the result | - |
 | 19:35 | Cercle Brugge v Westerlo | Westerlo/Draw | lay | 18.50 | £2.86 | open | - |
 | 19:35 | Cercle Brugge v Westerlo | Cercle Brugge/Draw | lay | 18.00 | £2.94 | open | - |
 | 19:35 | Cercle Brugge v Westerlo | Westerlo/Cercle Brugge | lay | 29.00 | £1.79 | open | - |
@@ -4048,60 +4048,60 @@
 | 19:35 | ESTAC Troyes v Le Havre | Le Havre/Draw | lay | 18.50 | £2.86 | open | - |
 | 19:35 | Balzan FC v Mosta | Balzan FC/Draw | lay | 23.00 | £2.27 | open | - |
 | 19:35 | Wolverhampton 20th Nov | Asuka | lay | 1.02 | £40.00 | open | - |
-| 19:36 | Yverdon Sport v Winterthur | Yverdon Sport | lay | 2.94 | £7.33 | closed at 2.54, waiting for the result | - |
 | 19:36 | Yverdon Sport v Winterthur | Winterthur | lay | 2.74 | £2.69 | open | - |
+| 19:36 | Yverdon Sport v Winterthur | Yverdon Sport | lay | 2.94 | £7.33 | closed at 2.54, waiting for the result | - |
 | 19:38 | Bayern Munich v FC Koln | Under 2.5 Goals | back | 5.00 | £50.00 | closed at 5.10, waiting for the result | - |
 | 19:39 | Stade Lausanne-Ouchy v Kriens | Over 2.5 Goals | back | 1.22 | £50.00 | closed at 1.23, waiting for the result | - |
 | 19:39 | Jong FC Utrecht v Emmen | Under 2.5 Goals | back | 1.69 | £50.00 | closed at 1.68, waiting for the result | - |
-| 19:40 | Dundalk 20th Nov | Pepper Noir | back | 120.00 | £3.41 | open | - |
-| 19:40 | Dundalk 20th Nov | Afloat | back | 55.00 | £14.61 | open | - |
+| 19:40 | Dundalk 20th Nov | Walhaan | back | 14.50 | £31.29 | closed at 14.00, waiting for the result | - |
+| 19:40 | Dundalk 20th Nov | Dancing Steve | back | 10.00 | £50.00 | closed at 10.50, waiting for the result | - |
+| 19:40 | Dundalk 20th Nov | Soaring Sun | back | 9.80 | £16.84 | closed at 9.60, waiting for the result | - |
+| 19:40 | Dundalk 20th Nov | Suerte | back | 28.00 | £4.45 | closed at 29.00, waiting for the result | - |
+| 19:40 | Dundalk 20th Nov | Stable Lane | back | 42.00 | £5.65 | open | - |
 | 19:40 | Dundalk 20th Nov | Justenzia | back | 19.50 | £10.34 | closed at 19.50, waiting for the result | - |
 | 19:40 | Dundalk 20th Nov | Tribal Moon | back | 7.40 | £14.17 | closed at 8.40, waiting for the result | - |
-| 19:40 | Dundalk 20th Nov | Suerte | back | 28.00 | £4.45 | closed at 29.00, waiting for the result | - |
-| 19:40 | Dundalk 20th Nov | Walhaan | back | 14.50 | £31.29 | closed at 14.00, waiting for the result | - |
-| 19:40 | Dundalk 20th Nov | Stable Lane | back | 42.00 | £5.65 | open | - |
-| 19:40 | Dundalk 20th Nov | Soaring Sun | back | 9.80 | £16.84 | closed at 9.60, waiting for the result | - |
-| 19:40 | Dundalk 20th Nov | Dancing Steve | back | 10.00 | £50.00 | closed at 10.50, waiting for the result | - |
+| 19:40 | Dundalk 20th Nov | Afloat | back | 55.00 | £14.61 | open | - |
+| 19:40 | Dundalk 20th Nov | Pepper Noir | back | 120.00 | £3.41 | open | - |
 | 19:40 | Bayern Munich v FC Koln | Over 2.5 Goals | back | 1.24 | £50.00 | closed at 1.26, waiting for the result | - |
 | 19:41 | Pogon Szczecin v Slask Wroclaw | Under 2.5 Goals | back | 1.96 | £18.98 | closed at 1.91, waiting for the result | - |
 | 19:42 | CD Teruel v Hercules CF | Under 2.5 Goals | back | 1.03 | £50.00 | closed at 1.04, waiting for the result | - |
+| 19:43 | Balzan FC v Mosta | Balzan FC | back | 1.94 | £50.00 | open | - |
 | 19:43 | ESTAC Troyes v Le Havre | ESTAC Troyes | lay | 2.28 | £39.06 | closed at 4.10, waiting for the result | - |
 | 19:43 | Cercle Brugge v Westerlo | The Draw | lay | 4.20 | £15.62 | closed at 3.95, waiting for the result | - |
 | 19:43 | Southend v Boreham Wood | Southend | lay | 3.50 | £20.00 | closed at 3.40, waiting for the result | - |
 | 19:43 | Southend v Boreham Wood | The Draw | lay | 4.40 | £14.71 | closed at 4.20, waiting for the result | - |
-| 19:43 | Dundalk 20th Nov | Flying Fortress | lay | 7.00 | £8.33 | open | - |
-| 19:43 | Balzan FC v Mosta | Balzan FC | back | 1.94 | £50.00 | open | - |
 | 19:43 | Dundalk 20th Nov | Tribal Moon | lay | 8.80 | £5.45 | open | - |
 | 19:43 | Dundalk 20th Nov | Usuario Amigo | lay | 9.40 | £5.95 | open | - |
-| 19:43 | Dundalk 20th Nov | Suerte | lay | 22.00 | £2.38 | closed at 14.50, waiting for the result | - |
-| 19:43 | Dundalk 20th Nov | Soaring Sun | lay | 9.60 | £5.81 | open | - |
+| 19:43 | Dundalk 20th Nov | Tero Drosa | lay | 6.00 | £7.97 | open | - |
+| 19:43 | Dundalk 20th Nov | Flying Fortress | lay | 7.00 | £8.33 | open | - |
 | 19:43 | Dundalk 20th Nov | Walhaan | lay | 15.50 | £3.45 | closed at 9.20, waiting for the result | - |
+| 19:43 | Dundalk 20th Nov | Suerte | lay | 22.00 | £2.38 | closed at 14.50, waiting for the result | - |
 | 19:43 | Dundalk 20th Nov | Dancing Steve | lay | 12.50 | £4.35 | closed at 12.50, waiting for the result | - |
 | 19:43 | Dundalk 20th Nov | Justenzia | lay | 21.00 | £2.50 | closed at 12.50, waiting for the result | - |
 | 19:43 | Dundalk 20th Nov | Stable Lane | lay | 44.00 | £1.16 | closed at 42.00, waiting for the result | - |
 | 19:43 | Dundalk 20th Nov | Autocrat | lay | 15.00 | £3.57 | closed at 18.50, waiting for the result | - |
 | 19:43 | Dundalk 20th Nov | Justenzia | back | 20.00 | £3.45 | closed at 19.50, waiting for the result | - |
-| 19:43 | Dundalk 20th Nov | Tero Drosa | lay | 6.00 | £7.97 | open | - |
+| 19:43 | Dundalk 20th Nov | Soaring Sun | lay | 9.60 | £5.81 | open | - |
 | 19:44 | Dundalk 20th Nov | Flying Fortress | lay | 6.40 | £9.26 | open | - |
 | 19:44 | Dundalk 20th Nov | Usuario Amigo | lay | 8.00 | £7.14 | open | - |
 | 19:44 | Dundalk 20th Nov | Autocrat | lay | 13.50 | £4.00 | open | - |
+| 19:44 | Dundalk 20th Nov | Flying Fortress | back | 6.20 | £38.05 | closed at 6.60, waiting for the result | - |
 | 19:44 | Dundalk 20th Nov | Autocrat | back | 13.00 | £30.21 | closed at 14.00, waiting for the result | - |
 | 19:44 | Dundalk 20th Nov | Usuario Amigo | back | 7.80 | £20.64 | closed at 9.00, waiting for the result | - |
-| 19:44 | Dundalk 20th Nov | Flying Fortress | back | 6.20 | £38.05 | closed at 6.60, waiting for the result | - |
 | 19:44 | Metz v Boulogne | Over 2.5 Goals | back | 1.23 | £50.00 | closed at 1.25, waiting for the result | - |
 | 19:45 | Porto v Uniao Sport Clube de Paredes | Porto | back | 1.09 | £42.62 | closed at 1.10, waiting for the result | - |
 | 19:45 | Dundalk 20th Nov | Tero Drosa | lay | 6.40 | £9.26 | open | - |
 | 19:45 | Dundalk 20th Nov | Stable Lane | lay | 42.00 | £1.22 | open | - |
 | 19:45 | Dundalk 20th Nov | Suerte | lay | 21.00 | £2.50 | open | - |
-| 19:45 | Dundalk 20th Nov | Soaring Sun | back | 8.60 | £11.74 | open | - |
-| 19:45 | Dundalk 20th Nov | Autocrat | lay | 14.50 | £3.70 | open | - |
-| 19:45 | Dundalk 20th Nov | Walhaan | lay | 12.00 | £2.00 | open | - |
-| 19:45 | Dundalk 20th Nov | Justenzia | lay | 21.00 | £2.50 | open | - |
-| 19:45 | Dundalk 20th Nov | Usuario Amigo | lay | 15.00 | £2.99 | open | - |
 | 19:45 | Dundalk 20th Nov | Soaring Sun | lay | 9.60 | £5.81 | open | - |
 | 19:45 | Dundalk 20th Nov | Tribal Moon | lay | 11.00 | £3.12 | open | - |
-| 19:45 | Dundalk 20th Nov | Dancing Steve | back | 9.60 | £3.41 | open | - |
+| 19:45 | Dundalk 20th Nov | Usuario Amigo | lay | 15.00 | £2.99 | open | - |
+| 19:45 | Dundalk 20th Nov | Soaring Sun | back | 8.60 | £11.74 | open | - |
+| 19:45 | Dundalk 20th Nov | Walhaan | lay | 12.00 | £2.00 | open | - |
+| 19:45 | Dundalk 20th Nov | Autocrat | lay | 14.50 | £3.70 | open | - |
+| 19:45 | Dundalk 20th Nov | Justenzia | lay | 21.00 | £2.50 | open | - |
 | 19:45 | Dundalk 20th Nov | Tero Drosa | back | 8.60 | £2.33 | open | - |
+| 19:45 | Dundalk 20th Nov | Dancing Steve | back | 9.60 | £3.41 | open | - |
 | 19:46 | Dundalk 20th Nov | Suerte | lay | 18.00 | £2.94 | open | - |
 | 19:46 | Dundalk 20th Nov | Flying Fortress | lay | 4.60 | £13.89 | closed at 4.60, waiting for the result | - |
 | 19:46 | Dundalk 20th Nov | Autocrat | back | 18.50 | £4.11 | closed at 27.00, waiting for the result | - |
@@ -4131,20 +4131,20 @@
 | 19:49 | ESTAC Troyes v Le Havre | Over 2.5 Goals | back | 1.32 | £50.00 | closed at 1.34, waiting for the result | - |
 | 19:49 | Annecy v Clermont | The Draw | lay | 13.50 | £2.22 | open | - |
 | 19:49 | FC Volendam v Jong Ajax Amsterdam | The Draw | lay | 6.40 | £9.26 | closed at 6.20, waiting for the result | - |
+| 19:50 | Villarreal B v Gimnastic | Gimnastic | back | 5.70 | £2.09 | closed at 6.40, waiting for the result | - |
+| 19:50 | win (1.265761030) | Sir Rodneyredblood | back | 50.00 | £7.05 | open | - |
+| 19:50 | win (1.265761030) | Twilight Madness | back | 36.00 | £27.81 | open | - |
 | 19:50 | win (1.265761030) | Solid Bond | back | 20.00 | £32.20 | open | - |
 | 19:50 | win (1.265761030) | Eldeyaar | back | 26.00 | £12.43 | open | - |
 | 19:50 | win (1.265761030) | Love Alive | back | 14.50 | £41.09 | open | - |
-| 19:50 | win (1.265761030) | Tomarlo | back | 26.00 | £37.15 | open | - |
 | 19:50 | win (1.265761030) | Pennys Spirit | back | 65.00 | £4.69 | open | - |
-| 19:50 | win (1.265761030) | My Mate Mackley | back | 14.00 | £49.22 | open | - |
+| 19:50 | win (1.265761030) | Tomarlo | back | 26.00 | £37.15 | open | - |
 | 19:50 | win (1.265761030) | Sweet Desire | back | 110.00 | £6.71 | open | - |
 | 19:50 | win (1.265761030) | Rianka | back | 70.00 | £5.78 | open | - |
 | 19:50 | Barnsley v Sheff Wed | The Draw | back | 4.10 | £17.76 | closed at 4.20, waiting for the result | - |
 | 19:50 | Barnsley v Sheff Wed | Barnsley | back | 3.40 | £50.00 | closed at 3.50, waiting for the result | - |
 | 19:50 | Villarreal B v Gimnastic | The Draw | back | 3.95 | £20.78 | closed at 4.20, waiting for the result | - |
-| 19:50 | Villarreal B v Gimnastic | Gimnastic | back | 5.70 | £2.09 | closed at 6.40, waiting for the result | - |
-| 19:50 | win (1.265761030) | Twilight Madness | back | 36.00 | £27.81 | open | - |
-| 19:50 | win (1.265761030) | Sir Rodneyredblood | back | 50.00 | £7.05 | open | - |
+| 19:50 | win (1.265761030) | My Mate Mackley | back | 14.00 | £49.22 | open | - |
 | 19:50 | Red Star v Pau | The Draw | lay | 5.20 | £11.90 | closed at 5.10, waiting for the result | - |
 | 19:50 | Fulham U21 v Sporting CP U21 | The Draw | lay | 11.50 | £4.76 | open | - |
 | 19:50 | Metz v Boulogne | The Draw | lay | 2.78 | £28.09 | closed at 2.76, waiting for the result | - |
@@ -4173,13 +4173,13 @@
 | 19:54 | Guingamp v Rodez | The Draw | lay | 2.88 | £8.21 | open | - |
 | 19:54 | Annecy v Clermont | The Draw | lay | 14.00 | £3.85 | open | - |
 | 19:54 | FC Volendam v Jong Ajax Amsterdam | Jong Ajax Amsterdam | lay | 14.50 | £3.70 | open | - |
-| 19:55 | win (1.265761030) | Tomarlo | back | 27.00 | £13.16 | closed at 24.00, waiting for the result | - |
-| 19:55 | win (1.265761030) | Nordic Glory | back | 40.00 | £5.76 | closed at 40.00, waiting for the result | - |
-| 19:55 | win (1.265761030) | Rianka | back | 60.00 | £13.08 | open | - |
+| 19:55 | win (1.265761030) | Twilight Madness | back | 34.00 | £49.73 | closed at 30.00, waiting for the result | - |
+| 19:55 | win (1.265761030) | Solid Bond | back | 17.50 | £22.98 | closed at 14.50, waiting for the result | - |
 | 19:55 | win (1.265761030) | Pennys Spirit | back | 60.00 | £6.13 | open | - |
 | 19:55 | win (1.265761030) | Love Alive | back | 14.00 | £50.00 | closed at 17.00, waiting for the result | - |
-| 19:55 | win (1.265761030) | Solid Bond | back | 17.50 | £22.98 | closed at 14.50, waiting for the result | - |
-| 19:55 | win (1.265761030) | Twilight Madness | back | 34.00 | £49.73 | closed at 30.00, waiting for the result | - |
+| 19:55 | win (1.265761030) | Nordic Glory | back | 40.00 | £5.76 | closed at 40.00, waiting for the result | - |
+| 19:55 | win (1.265761030) | Tomarlo | back | 27.00 | £13.16 | closed at 24.00, waiting for the result | - |
+| 19:55 | win (1.265761030) | Rianka | back | 60.00 | £13.08 | open | - |
 | 19:55 | Nancy v Dijon | The Draw | lay | 2.74 | £28.74 | closed at 5.40, waiting for the result | - |
 | 19:55 | Red Star v Pau | Pau | lay | 16.50 | £3.23 | open | - |
 | 19:55 | Metz v Boulogne | Metz | lay | 2.56 | £32.05 | closed at 3.60, waiting for the result | - |
@@ -4191,46 +4191,46 @@
 | 19:56 | Medvedev v Tiafoe | Frances Tiafoe | lay | 2.60 | £10.67 | closed at 2.94, waiting for the result | - |
 | 19:57 | Club Brugge B v Excelsior Virton | The Draw | lay | 2.86 | £9.96 | closed at 1.99, waiting for the result | - |
 | 19:57 | Club Brugge B v Excelsior Virton | Club Brugge B | lay | 2.68 | £2.58 | closed at 3.40, waiting for the result | - |
+| 19:57 | Jong FC Utrecht v Emmen | Emmen | lay | 3.15 | £23.26 | closed at 4.20, waiting for the result | - |
 | 19:57 | Jong FC Utrecht v Emmen | Jong FC Utrecht | lay | 2.76 | £4.20 | closed at 3.45, waiting for the result | - |
 | 19:57 | Jong FC Utrecht v Emmen | The Draw | lay | 3.20 | £22.73 | closed at 2.06, waiting for the result | - |
-| 19:57 | Jong FC Utrecht v Emmen | Emmen | lay | 3.15 | £23.26 | closed at 4.20, waiting for the result | - |
 | 19:57 | Heracles v Jong PSV Eindhoven | Jong PSV Eindhoven | lay | 42.00 | £1.22 | open | - |
 | 19:57 | Heracles v Jong PSV Eindhoven | The Draw | lay | 12.50 | £4.35 | open | - |
-| 19:57 | West Brom U21 v Coventry City U21 | West Brom U21 | lay | 2.66 | £30.12 | closed at 13.00, waiting for the result | - |
 | 19:57 | West Brom U21 v Coventry City U21 | The Draw | lay | 3.25 | £22.22 | closed at 3.95, waiting for the result | - |
+| 19:57 | West Brom U21 v Coventry City U21 | West Brom U21 | lay | 2.66 | £30.12 | closed at 13.00, waiting for the result | - |
 | 19:57 | Pogon Szczecin v Slask Wroclaw | Over 2.5 Goals | back | 2.58 | £4.19 | closed at 2.62, waiting for the result | - |
-| 19:58 | win (1.265761030) | Twilight Madness | lay | 36.00 | £1.43 | open | - |
 | 19:58 | Villarreal B v Gimnastic | Villarreal B | back | 1.65 | £27.15 | open | - |
 | 19:58 | Villarreal B v Gimnastic | Villarreal B | lay | 1.67 | £74.63 | closed at 1.64, waiting for the result | - |
 | 19:58 | Villarreal B v Gimnastic | Gimnastic | lay | 6.40 | £7.00 | closed at 5.70, waiting for the result | - |
 | 19:58 | Athletic Bilbao v Espanyol | The Draw | lay | 5.30 | £11.63 | closed at 5.20, waiting for the result | - |
 | 19:58 | win (1.265761030) | Solid Bond | lay | 16.00 | £3.33 | closed at 2.00, waiting for the result | - |
+| 19:58 | win (1.265761030) | Twilight Madness | lay | 36.00 | £1.43 | open | - |
 | 19:58 | win (1.265761030) | Eldeyaar | lay | 32.00 | £1.61 | open | - |
 | 19:58 | win (1.265761030) | Sweet Desire | back | 100.00 | £2.60 | open | - |
 | 19:58 | win (1.265761030) | Tomarlo | lay | 30.00 | £1.72 | open | - |
 | 19:58 | win (1.265761030) | My Mate Mackley | lay | 12.50 | £4.35 | open | - |
 | 19:58 | win (1.265761030) | Love Alive | back | 18.00 | £5.32 | closed at 17.00, waiting for the result | - |
 | 19:58 | win (1.265761030) | Tomarlo | back | 29.00 | £3.95 | closed at 24.00, waiting for the result | - |
-| 19:58 | win (1.265761030) | Rianka | back | 60.00 | £2.38 | open | - |
 | 19:58 | win (1.265761030) | Love Alive | lay | 18.50 | £2.86 | open | - |
+| 19:58 | win (1.265761030) | Rianka | back | 60.00 | £2.38 | open | - |
 | 19:58 | Almere City v NAC Breda | The Draw | lay | 27.00 | £1.92 | open | - |
 | 19:58 | win (1.265761030) | Our Planet | lay | 3.45 | £20.41 | closed at 3.15, waiting for the result | - |
-| 19:59 | win (1.265761030) | My Mate Mackley | lay | 10.50 | £3.46 | open | - |
 | 19:59 | win (1.265761030) | Sir Rodneyredblood | lay | 40.00 | £1.28 | open | - |
 | 19:59 | win (1.265761030) | Twilight Madness | lay | 28.00 | £1.85 | open | - |
 | 19:59 | win (1.265761030) | Solid Bond | lay | 14.00 | £3.85 | open | - |
 | 19:59 | win (1.265761030) | Tomarlo | lay | 22.00 | £2.38 | open | - |
 | 19:59 | win (1.265761030) | Sir Rodneyredblood | back | 36.00 | £42.47 | closed at 40.00, waiting for the result | - |
-| 19:59 | win (1.265761030) | Sweet Desire | back | 85.00 | £4.65 | open | - |
+| 19:59 | win (1.265761030) | My Mate Mackley | lay | 10.50 | £3.46 | open | - |
 | 19:59 | win (1.265761030) | Nordic Glory | back | 38.00 | £3.78 | closed at 40.00, waiting for the result | - |
 | 19:59 | win (1.265761030) | Solid Bond | back | 13.00 | £50.00 | closed at 14.50, waiting for the result | - |
 | 19:59 | win (1.265761030) | Tomarlo | back | 21.00 | £5.04 | closed at 24.00, waiting for the result | - |
 | 19:59 | win (1.265761030) | My Mate Mackley | back | 10.00 | £50.00 | closed at 11.50, waiting for the result | - |
+| 19:59 | win (1.265761030) | Sweet Desire | back | 85.00 | £4.65 | open | - |
 | 19:59 | win (1.265761030) | Twilight Madness | back | 26.00 | £50.00 | closed at 30.00, waiting for the result | - |
+| 20:00 | Deportes Recoleta v Santiago Wanderers | Deportes Recoleta | lay | 2.48 | £3.16 | closed at 2.40, waiting for the result | - |
+| 20:00 | Deportes Recoleta v Santiago Wanderers | Santiago Wanderers | lay | 3.30 | £16.89 | closed at 3.15, waiting for the result | - |
 | 20:00 | Cobresal v Audax Italiano | The Draw | back | 3.90 | £2.93 | open | - |
 | 20:00 | Cobresal v Audax Italiano | Audax Italiano | lay | 3.10 | £22.16 | open | - |
-| 20:00 | Deportes Recoleta v Santiago Wanderers | Santiago Wanderers | lay | 3.30 | £16.89 | closed at 3.15, waiting for the result | - |
-| 20:00 | Deportes Recoleta v Santiago Wanderers | Deportes Recoleta | lay | 2.48 | £3.16 | closed at 2.40, waiting for the result | - |
 | 20:00 | Bayern Munich v FC Koln | The Draw | lay | 4.90 | £12.82 | open | - |
 | 20:00 | Miedz Legnica v LKS Lodz | The Draw | lay | 3.20 | £22.73 | open | - |
 | 20:00 | Casertana v Salernitana | The Draw | lay | 2.96 | £25.51 | open | - |
@@ -4254,49 +4254,49 @@
 | 20:03 | Neuchatel Xamax v Etoile Carouge | Over 2.5 Goals | lay | 8.00 | £7.14 | open | - |
 | 20:03 | A.C. Trento S.C.S.D. v Cittadella | The Draw | lay | 4.90 | £5.16 | open | - |
 | 20:03 | Barnsley v Sheff Wed | Under 2.5 Goals | back | 2.48 | £50.00 | closed at 2.52, waiting for the result | - |
-| 20:03 | Balzan FC v Mosta | The Draw | back | 5.60 | £6.49 | closed at 6.20, waiting for the result | - |
 | 20:03 | Balzan FC v Mosta | Mosta | back | 11.50 | £2.00 | closed at 14.00, waiting for the result | - |
-| 20:05 | Dundalk 20th Nov | Young Churchill | lay | 5.50 | £11.11 | closed at 9.60, waiting for the result | - |
-| 20:05 | Dundalk 20th Nov | Showyoutheropes | lay | 5.90 | £5.25 | closed at 3.20, waiting for the result | - |
-| 20:05 | Dundalk 20th Nov | Doctor Grace | lay | 9.60 | £5.81 | open | - |
-| 20:05 | Dundalk 20th Nov | Tintinabulla | back | 14.50 | £36.56 | closed at 14.00, waiting for the result | - |
-| 20:05 | Dundalk 20th Nov | Captain Hanley | back | 14.50 | £10.65 | closed at 18.50, waiting for the result | - |
-| 20:05 | Dundalk 20th Nov | All Is Bright | back | 18.50 | £7.24 | open | - |
-| 20:05 | Dundalk 20th Nov | Trovao Dourado | back | 190.00 | £3.79 | open | - |
-| 20:05 | Dundalk 20th Nov | Grey Fable | lay | 9.60 | £5.81 | closed at 6.20, waiting for the result | - |
-| 20:05 | Dundalk 20th Nov | Barretstown | back | 16.00 | £22.89 | open | - |
-| 20:05 | Dundalk 20th Nov | Jazz Forever | back | 13.50 | £29.83 | open | - |
-| 20:05 | Dundalk 20th Nov | Star Mind | back | 55.00 | £10.39 | open | - |
-| 20:05 | Dundalk 20th Nov | Preparations | back | 14.50 | £19.70 | open | - |
-| 20:05 | Dundalk 20th Nov | Lady Crossing | back | 120.00 | £2.71 | open | - |
+| 20:03 | Balzan FC v Mosta | The Draw | back | 5.60 | £6.49 | closed at 6.20, waiting for the result | - |
 | 20:05 | Real Madrid Castilla v Real Murcia | Real Madrid Castilla | back | 2.24 | £14.64 | closed at 2.32, waiting for the result | - |
+| 20:05 | Dundalk 20th Nov | Lady Crossing | back | 120.00 | £2.71 | open | - |
+| 20:05 | Dundalk 20th Nov | Preparations | back | 14.50 | £19.70 | open | - |
+| 20:05 | Dundalk 20th Nov | Star Mind | back | 55.00 | £10.39 | open | - |
+| 20:05 | Dundalk 20th Nov | Jazz Forever | back | 13.50 | £29.83 | open | - |
+| 20:05 | Dundalk 20th Nov | Barretstown | back | 16.00 | £22.89 | open | - |
 | 20:05 | Dundalk 20th Nov | Lisnadill | back | 55.00 | £6.09 | open | - |
+| 20:05 | Dundalk 20th Nov | Trovao Dourado | back | 190.00 | £3.79 | open | - |
+| 20:05 | Dundalk 20th Nov | All Is Bright | back | 18.50 | £7.24 | open | - |
+| 20:05 | Dundalk 20th Nov | Captain Hanley | back | 14.50 | £10.65 | closed at 18.50, waiting for the result | - |
+| 20:05 | Dundalk 20th Nov | Tintinabulla | back | 14.50 | £36.56 | closed at 14.00, waiting for the result | - |
+| 20:05 | Dundalk 20th Nov | Doctor Grace | lay | 9.60 | £5.81 | open | - |
+| 20:05 | Dundalk 20th Nov | Showyoutheropes | lay | 5.90 | £5.25 | closed at 3.20, waiting for the result | - |
+| 20:05 | Dundalk 20th Nov | Young Churchill | lay | 5.50 | £11.11 | closed at 9.60, waiting for the result | - |
+| 20:05 | Dundalk 20th Nov | Grey Fable | lay | 9.60 | £5.81 | closed at 6.20, waiting for the result | - |
 | 20:05 | ESTAC Troyes v Le Havre | Le Havre | back | 3.90 | £50.00 | closed at 3.85, waiting for the result | - |
 | 20:05 | Athletic Bilbao v Espanyol | Under 2.5 Goals | back | 2.26 | £50.00 | closed at 2.24, waiting for the result | - |
 | 20:06 | Yverdon Sport v Winterthur | The Draw | lay | 3.30 | £4.82 | closed at 3.20, waiting for the result | - |
 | 20:08 | Rapperswil-Jona v Aarau | Under 2.5 Goals | back | 1.64 | £50.00 | closed at 1.65, waiting for the result | - |
 | 20:08 | Bayern Munich v FC Koln | Over 2.5 Goals | back | 1.06 | £50.00 | closed at 1.06, waiting for the result | - |
 | 20:09 | Guingamp v Rodez | Over 2.5 Goals | back | 1.28 | £50.00 | closed at 1.30, waiting for the result | - |
-| 20:10 | Dundalk 20th Nov | Lady Crossing | back | 150.00 | £2.46 | open | - |
-| 20:10 | Dundalk 20th Nov | Tintinabulla | back | 14.50 | £28.51 | closed at 17.50, waiting for the result | - |
-| 20:10 | Dundalk 20th Nov | Young Churchill | back | 4.30 | £19.84 | closed at 5.60, waiting for the result | - |
-| 20:10 | Dundalk 20th Nov | Barretstown | back | 16.50 | £2.95 | closed at 14.50, waiting for the result | - |
-| 20:10 | Dundalk 20th Nov | Doctor Grace | back | 8.80 | £46.39 | closed at 11.00, waiting for the result | - |
-| 20:10 | Dundalk 20th Nov | Trovao Dourado | back | 200.00 | £6.78 | open | - |
-| 20:10 | Dundalk 20th Nov | Showyoutheropes | back | 6.40 | £50.00 | closed at 6.40, waiting for the result | - |
 | 20:10 | Dundalk 20th Nov | Preparations | back | 15.50 | £35.67 | closed at 16.50, waiting for the result | - |
+| 20:10 | Dundalk 20th Nov | Trovao Dourado | back | 200.00 | £6.78 | open | - |
+| 20:10 | Dundalk 20th Nov | Doctor Grace | back | 8.80 | £46.39 | closed at 11.00, waiting for the result | - |
+| 20:10 | Dundalk 20th Nov | Showyoutheropes | back | 6.40 | £50.00 | closed at 6.40, waiting for the result | - |
+| 20:10 | Dundalk 20th Nov | Young Churchill | back | 4.30 | £19.84 | closed at 5.60, waiting for the result | - |
+| 20:10 | Dundalk 20th Nov | Tintinabulla | back | 14.50 | £28.51 | closed at 17.50, waiting for the result | - |
+| 20:10 | Dundalk 20th Nov | Lady Crossing | back | 150.00 | £2.46 | open | - |
+| 20:10 | Dundalk 20th Nov | Barretstown | back | 16.50 | £2.95 | closed at 14.50, waiting for the result | - |
 | 20:10 | Porto v Uniao Sport Clube de Paredes | 0 - 1 | back | 110.00 | £9.62 | open | - |
 | 20:10 | Athletic Bilbao v Espanyol | Over 2.5 Goals | back | 1.91 | £50.00 | closed at 1.93, waiting for the result | - |
 | 20:11 | Yverdon Sport v Winterthur | The Draw | lay | 3.30 | £12.94 | open | - |
 | 20:11 | Yverdon Sport v Winterthur | Yverdon Sport | lay | 2.58 | £19.22 | closed at 1.14, waiting for the result | - |
 | 20:12 | Cobresal v Audax Italiano | 3 - 3 | back | 65.00 | £1.56 | open | - |
-| 20:13 | Dundalk 20th Nov | Preparations | lay | 17.00 | £3.12 | open | - |
+| 20:13 | Dundalk 20th Nov | Showyoutheropes | lay | 5.50 | £11.11 | open | - |
 | 20:13 | Real Madrid Castilla v Real Murcia | Real Madrid Castilla | back | 2.24 | £36.40 | open | - |
 | 20:13 | Real Madrid Castilla v Real Murcia | Real Madrid Castilla | lay | 2.32 | £37.88 | closed at 2.34, waiting for the result | - |
-| 20:13 | Dundalk 20th Nov | Grey Fable | lay | 9.80 | £5.68 | open | - |
-| 20:13 | Dundalk 20th Nov | Showyoutheropes | lay | 5.50 | £11.11 | open | - |
-| 20:13 | Dundalk 20th Nov | All Is Bright | lay | 17.50 | £3.03 | closed at 25.00, waiting for the result | - |
 | 20:13 | Dundalk 20th Nov | Young Churchill | lay | 5.00 | £3.01 | open | - |
+| 20:13 | Dundalk 20th Nov | Grey Fable | lay | 9.80 | £5.68 | open | - |
+| 20:13 | Dundalk 20th Nov | All Is Bright | lay | 17.50 | £3.03 | closed at 25.00, waiting for the result | - |
+| 20:13 | Dundalk 20th Nov | Preparations | lay | 17.00 | £3.12 | open | - |
 | 20:13 | Dundalk 20th Nov | Jazz Forever | lay | 15.50 | £3.45 | closed at 15.00, waiting for the result | - |
 | 20:13 | Dundalk 20th Nov | Captain Hanley | lay | 16.00 | £3.33 | closed at 19.50, waiting for the result | - |
 | 20:13 | Dundalk 20th Nov | Tintinabulla | lay | 17.00 | £3.12 | closed at 14.00, waiting for the result | - |
@@ -4310,9 +4310,9 @@
 | 20:14 | Dundalk 20th Nov | Star Mind | lay | 42.00 | £1.22 | open | - |
 | 20:14 | Dundalk 20th Nov | Showyoutheropes | lay | 5.20 | £11.90 | open | - |
 | 20:14 | Dundalk 20th Nov | Barretstown | back | 13.50 | £50.00 | closed at 14.50, waiting for the result | - |
+| 20:14 | Dundalk 20th Nov | Showyoutheropes | back | 5.10 | £50.00 | closed at 5.30, waiting for the result | - |
 | 20:14 | Dundalk 20th Nov | Jazz Forever | back | 11.50 | £50.00 | closed at 13.00, waiting for the result | - |
 | 20:14 | Dundalk 20th Nov | Star Mind | back | 40.00 | £15.19 | closed at 42.00, waiting for the result | - |
-| 20:14 | Dundalk 20th Nov | Showyoutheropes | back | 5.10 | £50.00 | closed at 5.30, waiting for the result | - |
 | 20:14 | Dundalk 20th Nov | Lisnadill | back | 55.00 | £5.43 | open | - |
 | 20:14 | Dundalk 20th Nov | Lady Crossing | back | 130.00 | £5.50 | open | - |
 | 20:14 | Dundalk 20th Nov | Grey Fable | back | 9.20 | £18.73 | closed at 9.60, waiting for the result | - |
@@ -4323,15 +4323,15 @@
 | 20:15 | Cercle Brugge v Westerlo | The Draw | lay | 3.30 | £21.74 | open | - |
 | 20:15 | Dundalk 20th Nov | All Is Bright | lay | 17.00 | £3.12 | open | - |
 | 20:15 | Barnsley v Sheff Wed | Over 2.5 Goals | back | 1.06 | £50.00 | closed at 1.07, waiting for the result | - |
-| 20:16 | Dundalk 20th Nov | Preparations | lay | 21.00 | £2.04 | open | - |
 | 20:16 | Dundalk 20th Nov | All Is Bright | lay | 15.50 | £2.19 | open | - |
 | 20:16 | Dundalk 20th Nov | Doctor Grace | lay | 12.00 | £4.20 | open | - |
+| 20:16 | Dundalk 20th Nov | Preparations | lay | 21.00 | £2.04 | open | - |
 | 20:16 | Dundalk 20th Nov | Captain Hanley | lay | 19.00 | £2.78 | open | - |
-| 20:16 | Dundalk 20th Nov | Lady Crossing | back | 60.00 | £7.60 | open | - |
 | 20:16 | Dundalk 20th Nov | All Is Bright | back | 12.50 | £2.22 | open | - |
 | 20:16 | Dundalk 20th Nov | Grey Fable | back | 6.60 | £3.87 | open | - |
-| 20:16 | Dundalk 20th Nov | Tintinabulla | lay | 15.00 | £3.57 | open | - |
+| 20:16 | Dundalk 20th Nov | Lady Crossing | back | 60.00 | £7.60 | open | - |
 | 20:16 | Dundalk 20th Nov | Tintinabulla | back | 12.50 | £2.63 | open | - |
+| 20:16 | Dundalk 20th Nov | Tintinabulla | lay | 15.00 | £3.57 | open | - |
 | 20:16 | De Graafschap v MVV Maastricht | De Graafschap | back | 1.28 | £50.00 | open | - |
 | 20:16 | Southend v Boreham Wood | The Draw | lay | 11.00 | £5.00 | open | - |
 | 20:16 | Cobresal v Audax Italiano | 0 - 0 | back | 17.00 | £1.46 | open | - |
@@ -4352,13 +4352,13 @@
 | 20:17 | Dundalk 20th Nov | Young Churchill | lay | 5.80 | £7.52 | closed at 4.20, waiting for the result | - |
 | 20:18 | Dundalk 20th Nov | Showyoutheropes | back | 2.98 | £2.00 | open | - |
 | 20:18 | Dundalk 20th Nov | Tintinabulla | back | 190.00 | £12.73 | open | - |
-| 20:20 | Wolverhampton 20th Nov | The Dark Baron | back | 11.50 | £50.00 | open | - |
+| 20:20 | Wolverhampton 20th Nov | San Juanito | lay | 5.60 | £10.87 | closed at 5.10, waiting for the result | - |
 | 20:20 | Wolverhampton 20th Nov | Pulsar Star | lay | 6.60 | £8.93 | closed at 6.20, waiting for the result | - |
 | 20:20 | Wolverhampton 20th Nov | Rua Mor | back | 36.00 | £18.12 | open | - |
-| 20:20 | Wolverhampton 20th Nov | San Juanito | lay | 5.60 | £10.87 | closed at 5.10, waiting for the result | - |
-| 20:20 | Wolverhampton 20th Nov | Mcted | back | 80.00 | £8.89 | open | - |
-| 20:20 | Wolverhampton 20th Nov | Sant Alessio | back | 10.00 | £50.00 | open | - |
 | 20:20 | Wolverhampton 20th Nov | Made All | back | 55.00 | £13.95 | open | - |
+| 20:20 | Wolverhampton 20th Nov | Mcted | back | 80.00 | £8.89 | open | - |
+| 20:20 | Wolverhampton 20th Nov | The Dark Baron | back | 11.50 | £50.00 | open | - |
+| 20:20 | Wolverhampton 20th Nov | Sant Alessio | back | 10.00 | £50.00 | open | - |
 | 20:20 | Wolverhampton 20th Nov | Super Hit | back | 20.00 | £50.00 | open | - |
 | 20:20 | Wolverhampton 20th Nov | King Chaos | back | 55.00 | £6.92 | open | - |
 | 20:20 | Wolverhampton 20th Nov | Urban Road | back | 17.50 | £24.56 | open | - |
@@ -4386,7 +4386,7 @@
 | 20:21 | Cobresal v Audax Italiano | Any Other Away Win | back | 23.00 | £7.91 | open | - |
 | 20:22 | Inverness CT v Ayr | The Draw | lay | 2.82 | £27.47 | closed at 2.78, waiting for the result | - |
 | 20:22 | Verona v Cesena | The Draw | lay | 3.10 | £23.81 | closed at 3.00, waiting for the result | - |
-| 20:22 | Athletic Bilbao v Espanyol | Under 2.5 Goals | lay | 1.82 | £60.98 | open | - |
+| 20:22 | Athletic Bilbao v Espanyol | Under 2.5 Goals | lay | 1.82 | £60.98 | closed at 1.24, waiting for the result | - |
 | 20:22 | Athletic Bilbao v Espanyol | Espanyol | back | 7.80 | £27.09 | closed at 7.20, waiting for the result | - |
 | 20:23 | Cobresal v Audax Italiano | Any Other Home Win | back | 14.50 | £3.23 | open | - |
 | 20:23 | A.C. Trento S.C.S.D. v Cittadella | The Draw | lay | 5.30 | £11.63 | open | - |
@@ -4397,11 +4397,11 @@
 | 20:25 | Wolverhampton 20th Nov | Chesneys Charm | back | 22.00 | £50.00 | closed at 23.00, waiting for the result | - |
 | 20:25 | Wolverhampton 20th Nov | King Chaos | back | 55.00 | £31.36 | open | - |
 | 20:25 | Wolverhampton 20th Nov | Born A Rebel | back | 23.00 | £44.17 | closed at 21.00, waiting for the result | - |
-| 20:25 | Wolverhampton 20th Nov | Rua Mor | back | 40.00 | £9.75 | closed at 32.00, waiting for the result | - |
+| 20:25 | Wolverhampton 20th Nov | Mcted | back | 75.00 | £15.16 | open | - |
 | 20:25 | Wolverhampton 20th Nov | The Dark Baron | back | 11.00 | £50.00 | closed at 10.50, waiting for the result | - |
 | 20:25 | Wolverhampton 20th Nov | San Juanito | back | 4.60 | £50.00 | closed at 5.60, waiting for the result | - |
-| 20:25 | Wolverhampton 20th Nov | Mcted | back | 75.00 | £15.16 | open | - |
 | 20:25 | Wolverhampton 20th Nov | Made All | back | 40.00 | £9.66 | closed at 36.00, waiting for the result | - |
+| 20:25 | Wolverhampton 20th Nov | Rua Mor | back | 40.00 | £9.75 | closed at 32.00, waiting for the result | - |
 | 20:25 | Wolverhampton 20th Nov | Super Hit | back | 18.50 | £34.59 | closed at 14.50, waiting for the result | - |
 | 20:25 | Bayern Munich v FC Koln | FC Koln | lay | 17.00 | £3.12 | open | - |
 | 20:25 | Miedz Legnica v LKS Lodz | The Draw | lay | 2.74 | £28.74 | closed at 4.40, waiting for the result | - |
@@ -4409,42 +4409,42 @@
 | 20:25 | Liverpool Montevideo v Wanderers (Uru) | Liverpool Montevideo | lay | 16.50 | £3.23 | open | - |
 | 20:25 | FC Andorra v Leganes | FC Andorra | lay | 13.00 | £4.17 | open | - |
 | 20:25 | Pogon Szczecin v Slask Wroclaw | The Draw | lay | 2.98 | £13.31 | closed at 1.89, waiting for the result | - |
-| 20:26 | SV Austria Salzburg v Admira Wacker | Admira Wacker | lay | 3.50 | £20.00 | closed at 1.36, waiting for the result | - |
 | 20:26 | SV Austria Salzburg v Admira Wacker | The Draw | lay | 2.98 | £15.96 | closed at 4.50, waiting for the result | - |
+| 20:26 | SV Austria Salzburg v Admira Wacker | Admira Wacker | lay | 3.50 | £20.00 | closed at 1.36, waiting for the result | - |
 | 20:26 | SV Austria Salzburg v Admira Wacker | SV Austria Salzburg | lay | 3.05 | £24.39 | closed at 19.50, waiting for the result | - |
 | 20:26 | McGiffin/Osborne v Erjavec/Kulambayeva | Erjavec/Kulambayeva | lay | 1.18 | £277.78 | closed at 1.41, waiting for the result | - |
 | 20:27 | Wolverhampton 20th Nov | Exotic Baby | lay | 5.30 | £11.63 | closed at 6.20, waiting for the result | - |
 | 20:27 | Inverness CT v Ayr | The Draw | lay | 2.78 | £9.96 | closed at 1.71, waiting for the result | - |
 | 20:27 | Verona v Cesena | The Draw | lay | 3.10 | £23.81 | closed at 11.00, waiting for the result | - |
-| 20:28 | Wolverhampton 20th Nov | Exotic Baby | back | 5.20 | £36.00 | closed at 6.40, waiting for the result | - |
-| 20:28 | Wolverhampton 20th Nov | San Juanito | back | 5.20 | £42.47 | closed at 5.60, waiting for the result | - |
-| 20:28 | Wolverhampton 20th Nov | The Dark Baron | back | 10.00 | £37.67 | closed at 10.50, waiting for the result | - |
-| 20:28 | Wolverhampton 20th Nov | King Chaos | lay | 48.00 | £1.06 | open | - |
-| 20:28 | Wolverhampton 20th Nov | Super Hit | lay | 17.50 | £3.03 | open | - |
-| 20:28 | Wolverhampton 20th Nov | Sant Alessio | lay | 12.50 | £4.35 | open | - |
-| 20:28 | Wolverhampton 20th Nov | The Dark Baron | lay | 10.50 | £5.26 | closed at 9.80, waiting for the result | - |
-| 20:28 | Wolverhampton 20th Nov | Chesneys Charm | lay | 22.00 | £2.38 | closed at 26.00, waiting for the result | - |
-| 20:28 | Wolverhampton 20th Nov | Made All | lay | 44.00 | £1.16 | open | - |
-| 20:28 | Wolverhampton 20th Nov | Rua Mor | lay | 38.00 | £1.35 | open | - |
-| 20:28 | Wolverhampton 20th Nov | Born A Rebel | lay | 24.00 | £2.17 | closed at 11.50, waiting for the result | - |
-| 20:28 | Wolverhampton 20th Nov | San Juanito | lay | 5.30 | £11.63 | open | - |
-| 20:28 | Wolverhampton 20th Nov | Pulsar Star | lay | 6.80 | £8.62 | open | - |
-| 20:28 | Wolverhampton 20th Nov | Exotic Baby | lay | 5.30 | £11.63 | open | - |
 | 20:28 | Club Sportivo Ameliano v Sportivo Luqueno | Club Sportivo Ameliano | back | 2.24 | £50.00 | open | - |
+| 20:28 | Wolverhampton 20th Nov | Pulsar Star | lay | 6.80 | £8.62 | open | - |
+| 20:28 | Wolverhampton 20th Nov | San Juanito | lay | 5.30 | £11.63 | open | - |
+| 20:28 | Wolverhampton 20th Nov | Born A Rebel | lay | 24.00 | £2.17 | closed at 11.50, waiting for the result | - |
+| 20:28 | Wolverhampton 20th Nov | Rua Mor | lay | 38.00 | £1.35 | open | - |
+| 20:28 | Wolverhampton 20th Nov | Made All | lay | 44.00 | £1.16 | open | - |
+| 20:28 | Wolverhampton 20th Nov | Chesneys Charm | lay | 22.00 | £2.38 | closed at 26.00, waiting for the result | - |
+| 20:28 | Wolverhampton 20th Nov | Exotic Baby | lay | 5.30 | £11.63 | open | - |
+| 20:28 | Wolverhampton 20th Nov | Sant Alessio | lay | 12.50 | £4.35 | open | - |
+| 20:28 | Wolverhampton 20th Nov | Super Hit | lay | 17.50 | £3.03 | open | - |
+| 20:28 | Wolverhampton 20th Nov | King Chaos | lay | 48.00 | £1.06 | open | - |
+| 20:28 | Wolverhampton 20th Nov | The Dark Baron | back | 10.00 | £37.67 | closed at 10.50, waiting for the result | - |
+| 20:28 | Wolverhampton 20th Nov | San Juanito | back | 5.20 | £42.47 | closed at 5.60, waiting for the result | - |
+| 20:28 | Wolverhampton 20th Nov | Exotic Baby | back | 5.20 | £36.00 | closed at 6.40, waiting for the result | - |
+| 20:28 | Wolverhampton 20th Nov | The Dark Baron | lay | 10.50 | £5.26 | closed at 9.80, waiting for the result | - |
 | 20:28 | A.C. Trento S.C.S.D. v Cittadella | Cittadella | lay | 19.00 | £2.78 | open | - |
-| 20:29 | Wolverhampton 20th Nov | Rua Mor | back | 27.00 | £20.57 | closed at 32.00, waiting for the result | - |
-| 20:29 | Wolverhampton 20th Nov | Pulsar Star | back | 6.00 | £50.00 | closed at 6.40, waiting for the result | - |
-| 20:29 | Wolverhampton 20th Nov | The Dark Baron | back | 10.00 | £30.04 | closed at 10.50, waiting for the result | - |
-| 20:29 | Wolverhampton 20th Nov | Chesneys Charm | back | 21.00 | £47.52 | closed at 22.00, waiting for the result | - |
-| 20:29 | Wolverhampton 20th Nov | Made All | back | 27.00 | £23.28 | closed at 36.00, waiting for the result | - |
-| 20:29 | Wolverhampton 20th Nov | Super Hit | back | 14.00 | £28.27 | closed at 14.50, waiting for the result | - |
-| 20:29 | Wolverhampton 20th Nov | King Chaos | back | 38.00 | £6.68 | closed at 40.00, waiting for the result | - |
-| 20:29 | Wolverhampton 20th Nov | Born A Rebel | back | 21.00 | £25.02 | closed at 21.00, waiting for the result | - |
-| 20:29 | Wolverhampton 20th Nov | King Chaos | lay | 40.00 | £1.28 | open | - |
-| 20:29 | Wolverhampton 20th Nov | Super Hit | lay | 14.50 | £3.70 | open | - |
-| 20:29 | Wolverhampton 20th Nov | Pulsar Star | lay | 6.20 | £9.62 | open | - |
-| 20:29 | Wolverhampton 20th Nov | Made All | lay | 28.00 | £1.85 | open | - |
 | 20:29 | Wolverhampton 20th Nov | Rua Mor | lay | 28.00 | £1.85 | open | - |
+| 20:29 | Wolverhampton 20th Nov | Made All | lay | 28.00 | £1.85 | open | - |
+| 20:29 | Wolverhampton 20th Nov | Pulsar Star | lay | 6.20 | £9.62 | open | - |
+| 20:29 | Wolverhampton 20th Nov | Super Hit | lay | 14.50 | £3.70 | open | - |
+| 20:29 | Wolverhampton 20th Nov | King Chaos | lay | 40.00 | £1.28 | open | - |
+| 20:29 | Wolverhampton 20th Nov | Born A Rebel | back | 21.00 | £25.02 | closed at 21.00, waiting for the result | - |
+| 20:29 | Wolverhampton 20th Nov | Chesneys Charm | back | 21.00 | £47.52 | closed at 22.00, waiting for the result | - |
+| 20:29 | Wolverhampton 20th Nov | Super Hit | back | 14.00 | £28.27 | closed at 14.50, waiting for the result | - |
+| 20:29 | Wolverhampton 20th Nov | Made All | back | 27.00 | £23.28 | closed at 36.00, waiting for the result | - |
+| 20:29 | Wolverhampton 20th Nov | The Dark Baron | back | 10.00 | £30.04 | closed at 10.50, waiting for the result | - |
+| 20:29 | Wolverhampton 20th Nov | Pulsar Star | back | 6.00 | £50.00 | closed at 6.40, waiting for the result | - |
+| 20:29 | Wolverhampton 20th Nov | Rua Mor | back | 27.00 | £20.57 | closed at 32.00, waiting for the result | - |
+| 20:29 | Wolverhampton 20th Nov | King Chaos | back | 38.00 | £6.68 | closed at 40.00, waiting for the result | - |
 | 20:30 | Ind Medellin v Santa Fe | Santa Fe | back | 3.95 | £50.00 | closed at 4.20, waiting for the result | - |
 | 20:30 | Ind Medellin v Santa Fe | The Draw | back | 3.35 | £9.00 | closed at 3.50, waiting for the result | - |
 | 20:30 | Nancy v Dijon | Over 2.5 Goals | lay | 5.70 | £10.64 | open | - |
@@ -4455,13 +4455,13 @@
 | 20:31 | Den Bosch v VVV Venlo | Over 2.5 Goals | lay | 3.50 | £20.00 | open | - |
 | 20:31 | De Graafschap v MVV Maastricht | Over 2.5 Goals | lay | 1.65 | £76.92 | open | - |
 | 20:31 | Fulham U21 v Sporting CP U21 | Over 2.5 Goals | lay | 1.72 | £69.44 | open | - |
-| 20:31 | Wolverhampton 20th Nov | Sant Alessio | back | 8.00 | £4.54 | open | - |
+| 20:31 | Wolverhampton 20th Nov | Born A Rebel | lay | 14.50 | £3.70 | open | - |
+| 20:31 | Wolverhampton 20th Nov | The Dark Baron | lay | 12.50 | £2.00 | open | - |
+| 20:31 | Wolverhampton 20th Nov | Sant Alessio | lay | 9.20 | £2.07 | open | - |
 | 20:31 | Wolverhampton 20th Nov | San Juanito | back | 4.50 | £4.64 | open | - |
 | 20:31 | Wolverhampton 20th Nov | Exotic Baby | back | 4.60 | £4.56 | open | - |
+| 20:31 | Wolverhampton 20th Nov | Sant Alessio | back | 8.00 | £4.54 | open | - |
 | 20:31 | Wolverhampton 20th Nov | Born A Rebel | back | 12.50 | £5.79 | open | - |
-| 20:31 | Wolverhampton 20th Nov | Sant Alessio | lay | 9.20 | £2.07 | open | - |
-| 20:31 | Wolverhampton 20th Nov | The Dark Baron | lay | 12.50 | £2.00 | open | - |
-| 20:31 | Wolverhampton 20th Nov | Born A Rebel | lay | 14.50 | £3.70 | open | - |
 | 20:31 | Villarreal B v Gimnastic | The Draw | lay | 3.15 | £13.29 | open | - |
 | 20:31 | Wolverhampton 20th Nov | The Dark Baron | back | 7.60 | £25.00 | open | - |
 | 20:31 | Wolverhampton 20th Nov | Pulsar Star | back | 7.00 | £19.55 | open | - |
@@ -4487,8 +4487,8 @@
 | 20:35 | Cercle Brugge v Westerlo | The Draw | lay | 2.80 | £17.56 | closed at 2.78, waiting for the result | - |
 | 20:36 | Southend v Boreham Wood | The Draw | lay | 40.00 | £1.28 | closed at 34.00, waiting for the result | - |
 | 20:38 | Balzan FC v Mosta | The Draw | lay | 17.50 | £3.03 | open | - |
-| 20:40 | Cercle Brugge v Westerlo | Cercle Brugge | lay | 2.64 | £30.49 | open | - |
-| 20:40 | Cercle Brugge v Westerlo | The Draw | lay | 2.82 | £27.47 | open | - |
+| 20:40 | Cercle Brugge v Westerlo | The Draw | lay | 2.82 | £27.47 | closed at 5.00, waiting for the result | - |
+| 20:40 | Cercle Brugge v Westerlo | Cercle Brugge | lay | 2.64 | £30.49 | closed at 1.29, waiting for the result | - |
 | 20:41 | Miedz Legnica v LKS Lodz | Under 2.5 Goals | back | 1.14 | £50.00 | closed at 1.13, waiting for the result | - |
 | 20:41 | Southend v Boreham Wood | The Draw | lay | 38.00 | £1.35 | open | - |
 | 20:45 | Liverpool Montevideo v Wanderers (Uru) | Wanderers (Uru) | back | 1.19 | £50.00 | open | - |
@@ -4497,8 +4497,8 @@
 | 20:46 | Yverdon Sport v Winterthur | Over 2.5 Goals | lay | 1.84 | £2.39 | open | - |
 | 20:48 | Real Madrid Castilla v Real Murcia | The Draw | lay | 4.00 | £16.67 | open | - |
 | 20:48 | A.C. Trento S.C.S.D. v Cittadella | A.C. Trento S.C.S.D. | back | 1.36 | £50.00 | open | - |
-| 20:50 | Deportes Recoleta v Santiago Wanderers | Santiago Wanderers | back | 3.00 | £2.00 | closed at 3.05, waiting for the result | - |
 | 20:50 | Deportes Recoleta v Santiago Wanderers | The Draw | back | 3.35 | £8.89 | closed at 3.40, waiting for the result | - |
+| 20:50 | Deportes Recoleta v Santiago Wanderers | Santiago Wanderers | back | 3.00 | £2.00 | closed at 3.05, waiting for the result | - |
 | 20:50 | Cobresal v Audax Italiano | Cobresal | back | 2.30 | £47.44 | closed at 2.32, waiting for the result | - |
 | 20:50 | Cobresal v Audax Italiano | The Draw | back | 3.80 | £6.55 | closed at 3.85, waiting for the result | - |
 | 20:50 | Inverness CT v Ayr | Under 2.5 Goals | back | 1.08 | £50.00 | closed at 1.08, waiting for the result | - |
@@ -4509,16 +4509,16 @@
 | 20:51 | Villarreal B v Gimnastic | The Draw | lay | 3.35 | £21.28 | closed at 3.15, waiting for the result | - |
 | 20:52 | Bayern Munich v FC Koln | Under 2.5 Goals | back | 5.10 | £50.00 | closed at 4.70, waiting for the result | - |
 | 20:52 | Athletic Bilbao v Espanyol | The Draw | lay | 3.25 | £22.22 | closed at 3.15, waiting for the result | - |
-| 20:57 | Athletic Bilbao v Espanyol | The Draw | lay | 3.25 | £22.22 | open | - |
-| 20:58 | Deportes Recoleta v Santiago Wanderers | Deportes Recoleta | back | 2.64 | £50.00 | open | - |
+| 20:57 | Athletic Bilbao v Espanyol | The Draw | lay | 3.25 | £22.22 | closed at 3.25, waiting for the result | - |
 | 20:58 | Cobresal v Audax Italiano | Cobresal | lay | 2.32 | £37.88 | closed at 1.53, waiting for the result | - |
 | 20:58 | Cobresal v Audax Italiano | The Draw | lay | 3.85 | £17.54 | closed at 4.90, waiting for the result | - |
 | 20:58 | Deportes Recoleta v Santiago Wanderers | The Draw | lay | 3.45 | £20.41 | closed at 3.95, waiting for the result | - |
 | 20:58 | Deportes Recoleta v Santiago Wanderers | Santiago Wanderers | lay | 3.05 | £24.39 | closed at 1.63, waiting for the result | - |
+| 20:58 | Deportes Recoleta v Santiago Wanderers | Deportes Recoleta | back | 2.64 | £50.00 | open | - |
 | 20:58 | Balzan FC v Mosta | Balzan FC | back | 1.29 | £50.00 | open | - |
 | 21:00 | Liverpool Montevideo v Wanderers (Uru) | Over 2.5 Goals | lay | 1.65 | £76.92 | open | - |
 | 21:00 | Bayern Munich v FC Koln | Over 2.5 Goals | lay | 1.50 | £100.00 | open | - |
-| 21:00 | Miedz Legnica v LKS Lodz | Over 2.5 Goals | lay | 7.40 | £7.81 | open | - |
+| 21:00 | Miedz Legnica v LKS Lodz | Over 2.5 Goals | lay | 7.40 | £7.81 | closed at 17.50, waiting for the result | - |
 | 21:00 | Casertana v Salernitana | Over 2.5 Goals | lay | 1.97 | £51.55 | open | - |
 | 21:00 | Racing Club (Uru) v Central Espanol | Over 2.5 Goals | lay | 38.00 | £1.35 | open | - |
 | 21:00 | Cerro v Nacional (Uru) | Over 2.5 Goals | lay | 6.00 | £10.00 | open | - |
@@ -4533,5 +4533,26 @@
 | 21:06 | Yverdon Sport v Winterthur | Under 2.5 Goals | back | 1.03 | £31.68 | closed at 1.01, waiting for the result | - |
 | 21:08 | Porto v Uniao Sport Clube de Paredes | Over 2.5 Goals | lay | 1.74 | £67.57 | open | - |
 | 21:08 | Real Madrid Castilla v Real Murcia | The Draw | lay | 11.00 | £5.00 | open | - |
+| 21:10 | Jenna Defalco v Celia Cervino Ruiz | Celia Cervino Ruiz | lay | 2.00 | £41.49 | open | - |
+| 21:13 | Real Madrid Castilla v Real Murcia | The Draw | lay | 11.00 | £2.49 | open | - |
+| 21:15 | Cercle Brugge v Westerlo | Over 2.5 Goals | lay | 5.60 | £10.87 | open | - |
+| 21:18 | Reyes-Varela/Stalder v Gogineni/Zamora | Gogineni/Zamora | lay | 1.97 | £8.28 | closed at 1.99, waiting for the result | - |
+| 21:18 | Porto v Uniao Sport Clube de Paredes | The Draw | lay | 8.20 | £6.94 | open | - |
+| 21:18 | Ind Medellin v Santa Fe | 0 - 1 | back | 12.00 | £32.76 | open | - |
+| 21:20 | Deportes Recoleta v Santiago Wanderers | The Draw | back | 4.10 | £2.99 | closed at 4.30, waiting for the result | - |
+| 21:24 | Liverpool Montevideo v Wanderers (Uru) | Under 2.5 Goals | back | 1.21 | £50.00 | closed at 1.16, waiting for the result | - |
+| 21:26 | Club Sportivo Ameliano v Sportivo Luqueno | Club Sportivo Ameliano | lay | 2.76 | £2.41 | open | - |
+| 21:28 | Ind Medellin v Santa Fe | Ind Medellin | lay | 2.12 | £44.64 | closed at 2.02, waiting for the result | - |
+| 21:28 | Ind Medellin v Santa Fe | Santa Fe | lay | 4.20 | £15.62 | closed at 4.20, waiting for the result | - |
+| 21:28 | Ind Medellin v Santa Fe | Ind Medellin | back | 2.10 | £50.00 | open | - |
+| 21:31 | Cobresal v Audax Italiano | The Draw | lay | 9.00 | £3.33 | open | - |
+| 21:31 | Ind Medellin v Santa Fe | The Draw | lay | 3.80 | £17.86 | open | - |
+| 21:31 | Ind Medellin v Santa Fe | Santa Fe | lay | 4.60 | £13.89 | open | - |
+| 21:32 | Ind Medellin v Santa Fe | Over 2.5 Goals | back | 2.02 | £50.00 | closed at 2.10, waiting for the result | - |
+| 21:32 | Athletic Bilbao v Espanyol | Over 2.5 Goals | lay | 5.20 | £11.90 | open | - |
+| 21:33 | Ind Medellin v Santa Fe | Under 2.5 Goals | back | 1.90 | £50.00 | closed at 1.90, waiting for the result | - |
+| 21:33 | Real Madrid Castilla v Real Murcia | Real Murcia | back | 1.10 | £50.00 | open | - |
+| 21:37 | G Maristany Zuleta De R v And Lazaro Garcia | Andrea Lazaro Garcia | lay | 6.00 | £10.00 | open | - |
+| 21:38 | Porto v Uniao Sport Clube de Paredes | The Draw | lay | 23.00 | £2.27 | open | - |
 
-Today's total: -£5,680.56 on 2120 settled of 4533 trades; running total since 19 November: -£7,136.74.
+Today's total: -£5,680.56 on 2120 settled of 4554 trades; running total since 19 November: -£7,136.74.
