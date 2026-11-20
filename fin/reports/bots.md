@@ -1,14 +1,14 @@
-# Fin paper bots — UNVERIFIED-PAPER (Alpaca paper, $) — updated 2026-11-19 16:10 NY — disk free 859 GB (entries stop under 25)
+# Fin paper bots — UNVERIFIED-PAPER (Alpaca paper, $) — updated 2026-11-20 16:10 NY — disk free 851 GB (entries stop under 25)
 
 Gate for real money: 100 settled paper trades per strategy, profitable overall and in each half, in line with the backtest, and Peter's yes.
 
 | strategy | settled trades | of 100 | pnl $ |
 |---|---|---|---|
-| ORB | 3 | 3% | -294.43 |
-| ORB_SPY | 2 | 2% | -186.02 |
-| ORB_IWM | 1 | 1% | -76.52 |
-| M7B | 2 | 2% | -39.06 |
-| K2 | 25 | 25% | +21.46 |
+| ORB | 4 | 4% | -364.52 |
+| ORB_SPY | 3 | 3% | -250.20 |
+| ORB_IWM | 2 | 2% | -196.21 |
+| M7B | 3 | 3% | +74.64 |
+| K2 | 35 | 35% | -215.61 |
 | K4 | 0 | 0% | +0.00 |
 | E1S | 0 | 0% | +0.00 |
 
@@ -25,3 +25,8 @@ Gate for real money: 100 settled paper trades per strategy, profitable overall a
 | 2026-11-19 | ORB_IWM | -76.52 | 1 |
 | 2026-11-19 | M7B | +21.18 | 1 |
 | 2026-11-19 | K2 | +39.90 | 8 |
+| 2026-11-20 | ORB | -70.09 | 1 |
+| 2026-11-20 | ORB_SPY | -64.18 | 1 |
+| 2026-11-20 | ORB_IWM | -119.69 | 1 |
+| 2026-11-20 | M7B | +113.70 | 1 |
+| 2026-11-20 | K2 | -237.07 | 10 |
