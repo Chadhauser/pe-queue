@@ -1,7 +1,8 @@
-# Grid progress - Friday 20 November 2026, 15:07 UTC
+# Grid progress - Friday 20 November 2026, 16:07 UTC
 
-League of ways of earning (last run 20 Nov 14:05 UTC): 3,495 ways in the registry, 3,299 tested, 3,303 tested this week, 11 passing (300 or more filled orders and profit after commission in both halves), 11 on forward paper.
-New ways this week: 381 from traders' methods (a), 3059 from our own data (b), 55 from other ideas (c).
+League of ways of earning (last run 20 Nov 14:05 UTC): 3,495 ways in the registry, 3,299 tested, 7,246 tested this week, 11 passing (300 or more filled orders and profit after commission in both halves), 11 on forward paper.
+New ways this week: 3147 from traders' methods (a), 3363 from our own data (b), 977 from other ideas (c).
+Distinct effects passing: 11 (passing rows that are the same bets are counted once).
 Every figure below is at real prices on offer with real fills and 2% commission. Paper only: nothing here is real money. Full table: reports/league_table.md.
 
 ## Top 20 ways by £ a month (passing first; a way with fewer than 300 orders is not proven, whatever its number)
