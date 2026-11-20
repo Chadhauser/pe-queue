@@ -1,38 +1,38 @@
-# Grid progress - Friday 20 November 2026, 16:07 UTC
+# Grid progress - Friday 20 November 2026, 16:25 UTC
 
-League of ways of earning (last run 20 Nov 14:05 UTC): 3,495 ways in the registry, 3,299 tested, 7,246 tested this week, 11 passing (300 or more filled orders and profit after commission in both halves), 11 on forward paper.
-New ways this week: 3147 from traders' methods (a), 3363 from our own data (b), 977 from other ideas (c).
-Distinct effects passing: 11 (passing rows that are the same bets are counted once).
+League of ways of earning (last run 20 Nov 16:23 UTC): 7,523 ways in the registry, 7,118 tested, 7,246 tested this week, 24 passing (300 or more filled orders and profit after commission in both halves), 24 on forward paper.
+New ways this week: 3183 from traders' methods (a), 3363 from our own data (b), 977 from other ideas (c).
+Distinct effects passing: 22 (passing rows that are the same bets are counted once).
 Every figure below is at real prices on offer with real fills and 2% commission. Paper only: nothing here is real money. Full table: reports/league_table.md.
 
 ## Top 20 ways by £ a month (passing first; a way with fewer than 300 orders is not proven, whatever its number)
 
 | # | Way of earning | Source | Orders | £ kept per £100 | First half | Second half | £ a month | Verdict |
 |---|---|---|---|---|---|---|---|---|
-| 1 | On Betfair, in football match result markets, lay every selection rated a 20-30% chance 2 minutes before and hold it to the result. | b | 406 | +4.83 | +9.25 | +3.39 | £3,747 | passes |
-| 2 | On Betfair, in football match result markets, lay every selection rated a 20-30% chance 10 minutes before and hold it to the result. | b | 420 | +4.30 | +3.74 | +4.50 | £3,389 | passes |
-| 3 | In football match result markets, lay the draw two minutes before the start, and back it again 120 seconds after the market reopens following the first big event; with no goal it is held to the result. | a | 388 | +4.55 | +9.34 | +3.09 | £3,373 | passes |
-| 4 | In football match result markets, lay the draw 60 seconds after it starts, and back it again 120 seconds after the market reopens following the first big event; with no goal it is held to the result. | a | 328 | +5.24 | +13.32 | +2.82 | £3,235 | passes |
-| 5 | In football match result markets, lay the draw 60 seconds after it starts, and back it again 30 seconds after the market reopens following the first big event; with no goal it is held to the result. | a | 328 | +3.12 | +11.39 | +0.63 | £1,925 | passes |
-| 6 | In football match result markets, lay the draw two minutes before the start, and back it again 30 seconds after the market reopens following the first big event; with no goal it is held to the result. | a | 388 | +2.30 | +7.80 | +0.63 | £1,708 | passes |
-| 7 | On Betfair, in football match result markets, lay every selection rated a 20-30% chance 1 hour before and hold it to the result. | b | 363 | +2.29 | +6.30 | +0.92 | £1,433 | passes |
-| 8 | On Betfair, in football match result markets, lay a selection rated a 20-30% chance in the first third of play and back it again in the middle third of play. | b | 334 | +1.94 | +6.37 | +0.48 | £1,113 | passes |
-| 9 | On Betfair, in football match result markets, lay a selection rated a 20-30% chance 2 minutes before and back it again in the middle third of play. | b | 406 | +1.36 | +1.23 | +1.40 | £1,054 | passes |
-| 10 | On Betfair, in football match result markets, lay a selection rated a 20-30% chance 10 minutes before and back it again in the first third of play. | b | 420 | +0.88 | +1.02 | +0.83 | £694 | passes |
-| 11 | On Betfair, in football match result markets, lay a selection rated a 20-30% chance 2 minutes before and back it again in the first third of play. | b | 406 | +0.49 | +1.58 | +0.14 | £382 | passes |
-| 12 | On Betfair, in tennis match result markets, lay every selection rated a 90-100% chance in the last third of play and hold it to the result. | b | 69 | +73.49 | +40.39 | +86.83 | £6,860 | not enough orders yet (profit in both halves so far) |
-| 13 | On Betfair, in football match result markets, in-play, middle third, offer to back a selection rated a 20-30% chance one tick inside the best price and hold it to the result if it is matched. | b | 55 | +72.42 | +31.01 | +95.45 | £5,379 | not enough orders yet (profit in both halves so far) |
-| 14 | On Betfair, in tennis match result markets, back every selection rated a 0-10% chance in the last third of play and hold it to the result. | b | 52 | +78.18 | +182.78 | +23.71 | £5,127 | not enough orders yet (profit in both halves so far) |
-| 15 | In British and Irish horse racing, ten minutes before the start, back the favourite and hold it to the result. | c | 167 | +16.20 | +15.31 | +16.55 | £4,206 | not enough orders yet (profit in both halves so far) |
-| 16 | On Betfair, in basketball match result markets, lay every selection rated a 80-90% chance in the first third of play and hold it to the result. | b | 19 | +170.82 | +137.52 | +182.50 | £3,661 | not enough orders yet (profit in both halves so far) |
-| 17 | On Betfair, in basketball match result markets, back a selection rated a 10-20% chance in the first third of play and lay it again in the middle third of play. | b | 11 | +201.96 | +4.37 | +233.01 | £3,538 | not enough orders yet (profit in both halves so far) |
-| 18 | On Betfair, in basketball match result markets, lay a selection rated a 80-90% chance in the first third of play and back it again in the middle third of play. | b | 19 | +159.68 | +114.46 | +175.54 | £3,423 | not enough orders yet (profit in both halves so far) |
-| 19 | On Betfair, in basketball match result markets, lay a selection rated a 80-90% chance in the first third of play and back it again in the last third of play. | b | 19 | +158.05 | +64.30 | +190.92 | £3,388 | not enough orders yet (profit in both halves so far) |
-| 20 | On Betfair, in football match result markets, back every selection rated a 40-50% chance in the first third of play and hold it to the result. | b | 105 | +19.34 | +48.03 | +7.84 | £3,374 | not enough orders yet (profit in both halves so far) |
+| 1 | On Betfair, in British and Irish horse racing win markets, back every selection rated a 0-10% chance 10 minutes before and hold it to the result. | b | 1,092 | +8.61 | +15.97 | +3.30 | £4,659 | passes |
+| 2 | On Betfair, in British and Irish horse racing win markets, back a selection rated a 0-10% chance 10 minutes before and lay it again in the first third of play. | b | 1,092 | +8.51 | +15.80 | +3.25 | £4,604 | passes |
+| 3 | On Betfair, in British and Irish horse racing win markets, back a selection rated a 0-10% chance 10 minutes before and lay it again in the last third of play. | b | 1,092 | +7.46 | +14.23 | +2.57 | £4,036 | passes |
+| 4 | On Betfair, in British and Irish horse racing win markets, back a selection rated a 0-10% chance 10 minutes before and lay it again 2 minutes before. | b | 1,092 | +7.39 | +15.60 | +1.48 | £4,001 | passes |
+| 5 | On Betfair, in British and Irish horse racing win markets, back a selection rated a 0-10% chance 10 minutes before and lay it again in the middle third of play. | b | 1,092 | +6.13 | +12.85 | +1.29 | £3,318 | passes |
+| 6 | On Betfair, in football match result markets, lay every selection rated a 30-40% chance in the middle third of play and hold it to the result. | b | 405 | +3.48 | +4.65 | +2.64 | £1,635 | passes |
+| 7 | On Betfair, in football over or under 2.5 goals markets, lay a selection rated a 50-60% chance in the first third of play and back it again in the last third of play. | b | 314 | +4.40 | +0.33 | +6.74 | £1,440 | passes |
+| 8 | On Betfair, in British and Irish horse racing win markets, back every selection rated a 10-20% chance in the first third of play and hold it to the result. | b | 303 | +14.70 | +0.45 | +27.09 | £1,357 | passes |
+| 9 | On Betfair, in British and Irish horse racing win markets, back a selection rated a 10-20% chance in the first third of play and lay it again in the middle third of play. | b | 303 | +14.15 | +1.17 | +25.44 | £1,306 | passes |
+| 10 | On Betfair, in football match result markets, back a selection rated a 10-20% chance 1 hour before and lay it again in the last third of play. | b | 426 | +4.08 | +9.01 | +1.43 | £1,170 | passes |
+| 11 | In British and Irish horse racing win markets, two minutes before the start, when at least 65% of the money waiting at the best prices wants to back a selection, back it and lay it back thirty seconds before the start. | a | 438 | +5.46 | +2.93 | +7.08 | £1,108 | passes |
+| 12 | On Betfair, in football match result markets, back a selection rated a 10-20% chance 1 hour before and lay it again in the middle third of play. | b | 426 | +3.37 | +3.29 | +3.41 | £967 | passes |
+| 13 | On Betfair, in British and Irish horse racing win markets, lay every selection rated a 10-20% chance 10 minutes before and hold it to the result. | b | 371 | +1.52 | +1.25 | +1.79 | £750 | passes |
+| 14 | On Betfair, in British and Irish horse racing win markets, lay a selection rated a 10-20% chance 10 minutes before and back it again in the last third of play. | b | 371 | +1.45 | +1.16 | +1.73 | £713 | passes |
+| 15 | On Betfair, in British and Irish horse racing win markets, lay a selection rated a 10-20% chance 2 minutes before and back it again in the last third of play. | b | 400 | +1.24 | +1.45 | +1.07 | £656 | passes |
+| 16 | In football over or under 2.5 goals markets, 75 minutes after it starts, back whatever is priced from 1.05 to 1.3 and hold it to the result. | c | 301 | +1.63 | +3.21 | +0.65 | £566 | passes |
+| 17 | In football match result markets, lay the draw 60 seconds after it starts at a price from 3.5 to 5.0, and back it again 30 seconds after the market reopens following the first big event; with no goal it is held to the result. | a | 533 | +0.80 | +0.57 | +0.91 | £521 | passes |
+| 18 | In British and Irish horse racing win markets, five minutes before the start, when at least 65% of the money waiting at the best prices wants to lay a selection, lay it and back it back thirty seconds before the start. | a | 538 | +0.71 | +0.39 | +0.96 | £489 | passes |
+| 19 | On Betfair, in football match result markets, lay a selection rated a 30-40% chance in the middle third of play and back it again in the last third of play. | b | 405 | +0.94 | +0.30 | +1.39 | £441 | passes |
+| 20 | On Betfair, in British and Irish horse racing win markets, lay a selection rated a 10-20% chance 10 minutes before and back it again in the first third of play. | b | 371 | +0.75 | +0.19 | +1.28 | £367 | passes |
 
 ## Behind the league (counts only)
 
 - History files (last traded prices, not money): 60,168 slices scanned; 143 of the strongest pre-start slices entered the league as ideas, tested there at real prices only.
 - Recorded-prices grid days finished: betfair 19, matchbook 16, smarkets 16; its slices with 100 or more bets entered the league as ways (source b).
 - Days of recorded prices ready for the one test: betfair 20 (2026-10-31 to 2026-11-19), matchbook 17 (2026-11-03 to 2026-11-19), smarkets 17 (2026-11-03 to 2026-11-19).
-- Grid and league programs running now: 1.
+- Grid and league programs running now: 3.
