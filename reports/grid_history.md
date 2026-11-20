@@ -1,6 +1,6 @@
-# The full grid, stage 1: Betfair history - 2026-11-20 10:40 UTC
+# The full grid, stage 1: Betfair history - 2026-11-20 10:59 UTC
 
-Market types finished: 27 of 29. Slices tested so far: 55,952. With 300 or more bets: 28,028. Profitable in both halves: 6,875.
+Market types finished: 29 of 29. Slices tested so far: 60,168. With 300 or more bets: 30,482. Profitable in both halves: 7,542.
 At the last traded price, 2% commission. Two families (an in-and-out bet with no exit price is held to the result; in-play points are fixed minutes after the start, with a fresh price): hold to the result (back is per £100 staked, lay per £100 at risk) and in-and-out (enter at one time, exit at a later one, per £100 of the first stake). £ a month is at £10 a bet. UNVERIFIED until the same slice holds at real offered prices.
 
 ## Top 20 survivors by £ a month
@@ -33,12 +33,12 @@ At the last traded price, 2% commission. Two families (an in-and-out bet with no
 - hold to the result, Cricket: 33
 - hold to the result, Greyhound Racing: 11
 - hold to the result, Horse Racing: 22
-- hold to the result, Soccer: 1,276
+- hold to the result, Soccer: 1,407
 - hold to the result, Tennis: 91
 - in and out, Cricket: 99
 - in and out, Greyhound Racing: 43
 - in and out, Horse Racing: 157
-- in and out, Soccer: 4,782
+- in and out, Soccer: 5,318
 - in and out, Tennis: 361
 
 ## Top 15 survivors, hold to the result only
