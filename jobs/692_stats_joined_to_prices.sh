@@ -1,0 +1,29 @@
+#!/bin/bash
+# 692 (Fri 20 Nov 2026 18:36, Peter: "you aren't looking at data points and deciding which trades to make - aren't there joins for
+# that, like xG, shots on target"). Builder session 4: join the match facts we record to the real prices and test trades that are
+# DECIDED by the facts, through the one test. Paper only. No orders. Nothing deleted.
+B=/root/pe-builder
+cat > $B/BRIEF_stats.md <<'BRIEF'
+You are the Builder on Peter Edwards' trading server, session 4. Started once. Do the job, leave ordinary background processes running, write your handover, stop. No idle loops; long runs go to the background with nohup + nice.
+FIRST read /root/pe-queue/reports/builder_handover_3.md, /root/pe-builder/BRIEF_league.md (Peter's instruction and the HARD RULES there apply unchanged) and /root/pe-builder/IDEAS.md, then the code in /root/pe-sports/grid/. Reuse it.
+WHY: every row in the league so far decides its trade from the price and the clock alone. Peter's point: a trader looks at what is happening in the match and what the teams are, and trades when the price disagrees. Build that.
+STEP 1 - INVENTORY (write reports/stats_inventory.md, plain English, one line per source): find every table and file on this server that holds facts about a match or runner rather than prices - live expected goals, shots, shots on target, corners, dangerous attacks, possession, cards, the goal timeline (goal_stats_live, goal_timeline, live_signals, anything written by the xG / sofascore / api-football collectors, af_daily), pre-match form and results (the eight seasons of football results and Betfair pre-match prices, FTS files, Understat xG, Elo), team news, racecards (runner, draw, jockey, trainer, going, distance), tennis and cricket facts, golf leaderboards. For each: what it holds, first and last date, rows, how many of our recorded-price markets it can be joined to, and how late the fact arrives after the event (measure it against the price tape - a fact that arrives after the price has moved is worth nothing).
+STEP 2 - THE JOIN: one keyed link from each fact source to the market ids in the price tape (team-name matching with a checked alias table; report the match rate; never guess a link). A fact may be used by a rule only as it was known at that moment: timestamps strictly before the order, plus the measured delay. Add hand-worked checks to test_known.py for this (a fact stamped after the order must not be visible to it).
+STEP 3 - WAYS DECIDED BY FACTS, registered in earn_ways and run through the one test, every sensible variant its own row:
+ In play, football: lay the draw / back the stronger side / back overs when one side leads on expected goals or shots on target by each margin at 15, 30, 45, 60, 70 minutes and the score is level (and the mirror: lay overs, back the draw when nothing is being created); back the side that is behind on the scoreboard but ahead on chances; after a goal against the run of play, lay the scorer's side; next-goal and over/under at each line from the rate of chances so far; red card effects where cards are recorded; corners and cards markets from their own running counts.
+ Before the start, football: a fair price for home, draw, away, overs and both-teams-to-score from form, expected goals for and against and Elo, built ONLY from matches before the one priced; trade where the price on offer disagrees with it by each margin, both directions, at 24 h (if recorded), 1 h, 10 and 2 minutes; held and closed after the first goal. Check the model on the eight seasons of results first (as accuracy only - history at last traded prices is never money).
+ Racing: draw by course and distance, jockey and trainer in form, going, field size, as conditions on the before-the-off and in-running ways already in the table.
+ Tennis, cricket, golf, others: whatever facts the inventory finds (serve numbers, set scores, run rate, wickets in hand, leaderboard position) used the same way.
+ Combine: the passing price-only ways (lay the draw around kick-off above all) re-tested WITH each fact as a filter - does knowing the match improve them or not.
+HONESTY: recorded real prices are about three weeks; show real counts and do not lower the bar. For every row that looks good, remove its best day and its three biggest winners and say what is left. If a fact source turns out to be late, thin, or unjoinable, say so in reports/ideas_blocked.md with the one thing missing - do not drop it silently.
+WHEN YOU STOP: write /root/pe-queue/reports/builder_handover_4.md, plain English, under 45 lines: the inventory in five lines, the join match rates, ways added per group, what passes or leans, what is blocked and why, what the next session should do first. Commit and push: cd /root/pe-queue && git add reports/builder_handover_4.md reports/stats_inventory.md reports/ideas_blocked.md reports/league_table.md reports/paper_forward.md reports/grid_progress.md 2>/dev/null; git commit -qm "builder session 4: facts joined to prices" && git pull -q --no-rebase --no-edit && env -u GITHUB_TOKEN git push -q. Then end the session.
+BRIEF
+cat > $B/run_builder_stats.sh <<'SH'
+#!/bin/bash
+CL=$(cat /root/pe-watchman/claude_path); ts=$(date -u +%F_%H%M)
+cd /root/pe-sports/grid && timeout -k 60 21600 "$CL" -p "$(cat /root/pe-builder/BRIEF_stats.md)" --allowedTools "Bash,Read,Write,Edit,Glob,Grep" --max-turns 600 --output-format text > /root/pe-builder/runs/${ts}_stats.log 2>&1
+echo "builder stats session ended $(date -u '+%F %H:%M') exit $?" >> /root/pe-builder/sessions.log
+/root/pe-builder/progress.sh
+SH
+chmod +x $B/run_builder_stats.sh
+if pgrep -f '[r]un_builder' >/dev/null; then echo "a builder session is still running - not starting a second one"; else nohup setsid $B/run_builder_stats.sh > /dev/null 2>&1 < /dev/null & sleep 40; echo "builder session 4 started: $(pgrep -fc '[r]un_builder_stats.sh')"; fi
