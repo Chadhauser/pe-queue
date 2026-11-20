@@ -1,6 +1,6 @@
-# The full grid, stage 1: Betfair history - 2026-11-20 06:48 UTC
+# The full grid, stage 1: Betfair history - 2026-11-20 07:10 UTC
 
-Market types finished: 18 of 29. Slices tested so far: 35,680. With 300 or more bets: 13,024. Profitable in both halves: 3,484.
+Market types finished: 22 of 29. Slices tested so far: 44,886. With 300 or more bets: 19,220. Profitable in both halves: 5,388.
 At the last traded price, 2% commission. Two families (an in-and-out bet with no exit price is held to the result; in-play prices must be fresh): hold to the result (back is per £100 staked, lay per £100 at risk) and in-and-out (enter at one time, exit at a later one, per £100 of the first stake). £ a month is at £10 a bet. UNVERIFIED until the same slice holds at real offered prices.
 
 ## Top 20 survivors by £ a month
@@ -33,30 +33,30 @@ At the last traded price, 2% commission. Two families (an in-and-out bet with no
 - hold to the result, Cricket: 30
 - hold to the result, Greyhound Racing: 11
 - hold to the result, Horse Racing: 30
-- hold to the result, Soccer: 569
+- hold to the result, Soccer: 1,015
 - hold to the result, Tennis: 106
 - in and out, Cricket: 109
 - in and out, Greyhound Racing: 43
 - in and out, Horse Racing: 170
-- in and out, Soccer: 1,942
+- in and out, Soccer: 3,400
 - in and out, Tennis: 474
 
 ## Top 15 survivors, hold to the result only
 
 | # | sport | market | when | price band | side | price move | bets | £ per £100 | first half | second half | £ a month at £10 |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| 1 | Tennis | MATCH_ODDS | in-play, middle third | 90-100% chance | lay | price falling | 8,013 | +61.51 | +62.59 | +60.46 | £2,464 |
-| 2 | Soccer | HALF_TIME_FULL_TIME | in-play, first third | 0-10% chance | back | no earlier price | 17,698 | +115.09 | +180.01 | +51.53 | £2,289 |
-| 3 | Horse Racing | WIN | in-play, first third | 0-10% chance | back | price rising | 6,782 | +30.17 | +26.70 | +32.88 | £1,574 |
-| 4 | Tennis | MATCH_ODDS | in-play, middle third | 0-10% chance | back | price rising | 7,275 | +41.85 | +38.05 | +45.55 | £1,522 |
-| 5 | Soccer | HALF_TIME_FULL_TIME | 1 hour before | 0-10% chance | back | no earlier price | 100,281 | +13.58 | +25.36 | +2.26 | £1,513 |
-| 6 | Tennis | MATCH_ODDS | in-play, first third | 90-100% chance | lay | price falling | 3,884 | +70.38 | +67.25 | +73.08 | £1,367 |
-| 7 | Soccer | HALF_TIME_FULL_TIME | in-play, first third | 0-10% chance | back | price rising | 43,536 | +23.46 | +37.66 | +9.97 | £1,135 |
-| 8 | Soccer | CORRECT_SCORE | in-play, last third | 20-30% chance | lay | price falling | 89,708 | +9.67 | +10.54 | +8.82 | £1,058 |
-| 9 | Soccer | CORRECT_SCORE | in-play, first third | 0-10% chance | back | no earlier price | 153,388 | +5.46 | +9.73 | +1.29 | £1,034 |
-| 10 | Soccer | HALF_TIME_FULL_TIME | 24 hours before | 0-10% chance | back | no earlier price | 35,538 | +23.91 | +43.63 | +4.60 | £955 |
-| 11 | Tennis | MATCH_ODDS | in-play, first third | 90-100% chance | lay | no earlier price | 536 | +301.96 | +445.57 | +179.22 | £852 |
-| 12 | Soccer | CORRECT_SCORE | in-play, last third | 30-40% chance | lay | price falling | 40,191 | +17.29 | +19.72 | +14.88 | £847 |
-| 13 | Greyhound Racing | WIN | 10 minutes before | 0-10% chance | back | no earlier price | 1,442 | +28.02 | +16.95 | +35.48 | £808 |
-| 14 | Horse Racing | WIN | 2 minutes before | 0-10% chance | back | price flat | 7,454 | +13.00 | +6.56 | +18.58 | £745 |
-| 15 | Soccer | HALF_TIME_FULL_TIME | in-play, first third | 90-100% chance | lay | no earlier price | 563 | +832.27 | +734.20 | +911.74 | £679 |
+| 1 | Soccer | DOUBLE_CHANCE | in-play, last third | 90-100% chance | lay | price falling | 60,014 | +38.55 | +31.88 | +44.88 | £2,570 |
+| 2 | Tennis | MATCH_ODDS | in-play, middle third | 90-100% chance | lay | price falling | 8,013 | +61.51 | +62.59 | +60.46 | £2,464 |
+| 3 | Soccer | HALF_TIME_FULL_TIME | in-play, first third | 0-10% chance | back | no earlier price | 17,698 | +115.09 | +180.01 | +51.53 | £2,289 |
+| 4 | Soccer | FIRST_HALF_GOALS_05 | in-play, last third | 40-50% chance | back | price rising | 20,879 | +92.82 | +90.76 | +94.81 | £2,178 |
+| 5 | Soccer | FIRST_HALF_GOALS_05 | in-play, last third | 50-60% chance | lay | price falling | 20,534 | +94.29 | +92.37 | +96.14 | £2,175 |
+| 6 | Soccer | FIRST_HALF_GOALS_05 | in-play, last third | 50-60% chance | back | price rising | 24,474 | +76.94 | +76.69 | +77.18 | £2,116 |
+| 7 | Soccer | FIRST_HALF_GOALS_15 | in-play, middle third | 20-30% chance | back | price rising | 32,670 | +47.93 | +46.78 | +49.04 | £1,759 |
+| 8 | Soccer | FIRST_HALF_GOALS_05 | in-play, first third | 60-70% chance | lay | price rising | 51,135 | +30.32 | +24.76 | +35.64 | £1,723 |
+| 9 | Soccer | FIRST_HALF_GOALS_05 | in-play, middle third | 40-50% chance | lay | price rising | 35,995 | +41.93 | +41.10 | +42.74 | £1,696 |
+| 10 | Soccer | FIRST_HALF_GOALS_05 | in-play, last third | 40-50% chance | lay | price falling | 19,700 | +76.23 | +75.77 | +76.68 | £1,687 |
+| 11 | Soccer | FIRST_HALF_GOALS_05 | in-play, middle third | 50-60% chance | back | price falling | 36,143 | +40.89 | +39.86 | +41.87 | £1,661 |
+| 12 | Soccer | FIRST_HALF_GOALS_05 | in-play, middle third | 60-70% chance | back | price rising | 36,224 | +39.72 | +40.65 | +38.81 | £1,616 |
+| 13 | Horse Racing | WIN | in-play, first third | 0-10% chance | back | price rising | 6,782 | +30.17 | +26.70 | +32.88 | £1,574 |
+| 14 | Tennis | MATCH_ODDS | in-play, middle third | 0-10% chance | back | price rising | 7,275 | +41.85 | +38.05 | +45.55 | £1,522 |
+| 15 | Soccer | FIRST_HALF_GOALS_15 | in-play, last third | 10-20% chance | back | price rising | 15,178 | +88.18 | +75.96 | +99.79 | £1,521 |
