@@ -1,0 +1,10 @@
+columns ['open', 'high', 'low', 'close', 'volume', 'sym'] rows 7637624
+Traceback (most recent call last):
+  File "/root/pe-finq/repo/fin/research/data_map.py", line 13, in <module>
+    D = D[D.sym.isin(small)].copy(); D['date'] = pd.to_datetime(D.date); D = D.sort_values(['sym', 'date']).reset_index(drop=True)
+                                                                ^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/pandas/core/generic.py", line 6194, in __getattr__
+    return object.__getattribute__(self, name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'DataFrame' object has no attribute 'date'. Did you mean: 'update'?
+exit=0 secs=2
