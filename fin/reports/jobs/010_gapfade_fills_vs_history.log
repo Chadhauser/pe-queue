@@ -1,0 +1,88 @@
+=== how the history test defined the rule
+9:S=D[D.sym.isin(small)].copy(); S['prev']=S.groupby('sym').close.shift(1); S['gap']=S.open/S.prev-1; S['cc']=S.close/S.prev-1; S['oc']=S.close/S.open-1
+31:            r=cands.iloc[cands.gap.abs().values.argmax()]
+34:@reg('K2','Overnight gap fade, small caps, NO earnings within a day: |gap| >=5% -> FADE open->close.')
+35:def K2():
+36:    x=S[(S.gap.abs()>=0.05)&S.oc.notna()].copy(); x=x[[not near_earn(s,d) for s,d in zip(x.sym,x.date)]]; x['sign']=-np.sign(x.gap); return finish(x,'sign','oc')
+37:@reg('K3','Earnings gap continuation, small caps: |gap| >=5% on the reaction day -> WITH it open->close.')
+39:    x=S[(S.gap.abs()>=0.05)&S.oc.notna()].copy(); x=x[[near_earn(s,d) for s,d in zip(x.sym,x.date)]]; x['sign']=np.sign(x.gap); return finish(x,'sign','oc')
+2026-11-17 HISTORY TERMS: names gapping 5%+ 28 | all mean -107 bps, win 54% | ten biggest gaps mean +395 bps
+2026-11-18 HISTORY TERMS: names gapping 5%+ 25 | all mean +19 bps, win 76% | ten biggest gaps mean -728 bps
+2026-11-19 HISTORY TERMS: names gapping 5%+ 28 | all mean +533 bps, win 79% | ten biggest gaps mean +280 bps
+2026-11-20 HISTORY TERMS: names gapping 5%+ 20 | all mean +283 bps, win 55% | ten biggest gaps mean +284 bps
+       day  sym side  gap_live  gap_official  open  entry  close  exit  live_bps  hist_bps  entry_cost_bps  exit_cost_bps  in_hist  same_side    usd
+2026-11-17 CING sell      0.23          0.15  4.30   4.70   4.72  4.77   -148.94   -976.74         -930.23         105.93     True       True  -7.56
+2026-11-17  JBI  buy     -0.10         -0.01  3.19   3.32   3.12  3.11   -632.53   -219.44          407.52          32.05    False       True -32.76
+2026-11-17 ANNX  buy     -0.10          0.00  3.57   3.59   3.47  3.45   -389.97   -280.11           56.02          57.64    False      False -19.60
+2026-11-17 SCZM sell      0.10          0.07  6.88   7.25   7.41  7.36   -157.05   -770.35         -532.26         -67.48     True       True  -8.08
+2026-11-17 NEWP  buy     -0.08         -0.01  4.54   4.72   4.92  4.92    423.73    837.00          396.48           0.00    False       True  21.40
+2026-11-17 KURA sell      0.08          0.08  7.68   7.52   7.49  7.49     43.56    247.40          204.73           0.00     True       True   2.13
+2026-11-17  MTA  buy     -0.07          0.01  6.80   6.88   6.87  6.85    -43.60    102.94          117.65          29.11    False      False  -2.19
+2026-11-18 ARDT  buy     -0.23         -0.23 13.75  13.82  14.40 14.33    369.25    472.73           50.50          48.80     True       True  18.37
+2026-11-18  VRA  buy     -0.11         -0.00  6.52   6.71   6.48  6.49   -330.75    -61.35          294.48         -15.43    False       True -16.65
+2026-11-18 PRPO  buy     -0.09          0.00 19.19  21.59  18.76 18.65  -1361.74   -224.08         1250.65          58.64    False      False -73.50
+2026-11-18 ANGX sell      0.08          0.07  4.41   4.59   4.22  4.24    762.53    430.84         -408.16          47.39     True       True  38.85
+2026-11-18 ASTL  buy     -0.08         -0.01  4.99   4.97   4.84  4.85   -241.45   -300.60          -40.08         -20.66    False       True -12.12
+2026-11-18 PEPG sell      0.08          0.07  4.15   4.11   3.83  3.84    651.96    771.08          101.65          26.11     True       True  31.87
+2026-11-18 JACK  buy     -0.08         -0.05 13.36  13.52  14.79 14.71    877.43   1070.36          122.32          54.09     True       True  45.09
+2026-11-18 ECVT  buy     -0.07         -0.09  9.35   9.53   9.71  9.79    272.82    385.03          192.51         -82.39     True       True  13.52
+2026-11-18 SCZM  buy     -0.07         -0.04  7.10   6.90   6.80  6.79   -162.59   -422.53         -278.56          14.71    False       True  -8.08
+2026-11-18  OGC  buy     -0.06         -0.04 25.45  24.98  24.52 24.52   -182.77   -365.42         -186.05           0.00    False       True  -9.13
+2026-11-19   SA  buy     -0.16         -0.15 21.75  21.25  18.06 18.09  -1487.06  -1696.55         -229.89         -16.61     True       True -72.68
+2026-11-19 IIIV sell      0.11         -0.01 20.71  20.15  19.94 20.07     38.20    371.80          271.87          65.20    False      False   1.77
+2026-11-19 FCUV  buy     -0.09         -0.08  4.14   4.26   4.30  4.20   -140.85    386.47          289.86         232.56     True       True  -7.14
+2026-11-19 DMRC sell      0.08         -0.00  6.38   6.60   6.04  6.03    863.64    532.92         -344.83         -16.56    False      False  41.04
+2026-11-19 MNSO  buy     -0.07         -0.07 10.83  10.89  10.56 10.54   -321.40   -249.31           55.40          18.94     True       True -15.75
+2026-11-19 KOPN sell      0.06          0.05  3.12   3.17   2.84  2.86    977.92    897.44         -160.26          70.42    False       True  48.98
+2026-11-19 QUIK sell      0.05          0.03 10.20  10.11   9.78  9.79    316.52    411.76           88.24          10.23    False       True  15.36
+2026-11-19 FWDI sell      0.05          0.04  4.16   4.18   3.94  3.94    574.16    528.85          -48.08          -0.00    False       True  28.32
+2026-11-20 SVRA  buy     -0.18         -0.20  4.19   4.23   4.26  4.25     48.50    167.06           94.24          23.47     True       True   2.40
+2026-11-20 TDAY  buy     -0.14         -0.02  5.83   5.98   5.96  5.95    -57.89    222.98          265.25          16.78    False       True  -2.91
+2026-11-20  SVV  buy     -0.08         -0.01  9.28   9.56   9.14  9.04   -541.61   -150.86          300.91         107.76    False       True -27.44
+2026-11-20 GRRR  buy     -0.08         -0.05  5.98   5.92   5.26  5.16  -1283.78  -1212.37         -100.33         180.78    False       True -65.36
+2026-11-20 AUNA  buy     -0.08         -0.00  3.89   4.13   3.66  3.64  -1178.00   -591.26          606.80          54.65    False       True -62.70
+2026-11-20 NEWP  buy     -0.07         -0.03  4.46   4.20   4.10  4.15   -119.05   -807.18         -582.96        -121.95    False       True  -5.80
+2026-11-20  MEI  buy     -0.07         -0.04 11.02  11.14  10.21 10.14   -897.67   -735.03          108.89          68.56    False       True -45.00
+2026-11-20 DMRC  buy     -0.07          0.01  6.12   5.99   5.54  5.54   -749.76   -947.71         -213.99          -0.00    False      False -37.27
+2026-11-20  BGS sell      0.07          0.07  3.59   3.61   3.63  3.63    -55.40   -111.42          -55.71          -0.00     True       True  -2.78
+2026-11-20 XMAX  buy     -0.06          0.00  6.01   5.86   6.01  5.97    187.71      0.00         -249.58          66.56    False      False   9.79
+
+TOTAL legs 35 | live mean -116 bps ($-215.61) | history-test booking for the same legs mean -65 bps
+entry cost mean +26 bps (fill at 09:31 vs the official open) | exit cost mean +30 bps (fill at 15:55 vs the official close)
+legs the history test would also have picked (official gap 5%+, same side): 13 of 35 | their live mean +55, hist mean +10
+legs NOT in the history set: 22 | live mean -218 bps
+by side: {'count': {'buy': 24, 'sell': 11}, 'mean': {'buy': -331.0, 'sell': 352.0}}
+
+=== untested ideas
+failed | K5 | {'id': 'K5', 'script': '/root/pe-fin/team/mech_crumbs.py', 'args': ['K5'], 'status': 'failed', 'pre_registered_sign': 'S&P 500 additions: LONG from close 5 trading days before the effective date to the effective-date close (index-fund forced buying).', 'next_door': 'threshold once, then liquidity band (ADV $30-100m), then dead; 
+proposed | E1t | {'id': 'E1t', 'script': '/root/pe-fin/team/mech_events.py', 'args': ['E1t'], 'status': 'proposed', 'pre_registered_sign': 'Pre-FOMC drift, TLT (bonds; same rule, long).', 'next_door': 'E1: post-statement 14:00-16:00 continuation; M7: none (door 3 was the last)', 'timeout': 1800}
+proposed | E1g | {'id': 'E1g', 'script': '/root/pe-fin/team/mech_events.py', 'args': ['E1g'], 'status': 'proposed', 'pre_registered_sign': 'Pre-FOMC drift, GLD (gold; same rule, long).', 'next_door': 'E1: post-statement 14:00-16:00 continuation; M7: none (door 3 was the last)', 'timeout': 1800}
+proposed | M7S | {'id': 'M7S', 'script': '/root/pe-fin/team/mech_m7door3.py', 'args': ['M7S'], 'status': 'proposed', 'pre_registered_sign': 'Last-hour momentum on SPY: 09:30->15:00 move >=1.5% -> WITH it 15:00->close (M7 door 3).', 'next_door': 'E1: post-statement 14:00-16:00 continuation; M7: none (door 3 was the last)', 'timeout': 1800}
+proposed | M7I | {'id': 'M7I', 'script': '/root/pe-fin/team/mech_m7door3.py', 'args': ['M7I'], 'status': 'proposed', 'pre_registered_sign': 'Last-hour momentum on IWM: same rule (M7 door 3).', 'next_door': 'E1: post-statement 14:00-16:00 continuation; M7: none (door 3 was the last)', 'timeout': 1800}
+proposed | M7P | {'id': 'M7P', 'script': '/root/pe-fin/team/mech_m7door3.py', 'args': ['M7P'], 'status': 'proposed', 'pre_registered_sign': 'Last-hour momentum POOLED QQQ+SPY+IWM (each day-instrument a trade; clustered by day).', 'next_door': 'E1: post-statement 14:00-16:00 continuation; M7: none (door 3 was the last)', 'timeout': 1800}
+=== data on disk
+total 109184
+drwxr-xr-x 2 root root      4096 Nov 14 19:43 .
+drwxr-xr-x 9 root root      4096 Nov 16 13:52 ..
+-rw-r--r-- 1 root root 111091173 Nov 15 16:24 daily_all.parquet
+-rw-r--r-- 1 root root    630741 Nov 15 16:42 earnings_dates.json
+-rw-r--r-- 1 root root     72878 Nov 15 16:24 universe_small.csv
+48K	/root/pe-data/__pycache__
+36K	/root/pe-data/af_daily.log
+4.0K	/root/pe-data/af_daily.py
+1.3G	/root/pe-data/alpaca
+140K	/root/pe-data/archive.log
+4.0K	/root/pe-data/bsp_daily.log
+4.0K	/root/pe-data/bsp_daily.py
+107M	/root/pe-data/crumbs
+10M	/root/pe-data/duka
+8.0K	/root/pe-data/events
+40K	/root/pe-data/integrity.log
+8.0K	/root/pe-data/integrity_suite.py
+8.0K	/root/pe-data/integrity_suite.py.bak_411
+12K	/root/pe-data/ledger.log
+332M	/root/pe-data/oanda
+4.0K	/root/pe-data/paper_ledger.py
+4.0K	/root/pe-data/tape_archive.py
+3.2M	/root/pe-data/yf1m
+exit=0 secs=56
