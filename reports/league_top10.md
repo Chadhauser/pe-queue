@@ -1,5 +1,5 @@
-Rules tested: 8,663
-Rules passing: 114
+Rules tested: 8,761
+Rules passing: 115
 
 Top 10:
 1. On Betfair, in British and Irish horse racing win markets, 10 minutes before, offer to back a selection rated a 0-10% chance one tick inside the best price and hold it to the result if it is matched. £21.10 kept per £100, 522 orders.
