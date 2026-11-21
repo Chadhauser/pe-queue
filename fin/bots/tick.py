@@ -6,6 +6,7 @@
 #   ORB  — QQQ  5-min opening range: candle direction 09:30-09:35, bracket stop at range edge, target 10R, $100 risk, flat 2 min before close
 #   M7B  — signal on QQQ 09:30->15:00 move >= 1.5%  -> trade QQQM WITH it, $10,000 notional, 15:00 -> flat 1 min before close (16:00 days only)
 #   K2   — small-cap overnight gap >= 5% (official open vs official prior close) faded at 09:31, $500/name, max 30, flat 5 min before close
+#   K7   — heavily traded small-cap up >= 25% over 20 days, sold short 15:52, $500/name, max 10/day, bought back on the 5th trading day
 #   K4   — small-cap down >= 15% over 5 trading days, bought 15:50, $500/name, max 10/day, sold on the 5th trading day
 #   ORB_SPY / ORB_IWM — the same ORB rule on SPY and IWM (M23/M24: WORKS AT SMALL SIZE on the backtest)
 #   E1S  — pre-FOMC drift (Lucca-Moench, E1s WORKS): long $10,000 VOO (S&P 500) from 2 min before the close on the trading day
@@ -191,7 +192,7 @@ def official_gaps(syms, day):
     o = d['Open'].iloc[-1]; pc = d['Close'].iloc[-2]
     return {s: (float(o[s]), float(pc[s])) for s in syms if s in o.index and pd.notna(o[s]) and pd.notna(pc[s]) and pc[s] > 0}
 def k2_entry(st, day, op):
-    uni, ed = universe(); held = {p['sym'] for p in k4_book()['open']}; cands = []; A = assets(); G = {}
+    uni, ed = universe(); held = {p['sym'] for p in k4_book()['open']} | {p['sym'] for p in k7_book()['open']}; cands = []; A = assets(); G = {}
     for _ in range(3):                                                     # the day's opens can lag a little after 09:30
         G = official_gaps(uni, day)
         if len(G) >= 0.5 * len(uni): break
@@ -230,7 +231,7 @@ def k4_run(st, day, entries):
     book['open'] = keep; new = []
     if entries:
         uni, ed = universe(); k2 = {l['sym'] for l in st.get('K2', {}).get('legs', [])}
-        held = {p['sym'] for p in keep} | {p['sym'] for p in book['closed'] if p.get('exit_date') == str(day)}   # no same-day re-buy
+        held = {p['sym'] for p in keep} | {p['sym'] for p in book['closed'] if p.get('exit_date') == str(day)} | {p['sym'] for p in k7_book()['open']}   # no same-day re-buy
         d = daily_closes(uni, day)
         if len(d) >= 5:
             ref = d.iloc[-5]; snap = snapshots(uni); cands = []; A = assets()
@@ -238,6 +239,7 @@ def k4_run(st, day, entries):
             for s, v in snap.items():
                 try:
                     px = v['latestTrade']['p']; r5 = px / ref[s] - 1
+                    if (now() - pd.Timestamp(v['latestTrade']['t']).to_pydatetime()).total_seconds() > 1800: continue   # stale print on the thin feed (21 Nov gap-fade lesson)
                     if pd.isna(r5) or r5 > -0.15 or px < 3 or s in held or s in k2 or s in ETF_SYMS or not can(A, s)[0]: continue
                     if any(abs((pd.Timestamp(x).date() - day).days) <= 1 for x in ed.get(s, [])): continue
                     cands.append(dict(sym=s, px=px, r5=r5))
@@ -250,6 +252,41 @@ def k4_run(st, day, entries):
                     p = dict(sym=c['sym'], date=str(day), qty=qty, ref=c['px'], r5=round(c['r5'], 4), order=res.get('id'))
                     book['open'].append(p); new.append(c['sym'])
     jsave(os.path.join(BOTS, 'k4_book.json'), book); st['K4'] = dict(new=new, open=len(book['open'])); log(f'K4 new {new}')
+
+def k7_book(): return jload(os.path.join(BOTS, 'k7_book.json'), {'open': [], 'closed': []})
+def k7_candidates(uni, day):
+    """[(sym, 20-day return, average traded value, price)] from official daily bars; today's row is the price near the close."""
+    import yfinance as yf, pandas as pd
+    d = yf.download(uni, period='3mo', interval='1d', auto_adjust=False, progress=False, threads=True)
+    if d is None or len(d) < 22 or d.index[-1].date() != day: return []
+    C_, V_ = d['Close'], d['Volume']; r20 = C_.iloc[-1] / C_.iloc[-21] - 1; dv = (C_ * V_).iloc[-21:-1].mean()
+    return [(s, float(r20[s]), float(dv[s]), float(C_[s].iloc[-1])) for s in uni if s in r20.index and pd.notna(r20[s]) and pd.notna(dv[s])]
+def k7_run(st, day, entries):
+    """K7 (from the data map, 21 Nov): heavily traded small company ($30m+ a day) up 25%+ in 20 days -> SELL SHORT near the close,
+    buy back on the 5th trading day. $500 a name, max 10 a day. History: +2.2% a trade after 0.6% measured cost, both halves."""
+    book = k7_book(); keep = []
+    for p in book['open']:
+        n = trading_days(dt.date.fromisoformat(p['date']), day)
+        if n is not None and n - 1 >= 5:
+            qty = min(p['qty'], abs(position_qty(p['sym'])))
+            if qty > 0:
+                sc, res = api('POST', '/orders', json={'symbol': p['sym'], 'qty': str(int(qty)), 'side': 'buy', 'type': 'market',
+                                                        'time_in_force': 'day', 'client_order_id': f"k7x-{day:%Y%m%d}-{p['sym']}"})
+                p['exit_order'] = res.get('id') if isinstance(res, dict) else None
+            p['exit_date'] = str(day); book['closed'].append(p); log(f"K7 exit {p['sym']}")
+        else: keep.append(p)
+    book['open'] = keep; new = []
+    if entries:
+        uni, ed = universe(); A = assets(); k2 = {l['sym'] for l in st.get('K2', {}).get('legs', [])}
+        held = {p['sym'] for p in keep} | {p['sym'] for p in book['closed'] if p.get('exit_date') == str(day)} | {p['sym'] for p in k4_book()['open']}
+        cands = [c for c in k7_candidates(uni, day) if c[1] >= 0.25 and c[2] >= 30e6 and c[3] >= 3 and c[0] not in held and c[0] not in k2
+                 and c[0] not in ETF_SYMS and all(can(A, c[0]))]
+        for s_, r20, dv, px in sorted(cands, key=lambda c: -c[1])[:10]:
+            qty = max(1, int(500.0 // px))
+            sc, res = api('POST', '/orders', json={'symbol': s_, 'qty': str(qty), 'side': 'sell', 'type': 'market', 'time_in_force': 'day',
+                                                    'client_order_id': f"k7-{day:%Y%m%d}-{s_}"})
+            if sc < 300: book['open'].append(dict(sym=s_, side='sell', date=str(day), qty=qty, ref=px, r20=round(r20, 4), order=res.get('id'))); new.append(s_)
+    jsave(os.path.join(BOTS, 'k7_book.json'), book); st['K7'] = dict(new=new, open=len(book['open'])); log(f'K7 new {new}')
 
 def e1_book(): return jload(os.path.join(BOTS, 'e1_book.json'), {'open': [], 'closed': []})
 def e1_run(st, day):
@@ -280,7 +317,7 @@ def price_book(path):
         if p.get('pnl_usd') is not None or not p.get('order') or not p.get('exit_order'): continue
         s1, o1 = api('GET', f"/orders/{p['order']}"); s2, o2 = api('GET', f"/orders/{p['exit_order']}")
         if s1 == 200 and s2 == 200 and o1.get('filled_avg_price') and o2.get('filled_avg_price'):
-            p['pnl_usd'] = round((float(o2['filled_avg_price']) - float(o1['filled_avg_price'])) * float(o2['filled_qty']), 2); done += 1
+            p['pnl_usd'] = round((float(o2['filled_avg_price']) - float(o1['filled_avg_price'])) * float(o2['filled_qty']) * (-1 if p.get('side') == 'sell' else 1), 2); done += 1
     jsave(path, book); return done
 
 def settle(st, day, op):
@@ -306,8 +343,10 @@ def settle(st, day, op):
     res = {k: (pnl(lambda x, s_=sym: x[0] == s_) if mine(k) else (None, 0))
            for k, sym in (('ORB', 'QQQ'), ('ORB_SPY', 'SPY'), ('ORB_IWM', 'IWM'), ('M7B', 'QQQM'))}
     res['K2'] = pnl(lambda x: x[0] in k2)
-    done = price_book(os.path.join(BOTS, 'k4_book.json')); e1done = price_book(os.path.join(BOTS, 'e1_book.json'))
-    st['settle'] = {k: {'pnl_usd': v[0], 'fills': v[1]} for k, v in res.items()}; st['settle']['K4_closed_priced_today'] = done; st['settle']['E1_closed_priced_today'] = e1done
+    for sd in ('sell', 'buy'):                                             # the two sides of the gap fade judged separately (data map 21 Nov)
+        ks = {l['sym'] for l in st.get('K2', {}).get('legs', []) if l.get('side') == sd and l.get('status', 999) < 300}; res[f'K2_{sd}'] = pnl(lambda x, ks=ks: x[0] in ks) + (len(ks),)
+    done = price_book(os.path.join(BOTS, 'k4_book.json')); price_book(os.path.join(BOTS, 'k7_book.json')); e1done = price_book(os.path.join(BOTS, 'e1_book.json'))
+    st['settle'] = {k: ({'pnl_usd': v[0], 'fills': v[1], 'n': v[2]} if len(v) > 2 else {'pnl_usd': v[0], 'fills': v[1]}) for k, v in res.items()}; st['settle']['K4_closed_priced_today'] = done; st['settle']['E1_closed_priced_today'] = e1done
     log(f"SETTLE {st['settle']}")
 
 # ---------------------------------------------------------------- the tick
@@ -332,6 +371,8 @@ def tick():
         run('M7B_entry', at(day, 15, 0, 5), at(day, 15, 20), lambda: m7b_entry(st, day, op))
     if C.get('K4') and cl.time() == dt.time(16, 0):
         run('K4_run', at(day, 15, 50), at(day, 15, 57), lambda: k4_run(st, day, entries_allowed()), needs_entry=False)
+    if C.get('K7', True) and cl.time() == dt.time(16, 0):
+        run('K7_run', at(day, 15, 52), at(day, 15, 57), lambda: k7_run(st, day, entries_allowed()), needs_entry=False)
     if C.get('K2'):  run('K2_flat', cl - dt.timedelta(minutes=5), cl, lambda: [flatten(l['sym']) for l in st.get('K2', {}).get('legs', [])], needs_entry=False)
     for sym, key in (('QQQ', 'ORB'), ('SPY', 'ORB_SPY'), ('IWM', 'ORB_IWM')):
         if C.get(key): run(f'{key}_flat', cl - dt.timedelta(minutes=2), cl, lambda s_=sym: flatten(s_), needs_entry=False)
@@ -351,13 +392,20 @@ def summary():
                 n = sum(1 for l in d.get('K2', {}).get('legs', []) if l.get('status', 0) < 300) if k == 'K2' else 1   # rejected legs are not trades
                 rows.append((d['date'], k, s_[k]['pnl_usd'], n))
     tot = {k: (round(sum(r[2] for r in rows if r[1] == k), 2), sum(r[3] for r in rows if r[1] == k)) for k in K}
-    for k, path in (('K4', 'k4_book.json'), ('E1S', 'e1_book.json')):
+    for k, path in (('K4', 'k4_book.json'), ('E1S', 'e1_book.json'), ('K7', 'k7_book.json')):
         b = jload(os.path.join(BOTS, path), {'open': [], 'closed': []}); c = [p for p in b['closed'] if p.get('pnl_usd') is not None]
         tot[k] = (round(sum(p['pnl_usd'] for p in c), 2), len(c))
     L = [f"# Fin paper bots — UNVERIFIED-PAPER (Alpaca paper, $) — updated {now():%Y-%m-%d %H:%M} NY — disk free {free_gb():.0f} GB (entries stop under {MIN_FREE_GB})", '',
          'Gate for real money: 100 settled paper trades per strategy, profitable overall and in each half, in line with the backtest, and Peter\'s yes.', '',
          '| strategy | settled trades | of 100 | pnl $ |', '|---|---|---|---|']
     L += [f'| {k} | {n} | {min(n, 100)}% | {p:+.2f} |' for k, (p, n) in tot.items()]
+    side = {}
+    for f in sorted(x for x in os.listdir(BOTS) if x.startswith('day_')):
+        s_ = jload(os.path.join(BOTS, f), {}).get('settle', {})
+        for sd in ('sell', 'buy'):
+            v = s_.get(f'K2_{sd}')
+            if v and v.get('pnl_usd') is not None: a = side.setdefault(sd, [0.0, 0]); a[0] += v['pnl_usd']; a[1] += v.get('n', 0)
+    if side: L += ['', 'K2 gap fade by side (parts of the K2 row above):', '', '| side | trades | pnl $ |', '|---|---|---|'] + [f"| {'sells (gap up)' if sd == 'sell' else 'buys (gap down)'} | {n} | {p:+.2f} |" for sd, (p, n) in side.items()]
     L += ['', '| date | strategy | pnl $ | trades |', '|---|---|---|---|'] + [f'| {d} | {k} | {p:+.2f} | {n} |' for d, k, p, n in rows[-40:]]
     with open(os.path.join(BOTS, 'bots.md'), 'w') as f: f.write('\n'.join(L) + '\n')
 

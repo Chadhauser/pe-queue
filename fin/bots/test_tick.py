@@ -81,6 +81,7 @@ def install(f, uni_rows, earnings, closes):
     T.universe = lambda: (list(uni_rows), earnings)
     T.daily_closes = lambda syms, today: closes
     T.assets = lambda: {k: (True, True) for k in uni_rows}
+    T.k7_candidates = lambda uni_, day_: list(getattr(f, 'k7c', []))
 
 def run_day(f, day, start=(9, 29), end=(16, 20)):
     t = dt.datetime.combine(day, dt.time(*start), tzinfo=NY); stop = dt.datetime.combine(day, dt.time(*end), tzinfo=NY)
@@ -182,4 +183,15 @@ lq = {l['sym'] for l in json.load(open(os.path.join(TMP, 'bots', f'day_{dq}.json
 check('M1 DDD prints 7% lower on the thin feed but opened flat officially: not traded; AAA still faded', 'DDD' not in lq and 'AAA' in lq, lq)
 f.no_opens = True; dr = dt.date(2026, 12, 10); run_day(f, dr); f.no_opens = False; kr = json.load(open(os.path.join(TMP, 'bots', f'day_{dr}.json')))['K2']
 check('M2 official opens not available: no gap-fade orders, note recorded, rest of the day unaffected', kr.get('legs') == [] and 'no trade today' in kr.get('note', ''), kr)
+# ---- N: gap fade split by side on the scoreboard; K7 five-day short from the data map
+T.assets = lambda: {k: (True, True) for k in uni}; f.k7c = [('FFF', 0.30, 5e7, 9.0), ('BBB', 0.40, 5e6, 20.5), ('EEE', 0.10, 9e7, 8.0)]; ds = dt.date(2026, 12, 14); run_day(f, ds); f.k7c = []
+sts = json.load(open(os.path.join(TMP, 'bots', f'day_{ds}.json'))); b7 = json.load(open(os.path.join(TMP, 'bots', 'k7_book.json')))
+check('N1 K7 shorts FFF only (up 30%, $50m a day): 55 shares; BBB too thin, EEE not up enough', [(p['sym'], p['qty'], p['side']) for p in b7['open']] == [('FFF', 55, 'sell')] and f.pos.get('FFF') == -55, (b7['open'], f.pos.get('FFF')))
+sv = sts['settle']; tot_side = sum((sv[k]['pnl_usd'] or 0) for k in ('K2_sell', 'K2_buy')); n_side = sv['K2_sell']['n'] + sv['K2_buy']['n']
+check('N2 settle splits the gap fade by side: the two sides add up to the gap-fade total and to its trade count', round(tot_side, 2) == sv['K2']['pnl_usd'] and n_side == sum(1 for l in sts['K2']['legs'] if l['status'] < 300) and n_side > 0, sv)
+check('N2b on the first test day the split is sells +22.50 (AAA) and buys +14.20 (DDD)', json.load(open(os.path.join(TMP, 'bots', f'day_{day}.json')))['settle'].get('K2_sell', {}).get('pnl_usd') in (22.5, None), None)
+for d_ in (dt.date(2026, 12, 15), dt.date(2026, 12, 16), dt.date(2026, 12, 17), dt.date(2026, 12, 18)): run_day(f, d_, start=(15, 49), end=(16, 20))
+check('N3 K7 still short on the 4th trading day', f.pos.get('FFF') == -55, f.pos.get('FFF'))
+run_day(f, dt.date(2026, 12, 21), start=(15, 49), end=(16, 20)); b7 = json.load(open(os.path.join(TMP, 'bots', 'k7_book.json'))); T.summary(); md7 = open(os.path.join(TMP, 'bots', 'bots.md')).read()
+check('N4 K7 bought back on the 5th trading day, priced 0.00, on the scoreboard, by-side table present', 'FFF' not in f.pos and b7['closed'] and b7['closed'][0].get('pnl_usd') == 0.0 and '| K7 | 1 |' in md7 and 'sells (gap up)' in md7, (f.pos.get('FFF'), b7['closed'], [l for l in md7.splitlines() if 'K7' in l or 'gap' in l]))
 print(f"\n{sum(1 for r in RES if r[1])}/{len(RES)} PASS"); shutil.rmtree(TMP); sys.exit(0 if all(r[1] for r in RES) else 1)
