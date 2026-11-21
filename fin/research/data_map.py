@@ -35,7 +35,7 @@ O['yesterday volume'] = band(P('rv'), [0.5, 1.5, 3.0], ['quiet', 'normal', 'busy
 O['yesterday range'] = band(P('rng'), [0.03, 0.06, 0.12], ['tight', 'normal', 'wide', 'very wide 12%+'])
 O['yesterday finish'] = band(P('clv'), [0.2, 0.8], ['closed at low', 'mid', 'closed at high'])
 O['vs 60-day high'] = band(P('hi60'), [-0.40, -0.15, -0.03], ['40%+ below', '15-40% below', '3-15% below', 'at high'])
-O['share price'] = band(D.open, [5, 10, 20], ['$3-5', '$5-10', '$10-20', '$20+']); O['weekday'] = D.date.dt.day_name()
+O['weekday'] = D.date.dt.day_name()
 O['traded value'] = band(P('dv20'), [3e6, 10e6, 30e6], ['$1-3m', '$3-10m', '$10-30m', '$30m+'])
 okO = (D.open >= 3) & (P('dv20') >= 1e6) & D.oc.notna() & D.gap.notna()
 # ---- what is known AT THE CLOSE (entry at the close)
@@ -45,7 +45,7 @@ Cc['last 5 days'] = band(D.r5, R5E, R5); Cc['last 20 days'] = band(D.r20, R20E, 
 Cc['today volume'] = band(D.rv, [0.5, 1.5, 3.0], ['quiet', 'normal', 'busy 1.5-3x', 'very busy 3x+'])
 Cc['today finish'] = band(D.clv, [0.2, 0.8], ['closed at low', 'mid', 'closed at high'])
 Cc['vs 60-day high'] = band(D.hi60, [-0.40, -0.15, -0.03], ['40%+ below', '15-40% below', '3-15% below', 'at high'])
-Cc['share price'] = band(D.close, [5, 10, 20], ['$3-5', '$5-10', '$10-20', '$20+']); Cc['weekday'] = D.date.dt.day_name()
+Cc['weekday'] = D.date.dt.day_name()
 Cc['traded value'] = band(D.dv20, [3e6, 10e6, 30e6], ['$1-3m', '$3-10m', '$10-30m', '$30m+'])
 okC = (D.close >= 3) & (D.dv20 >= 1e6) & D.cc.notna()
 days = np.sort(D.date.unique()); mid = days[len(days) // 2]; print('days', len(days), str(days[0])[:10], 'to', str(days[-1])[:10], '| half split', str(mid)[:10], '| shares', D.sym.nunique())
@@ -54,6 +54,10 @@ def score(X, ok, y, yname, when, hold_days=1):
     global tested
     feats = [c for c in X.columns if c not in ('date', 'sym')]; Y = (D[y] * 1e4).where(ok & D[y].notna() & (D[y].abs() < 1.0))
     base = X.assign(y=Y).dropna(subset=['y'])
+    # 21 Nov: the share list is today's small companies, so the whole list drifts DOWN in history (shares that fell into it) and every
+    # short looks good. Score each share against the average of ALL shares that same day, so only the band's own effect is left.
+    # The share-price band is dropped: history prices are split-adjusted, so a high old price already knows about a later collapse.
+    allday = base.groupby('date').y.transform('mean'); print(f'{yname}: all shares average {base.y.mean():+.1f} bps (removed)'); base['y'] = base.y - allday
     for combo in [(f,) for f in feats] + list(itertools.combinations(feats, 2)):
         b = base.dropna(subset=list(combo)); 
         if not len(b): continue
