@@ -1,4 +1,4 @@
-# Paper record: trades against bets - Sat 21 Nov 2026 17:47 UK
+# Paper record: trades against bets - Sat 21 Nov 2026 18:16 UK
 
 Settled paper bets, each bet counted once (the same bet from several rules once). Staked = back stake, or a lay's liability. TRADE = the rule closes the position before the result; BET = held to the result.
 
@@ -6,15 +6,15 @@ Settled paper bets, each bet counted once (the same bet from several rules once)
 |---|---|---|---|
 | Thu 19 Nov | 677 bets, £22,951 staked, -£2,190, -9.5 per £100 | 142 bets, £5,012 staked, +£440, +8.8 per £100 | 32 |
 | Fri 20 Nov | 5,128 bets, £163,889 staked, -£7,025, -4.3 per £100 | 2,117 bets, £74,196 staked, +£2,183, +2.9 per £100 | 3 |
-| Sat 21 Nov | 2,561 bets, £75,644 staked, -£1,583, -2.1 per £100 | 1,058 bets, £41,558 staked, -£3,128, -7.5 per £100 | 82 |
-| All | 8,366 bets, £262,485 staked, -£10,798, -4.1 per £100 | 3,317 bets, £120,766 staked, -£506, -0.4 per £100 | 117 |
+| Sat 21 Nov | 2,566 bets, £75,737 staked, -£1,599, -2.1 per £100 | 1,062 bets, £41,756 staked, -£3,219, -7.7 per £100 | 94 |
+| All | 8,371 bets, £262,578 staked, -£10,814, -4.1 per £100 | 3,321 bets, £120,964 staked, -£596, -0.5 per £100 | 129 |
 
 | Sport | TRADES | BETS |
 |---|---|---|
 | horse racing | 2,700 bets, £84,188 staked, -£13,546, -16.1 per £100 | 801 bets, £31,275 staked, -£2,034, -6.5 per £100 |
-| tennis | 121 bets, £4,962 staked, -£199, -4.0 per £100 | 20 bets, £839 staked, +£9, +1.0 per £100 |
+| tennis | 121 bets, £4,962 staked, -£199, -4.0 per £100 | 21 bets, £889 staked, +£15, +1.7 per £100 |
 | cricket | 30 bets, £1,039 staked, -£141, -13.6 per £100 | 0 bets, £0 staked, +£0, - per £100 |
-| football | 5,515 bets, £172,295 staked, +£3,088, +1.8 per £100 | 2,496 bets, £88,652 staked, +£1,520, +1.7 per £100 |
+| football | 5,520 bets, £172,389 staked, +£3,073, +1.8 per £100 | 2,499 bets, £88,800 staked, +£1,423, +1.6 per £100 |
 
 Ten rules that lost most (each rule's own orders, settled):
 - way 2030: On Betfair, in British and Irish horse racing win markets, back a selection rated a 0-10% chance 10 minutes before and lay it again in the last third of play. TRADE; 390 orders, £7,662 staked, -£3,620; league test -2.5 per £100.
@@ -38,9 +38,9 @@ Ten rules that made most:
 - way 11363: In football match result markets, an hour before the start, when the money waiting to back a selection is 2 times the money waiting to lay it, back it (follow the weight of money) and close it 2 minutes later. TRADE; 151 orders, £2,291 staked, +£1,161; league test +2.0 per £100.
 - way 3096: On Betfair, in football match result markets, back a selection rated a 10-20% chance 1 hour before and lay it again in the last third of play. TRADE; 89 orders, £1,912 staked, +£973; league test -5.2 per £100.
 - way 11411: In football match result markets, ten minutes before the start, when the money waiting to back a selection is 3 times the money waiting to lay it, back it (follow the weight of money) and close it 2 minutes later. TRADE; 141 orders, £2,642 staked, +£947; league test +2.5 per £100.
-- way 11015: In football over or under 2.5 goals markets, back under 2.5 goals 90 minutes after it starts and hold it to the result. BET; 218 orders, £9,153 staked, +£855; league test +1.2 per £100.
+- way 10928: In football over or under 2.5 goals markets, lay over 2.5 goals 70 minutes after it starts and hold it to the result. BET; 187 orders, £7,206 staked, +£853; league test +1.4 per £100.
 
-Of the total -£11,304: BETS -£506; outsiders (entry price 5.0 or longer, trades and bets) -£11,381; trades whose exit was missed -£6,253. (These overlap: an outsider can be a bet.)
-TRADES: 48% of 8,397 exits filled (1,897 only in part); a position was open 56 minutes on average (18 when the exit filled, 91 when it was held to the result).
+Of the total -£11,410: BETS -£596; outsiders (entry price 5.0 or longer, trades and bets) -£11,397; trades whose exit was missed -£6,268. (These overlap: an outsider can be a bet.)
+TRADES: 48% of 8,403 exits filled (1,898 only in part); a position was open 56 minutes on average (18 when the exit filled, 91 when it was held to the result).
 
-Bank book (£2,000, TRADES only, limits on), by day placed: Thu 19 -£141.56 (28 taken, 0 open, 791 skipped); Fri 20 +£182.05 (57 taken, 0 open, 5532 skipped); Sat 21 -£282.51 (153 taken, 1 open, 2623 skipped). Bank now £1,757.98.
+Bank book (£2,000, TRADES only, limits on), by day placed: Thu 19 -£141.56 (28 taken, 0 open, 791 skipped); Fri 20 +£182.05 (57 taken, 0 open, 5532 skipped); Sat 21 -£282.51 (153 taken, 1 open, 2632 skipped). Bank now £1,757.98.

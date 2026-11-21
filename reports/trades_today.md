@@ -397,12 +397,12 @@
 | trade | 14:50 | Bournemouth v Nottm Forest | The Draw | back | 3.50 | £50.00 | lost | -£30.39 |
 | trade | 14:50 | Huddersfield v Leicester | Leicester | back | 3.60 | £37.02 | won | +£45.33 |
 | trade | 14:50 | Grimsby v Rotherham | Grimsby | back | 1.66 | £2.27 | lost | -£2.27 |
-| trade | 14:50 | Kilmarnock v Aberdeen | The Draw | back | 3.70 | £2.46 | lost | -£2.46 |
+| trade | 14:50 | Raith v Partick | Raith | back | 2.96 | £18.52 | lost | -£18.52 |
 | trade | 14:50 | Kidderminster v AFC Fylde | The Draw | back | 4.10 | £34.68 | won | +£105.36 |
 | trade | 14:50 | Gateshead v Hartlepool | Hartlepool | back | 2.14 | £2.00 | won | +£2.23 |
 | trade | 14:50 | Bradford v Doncaster | The Draw | back | 4.20 | £50.00 | won | +£156.80 |
 | trade | 14:50 | Bradford v Doncaster | Doncaster | back | 5.40 | £2.00 | lost | -£2.00 |
-| trade | 14:50 | Wealdstone v Hornchurch | Hornchurch | back | 3.35 | £2.00 | lost | -£2.00 |
+| trade | 14:50 | Kilmarnock v Aberdeen | The Draw | back | 3.70 | £2.46 | lost | -£2.46 |
 | trade | 14:50 | Spennymoor Town v Harborough Town | The Draw | back | 4.00 | £4.50 | won | +£13.23 |
 | trade | 14:50 | Falkirk v St Johnstone | Falkirk | back | 1.97 | £2.08 | won | +£1.98 |
 | trade | 14:50 | Hebburn Town v Marine FC | The Draw | back | 3.70 | £3.00 | won | +£7.94 |
@@ -434,7 +434,7 @@
 | trade | 14:50 | Queens Park v Livingston | Livingston | back | 1.54 | £2.18 | won | +£1.15 |
 | trade | 14:50 | Arbroath v Stenhousemuir | Arbroath | back | 2.48 | £2.17 | won | +£3.15 |
 | trade | 14:50 | Arbroath v Stenhousemuir | The Draw | back | 3.25 | £9.08 | lost | -£9.08 |
-| trade | 14:50 | Raith v Partick | Raith | back | 2.96 | £18.52 | lost | -£18.52 |
+| trade | 14:50 | Wealdstone v Hornchurch | Hornchurch | back | 3.35 | £2.00 | lost | -£2.00 |
 | trade | 14:50 | Spalding Utd v Merthyr Town | Merthyr Town | back | 2.90 | £2.85 | lost | -£2.85 |
 | trade | 14:50 | Buxton v Hednesford Town | The Draw | back | 3.55 | £5.82 | lost | -£5.82 |
 | trade | 14:50 | Cheltenham v Bristol Rovers | The Draw | back | 3.65 | £2.20 | lost | -£0.03 |
@@ -488,8 +488,8 @@
 | bet | 14:58 | Worthing v Harrogate Town | Harrogate Town | back | 2.36 | £50.00 | lost | -£50.00 |
 | bet | 14:58 | Morecambe v Kings Lynn | Morecambe | back | 2.12 | £4.00 | won | +£4.39 |
 | trade | 14:58 | Worthing v Harrogate Town | Worthing | lay | 2.96 | £25.51 | lost | -£40.00 |
-| trade | 14:58 | Mansfield v MK Dons | Mansfield | lay | 2.70 | £29.41 | lost | -£20.59 |
 | trade | 14:58 | Hebburn Town v Marine FC | Hebburn Town | lay | 2.56 | £4.00 | lost | -£3.70 |
+| trade | 14:58 | York City v Walsall | Over 2.5 Goals | back | 5.60 | £4.00 | lost | -£4.00 |
 | trade | 14:58 | Worksop Town v Chorley | Over 2.5 Goals | back | 6.60 | £7.58 | lost | -£7.58 |
 | trade | 14:58 | Hebburn Town v Marine FC | Over 2.5 Goals | back | 7.20 | £5.65 | won | +£34.33 |
 | trade | 14:58 | Hibernian v Dundee Utd | Over 2.5 Goals | back | 5.10 | £50.00 | lost | -£50.00 |
@@ -499,20 +499,19 @@
 | trade | 14:58 | Kilmarnock v Aberdeen | Over 2.5 Goals | back | 6.20 | £50.00 | won | +£254.80 |
 | trade | 14:58 | Bolton v Portsmouth | Over 2.5 Goals | back | 7.60 | £26.52 | lost | -£26.52 |
 | trade | 14:58 | FC Ararat Yerevan v BKMA Yerevan | Over 2.5 Goals | back | 8.60 | £5.30 | lost | -£5.30 |
-| trade | 14:58 | Morecambe v Kings Lynn | Over 2.5 Goals | back | 6.80 | £9.13 | lost | -£9.13 |
 | trade | 14:58 | Edinburgh City v Kelty Hearts | Over 2.5 Goals | back | 6.60 | £3.00 | lost | -£3.00 |
+| trade | 14:58 | Queen of South v Hamilton | Over 2.5 Goals | back | 6.20 | £10.90 | lost | -£10.90 |
 | trade | 14:58 | Stranraer v Elgin City FC | Over 2.5 Goals | back | 6.20 | £3.00 | won | +£15.29 |
 | trade | 14:58 | Huddersfield v Leicester | Over 2.5 Goals | back | 6.40 | £21.44 | lost | -£21.44 |
 | trade | 14:58 | Truro City v Hemel Hempstead | Over 2.5 Goals | back | 6.60 | £14.80 | lost | -£14.80 |
-| trade | 14:58 | Kilmarnock v Aberdeen | Kilmarnock | lay | 2.58 | £31.65 | won | +£28.16 |
+| trade | 14:58 | Chester v Macclesfield | Over 2.5 Goals | back | 6.80 | £10.50 | won | +£59.68 |
 | trade | 14:58 | Oxford Utd v Wycombe | Over 2.5 Goals | back | 6.20 | £31.16 | lost | -£31.16 |
 | trade | 14:58 | Coquimbo Unido v Everton De Vina | Over 2.5 Goals | back | 7.60 | £7.00 | lost | -£7.00 |
-| trade | 14:58 | Omonia v APOEL | Over 2.5 Goals | back | 8.20 | £7.00 | lost | -£7.00 |
 | trade | 14:58 | Mansfield v MK Dons | Over 2.5 Goals | back | 6.40 | £14.98 | lost | -£14.98 |
-| trade | 14:58 | York City v Walsall | Over 2.5 Goals | back | 5.60 | £4.00 | lost | -£4.00 |
-| trade | 14:58 | Queen of South v Hamilton | Over 2.5 Goals | back | 6.20 | £10.90 | lost | -£10.90 |
+| trade | 14:58 | Kilmarnock v Aberdeen | Kilmarnock | lay | 2.58 | £31.65 | won | +£28.16 |
+| trade | 14:58 | Morecambe v Kings Lynn | Over 2.5 Goals | back | 6.80 | £9.13 | lost | -£9.13 |
 | trade | 14:58 | Southport v Brackley Town | Over 2.5 Goals | back | 7.40 | £11.54 | lost | -£11.54 |
-| trade | 14:58 | Chester v Macclesfield | Over 2.5 Goals | back | 6.80 | £10.50 | won | +£59.68 |
+| trade | 14:58 | Omonia v APOEL | Over 2.5 Goals | back | 8.20 | £7.00 | lost | -£7.00 |
 | trade | 14:58 | Bradford v Doncaster | Over 2.5 Goals | back | 8.00 | £9.08 | lost | -£9.08 |
 | trade | 14:58 | Hebburn Town v Marine FC | Marine FC | lay | 3.05 | £22.40 | won | +£15.87 |
 | trade | 14:58 | Ham-Kam v Fredrikstad | Fredrikstad | lay | 3.05 | £5.01 | won | +£2.95 |
@@ -521,9 +520,10 @@
 | trade | 14:58 | Worthing v Harrogate Town | Over 2.5 Goals | back | 5.30 | £7.00 | lost | -£7.00 |
 | trade | 14:58 | Mansfield v MK Dons | MK Dons | lay | 2.76 | £28.41 | won | +£18.69 |
 | trade | 14:58 | Cheltenham v Bristol Rovers | Cheltenham | lay | 3.25 | £22.22 | won | +£20.60 |
+| trade | 14:58 | Chester v Macclesfield | Macclesfield | lay | 3.25 | £13.00 | won | +£11.59 |
 | trade | 14:58 | Bolton v Portsmouth | Bolton | lay | 2.76 | £28.41 | won | +£27.84 |
 | trade | 14:58 | Kidderminster v AFC Fylde | Over 2.5 Goals | back | 6.20 | £10.00 | lost | -£10.00 |
-| trade | 14:58 | Chester v Macclesfield | Macclesfield | lay | 3.25 | £13.00 | won | +£11.59 |
+| trade | 14:58 | Mansfield v MK Dons | Mansfield | lay | 2.70 | £29.41 | lost | -£20.59 |
 | trade | 14:58 | Wealdstone v Hornchurch | Over 2.5 Goals | back | 7.40 | £12.21 | lost | -£12.21 |
 | trade | 14:58 | Barrow v Carlisle | Over 2.5 Goals | back | 6.40 | £5.00 | lost | -£5.00 |
 | trade | 14:58 | FC Halifax Town v Woking | Over 2.5 Goals | back | 7.20 | £7.00 | lost | -£7.00 |
@@ -531,9 +531,9 @@
 | trade | 14:58 | Gateshead v Hartlepool | Over 2.5 Goals | back | 8.00 | £10.03 | lost | -£10.03 |
 | trade | 14:58 | Burton Albion v Luton | Over 2.5 Goals | back | 7.00 | £14.00 | lost | -£14.00 |
 | trade | 14:58 | Spennymoor Town v Harborough Town | Over 2.5 Goals | back | 6.20 | £11.87 | lost | -£11.87 |
+| trade | 14:58 | Swansea v West Brom | Over 2.5 Goals | back | 8.60 | £2.00 | won | +£14.90 |
 | trade | 14:58 | Leyton Orient v AFC Wimbledon | Over 2.5 Goals | back | 7.80 | £9.34 | won | +£62.24 |
 | trade | 14:58 | Cambridge Utd v Stockport | Over 2.5 Goals | back | 7.40 | £21.82 | lost | -£21.82 |
-| trade | 14:58 | Swansea v West Brom | Over 2.5 Goals | back | 8.60 | £2.00 | won | +£14.90 |
 | bet | 15:01 | Audace Cerignola v Barletta | Under 2.5 Goals | back | 1.14 | £50.00 | won | +£6.86 |
 | bet | 15:01 | Inter Milan (Res) v Potenza | Under 2.5 Goals | back | 2.42 | £6.68 | lost | -£6.68 |
 | bet | 15:01 | FC Vado v US Latina Calcio | Under 2.5 Goals | back | 1.13 | £50.00 | won | +£6.37 |
@@ -543,10 +543,10 @@
 | trade | 15:05 | Sociedad B v Cadiz | Cadiz | back | 4.80 | £50.00 | won | +£186.20 |
 | bet | 15:07 | Mafra v Arouca | Arouca | back | 2.08 | £50.00 | lost | -£50.00 |
 | trade | 15:09 | Aston Villa v Sunderland | Under 2.5 Goals | back | 2.12 | £50.00 | won | +£5.88 |
+| bet | 15:13 | Spartak Varna v Cherno More | Cherno More | back | 2.40 | £10.21 | lost | -£10.21 |
+| trade | 15:13 | Spartak Varna v Cherno More | The Draw | lay | 3.35 | £11.51 | lost | -£4.29 |
 | trade | 15:13 | Sociedad B v Cadiz | Over 2.5 Goals | back | 6.20 | £50.00 | lost | -£50.00 |
 | trade | 15:13 | Rayo Vallecano v Valencia | Over 2.5 Goals | back | 9.00 | £10.02 | lost | -£10.02 |
-| trade | 15:13 | Spartak Varna v Cherno More | The Draw | lay | 3.35 | £11.51 | lost | -£4.29 |
-| bet | 15:13 | Spartak Varna v Cherno More | Cherno More | back | 2.40 | £10.21 | lost | -£10.21 |
 | trade | 15:13 | Stoke v Birmingham | Under 2.5 Goals | back | 1.61 | £50.00 | won | +£12.11 |
 | trade | 15:15 | United FC v Al Wahda (Abu Dhabi) | Al Wahda (Abu Dhabi) | back | 1.68 | £32.00 | lost | -£32.00 |
 | trade | 15:20 | FC Eindhoven v RKC Waalwijk | The Draw | back | 4.60 | £37.70 | lost | -£37.70 |
@@ -575,8 +575,8 @@
 | bet | 15:22 | FC Ararat Yerevan v BKMA Yerevan | FC Ararat Yerevan | back | 2.18 | £50.00 | lost | -£50.00 |
 | bet | 15:22 | Walton & Hersham v Chelmsford | Chelmsford | back | 2.12 | £50.00 | lost | -£50.00 |
 | trade | 15:22 | Chelsea v Leeds | Under 2.5 Goals | back | 1.64 | £50.00 | lost | -£36.79 |
-| trade | 15:23 | United FC v Al Wahda (Abu Dhabi) | Over 2.5 Goals | back | 6.80 | £11.00 | lost | -£11.00 |
 | bet | 15:23 | United FC v Al Wahda (Abu Dhabi) | Al Wahda (Abu Dhabi) | back | 1.67 | £50.00 | lost | -£50.00 |
+| trade | 15:23 | United FC v Al Wahda (Abu Dhabi) | Over 2.5 Goals | back | 6.80 | £11.00 | lost | -£11.00 |
 | bet | 15:24 | Hebburn Town v Marine FC | Hebburn Town | back | 2.38 | £50.00 | lost | -£50.00 |
 | bet | 15:24 | Peterhead v East Kilbride | East Kilbride | back | 1.99 | £50.00 | lost | -£50.00 |
 | trade | 15:28 | Zaragoza v CF Rayo Majadahonda | Over 2.5 Goals | back | 8.60 | £2.63 | lost | -£2.63 |
@@ -597,20 +597,20 @@
 | trade | 15:50 | Estoril Praia v Felgueiras | Estoril Praia | back | 1.67 | £2.00 | open | - |
 | trade | 15:50 | Karpaty v Zorya | Zorya | back | 4.30 | £16.00 | open | - |
 | bet | 15:57 | Alemannia Aachen v Waldhof Mannheim | Alemannia Aachen | back | 2.38 | £7.37 | won | +£9.97 |
-| bet | 16:01 | Fatih Karagumruk Istanbul v Boluspor | Fatih Karagumruk Istanbul | back | 1.21 | £50.00 | open | - |
+| bet | 16:01 | Fatih Karagumruk Istanbul v Boluspor | Fatih Karagumruk Istanbul | back | 1.21 | £50.00 | lost | -£50.00 |
 | bet | 16:02 | LASK Linz v Hartberg | LASK Linz | back | 1.35 | £50.00 | open | - |
-| trade | 16:05 | Catanzaro v Palermo | The Draw | back | 3.75 | £18.22 | closed at 3.75, waiting for the result | - |
 | trade | 16:05 | Catanzaro v Palermo | Palermo | back | 2.02 | £50.00 | closed at 2.06, waiting for the result | - |
+| trade | 16:05 | Catanzaro v Palermo | The Draw | back | 3.75 | £18.22 | closed at 3.75, waiting for the result | - |
 | trade | 16:13 | Tottenham v Ipswich | Over 2.5 Goals | back | 1.27 | £50.00 | lost | -£1.15 |
 | bet | 16:17 | Nice v Paris St-G | Paris St-G | back | 1.45 | £50.00 | open | - |
-| trade | 16:20 | Nuovo Campobasso v Pesaro | Nuovo Campobasso | back | 1.64 | £7.50 | open | - |
-| trade | 16:20 | US Savoia 1908 v Sorrento | Sorrento | back | 3.20 | £2.50 | open | - |
-| trade | 16:20 | US Savoia 1908 v Sorrento | US Savoia 1908 | back | 2.56 | £5.91 | open | - |
 | trade | 16:20 | Caratese v Arzignanochiampo | Arzignanochiampo | back | 2.48 | £3.30 | open | - |
-| trade | 16:20 | Crotone v Cosenza | The Draw | back | 3.65 | £10.00 | open | - |
-| trade | 16:20 | Crotone v Cosenza | Crotone | back | 1.88 | £18.10 | open | - |
 | trade | 16:20 | ASD Pineto Calcio v Pescara | ASD Pineto Calcio | back | 3.85 | £8.51 | open | - |
+| trade | 16:20 | Crotone v Cosenza | Crotone | back | 1.88 | £18.10 | open | - |
+| trade | 16:20 | Crotone v Cosenza | The Draw | back | 3.65 | £10.00 | open | - |
 | trade | 16:20 | Zaglebie Lubin v Gornik Zabrze | The Draw | back | 3.80 | £20.71 | open | - |
+| trade | 16:20 | US Savoia 1908 v Sorrento | US Savoia 1908 | back | 2.56 | £5.91 | open | - |
+| trade | 16:20 | US Savoia 1908 v Sorrento | Sorrento | back | 3.20 | £2.50 | open | - |
+| trade | 16:20 | Nuovo Campobasso v Pesaro | Nuovo Campobasso | back | 1.64 | £7.50 | open | - |
 | trade | 16:21 | Nice v Paris St-G | Over 2.5 Goals | back | 1.44 | £50.00 | won | +£7.45 |
 | bet | 16:23 | Karpaty v Zorya | Karpaty | back | 2.22 | £2.00 | open | - |
 | trade | 16:25 | Polonia Warszawa v Stal Mielec | Under 2.5 Goals | back | 1.02 | £50.00 | won | +£0.98 |
@@ -680,34 +680,35 @@
 | bet | 16:47 | Rayo Vallecano v Valencia | Under 2.5 Goals | back | 1.21 | £50.00 | won | +£10.29 |
 | trade | 16:50 | Valerenga v Start | The Draw | back | 5.40 | £21.44 | closed at 5.60, waiting for the result | - |
 | trade | 16:50 | Bohemians 1905 v Plzen | Plzen | back | 1.94 | £18.58 | closed at 1.95, waiting for the result | - |
-| trade | 16:50 | Zemplin v Spartak Trnava | The Draw | back | 4.00 | £2.00 | open | - |
 | trade | 16:50 | Aris FC Limassol v Nea Salamis | Nea Salamis | back | 6.40 | £13.14 | closed at 6.40, waiting for the result | - |
+| trade | 16:50 | Zemplin v Spartak Trnava | The Draw | back | 4.00 | £2.00 | open | - |
+| trade | 16:50 | Rudes v Varazdin | Rudes | back | 3.30 | £5.64 | open | - |
 | trade | 16:50 | Rudes v Varazdin | The Draw | back | 3.35 | £2.00 | open | - |
 | trade | 16:50 | Rudes v Varazdin | Varazdin | back | 2.46 | £3.00 | open | - |
 | trade | 16:50 | Maritimo v Chaves | The Draw | back | 4.00 | £9.50 | open | - |
-| trade | 16:50 | Rudes v Varazdin | Rudes | back | 3.30 | £5.64 | open | - |
 | bet | 16:50 | Crotone v Cosenza | Crotone | back | 2.14 | £2.00 | open | - |
 | trade | 16:52 | West Ham v Preston | Under 2.5 Goals | back | 1.16 | £50.00 | won | +£4.62 |
 | bet | 16:52 | GAIS v Vasteras SK | GAIS | back | 2.40 | £10.31 | open | - |
 | bet | 16:55 | United FC v Al Wahda (Abu Dhabi) | Under 2.5 Goals | back | 1.29 | £50.00 | won | +£14.21 |
-| bet | 16:58 | Rudes v Varazdin | Varazdin | back | 2.46 | £50.00 | open | - |
-| bet | 16:58 | Maritimo v Chaves | Maritimo | back | 1.66 | £17.83 | open | - |
-| trade | 16:58 | Rudes v Varazdin | The Draw | lay | 3.35 | £21.28 | open | - |
 | bet | 16:58 | Zemplin v Spartak Trnava | Spartak Trnava | back | 1.94 | £50.00 | open | - |
-| trade | 16:58 | Aris FC Limassol v Nea Salamis | Over 2.5 Goals | back | 6.80 | £24.51 | open | - |
-| trade | 16:58 | Bohemians 1905 v Plzen | Over 2.5 Goals | back | 7.60 | £11.00 | open | - |
-| trade | 16:58 | Rudes v Varazdin | Over 2.5 Goals | back | 9.00 | £3.00 | open | - |
+| bet | 16:58 | Maritimo v Chaves | Maritimo | back | 1.66 | £17.83 | open | - |
+| bet | 16:58 | Rudes v Varazdin | Varazdin | back | 2.46 | £50.00 | open | - |
+| trade | 16:58 | Rudes v Varazdin | The Draw | lay | 3.35 | £21.28 | closed at 4.10, waiting for the result | - |
+| trade | 16:58 | Bohemians 1905 v Plzen | Over 2.5 Goals | back | 7.60 | £11.00 | lost | -£11.00 |
+| trade | 16:58 | Aris FC Limassol v Nea Salamis | Over 2.5 Goals | back | 6.80 | £24.51 | lost | -£24.51 |
+| trade | 16:58 | Rudes v Varazdin | Over 2.5 Goals | back | 9.00 | £3.00 | lost | -£3.00 |
 | bet | 16:59 | Zaragoza v CF Rayo Majadahonda | Under 2.5 Goals | back | 2.28 | £9.19 | won | +£11.53 |
 | trade | 17:05 | London City Lionesses v Crystal Palace (W) | London City Lionesses | back | 1.16 | £7.52 | closed at 1.17, waiting for the result | - |
 | bet | 17:07 | Alemannia Aachen v Waldhof Mannheim | Under 2.5 Goals | back | 1.72 | £50.00 | lost | -£50.00 |
 | trade | 17:09 | Parma v Roma | Over 2.5 Goals | back | 1.53 | £50.00 | closed at 1.63, waiting for the result | - |
-| bet | 17:12 | Pigossi/Stefani v Arseneault/Dabrowski | Pigossi/Stefani | back | 1.13 | £50.00 | open | - |
-| trade | 17:13 | Genk v RAAL La Louviere | Over 2.5 Goals | back | 5.90 | £4.82 | open | - |
-| trade | 17:20 | Kalamata v AEK Athens | The Draw | back | 5.90 | £39.22 | closed at 6.00, waiting for the result | - |
+| bet | 17:12 | Pigossi/Stefani v Arseneault/Dabrowski | Pigossi/Stefani | back | 1.13 | £50.00 | won | +£6.37 |
+| trade | 17:13 | Genk v RAAL La Louviere | Over 2.5 Goals | back | 5.90 | £4.82 | won | +£23.15 |
 | trade | 17:20 | Kalamata v AEK Athens | AEK Athens | back | 1.35 | £50.00 | closed at 1.36, waiting for the result | - |
+| trade | 17:20 | Kalamata v AEK Athens | The Draw | back | 5.90 | £39.22 | closed at 6.00, waiting for the result | - |
 | trade | 17:20 | Sevilla v Betis | The Draw | back | 3.45 | £50.00 | closed at 3.50, waiting for the result | - |
 | trade | 17:20 | Ferencvaros v Gyori | Ferencvaros | back | 1.36 | £50.00 | closed at 1.37, waiting for the result | - |
 | trade | 17:20 | Newcastle v Arsenal | Newcastle | back | 7.00 | £50.00 | closed at 7.20, waiting for the result | - |
+| bet | 17:28 | Partizani Tirana v Vllaznia Shkoder | Vllaznia Shkoder | back | 2.78 | £16.03 | open | - |
 | bet | 17:28 | Yeovil v Forest Green | Forest Green | back | 2.36 | £50.00 | open | - |
 | bet | 17:28 | Montrose v Alloa | Montrose | back | 2.36 | £19.33 | open | - |
 | trade | 17:28 | Partizani Tirana v Vllaznia Shkoder | The Draw | lay | 2.98 | £3.70 | open | - |
@@ -716,29 +717,49 @@
 | trade | 17:28 | Sevilla v Betis | Betis | lay | 2.90 | £26.32 | open | - |
 | trade | 17:28 | Sevilla v Betis | Sevilla | lay | 2.74 | £28.74 | open | - |
 | trade | 17:28 | Yeovil v Forest Green | Yeovil | lay | 2.86 | £2.41 | open | - |
-| bet | 17:28 | Partizani Tirana v Vllaznia Shkoder | Vllaznia Shkoder | back | 2.78 | £16.03 | open | - |
-| trade | 17:28 | Montrose v Alloa | Alloa | lay | 3.20 | £22.73 | open | - |
 | trade | 17:28 | Sevilla v Betis | Over 2.5 Goals | back | 9.00 | £28.24 | open | - |
+| trade | 17:28 | Kalamata v AEK Athens | Over 2.5 Goals | back | 6.20 | £47.02 | open | - |
+| trade | 17:28 | Montrose v Alloa | Alloa | lay | 3.20 | £22.73 | open | - |
 | trade | 17:28 | Ferencvaros v Gyori | Over 2.5 Goals | back | 5.00 | £32.50 | open | - |
 | trade | 17:28 | CD Castellon v Eldense | Over 2.5 Goals | back | 6.60 | £31.00 | open | - |
 | trade | 17:28 | Yeovil v Forest Green | Over 2.5 Goals | back | 5.80 | £6.00 | open | - |
 | trade | 17:28 | Schalke 04 v Stuttgart | Over 2.5 Goals | back | 5.10 | £50.00 | open | - |
 | trade | 17:28 | Montrose v Alloa | Over 2.5 Goals | back | 7.60 | £16.50 | open | - |
 | trade | 17:28 | Newcastle v Arsenal | Over 2.5 Goals | back | 6.40 | £50.00 | open | - |
-| trade | 17:28 | Kalamata v AEK Athens | Over 2.5 Goals | back | 6.20 | £47.02 | open | - |
-| trade | 17:29 | Fatih Karagumruk Istanbul v Boluspor | Under 2.5 Goals | back | 1.03 | £50.00 | closed at 1.04, waiting for the result | - |
-| bet | 17:30 | Fatih Karagumruk Istanbul v Boluspor | Under 2.5 Goals | back | 1.02 | £50.00 | open | - |
+| trade | 17:29 | Fatih Karagumruk Istanbul v Boluspor | Under 2.5 Goals | back | 1.03 | £50.00 | lost | -£0.48 |
+| bet | 17:30 | Fatih Karagumruk Istanbul v Boluspor | Under 2.5 Goals | back | 1.02 | £50.00 | won | +£0.98 |
 | bet | 17:30 | Kalamata v AEK Athens | AEK Athens | back | 1.34 | £50.00 | open | - |
-| bet | 17:31 | Kocaelispor v Fenerbahce | Under 2.5 Goals | back | 2.32 | £47.99 | open | - |
+| bet | 17:31 | Kocaelispor v Fenerbahce | Under 2.5 Goals | back | 2.32 | £47.99 | lost | -£47.99 |
 | bet | 17:31 | WSG Wattens v SC Austria Lustenau | Under 2.5 Goals | back | 1.18 | £50.00 | open | - |
 | bet | 17:32 | OFK Beograd v FK Novi Pazar | Under 2.5 Goals | back | 2.00 | £19.00 | open | - |
 | bet | 17:33 | Karpaty v Zorya | Under 2.5 Goals | back | 1.12 | £50.00 | open | - |
-| trade | 17:35 | Dundee v Hearts | Hearts | back | 2.20 | £45.42 | open | - |
-| trade | 17:35 | Dundee v Hearts | The Draw | back | 3.90 | £50.00 | open | - |
-| trade | 17:35 | FC Utrecht v Cambuur Leeuwarden | The Draw | back | 4.00 | £50.00 | closed at 4.10, waiting for the result | - |
-| trade | 17:35 | Pontevedra CF v Lugo | The Draw | back | 3.30 | £13.47 | closed at 3.35, waiting for the result | - |
 | trade | 17:35 | Pontevedra CF v Lugo | Pontevedra CF | back | 2.48 | £8.74 | closed at 2.52, waiting for the result | - |
+| trade | 17:35 | Pontevedra CF v Lugo | The Draw | back | 3.30 | £13.47 | closed at 3.35, waiting for the result | - |
 | trade | 17:35 | Feyenoord v Excelsior | The Draw | back | 7.00 | £44.36 | closed at 7.20, waiting for the result | - |
+| trade | 17:35 | Dundee v Hearts | The Draw | back | 3.90 | £50.00 | open | - |
+| trade | 17:35 | Dundee v Hearts | Hearts | back | 2.20 | £45.42 | open | - |
+| trade | 17:35 | FC Utrecht v Cambuur Leeuwarden | The Draw | back | 4.00 | £50.00 | closed at 4.10, waiting for the result | - |
+| trade | 17:42 | Newcastle v Arsenal | Under 2.5 Goals | back | 2.02 | £50.00 | closed at 1.98, waiting for the result | - |
+| bet | 17:43 | Aguilas v CE Europa | Aguilas | back | 1.87 | £50.00 | open | - |
+| bet | 17:43 | Pontevedra CF v Lugo | Pontevedra CF | back | 2.48 | £2.60 | open | - |
+| trade | 17:43 | Pontevedra CF v Lugo | The Draw | lay | 3.35 | £21.28 | open | - |
+| bet | 17:43 | Ponferradina v Extremadura UD | Ponferradina | back | 2.56 | £50.00 | open | - |
+| trade | 17:43 | Ponferradina v Extremadura UD | Ponferradina | lay | 2.60 | £7.00 | open | - |
+| trade | 17:43 | Ponferradina v Extremadura UD | The Draw | lay | 3.30 | £21.74 | open | - |
+| trade | 17:43 | Dundee v Hearts | Over 2.5 Goals | back | 6.20 | £50.00 | open | - |
+| trade | 17:43 | Ponferradina v Extremadura UD | Extremadura UD | lay | 3.30 | £4.00 | open | - |
+| bet | 17:45 | Feyenoord v Excelsior | Feyenoord | back | 1.30 | £50.00 | open | - |
+| trade | 17:50 | Defensa y Justicia v Barracas Central | The Draw | back | 3.60 | £50.00 | open | - |
+| bet | 17:50 | Schalke 04 v Stuttgart | Stuttgart | back | 2.22 | £50.00 | open | - |
+| bet | 18:00 | Crotone v Cosenza | Under 2.5 Goals | back | 1.17 | £50.00 | open | - |
+| bet | 18:01 | Zaglebie Lubin v Gornik Zabrze | Under 2.5 Goals | back | 1.25 | £50.00 | open | - |
+| bet | 18:01 | Caratese v Arzignanochiampo | Under 2.5 Goals | back | 1.16 | £50.00 | open | - |
+| bet | 18:01 | ASD Pineto Calcio v Pescara | Under 2.5 Goals | back | 1.33 | £50.00 | open | - |
+| bet | 18:03 | Sporting Lisbon v Serra | Sporting Lisbon | back | 1.03 | £50.00 | open | - |
+| bet | 18:05 | Aguilas v CE Europa | Aguilas | back | 1.99 | £50.00 | open | - |
+| trade | 18:07 | Schalke 04 v Stuttgart | Under 2.5 Goals | back | 1.73 | £50.00 | open | - |
+| trade | 18:08 | Feyenoord v Excelsior | Over 2.5 Goals | back | 1.06 | £50.00 | open | - |
+| bet | 18:08 | Dundee v Hearts | Hearts | back | 2.26 | £50.00 | open | - |
 
-Today's total: +£770.62 on 659 settled of 739 trades; running total since 19 November, rules still on paper only: +£3,336.81.
-Bank book (£2,000, trades only, limits on): today -£282.51, since 19 November -£242.02, bank now £1,757.98, skipped 8,946.
+Today's total: +£664.14 on 668 settled of 760 trades; running total since 19 November, rules still on paper only: +£3,230.33.
+Bank book (£2,000, trades only, limits on): today -£282.51, since 19 November -£242.02, bank now £1,757.98, skipped 8,955.
