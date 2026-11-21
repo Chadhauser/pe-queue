@@ -1,7 +1,7 @@
-# Exchanges against each other; the goal signal (session 11, 21 Nov 2026, first version 16:55 UTC)
+# Exchanges against each other; the goal signal (session 11, 21 Nov 2026, final version 17:05 UTC; first pushed 16:55)
 
 **1. Crossed prices: about 6 real ones a day, about £1 locked per £100, gone within 24–48 s, worth about £3–4 a day at £50 stakes. NOT YET.** Smarkets and Matchbook polls show about 206 crosses a day against Betfair at a single poll. 79% are gone by the next poll, and nearly all the rest are goals (Betfair suspended within 3 minutes) or a Betfair price that wasn't trading. Checked against Betfair's own status field on 14–19 Nov, 35 crosses in 6 days were real: they lasted 2 polls (24–48 s) and locked a median £1.05 per £100. In total that is £21 at £50 stakes (£48 counting two absurd prices).
-**2. Lead and lag: no lag we can trade. NO, in both halves.** Smarkets and Matchbook move with Betfair within 0–3 s (correlation 0.86–0.91 in play, the same in both halves), which is below what our timestamps can measure. Backing their old price after Betfair shortens pays only at goals, when they are suspended themselves. Without goals it loses: £4–7 per £100 closed on the slow exchange, £2–7 closed on Betfair.
+**2. Lead and lag: no lag we can trade. NO, in both halves.** Smarkets and Matchbook move with Betfair within 0–3 s, which is below what our timestamps can measure. In play the correlation is Smarkets 0.93 / 0.91 and Matchbook 0.77 / 0.86 (H1 3–11 Nov / H2 12–19 Nov). Backing their old price after Betfair shortens pays only at goals, when they are suspended themselves. Without goals (14–19 Nov) it loses £4–7 per £100 closed on the slow exchange and £2–7 closed on Betfair. Counting every trade, both halves lose when closed on either exchange: H1 −£1 to −£15, H2 −£7 to −£33, about 5 trades a day.
 **3. Goal signal: running YES (19 alerts today, last 15:54 UTC); predicts goals NO (+2.7 points of goals in the 10 minutes after half-time, H1 +3.2 / H2 +2.2, but "under" alerts show the same lift the wrong way, so it is a league effect); beats the price NO (−£0.4 to −£1.1 per £100, H1 +£0.05 to −£1.33, H2 −£0.46 to −£1.46, n 58).**
 
 Money: £0 live, £0 paper from these routes. What it DOES support: Betfair is the price; the other two copy it within seconds, so neither "faster" route pays while we take the price. Next door: rest orders inside Matchbook's wide book (back/lay gap a median 6.6%) and close on Betfair. That needs Matchbook's traded volume, which **I started recording tonight** (`books.mb_tape`, 16:47 UTC). **Test on 24 Nov** with 3 days of fills.
@@ -16,12 +16,12 @@ Money: £0 live, £0 paper from these routes. What it DOES support: Betfair is t
 - **Before the start:** about 1 a day (Matchbook only), £0.1–0.5 per £100. xx_recorder keeps no Smarkets prices before the start.
 - **Polling:** Smarkets and Matchbook are polled every 23.7 s (median; Smarkets p90 48.9 s because of HTTP 429s). Betfair is the tick stream. The duration of a cross is only known to ±24 s.
 
-## A2. Lead and lag (3–19 Nov, all 17 days in by the final version)
+## A2. Lead and lag (3–19 Nov, 17 days; H1 3–11, H2 12–19)
 | | pairs of polls | peak of correlation | corr at −12/−6/0/+6/+12/+24 s |
 |---|---|---|---|
-| Smarkets, in play | 109,549 | 0 s | 0.42/0.80/0.91/0.68/0.37/0.00 |
-| Matchbook, in play | 152,413 | −3 s (timestamp taken before the fetch) | 0.51/0.79/0.81/0.56/0.27/−0.06 |
-| Matchbook, before the start | 288,420 | −3 s | 0.38/0.56/0.63/0.48/0.30/0.04 |
+| Smarkets, in play (H1 / H2 peak corr 0.93 / 0.91) | 180,386 | 0 s | 0.48/0.81/0.92/0.67/0.37/0.00 |
+| Matchbook, in play (H1 / H2 0.77 / 0.86) | 227,875 | −3 s (timestamp taken before the fetch) | 0.49/0.76/0.76/0.54/0.28/−0.05 |
+| Matchbook, before the start (H1 / H2 0.68 / 0.65) | 482,977 | −3 s | 0.42/0.59/0.64/0.49/0.33/0.07 |
 - **No lag to measure:** the 24 s polling did not block the test. Polls land at random moments relative to Betfair's moves, so the lag can be read to about 3 s, and it is 0.
 - **Polling to trade it:** you would need prices about every 1 s. Smarkets already refuses us at 24 s (12,531 HTTP 429s in recorder.log). Matchbook's free feed answers a full pass in 1–2 s. Even so, the 0–3 s lag is shorter than the in-play bet delays (Betfair 5 s in football), so faster polling can't pay in play. I did not start a faster recorder.
 - **Books nobody updates:** where Smarkets or Matchbook quotes are wide (median lay/back 1.25–1.46 in play), their best price copied a median 0% of a 3% Betfair move even 48–96 s later. Those are resting orders nobody is managing. That is the next door, not a taker's edge.
@@ -31,6 +31,10 @@ Money: £0 live, £0 paper from these routes. What it DOES support: Betfair is t
 | 14–19 Nov, no Betfair suspension, entry at the next poll | 30 | −6.76 | −4.10 | −6.53 |
 | same, entry at the poll | 10 | +0.85 | −6.62 | −1.65 |
 | at goals (Betfair suspended): not real, the slow exchange is suspended too | 32 | +35.17 | −19.38 | −14.77 |
+| All 17 days, every trade, entry at the next poll: H1 / H2 (Matchbook) | 51 / 50 | +1.14 / +12.87 (goals) | −12.22 / −8.36 | −7.49 / −7.05 |
+| same, Smarkets: H1 / H2 | 31 / 18 | +4.14 / +14.55 (goals) | −9.30 / −20.52 | −7.00 / −18.37 |
+
+Entry is the first poll after the move (median 11–20 s later). I can only tell goal moments apart from 14 Nov, when Betfair's raw stream status starts. Sizes: the cash on offer is taken as each feed reports it, and the Betfair closing leg assumes Betfair can take £50.
 
 ## A3. Offering on the quiet exchange, closing on Betfair
 - **Can't test yet:** the tape has no trades for either exchange. Last-traded price is present on 0% of 5.7M Matchbook and 1.8M Smarkets rows, and the existing recorder keeps no volume or market status.
