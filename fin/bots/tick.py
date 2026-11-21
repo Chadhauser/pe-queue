@@ -140,6 +140,16 @@ def flatten(sym):
                 sleep(2)
                 if position_qty(sym) == 0: return ids
     log(f'FLATTEN FAILED {sym}: still open after 8 tries'); return ids
+def flatten_many(syms):
+    """Close many plain positions quickly (up to 30 gap-fade names must be flat before the opening-break closes run at 15:58):
+    send every closing order first, then wait for them together; anything still open gets the careful one-by-one routine."""
+    for sym in syms:
+        if position_qty(sym) != 0: api('DELETE', f'/positions/{sym}')
+    left = list(syms)
+    for _ in range(10):
+        sleep(2); left = [x for x in left if position_qty(x) != 0]
+        if not left: return
+    for sym in left: flatten(sym)
 def stray_flat(st):
     """At the open, close anything left in the intraday symbols from a previous day; those fills never count (settle skips them)."""
     for sym in ('QQQ', 'SPY', 'IWM', 'QQQM'):
@@ -373,7 +383,7 @@ def tick():
         run('K4_run', at(day, 15, 50), at(day, 15, 57), lambda: k4_run(st, day, entries_allowed()), needs_entry=False)
     if C.get('K7', True) and cl.time() == dt.time(16, 0):
         run('K7_run', at(day, 15, 52), at(day, 15, 57), lambda: k7_run(st, day, entries_allowed()), needs_entry=False)
-    if C.get('K2'):  run('K2_flat', cl - dt.timedelta(minutes=5), cl, lambda: [flatten(l['sym']) for l in st.get('K2', {}).get('legs', [])], needs_entry=False)
+    if C.get('K2'):  run('K2_flat', cl - dt.timedelta(minutes=5), cl, lambda: flatten_many([l['sym'] for l in st.get('K2', {}).get('legs', []) if l.get('status', 999) < 300]), needs_entry=False)
     for sym, key in (('QQQ', 'ORB'), ('SPY', 'ORB_SPY'), ('IWM', 'ORB_IWM')):
         if C.get(key): run(f'{key}_flat', cl - dt.timedelta(minutes=2), cl, lambda s_=sym: flatten(s_), needs_entry=False)
     if C.get('E1S'): run('E1S_run', cl - dt.timedelta(minutes=2), cl, lambda: e1_run(st, day), needs_entry=False)
