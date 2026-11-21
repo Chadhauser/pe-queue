@@ -144,3 +144,4 @@
 2026-11-21T10:20 BREAK: golf silent 6 hours on ip_tape; ice_hockey silent 6 hours on ip_tape; bot process not running;
 2026-11-21T11:20 BREAK: no bot bets in 6 hours while football is on (131 match-odds markets on the tape); golf silent 6 hours on ip_tape; ice_hockey silent 6 hours on ip_tape; bot process not running;
 2026-11-21T12:20 BREAK: no bot bets in 6 hours while football is on (156 match-odds markets on the tape); american_football silent 6 hours on ip_tape; ice_hockey silent 6 hours on ip_tape; bot process not running;
+2026-11-21T13:20 BREAK: no bot bets in 6 hours while football is on (140 match-odds markets on the tape); ice_hockey silent 6 hours on ip_tape; bot process not running;
