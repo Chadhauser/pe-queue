@@ -1,0 +1,68 @@
+=== E1t
+E1t Pre-FOMC drift, TLT (bonds; same rule, long).
+event {'n': 197, 'mean': 9.06976805429847, 't': 1.3557738289514365, 'is_mean': -3.563578297205489, 'is_t': -0.3503288163137332, 'oos_mean': 21.575504846696322, 'oos_t': 2.516327779312941}
+control (random ordinary days) {'n': 197, 'mean': -8.144938042188109, 't': -1.278601140888467, 'is_mean': -3.4762084747663677, 'is_t': -0.36486207279475874, 'oos_mean': -12.766508725090441, 'oos_t': -1.5032856663924927}
+event minus ordinary day: +9.6 bps
+RESULT {"name": "E1t Pre-FOMC drift, TLT (bonds; same rule, long). | vs ordinary day +9.6 bps", "n": 197, "mean_bps": "+9.1 bps/event", "t": 1.36, "is_mean": -3.563578297205489, "is_t": -0.35, "oos_mean": 21.575504846696322, "oos_t": 2.52, "control_t": -1.28}
+=== E1g
+E1g Pre-FOMC drift, GLD (gold; same rule, long).
+event {'n': 177, 'mean': 11.151759509939088, 't': 1.2197673941444425, 'is_mean': 3.432148675211788, 'is_t': 0.2484248277825649, 'oos_mean': 18.784633144276192, 'oos_t': 1.5624014067764267}
+control (random ordinary days) {'n': 177, 'mean': 7.870577326021568, 't': 1.0067662025266533, 'is_mean': 6.288519864376313, 'is_t': 0.5988969833075959, 'oos_mean': 9.434858861131483, 'oos_t': 0.8112446800581474}
+event minus ordinary day: +9.2 bps
+RESULT {"name": "E1g Pre-FOMC drift, GLD (gold; same rule, long). | vs ordinary day +9.2 bps", "n": 177, "mean_bps": "+11.2 bps/event", "t": 1.22, "is_mean": 3.432148675211788, "is_t": 0.25, "oos_mean": 18.784633144276192, "oos_t": 1.56, "control_t": 1.01}
+=== M7S
+M7S Last-hour momentum on SPY: 09:30->15:00 move >=1.5% -> WITH it 15:00->close (M7 door 3).
+real {'n': 80, 'mean': 3.535679620721526, 't': 0.5268401991968868, 'is_mean': -3.2452779497725546, 'is_t': -0.34479895584161774, 'oos_mean': 10.316637191215609, 'oos_t': 1.0784008519545274}
+control {'n': 80, 'mean': -9.879445426534414, 't': -1.490031459796283, 'is_mean': -6.45070106650023, 'is_t': -0.6884671381287686, 'oos_mean': -13.308189786568601, 'oos_t': -1.4050892111978917}
+RESULT {"name": "M7S Last-hour momentum on SPY: 09:30->15:00 move >=1.5% -> WITH it 15:00->", "n": 80, "mean_bps": "+3.54 bps/trade", "t": 0.53, "is_mean": -3.2452779497725546, "is_t": -0.34, "oos_mean": 10.316637191215609, "oos_t": 1.08, "control_t": -1.49}
+=== M7I
+M7I Last-hour momentum on IWM: same rule (M7 door 3).
+real {'n': 230, 'mean': 1.3053588131310339, 't': 0.3723594818255001, 'is_mean': 6.160725025600277, 'is_t': 1.1621566233499274, 'oos_mean': -3.550007399338208, 'oos_t': -0.777302206903105}
+control {'n': 230, 'mean': 4.109139968827207, 't': 1.1753249780250792, 'is_mean': 5.702052929904095, 'is_t': 1.07472062308507, 'oos_mean': 2.516227007750318, 'oos_t': 0.5502227303769456}
+RESULT {"name": "M7I Last-hour momentum on IWM: same rule (M7 door 3).", "n": 230, "mean_bps": "+1.31 bps/trade", "t": 0.37, "is_mean": 6.160725025600277, "is_t": 1.16, "oos_mean": -3.550007399338208, "oos_t": -0.78, "control_t": 1.18}
+=== M7P
+M7P Last-hour momentum POOLED QQQ+SPY+IWM (each day-instrument a trade; clustered by day).
+real {'n': 319, 'mean': 3.582370931698337, 't': 1.2019688503927726, 'is_mean': 8.027173610244526, 'is_t': 1.8059714186419904, 'oos_mean': -0.8346517301069376, 'oos_t': -0.21088147656612388}
+control {'n': 319, 'mean': 1.7269812910111582, 't': 0.5784347069955535, 'is_mean': 2.961303060778259, 'is_t': 0.6603782357775263, 'oos_mean': 0.5003740323051016, 'oos_t': 0.12641220192531405}
+RESULT {"name": "M7P Last-hour momentum POOLED QQQ+SPY+IWM (each day-instrument a trade; cl", "n": 319, "mean_bps": "+3.58 bps/trade", "t": 1.2, "is_mean": 8.027173610244526, "is_t": 1.81, "oos_mean": -0.8346517301069376, "oos_t": -0.21, "control_t": 0.58}
+=== orb5 source
+112:def orb5(sym):
+113-    """5-min ORB direction (Zarattini-Aziz) with stop-side guard, held to close with stop at range edge: returns R-multiples"""
+114-    b=bars(sym); COST=0.03; out={}; g=b.groupby('d')
+115-    for d,sess in g:
+116-        if len(sess)<300: continue
+117-        fb=sess[sess.mi<5]; rest=sess[sess.mi>=5]
+118-        if len(fb)<3 or not len(rest): continue
+119-        o,c,hi,lo=fb.open.iloc[0],fb.close.iloc[-1],fb.high.max(),fb.low.min(); rng=hi-lo
+120-        if rng<=0 or abs(c-o)<0.05*rng: continue
+121-        side=1 if c>o else -1; entry=rest.open.iloc[0]; stop=lo if side>0 else hi; R=abs(entry-stop)
+122-        if R<=0 or (side>0 and stop>=entry) or (side<0 and stop<=entry): continue
+123-        target=entry+side*10*R; ex=rest.close.iloc[-1]
+124-        for r in rest.itertuples():
+125-            if side>0 and (r.low<=stop or r.high>=target): ex=stop if r.low<=stop else target; break
+126-            if side<0 and (r.high>=stop or r.low<=target): ex=stop if r.high>=stop else target; break
+127-        out[d]=(side*(ex-entry)-COST)/R
+128-    return pd.Series(out).sort_index()
+129-@reg('M23','5-min ORB on SPY (ORB-QQQ next door), R-multiples.')
+130-def M23(): return orb5('SPY')
+131-@reg('M24','5-min ORB on IWM, R-multiples.')
+132-def M24(): return orb5('IWM')
+133-@reg('M25','5-min ORB on TQQQ (3x: same signal, levered instrument; checks the edge is in QQQ direction not in the ETF), R-multiples.')
+134-def M25(): return orb5('TQQQ')
+=== three funds
+QQQ Series 1400 meanR 0.170 index sample [datetime.date(2020, 7, 27), datetime.date(2020, 7, 30)]
+SPY Series 1482 meanR 0.131 index sample [datetime.date(2020, 7, 27), datetime.date(2020, 7, 28)]
+IWM Series 1341 meanR 0.166 index sample [datetime.date(2020, 7, 31), datetime.date(2020, 8, 6)]
+days 1565 all three traded 1160
+correlation of daily results
+       QQQ   SPY   IWM
+QQQ  1.00  0.40  0.08
+SPY  0.40  1.00  0.22
+IWM  0.08  0.22  1.00
+days all three lose 55% | all three win 7% | mixed 39%
+Nasdaq fund only, $100 risk        n 1565 | mean +0.152 R/day | t 2.49 | 1st half +0.146 2nd half +0.158 | worst day -4.0 | deepest drawdown -34.2 R | total 238 R | return/drawdown 7.0 | losing months 35%
+all three, $100 risk each          n 1565 | mean +0.418 R/day | t 3.19 | 1st half +0.639 2nd half +0.197 | worst day -6.2 | deepest drawdown -96.3 R | total 655 R | return/drawdown 6.8 | losing months 34%
+all three, $33 risk each           n 1565 | mean +0.139 R/day | t 3.19 | 1st half +0.213 2nd half +0.066 | worst day -2.1 | deepest drawdown -32.1 R | total 218 R | return/drawdown 6.8 | losing months 34%
+one a day (Nasdaq, else S&P, else small) n 1565 | mean +0.184 R/day | t 2.77 | 1st half +0.217 2nd half +0.150 | worst day -4.0 | deepest drawdown -36.8 R | total 287 R | return/drawdown 7.8 | losing months 34%
+Nasdaq + small-company, $50 each   n 1565 | mean +0.147 R/day | t 3.30 | 1st half +0.212 2nd half +0.082 | worst day -2.6 | deepest drawdown -33.8 R | total 230 R | return/drawdown 6.8 | losing months 36%
+exit=0 secs=30
