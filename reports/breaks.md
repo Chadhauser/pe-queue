@@ -147,3 +147,4 @@
 2026-11-21T13:20 BREAK: no bot bets in 6 hours while football is on (140 match-odds markets on the tape); ice_hockey silent 6 hours on ip_tape; bot process not running;
 2026-11-21T14:20 BREAK: no bot bets in 6 hours while football is on (146 match-odds markets on the tape); bot process not running;
 2026-11-21T15:40 FIN BREAK+FIX: gap-fade robot measured the gap from thin-feed prints, not official open vs official prior close; 22 of 35 live legs had not gapped 5% (they averaged -218 bps; the 13 genuine ones +55 bps); now uses official daily bars as the history test did, up to 30 names; if opens unavailable it places no gap-fade orders; 31/31 PASS; Friday replay on the box picks 12 names in 46s; sports untouched;
+2026-11-21T15:20 BREAK: no bot bets in 6 hours while football is on (188 match-odds markets on the tape); bot process not running;
