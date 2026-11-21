@@ -6,7 +6,7 @@
 import sys, math, itertools, warnings; warnings.filterwarnings('ignore')
 import numpy as np, pandas as pd
 COST = 60.0; STAKE = 500.0; FX = 0.77; MAXN = 30
-D = pd.read_parquet('/root/pe-data/crumbs/daily_all.parquet'); print('columns', list(D.columns), 'rows', len(D))
+D = pd.read_parquet('/root/pe-data/crumbs/daily_all.parquet'); D = D.reset_index(); D = D.rename(columns={D.columns[0]: 'date'}) if 'date' not in [c.lower() for c in D.columns] else D; print('columns', list(D.columns), 'rows', len(D))
 D.columns = [c.lower() for c in D.columns]
 if 'sym' not in D.columns: D = D.rename(columns={'symbol': 'sym', 'ticker': 'sym'})
 small = set(pd.read_csv('/root/pe-data/crumbs/universe_small.csv', index_col=0).index)
