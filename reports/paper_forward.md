@@ -1,4 +1,4 @@
-# Forward paper - Saturday 21 November 2026, 07:49 UTC
+# Forward paper - Saturday 21 November 2026, 08:28 UTC
 
 Counted from the paper trades (grid.paper_trades), written every 10 minutes from the day's recorded prices by the same one test. Proof gate: the way's bar of settled paper orders (1,000 for a way that backs selections priced 5.0 or longer, 100 for every other way), profit after commission overall and in each half, in line with the test, then Peter's yes. The same bet given by two ways is counted for each way. Paper only.
 
