@@ -1,0 +1,77 @@
+columns ['date', 'open', 'high', 'low', 'close', 'volume', 'sym'] rows 7637624
+days 1474 2021-01-04 to 2026-11-13 | half split 2023-12-07 | shares 1627
+open to close: all shares average -5.0 bps (removed)
+close to next open: all shares average +4.8 bps (removed)
+close to next close: all shares average -0.4 bps (removed)
+next open to next close: all shares average -5.0 bps (removed)
+five days: all shares average -3.2 bps (removed)
+cells tested 4685 | survivors 63
+when          hold                     do        
+at the close  close to next close      SELL SHORT     4
+              close to next open       SELL SHORT     2
+              five days                SELL SHORT     9
+at the open   open to close            BUY            4
+                                       SELL SHORT    33
+next open     next open to next close  SELL SHORT    11
+
+TOP 40 by pounds a month at $500 a share (after 60 bps measured cost)
+        when                                                       what         do                    hold  days  trades  per_day  net_bps  half1  half2   t  gbp_month
+ at the open                                    opening gap: gap up 5%+ SELL SHORT           open to close  1430   13657      9.6       41     49     34 7.4        309
+ at the open  opening gap: gap up 5%+ + yesterday range: very wide 12%+ SELL SHORT           open to close  1092    3094      2.8      160    130    183 5.3        272
+at the close                last 20 days: up 25%+ + traded value: $30m+ SELL SHORT               five days  1355   10593      7.8      223    289    165 5.6        259
+ at the open           opening gap: gap up 5%+ + last 5 days: down 15%+ SELL SHORT           open to close   734    1720      2.3      207    121    264 6.0        195
+at the close                 last 5 days: up 15%+ + traded value: $30m+ SELL SHORT               five days  1247    5417      4.3      312    245    374 4.3        186
+ at the open       opening gap: gap up 5%+ + vs 60-day high: 40%+ below SELL SHORT           open to close  1035    2865      2.8      109     37    158 4.2        171
+ at the open     opening gap: gap up 5%+ + vs 60-day high: 15-40% below SELL SHORT           open to close  1227    5261      4.3       55     74     38 6.4        159
+ at the open          opening gap: gap up 5%+ + last 20 days: down 25%+ SELL SHORT           open to close   778    1799      2.3      157     66    216 5.0        154
+ at the open            opening gap: gap down 5%+ + traded value: $1-3m        BUY           open to close  1039    2797      2.7       91     63    113 5.9        140
+ at the open opening gap: gap up 2-5% + yesterday range: very wide 12%+ SELL SHORT           open to close  1258    5818      4.6       41     72     15 5.6        132
+at the close           vs 60-day high: 40%+ below + traded value: $30m+ SELL SHORT               five days  1425   10356      7.3      113     94    132 3.6        129
+at the close              today gap: gap up 5%+ + last 20 days: up 25%+ SELL SHORT     close to next close  1119    3776      3.4       60     70     52 3.7        124
+at the close                                        traded value: $30m+ SELL SHORT               five days  1460   87712     30.0       26      4     47 6.7        123
+at the close                       today: up 10%+ + traded value: $30m+ SELL SHORT     close to next close   879    2088      2.4      106     17    182 4.3        122
+ at the open   last 5 days: down 15%+ + yesterday range: very wide 12%+ SELL SHORT           open to close  1392   10874      7.8       19      1     36 5.9        114
+at the close         vs 60-day high: 15-40% below + traded value: $30m+ SELL SHORT               five days  1450   34382     23.7       29      1     56 4.9        109
+ at the open               opening gap: gap up 5%+ + weekday: Wednesday SELL SHORT           open to close   293    3199     10.9       61     25     96 3.7        108
+ at the open          opening gap: gap up 5%+ + yesterday volume: quiet SELL SHORT           open to close   941    1957      2.1      101    109     95 5.0        108
+at the close                       today: up 10%+ + traded value: $30m+ SELL SHORT               five days   877    2080      2.4      470    338    581 3.9        107
+at the close         today open to close: up 10%+ + traded value: $30m+ SELL SHORT     close to next close   765    1537      2.0      126     40    198 4.3        106
+ at the open            opening gap: gap up 5%+ + yesterday: down 3-10% SELL SHORT           open to close   888    2518      2.8       73     45     94 4.8        101
+ at the open             opening gap: gap up 5%+ + traded value: $3-10m SELL SHORT           open to close  1224    4948      4.0       36     35     37 5.1         97
+ at the open opening gap: gap up 2-5% + yesterday finish: closed at low SELL SHORT           open to close  1373   15805     11.5       11      4     18 8.5         96
+   next open              today: down 10%+ + vs 60-day high: 40%+ below SELL SHORT next open to next close  1225    5007      4.1       34     38     32 4.2         94
+ at the open          yesterday: down 10%+ + vs 60-day high: 40%+ below SELL SHORT           open to close  1226    5009      4.1       34     39     30 4.2         94
+ at the open            opening gap: gap up 5%+ + yesterday finish: mid SELL SHORT           open to close  1332    7542      5.7       22     27     18 3.9         93
+ at the open      yesterday range: very wide 12%+ + traded value: $30m+ SELL SHORT           open to close  1320    6116      4.6       27     12     40 4.7         91
+ at the open         opening gap: gap up 2-5% + yesterday volume: quiet SELL SHORT           open to close  1352    8399      6.2       20     36      5 6.7         91
+   next open                 today: down 10%+ + last 20 days: down 25%+ SELL SHORT next open to next close  1105    3797      3.4       43     21     61 4.4         90
+ at the open        opening gap: gap down 5%+ + yesterday volume: quiet        BUY           open to close   837    1873      2.2       86     78     91 4.6         89
+ at the open             yesterday: down 10%+ + last 20 days: down 25%+ SELL SHORT           open to close  1104    3797      3.4       43     21     60 4.4         89
+at the close              vs 60-day high: at high + traded value: $30m+ SELL SHORT               five days  1403   12933      9.2       63     41     84 4.5         89
+ at the open              opening gap: gap up 5%+ + traded value: $1-3m SELL SHORT           open to close  1202    3583      3.0       45     52     38 4.0         88
+ at the open  opening gap: gap up 5%+ + yesterday finish: closed at low SELL SHORT           open to close  1113    3517      3.2       45     42     47 3.7         87
+ at the open      opening gap: gap up 2-5% + vs 60-day high: 40%+ below SELL SHORT           open to close  1301    8624      6.6       18     22     14 6.2         84
+   next open         today open to close: up 10%+ + traded value: $30m+ SELL SHORT next open to next close   765    1537      2.0       96      1    174 4.5         81
+ at the open          opening gap: gap up 2-5% + last 5 days: down 15%+ SELL SHORT           open to close  1056    4711      4.5       31      5     51 5.4         80
+   next open                       today: up 10%+ + traded value: $30m+ SELL SHORT next open to next close   879    2088      2.4       67     10    115 4.2         77
+ at the open                   yesterday: up 10%+ + traded value: $30m+ SELL SHORT           open to close   880    2089      2.4       66      9    114 4.2         76
+at the close                last 5 days: up 5-15% + traded value: $30m+ SELL SHORT               five days  1412   14094     10.0       49     36     62 4.1         76
+
+TOP 15 by strength (t)
+        when                                                       what         do          hold  days  trades  per_day  net_bps  half1  half2   t  gbp_month
+ at the open opening gap: gap up 2-5% + yesterday finish: closed at low SELL SHORT open to close  1373   15805     11.5       11      4     18 8.5         96
+ at the open                                    opening gap: gap up 5%+ SELL SHORT open to close  1430   13657      9.6       41     49     34 7.4        309
+at the close                                        traded value: $30m+ SELL SHORT     five days  1460   87712     30.0       26      4     47 6.7        123
+ at the open         opening gap: gap up 2-5% + yesterday volume: quiet SELL SHORT open to close  1352    8399      6.2       20     36      5 6.7         91
+ at the open           opening gap: gap up 2-5% + yesterday: down 3-10% SELL SHORT open to close  1291   11967      9.3        6      6      5 6.7         36
+ at the open     opening gap: gap up 5%+ + vs 60-day high: 15-40% below SELL SHORT open to close  1227    5261      4.3       55     74     38 6.4        159
+ at the open      opening gap: gap up 2-5% + vs 60-day high: 40%+ below SELL SHORT open to close  1301    8624      6.6       18     22     14 6.2         84
+ at the open           opening gap: gap up 5%+ + last 5 days: down 15%+ SELL SHORT open to close   734    1720      2.3      207    121    264 6.0        195
+ at the open            opening gap: gap down 5%+ + traded value: $1-3m        BUY open to close  1039    2797      2.7       91     63    113 5.9        140
+ at the open   last 5 days: down 15%+ + yesterday range: very wide 12%+ SELL SHORT open to close  1392   10874      7.8       19      1     36 5.9        114
+at the close                last 20 days: up 25%+ + traded value: $30m+ SELL SHORT     five days  1355   10593      7.8      223    289    165 5.6        259
+ at the open opening gap: gap up 2-5% + yesterday range: very wide 12%+ SELL SHORT open to close  1258    5818      4.6       41     72     15 5.6        132
+ at the open       opening gap: gap down 2-5% + yesterday volume: quiet        BUY open to close  1362    9350      6.9       10     16      5 5.4         52
+ at the open          opening gap: gap up 2-5% + last 5 days: down 15%+ SELL SHORT open to close  1056    4711      4.5       31      5     51 5.4         80
+ at the open  opening gap: gap up 5%+ + yesterday range: very wide 12%+ SELL SHORT open to close  1092    3094      2.8      160    130    183 5.3        272
+exit=0 secs=164
