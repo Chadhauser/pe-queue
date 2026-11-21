@@ -1,7 +1,7 @@
-# Grid progress - Saturday 21 November 2026, 05:07 UTC
+# Grid progress - Saturday 21 November 2026, 06:07 UTC
 
-League of ways of earning (last run 20 Nov 23:24 UTC): 8,243 ways in the registry, 8,081 tested, 8,205 tested this week, 114 passing (300 or more filled orders and profit after commission in both halves), 109 on forward paper.
-New ways this week: 3881 from traders' methods (a), 3385 from our own data (b), 977 from other ideas (c).
+League of ways of earning (last run 20 Nov 23:24 UTC): 8,243 ways in the registry, 8,081 tested, 8,760 tested this week, 114 passing (300 or more filled orders and profit after commission in both halves), 109 on forward paper.
+New ways this week: 3881 from traders' methods (a), 3931 from our own data (b), 977 from other ideas (c).
 Distinct effects passing: 79 (passing rows that are the same bets are counted once).
 Every figure below is at real prices on offer with real fills and 2% commission. Paper only: nothing here is real money. Full table: reports/league_table.md.
 
@@ -35,4 +35,4 @@ Every figure below is at real prices on offer with real fills and 2% commission.
 - History files (last traded prices, not money): 60,168 slices scanned; 143 of the strongest pre-start slices entered the league as ideas, tested there at real prices only.
 - Recorded-prices grid days finished: betfair 20, matchbook 17, smarkets 17; its slices with 100 or more bets entered the league as ways (source b).
 - Days of recorded prices ready for the one test: betfair 20 (2026-10-31 to 2026-11-19), matchbook 17 (2026-11-03 to 2026-11-19), smarkets 17 (2026-11-03 to 2026-11-19).
-- Grid and league programs running now: 0.
+- Grid and league programs running now: 1.
