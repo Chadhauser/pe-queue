@@ -194,4 +194,8 @@ for d_ in (dt.date(2026, 12, 15), dt.date(2026, 12, 16), dt.date(2026, 12, 17), 
 check('N3 K7 still short on the 4th trading day', f.pos.get('FFF') == -55, f.pos.get('FFF'))
 run_day(f, dt.date(2026, 12, 21), start=(15, 49), end=(16, 20)); b7 = json.load(open(os.path.join(TMP, 'bots', 'k7_book.json'))); T.summary(); md7 = open(os.path.join(TMP, 'bots', 'bots.md')).read()
 check('N4 K7 bought back on the 5th trading day, priced 0.00, on the scoreboard, by-side table present', 'FFF' not in f.pos and b7['closed'] and b7['closed'][0].get('pnl_usd') == 0.0 and '| K7 | 1 |' in md7 and 'sells (gap up)' in md7, (f.pos.get('FFF'), b7['closed'], [l for l in md7.splitlines() if 'K7' in l or 'gap' in l]))
+# ---- O: gap-fade count restarted 23 Nov 2026 (Peter): earlier days stay in the record but not in the count
+T.summary(); mdo = open(os.path.join(TMP, 'bots', 'bots.md')).read(); k2row = next(l for l in mdo.splitlines() if l.startswith('| K2 |'))
+n_new = sum(sum(1 for l in json.load(open(os.path.join(TMP, 'bots', x))).get('K2', {}).get('legs', []) if l.get('status', 0) < 300) for x in os.listdir(os.path.join(TMP, 'bots')) if x.startswith('day_') and x[4:14] >= '2026-11-23' and json.load(open(os.path.join(TMP, 'bots', x))).get('settle', {}).get('K2', {}).get('fills'))
+check('O1 K2 count excludes days before 23 Nov, the note is shown and the 17 Nov row is still in the daily record', k2row.split('|')[2].strip() == str(n_new) and 'count restarted 2026-11-23' in mdo and n_new > 0, (k2row, n_new))
 print(f"\n{sum(1 for r in RES if r[1])}/{len(RES)} PASS"); shutil.rmtree(TMP); sys.exit(0 if all(r[1] for r in RES) else 1)

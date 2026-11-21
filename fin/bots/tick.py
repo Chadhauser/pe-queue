@@ -391,6 +391,7 @@ def tick():
     run('settle', cl + dt.timedelta(minutes=10), cl + dt.timedelta(hours=6), lambda: settle(st, day, op), needs_entry=False)
     jsave(sp, st)
 
+K2_COUNT_FROM = '2026-11-23'   # Peter 21 Nov: "Restart" - 22 of the first 35 gap-fade trades were not the rule (wrong gap measure); they stay in the record, not in the count
 def summary():
     """bots.md: per strategy, settled paper trades (the 100-trade gate counts these) and P&L. UNVERIFIED-PAPER. Line 1 holds the
     timestamp and disk so the runner only commits when the numbers change."""
@@ -401,7 +402,9 @@ def summary():
             if k in s_ and s_[k]['fills'] and s_[k]['pnl_usd'] is not None and (k == 'K2' or d.get(k, {}).get('order_id')):   # stray fills (old bot, manual) never count
                 n = sum(1 for l in d.get('K2', {}).get('legs', []) if l.get('status', 0) < 300) if k == 'K2' else 1   # rejected legs are not trades
                 rows.append((d['date'], k, s_[k]['pnl_usd'], n))
-    tot = {k: (round(sum(r[2] for r in rows if r[1] == k), 2), sum(r[3] for r in rows if r[1] == k)) for k in K}
+    cnt = lambda r: r[1] != 'K2' or r[0] >= K2_COUNT_FROM
+    tot = {k: (round(sum(r[2] for r in rows if r[1] == k and cnt(r)), 2), sum(r[3] for r in rows if r[1] == k and cnt(r))) for k in K}
+    old = [r for r in rows if not cnt(r)]
     for k, path in (('K4', 'k4_book.json'), ('E1S', 'e1_book.json'), ('K7', 'k7_book.json')):
         b = jload(os.path.join(BOTS, path), {'open': [], 'closed': []}); c = [p for p in b['closed'] if p.get('pnl_usd') is not None]
         tot[k] = (round(sum(p['pnl_usd'] for p in c), 2), len(c))
@@ -411,11 +414,13 @@ def summary():
     L += [f'| {k} | {n} | {min(n, 100)}% | {p:+.2f} |' for k, (p, n) in tot.items()]
     side = {}
     for f in sorted(x for x in os.listdir(BOTS) if x.startswith('day_')):
-        s_ = jload(os.path.join(BOTS, f), {}).get('settle', {})
+        dd = jload(os.path.join(BOTS, f), {}); s_ = dd.get('settle', {})
+        if dd.get('date', '') < K2_COUNT_FROM: continue
         for sd in ('sell', 'buy'):
             v = s_.get(f'K2_{sd}')
             if v and v.get('pnl_usd') is not None: a = side.setdefault(sd, [0.0, 0]); a[0] += v['pnl_usd']; a[1] += v.get('n', 0)
     if side: L += ['', 'K2 gap fade by side (parts of the K2 row above):', '', '| side | trades | pnl $ |', '|---|---|---|'] + [f"| {'sells (gap up)' if sd == 'sell' else 'buys (gap down)'} | {n} | {p:+.2f} |" for sd, (p, n) in side.items()]
+    if old: L += ['', f"K2 gap fade count restarted {K2_COUNT_FROM} on Peter's instruction (21 Nov): the {sum(r[3] for r in old)} earlier trades, {sum(r[2] for r in old):+.2f}, were placed with a faulty gap measure. They stay in the daily record below and in the account, not in the count."]
     L += ['', '| date | strategy | pnl $ | trades |', '|---|---|---|---|'] + [f'| {d} | {k} | {p:+.2f} | {n} |' for d, k, p, n in rows[-40:]]
     with open(os.path.join(BOTS, 'bots.md'), 'w') as f: f.write('\n'.join(L) + '\n')
 
