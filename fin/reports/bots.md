@@ -1,4 +1,4 @@
-# Fin paper bots — UNVERIFIED-PAPER (Alpaca paper, $) — updated 2026-11-21 10:46 NY — disk free 844 GB (entries stop under 25)
+# Fin paper bots — UNVERIFIED-PAPER (Alpaca paper, $) — updated 2026-11-21 10:50 NY — disk free 840 GB (entries stop under 25)
 
 Gate for real money: 100 settled paper trades per strategy, profitable overall and in each half, in line with the backtest, and Peter's yes.
 
@@ -8,17 +8,12 @@ Gate for real money: 100 settled paper trades per strategy, profitable overall a
 | ORB_SPY | 3 | 3% | -250.20 |
 | ORB_IWM | 2 | 2% | -196.21 |
 | M7B | 3 | 3% | +74.64 |
-| K2 | 35 | 35% | -215.61 |
+| K2 | 0 | 0% | +0.00 |
 | K4 | 0 | 0% | +0.00 |
 | E1S | 0 | 0% | +0.00 |
 | K7 | 0 | 0% | +0.00 |
 
-K2 gap fade by side (parts of the K2 row above):
-
-| side | trades | pnl $ |
-|---|---|---|
-| sells (gap up) | 11 | +189.90 |
-| buys (gap down) | 24 | -405.51 |
+K2 gap fade count restarted 2026-11-23 on Peter's instruction (21 Nov): the 35 earlier trades, -215.61, were placed with a faulty gap measure. They stay in the daily record below and in the account, not in the count.
 
 | date | strategy | pnl $ | trades |
 |---|---|---|---|
