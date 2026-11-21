@@ -52,7 +52,7 @@ days = np.sort(D.date.unique()); mid = days[len(days) // 2]; print('days', len(d
 OUT = []; tested = 0
 def score(X, ok, y, yname, when, hold_days=1):
     global tested
-    feats = [c for c in X.columns if c not in ('date', 'sym')]; Y = (D[y] * 1e4).where(ok & D[y].notna() & (D[y].abs() < 1.0))
+    feats = [c for c in X.columns if c not in ('date', 'sym')]; Y = (D[y] * 1e4).where(ok & D[y].notna() & (D[y] < 5.0))   # was |y|<100%: that threw away the big winners and kept every loser, tilting every cell to 'sell short'
     base = X.assign(y=Y).dropna(subset=['y'])
     # 21 Nov: the share list is today's small companies, so the whole list drifts DOWN in history (shares that fell into it) and every
     # short looks good. Score each share against the average of ALL shares that same day, so only the band's own effect is left.
