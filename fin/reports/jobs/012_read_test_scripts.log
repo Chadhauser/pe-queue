@@ -1,0 +1,122 @@
+=== mech_events.py
+# MECH-EVENTS — announcement drift. Daily consolidated bars (Yahoo) from 1994 so event samples clear n>=200.
+# E1x: pre-FOMC drift (Lucca & Moench 2015): LONG close(day before) -> close(decision day). Published effect, copied as written,
+# no parameter fitting. Cost 2 bps round trip (ETFs). Control = the same number of randomly chosen NON-FOMC days, long (tests that
+# the FOMC days beat an ordinary day, not just that the market drifts up). Usage: python3 -I mech_events.py <id> | list
+import sys, json, math, numpy as np, pandas as pd
+F=pd.to_datetime(pd.read_csv('/root/pe-data/events/fomc.csv').date)
+_c={}
+def daily(sym):
+    if sym not in _c:
+        import yfinance as yf
+        d=yf.download(sym,start='1993-01-01',auto_adjust=True,progress=False)
+        if isinstance(d.columns,pd.MultiIndex): d.columns=d.columns.get_level_values(0)
+        _c[sym]=d[['Open','Close']].dropna()
+    return _c[sym]
+def pre_fomc(sym,cost=2.0):
+    d=daily(sym); r=d.Close.pct_change()*1e4
+    ev=r.reindex(F).dropna()-cost; other=r.drop(F,errors='ignore').dropna()-cost
+    return ev, other
+H={}
+def reg(i,doc):
+    def w(f): f.__doc__=doc; H[i]=f; return f
+    return w
+@reg('E1s','Pre-FOMC drift, SPY: LONG close(day before) -> close(FOMC decision day). Lucca-Moench, copied as written.')
+def E1s(): return pre_fomc('SPY')
+@reg('E1q','Pre-FOMC drift, QQQ (same rule).')
+def E1q(): return pre_fomc('QQQ')
+@reg('E1t','Pre-FOMC drift, TLT (bonds; same rule, long).')
+def E1t(): return pre_fomc('TLT')
+@reg('E1g','Pre-FOMC drift, GLD (gold; same rule, long).')
+def E1g(): return pre_fomc('GLD')
+def st(s):
+    s=s.dropna(); n=len(s); h=n//2; t=lambda a:a.mean()/(a.std(ddof=1)/math.sqrt(len(a))) if len(a)>5 and a.std(ddof=1)>0 else 0
+    return dict(n=n,mean=float(s.mean()) if n else 0,t=float(t(s)),is_mean=float(s[:h].mean()) if h else 0,is_t=float(t(s[:h])),oos_mean=float(s[h:].mean()) if n else 0,oos_t=float(t(s[h:])))
+if __name__=='__main__':
+    a=sys.argv[1] if len(sys.argv)>1 else 'list'
+    if a=='list': [print(k,'—',f.__doc__) for k,f in H.items()]; sys.exit(0)
+    ev,other=H[a](); R=st(ev); g=np.random.default_rng(29); ctrl=pd.Series(g.choice(other.values,len(ev),replace=False)); C=st(ctrl)
+    diff=ev.mean()-other.mean()
+    print(a,H[a].__doc__); print('event',R); print('control (random ordinary days)',C); print(f'event minus ordinary day: {diff:+.1f} bps')
+    print("RESULT "+json.dumps(dict(name=f"{a} {H[a].__doc__[:60]} | vs ordinary day {diff:+.1f} bps",n=R['n'],mean_bps=f"{R['mean']:+.1f} bps/event",t=round(R['t'],2),is_mean=R['is_mean'],is_t=round(R['is_t'],2),oos_mean=R['oos_mean'],oos_t=round(R['oos_t'],2),control_t=round(C['t'],2))))
+=== mech_m7door3.py
+# M7 door 3 (last door): last-hour momentum on the sibling instruments. QQQ version (M7b) is WORKS AT SMALL SIZE on n=189; the same
+# rule on SPY and IWM tests whether it is a market effect (more sample, same sign) or a QQQ accident. Same threshold, no fitting.
+# Control = random sign (as mech2). Usage: python3 -I mech_m7door3.py M7S|M7I|M7P
+import sys, json, numpy as np, pandas as pd
+sys.path.insert(0,'/root/pe-fin'); sys.path.insert(0,'/root/pe-fin/team')
+from mech2 import ret, move, st
+def m7(sym,thr=0.015):
+    m=move(sym,0,330); return ret(sym,330,390,lambda d: abs(m.get(d,0))>=thr, lambda d: int(np.sign(m[d])))
+DOC={'M7S':'Last-hour momentum on SPY: 09:30->15:00 move >=1.5% -> WITH it 15:00->close (M7 door 3).',
+     'M7I':'Last-hour momentum on IWM: same rule (M7 door 3).',
+     'M7P':'Last-hour momentum POOLED QQQ+SPY+IWM (each day-instrument a trade; clustered by day).'}
+if __name__=='__main__':
+    a=sys.argv[1] if len(sys.argv)>1 else 'list'
+    if a=='list': [print(k,'—',v) for k,v in DOC.items()]; sys.exit(0)
+    if a=='M7P':
+        s=pd.concat([m7('QQQ'),m7('SPY'),m7('IWM')]); s=s.groupby(level=0).mean()   # one number per day = clustered by day
+    else: s=m7({'M7S':'SPY','M7I':'IWM'}[a])
+    R=st(s); g=np.random.default_rng(31); C=st(s*g.choice([-1,1],len(s)))   # control: random sign
+    print(a,DOC[a]); print('real',R); print('control',C)
+    print("RESULT "+json.dumps(dict(name=f"{a} {DOC[a][:70]}",n=R['n'],mean_bps=f"{R['mean']:+.2f} bps/trade",t=round(R['t'],2),is_mean=R['is_mean'],is_t=round(R['is_t'],2),oos_mean=R['oos_mean'],oos_t=round(R['oos_t'],2),control_t=round(C['t'],2))))
+=== where M23/M24 (opening break on the other two funds) are tested
+mech2.py
+mech2.py:129:@reg('M23','5-min ORB on SPY (ORB-QQQ next door), R-multiples.')
+mech2.py:130:def M23(): return orb5('SPY')
+mech2.py:131:@reg('M24','5-min ORB on IWM, R-multiples.')
+mech2.py:132:def M24(): return orb5('IWM')
+mech2.py:142:    unit='R/trade' if a in ('M23','M24','M25') else 'bps/trade'
+=== minute data on disk
+AAL
+AAPL
+ABBV
+ADBE
+AFRM
+AMC
+AMD
+AMGN
+AMZN
+ARKK
+ARM
+AVGO
+AXP
+BA
+BABA
+BAC
+BTCUSD
+C
+CAT
+CCL
+COIN
+COP
+COST
+CRM
+CSCO
+CVNA
+CVX
+DAL
+DE
+DIS
+/root/pe-data/alpaca/AAL:
+1m_2020-07.parquet
+1m_2020-08.parquet
+1m_2020-09.parquet
+1m_2020-10.parquet
+1m_2020-11.parquet
+1m_2020-12.parquet
+1m_2021-01.parquet
+1m_2021-02.parquet
+1m_2021-03.parquet
+1m_2021-04.parquet
+1m_2021-05.parquet
+1m_2021-06.parquet
+1m_2021-07.parquet
+1m_2021-08.parquet
+1m_2021-09.parquet
+1m_2021-10.parquet
+1m_2021-11.parquet
+1m_2021-12.parquet
+1m_2022-01.parquet
+fomc.csv
+exit=0 secs=0
