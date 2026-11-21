@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "<stdin>", line 9, in <module>
+KeyError: 'DB'
+exit=0 secs=1
