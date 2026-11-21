@@ -75,3 +75,4 @@ team loop running: 1
 
 Money: live £0.00 | paper £-53.91 | live edges 0
 ```
+Terminated
