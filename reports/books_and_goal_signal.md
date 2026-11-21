@@ -1,8 +1,8 @@
-# Exchanges against each other; the goal signal (session 11, 21 Nov 2026, final version 17:05 UTC; first pushed 16:55)
+# Exchanges against each other; the goal signal (session 11, 21 Nov 2026, final version 16:55 UTC)
 
 **1. Crossed prices: about 6 real ones a day, about £1 locked per £100, gone within 24–48 s, worth about £3–4 a day at £50 stakes. NOT YET.** Smarkets and Matchbook polls show about 206 crosses a day against Betfair at a single poll. 79% are gone by the next poll, and nearly all the rest are goals (Betfair suspended within 3 minutes) or a Betfair price that wasn't trading. Checked against Betfair's own status field on 14–19 Nov, 35 crosses in 6 days were real: they lasted 2 polls (24–48 s) and locked a median £1.05 per £100. In total that is £21 at £50 stakes (£48 counting two absurd prices).
 **2. Lead and lag: no lag we can trade. NO, in both halves.** Smarkets and Matchbook move with Betfair within 0–3 s, which is below what our timestamps can measure. In play the correlation is Smarkets 0.93 / 0.91 and Matchbook 0.77 / 0.86 (H1 3–11 Nov / H2 12–19 Nov). Backing their old price after Betfair shortens pays only at goals, when they are suspended themselves. Without goals (14–19 Nov) it loses £4–7 per £100 closed on the slow exchange and £2–7 closed on Betfair. Counting every trade, both halves lose when closed on either exchange: H1 −£1 to −£15, H2 −£7 to −£33, about 5 trades a day.
-**3. Goal signal: running YES (19 alerts today, last 15:54 UTC); predicts goals NO (+2.7 points of goals in the 10 minutes after half-time, H1 +3.2 / H2 +2.2, but "under" alerts show the same lift the wrong way, so it is a league effect); beats the price NO (−£0.4 to −£1.1 per £100, H1 +£0.05 to −£1.33, H2 −£0.46 to −£1.46, n 58).**
+**3. Goal signal: running YES (21 alerts today, last 16:48 UTC); predicts goals NO (+2.7 points of goals in the 10 minutes after half-time, H1 +3.2 / H2 +2.2, but "under" alerts show the same lift the wrong way, so it is a league effect); beats the price NO (−£0.4 to −£1.1 per £100, H1 +£0.05 to −£1.33, H2 −£0.46 to −£1.46, n 58).**
 
 Money: £0 live, £0 paper from these routes. What it DOES support: Betfair is the price; the other two copy it within seconds, so neither "faster" route pays while we take the price. Next door: rest orders inside Matchbook's wide book (back/lay gap a median 6.6%) and close on Betfair. That needs Matchbook's traded volume, which **I started recording tonight** (`books.mb_tape`, 16:47 UTC). **Test on 24 Nov** with 3 days of fills.
 
@@ -42,7 +42,7 @@ Entry is the first poll after the move (median 11–20 s later). I can only tell
 - **Still missing:** Smarkets volume (its API already rate-limits us).
 
 ## C. The goal signal (monitor_ht.py; goal_alerts)
-- **Running:** up since 19 Nov (pid 1597574). 19 alerts today, the last at 15:54:25 UTC, 1,329 stored in all. Every one is a half-time trigger: 934 "back over", 395 "back under".
+- **Running:** up since 19 Nov (pid 1597574). 21 alerts today by 16:52 UTC, the last at 16:48 UTC (19 by 15:54 when Part C ran), 1,329 stored when Part C ran. Every one is a half-time trigger: 934 "back over", 395 "back under".
 - **Predicts goals:** 1,242 of 1,329 alerts join to `goal_timeline`. The comparison is the same half-time score in leagues without an alert; same league and score leaves only 67 alerts.
 
 | | 10 min | 15 min | 20 min |
