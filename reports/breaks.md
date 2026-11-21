@@ -152,3 +152,4 @@
 2026-11-21T16:35 FIN DECISION: Peter 'Restart' - gap-fade count towards 100 starts 23 Nov; the 35 earlier trades (-215.61) stay in the daily record and the account; 37/37 PASS;
 2026-11-21T16:20 BREAK: no bot bets in 6 hours while football is on (221 match-odds markets on the tape); bot process not running;
 2026-11-21T17:20 BREAK: no bot bets in 6 hours while football is on (279 match-odds markets on the tape); bot process not running;
+2026-11-21T18:20 BREAK: no bot bets in 6 hours while football is on (294 match-odds markets on the tape); bot process not running;
