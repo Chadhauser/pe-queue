@@ -1,1 +1,1 @@
-books session: 1 | builders: run_builder run_builder_offer  | 16:00 UTC
+slate session: 1 | other sessions now: run_builder_slate run_builder_steer  | free memory: 5 GB of 17 | 18:34 UTC
