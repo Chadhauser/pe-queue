@@ -1,0 +1,7 @@
+trades 1397 win rate 25.4% mean R 0.166 median R -1.03
+avg win R 3.72 avg loss R -1.05
+{'stop': 1039, 'close': 316, 'target': 42}
+losing runs: longest 17 | runs of 4+: 105 | 6+: 63 | 8+: 33
+4-trade windows all losing: 28.5% | worst 4-trade sum R -7.24
+months 76 losing months 36% worst month R -12.0 best 26.5 median 3.2
+exit=0 secs=2
