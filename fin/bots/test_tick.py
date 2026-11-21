@@ -77,6 +77,7 @@ def install(f, uni_rows, earnings, closes):
             out[sym] = {'latestTrade': {'p': p, 't': f.clock[0].astimezone(dt.timezone.utc).isoformat()}, 'prevDailyBar': {'c': prev}}
         return out
     T.snapshots = snaps
+    T.official_gaps = lambda syms, day: {} if getattr(f, 'no_opens', False) else {sy: (getattr(f, 'official_open', {}).get(sy, f.px(sy, f.clock[0])), uni_rows[sy]) for sy in syms if uni_rows.get(sy)}
     T.universe = lambda: (list(uni_rows), earnings)
     T.daily_closes = lambda syms, today: closes
     T.assets = lambda: {k: (True, True) for k in uni_rows}
@@ -175,4 +176,10 @@ check('K2 next open: leftover IWM closed at 09:30, not counted; that day IWM ORB
 f.stuck = {'IWM'}; do = dt.date(2026, 12, 7); run_day(f, do); f.stuck = set(); f.slow = 10
 dp = dt.date(2026, 12, 8); run_day(f, dp); stp = json.load(open(os.path.join(TMP, 'bots', f'day_{dp}.json'))); f.slow = 0
 check('L1 slow closing orders: leftover IWM closed at the open, every position flat at the close, IWM ORB +132.00', stp.get('stray') == ['IWM'] and len(stp.get('stray_ids', [])) == 1 and stp['settle']['ORB_IWM'] == {'pnl_usd': 132.0, 'fills': 2} and stp['settle']['ORB']['pnl_usd'] == 132.0 and not any(k in f.pos for k in ('IWM', 'QQQ', 'SPY', 'QQQM')), (stp.get('stray'), stp.get('stray_ids'), stp['settle'], f.pos))
+# ---- M: the gap is the OFFICIAL open against the OFFICIAL prior close (21 Nov: 22 of 35 live legs had not really gapped)
+f.official_open = {'DDD': uni['DDD']}; dq = dt.date(2026, 12, 9); run_day(f, dq); f.official_open = {}
+lq = {l['sym'] for l in json.load(open(os.path.join(TMP, 'bots', f'day_{dq}.json')))['K2']['legs']}
+check('M1 DDD prints 7% lower on the thin feed but opened flat officially: not traded; AAA still faded', 'DDD' not in lq and 'AAA' in lq, lq)
+f.no_opens = True; dr = dt.date(2026, 12, 10); run_day(f, dr); f.no_opens = False; kr = json.load(open(os.path.join(TMP, 'bots', f'day_{dr}.json')))['K2']
+check('M2 official opens not available: no gap-fade orders, note recorded, rest of the day unaffected', kr.get('legs') == [] and 'no trade today' in kr.get('note', ''), kr)
 print(f"\n{sum(1 for r in RES if r[1])}/{len(RES)} PASS"); shutil.rmtree(TMP); sys.exit(0 if all(r[1] for r in RES) else 1)

@@ -5,7 +5,7 @@
 # Strategies (symbols are kept disjoint so one account can hold them all without netting):
 #   ORB  — QQQ  5-min opening range: candle direction 09:30-09:35, bracket stop at range edge, target 10R, $100 risk, flat 2 min before close
 #   M7B  — signal on QQQ 09:30->15:00 move >= 1.5%  -> trade QQQM WITH it, $10,000 notional, 15:00 -> flat 1 min before close (16:00 days only)
-#   K2   — small-cap overnight gap >= 5% faded at 09:31, $500/name, max 10, flat 5 min before close
+#   K2   — small-cap overnight gap >= 5% (official open vs official prior close) faded at 09:31, $500/name, max 30, flat 5 min before close
 #   K4   — small-cap down >= 15% over 5 trading days, bought 15:50, $500/name, max 10/day, sold on the 5th trading day
 #   ORB_SPY / ORB_IWM — the same ORB rule on SPY and IWM (M23/M24: WORKS AT SMALL SIZE on the backtest)
 #   E1S  — pre-FOMC drift (Lucca-Moench, E1s WORKS): long $10,000 VOO (S&P 500) from 2 min before the close on the trading day
@@ -182,14 +182,24 @@ def m7b_entry(st, day, op):
 
 def k4_book(): return jload(os.path.join(BOTS, 'k4_book.json'), {'open': [], 'closed': []})
 
+def official_gaps(syms, day):
+    """{sym: (today's official open, yesterday's official close)} from daily bars — exactly what the history test used.
+    21 Nov: the old gap (last IEX print vs IEX close) picked 22 of 35 shares that had not gapped at all (they lost 218 bps each)."""
+    import yfinance as yf, pandas as pd
+    d = yf.download(syms, period='5d', interval='1d', auto_adjust=False, progress=False, threads=True)
+    if d is None or len(d) < 2 or d.index[-1].date() != day: return {}
+    o = d['Open'].iloc[-1]; pc = d['Close'].iloc[-2]
+    return {s: (float(o[s]), float(pc[s])) for s in syms if s in o.index and pd.notna(o[s]) and pd.notna(pc[s]) and pc[s] > 0}
 def k2_entry(st, day, op):
-    uni, ed = universe(); held = {p['sym'] for p in k4_book()['open']}
-    snap = snapshots(uni); cands = []; A = assets()
-    for s, v in snap.items():
+    uni, ed = universe(); held = {p['sym'] for p in k4_book()['open']}; cands = []; A = assets(); G = {}
+    for _ in range(3):                                                     # the day's opens can lag a little after 09:30
+        G = official_gaps(uni, day)
+        if len(G) >= 0.5 * len(uni): break
+        sleep(30)
+    if len(G) < 0.5 * len(uni): st['K2'] = dict(note=f'official opens for only {len(G)} of {len(uni)} names: no trade today', legs=[]); log(f"K2 {st['K2']['note']}"); return
+    import pandas as pd
+    for s, (px, prev) in G.items():
         try:
-            prev = v['prevDailyBar']['c']; lt = v['latestTrade']; px = lt['p']
-            import pandas as pd
-            if pd.Timestamp(lt['t']) < pd.Timestamp(op): continue                                # no print yet today
             gap = px / prev - 1
             if abs(gap) < 0.05 or px < 3 or s in held or s in ETF_SYMS: continue
             tr, sh = can(A, s)
@@ -197,13 +207,13 @@ def k2_entry(st, day, op):
             if any(abs((pd.Timestamp(x).date() - day).days) <= 1 for x in ed.get(s, [])): continue
             cands.append(dict(sym=s, px=px, gap=gap))
         except Exception: continue
-    cands = sorted(cands, key=lambda c: -abs(c['gap']))[:10]; legs = []
+    cands = sorted(cands, key=lambda c: -abs(c['gap']))[:30]; legs = []   # the history test took every name (20-28 a day), not the ten biggest
     for c in cands:
         qty = max(1, int(500.0 // c['px'])); side = 'sell' if c['gap'] > 0 else 'buy'
         sc, res = api('POST', '/orders', json={'symbol': c['sym'], 'qty': str(qty), 'side': side, 'type': 'market', 'time_in_force': 'day',
                                                 'client_order_id': f"k2-{day:%Y%m%d}-{c['sym']}"})
         legs.append(dict(sym=c['sym'], side=side, qty=qty, gap=round(c['gap'], 4), ref=c['px'], status=sc))
-    st['K2'] = dict(scanned=len(snap), legs=legs); log(f"K2 scanned {len(snap)} legs {[(l['sym'], l['side']) for l in legs]}")
+    st['K2'] = dict(scanned=len(G), legs=legs); log(f"K2 scanned {len(G)} legs {[(l['sym'], l['side']) for l in legs]}")
 
 def k4_run(st, day, entries):
     book = k4_book(); keep = []
