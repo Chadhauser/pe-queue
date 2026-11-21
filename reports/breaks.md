@@ -150,3 +150,4 @@
 2026-11-21T15:20 BREAK: no bot bets in 6 hours while football is on (188 match-odds markets on the tape); bot process not running;
 2026-11-21T16:20 FIN CHANGE: gap fade scored by side (sells +189.90 on 11, buys -405.51 on 24, backfilled from broker fills, MATCH all four days); five-day bounce ignores prints older than 30 min; new paper rule K7 (five-day short, shares up 25% in 20 days trading 30m+ a day) from the data map; gap-fade closes sent together so up to 30 names are flat before 15:58; 36/36 PASS; sports untouched;
 2026-11-21T16:35 FIN DECISION: Peter 'Restart' - gap-fade count towards 100 starts 23 Nov; the 35 earlier trades (-215.61) stay in the daily record and the account; 37/37 PASS;
+2026-11-21T16:20 BREAK: no bot bets in 6 hours while football is on (221 match-odds markets on the tape); bot process not running;
