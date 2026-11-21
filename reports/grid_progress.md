@@ -1,7 +1,7 @@
-# Grid progress - Saturday 21 November 2026, 11:07 UTC
+# Grid progress - Saturday 21 November 2026, 12:07 UTC
 
 League of ways of earning (last run 21 Nov 06:26 UTC): 8,789 ways in the registry, 8,663 tested, 8,787 tested this week, 114 passing (300 or more filled orders and profit after commission in both halves), 109 on forward paper.
-New ways this week: 3881 from traders' methods (a), 3931 from our own data (b), 977 from other ideas (c).
+New ways this week: 3881 from traders' methods (a), 3931 from our own data (b), 1075 from other ideas (c).
 Distinct effects passing: 76 (passing rows that are the same bets are counted once).
 Every figure below is at real prices on offer with real fills and 2% commission. Paper only: nothing here is real money. Full table: reports/league_table.md.
 
