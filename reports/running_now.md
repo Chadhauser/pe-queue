@@ -1,1 +1,1 @@
-map session: 1 | trial session: 1 | free memory: 10 GB of 17 | 07:44 UTC
+trial fix: 1 | in-play: 1 | map: 0 | free memory: 7 GB of 17 | 17:44 UTC
