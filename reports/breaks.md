@@ -167,3 +167,4 @@
 2026-11-22T06:20 BREAK: boxing silent 6 hours on ip_tape; golf silent 6 hours on ip_tape; bot process not running;
 2026-11-22T07:20 BREAK: boxing silent 6 hours on ip_tape; golf silent 6 hours on ip_tape; bot process not running;
 2026-11-22T08:20 BREAK: golf silent 6 hours on ip_tape; bot process not running;
+2026-11-22T09:20 BREAK: golf silent 6 hours on ip_tape; rugby_league silent 6 hours on ip_tape; bot process not running;
