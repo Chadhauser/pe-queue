@@ -54,8 +54,11 @@ TRIAL, below the bar - not paper, not proof.
 | 07:30 | Adhyaksa FC v Pusamania Borneo FC | Pusamania Borneo FC | back | 1.64 | £6.00 | open | - | T2 |
 | 07:50 | Marumo Gallants FC (Res) v Polokwane City (Res) | Marumo Gallants FC (Res) | back | 2.52 | - | skipped: its rule was down 3% of the bank today | - | T3 |
 | 07:58 | Marumo Gallants FC (Res) v Polokwane City (Res) | Marumo Gallants FC (Res) | back | 2.52 | £5.48 | open | - | T1 |
-| 08:15 | Zizkov v SFC Opava | Zizkov | back | 2.80 | £12.25 | open | - | T2 |
+| 08:15 | Zizkov v SFC Opava | Zizkov | back | 2.80 | £12.25 | closed at 3.10, waiting for the result | - | T2 |
 | 08:20 | Adhyaksa FC v Pusamania Borneo FC | The Draw | back | 3.80 | - | skipped: its rule was down 3% of the bank today | - | T3 |
+| 08:28 | Adhyaksa FC v Pusamania Borneo FC | Pusamania Borneo FC | back | 1.96 | £39.34 | open | - | T1 |
+| 08:30 | Kuala Lumpur v Pulau Pinang | Kuala Lumpur | back | 1.97 | £4.51 | open | - | T2 |
+| 08:30 | Kuala Lumpur v Pulau Pinang | The Draw | back | 3.80 | £3.86 | open | - | T2 |
 
 - T1 (BET): In football match result markets with under £5,000 matched two minutes before the start, back the favourite two minutes before the start and hold it to the result. 8 orders settled since 22 Nov (8 markets), +£142.34 at the bank's stake, +79.1 per £100; to clear the entry bar: about 11 more markets (chance of a fluke 0.0222 against the bar 0.00089).
 - T2 (TRADE): In football match result markets, an hour before the start, when the money waiting to back a selection is 2 times the money waiting to lay it, back it, and close it at a 40% gain or a 20% loss of the stake, or 30 minutes after the entry, whichever comes first. 14 orders settled since 22 Nov (11 markets), -£18.03 at the bank's stake, -16.7 per £100; to clear the entry bar: never at the current rate (not in profit so far).
