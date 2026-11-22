@@ -1,17 +1,16 @@
-The map covers 314,674 settled markets over 7.9 years (Jan 2019 to Nov 2026); 34,716 cells measured; 592 gaps keep the same sign in all three periods with the newest period's interval clear of zero (about 434 would by luck alone); 1 survives beyond chance.
+The map covers 331,186 settled markets over 7.9 years (Jan 2019 to Nov 2026); 37,814 cells measured; 622 gaps keep the same sign in all three periods with the newest period's interval clear of zero (about 473 would by luck alone); 1 survives beyond chance.
 
-*22 Nov 2026 08:49 UTC. Built so far: British/Irish racing (starting price): 3 market types; cricket (history): 1 market type; British/Irish racing (history): 2 market types; football (history): 1 market type; tennis (history): 1 market type. Belief = last traded price (history) or starting price (racing), over-round removed proportionally; one market = one observation, interval clustered by day. Last traded prices are belief only, never money; the only £ below are from real prices on offer since 31 Oct.*
+*22 Nov 2026 09:12 UTC. Built so far: British/Irish racing (starting price): 2 market types; cricket (history): 1 market type; greyhounds (history): 1 market type; British/Irish racing (history): 1 market type; football (history): 1 market type; tennis (history): 1 market type. Belief = last traded price (history) or starting price (racing), over-round removed proportionally; one market = one observation, interval clustered by day. Last traded prices are belief only, never money; the only £ below are from real prices on offer since 31 Oct. Periods, fixed before any result was read (equal numbers of markets): cricket Oct 25-Feb 26-Jun 26-Sep 26; greyhounds Jun 26-Jul 26-Aug 26-Oct 26; British/Irish racing SP Dec 21-Jul 23-Apr 25-Nov 26; British/Irish racing Sep 25-Jan 26-Jun 26-Sep 26; football Jan 19-Oct 21-Nov 23-Sep 26; tennis Aug 24-Mar 25-Sep 25-Mar 26.*
 
 **Gaps that survive beyond chance** (biggest money at real prices first)
-- In football match result, in play 100 min after the scheduled start, price move since previous moment shortened a lot (>20%): things the market rated at about 82.6% (80-85%) happened 85.0% of the time over 5,089 markets (old/middle/new gap: +2.2/+0.9/+4.4 points; clears chance 1.83x). At belief after 2% commission a back keeps £+2.6 per £100. Backing at the price on offer since 31 Oct kept £+1.2 per £100 on 44 bets (£+1.05 a day at £40, 2.4 chances a day; taking cost 1.5 per £100). A back, held to the result.
+- In football match result, in play 100 min after the scheduled start, price move since previous moment shortened a lot (>20%): things the market rated at about 82.6% (80-85%) happened 85.0% of the time over 5,089 markets (old/middle/new gap: +2.2/+0.9/+4.4 points; clears chance 1.68x). At belief after 2% commission a back keeps £+2.6 per £100. Backing at the price on offer since 31 Oct kept £+1.2 per £100 on 44 bets (£+1.05 a day at £40, 2.4 chances a day; taking cost 1.5 per £100). A back, held to the result.
 
 **Where the market is almost exactly right** (largest cells, gap under half a point in every period)
 - football match result, at the start, rated 25-30%: 27.4% believed, 27.4% happened over 87,525 markets (-0.01/-0.27/+0.06).
-- football match result, 1 hour before, rated 25-30%: 27.4% believed, 27.5% happened over 81,620 markets (+0.31/-0.19/-0.03).
-- football match result, 10 minutes before, rated 25-30%: 27.4% believed, 27.4% happened over 80,763 markets (-0.08/-0.02/-0.00).
-- football match result, in play 10 min after the scheduled start, rated 25-30%: 27.5% believed, 27.7% happened over 77,045 markets (+0.24/+0.23/+0.12).
-- football match result, 6 hours before, rated 25-30%: 27.4% believed, 27.5% happened over 75,632 markets (-0.14/-0.00/+0.25).
-- football match result, in play 20 min after the scheduled start, rated 25-30%: 27.5% believed, 27.7% happened over 71,004 markets (+0.14/+0.33/+0.10).
+- greyhounds win, at the start, rated 10-15%: 12.5% believed, 12.4% happened over 11,448 markets (-0.14/-0.10/+0.16).
+- British/Irish racing win, 10 minutes before, rated 15-20%: 17.2% believed, 17.4% happened over 7,383 markets (+0.11/+0.13/+0.18).
+- British/Irish racing place, at the start, rated 30-35%: 32.4% believed, 32.4% happened over 6,626 markets (+0.10/-0.04/-0.21).
+- tennis match result, in play 15 min after the scheduled start, rated 40-45%: 42.5% believed, 42.5% happened over 5,450 markets (+0.20/-0.33/-0.05).
 
 **Peter's two known facts, checked by name**
 - Football match-result favourites 2 minutes before the start, all markets (history has no money-matched figure, so 'small' cannot be split there): old 50.8% believed / 50.6% happened (41,651 markets); middle 51.2% believed / 51.3% happened (39,678 markets); new 51.7% believed / 51.5% happened (43,602 markets).
