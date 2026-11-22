@@ -98,7 +98,7 @@ TRIAL, below the bar - not paper, not proof.
 | 10:30 | Union Brescia v Renate | The Draw | back | 4.80 | £38.65 | lost | -£38.65 | T2 |
 | 10:30 | Lion City Sailors FC v Geylang International | Geylang International | back | 12.00 | £2.00 | lost | -£2.00 | T2 |
 | 10:30 | Hougang Utd v Tampines Rovers | The Draw | back | 5.70 | £3.06 | lost | -£3.06 | T2 |
-| 10:30 | Muang Loei United F.C. v Uttaradit FC | Uttaradit FC | back | 2.30 | £2.62 | open | - | T2 |
+| 10:30 | Muang Loei United F.C. v Uttaradit FC | Uttaradit FC | back | 2.30 | £2.62 | lost | -£2.62 | T2 |
 | 10:30 | Olimpia Grudziadz v Gornik Leczna | Olimpia Grudziadz | back | 2.76 | £2.00 | won | +£3.45 | T2 |
 | 10:50 | Unia Skierniewice v Pogon Siedlce | Unia Skierniewice | back | 2.06 | - | skipped: its rule was down 3% of the bank today | - | T3 |
 | 10:50 | Unia Skierniewice v Pogon Siedlce | Pogon Siedlce | back | 3.50 | - | skipped: its rule was down 3% of the bank today | - | T3 |
@@ -256,8 +256,8 @@ TRIAL, below the bar - not paper, not proof.
 | 13:20 | Esperance Sportive Zarzis v Ben Guerdane | Esperance Sportive Zarzis | back | 2.00 | - | skipped: its rule was down 3% of the bank today | - | T3 |
 | 13:28 | RZ Pellets WAC v SV Ried | SV Ried | back | 2.24 | £40.15 | open | - | T1 |
 | 13:28 | Lechia Gdansk v Odra Opole | Lechia Gdansk | back | 1.97 | £2.13 | open | - | T1 |
-| 13:28 | US Pianese v Gubbio | US Pianese | back | 2.12 | £40.15 | open | - | T1 |
-| 13:28 | Sassari Torres v Spezia | Spezia | back | 1.79 | £40.15 | open | - | T1 |
+| 13:28 | US Pianese v Gubbio | US Pianese | back | 2.12 | £40.15 | won | +£44.06 | T1 |
+| 13:28 | Sassari Torres v Spezia | Spezia | back | 1.79 | £40.15 | lost | -£40.15 | T1 |
 | 13:28 | Livorno v Ravenna | Ravenna | back | 1.78 | - | skipped: would put more than 20% of the bank at risk | - | T1 |
 | 13:28 | Esperance Sportive Zarzis v Ben Guerdane | Esperance Sportive Zarzis | back | 2.00 | - | skipped: would put more than 20% of the bank at risk | - | T1 |
 | 13:28 | Club Africain v Sportive De Tunis | Sportive de Tunis | back | 2.84 | - | skipped: would put more than 20% of the bank at risk | - | T1 |
@@ -284,8 +284,8 @@ TRIAL, below the bar - not paper, not proof.
 | 13:50 | GD Vitoria de Sernache v Lusitania Futebol Clube | The Draw | back | 3.95 | - | skipped: its rule was down 3% of the bank today | - | T3 |
 | 13:50 | KF Drita v KF Feronikeli | KF Drita | back | 1.44 | - | skipped: its rule was down 3% of the bank today | - | T3 |
 | 13:50 | BSC Young Boys II v YF Juventus | YF Juventus | back | 2.32 | - | skipped: its rule was down 3% of the bank today | - | T3 |
-| 13:51 | FC Sellier & Bellot Vlasim v Prostejov | Under 2.5 Goals | back | 1.32 | £38.33 | won | +£12.02 | M6 |
-| 13:58 | FK IMT Novi Beograd v Partizan Belgrade | Partizan Belgrade | back | 2.32 | £38.33 | open | - | T1 |
+| 13:51 | FC Sellier & Bellot Vlasim v Prostejov | Under 2.5 Goals | back | 1.32 | £38.28 | won | +£12.00 | M6 |
+| 13:58 | FK IMT Novi Beograd v Partizan Belgrade | Partizan Belgrade | back | 2.32 | £38.28 | open | - | T1 |
 | 13:58 | Slovacko v Hradec Kralove | Hradec Kralove | back | 2.72 | - | skipped: would put more than 20% of the bank at risk | - | T1 |
 | 13:58 | Vizela v Feirense | Vizela | back | 1.95 | - | skipped: would put more than 20% of the bank at risk | - | T1 |
 | 13:58 | Levadiakos v Atromitos | Levadiakos | back | 2.64 | £2.22 | open | - | T1 |
@@ -358,12 +358,39 @@ TRIAL, below the bar - not paper, not proof.
 | 15:20 | UTA Arad v Universitatea Craiova | UTA Arad | back | 5.20 | - | skipped: book stopped for the day (down 6%) | - | T3 |
 | 15:20 | UTA Arad v Universitatea Craiova | The Draw | back | 3.80 | - | skipped: book stopped for the day (down 6%) | - | T3 |
 | 15:20 | Everton (W) v Brighton (W) | Under 2.5 Goals | back | 1.28 | - | skipped: book stopped for the day (down 6%) | - | M6 |
+| 15:21 | Bologna v Udinese | Under 2.5 Goals | back | 1.32 | - | skipped: book stopped for the day (down 6%) | - | M6 |
+| 15:28 | Saarbrucken v Wehen Wiesbaden | Saarbrucken | back | 2.58 | - | skipped: book stopped for the day (down 6%) | - | T1 |
+| 15:28 | FC Basel v Luzern | FC Basel | back | 2.24 | - | skipped: book stopped for the day (down 6%) | - | T1 |
+| 15:28 | UTA Arad v Universitatea Craiova | Universitatea Craiova | back | 1.82 | - | skipped: book stopped for the day (down 6%) | - | T1 |
+| 15:30 | Manta FC v Delfin | Delfin | back | 2.60 | - | skipped: book stopped for the day (down 6%) | - | T2 |
+| 15:30 | Manta FC v Delfin | Manta FC | back | 2.96 | - | skipped: book stopped for the day (down 6%) | - | T2 |
+| 15:30 | Wisla Plock v Legia Warsaw | Legia Warsaw | back | 2.40 | - | skipped: book stopped for the day (down 6%) | - | T2 |
+| 15:30 | Wisla Plock v Legia Warsaw | The Draw | back | 3.40 | - | skipped: book stopped for the day (down 6%) | - | T2 |
+| 15:30 | AZ Picerno ASD v FC Giugliano | AZ Picerno ASD | back | 2.12 | - | skipped: book stopped for the day (down 6%) | - | T2 |
+| 15:30 | AZ Picerno ASD v FC Giugliano | FC Giugliano | back | 3.70 | - | skipped: book stopped for the day (down 6%) | - | T2 |
+| 15:30 | Forli v Reggiana | Reggiana | back | 2.48 | - | skipped: book stopped for the day (down 6%) | - | T2 |
+| 15:30 | Sambenedettese v Perugia | Sambenedettese | back | 3.15 | - | skipped: book stopped for the day (down 6%) | - | T2 |
+| 15:30 | Sarajevo v Siroki Brijeg | Siroki Brijeg | back | 11.50 | - | skipped: book stopped for the day (down 6%) | - | T2 |
+| 15:30 | Sarajevo v Siroki Brijeg | Sarajevo | back | 1.37 | - | skipped: book stopped for the day (down 6%) | - | T2 |
+| 15:35 | Go Ahead Eagles v Fortuna Sittard | Go Ahead Eagles | back | 1.77 | - | skipped: book stopped for the day (down 6%) | - | T3 |
+| 15:35 | Go Ahead Eagles v Fortuna Sittard | Fortuna Sittard | back | 4.90 | - | skipped: book stopped for the day (down 6%) | - | T3 |
+| 15:35 | Go Ahead Eagles v Fortuna Sittard | The Draw | back | 4.20 | - | skipped: book stopped for the day (down 6%) | - | T3 |
+| 15:50 | Kristiansund v Sandefjord | Kristiansund | back | 2.88 | - | skipped: book stopped for the day (down 6%) | - | T3 |
+| 15:50 | Kristiansund v Sandefjord | The Draw | back | 4.00 | - | skipped: book stopped for the day (down 6%) | - | T3 |
+| 15:50 | Kfum Oslo v Brann | Brann | back | 2.32 | - | skipped: book stopped for the day (down 6%) | - | T3 |
+| 15:50 | Kfum Oslo v Brann | The Draw | back | 3.95 | - | skipped: book stopped for the day (down 6%) | - | T3 |
+| 15:50 | Aalesunds v Rosenborg | Aalesunds | back | 4.70 | - | skipped: book stopped for the day (down 6%) | - | T3 |
+| 15:50 | Botev Plovdiv v CSKA Sofia | The Draw | back | 4.30 | - | skipped: book stopped for the day (down 6%) | - | T3 |
+| 15:50 | Alashkert v FC Noah | FC Noah | back | 1.82 | - | skipped: book stopped for the day (down 6%) | - | T3 |
+| 15:50 | Alashkert v FC Noah | The Draw | back | 3.80 | - | skipped: book stopped for the day (down 6%) | - | T3 |
+| 15:50 | Tulevik Viljandi v FC Tallinn | FC Tallinn | back | 1.91 | - | skipped: book stopped for the day (down 6%) | - | T3 |
+| 15:50 | Arsenal (W) v West Ham United (W) | Under 2.5 Goals | back | 1.19 | - | skipped: book stopped for the day (down 6%) | - | M7 |
 
-- T1 (BET): In football match result markets with under £5,000 matched two minutes before the start, back the favourite two minutes before the start and hold it to the result. 44 orders settled since 22 Nov (44 markets), +£154.83 at the bank's stake, +30.9 per £100; to clear the entry bar: about 21 more markets (chance of a fluke 0.0049 against the bar 0.00089).
-- T2 (TRADE): In football match result markets, an hour before the start, when the money waiting to back a selection is 2 times the money waiting to lay it, back it, and close it at a 40% gain or a 20% loss of the stake, or 30 minutes after the entry, whichever comes first. 76 orders settled since 22 Nov (60 markets), -£211.56 at the bank's stake, -39.6 per £100; to clear the entry bar: never at the current rate (not in profit so far).
-- T3 (BET): In football match result markets, ten minutes before the start, when the money waiting to back a selection is 3 times the money waiting to lay it, back it and hold it to the result. 71 orders settled since 22 Nov (57 markets), -£157.76 at the bank's stake, -96.7 per £100; to clear the entry bar: never at the current rate (not in profit so far).
+- T1 (BET): In football match result markets with under £5,000 matched two minutes before the start, back the favourite two minutes before the start and hold it to the result. 50 orders settled since 22 Nov (50 markets), +£158.75 at the bank's stake, +27.3 per £100; to clear the entry bar: about 35 more markets (chance of a fluke 0.0082 against the bar 0.00089).
+- T2 (TRADE): In football match result markets, an hour before the start, when the money waiting to back a selection is 2 times the money waiting to lay it, back it, and close it at a 40% gain or a 20% loss of the stake, or 30 minutes after the entry, whichever comes first. 86 orders settled since 22 Nov (67 markets), -£214.18 at the bank's stake, -39.8 per £100; to clear the entry bar: never at the current rate (not in profit so far).
+- T3 (BET): In football match result markets, ten minutes before the start, when the money waiting to back a selection is 3 times the money waiting to lay it, back it and hold it to the result. 91 orders settled since 22 Nov (70 markets), -£157.76 at the bank's stake, -96.7 per £100; to clear the entry bar: never at the current rate (not in profit so far).
 - M4 (BET): Football over/under 2.5 goals, in play 90 min after the scheduled start: back what the market rates at 70-75% and hold it to the result (calibration map, run 19). 3 orders settled since 22 Nov (3 markets), +£14.14 at the bank's stake, +32.9 per £100; to clear the entry bar: about 27 more markets (chance of a fluke 0.0879 against the bar 0.00089).
 - M5 (BET): Football over/under 2.5 goals, in play 90 min after the scheduled start, price move since previous moment drifted some (7-20%): back what the market rates at 65-70% and hold it to the result (calibration map, run 19). 1 orders settled since 22 Nov (1 markets), £0.00 at the bank's stake, - per £100; to clear the entry bar: not enough markets yet to say.
-- M6 (BET): Football over/under 2.5 goals, in play 80 min after the scheduled start: back what the market rates at 75-80% and hold it to the result (calibration map, run 19). 5 orders settled since 22 Nov (5 markets), +£32.94 at the bank's stake, +28.0 per £100; to clear the entry bar: about 2 more markets (chance of a fluke 0.0000 against the bar 0.00089).
+- M6 (BET): Football over/under 2.5 goals, in play 80 min after the scheduled start: back what the market rates at 75-80% and hold it to the result (calibration map, run 19). 5 orders settled since 22 Nov (5 markets), +£32.92 at the bank's stake, +28.0 per £100; to clear the entry bar: about 2 more markets (chance of a fluke 0.0000 against the bar 0.00089).
 - M7 (BET): Football over/under 2.5 goals, in play 80 min after the scheduled start: back what the market rates at 80-85% and hold it to the result (calibration map, run 19). 0 orders settled since 22 Nov (0 markets), £0.00 at the bank's stake, - per £100; to clear the entry bar: not enough markets yet to say.
-All together (the same bet once, bank limits on): today -£167.41 on 108 settled, since 22 Nov -£167.41 on 108 settled; £2,000 bank now £1,832.59.
+All together (the same bet once, bank limits on): today -£166.13 on 111 settled, since 22 Nov -£166.13 on 111 settled; £2,000 bank now £1,833.87.
