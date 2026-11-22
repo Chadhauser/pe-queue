@@ -42,25 +42,28 @@ TRIAL, below the bar - not paper, not proof.
 | 06:30 | Paju Citizen v Cheonan City | Cheonan City | back | 2.46 | £2.54 | open | - | T2 |
 | 06:30 | Paju Citizen v Cheonan City | Paju Citizen | back | 3.05 | £2.54 | open | - | T2 |
 | 06:30 | Paju Citizen v Cheonan City | The Draw | back | 3.50 | £9.02 | open | - | T2 |
-| 06:30 | Taichung Futuro FC v Hang Yuen FC | Hang Yuen FC | back | 1.93 | £8.60 | closed at 4.80, waiting for the result | - | T2 |
-| 06:30 | Taichung Futuro FC v Hang Yuen FC | The Draw | back | 3.85 | £2.00 | closed at 4.10, waiting for the result | - | T2 |
-| 06:58 | Shatin SA v Eastern AA | Eastern AA | back | 2.06 | £11.10 | open | - | T1 |
+| 06:30 | Taichung Futuro FC v Hang Yuen FC | Hang Yuen FC | back | 1.93 | £8.60 | lost | -£5.14 | T2 |
+| 06:30 | Taichung Futuro FC v Hang Yuen FC | The Draw | back | 3.85 | £2.00 | lost | -£0.12 | T2 |
+| 06:58 | Shatin SA v Eastern AA | Eastern AA | back | 2.06 | £11.10 | won | +£11.53 | T1 |
 | 07:20 | Seoul E-Land FC v Chungnam Asan | Chungnam Asan | back | 3.60 | - | skipped: its rule was down 3% of the bank today | - | T3 |
 | 07:20 | Paju Citizen v Cheonan City | Cheonan City | back | 2.24 | - | skipped: its rule was down 3% of the bank today | - | T3 |
-| 07:28 | Seoul E-Land FC v Chungnam Asan | Seoul E-Land FC | back | 2.00 | £39.22 | open | - | T1 |
+| 07:28 | Seoul E-Land FC v Chungnam Asan | Seoul E-Land FC | back | 2.00 | £39.12 | open | - | T1 |
 | 07:28 | Paju Citizen v Cheonan City | Cheonan City | back | 2.26 | £11.34 | open | - | T1 |
-| 07:28 | Taipower v Taiwan Steel | Taiwan Steel | back | 1.61 | £39.22 | open | - | T1 |
+| 07:28 | Taipower v Taiwan Steel | Taiwan Steel | back | 1.61 | £39.12 | open | - | T1 |
 | 07:28 | Taichung Rock FC v Tatung FC | Tatung FC | back | 1.67 | £5.00 | open | - | T1 |
 | 07:30 | Adhyaksa FC v Pusamania Borneo FC | Pusamania Borneo FC | back | 1.64 | £6.00 | open | - | T2 |
 | 07:50 | Marumo Gallants FC (Res) v Polokwane City (Res) | Marumo Gallants FC (Res) | back | 2.52 | - | skipped: its rule was down 3% of the bank today | - | T3 |
 | 07:58 | Marumo Gallants FC (Res) v Polokwane City (Res) | Marumo Gallants FC (Res) | back | 2.52 | £5.48 | open | - | T1 |
 | 08:15 | Zizkov v SFC Opava | Zizkov | back | 2.80 | £12.25 | closed at 3.10, waiting for the result | - | T2 |
 | 08:20 | Adhyaksa FC v Pusamania Borneo FC | The Draw | back | 3.80 | - | skipped: its rule was down 3% of the bank today | - | T3 |
-| 08:28 | Adhyaksa FC v Pusamania Borneo FC | Pusamania Borneo FC | back | 1.96 | £39.34 | open | - | T1 |
-| 08:30 | Kuala Lumpur v Pulau Pinang | Kuala Lumpur | back | 1.97 | £4.51 | open | - | T2 |
-| 08:30 | Kuala Lumpur v Pulau Pinang | The Draw | back | 3.80 | £3.86 | open | - | T2 |
+| 08:28 | Adhyaksa FC v Pusamania Borneo FC | Pusamania Borneo FC | back | 1.96 | £39.23 | open | - | T1 |
+| 08:30 | Kuala Lumpur v Pulau Pinang | Kuala Lumpur | back | 1.97 | £4.51 | closed at 2.02, waiting for the result | - | T2 |
+| 08:30 | Kuala Lumpur v Pulau Pinang | The Draw | back | 3.80 | £3.86 | closed at 4.10, waiting for the result | - | T2 |
+| 09:05 | Zizkov v SFC Opava | Zizkov | back | 2.98 | - | skipped: its rule was down 3% of the bank today | - | T3 |
+| 09:05 | Zizkov v SFC Opava | SFC Opava | back | 2.46 | - | skipped: its rule was down 3% of the bank today | - | T3 |
+| 09:20 | Kuala Lumpur v Pulau Pinang | The Draw | back | 3.90 | - | skipped: its rule was down 3% of the bank today | - | T3 |
 
-- T1 (BET): In football match result markets with under £5,000 matched two minutes before the start, back the favourite two minutes before the start and hold it to the result. 8 orders settled since 22 Nov (8 markets), +£142.34 at the bank's stake, +79.1 per £100; to clear the entry bar: about 11 more markets (chance of a fluke 0.0222 against the bar 0.00089).
-- T2 (TRADE): In football match result markets, an hour before the start, when the money waiting to back a selection is 2 times the money waiting to lay it, back it, and close it at a 40% gain or a 20% loss of the stake, or 30 minutes after the entry, whichever comes first. 14 orders settled since 22 Nov (11 markets), -£18.03 at the bank's stake, -16.7 per £100; to clear the entry bar: never at the current rate (not in profit so far).
+- T1 (BET): In football match result markets with under £5,000 matched two minutes before the start, back the favourite two minutes before the start and hold it to the result. 9 orders settled since 22 Nov (9 markets), +£153.87 at the bank's stake, +80.5 per £100; to clear the entry bar: about 10 more markets (chance of a fluke 0.0157 against the bar 0.00089).
+- T2 (TRADE): In football match result markets, an hour before the start, when the money waiting to back a selection is 2 times the money waiting to lay it, back it, and close it at a 40% gain or a 20% loss of the stake, or 30 minutes after the entry, whichever comes first. 16 orders settled since 22 Nov (12 markets), -£23.29 at the bank's stake, -19.7 per £100; to clear the entry bar: never at the current rate (not in profit so far).
 - T3 (BET): In football match result markets, ten minutes before the start, when the money waiting to back a selection is 3 times the money waiting to lay it, back it and hold it to the result. 15 orders settled since 22 Nov (11 markets), -£157.56 at the bank's stake, -96.7 per £100; to clear the entry bar: never at the current rate (not in profit so far).
-All together (the same bet once, bank limits on): today -£33.25 on 37 settled, since 22 Nov -£33.25 on 37 settled; £2,000 bank now £1,966.75.
+All together (the same bet once, bank limits on): today -£26.98 on 40 settled, since 22 Nov -£26.98 on 40 settled; £2,000 bank now £1,973.02.
