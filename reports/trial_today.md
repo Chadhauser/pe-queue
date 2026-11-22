@@ -54,16 +54,16 @@ TRIAL, below the bar - not paper, not proof.
 | 07:30 | Adhyaksa FC v Pusamania Borneo FC | Pusamania Borneo FC | back | 1.64 | £6.00 | lost | -£6.00 | T2 |
 | 07:50 | Marumo Gallants FC (Res) v Polokwane City (Res) | Marumo Gallants FC (Res) | back | 2.52 | - | skipped: its rule was down 3% of the bank today | - | T3 |
 | 07:58 | Marumo Gallants FC (Res) v Polokwane City (Res) | Marumo Gallants FC (Res) | back | 2.52 | £5.48 | won | +£8.16 | T1 |
-| 08:15 | Zizkov v SFC Opava | Zizkov | back | 2.80 | £12.25 | closed at 3.10, waiting for the result | - | T2 |
+| 08:15 | Zizkov v SFC Opava | Zizkov | back | 2.80 | £12.25 | lost | -£1.19 | T2 |
 | 08:20 | Adhyaksa FC v Pusamania Borneo FC | The Draw | back | 3.80 | - | skipped: its rule was down 3% of the bank today | - | T3 |
 | 08:28 | Adhyaksa FC v Pusamania Borneo FC | Pusamania Borneo FC | back | 1.96 | £39.23 | open | - | T1 |
-| 08:30 | Kuala Lumpur v Pulau Pinang | Kuala Lumpur | back | 1.97 | £4.51 | closed at 2.02, waiting for the result | - | T2 |
-| 08:30 | Kuala Lumpur v Pulau Pinang | The Draw | back | 3.80 | £3.86 | closed at 4.10, waiting for the result | - | T2 |
+| 08:30 | Kuala Lumpur v Pulau Pinang | Kuala Lumpur | back | 1.97 | £4.51 | lost | -£0.11 | T2 |
+| 08:30 | Kuala Lumpur v Pulau Pinang | The Draw | back | 3.80 | £3.86 | lost | -£0.28 | T2 |
 | 09:05 | Zizkov v SFC Opava | Zizkov | back | 2.98 | - | skipped: its rule was down 3% of the bank today | - | T3 |
 | 09:05 | Zizkov v SFC Opava | SFC Opava | back | 2.46 | - | skipped: its rule was down 3% of the bank today | - | T3 |
 | 09:20 | Kuala Lumpur v Pulau Pinang | The Draw | back | 3.90 | - | skipped: its rule was down 3% of the bank today | - | T3 |
-| 09:28 | Kuala Lumpur v Pulau Pinang | Kuala Lumpur | back | 2.06 | £39.99 | open | - | T1 |
-| 09:30 | Erzurum BB v Goztepe | The Draw | back | 3.35 | £39.99 | closed at 3.35, waiting for the result | - | T2 |
+| 09:28 | Kuala Lumpur v Pulau Pinang | Kuala Lumpur | back | 2.06 | £39.96 | lost | -£39.96 | T1 |
+| 09:30 | Erzurum BB v Goztepe | The Draw | back | 3.35 | £39.96 | closed at 3.35, waiting for the result | - | T2 |
 | 09:30 | Batman Petrolspor v Muglaspor | Batman Petrolspor | back | 1.79 | £3.59 | open | - | T2 |
 | 09:30 | Araz Nakhchivan PFK v Neftchi Baku | The Draw | back | 4.30 | £9.24 | closed at 4.80, waiting for the result | - | T2 |
 | 09:30 | Araz Nakhchivan PFK v Neftchi Baku | Neftchi Baku | back | 1.65 | £17.71 | closed at 1.58, waiting for the result | - | T2 |
@@ -80,18 +80,18 @@ TRIAL, below the bar - not paper, not proof.
 | 10:00 | FK Dinamo Samarkand v Bunyodkor | FK Dinamo Samarkand | back | 1.57 | £6.00 | closed at 1.60, waiting for the result | - | T2 |
 | 10:00 | Sanjoanense v Academica | Sanjoanense | back | 5.00 | £2.00 | open | - | T2 |
 | 10:15 | FC Twente v Willem II | Willem II | back | 34.00 | £7.49 | open | - | T2 |
-| 10:15 | FC Twente v Willem II | FC Twente | back | 1.10 | £40.28 | open | - | T2 |
+| 10:15 | FC Twente v Willem II | FC Twente | back | 1.10 | £40.25 | open | - | T2 |
 | 10:15 | Rakow Czestochowa v Widzew Lodz | Widzew Lodz | back | 3.70 | £7.68 | open | - | T2 |
 | 10:20 | Erzurum BB v Goztepe | The Draw | back | 3.25 | - | skipped: its rule was down 3% of the bank today | - | T3 |
 | 10:20 | Erzurum BB v Goztepe | Erzurum BB | back | 2.84 | - | skipped: its rule was down 3% of the bank today | - | T3 |
 | 10:20 | Batman Petrolspor v Muglaspor | The Draw | back | 4.10 | - | skipped: its rule was down 3% of the bank today | - | T3 |
 | 10:20 | CSM Ramnicu-Valcea v Metalul Buzau | The Draw | back | 3.55 | - | skipped: its rule was down 3% of the bank today | - | T3 |
-| 10:28 | Batman Petrolspor v Muglaspor | Batman Petrolspor | back | 1.72 | £40.16 | open | - | T1 |
-| 10:28 | CSM Ramnicu-Valcea v Metalul Buzau | Metalul Buzau | back | 2.40 | £40.16 | open | - | T1 |
+| 10:28 | Batman Petrolspor v Muglaspor | Batman Petrolspor | back | 1.72 | £40.13 | open | - | T1 |
+| 10:28 | CSM Ramnicu-Valcea v Metalul Buzau | Metalul Buzau | back | 2.40 | £40.13 | open | - | T1 |
 | 10:30 | Juventus v Venezia | Venezia | back | 9.00 | £25.00 | closed at 8.80, waiting for the result | - | T2 |
 | 10:30 | Scafatese v Foggia | The Draw | back | 3.45 | £10.61 | open | - | T2 |
 | 10:30 | Pro Vercelli v Novara | Novara | back | 2.42 | £6.39 | open | - | T2 |
-| 10:30 | Pro Vercelli v Novara | Pro Vercelli | back | 3.35 | £40.16 | open | - | T2 |
+| 10:30 | Pro Vercelli v Novara | Pro Vercelli | back | 3.35 | £40.13 | open | - | T2 |
 | 10:30 | Union Brescia v Renate | The Draw | back | 4.80 | £38.65 | open | - | T2 |
 | 10:30 | Lion City Sailors FC v Geylang International | Geylang International | back | 12.00 | £2.00 | open | - | T2 |
 | 10:30 | Hougang Utd v Tampines Rovers | The Draw | back | 5.70 | £3.06 | open | - | T2 |
@@ -128,7 +128,7 @@ TRIAL, below the bar - not paper, not proof.
 | 10:58 | Sanjoanense v Academica | Academica | back | 1.80 | - | skipped: would put more than 20% of the bank at risk | - | T1 |
 | 10:58 | Bregalnica Stip v FK Struga Trim-Lum | FK Struga Trim-Lum | back | 2.10 | - | skipped: would put more than 20% of the bank at risk | - | T1 |
 | 11:00 | Burnley v Blackburn | The Draw | back | 3.95 | - | skipped: would put more than 20% of the bank at risk | - | T2 |
-| 11:00 | FK Radnicki 1923 v Cukaricki | FK Radnicki 1923 | back | 2.10 | £5.50 | open | - | T2 |
+| 11:00 | FK Radnicki 1923 v Cukaricki | FK Radnicki 1923 | back | 2.10 | £5.50 | closed at 2.16, waiting for the result | - | T2 |
 | 11:00 | FK Radnicki 1923 v Cukaricki | Cukaricki | back | 3.65 | - | skipped: would put more than 20% of the bank at risk | - | T2 |
 | 11:00 | Pardubice v FC Zbrojovka Brno | The Draw | back | 4.00 | - | skipped: would put more than 20% of the bank at risk | - | T2 |
 | 11:00 | Birmingham (W) v Man Utd (W) | Birmingham (W) | back | 5.90 | £2.26 | closed at 7.40, waiting for the result | - | T2 |
@@ -141,8 +141,32 @@ TRIAL, below the bar - not paper, not proof.
 | 11:20 | Hougang Utd v Tampines Rovers | Tampines Rovers | back | 1.38 | - | skipped: its rule was down 3% of the bank today | - | T3 |
 | 11:20 | Hougang Utd v Tampines Rovers | Hougang Utd | back | 8.20 | - | skipped: its rule was down 3% of the bank today | - | T3 |
 | 11:20 | Chiangrai Utd v Lamphun Warrior | The Draw | back | 3.15 | - | skipped: its rule was down 3% of the bank today | - | T3 |
+| 11:28 | Scafatese v Foggia | Foggia | back | 2.72 | - | skipped: would put more than 20% of the bank at risk | - | T1 |
+| 11:28 | Union Brescia v Renate | Union Brescia | back | 1.55 | - | skipped: would put more than 20% of the bank at risk | - | T1 |
+| 11:28 | Lion City Sailors FC v Geylang International | Lion City Sailors FC | back | 1.33 | - | skipped: would put more than 20% of the bank at risk | - | T1 |
+| 11:28 | Hougang Utd v Tampines Rovers | Tampines Rovers | back | 1.38 | - | skipped: would put more than 20% of the bank at risk | - | T1 |
+| 11:28 | Muang Loei United F.C. v Uttaradit FC | Uttaradit FC | back | 2.20 | - | skipped: would put more than 20% of the bank at risk | - | T1 |
+| 11:28 | Chiangrai Utd v Lamphun Warrior | Chiangrai Utd | back | 2.56 | - | skipped: would put more than 20% of the bank at risk | - | T1 |
+| 11:28 | Olimpia Grudziadz v Gornik Leczna | Gornik Leczna | back | 2.68 | - | skipped: would put more than 20% of the bank at risk | - | T1 |
+| 11:30 | Kaiserslautern v Dynamo Dresden | Kaiserslautern | back | 2.06 | £39.33 | open | - | T2 |
+| 11:30 | Stuttgart II v Ingolstadt | Ingolstadt | back | 2.30 | - | skipped: would put more than 20% of the bank at risk | - | T2 |
+| 11:30 | Cottbus v Hertha Berlin | Cottbus | back | 5.30 | - | skipped: would put more than 20% of the bank at risk | - | T2 |
+| 11:30 | Karlsruhe v VfL Osnabruck | The Draw | back | 3.70 | - | skipped: would put more than 20% of the bank at risk | - | T2 |
+| 11:30 | Waasland-Beveren v Gent | Waasland-Beveren | back | 4.50 | - | skipped: would put more than 20% of the bank at risk | - | T2 |
+| 11:30 | Zalaegerszeg v Vasas | Vasas | back | 3.10 | - | skipped: would put more than 20% of the bank at risk | - | T2 |
+| 11:30 | FC Sellier & Bellot Vlasim v Prostejov | FC Sellier & Bellot Vlasim | back | 1.93 | - | skipped: would put more than 20% of the bank at risk | - | T2 |
+| 11:30 | FK Vora v KF Tirana | KF Tirana | back | 2.58 | - | skipped: would put more than 20% of the bank at risk | - | T2 |
+| 11:30 | FK Vora v KF Tirana | The Draw | back | 3.30 | - | skipped: would put more than 20% of the bank at risk | - | T2 |
+| 11:50 | Burnley v Blackburn | The Draw | back | 4.10 | - | skipped: its rule was down 3% of the bank today | - | T3 |
+| 11:50 | FK Radnicki 1923 v Cukaricki | FK Radnicki 1923 | back | 2.10 | - | skipped: its rule was down 3% of the bank today | - | T3 |
+| 11:50 | Birmingham (W) v Man Utd (W) | The Draw | back | 5.10 | - | skipped: its rule was down 3% of the bank today | - | T3 |
+| 11:50 | Man City (W) v Tottenham (W) | Tottenham (W) | back | 7.60 | - | skipped: its rule was down 3% of the bank today | - | T3 |
+| 11:50 | Rayong FC v Rasi Salai United FC | Rasi Salai United FC | back | 5.90 | - | skipped: its rule was down 3% of the bank today | - | T3 |
+| 11:50 | Phrae United v Nongbua Pitchaya FC | The Draw | back | 3.60 | - | skipped: its rule was down 3% of the bank today | - | T3 |
+| 11:50 | Persikad Depok v Bekasi City | The Draw | back | 3.50 | - | skipped: its rule was down 3% of the bank today | - | T3 |
+| 11:50 | Persikad Depok v Bekasi City | Bekasi City | back | 2.76 | - | skipped: its rule was down 3% of the bank today | - | T3 |
 
-- T1 (BET): In football match result markets with under £5,000 matched two minutes before the start, back the favourite two minutes before the start and hold it to the result. 13 orders settled since 22 Nov (13 markets), +£202.71 at the bank's stake, +80.4 per £100; to clear the entry bar: about 5 more markets (chance of a fluke 0.0034 against the bar 0.00089).
-- T2 (TRADE): In football match result markets, an hour before the start, when the money waiting to back a selection is 2 times the money waiting to lay it, back it, and close it at a 40% gain or a 20% loss of the stake, or 30 minutes after the entry, whichever comes first. 20 orders settled since 22 Nov (14 markets), -£37.22 at the bank's stake, -26.8 per £100; to clear the entry bar: never at the current rate (not in profit so far).
-- T3 (BET): In football match result markets, ten minutes before the start, when the money waiting to back a selection is 3 times the money waiting to lay it, back it and hold it to the result. 19 orders settled since 22 Nov (15 markets), -£157.56 at the bank's stake, -96.7 per £100; to clear the entry bar: never at the current rate (not in profit so far).
-All together (the same bet once, bank limits on): today +£7.93 on 48 settled, since 22 Nov +£7.93 on 48 settled; £2,000 bank now £2,007.93.
+- T1 (BET): In football match result markets with under £5,000 matched two minutes before the start, back the favourite two minutes before the start and hold it to the result. 14 orders settled since 22 Nov (14 markets), +£162.74 at the bank's stake, +55.7 per £100; to clear the entry bar: about 30 more markets (chance of a fluke 0.0406 against the bar 0.00089).
+- T2 (TRADE): In football match result markets, an hour before the start, when the money waiting to back a selection is 2 times the money waiting to lay it, back it, and close it at a 40% gain or a 20% loss of the stake, or 30 minutes after the entry, whichever comes first. 23 orders settled since 22 Nov (16 markets), -£38.80 at the bank's stake, -24.4 per £100; to clear the entry bar: never at the current rate (not in profit so far).
+- T3 (BET): In football match result markets, ten minutes before the start, when the money waiting to back a selection is 3 times the money waiting to lay it, back it and hold it to the result. 22 orders settled since 22 Nov (17 markets), -£157.56 at the bank's stake, -96.7 per £100; to clear the entry bar: never at the current rate (not in profit so far).
+All together (the same bet once, bank limits on): today -£33.62 on 52 settled, since 22 Nov -£33.62 on 52 settled; £2,000 bank now £1,966.38.
