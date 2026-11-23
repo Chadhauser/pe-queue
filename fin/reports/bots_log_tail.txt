@@ -1,13 +1,3 @@
-2026-11-19 09:30:37 GET /positions/QQQM -> 404 {'code': 40410000, 'message': 'position does not exist'}
-2026-11-19 09:31:07 K2 scanned 1627 legs [('SA', 'buy'), ('IIIV', 'sell'), ('FCUV', 'buy'), ('DMRC', 'sell'), ('MNSO', 'buy'), ('KOPN', 'sell'), ('QUIK', 'sell'), ('FWDI', 'sell')]
-2026-11-19 09:35:05 ORB buy 24 QQQ ~674.68 stop 670.67 target 714.78 -> 200
-2026-11-19 09:35:06 ORB_SPY buy 54 SPY ~739.21 stop 737.37 target 757.61 -> 200
-2026-11-19 09:35:06 ORB_IWM buy 141 IWM ~271.475 stop 270.77 target 278.53 -> 200
-2026-11-19 09:38:03 GET /positions/QQQM -> 404 {'code': 40410000, 'message': 'position does not exist'}
-2026-11-19 09:40:16 GET /positions/IWM -> 404 {'code': 40410000, 'message': 'position does not exist'}
-2026-11-19 09:40:17 GET /positions/IWM -> 404 {'code': 40410000, 'message': 'position does not exist'}
-2026-11-19 09:40:18 GET /positions/SPY -> 404 {'code': 40410000, 'message': 'position does not exist'}
-2026-11-19 09:40:18 GET /positions/QQQM -> 404 {'code': 40410000, 'message': 'position does not exist'}
 2026-11-19 15:00:06 M7B sell 37 QQQM (QQQ move -3.54%) -> 200
 2026-11-19 15:51:00 K4 new ['PMCB', 'RETO', 'RTB', 'OWLT', 'EAF', 'CTEV', 'VRA', 'ENTA', 'NAKA', 'ALMU']
 2026-11-19 15:55:25 GET /positions/SA -> 404 {'code': 40410000, 'message': 'position does not exist'}
@@ -58,3 +48,13 @@
 2026-11-23 09:35:06 ORB_SPY sell 16 SPY ~718.75 stop 724.76 target 658.65 -> 200
 2026-11-23 09:35:06 ORB_IWM sell 65 IWM ~264.5 stop 266.02 target 249.25 -> 200
 2026-11-23 15:00:05 M7B no signal -0.90%
+2026-11-23 15:50:03 K4 exit CDNL
+2026-11-23 15:50:04 K4 exit PSFE
+2026-11-23 15:50:05 K4 exit XGN
+2026-11-23 15:50:06 K4 exit VMAR
+2026-11-23 15:50:06 K4 exit NPCE
+2026-11-23 15:50:07 K4 exit CADL
+2026-11-23 15:50:08 K4 exit AEHL
+2026-11-23 15:50:09 K4 exit APPS
+2026-11-23 15:50:10 K4 exit CTGO
+2026-11-23 15:51:09 K4 new ['SUPX', 'ALIT', 'DMRC', 'UNIT', 'ANGI', 'FUBO', 'LQDT', 'REAX', 'EVH', 'CLOV']
