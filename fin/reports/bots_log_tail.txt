@@ -1,4 +1,3 @@
-2026-11-19 15:00:06 M7B sell 37 QQQM (QQQ move -3.54%) -> 200
 2026-11-19 15:51:00 K4 new ['PMCB', 'RETO', 'RTB', 'OWLT', 'EAF', 'CTEV', 'VRA', 'ENTA', 'NAKA', 'ALMU']
 2026-11-19 15:55:25 GET /positions/SA -> 404 {'code': 40410000, 'message': 'position does not exist'}
 2026-11-19 15:55:44 GET /positions/IIIV -> 404 {'code': 40410000, 'message': 'position does not exist'}
@@ -58,3 +57,4 @@
 2026-11-23 15:50:09 K4 exit APPS
 2026-11-23 15:50:10 K4 exit CTGO
 2026-11-23 15:51:09 K4 new ['SUPX', 'ALIT', 'DMRC', 'UNIT', 'ANGI', 'FUBO', 'LQDT', 'REAX', 'EVH', 'CLOV']
+2026-11-23 15:52:56 K7 new ['ULCC', 'XERS', 'UPBD', 'PEPG', 'PRG', 'VCEL', 'LBTYA', 'BHC', 'ENR', 'AZTA']
