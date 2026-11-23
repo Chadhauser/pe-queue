@@ -1,0 +1,23 @@
+#!/bin/bash
+# 717 (Mon 23 Nov 2026 05:45). Continues Peter's "yes" of 22 Nov (dig into late in-play; exits; use the goal signal with it).
+# The in-play work found the late under and that the goal predictor improves it, but the trial version fires once a day because
+# it waits for a score feed. Make the trial take every match, with the predictor and with a stop, so this week's games decide.
+# Also the two fixes the scorecard found for the signal, scored nightly beside the current one. Trial only: not paper. No orders.
+pgrep -f 'run_(inplay|scoreback|scorecard|trialfix)\.sh' >/dev/null && { echo "another session is running - waiting"; exit 75; }
+cat > /root/pe-builder/BRIEF_lateunder.md <<'BRIEF'
+You are a Builder on Peter Edwards' trading server, session 24. Light on memory (football in play only, one day at a time). Read /root/pe-builder/BRIEF_league.md (HARD RULES, STANDING RULE 708), reports/inplay.md, reports/goal_signal_scorecard.md, reports/trial_fix_714.md. Trial list only: nothing goes on paper except through the existing gate (300 markets on 10 days, the bar). Do not change the paper entry rule or the fill rules.
+1. THE LATE UNDER ON TRIAL FOR EVERY MATCH. inplay.md form A made +£12.8 per £100 on 722 bets in 8 days (about 90 a day) from the book sweeps, but trial rule I8 fires about once a day because it needs a score feed. Make the trial read the score the way inplay.md did (Betfair's own markets: the correct-score market and the lines already settled, cross-checked with the feed where there is one; say the agreement rate) so it takes every match we record. Freeze, exactly as measured in inplay.md, as separate trial rules from today: A (minutes 65-90, the line one goal away, under rated 55-90%, one bet a match, held); A+P (the same, skipped when the goal predictor is in bands 8-10); A+P+S (the same with a 20% stop); B (from minute 75, rated 60-90%); C (the line two goals away, rated 80-97%) and C+S (with the goal-against stop). Model the 5-second bet delay as inplay.md did. Backs only. The same bet once in the bank book.
+2. SAY PLAINLY EACH DAY, at the top of the late-under lines in trial_today.md: how the day's matches scored against what the kick-off prices expected (over 2.5 rated x%, happened y%), because inplay.md found that the test week had unusually few goals and only about 1 point of the 9-point gap was specific to late in the match. A low-scoring day flatters every under; the line must show it so a good day is read correctly.
+3. THE SIGNAL, two changes the scorecard found, as a second version scored nightly BESIDE the current one (do not replace it): (a) no HIGH before the second half (its first-half HIGH calls were noise: 19% against 20% normal; second half 28% against 23%; last 15 minutes 30% against 16%); (b) the 'over price not drifting' input measured over 10 and 15 minutes as well as 5, weighted more late on. Fit only on days before 21 Nov; score from 21 Nov. Add its HIGH / NORMAL / LOW columns to the nightly table. If it beats the current one on LOW or late HIGH over a week, say so in the table's first line.
+4. ONE LINE each in reports/late_under_717.md (under 10 lines): the rules as frozen, the score-reading agreement rate, proof of one clean cycle with last night's matches (orders written, memory peak), and the signal's second version first numbers. Commit and push: cd /root/pe-queue && git add reports/late_under_717.md reports/trial_today.md reports/goal_signal_scorecard.md && git commit -qm "717: late under on trial for every match; signal second version" && git pull -q --no-rebase --no-edit && env -u GITHUB_TOKEN git push -q. Then end the session.
+BRIEF
+cat > /root/pe-builder/run_lateunder.sh <<'SH'
+#!/bin/bash
+CL=$(cat /root/pe-watchman/claude_path); ts=$(date -u +%F_%H%M)
+cd /root/pe-sports/inplay && timeout -k 60 10800 "$CL" -p "$(cat /root/pe-builder/BRIEF_lateunder.md)" --allowedTools "Bash,Read,Write,Edit,Glob,Grep" --max-turns 300 --output-format text > /root/pe-builder/runs/${ts}_lateunder.log 2>&1
+echo "lateunder session ended $(date -u '+%F %H:%M') exit $?" >> /root/pe-builder/sessions.log
+SH
+chmod +x /root/pe-builder/run_lateunder.sh
+nohup setsid /root/pe-builder/run_lateunder.sh > /dev/null 2>&1 < /dev/null & sleep 15
+echo "late under: $(pgrep -fc '[r]un_lateunder.sh') | scoreback: $(pgrep -fc '[r]un_scoreback.sh') | in-play: $(pgrep -fc '[r]un_inplay.sh') | free memory: $(free -g | awk '/Mem/{print $7" GB of "$2}') | $(date -u +%H:%M) UTC" > /root/pe-queue/reports/running_now.md
+cd /root/pe-queue && git add reports/running_now.md && git commit -qm "running now" -q && git pull -q --no-rebase --no-edit && env -u GITHUB_TOKEN git push -q
