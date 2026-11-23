@@ -34,6 +34,9 @@ TRIAL, below the bar - not paper, not proof.
 | 07:58 | Megt & Centre v Stride Sports FC | Megt & Centre | back | 1.53 | £6.00 | open | - | T1 |
 | 08:30 | ChinLand v Ayeyawady United | Ayeyawady United | back | 7.00 | £2.29 | closed at 9.00, waiting for the result | - | T2 |
 | 09:28 | ChinLand v Ayeyawady United | ChinLand | back | 1.25 | £19.86 | open | - | T1 |
+| 10:00 | LNZ-Lebedyn v Polissya Zhytomyr | Polissya Zhytomyr | back | 2.12 | £8.00 | open | - | T2 |
+| 10:00 | Chernomorets Odesa v FC Epicentr Dunaivtsi | The Draw | back | 3.20 | £5.00 | open | - | T2 |
+| 10:00 | Istanbul Basaksehir FK U19 v Arca Corum FK U19 | The Draw | back | 5.70 | £2.01 | open | - | T2 |
 
 Counting: an order is one trial order the one test filled; a market is one market however many orders it holds. The entry bar counts settled markets (at least 300 on 10 separate days); the drop at 300 counts settled orders; 'the bank took' counts bets after the bank's limits and stops.
 - T1 (BET): In football match result markets with under £5,000 matched two minutes before the start, back the favourite two minutes before the start and hold it to the result. 100 orders settled since 22 Nov (100 markets): +£744.06 on £3,292.15 staked at the market's stake, +22.6 per £100. The bank took 38 of these: +£147.35 on £806.21 staked, +18.3 per £100. To clear the entry bar: about 200 more markets and 8 more days (chance of a fluke 0.0154 against the bar 0.00089).
