@@ -1,7 +1,3 @@
-2026-11-19 09:30:20 DELETE /orders/638070b2-f3eb-431a-96c2-c925e47a0500 -> 422 {'code': 42210000, 'message': 'order pending cancel'}
-2026-11-19 09:30:22 DELETE /positions/IWM -> 403 {'available': '0', 'code': 40310000, 'existing_qty': '88', 'held_for_orders': '88', 'message': 'insufficient qty available for order (requested: 88, available: 
-2026-11-19 09:30:23 DELETE /orders/638070b2-f3eb-431a-96c2-c925e47a0500 -> 422 {'code': 42210000, 'message': 'order pending cancel'}
-2026-11-19 09:30:25 DELETE /positions/IWM -> 403 {'available': '0', 'code': 40310000, 'existing_qty': '88', 'held_for_orders': '88', 'message': 'insufficient qty available for order (requested: 88, available: 
 2026-11-19 09:30:34 DELETE /positions/IWM -> 403 {'available': '0', 'code': 40310000, 'existing_qty': '88', 'held_for_orders': '88', 'message': 'insufficient qty available for order (requested: 88, available: 
 2026-11-19 09:30:35 DELETE /orders/d7c822bd-c801-4324-9a3c-bf9e5d7486e3 -> 422 {'code': 42210000, 'message': 'order pending cancel'}
 2026-11-19 09:30:37 DELETE /positions/IWM -> 403 {'available': '0', 'code': 40310000, 'existing_qty': '88', 'held_for_orders': '88', 'message': 'insufficient qty available for order (requested: 88, available: 
@@ -58,3 +54,7 @@
 2026-11-20 15:58:04 E1S {'note': 'no FOMC next (2026-11-23)'}
 2026-11-20 15:59:11 GET /positions/QQQM -> 404 {'code': 40410000, 'message': 'position does not exist'}
 2026-11-20 16:10:02 SETTLE {'ORB': {'pnl_usd': -70.09, 'fills': 2}, 'ORB_SPY': {'pnl_usd': -64.18, 'fills': 2}, 'ORB_IWM': {'pnl_usd': -119.69, 'fills': 2}, 'M7B': {'pnl_usd': 113.7, 'fills': 2}, 'K2': {'pnl_usd': -237.07, 'fills': 20}, 'K4_closed_priced_today': 0, 'E1_closed_priced_today': 0}
+2026-11-23 09:30:05 GET /positions/QQQ -> 404 {'code': 40410000, 'message': 'position does not exist'}
+2026-11-23 09:30:06 GET /positions/SPY -> 404 {'code': 40410000, 'message': 'position does not exist'}
+2026-11-23 09:30:06 GET /positions/IWM -> 404 {'code': 40410000, 'message': 'position does not exist'}
+2026-11-23 09:30:07 GET /positions/QQQM -> 404 {'code': 40410000, 'message': 'position does not exist'}
