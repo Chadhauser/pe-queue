@@ -26,6 +26,8 @@ TRIAL, below the bar - not paper, not proof.
 | 03:50 | Albirex Niigata (W) v Hiroshima Regina (W) | The Draw | back | 3.60 | £5.78 | open | - | T3 |
 | 03:50 | Noj Stel Kanagawa (W) v Omiya Ardija (W) | Noj Stel Kanagawa (W) | back | 2.10 | £16.83 | open | - | T3 |
 | 03:58 | Noj Stel Kanagawa (W) v Omiya Ardija (W) | Noj Stel Kanagawa (W) | back | 2.10 | £26.18 | open | - | T1 |
+| 04:50 | AC Nagano Parceiro (W) v Urawa (W) | The Draw | back | 5.00 | £2.75 | open | - | T3 |
+| 04:58 | AC Nagano Parceiro (W) v Urawa (W) | Urawa (W) | back | 1.39 | £36.08 | open | - | T1 |
 
 Counting: an order is one trial order the one test filled; a market is one market however many orders it holds. The entry bar counts settled markets (at least 300 on 10 separate days); the drop at 300 counts settled orders; 'the bank took' counts bets after the bank's limits and stops.
 - T1 (BET): In football match result markets with under £5,000 matched two minutes before the start, back the favourite two minutes before the start and hold it to the result. 97 orders settled since 22 Nov (97 markets): +£748.33 on £3,211.83 staked at the market's stake, +23.3 per £100. The bank took 35 of these: +£156.94 on £739.82 staked, +21.2 per £100. To clear the entry bar: about 203 more markets and 8 more days (chance of a fluke 0.0145 against the bar 0.00089).
