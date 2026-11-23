@@ -1,8 +1,3 @@
-2026-11-19 15:51:00 K4 new ['PMCB', 'RETO', 'RTB', 'OWLT', 'EAF', 'CTEV', 'VRA', 'ENTA', 'NAKA', 'ALMU']
-2026-11-19 15:55:25 GET /positions/SA -> 404 {'code': 40410000, 'message': 'position does not exist'}
-2026-11-19 15:55:44 GET /positions/IIIV -> 404 {'code': 40410000, 'message': 'position does not exist'}
-2026-11-19 15:55:56 GET /positions/FCUV -> 404 {'code': 40410000, 'message': 'position does not exist'}
-2026-11-19 15:56:08 GET /positions/DMRC -> 404 {'code': 40410000, 'message': 'position does not exist'}
 2026-11-19 15:56:13 GET /positions/MNSO -> 404 {'code': 40410000, 'message': 'position does not exist'}
 2026-11-19 15:56:21 GET /positions/KOPN -> 404 {'code': 40410000, 'message': 'position does not exist'}
 2026-11-19 15:56:26 GET /positions/QUIK -> 404 {'code': 40410000, 'message': 'position does not exist'}
@@ -58,3 +53,8 @@
 2026-11-23 15:50:10 K4 exit CTGO
 2026-11-23 15:51:09 K4 new ['SUPX', 'ALIT', 'DMRC', 'UNIT', 'ANGI', 'FUBO', 'LQDT', 'REAX', 'EVH', 'CLOV']
 2026-11-23 15:52:56 K7 new ['ULCC', 'XERS', 'UPBD', 'PEPG', 'PRG', 'VCEL', 'LBTYA', 'BHC', 'ENR', 'AZTA']
+2026-11-23 15:58:02 GET /positions/QQQ -> 404 {'code': 40410000, 'message': 'position does not exist'}
+2026-11-23 15:58:03 GET /positions/SPY -> 404 {'code': 40410000, 'message': 'position does not exist'}
+2026-11-23 15:58:10 GET /positions/IWM -> 404 {'code': 40410000, 'message': 'position does not exist'}
+2026-11-23 15:58:11 E1S {'note': 'no FOMC next (2026-11-24)'}
+2026-11-23 15:59:00 GET /positions/QQQM -> 404 {'code': 40410000, 'message': 'position does not exist'}
