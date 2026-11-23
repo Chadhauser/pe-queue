@@ -1,4 +1,3 @@
-2026-11-19 09:30:37 FLATTEN FAILED IWM: still open after 8 tries
 2026-11-19 09:30:37 GET /positions/QQQM -> 404 {'code': 40410000, 'message': 'position does not exist'}
 2026-11-19 09:31:07 K2 scanned 1627 legs [('SA', 'buy'), ('IIIV', 'sell'), ('FCUV', 'buy'), ('DMRC', 'sell'), ('MNSO', 'buy'), ('KOPN', 'sell'), ('QUIK', 'sell'), ('FWDI', 'sell')]
 2026-11-19 09:35:05 ORB buy 24 QQQ ~674.68 stop 670.67 target 714.78 -> 200
@@ -58,3 +57,4 @@
 2026-11-23 09:35:05 ORB sell 13 QQQ ~648.35 stop 655.96 target 572.25 -> 200
 2026-11-23 09:35:06 ORB_SPY sell 16 SPY ~718.75 stop 724.76 target 658.65 -> 200
 2026-11-23 09:35:06 ORB_IWM sell 65 IWM ~264.5 stop 266.02 target 249.25 -> 200
+2026-11-23 15:00:05 M7B no signal -0.90%
