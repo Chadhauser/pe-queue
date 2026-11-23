@@ -195,3 +195,4 @@
 2026-11-23T10:20 BREAK: ice_hockey silent 6 hours on ip_tape; bot process not running;
 2026-11-23T11:20 BREAK: bot process not running;
 2026-11-23T12:20 BREAK: bot process not running;
+2026-11-23T13:20 BREAK: no bot bets in 6 hours while football is on (41 match-odds markets on the tape); basketball silent 6 hours on xx_tape; bot process not running;
