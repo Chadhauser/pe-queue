@@ -1,4 +1,3 @@
-2026-11-20 15:56:50 GET /positions/BGS -> 404 {'code': 40410000, 'message': 'position does not exist'}
 2026-11-20 15:56:55 GET /positions/XMAX -> 404 {'code': 40410000, 'message': 'position does not exist'}
 2026-11-20 15:58:02 GET /positions/QQQ -> 404 {'code': 40410000, 'message': 'position does not exist'}
 2026-11-20 15:58:02 GET /positions/SPY -> 404 {'code': 40410000, 'message': 'position does not exist'}
@@ -58,3 +57,4 @@
 2026-11-24 15:50:10 K4 exit FTH
 2026-11-24 15:50:11 K4 exit VIR
 2026-11-24 15:51:15 K4 new ['SA', 'DC', 'AIRO', 'USAU', 'AUNA', 'RUM', 'MNRO', 'CNL', 'ARQQ', 'CHA']
+2026-11-24 15:52:59 K7 new ['ENOV', 'WWW', 'VIA', 'XNCR', 'OSW', 'PRCH']
