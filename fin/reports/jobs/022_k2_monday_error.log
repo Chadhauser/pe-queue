@@ -1,0 +1,27 @@
+110:2026-11-23 09:35:05 ORB sell 13 QQQ ~648.35 stop 655.96 target 572.25 -> 200
+111:2026-11-23 09:35:06 ORB_SPY sell 16 SPY ~718.75 stop 724.76 target 658.65 -> 200
+112:2026-11-23 09:35:06 ORB_IWM sell 65 IWM ~264.5 stop 266.02 target 249.25 -> 200
+---
+9:2026-11-16 16:10:02 SETTLE {'ORB': {'pnl_usd': -51.51, 'fills': 2}, 'ORB_SPY': {'pnl_usd': None, 'fills': 0}, 'ORB_IWM': {'pnl_usd': None, 'fills': 0}, 'M7B': {'pnl_usd': None, 'fills': 0}, 'K2': {'pnl_usd': None, 'fills': 0}, 'K4_closed_priced_today': 0, 'E1_closed_priced_today': 0}
+13:2026-11-17 09:31:10 K2 scanned 1627 legs [('LUCK', 'sell'), ('CING', 'sell'), ('OMH', 'buy'), ('JBI', 'buy'), ('ANNX', 'buy'), ('SCZM', 'sell'), ('NEWP', 'buy'), ('KURA', 'sell'), ('FCUV', 'sell'), ('MTA', 'buy')]
+25:2026-11-17 16:10:02 SETTLE {'ORB': {'pnl_usd': -95.99, 'fills': 2}, 'ORB_SPY': {'pnl_usd': -87.22, 'fills': 2}, 'ORB_IWM': {'pnl_usd': None, 'fills': 0}, 'M7B': {'pnl_usd': -60.24, 'fills': 2}, 'K2': {'pnl_usd': -46.66, 'fills': 14}, 'K4_closed_priced_today': 0, 'E1_closed_priced_today': 0}
+26:2026-11-18 09:31:10 K2 scanned 1627 legs [('ARDT', 'buy'), ('VRA', 'buy'), ('PRPO', 'buy'), ('ANGX', 'sell'), ('ASTL', 'buy'), ('PEPG', 'sell'), ('JACK', 'buy'), ('ECVT', 'buy'), ('SCZM', 'buy'), ('OGC', 'buy')]
+36:2026-11-18 16:10:01 SETTLE {'ORB': {'pnl_usd': -124.39, 'fills': 2}, 'ORB_SPY': {'pnl_usd': None, 'fills': 0}, 'ORB_IWM': {'pnl_usd': -23698.4, 'fills': 1}, 'M7B': {'pnl_usd': None, 'fills': 0}, 'K2': {'pnl_usd': 28.22, 'fills': 20}, 'K4_closed_priced_today': 0, 'E1_closed_priced_today': 0}
+55:2026-11-19 09:31:07 K2 scanned 1627 legs [('SA', 'buy'), ('IIIV', 'sell'), ('FCUV', 'buy'), ('DMRC', 'sell'), ('MNSO', 'buy'), ('KOPN', 'sell'), ('QUIK', 'sell'), ('FWDI', 'sell')]
+79:2026-11-19 16:10:02 SETTLE {'ORB': {'pnl_usd': -74.05, 'fills': 2}, 'ORB_SPY': {'pnl_usd': -98.8, 'fills': 2}, 'ORB_IWM': {'pnl_usd': -76.52, 'fills': 2}, 'M7B': {'pnl_usd': 21.18, 'fills': 2}, 'K2': {'pnl_usd': 39.9, 'fills': 16}, 'K4_closed_priced_today': 0, 'E1_closed_priced_today': 0}
+84:2026-11-20 09:31:08 K2 scanned 1627 legs [('SVRA', 'buy'), ('TDAY', 'buy'), ('SVV', 'buy'), ('GRRR', 'buy'), ('AUNA', 'buy'), ('NEWP', 'buy'), ('MEI', 'buy'), ('DMRC', 'buy'), ('BGS', 'sell'), ('XMAX', 'buy')]
+105:2026-11-20 16:10:02 SETTLE {'ORB': {'pnl_usd': -70.09, 'fills': 2}, 'ORB_SPY': {'pnl_usd': -64.18, 'fills': 2}, 'ORB_IWM': {'pnl_usd': -119.69, 'fills': 2}, 'M7B': {'pnl_usd': 113.7, 'fills': 2}, 'K2': {'pnl_usd': -237.07, 'fills': 20}, 'K4_closed_priced_today': 0, 'E1_closed_priced_today': 0}
+130:2026-11-23 16:10:07 SETTLE {'ORB': {'pnl_usd': -124.67, 'fills': 2}, 'ORB_SPY': {'pnl_usd': -110.02, 'fills': 2}, 'ORB_IWM': {'pnl_usd': -85.14, 'fills': 2}, 'M7B': {'pnl_usd': None, 'fills': 0}, 'K2': {'pnl_usd': None, 'fills': 0}, 'K2_sell': {'pnl_usd': None, 'fills': 0, 'n': 0}, 'K2_buy': {'pnl_usd': None, 'fills': 0, 'n': 0}, 'K4_closed_priced_today': 9, 'E1_closed_priced_today': 0}
+---
+134
+*/2 * * * * nice -n 19 ionice -c3 /root/pe-finq/repo/fin/runner/fin_runner.sh >> /root/pe-finq/state/runner.out 2>&1 # FINQ
+* * * * * cd /root/pe-finq/repo/fin/bots && nice -n 19 ionice -c3 timeout 300 /usr/bin/python3 tick.py >> /root/pe-finq/state/tick.out 2>&1 # FINQ
+-rw-r--r-- 1 root root   2350 Nov 21 16:46 day_2026-11-19.json
+-rw-r--r-- 1 root root   2363 Nov 21 16:46 day_2026-11-20.json
+-rw-r--r-- 1 root root   1809 Nov 24 05:59 day_2026-11-23.json
+-rw-r--r-- 1 root root     38 Nov 24 07:32 day_2026-11-24.json
+-rw-r--r-- 1 root root     30 Nov 23 22:10 e1_book.json
+-rw-r--r-- 1 root root   9933 Nov 23 22:10 k4_book.json
+-rw-r--r-- 1 root root   1861 Nov 23 22:10 k7_book.json
+-rw-r--r-- 1 root root      0 Nov 24 07:32 tick.lock
+exit=0 secs=0
