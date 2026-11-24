@@ -56,6 +56,123 @@ Second version = fitted on days before 21 Nov; no HIGH before the second half (s
 | 2026-11-22 | 174 | 16,614 | 25% (3,766) | 25% | 14% (4,638) | 29% (481) | 30% (1,829) | 24% | 17% (3,840) | 30% (468) | 22% |
 | 2026-11-23 | 63 | 6,034 | 15% (1,548) | 26% | 10% (1,464) | 18% (214) | 18% (779) | 23% | 13% (1,190) | 18% (211) | 19% |
 
+
+**Every version beside the others, on the same calls** (points, calls in brackets: LOW = how far BELOW normal the goals were, HIGH and late HIGH (from minute 75) = how far ABOVE; bigger is better; normal = same minutes and scores; version 3 is always scored by a model fitted before that day)
+
+| date | calls | old: LOW / HIGH / late HIGH | 2: LOW / HIGH / late HIGH | 2b: LOW / HIGH / late HIGH | 3: LOW / HIGH / late HIGH | best LOW | best late HIGH |
+|---|---|---|---|---|---|---|---|
+| 2026-11-21 | 22,091 | - / +6.1 (90) / -2.6 (8) | +3.1 (5,046) / +2.2 (5,517) / +15.1 (696) | +3.1 (5,076) / +3.6 (2,551) / +14.2 (703) | +6.6 (4,508) / +3.4 (7,468) / +9.9 (1,173) | 3 | 2 |
+| 2026-11-22 | 15,579 | - / -3.8 (27) / +1.1 (5) | +2.3 (3,664) / +3.7 (3,763) / +13.9 (479) | +1.6 (3,677) / +6.2 (1,826) / +14.6 (465) | +5.3 (3,077) / +4.0 (5,741) / +12.9 (866) | 3 | 2b |
+| 2026-11-23 | 5,674 | - / -23.2 (4) / - | +6.6 (1,132) / -5.7 (1,547) / +2.1 (214) | +6.4 (1,148) / -4.7 (776) / +2.0 (209) | +8.1 (1,242) / +0.4 (1,952) / +8.3 (354) | 3 | 3 |
+| **all days** | 43,344 | - / +3.0 (121) / -1.2 (13) | +3.2 (9,842) / +1.6 (10,827) / +12.7 (1,389) | +2.9 (9,901) / +3.3 (5,153) / +12.5 (1,377) | +6.4 (8,827) / +3.2 (15,161) / +10.7 (2,393) | 3 | 2 |
+
+**The trial rules read version 2 (since 2026-11-24).** They switch when a newer version beats it for a full week (7 scored days) on LOW and on late HIGH: 3 of 7 days scored.
+
+Live version 3 against its replay: no live rows on 2026-11-23 yet.
+
+Live events collector, last 24 hours: 34 Betfair matches, 29 found on the feed, live stats for 4; goals arrive a median 66 s after the Betfair suspension (10 goals matched); calls used 622 of its 30,000.
+
+## Version 3 (session 25, 24 Nov)
+
+**Money: £0 (tier one; paper and scorecard only, no bets). Verdict: NOT YET as a money maker, WORKS as a better reader of quiet spells. Next test: automatic each night; the full-week comparison is read on 28 Nov (night of 27 Nov), and the first weekly refit is 30 Nov.**
+
+**On 1,486 matches neither version had seen (119,567 calls, 31 Oct, 1, 10-12 and 20-24 Nov), goal within 10 minutes against normal for the same minutes and scores, version 2 then version 3: HIGH 23.0% against 21.5% (+1.4 points) then 26.8% against 22.2% (+4.6); NORMAL 23.2% against 22.4% then 22.7% against 22.6%; LOW 17.0% against 20.8% (-3.8) then 11.8% against 19.5% (-7.7); late HIGH (minute 75 on) 24.6% against 18.6% (+6.0) then 25.1% against 18.2% (+6.9).**
+
+At the SAME number of calls as version 2, version 3 less version 2 (95% range, whole matches resampled): HIGH +3.2 points [+2.0, +4.3]; LOW -3.6 [-4.7, -2.4] (further below normal = better); late HIGH +0.9 [-1.9, +3.7] (could be nothing). First-half HIGH, which was noise in version 2 (+0.8), is +4.1 in version 3.
+
+**What does NOT pass, or is not yet known:** (1) HIGH is not money: version 3's HIGH was +0.4 points [-0.8, +1.5] against what the goals prices already implied, so the price knew. Its LOW was -2.2 points [-3.2, -1.1] below what the price implied (version 2: -2.9); but that price is our own scaled estimate from the minute prices, not an offer anyone could take, so it is a lead, not a result. **Version 2's LOW was as far below the price as version 3's, so version 3's extra LOW points are mostly things the price already knew;** the trade to test next is backing the under on LOW spells, at prices actually offered, through the existing paper trial (A+P rules), first read 1 Dec. (2) Late HIGH is not proven better: on 21-23 Nov alone version 2 was +12.7 points and version 3 +10.7. (3) Events delay: only 10 goals matched so far. (4) The share of minutes with live stats after the new collector is not measured yet (first full day tonight). (5) Formations and line-ups are collected but not tried as inputs; version 2's stream tick inputs are not in version 3.
+
+**Is it too good?** I looked for the flaw. The gain is the same with the first 1, 2, 3, 4 and 5 minutes of the window thrown away (a price that had already seen a goal would vanish: HIGH stayed +4.6 to +4.8, LOW -6.9 to -7.8), on the matches with a real score feed only (HIGH +4.3, LOW -7.6), and with minutes 35-45 and 80+ removed (a 10-minute window that hits half time or the end holds fewer goals; HIGH +3.4, LOW -6.0). But against a normal that knows the exact minute, the points are smaller: version 2 HIGH +0.9, LOW -2.4, late HIGH +1.8; version 3 HIGH +3.3, LOW -4.3, late HIGH +3.3. So about 40% of the scorecard's LOW points, in both versions, are just the clock. 10 and 11 Nov (about 6,000 calls) have no score feed and prices on half the minutes; they look extreme and carry little weight.
+
+### Which changes were kept, and the number that decided each
+
+Fitted and decided only on version 2's own days (2-9, 13-19 Nov; 79,342 calls, 1,042 matches), in blocks of days left out in turn; points = separation at fixed call shares against the exact-minute normal (LOW + HIGH + late HIGH, or the part that question is for). Kept only if the points rise AND the log loss does not get worse; the rule was written before any result was seen (v3_criteria.md). The unseen days above were read once, after this was frozen; later looks at them were only to search for flaws, and nothing was changed as a result.
+
+| question | change | points | change in points | change in log loss | verdict |
+|---|---|---|---|---|---|
+| one question | (reference) version 2 itself, which has seen these days | +8.4 | - | - | reference |
+| one question | (reference) the years of history alone | +15.2 | - | - | reference |
+| one question | (reference) the history, one model for the match | +16.3 | - | - | reference |
+| goal coming | START: version 2's price inputs from the minute sweeps, one model | +3.9 | - | - | START |
+| goal coming | + the years of history (one model for the whole match) | +12.8 | +8.84 | -0.00854 | KEPT |
+| goal coming | + the years of history, fitted per part of the match | +12.2 | -0.58 | +0.00052 | DROPPED |
+| goal coming | - version 2's own price inputs (history already holds them) | +11.5 | -1.24 | +0.00133 | DROPPED |
+| goal coming | fit also on matches whose goals were read from the market | +11.6 | -1.15 | -0.00001 | DROPPED |
+| goal coming | + all the goals lines together | +13.6 | +0.84 | +0.00008 | DROPPED |
+| goal coming | + goal expectation against the clock, 5 / 10 / 15 min | +13.1 | +0.36 | +0.00055 | DROPPED |
+| goal coming | + money traded | +10.8 | -2.01 | +0.00161 | DROPPED |
+| goal coming | + money waiting | +12.2 | -0.59 | -0.00019 | DROPPED |
+| goal coming | + markets disagreeing | +15.1 | +2.34 | -0.00112 | KEPT |
+| goal coming | + score state, who needs a goal, time since the last goal | +13.7 | -1.41 | +0.00127 | DROPPED |
+| goal coming | + which side is pressing (live stats) | +14.5 | -0.65 | +0.00047 | DROPPED |
+| goal coming | + each side's own goal expectation moving | +15.4 | +0.29 | -0.00017 | KEPT |
+| goal coming | + cards, substitutions, VAR | +15.2 | -0.20 | -0.00005 | DROPPED |
+| goal coming | separate fits: first half, 45-70, 70-90+ | +12.0 | -3.39 | +0.00565 | DROPPED |
+| goal coming | trees instead of logistic regression | +12.5 | -2.91 | +0.00005 | DROPPED |
+| quiet | START: version 2's price inputs from the minute sweeps, one model | +2.5 | - | - | START |
+| quiet | + the years of history (one model for the whole match) | +5.1 | +2.61 | -0.00854 | KEPT |
+| quiet | + the years of history, fitted per part of the match | +4.9 | -0.20 | +0.00052 | DROPPED |
+| quiet | - version 2's own price inputs (history already holds them) | +4.5 | -0.60 | +0.00133 | DROPPED |
+| quiet | fit also on matches whose goals were read from the market | +4.3 | -0.80 | -0.00001 | DROPPED |
+| quiet | + all the goals lines together | +5.4 | +0.24 | +0.00008 | DROPPED |
+| quiet | + goal expectation against the clock, 5 / 10 / 15 min | +5.0 | -0.07 | +0.00055 | DROPPED |
+| quiet | + money traded | +5.1 | -0.06 | +0.00161 | DROPPED |
+| quiet | + money waiting | +5.1 | +0.01 | -0.00019 | KEPT |
+| quiet | + markets disagreeing | +5.4 | +0.27 | -0.00065 | KEPT |
+| quiet | + score state, who needs a goal, time since the last goal | +4.7 | -0.68 | +0.00126 | DROPPED |
+| quiet | + which side is pressing (live stats) | +5.3 | -0.06 | +0.00051 | DROPPED |
+| quiet | + each side's own goal expectation moving | +5.4 | +0.04 | -0.00014 | KEPT |
+| quiet | + cards, substitutions, VAR | +5.5 | +0.06 | -0.00003 | KEPT |
+| quiet | separate fits: first half, 45-70, 70-90+ | +4.3 | -1.21 | +0.00769 | DROPPED |
+| quiet | trees instead of logistic regression | +6.0 | +0.48 | -0.00047 | KEPT |
+| quiet | asked over 15 minutes instead of 10 | +6.0 | +0.05 | +0.00090 | DROPPED |
+| quiet | asked over 20 minutes instead of 10 | +5.8 | -0.20 | +0.00163 | DROPPED |
+| quiet | asked over 10, 15 and 20 together | +6.0 | +0.03 | +0.00035 | DROPPED |
+
+Two questions (goal coming and quiet) against one model for both: 21.37 against 20.82 points, KEPT by 0.55. That is a small gain. **Dropped as a whole:** separate fits for first half / 45-70 / 70-90+ (-3.39 points) and 15- and 20-minute versions of the quiet question. The years of history say the same: no better when split by part of the match (ranking score 0.5967 split, 0.5975 as one).
+What carried it is the years of history (trees fitted on Betfair history from 2019 to Feb 2024, which read the same prices better). Which of the smaller changes survive moved when one day was added to the pool (before 17 Nov was rebuilt "all goals lines together" was kept; with it, it was dropped): the small ones are within noise of each other.
+
+### Which side scores next (its own line)
+
+On 49,831 calls of 936 never-seen matches where a goal followed within 60 minutes: version 3 named the right side 61.3% of the time, the market's own split 61.2%, the stronger side before kick-off 59.9% (log loss 0.6529, 0.6530, 0.6604). So it adds almost nothing to the market's own split. (My first run of this test left the market's split out from under the other inputs; it was put right and re-run on the fit days before any unseen day was read.) Kept: moves, game, events; dropped: books, pressing.
+
+### Events, delay, stats
+
+Events collector (af_events.py, plain loop, in watch.list as afevents): live events every 15 s for every linked match, statistics every 60 s for linked matches, line-ups before kick-off; 10 goals matched to a Betfair suspension so far, median 66 s behind it (the old api-football feed 92 s on 11); a red-card or substitution delay is not measured because there are too few. Cap 30,000 calls a day of 75,000 (40,000 left; 552 used by 13:00 UTC). Cards and substitutions are now on 84% of minutes from the events lists of finished matches (4% and 0% before); those lists leave out events cancelled later and I assumed 2 minutes' delay; what the live collector gets on a full day is measured from tonight. Live stats on the scorecard days 21-23 Nov: 44% of minutes have them; 9% of minutes are matches not found on the feed, 14% are matches the feed gives no statistics for (only 153 of 1,247 leagues have them), 33% are minutes of matches the feed had stats for by the end, which we did not have at that minute (not polled in time, or the feed had them late). The ceiling is 77%. The new collector asks for every linked match every minute. Note that the live stats did not improve the signal when tested (pressing: dropped), so more of them is not expected to matter yet.
+
+### What would help that we do not have
+
+- **More weeks of data:** 130 fitted matches gave +13.3 points (LOW + HIGH + late HIGH), 260 +15.1, 521 +18.7, all 1,042 +20.8; each doubling so far added 2 to 4 points, the last one 2. The live model already uses 2,082 matches (28-day window).
+- **Faster or fuller live stats:** on the 34,429 minutes where we have them, adding stats changed the points by -0.9 (log loss +0.0009); what FASTER stats would add cannot be estimated from what we have; no purchase proposed.
+- **Cards and substitutions for the leagues the feed does not cover:** on the 70,933 minutes where we have them, adding them changed the points by +0.1 (log loss +0.0002): no measurable gain.
+- **Line-ups before kick-off:** collected for about half the matches; not yet tried.
+
+### Nightly table, switch, refit
+
+Each night (23:30 UK) the scorecard adds version 3 beside the old signal, 2 and 2b, the best one per day, the rule for switching the trial, and the events delay. Version 3 is always scored by a model fitted before the day (the scorer refuses a day the model was fitted on). The trial still reads version 2 and switches only when a newer version beats it for a full 7 scored days on LOW and on late HIGH (tested on made-up weeks: win, lose, tie, 6 days, too few calls), and only to a version that is running live and, for version 3, whose live numbers agree with its replay (correlation 0.80 or more). At 13:15 UTC today live version 3 and live version 2 did not move together on 82 moments of about 8 small matches (correlation 0.00; the replay has 0.37), so this agreement check is the first thing to read tonight. The weekly refit runs on Mondays from 05:00 UK (a 28-day window) as a plain loop; the live version 3 and 2b run once a minute on paper (goaltrade.v3_scores, v2b_scores).
+
+### Checks (PASS/FAIL)
+
+| # | check | result |
+|---|---|---|
+| 1 | Old signal, version 2 and the other old files unchanged | PASS: 23 of 25 files match their start-of-session sums; the two that changed are sc_report.py and late_under.py, both backed up first (.bak_s25) and changed only where the order asks |
+| 2 | Events collector, plain loop in watch.list, own cap 30,000 | PASS: running, 552 calls used by 13:00 UTC, plan left 68,700 |
+| 3 | Delay against the Betfair suspension | PARTIAL: 10 goals so far (median 66 s), grows by itself each night |
+| 4 | Share of minutes with live stats before and after | BEFORE PASS; AFTER NOT YET (first full day tonight) |
+| 5 | Changes kept by the fixed rule, every change reported | PASS: table above (one question is also tested, in the run log logs/v3_decide.log) |
+| 6 | Never-seen days looked at once, after frozen.json | PASS: logs/v3_eval.log |
+| 7 | Known-answer tests | PASS: 48 passed, 0 failed (test_v3.py), and late_under tests 30 of 30 |
+| 8 | Which side, own line | PASS (no edge over the market) |
+| 9 | Weekly refit, scorer refuses fitted days | PASS (loop started, test of the refusal in test_v3.py; the first real refit is 30 Nov) |
+| 10 | Nightly table keeps working if version 3 files are missing | PASS: tested with no files |
+| 11 | Trial switch tested both ways; today still version 2 | PASS |
+| 12 | Memory under 2 GB a step | PASS for the inputs (1.5 GB peak, 7 Nov) and refit (1.3 GB); the keep-or-drop run itself was not measured |
+| 13 | Report, survives the nightly rewrite, pushed | see the commit |
+
+_Other: trial.py (order book trial, not mine) was killed for lack of memory 5 times on 24 Nov 11:04-11:33 server time, before this session started, peaking near 10.9 GB; mine ran only after it. 17 Nov stopped the input builder once (a market with no money figure); it is fixed and rebuilt, and the decision was run again with it. The live version 3 scored nothing for a few minutes at 13:01-13:05 UTC (a poll with no new prices broke the number columns; caught by reading the stored rows, fixed, tested)._
+
+What I need from you: nothing.
+
 ## Backtest
 
 _Written 24 Nov 2026 (session 23). Tier one, money £0: a scorecard, no bets, no paper. Same code as the nightly scorecard; kept under the nightly table each night. Two depths, kept apart: A = the full signal on the recorded days; B = a price-only version on years of history._
@@ -276,4 +393,4 @@ Goals (Betfair suspension times): 18' 1-0, 31' 1-1. On these lines: 0 right, 3 w
 | 41 | 1-1 | 24% **HIGH** | 15% | none | no goal | WRONG |
 | HT | | | | | | |
 
-_Built 2026-11-24 11:41 UTC by /root/pe-sports/goaltrade/sc_build.py + sc_report.py (session 22). Scorecard only._
+_Built 2026-11-24 13:17 UTC by /root/pe-sports/goaltrade/sc_build.py + sc_report.py (session 22). Scorecard only._
