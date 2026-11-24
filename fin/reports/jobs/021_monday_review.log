@@ -1,0 +1,33 @@
+2026-11-23 09:35:05 ORB sell 13 QQQ ~648.35 stop 655.96 target 572.25 -> 200
+2026-11-23 09:35:06 ORB_SPY sell 16 SPY ~718.75 stop 724.76 target 658.65 -> 200
+2026-11-23 09:35:06 ORB_IWM sell 65 IWM ~264.5 stop 266.02 target 249.25 -> 200
+K2 state 23 Nov: {} legs 0 []
+done list: ['stray_flat', 'K2_entry', 'ORB_entry', 'ORB_SPY_entry', 'ORB_IWM_entry', 'M7B_entry', 'K4_run', 'K7_run', 'K2_flat', 'ORB_flat', 'ORB_SPY_flat', 'ORB_IWM_flat', 'E1S_run', 'M7B_flat', 'settle']
+official opens now for 23 Nov: 1621 in 46s
+names that gapped 5%+ on 23 Nov: 300 [('BRUN', 0.272), ('TRIB', -0.239), ('FWDI', 0.21), ('NAKA', 0.203), ('ALMU', 0.201), ('ABTC', 0.189), ('AOSL', 0.182), ('OCC', 0.173), ('AGPU', 0.173), ('ARQQ', 0.166), ('SVRN', 0.164), ('AIP', 0.164), ('KOPN', 0.163), ('CEVA', 0.163), ('QUIK', 0.16), ('IPX', 0.16), ('INTT', 0.157), ('ADUR', 0.156), ('QMCO', 0.154), ('AMBQ', 0.15), ('GRRR', 0.149), ('TSSI', 0.147), ('IMOS', 0.144), ('ABSI', 0.144), ('KC', 0.143), ('CHRN', 0.138), ('BLZE', 0.138), ('SCZM', 0.137), ('ALOY', 0.137), ('TMS', 0.136)]
+K4 open 50 closed 9
+  K4 CDNL 2026-11-16 -> 2026-11-23 qty 82 ref 6.075 r5 -0.6011 pnl -49.2
+  K4 PSFE 2026-11-16 -> 2026-11-23 qty 160 ref 3.115 r5 -0.5606 pnl -32.0
+  K4 XGN 2026-11-16 -> 2026-11-23 qty 130 ref 3.82 r5 -0.462 pnl 9.1
+  K4 VMAR 2026-11-16 -> 2026-11-23 qty 164 ref 3.04 r5 -0.4097 pnl 145.96
+  K4 NPCE 2026-11-16 -> 2026-11-23 qty 63 ref 7.875 r5 -0.3998 pnl 27.72
+  K4 CADL 2026-11-16 -> 2026-11-23 qty 84 ref 5.93 r5 -0.3751 pnl -60.09
+  K4 AEHL 2026-11-16 -> 2026-11-23 qty 66 ref 7.5 r5 -0.375 pnl -59.4
+  K4 APPS 2026-11-16 -> 2026-11-23 qty 70 ref 7.11 r5 -0.3708 pnl -56.0
+  K4 CTGO 2026-11-16 -> 2026-11-23 qty 47 ref 10.55 r5 -0.3625 pnl -26.79
+K7 open [('ULCC', 58, 8.604999542236328, 0.7525), ('XERS', 28, 17.43000030517578, 0.7071), ('UPBD', 18, 26.559999465942383, 0.5633), ('PEPG', 132, 3.759999990463257, 0.51), ('PRG', 12, 40.380001068115234, 0.3697), ('VCEL', 8, 58.93000030517578, 0.3692), ('LBTYA', 50, 9.984999656677246, 0.3243), ('BHC', 60, 8.289999961853027, 0.3055), ('ENR', 17, 29.020000457763672, 0.3019), ('AZTA', 10, 47.665000915527344, 0.2824)]
+2026-11-24 01:30:49 GET /positions/QQQ -> 404 {'code': 40410000, 'message': 'position does not exist'}
+QQQ position 0.0
+2026-11-24 01:30:50 GET /positions/SPY -> 404 {'code': 40410000, 'message': 'position does not exist'}
+SPY position 0.0
+2026-11-24 01:30:50 GET /positions/IWM -> 404 {'code': 40410000, 'message': 'position does not exist'}
+IWM position 0.0
+2026-11-24 01:30:50 GET /positions/QQQM -> 404 {'code': 40410000, 'message': 'position does not exist'}
+QQQM position 0.0
+equity 98659.07
+2026-11-17 QQQ sell test -1.00R (stop at 14:42Z, best it reached +0.7R) | live sell -95.99 || SPY sell test -1.00R (stop at 14:41Z, best it reached +0.1R) | live sell -87.22 || IWM sell test -1.00R (stop at 14:42Z, best it reached +0.2R) | live None None
+2026-11-18 QQQ sell test -1.00R (stop at 15:00Z, best it reached +3.1R) | live sell -124.39 || SPY buy test -1.00R (stop at 14:35Z, best it reached +0.4R) | live None None || IWM buy test +0.74R (close, best it reached +2.5R) | live buy None
+2026-11-19 QQQ buy test -1.00R (stop at 14:40Z, best it reached +0.3R) | live buy -74.05 || SPY buy test -1.00R (stop at 14:38Z, best it reached +0.1R) | live buy -98.8 || IWM buy test -1.00R (stop at 14:36Z, best it reached +0.1R) | live buy -76.52
+2026-11-20 QQQ sell test -1.00R (stop at 14:54Z, best it reached +0.4R) | live sell -70.09 || SPY sell test -1.00R (stop at 14:36Z, best it reached +0.1R) | live sell -64.18 || IWM buy test -1.00R (stop at 15:24Z, best it reached +1.6R) | live buy -119.69
+2026-11-23 QQQ sell test -1.00R (stop at 15:21Z, best it reached +0.8R) | live sell -124.67 || SPY sell test -1.00R (stop at 15:20Z, best it reached +0.8R) | live sell -110.02 || IWM sell test -0.82R (close, best it reached +0.9R) | live sell -85.14
+exit=0 secs=54
