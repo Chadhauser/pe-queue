@@ -1,0 +1,6 @@
+offline test: 37/37 PASS
+official prior closes: 1621 of 1627 in 43s
+second call (cached): 0.00s
+fast-feed snapshot: 1627 names in 3s
+confirm step on 200 names: 197 back in 5s
+exit=0 secs=57
