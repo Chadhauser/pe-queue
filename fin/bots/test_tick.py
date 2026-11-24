@@ -77,6 +77,7 @@ def install(f, uni_rows, earnings, closes):
             out[sym] = {'latestTrade': {'p': p, 't': f.clock[0].astimezone(dt.timezone.utc).isoformat()}, 'prevDailyBar': {'c': prev}}
         return out
     T.snapshots = snaps
+    T.prev_closes = lambda uni_, day_: dict(uni_rows)
     T.official_gaps = lambda syms, day: {} if getattr(f, 'no_opens', False) else {sy: (getattr(f, 'official_open', {}).get(sy, f.px(sy, f.clock[0])), uni_rows[sy]) for sy in syms if uni_rows.get(sy)}
     T.universe = lambda: (list(uni_rows), earnings)
     T.daily_closes = lambda syms, today: closes
@@ -182,7 +183,7 @@ f.official_open = {'DDD': uni['DDD']}; dq = dt.date(2026, 12, 9); run_day(f, dq)
 lq = {l['sym'] for l in json.load(open(os.path.join(TMP, 'bots', f'day_{dq}.json')))['K2']['legs']}
 check('M1 DDD prints 7% lower on the thin feed but opened flat officially: not traded; AAA still faded', 'DDD' not in lq and 'AAA' in lq, lq)
 f.no_opens = True; dr = dt.date(2026, 12, 10); run_day(f, dr); f.no_opens = False; kr = json.load(open(os.path.join(TMP, 'bots', f'day_{dr}.json')))['K2']
-check('M2 official opens not available: no gap-fade orders, note recorded, rest of the day unaffected', kr.get('legs') == [] and 'no trade today' in kr.get('note', ''), kr)
+check('M2 official opens not out yet: the fresh print against the official prior close stands, source recorded', {l['sym'] for l in kr.get('legs', [])} >= {'AAA'} and 'fresh print' in kr.get('source', ''), kr)
 # ---- N: gap fade split by side on the scoreboard; K7 five-day short from the data map
 T.assets = lambda: {k: (True, True) for k in uni}; f.k7c = [('FFF', 0.30, 5e7, 9.0), ('BBB', 0.40, 5e6, 20.5), ('EEE', 0.10, 9e7, 8.0)]; ds = dt.date(2026, 12, 14); run_day(f, ds); f.k7c = []
 sts = json.load(open(os.path.join(TMP, 'bots', f'day_{ds}.json'))); b7 = json.load(open(os.path.join(TMP, 'bots', 'k7_book.json')))

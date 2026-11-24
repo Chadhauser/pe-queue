@@ -201,30 +201,61 @@ def official_gaps(syms, day):
     if d is None or len(d) < 2 or d.index[-1].date() != day: return {}
     o = d['Open'].iloc[-1]; pc = d['Close'].iloc[-2]
     return {s: (float(o[s]), float(pc[s])) for s in syms if s in o.index and pd.notna(o[s]) and pd.notna(pc[s]) and pc[s] > 0}
+def prev_closes(uni, day):
+    """{sym: official close of the last trading day before `day`}, cached for the day. Built before the open (K2_prep) so the
+    09:31 entry never waits on a 45-second download (23 Nov: the whole-list download at the open overran and the tick was killed)."""
+    p = os.path.join(BOTS, f'prevclose_{day}.json'); c = jload(p, None)
+    if c: return c
+    import yfinance as yf, pandas as pd
+    d = yf.download(uni, period='5d', interval='1d', auto_adjust=False, progress=False, threads=True)['Close']
+    d = d[d.index.date < day]
+    if not len(d): return {}
+    c = {s: float(v) for s, v in d.iloc[-1].items() if pd.notna(v) and v > 0}
+    if len(c) >= 0.5 * len(uni): jsave(p, c)
+    return c
+def with_timeout(fn, secs, default):
+    import concurrent.futures as cf
+    ex = cf.ThreadPoolExecutor(1); fu = ex.submit(fn)
+    try: return fu.result(timeout=secs)
+    except Exception: return default
+    finally: ex.shutdown(wait=False)
 def k2_entry(st, day, op):
-    uni, ed = universe(); held = {p['sym'] for p in k4_book()['open']} | {p['sym'] for p in k7_book()['open']}; cands = []; A = assets(); G = {}
-    for _ in range(3):                                                     # the day's opens can lag a little after 09:30
-        G = official_gaps(uni, day)
-        if len(G) >= 0.5 * len(uni): break
-        sleep(30)
-    if len(G) < 0.5 * len(uni): st['K2'] = dict(note=f'official opens for only {len(G)} of {len(uni)} names: no trade today', legs=[]); log(f"K2 {st['K2']['note']}"); return
+    """Gap = today's price against the OFFICIAL prior close. Step 1: a fresh print (after the open) on the fast feed against the cached
+    official close finds candidates. Step 2: the official open for just those names confirms them; if the official opens are not out
+    yet, the fresh print stands. Everything is logged so a silent kill can never hide again."""
+    log('K2 entry started'); uni, ed = universe(); held = {p['sym'] for p in k4_book()['open']} | {p['sym'] for p in k7_book()['open']}; cands = []; A = assets()
+    PC = prev_closes(uni, day)
+    if len(PC) < 0.5 * len(uni): st['K2'] = dict(note=f'official prior closes for only {len(PC)} of {len(uni)} names: no trade today', legs=[]); log(f"K2 {st['K2']['note']}"); return
     import pandas as pd
-    for s, (px, prev) in G.items():
+    snap = snapshots(uni); pre = {}
+    for s_, v in snap.items():
         try:
-            gap = px / prev - 1
+            lt = v['latestTrade']; px = lt['p']
+            if pd.Timestamp(lt['t']) < pd.Timestamp(op) or s_ not in PC: continue             # no print yet today
+            if abs(px / PC[s_] - 1) >= 0.04: pre[s_] = px
+        except Exception: continue
+    G = with_timeout(lambda: official_gaps(sorted(pre), day), 45, {}) if pre else {}
+    src = 'official open' if len(G) >= 0.5 * len(pre) and G else 'fresh print (official opens not out yet)'
+    for s, px in pre.items():
+        try:
+            if src == 'official open':
+                if s not in G: continue
+                px = G[s][0]
+            prev = PC[s]; gap = px / prev - 1
             if abs(gap) < 0.05 or px < 3 or s in held or s in ETF_SYMS: continue
             tr, sh = can(A, s)
             if not tr or (gap > 0 and not sh): continue                                       # can't buy / can't short it
             if any(abs((pd.Timestamp(x).date() - day).days) <= 1 for x in ed.get(s, [])): continue
             cands.append(dict(sym=s, px=px, gap=gap))
         except Exception: continue
+    G = {s: 1 for s in snap}; log(f'K2 gap source: {src}; {len(pre)} first-pass names, {len(cands)} qualify')
     cands = sorted(cands, key=lambda c: -abs(c['gap']))[:30]; legs = []   # the history test took every name (20-28 a day), not the ten biggest
     for c in cands:
         qty = max(1, int(500.0 // c['px'])); side = 'sell' if c['gap'] > 0 else 'buy'
         sc, res = api('POST', '/orders', json={'symbol': c['sym'], 'qty': str(qty), 'side': side, 'type': 'market', 'time_in_force': 'day',
                                                 'client_order_id': f"k2-{day:%Y%m%d}-{c['sym']}"})
         legs.append(dict(sym=c['sym'], side=side, qty=qty, gap=round(c['gap'], 4), ref=c['px'], status=sc))
-    st['K2'] = dict(scanned=len(G), legs=legs); log(f"K2 scanned {len(G)} legs {[(l['sym'], l['side']) for l in legs]}")
+    st['K2'] = dict(scanned=len(G), source=src, legs=legs); log(f"K2 scanned {len(G)} legs {[(l['sym'], l['side']) for l in legs]}")
 
 def k4_run(st, day, entries):
     book = k4_book(); keep = []
@@ -374,6 +405,7 @@ def tick():
         except Exception: log(f'{name} ERROR ' + traceback.format_exc()[-400:])
         jsave(sp, st)
     run('stray_flat', op + dt.timedelta(seconds=5), op + dt.timedelta(minutes=3), lambda: stray_flat(st), needs_entry=False)
+    if C.get('K2'):  run('K2_prep', op - dt.timedelta(minutes=12), op - dt.timedelta(minutes=1), lambda: log(f"K2 prep: official prior closes for {len(prev_closes(universe()[0], day))} names"), needs_entry=False)
     if C.get('K2'):  run('K2_entry', op + dt.timedelta(minutes=1), op + dt.timedelta(minutes=15), lambda: k2_entry(st, day, op))
     for sym, key in (('QQQ', 'ORB'), ('SPY', 'ORB_SPY'), ('IWM', 'ORB_IWM')):
         if C.get(key): run(f'{key}_entry', op + dt.timedelta(minutes=5, seconds=5), op + dt.timedelta(minutes=30), lambda s_=sym, k_=key: orb_entry(st, day, op, s_, k_))
