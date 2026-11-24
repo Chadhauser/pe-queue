@@ -1,4 +1,3 @@
-2026-11-23 09:30:06 GET /positions/SPY -> 404 {'code': 40410000, 'message': 'position does not exist'}
 2026-11-23 09:30:06 GET /positions/IWM -> 404 {'code': 40410000, 'message': 'position does not exist'}
 2026-11-23 09:30:07 GET /positions/QQQM -> 404 {'code': 40410000, 'message': 'position does not exist'}
 2026-11-23 09:35:05 ORB sell 13 QQQ ~648.35 stop 655.96 target 572.25 -> 200
@@ -58,3 +57,4 @@
 2026-11-24 15:58:12 GET /positions/IWM -> 404 {'code': 40410000, 'message': 'position does not exist'}
 2026-11-24 15:58:13 E1S {'note': 'no FOMC next (2026-11-25)'}
 2026-11-24 15:59:00 GET /positions/QQQM -> 404 {'code': 40410000, 'message': 'position does not exist'}
+2026-11-24 16:10:08 SETTLE {'ORB': {'pnl_usd': -204.21, 'fills': 2}, 'ORB_SPY': {'pnl_usd': -161.31, 'fills': 2}, 'ORB_IWM': {'pnl_usd': 144.91, 'fills': 2}, 'M7B': {'pnl_usd': None, 'fills': 0}, 'K2': {'pnl_usd': -66.41, 'fills': 6}, 'K2_sell': {'pnl_usd': -50.77, 'fills': 4, 'n': 2}, 'K2_buy': {'pnl_usd': -15.64, 'fills': 2, 'n': 1}, 'K4_closed_priced_today': 10, 'E1_closed_priced_today': 0}
