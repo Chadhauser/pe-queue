@@ -22,6 +22,7 @@ TRIAL, below the bar - not paper, not proof.
 | 03:30 | LD Alajuelense v CS Cartagines | Under 3.5 Goals | back | 1.17 | £46.72 | won | +£7.78 | C |
 | 06:45 | Newcastle Jets v Kashiwa | The Draw | back | 7.60 | £8.76 | open | - | T2 |
 | 07:00 | ASC v Bangalore Dream United | The Draw | back | 4.00 | £2.00 | open | - | T2 |
+| 07:35 | Newcastle Jets v Kashiwa | Kashiwa | back | 1.24 | £2.06 | open | - | T3 |
 
 Counting: an order is one trial order the one test filled; a market is one market however many orders it holds. The entry bar counts settled markets (at least 300 on 10 separate days); the drop at 300 counts settled orders; 'the bank took' counts bets after the bank's limits and stops.
 - T1 (BET): In football match result markets with under £5,000 matched two minutes before the start, back the favourite two minutes before the start and hold it to the result. 147 orders settled since 22 Nov (147 markets): +£1,334.19 on £4,654.17 staked at the market's stake, +28.7 per £100. The bank took 80 of these: +£608.37 on £1,818.40 staked, +33.5 per £100. To clear the entry bar: about 153 more markets and 7 more days (chance of a fluke 0.0006 against the bar 0.00089).
