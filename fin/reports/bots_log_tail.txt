@@ -1,14 +1,3 @@
-2026-11-20 09:35:06 ORB_IWM buy 78 IWM ~263.9 stop 262.63 target 276.6 -> 200
-2026-11-20 15:00:06 M7B sell 39 QQQM (QQQ move -3.66%) -> 200
-2026-11-20 15:51:14 K4 new ['PRE', 'FCUV', 'OMEX', 'FWDI', 'BUUU', 'RRGB', 'OCC', 'HELP', 'ABTC', 'ABX']
-2026-11-20 15:55:32 GET /positions/SVRA -> 404 {'code': 40410000, 'message': 'position does not exist'}
-2026-11-20 15:55:51 GET /positions/TDAY -> 404 {'code': 40410000, 'message': 'position does not exist'}
-2026-11-20 15:56:01 GET /positions/SVV -> 404 {'code': 40410000, 'message': 'position does not exist'}
-2026-11-20 15:56:15 GET /positions/GRRR -> 404 {'code': 40410000, 'message': 'position does not exist'}
-2026-11-20 15:56:25 GET /positions/AUNA -> 404 {'code': 40410000, 'message': 'position does not exist'}
-2026-11-20 15:56:30 GET /positions/NEWP -> 404 {'code': 40410000, 'message': 'position does not exist'}
-2026-11-20 15:56:38 GET /positions/MEI -> 404 {'code': 40410000, 'message': 'position does not exist'}
-2026-11-20 15:56:45 GET /positions/DMRC -> 404 {'code': 40410000, 'message': 'position does not exist'}
 2026-11-20 15:56:50 GET /positions/BGS -> 404 {'code': 40410000, 'message': 'position does not exist'}
 2026-11-20 15:56:55 GET /positions/XMAX -> 404 {'code': 40410000, 'message': 'position does not exist'}
 2026-11-20 15:58:02 GET /positions/QQQ -> 404 {'code': 40410000, 'message': 'position does not exist'}
@@ -58,3 +47,14 @@
 2026-11-24 09:35:06 ORB_SPY sell 92 SPY ~714.35 stop 715.43 target 703.55 -> 200
 2026-11-24 09:35:06 ORB_IWM buy 71 IWM ~265.4 stop 264.01 target 279.3 -> 200
 2026-11-24 15:00:05 M7B no signal -0.74%
+2026-11-24 15:50:03 K4 exit CUE
+2026-11-24 15:50:04 K4 exit SDOT
+2026-11-24 15:50:05 K4 exit PSIG
+2026-11-24 15:50:06 K4 exit IEP
+2026-11-24 15:50:07 K4 exit ATYR
+2026-11-24 15:50:08 K4 exit FBYD
+2026-11-24 15:50:09 K4 exit LVLU
+2026-11-24 15:50:09 K4 exit DNA
+2026-11-24 15:50:10 K4 exit FTH
+2026-11-24 15:50:11 K4 exit VIR
+2026-11-24 15:51:15 K4 new ['SA', 'DC', 'AIRO', 'USAU', 'AUNA', 'RUM', 'MNRO', 'CNL', 'ARQQ', 'CHA']
