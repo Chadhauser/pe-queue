@@ -214,3 +214,4 @@
 2026-11-24T05:20 BREAK: in-play tape stopped; bot process not running;
 2026-11-24T06:20 BREAK: bot process not running;
 2026-11-24T06:50 FIN BREAK+FIX: 23 Nov gap fade placed no orders - the whole-list price download at the open overran the 300s tick limit and the tick was killed silently (my 21 Nov change); now official prior closes are cached before the open, a fresh print finds candidates, official opens confirm only those (45s cap), every step logged; 37/37 PASS; sports untouched;
+2026-11-24T07:20 BREAK: bot process not running;
