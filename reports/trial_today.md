@@ -25,6 +25,11 @@ TRIAL, below the bar - not paper, not proof.
 | 07:35 | Newcastle Jets v Kashiwa | Kashiwa | back | 1.24 | £2.06 | open | - | T3 |
 | 07:50 | ASC v Bangalore Dream United | ASC | back | 1.95 | £6.04 | open | - | T3 |
 | 07:58 | ASC v Bangalore Dream United | ASC | back | 1.68 | £7.36 | open | - | T1 |
+| 08:58 | Agrobiznes Volochysk v FC Chernigiv | Agrobiznes Volochysk | back | 1.63 | £4.00 | open | - | T1 |
+| 09:00 | Daejeon Citizen v Beijing Guoan | The Draw | back | 5.10 | £26.57 | open | - | T2 |
+| 09:00 | Kyoto v Pohang Steelers | Kyoto | back | 1.83 | £5.03 | open | - | T2 |
+| 09:00 | Bodo/Glimt U19 v LASK Linz U19 | LASK Linz U19 | back | 1.58 | £9.00 | open | - | T2 |
+| 09:08 | Newcastle Jets v Kashiwa | Over 2.5 Goals | back | 1.30 | £44.17 | open | - | M6 |
 
 Counting: an order is one trial order the one test filled; a market is one market however many orders it holds. The entry bar counts settled markets (at least 300 on 10 separate days); the drop at 300 counts settled orders; 'the bank took' counts bets after the bank's limits and stops.
 - T1 (BET): In football match result markets with under £5,000 matched two minutes before the start, back the favourite two minutes before the start and hold it to the result. 147 orders settled since 22 Nov (147 markets): +£1,334.19 on £4,654.17 staked at the market's stake, +28.7 per £100. The bank took 80 of these: +£608.37 on £1,818.40 staked, +33.5 per £100. To clear the entry bar: about 153 more markets and 7 more days (chance of a fluke 0.0006 against the bar 0.00089).
