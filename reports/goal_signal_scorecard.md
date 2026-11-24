@@ -46,11 +46,15 @@ Looked at the 661 goals v2 called NORMAL or LOW just before, and the 5,882 HIGH 
 
 ## Day by day (rewritten 23:30 UK each night)
 
-| date | matches | calls | HIGH: goal within 10 | NORMAL | LOW | all minutes |
-|---|---|---|---|---|---|---|
-| 2026-11-21 | 264 | 23,197 | 23% (5,562) | 23% | 15% (5,807) | 21% |
-| 2026-11-22 | 174 | 16,614 | 25% (3,766) | 25% | 14% (4,638) | 22% |
-| 2026-11-23 | 63 | 6,034 | 15% (1,548) | 26% | 10% (1,464) | 19% |
+**Second version against the current one: 3 of 7 days, too early to call. LOW (points below normal): current +3.3 (10,556 calls), second +3.0 (10,617), difference -0.3 (range -0.6 to +0.1); late HIGH (points above normal): current +12.8 (1,394 calls), second +12.6 (1,385), difference -0.1 (range -1.4 to +1.0).**
+
+Second version = fitted on days before 21 Nov; no HIGH before the second half (so its HIGH is second half only); the over price not drifting measured over 5, 10 and 15 minutes, weighted more late on. Scored from the recorded ticks on the same calls; late HIGH = HIGH from minute 75, goal within 10 (calls).
+
+| date | matches | calls | HIGH: goal within 10 | NORMAL | LOW | late HIGH | 2nd version HIGH | 2nd NORMAL | 2nd LOW | 2nd late HIGH | all minutes |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-11-21 | 264 | 23,197 | 23% (5,562) | 23% | 15% (5,807) | 31% (699) | 27% (2,555) | 23% | 16% (5,587) | 30% (706) | 21% |
+| 2026-11-22 | 174 | 16,614 | 25% (3,766) | 25% | 14% (4,638) | 29% (481) | 30% (1,829) | 24% | 17% (3,840) | 30% (468) | 22% |
+| 2026-11-23 | 63 | 6,034 | 15% (1,548) | 26% | 10% (1,464) | 18% (214) | 18% (779) | 23% | 13% (1,190) | 18% (211) | 19% |
 
 ## Three matches, five minutes at a time
 
@@ -121,4 +125,4 @@ Goals (Betfair suspension times): 18' 1-0, 31' 1-1. On these lines: 0 right, 3 w
 | 41 | 1-1 | 24% **HIGH** | 15% | none | no goal | WRONG |
 | HT | | | | | | |
 
-_Built 2026-11-24 00:14 UTC by /root/pe-sports/goaltrade/sc_build.py + sc_report.py (session 22). Scorecard only._
+_Built 2026-11-24 07:34 UTC by /root/pe-sports/goaltrade/sc_build.py + sc_report.py (session 22). Scorecard only._
