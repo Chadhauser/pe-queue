@@ -1,4 +1,4 @@
-# Forward paper - Tuesday 24 November 2026, 18:40 UTC
+# Forward paper - Tuesday 24 November 2026, 19:10 UTC
 
 **Entry rule (from 21 Nov 2026, Peter's order):** a rule goes onto paper only if (a) it names in one plain sentence who is on the other side and why they keep paying; (b) it was found on one slice of dates, checked on a second and confirmed on a third it never touched, all three slices separate and in that order, profit after commission on the second and the third, and the third slice's chance of a fluke at or under 5% divided by the number of versions tried (the bar used: 0.05 / versions tried, so 100 versions tried needs 0.0005 or less); (c) it is a TRADE with a target, a stop as a percentage of the stake and a time limit, or it is clearly labelled a BET (held to the result); (d) it does not lay at 5.0 or longer; (e) it is exchange only (Betfair, Smarkets, Matchbook; never a bookmaker). Nothing else gets on. An empty paper book is the correct state until something passes.
 
