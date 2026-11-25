@@ -1,6 +1,6 @@
-# v3 forward paper (Pinnacle fair, Betfair price) — 2026-11-24 06:10 UTC
+# v3 forward paper (Pinnacle fair, Betfair price) — 2026-11-25 06:10 UTC
 
-Betfair markets recorded 1-3 min before the off: 368 (2026-11-17 19:00:00+00:00 to 2026-11-23 20:00:00+00:00). football-data rows refreshed: 2485; Pinnacle closing available up to 2026-01-14.
+Betfair markets recorded 1-3 min before the off: 448 (2026-11-17 19:00:00+00:00 to 2026-11-24 20:00:00+00:00). football-data rows refreshed: 2485; Pinnacle closing available up to 2026-01-14.
 Matched to a Pinnacle closing price this run: 0; new paper bets: 0.
 
 | rule | settled | won | £ at £2 | per £100 | first half £ | second half £ | towards 100 |
