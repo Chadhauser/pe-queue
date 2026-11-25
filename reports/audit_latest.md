@@ -1,4 +1,4 @@
-# Audit - 2026-11-24 03:40 UTC
+# Audit - 2026-11-25 03:40 UTC
 
 15 claims checked: 10 MATCH, 1 MISMATCH, 4 SWITCHED OFF (expected, job 698).
 
@@ -18,4 +18,4 @@
 | old sports team loop is off (698) | processes | **MATCH** |  |
 | old paper book (bookie paper orders) is off (698) | processes | **MATCH** |  |
 | watchman runs four times a day, not hourly (698) | crontab | **MATCH** |  |
-| the recorder wrote prices in the last 6 hours | book_snap | **MATCH** | 278555 |
+| the recorder wrote prices in the last 6 hours | book_snap | **MATCH** | 144093 |
