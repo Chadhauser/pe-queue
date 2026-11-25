@@ -22,11 +22,47 @@ DROPPED: T2 in loss (-555.54) after 300 settled orders; no new trial orders.
 | 08:58 | Mio Biwako Shiga v Kochi United | Kochi United | back | 2.44 | £12.25 | open | - | T1 |
 | 08:58 | Shan United v Thitsar Arman FC | Shan United | back | 1.18 | £50.00 | open | - | T1 |
 | 09:20 | Sagamihara v Ehime | The Draw | back | 3.95 | £15.50 | open | - | T3 |
-| 09:20 | Melbourne Victory v Viettel FC | Under 1.5 Goals | back | 1.20 | £50.00 | open | - | C |
+| 09:20 | Melbourne Victory v Viettel FC | Under 1.5 Goals | back | 1.20 | £50.00 | won | +£9.80 | C |
 | 09:28 | Vanraure Hachinohe v Albirex Niigata | Vanraure Hachinohe | back | 2.60 | £3.73 | open | - | T1 |
 | 09:28 | FC Imabari v Tegevajaro Miyazaki | Tegevajaro Miyazaki | back | 1.84 | £50.00 | open | - | T1 |
 | 09:28 | Sagamihara v Ehime | Ehime | back | 4.00 | £3.59 | open | - | T1 |
 | 09:28 | Samgurali Tskaltubo v Torpedo Kutaisi | Torpedo Kutaisi | back | 2.40 | £3.96 | open | - | T1 |
+| 09:50 | Tochigi Uva FC v Blaublitz Akita | Tochigi UVA FC | back | 2.66 | £50.00 | open | - | T3 |
+| 09:50 | Tosu v Oita | Oita | back | 5.50 | £13.37 | open | - | T3 |
+| 09:50 | Tosu v Oita | The Draw | back | 3.80 | £50.00 | open | - | T3 |
+| 09:50 | Jef Utd Chiba v Nagoya | Nagoya | back | 2.30 | £50.00 | open | - | T3 |
+| 09:50 | Jef Utd Chiba v Nagoya | Jef Utd Chiba | back | 3.45 | £50.00 | open | - | T3 |
+| 09:50 | Mito v Tokyo-V | The Draw | back | 3.00 | £50.00 | open | - | T3 |
+| 09:50 | Iwaki SC v Toyama | Iwaki SC | back | 1.95 | £7.22 | open | - | T3 |
+| 09:50 | Nagasaki v Kawasaki | The Draw | back | 4.40 | £5.27 | open | - | T3 |
+| 09:50 | Nagasaki v Kawasaki | Nagasaki | back | 4.50 | £50.00 | open | - | T3 |
+| 09:50 | Fukuoka v Yokohama FM | Fukuoka | back | 3.10 | - | skipped: would put more than 20% of the bank at risk | - | T3 |
+| 09:50 | G-Osaka v Port FC | G-Osaka | back | 1.36 | £14.85 | open | - | T3 |
+| 09:50 | Kashima v Jeonbuk Motors | The Draw | back | 4.80 | £5.22 | open | - | T3 |
+| 09:50 | Shonan v Kofu | The Draw | back | 4.30 | - | skipped: would put more than 20% of the bank at risk | - | T3 |
+| 09:50 | Renofa Yamaguchi v Fukushima Utd | Fukushima Utd | back | 4.00 | - | skipped: would put more than 20% of the bank at risk | - | T3 |
+| 09:50 | Kamatamare Sanuki v Tottori | Kamatamare Sanuki | back | 2.68 | £2.00 | open | - | T3 |
+| 09:50 | Kamatamare Sanuki v Tottori | Tottori | back | 2.86 | £16.00 | open | - | T3 |
+| 09:50 | FC Osaka v Tochigi SC | The Draw | back | 3.25 | £3.41 | open | - | T3 |
+| 09:50 | Nagano Parceiro v Kagoshima Utd | Kagoshima Utd | back | 2.18 | - | skipped: would put more than 20% of the bank at risk | - | T3 |
+| 09:50 | SK Sigma Olomouc U19 v FC Banik Ostrava U19 | The Draw | back | 4.60 | £2.61 | open | - | T3 |
+| 09:50 | SK Sigma Olomouc U19 v FC Banik Ostrava U19 | SK Sigma Olomouc U19 | back | 1.84 | £2.10 | open | - | T3 |
+| 09:50 | SK Sigma Olomouc U19 v FC Banik Ostrava U19 | FC Banik Ostrava U19 | back | 3.60 | - | skipped: would put more than 20% of the bank at risk | - | T3 |
+| 09:58 | Jef Utd Chiba v Nagoya | Nagoya | back | 2.28 | - | skipped: would put more than 20% of the bank at risk | - | T1 |
+| 09:58 | Mito v Tokyo-V | Tokyo-V | back | 2.70 | - | skipped: would put more than 20% of the bank at risk | - | T1 |
+| 09:58 | Yokohama FC v Sendai | Sendai | back | 2.40 | - | skipped: would put more than 20% of the bank at risk | - | T1 |
+| 09:58 | Iwaki SC v Toyama | Iwaki SC | back | 1.94 | - | skipped: would put more than 20% of the bank at risk | - | T1 |
+| 09:58 | Kashima v Jeonbuk Motors | Kashima | back | 1.54 | - | skipped: would put more than 20% of the bank at risk | - | T1 |
+| 09:58 | Shonan v Kofu | Shonan | back | 1.63 | - | skipped: would put more than 20% of the bank at risk | - | T1 |
+| 09:58 | Omiya v Tokushima | Omiya | back | 2.02 | - | skipped: would put more than 20% of the bank at risk | - | T1 |
+| 09:58 | FC Gifu v Thespakusatsu Gunma | FC Gifu | back | 1.47 | - | skipped: would put more than 20% of the bank at risk | - | T1 |
+| 09:58 | Renofa Yamaguchi v Fukushima Utd | Renofa Yamaguchi | back | 1.93 | - | skipped: would put more than 20% of the bank at risk | - | T1 |
+| 09:58 | Kamatamare Sanuki v Tottori | Kamatamare Sanuki | back | 2.70 | - | skipped: would put more than 20% of the bank at risk | - | T1 |
+| 09:58 | FC Osaka v Tochigi SC | FC Osaka | back | 2.50 | - | skipped: would put more than 20% of the bank at risk | - | T1 |
+| 09:58 | Nara Club v Matsumoto | Matsumoto | back | 2.62 | - | skipped: would put more than 20% of the bank at risk | - | T1 |
+| 09:58 | Nagano Parceiro v Kagoshima Utd | Kagoshima Utd | back | 2.20 | - | skipped: would put more than 20% of the bank at risk | - | T1 |
+| 09:58 | SK Sigma Olomouc U19 v FC Banik Ostrava U19 | SK Sigma Olomouc U19 | back | 1.84 | - | skipped: would put more than 20% of the bank at risk | - | T1 |
+| 09:58 | Plzen U19 v Sparta Prague U19 | Plzen U19 | back | 1.83 | - | skipped: would put more than 20% of the bank at risk | - | T1 |
 
 Counting: an order is one trial order the one test filled; a market is one market however many orders it holds. The entry bar counts settled markets (at least 300 on 10 separate days); the drop at 300 counts settled orders; 'the bank took' counts bets after the bank's limits and stops.
 - T1 (BET): In football match result markets with under £5,000 matched two minutes before the start, back the favourite two minutes before the start and hold it to the result. 199 orders settled since 22 Nov (199 markets): +£1,614.76 on £6,407.07 staked at the market's stake, +25.2 per £100. The bank took 113 of these: +£754.80 on £2,631.78 staked, +28.7 per £100. To clear the entry bar: about 101 more markets and 7 more days (chance of a fluke 0.0006 against the bar 0.00089).
@@ -37,7 +73,7 @@ Counting: an order is one trial order the one test filled; a market is one marke
 - M6 (BET): Football over/under 2.5 goals, in play 80 min after the scheduled start: back what the market rates at 75-80% and hold it to the result (calibration map, run 19). 30 orders settled since 22 Nov (30 markets): +£288.39 on £1,306.68 staked at the market's stake, +22.1 per £100. The bank took 15 of these: +£105.63 on £588.36 staked, +18.0 per £100. To clear the entry bar: about 270 more markets and 6 more days (chance of a fluke 0.0001 against the bar 3e-07).
 - M7 (BET): Football over/under 2.5 goals, in play 80 min after the scheduled start: back what the market rates at 80-85% and hold it to the result (calibration map, run 19). 15 orders settled since 22 Nov (15 markets): +£126.86 on £663.72 staked at the market's stake, +19.1 per £100. The bank took 10 of these: +£67.20 on £369.84 staked, +18.2 per £100. To clear the entry bar: too few to test (every market so far has won, so there is no spread to judge a fluke by); needs at least 300 markets on 10 days.
 - I8 (BET): Football in play, about the 73rd minute (90 minutes after the off): when the over/under line is ONE goal away, back the UNDER if the market rates it 55-90% (price 1.11-1.82), and hold it to the result (in-play map, session 21, form A). 0 orders settled since 22 Nov (0 markets): £0.00 on £0.00 staked at the market's stake, - per £100. The bank took 0 of these: £0.00 on £0.00 staked, - per £100. To clear the entry bar: not enough markets yet to say.
-- **LATE UNDER, READ FIRST (2026-11-25): over 2.5 goals was rated 47.1% at kick-off and happened 50.0% in 4 of 6 matches with a result (+2.9 points, chance alone about ±24): too few matches yet to say whether goals ran high or low.**
+- **LATE UNDER, READ FIRST (2026-11-25): over 2.5 goals was rated 49.0% at kick-off and happened 40.0% in 5 of 32 matches with a result (-9.0 points, chance alone about ±22): too few matches yet to say whether goals ran high or low.**
 - Earlier days (kick-off rated / happened): 22 Nov 56% / 55% on 212 (-1); 23 Nov 55% / 54% on 96 (-1); 24 Nov 58% / 52% on 122 (-6). On 14-21 Nov, the week these rules were measured, it was 55% / 52% (-2.5) on 1,001 matches settled by Betfair; inplay.md said 54% / 46% because it left out 113 matches it could not settle, 112 of them overs. The same gap dropped 27 form A bets; the 20 Betfair has settled all lost, so A measured +9.7 per £100 on those matches, not +14.0.
 - Score reading at the bets' moments (correct-score market): the settled lines agree on 281 of 282 readable, the score feed on 201 of 201 with one (feeds run 1-2 min behind).
 - The 5-second bet delay (form A): 39 of 127 bets could be checked on the stream, 1 of them would have missed (not counted); checked bets: 38 settled, +12.9 per £100; the rest are taken at the price on offer, unchecked: 88 settled, +14.0 per £100.
@@ -45,6 +81,6 @@ Counting: an order is one trial order the one test filled; a market is one marke
 - A+P (BET): Football in play, minutes 65-90, when an over/under line is ONE goal away, back the UNDER if it is rated 55-90%, one bet a match, held to the result, only where the goal predictor scores the match and not when it is in its bands 8-10 (in-play map, session 21, score read from the correct-score market). 38 orders settled since 24 Nov (38 markets): +£54.20 on £1,000.05 staked at the market's stake, +5.4 per £100. The bank took 5 of these: +£64.00 on £109.30 staked, +58.6 per £100. To clear the entry bar: about 6,197 more markets and 8 more days (chance of a fluke 0.3617 against the bar 2.5e-06).
 - A+P+S (TRADE): Football in play, minutes 65-90, when an over/under line is ONE goal away, back the UNDER if it is rated 55-90%, one bet a match, only where the goal predictor scores the match and not when it is in its bands 8-10, closed at a loss of 20% of the stake if a later sweep offers it, else held to the result (in-play map, session 21, score read from the correct-score market). 38 orders settled since 24 Nov (38 markets): -£7.64 on £1,000.05 staked at the market's stake, -0.8 per £100. The bank took 0 of these: £0.00 on £0.00 staked, - per £100. To clear the entry bar: never at the current rate (not in profit so far).
 - B (BET): Football in play, minutes 75-90, when an over/under line is ONE goal away, back the UNDER if it is rated 60-90%, one bet a match, held to the result (in-play map, session 21, score read from the correct-score market). 111 orders settled since 24 Nov (111 markets): +£232.40 on £3,010.48 staked at the market's stake, +7.7 per £100. The bank took 6 of these: +£37.97 on £80.23 staked, +47.3 per £100. To clear the entry bar: about 2,301 more markets and 8 more days (chance of a fluke 0.1642 against the bar 2.5e-06).
-- C (BET): Football in play, minutes 65-90, when an over/under line is TWO goals away, back the UNDER if it is rated 80-97%, one bet a match, held to the result (in-play map, session 21, score read from the correct-score market). 122 orders settled since 24 Nov (122 markets): +£234.34 on £4,986.20 staked at the market's stake, +4.7 per £100. The bank took 56 of these: +£83.52 on £1,830.74 staked, +4.6 per £100. To clear the entry bar: about 1,447 more markets and 8 more days (chance of a fluke 0.1019 against the bar 2.5e-06).
-- C+S (TRADE): Football in play, minutes 65-90, when an over/under line is TWO goals away, back the UNDER if it is rated 80-97%, one bet a match, closed at a loss of 20% of the stake if a later sweep offers it, else held to the result (in-play map, session 21, score read from the correct-score market). 122 orders settled since 24 Nov (122 markets): +£92.93 on £4,986.20 staked at the market's stake, +1.9 per £100. The bank took 0 of these: £0.00 on £0.00 staked, - per £100. To clear the entry bar: about 8,063 more markets and 8 more days (chance of a fluke 0.2890 against the bar 2.5e-06).
-All together (the same bet once, bank limits on): today +£60.61 on 12 settled, since 22 Nov +£550.08 on 414 settled; £2,000 bank now £2,550.08.
+- C (BET): Football in play, minutes 65-90, when an over/under line is TWO goals away, back the UNDER if it is rated 80-97%, one bet a match, held to the result (in-play map, session 21, score read from the correct-score market). 123 orders settled since 24 Nov (123 markets): +£244.14 on £5,036.20 staked at the market's stake, +4.8 per £100. The bank took 57 of these: +£93.32 on £1,880.74 staked, +5.0 per £100. To clear the entry bar: about 1,338 more markets and 8 more days (chance of a fluke 0.0930 against the bar 2.5e-06).
+- C+S (TRADE): Football in play, minutes 65-90, when an over/under line is TWO goals away, back the UNDER if it is rated 80-97%, one bet a match, closed at a loss of 20% of the stake if a later sweep offers it, else held to the result (in-play map, session 21, score read from the correct-score market). 123 orders settled since 24 Nov (123 markets): +£102.73 on £5,036.20 staked at the market's stake, +2.0 per £100. The bank took 0 of these: £0.00 on £0.00 staked, - per £100. To clear the entry bar: about 6,651 more markets and 8 more days (chance of a fluke 0.2696 against the bar 2.5e-06).
+All together (the same bet once, bank limits on): today +£70.41 on 13 settled, since 22 Nov +£559.88 on 415 settled; £2,000 bank now £2,559.88.
