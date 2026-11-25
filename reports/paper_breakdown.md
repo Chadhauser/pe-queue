@@ -1,4 +1,4 @@
-# Paper record: trades against bets - Wed 25 Nov 2026 07:10 UK
+# Paper record: trades against bets - Wed 25 Nov 2026 07:40 UK
 
 Counted from the restart (21 Nov 2026 18:40 UK) only. Slate cleared 21 Nov 2026 18:31 UK; the earlier record is archived, not shown.
 
