@@ -242,3 +242,4 @@
 2026-11-25T08:20 BREAK: bot process not running;
 2026-11-25T09:20 BREAK: bot process not running;
 2026-11-25T10:20 BREAK: bot process not running;
+2026-11-25T11:20 BREAK: no bot bets in 6 hours while football is on (65 match-odds markets on the tape); snooker silent 6 hours on ip_tape; bot process not running;
