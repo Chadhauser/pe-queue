@@ -1,8 +1,3 @@
-2026-11-24 09:35:05 ORB sell 53 QQQ ~639.28 stop 641.16 target 620.48 -> 200
-2026-11-24 09:35:06 ORB_SPY sell 92 SPY ~714.35 stop 715.43 target 703.55 -> 200
-2026-11-24 09:35:06 ORB_IWM buy 71 IWM ~265.4 stop 264.01 target 279.3 -> 200
-2026-11-24 15:00:05 M7B no signal -0.74%
-2026-11-24 15:50:03 K4 exit CUE
 2026-11-24 15:50:04 K4 exit SDOT
 2026-11-24 15:50:05 K4 exit PSIG
 2026-11-24 15:50:06 K4 exit IEP
@@ -58,3 +53,8 @@
 2026-11-25 15:55:32 GET /positions/DRTS -> 404 {'code': 40410000, 'message': 'position does not exist'}
 2026-11-25 15:55:32 GET /positions/RELL -> 404 {'code': 40410000, 'message': 'position does not exist'}
 2026-11-25 15:55:34 GET /positions/AIP -> 404 {'code': 40410000, 'message': 'position does not exist'}
+2026-11-25 15:58:02 GET /positions/QQQ -> 404 {'code': 40410000, 'message': 'position does not exist'}
+2026-11-25 15:58:03 GET /positions/SPY -> 404 {'code': 40410000, 'message': 'position does not exist'}
+2026-11-25 15:58:03 GET /positions/IWM -> 404 {'code': 40410000, 'message': 'position does not exist'}
+2026-11-25 15:58:04 E1S {'note': 'no FOMC next (2026-11-27)'}
+2026-11-25 15:59:14 GET /positions/QQQM -> 404 {'code': 40410000, 'message': 'position does not exist'}
