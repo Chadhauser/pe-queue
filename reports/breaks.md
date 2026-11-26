@@ -275,3 +275,4 @@
 2026-11-26T17:20 BREAK: no bot bets in 6 hours while football is on (52 match-odds markets on the tape); ice_hockey silent 6 hours on ip_tape; bot process not running;
 2026-11-26T18:20 BREAK: no bot bets in 6 hours while football is on (67 match-odds markets on the tape); ice_hockey silent 6 hours on ip_tape; bot process not running;
 2026-11-26T19:10 FIN CHANGE: opening-break fills had slowed to 1-4 minutes since 23 Nov (24 Nov two losses about 2x planned); entry is now a plain market order and the stop+target pair is placed from the real fill, surplus shares sold so risk is the planned 100 dollars, closed at once if filled beyond the stop, plain-stop fallback if the pair is refused; 41/41 PASS; first live run 27 Nov; sports untouched;
+2026-11-26T19:20 BREAK: no bot bets in 6 hours while football is on (66 match-odds markets on the tape); ice_hockey silent 6 hours on ip_tape; bot process not running;
