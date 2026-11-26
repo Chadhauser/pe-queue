@@ -1,0 +1,39 @@
+2026-11-24 09:31:00 K2 entry started
+2026-11-24 09:31:07 K2 gap source: official open; 22 first-pass names, 3 qualify
+2026-11-24 09:31:08 K2 scanned 1627 legs [('DMAC', 'sell'), ('ONT', 'buy'), ('MPLT', 'sell')]
+2026-11-24 09:35:05 ORB sell 53 QQQ ~639.28 stop 641.16 target 620.48 -> 200
+2026-11-24 09:35:06 ORB_SPY sell 92 SPY ~714.35 stop 715.43 target 703.55 -> 200
+2026-11-24 09:35:06 ORB_IWM buy 71 IWM ~265.4 stop 264.01 target 279.3 -> 200
+2026-11-24 15:58:13 E1S {'note': 'no FOMC next (2026-11-25)'}
+1
+2026-11-19 09:30:37 FLATTEN FAILED IWM: still open after 8 tries
+2026-11-24 ORB {'side': 'sell', 'qty': 53, 'ref': 639.28, 'stop': 641.16, 'R': 1.88, 'range': [636.76, 641.16]}
+    sell market qty 53 filled 53 @ 637.533396 stop None limit None filled 14:36:21
+      buy limit qty 53 filled 0 @ None stop None limit 620.48 canceled 
+      buy stop qty 53 filled 53 @ 641.386415 stop 641.16 limit None filled 14:45:59
+2026-11-24 ORB_SPY {'side': 'sell', 'qty': 92, 'ref': 714.35, 'stop': 715.43, 'R': 1.08, 'range': [712.165, 715.43]}
+    sell market qty 92 filled 92 @ 713.517717 stop None limit None filled 14:36:24
+      buy limit qty 92 filled 0 @ None stop None limit 703.55 canceled 
+      buy stop qty 92 filled 92 @ 715.271087 stop 715.43 limit None filled 14:40:42
+2026-11-24 ORB_IWM {'side': 'buy', 'qty': 71, 'ref': 265.4, 'stop': 264.01, 'R': 1.39, 'range': [264.01, 265.4]}
+    buy market qty 71 filled 71 @ 265.35 stop None limit None filled 14:35:30
+      sell limit qty 71 filled 0 @ None stop None limit 279.3 canceled 
+      sell stop qty 71 filled 0 @ None stop 264.01 limit None canceled 
+    sell market qty 71 filled 71 @ 267.390986 stop None limit None filled 20:58:12
+2026-11-25 ORB {'side': 'sell', 'qty': 19, 'ref': 612.665, 'stop': 617.68, 'R': 5.015, 'range': [612.665, 617.68]}
+    sell market qty 19 filled 19 @ 611.96421 stop None limit None filled 14:36:44
+      buy limit qty 19 filled 0 @ None stop None limit 562.52 canceled 
+      buy stop qty 19 filled 19 @ 617.61 stop 617.68 limit None filled 14:58:51
+2026-11-25 ORB_SPY {'side': 'sell', 'qty': 28, 'ref': 699.82, 'stop': 703.31, 'R': 3.49, 'range': [699.82, 703.31]}
+    sell market qty 28 filled 28 @ 699.447143 stop None limit None filled 14:36:53
+      buy limit qty 28 filled 0 @ None stop None limit 664.92 canceled 
+      buy stop qty 28 filled 28 @ 703.326071 stop 703.31 limit None filled 14:59:10
+2026-11-25 ORB_IWM {'side': 'sell', 'qty': 94, 'ref': 262.44, 'stop': 263.5, 'R': 1.06, 'range': [262.435, 263.5]}
+    sell market qty 94 filled 94 @ 262.124043 stop None limit None filled 14:35:54
+      buy limit qty 94 filled 0 @ None stop None limit 251.84 canceled 
+      buy stop qty 94 filled 94 @ 263.56 stop 263.5 limit None filled 15:35:54
+K4 closed 29 wins 10 total -231.49 avg r5 at entry -0.387 open 50
+{'2026-11-16': (9, -100.7, 3), '2026-11-17': (10, 171.32, 4), '2026-11-18': (10, -302.11, 3)}
+equity 98452.78
+open positions 66 intraday funds held: []
+exit=0 secs=1
