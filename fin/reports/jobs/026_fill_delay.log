@@ -1,0 +1,28 @@
+2026-11-17 ORB      sell sent 14:35:12 filled 14:35:16 delay    4s | planned 660.89 got 661.128 | cost -0.11 of planned risk | risk actually taken 0.89x | result $ -95.99
+2026-11-17 ORB_SPY  sell sent 14:35:14 filled 14:35:16 delay    2s | planned 737.69 got 737.94 | cost -0.22 of planned risk | risk actually taken 0.78x | result $ -87.22
+2026-11-17 gap-fade entries: 7 median delay 107s max 189s
+2026-11-18 ORB      sell sent 14:35:11 filled 14:35:16 delay    6s | planned 660.065 got 659.676 | cost +0.18 of planned risk | risk actually taken 1.18x | result $ -124.39
+2026-11-18 ORB_IWM  buy  sent 14:35:14 filled 14:35:15 delay    1s | planned 269.02 got 269.3 | cost +0.25 of planned risk | risk actually taken 1.25x | result $ None
+2026-11-18 gap-fade entries: 10 median delay 147s max 207s
+2026-11-19 ORB      buy  sent 14:35:13 filled 14:35:19 delay    7s | planned 674.68 got 674.255 | cost -0.11 of planned risk | risk actually taken 0.89x | result $ -74.05
+2026-11-19 ORB_SPY  buy  sent 14:35:14 filled 14:35:19 delay    5s | planned 739.21 got 739.06 | cost -0.08 of planned risk | risk actually taken 0.92x | result $ -98.8
+2026-11-19 ORB_IWM  buy  sent 14:35:16 filled 14:35:27 delay   12s | planned 271.475 got 271.309 | cost -0.24 of planned risk | risk actually taken 0.76x | result $ -76.52
+2026-11-19 gap-fade entries: 8 median delay 184s max 196s
+2026-11-20 ORB      sell sent 14:35:11 filled 14:35:18 delay    7s | planned 635 got 635.96 | cost -0.27 of planned risk | risk actually taken 0.73x | result $ -70.09
+2026-11-20 ORB_SPY  sell sent 14:35:12 filled 14:35:19 delay    6s | planned 712.05 got 712.758 | cost -0.44 of planned risk | risk actually taken 0.56x | result $ -64.18
+2026-11-20 ORB_IWM  buy  sent 14:35:14 filled 14:35:17 delay    3s | planned 263.9 got 264.12 | cost +0.17 of planned risk | risk actually taken 1.17x | result $ -119.69
+2026-11-20 gap-fade entries: 10 median delay 150s max 215s
+2026-11-23 ORB      sell sent 14:35:15 filled 14:38:16 delay  181s | planned 648.35 got 646.49 | cost +0.24 of planned risk | risk actually taken 1.24x | result $ -124.67
+2026-11-23 ORB_SPY  sell sent 14:35:17 filled 14:38:50 delay  213s | planned 718.75 got 718.097 | cost +0.11 of planned risk | risk actually taken 1.11x | result $ -110.02
+2026-11-23 ORB_IWM  sell sent 14:35:19 filled 14:39:18 delay  239s | planned 264.5 got 264.53 | cost -0.02 of planned risk | risk actually taken 0.98x | result $ -85.14
+2026-11-24 ORB      sell sent 14:35:11 filled 14:36:21 delay   70s | planned 639.28 got 637.533 | cost +0.93 of planned risk | risk actually taken 1.93x | result $ -204.21
+2026-11-24 ORB_SPY  sell sent 14:35:12 filled 14:36:24 delay   71s | planned 714.35 got 713.518 | cost +0.77 of planned risk | risk actually taken 1.77x | result $ -161.31
+2026-11-24 ORB_IWM  buy  sent 14:35:14 filled 14:35:30 delay   16s | planned 265.4 got 265.35 | cost -0.04 of planned risk | risk actually taken 0.96x | result $ 144.91
+2026-11-24 gap-fade entries: 3 median delay 220s max 268s
+2026-11-25 ORB      sell sent 14:35:12 filled 14:36:44 delay   93s | planned 612.665 got 611.964 | cost +0.14 of planned risk | risk actually taken 1.14x | result $ -107.27
+2026-11-25 ORB_SPY  sell sent 14:35:13 filled 14:36:53 delay  100s | planned 699.82 got 699.447 | cost +0.11 of planned risk | risk actually taken 1.11x | result $ -108.61
+2026-11-25 ORB_IWM  sell sent 14:35:14 filled 14:35:54 delay   40s | planned 262.44 got 262.124 | cost +0.30 of planned risk | risk actually taken 1.30x | result $ -134.98
+2026-11-25 gap-fade entries: 11 median delay 157s max 292s
+
+opening break entries 19 | average cost of the delay +0.09 of planned risk a trade | median delay 12s | average risk actually taken 1.09x planned
+exit=0 secs=7
