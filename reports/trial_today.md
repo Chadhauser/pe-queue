@@ -46,6 +46,8 @@ DROPPED: T2 in loss (-555.54) after 300 settled orders; no new trial orders.
 | 04:46 | Monterrey v CF America | Under 1.5 Goals | back | 1.21 | £20.29 | won | +£4.18 | C |
 | 04:56 | Monterrey v CF America | Under 0.5 Goals | back | 1.64 | £50.00 | won | +£31.36 | A |
 | 06:58 | AC Taipei v Hang Yuen FC | Hang Yuen FC | back | 2.00 | £50.00 | open | - | T1 |
+| 08:20 | Pusamania Borneo FC v Persita Tangerang | The Draw | back | 3.65 | £11.74 | open | - | T3 |
+| 08:20 | Persiba Bantul v Persinga Ngawi | Persiba Bantul | back | 2.14 | £3.50 | open | - | T3 |
 
 Counting: an order is one trial order the one test filled; a market is one market however many orders it holds. The entry bar counts settled markets (at least 300 on 10 separate days); the drop at 300 counts settled orders; 'the bank took' counts bets after the bank's limits and stops.
 - T1 (BET): In football match result markets with under £5,000 matched two minutes before the start, back the favourite two minutes before the start and hold it to the result. 256 orders settled since 22 Nov (256 markets): +£2,429.45 on £8,081.71 staked at the market's stake, +30.1 per £100. The bank took 133 of these: +£1,099.67 on £3,092.46 staked, +35.6 per £100. To clear the entry bar: about 44 more markets and 5 more days (chance of a fluke 0.0000 against the bar 0.00089).
