@@ -6,6 +6,7 @@
 #   ORB  — QQQ  5-min opening range: candle direction 09:30-09:35, bracket stop at range edge, target 10R, $100 risk, flat 2 min before close
 #   M7B  — signal on QQQ 09:30->15:00 move >= 1.5%  -> trade QQQM WITH it, $10,000 notional, 15:00 -> flat 1 min before close (16:00 days only)
 #   K2   — small-cap overnight gap >= 5% (official open vs official prior close) faded at 09:31, $500/name, max 30, flat 5 min before close
+#   ORB  — entry is a plain market order; the stop and target go on once it has filled, sized so the real risk is $100 (26 Nov)
 #   K7   — heavily traded small-cap up >= 25% over 20 days, sold short 15:52, $500/name, max 10/day, bought back on the 5th trading day
 #   K4   — small-cap down >= 15% over 5 trading days, bought 15:50, $500/name, max 10/day, sold on the 5th trading day
 #   ORB_SPY / ORB_IWM — the same ORB rule on SPY and IWM (M23/M24: WORKS AT SMALL SIZE on the backtest)
@@ -170,13 +171,49 @@ def orb_entry(st, day, op, sym='QQQ', key='ORB'):
     side = 1 if c > o else -1; stop = lo if side > 0 else hi; R = abs(c - stop)
     if R <= 0: st[key] = dict(note='zero range'); return
     qty = max(1, int(100.0 // R)); tgt = round(c + side * 10 * R, 2)
+    # 26 Nov: plain entry, then orb_protect() sets the stop and target from the REAL fill (late fills had doubled the risk on 24 Nov)
     order = {'symbol': sym, 'qty': str(qty), 'side': 'buy' if side > 0 else 'sell', 'type': 'market', 'time_in_force': 'day',
-             'order_class': 'bracket', 'take_profit': {'limit_price': str(tgt)}, 'stop_loss': {'stop_price': str(round(stop, 2))},
              'client_order_id': f'orb-{sym}-{day:%Y%m%d}'}
     sc, res = api('POST', '/orders', json=order)
     st[key] = dict(side=order['side'], qty=qty, ref=c, range=[lo, hi], R=round(R, 4), stop=round(stop, 2), target=tgt, status=sc,
-                     order_id=res.get('id') if isinstance(res, dict) else None)
+                     order_id=res.get('id') if isinstance(res, dict) else None, protected=False, sym=sym)
     log(f"{key} {order['side']} {qty} {sym} ~{c} stop {stop:.2f} target {tgt} -> {sc}")
+
+ORB_KEYS = (('QQQ', 'ORB'), ('SPY', 'ORB_SPY'), ('IWM', 'ORB_IWM'))
+def orb_unprotected(st): return [k for _, k in ORB_KEYS if st.get(k, {}).get('order_id') and st[k].get('protected') is False]
+def orb_protect(st, day):
+    """Once an opening-break entry has really filled: (1) if the fill is already beyond the stop, close it; (2) if the fill is worse
+    than planned, sell the surplus shares so the money at risk is the planned $100; (3) place the stop and the target as one
+    cancels-the-other order for what is left. Runs every tick until each trade is protected."""
+    for sym, key in ORB_KEYS:
+        k = st.get(key, {})
+        if not k.get('order_id') or k.get('protected') is not False: continue
+        sc, o = api('GET', f"/orders/{k['order_id']}")
+        if sc != 200 or o.get('status') != 'filled' or not o.get('filled_avg_price'):
+            if sc == 200 and o.get('status') in ('canceled', 'expired', 'rejected'): k['protected'] = 'entry ' + o['status']
+            continue
+        sgn = 1 if k['side'] == 'buy' else -1; fill = float(o['filled_avg_price']); risk = sgn * (fill - k['stop']); k['fill'] = round(fill, 4); exit_side = 'sell' if sgn > 0 else 'buy'
+        if risk <= 0:
+            flatten(sym); k['protected'] = 'filled beyond the stop: closed'; log(f"{key} PROTECT fill {fill} already beyond stop {k['stop']}: closed"); continue
+        left = k.get('qty_left')
+        if left is None:
+            left = max(1, min(k['qty'], int(100.0 // risk))); trim = k['qty'] - left
+            if trim > 0:
+                sc2, r2 = api('POST', '/orders', json={'symbol': sym, 'qty': str(trim), 'side': exit_side, 'type': 'market', 'time_in_force': 'day', 'client_order_id': f'orbtrim-{sym}-{day:%Y%m%d}'})
+                if sc2 >= 300: log(f'{key} PROTECT trim refused {sc2}'); continue
+            k['qty_left'] = left; k['trim'] = trim
+        sc3, r3 = api('POST', '/orders', json={'symbol': sym, 'qty': str(left), 'side': exit_side, 'type': 'limit', 'time_in_force': 'day', 'limit_price': str(k['target']),
+                                                'order_class': 'oco', 'take_profit': {'limit_price': str(k['target'])}, 'stop_loss': {'stop_price': str(k['stop'])},
+                                                'client_order_id': f'orboco-{sym}-{day:%Y%m%d}-{now():%H%M%S}'})
+        if sc3 < 300: k['protected'] = True; k['oco_id'] = r3.get('id') if isinstance(r3, dict) else None
+        else:
+            k['protect_tries'] = k.get('protect_tries', 0) + 1
+            if k['protect_tries'] >= 2:                                    # the pair keeps being refused: a plain stop is better than no stop
+                sc4, r4 = api('POST', '/orders', json={'symbol': sym, 'qty': str(left), 'side': exit_side, 'type': 'stop', 'time_in_force': 'day', 'stop_price': str(k['stop']),
+                                                        'client_order_id': f'orbstop-{sym}-{day:%Y%m%d}-{now():%H%M%S}'})
+                if sc4 < 300: k['protected'] = 'plain stop only (stop+target pair refused)'
+                log(f'{key} PROTECT FALLBACK plain stop -> {sc4}')
+        log(f"{key} PROTECT fill {fill} risk {risk / k['R']:.2f}x planned, kept {left} of {k['qty']} shares, stop/target order -> {sc3}")
 
 def m7b_entry(st, day, op):
     b = bars_1m('QQQ', op, op + dt.timedelta(minutes=1))
@@ -409,6 +446,13 @@ def tick():
     if C.get('K2'):  run('K2_entry', op + dt.timedelta(minutes=1), op + dt.timedelta(minutes=15), lambda: k2_entry(st, day, op))
     for sym, key in (('QQQ', 'ORB'), ('SPY', 'ORB_SPY'), ('IWM', 'ORB_IWM')):
         if C.get(key): run(f'{key}_entry', op + dt.timedelta(minutes=5, seconds=5), op + dt.timedelta(minutes=30), lambda s_=sym, k_=key: orb_entry(st, day, op, s_, k_))
+    if orb_unprotected(st) and now() < cl - dt.timedelta(minutes=3):
+        for _ in range(8):                                                 # right after the entries, then again every minute
+            try: orb_protect(st, day)
+            except Exception: log('ORB PROTECT ERROR ' + traceback.format_exc()[-400:])
+            jsave(sp, st)
+            if not orb_unprotected(st): break
+            sleep(4)
     if C.get('M7B') and cl.time() == dt.time(16, 0):
         run('M7B_entry', at(day, 15, 0, 5), at(day, 15, 20), lambda: m7b_entry(st, day, op))
     if C.get('K4') and cl.time() == dt.time(16, 0):

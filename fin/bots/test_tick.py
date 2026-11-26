@@ -10,7 +10,7 @@ def check(name, ok, got=''): RES.append((name, ok, got)); print(('PASS ' if ok e
 
 class Fake:
     def __init__(s, clock, prices, half=False, disk=100.0):
-        s.clock = clock; s.px = prices; s.orders = []; s.pos = {}; s.half = half; s.disk = disk; s.n = 0; s.held = {}; s.stuck = set(); s.slow = 0; s.pend = {}
+        s.clock = clock; s.px = prices; s.orders = []; s.pos = {}; s.half = half; s.disk = disk; s.n = 0; s.held = {}; s.stuck = set(); s.slow = 0; s.pend = {}; s.oco = []; s.entry_px = {}; s.stops = []
     def fill(s, sym, side, qty, coid=''):
         p = s.px(sym, s.clock[0]); s.n += 1
         o = dict(id=f'o{s.n}', t=s.clock[0], symbol=sym, side=side, filled_qty=str(qty), filled_avg_price=str(p), client_order_id=coid, status='filled', legs=[])
@@ -31,6 +31,13 @@ class Fake:
         if method == 'POST' and path == '/orders':
             j = kw['json']
             if j['symbol'] in getattr(s, 'reject', ()): return 422, {'message': 'asset cannot be sold short'}
+            if j.get('order_class') == 'oco':                              # exit pair: nothing fills here, the legs HOLD the shares
+                if getattr(s, 'oco_refuse', False): return 422, {'message': 'oco not accepted'}
+                s.n += 1; oid = f'c{s.n}'; s.held[oid] = [j['symbol'], None]; s.oco.append(dict(j, id=oid)); return 200, {'id': oid}
+            cid = j.get('client_order_id', '')
+            if j.get('type') == 'stop': s.n += 1; oid = f's{s.n}'; s.held[oid] = [j['symbol'], None]; s.stops.append(dict(j, id=oid)); return 200, {'id': oid}
+            if cid.startswith('orb-') and j['symbol'] in s.entry_px:      # a late fill at a worse price than planned
+                real = s.px; s.px = lambda sy, t, _r=real: s.entry_px.get(sy, _r(sy, t)); o = s.fill(j['symbol'], j['side'], int(j['qty']), cid); s.px = real; return 200, o
             o = s.fill(j['symbol'], j['side'], int(j['qty']), j.get('client_order_id', ''))
             if j.get('order_class') == 'bracket': o['legs'] = []; s.held[o['id']] = [j['symbol'], None]   # legs stay open and HOLD the shares (Alpaca: held_for_orders)
             return 200, o
@@ -199,4 +206,13 @@ check('N4 K7 bought back on the 5th trading day, priced 0.00, on the scoreboard,
 T.summary(); mdo = open(os.path.join(TMP, 'bots', 'bots.md')).read(); k2row = next(l for l in mdo.splitlines() if l.startswith('| K2 |'))
 n_new = sum(sum(1 for l in json.load(open(os.path.join(TMP, 'bots', x))).get('K2', {}).get('legs', []) if l.get('status', 0) < 300) for x in os.listdir(os.path.join(TMP, 'bots')) if x.startswith('day_') and x[4:14] >= '2026-11-23' and json.load(open(os.path.join(TMP, 'bots', x))).get('settle', {}).get('K2', {}).get('fills'))
 check('O1 K2 count excludes days before 23 Nov, the note is shown and the 17 Nov row is still in the daily record', k2row.split('|')[2].strip() == str(n_new) and 'count restarted 2026-11-23' in mdo and n_new > 0, (k2row, n_new))
+# ---- P: opening break is protected from the REAL fill (24 Nov: fills a minute late doubled two losses)
+f.oco = []; dp1 = dt.date(2026, 12, 22); run_day(f, dp1); sp1 = json.load(open(os.path.join(TMP, 'bots', f'day_{dp1}.json'))); oq = [o for o in f.oco if o['symbol'] == 'QQQ']
+check('P1 normal fill: 66 shares kept, one stop+target order (stop 499.5), protected, +132.00 and flat at the close', sp1['ORB'].get('protected') is True and sp1['ORB'].get('qty_left') == 66 and len(oq) == 1 and oq[0]['qty'] == '66' and oq[0]['stop_loss']['stop_price'] == '499.5' and oq[0]['side'] == 'sell' and sp1['settle']['ORB']['pnl_usd'] == 132.0 and 'QQQ' not in f.pos, (sp1['ORB'], oq, sp1['settle']['ORB']))
+f.oco = []; f.entry_px = {'QQQ': 502.5}; dp2 = dt.date(2026, 12, 23); run_day(f, dp2); f.entry_px = {}; sp2 = json.load(open(os.path.join(TMP, 'bots', f'day_{dp2}.json'))); oq = [o for o in f.oco if o['symbol'] == 'QQQ']
+check('P2 fill 1.5 worse than planned (risk 2x): 33 of 66 shares sold at once, stop+target for 33, flat at the close, settled', sp2['ORB'].get('qty_left') == 33 and sp2['ORB'].get('trim') == 33 and len(oq) == 1 and oq[0]['qty'] == '33' and sp2['ORB'].get('protected') is True and 'QQQ' not in f.pos and sp2['settle']['ORB']['pnl_usd'] == round(33 * (501 - 502.5) + 33 * (503 - 502.5), 2), (sp2['ORB'], oq, sp2['settle']['ORB'], f.pos.get('QQQ')))
+f.oco = []; f.entry_px = {'QQQ': 499.0}; dp3 = dt.date(2026, 12, 24); run_day(f, dp3); f.entry_px = {}; sp3 = json.load(open(os.path.join(TMP, 'bots', f'day_{dp3}.json')))
+check('P3 fill already beyond the stop: closed at once, no stop+target order left, nothing held', 'closed' in str(sp3['ORB'].get('protected')) and not [o for o in f.oco if o['symbol'] == 'QQQ'] and 'QQQ' not in f.pos, (sp3['ORB'], f.pos.get('QQQ')))
+f.oco_refuse = True; dp4 = dt.date(2026, 12, 28); run_day(f, dp4); f.oco_refuse = False; sp4 = json.load(open(os.path.join(TMP, 'bots', f'day_{dp4}.json'))); sq = [o for o in f.stops if o['symbol'] == 'QQQ']
+check('P4 broker refuses the stop+target pair: a plain stop for 66 at 499.5 goes on within two tries, flat at the close', 'plain stop' in str(sp4['ORB'].get('protected')) and len(sq) == 1 and sq[0]['qty'] == '66' and sq[0]['stop_price'] == '499.5' and 'QQQ' not in f.pos, (sp4['ORB'], sq, f.pos.get('QQQ')))
 print(f"\n{sum(1 for r in RES if r[1])}/{len(RES)} PASS"); shutil.rmtree(TMP); sys.exit(0 if all(r[1] for r in RES) else 1)
