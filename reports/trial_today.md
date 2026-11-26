@@ -101,7 +101,7 @@ DROPPED: T2 in loss (-555.54) after 300 settled orders; no new trial orders.
 | 12:28 | El Entag El Harby v Kahraba Ismailia | Kahraba Ismailia | back | 2.12 | £50.00 | lost | -£50.00 | T1 |
 | 12:28 | Al Sareeh v Al Aqaba | Al Sareeh | back | 1.25 | £50.00 | won | +£12.25 | T1 |
 | 12:28 | Sahl Houran v Alhashemyya | Sahl Houran | back | 1.67 | £16.80 | lost | -£16.80 | T1 |
-| 12:28 | Amman v Ma'an | Amman | back | 1.52 | £21.65 | open | - | T1 |
+| 12:28 | Amman v Ma'an | Amman | back | 1.52 | £21.65 | lost | -£21.65 | T1 |
 | 12:28 | Hayy Al-Amir Hassan v Etihad Al Ramtha | Etihad Al Ramtha | back | 1.97 | - | skipped: would put more than 20% of the bank at risk | - | T1 |
 | 12:28 | Yarmouk v Jerash SC | Jerash SC | back | 2.34 | - | skipped: would put more than 20% of the bank at risk | - | T1 |
 | 12:33 | Uttaradit FC v Songkla FC | Under 3.5 Goals | back | 1.20 | - | skipped: would put more than 20% of the bank at risk | - | C |
@@ -138,16 +138,16 @@ DROPPED: T2 in loss (-555.54) after 300 settled orders; no new trial orders.
 | 14:50 | Al Buqaa v Al-Jazeera | Al Buqaa | back | 2.62 | £12.03 | lost | -£12.03 | T3 |
 | 14:58 | Al Buqaa v Al-Jazeera | Al Buqaa | back | 2.70 | £4.20 | lost | -£4.20 | T1 |
 | 14:58 | Cebrayil FK v Moik Baku | MOIK Baku | back | 2.96 | £5.50 | lost | -£5.50 | T1 |
-| 15:20 | Kairat Almaty v Mjallby | Kairat Almaty | back | 2.14 | £50.00 | won | +£55.86 | T3 |
+| 15:20 | Kairat Almaty v Mjallby | Kairat Almaty | back | 2.14 | £49.92 | won | +£55.77 | T3 |
 | 15:20 | Kairat Almaty v Mjallby | Mjallby | back | 4.00 | £2.99 | lost | -£2.99 | T3 |
 | 15:56 | Al-Fateh (KSA) v Al Riyadh SC | Under 2.5 Goals | back | 1.17 | - | skipped: this rule is down 3% of the bank today | - | C |
 | 15:56 | Al-Fateh (KSA) v Al Riyadh SC | Under 2.5 Goals | back | 1.17 | £22.07 | won | +£3.68 | C+S |
-| 15:58 | Uganda Revenue Authority v Kigezi Homeboys FC | Uganda Revenue Authority | back | 1.32 | £50.00 | won | +£15.68 | T1 |
-| 15:58 | Gor Mahia FC v Mombasa United | Gor Mahia FC | back | 1.62 | £50.00 | won | +£30.38 | T1 |
-| 16:01 | Al-Fateh (KSA) v Al Riyadh SC | Under 1.5 Goals | back | 1.74 | £50.00 | won | +£36.26 | A |
+| 15:58 | Uganda Revenue Authority v Kigezi Homeboys FC | Uganda Revenue Authority | back | 1.32 | £49.92 | won | +£15.66 | T1 |
+| 15:58 | Gor Mahia FC v Mombasa United | Gor Mahia FC | back | 1.62 | £49.92 | won | +£30.33 | T1 |
+| 16:01 | Al-Fateh (KSA) v Al Riyadh SC | Under 1.5 Goals | back | 1.74 | £49.92 | won | +£36.20 | A |
 | 16:05 | CS Gloria 2018 Bistrita-Nasaud v CSM Slatina | Under 2.5 Goals | back | 1.27 | - | skipped: its rule was down 3% of the bank today | - | M6 |
 | 16:14 | CS Gloria 2018 Bistrita-Nasaud v CSM Slatina | Under 3.5 Goals | back | 1.13 | - | skipped: this rule is down 3% of the bank today | - | C |
-| 16:14 | CS Gloria 2018 Bistrita-Nasaud v CSM Slatina | Under 3.5 Goals | back | 1.13 | £50.00 | won | +£6.37 | C+S |
+| 16:14 | CS Gloria 2018 Bistrita-Nasaud v CSM Slatina | Under 3.5 Goals | back | 1.13 | £49.92 | won | +£6.36 | C+S |
 | 16:24 | CS Gloria 2018 Bistrita-Nasaud v CSM Slatina | Under 2.5 Goals | back | 1.46 | £28.86 | won | +£13.01 | A |
 | 16:29 | Al Buqaa v Al-Jazeera | Under 3.5 Goals | back | 1.20 | - | skipped: this rule is down 3% of the bank today | - | C |
 | 16:29 | Cebrayil FK v Moik Baku | Under 1.5 Goals | back | 1.24 | - | skipped: this rule is down 3% of the bank today | - | C |
@@ -161,36 +161,36 @@ DROPPED: T2 in loss (-555.54) after 300 settled orders; no new trial orders.
 | 16:51 | Kairat Almaty v Mjallby | Under 2.5 Goals | back | 1.23 | £24.42 | won | +£5.50 | M7 |
 | 16:56 | Kairat Almaty v Mjallby | Under 2.5 Goals | back | 1.17 | - | skipped: this rule is down 3% of the bank today | - | C |
 | 16:56 | Kairat Almaty v Mjallby | Under 2.5 Goals | back | 1.17 | - | skipped: would put more than 5% of the bank on one event | - | C+S |
-| 17:05 | Kairat Almaty v Mjallby | Under 1.5 Goals | back | 1.64 | £50.00 | won | +£31.36 | A |
-| 17:20 | Al Faisaly ( KSA ) v Al Draih | Al Faisaly ( KSA ) | back | 4.10 | £4.89 | open | - | T3 |
+| 17:05 | Kairat Almaty v Mjallby | Under 1.5 Goals | back | 1.64 | - | skipped: would put more than 5% of the bank on one event | - | A |
+| 17:20 | Al Faisaly ( KSA ) v Al Draih | Al Faisaly ( KSA ) | back | 4.10 | £4.89 | lost | -£4.89 | T3 |
 | 17:24 | Uganda Revenue Authority v Kigezi Homeboys FC | Under 3.5 Goals | back | 1.20 | - | skipped: this rule is down 3% of the bank today | - | C |
 | 17:24 | Uganda Revenue Authority v Kigezi Homeboys FC | Under 3.5 Goals | back | 1.20 | £6.96 | won | +£1.36 | C+S |
 | 17:28 | Al Faisaly ( KSA ) v Al Draih | Al Draih | back | 1.95 | £50.00 | open | - | T1 |
 | 17:32 | Gor Mahia FC v Mombasa United | Under 4.5 Goals | back | 1.22 | - | skipped: this rule is down 3% of the bank today | - | C |
 | 17:32 | Gor Mahia FC v Mombasa United | Under 4.5 Goals | back | 1.22 | £15.10 | won | +£3.26 | C+S |
-| 17:35 | Brann v AGF | Brann | back | 2.22 | £29.34 | open | - | T3 |
-| 17:35 | Brann v AGF | The Draw | back | 4.00 | £50.00 | open | - | T3 |
+| 17:35 | Brann v AGF | Brann | back | 2.22 | £29.34 | lost | -£29.34 | T3 |
+| 17:35 | Brann v AGF | The Draw | back | 4.00 | £50.00 | lost | -£50.00 | T3 |
 | 17:35 | FK Kauno Zalgiris v FK Riga | FK Riga | back | 2.02 | £50.00 | open | - | T3 |
-| 17:35 | Egnatia Rrogozhine v Lincoln Red Imps | The Draw | back | 4.90 | £34.03 | open | - | T3 |
-| 17:35 | FC Iberia 1999 v Getafe | Getafe | back | 1.62 | £50.00 | open | - | T3 |
-| 17:35 | FC Iberia 1999 v Getafe | The Draw | back | 4.00 | £50.00 | open | - | T3 |
-| 17:35 | FK Jablonec v Lugano | FK Jablonec | back | 2.86 | £50.00 | open | - | T3 |
-| 17:35 | FK Jablonec v Lugano | The Draw | back | 3.60 | £4.72 | open | - | T3 |
-| 17:35 | Pafos FC v Midtjylland | Midtjylland | back | 2.54 | £2.85 | open | - | T3 |
+| 17:35 | Egnatia Rrogozhine v Lincoln Red Imps | The Draw | back | 4.90 | £34.03 | lost | -£34.03 | T3 |
+| 17:35 | FC Iberia 1999 v Getafe | Getafe | back | 1.62 | £50.00 | lost | -£50.00 | T3 |
+| 17:35 | FC Iberia 1999 v Getafe | The Draw | back | 4.00 | £50.00 | lost | -£50.00 | T3 |
+| 17:35 | FK Jablonec v Lugano | FK Jablonec | back | 2.86 | £50.00 | won | +£91.14 | T3 |
+| 17:35 | FK Jablonec v Lugano | The Draw | back | 3.60 | £4.72 | lost | -£4.72 | T3 |
+| 17:35 | Pafos FC v Midtjylland | Midtjylland | back | 2.54 | £2.85 | won | +£4.30 | T3 |
 | 17:35 | Pafos FC v Midtjylland | Pafos FC | back | 2.86 | - | skipped: would put more than 20% of the bank at risk | - | T3 |
 | 17:35 | Red Bull Salzburg v Ararat Armenia | Red Bull Salzburg | back | 1.20 | - | skipped: would put more than 20% of the bank at risk | - | T3 |
 | 17:35 | Dinamo Zagreb v Leverkusen | The Draw | back | 4.60 | - | skipped: would put more than 20% of the bank at risk | - | T3 |
 | 17:35 | Celta Vigo v Bournemouth | Bournemouth | back | 2.00 | - | skipped: would put more than 20% of the bank at risk | - | T3 |
 | 17:35 | Ajax v Thun | Ajax | back | 1.23 | - | skipped: would put more than 20% of the bank at risk | - | T3 |
 | 17:35 | Brighton v Universitatea Craiova | Universitatea Craiova | back | 25.00 | - | skipped: would put more than 20% of the bank at risk | - | T3 |
-| 17:39 | Uganda Revenue Authority v Kigezi Homeboys FC | Under 2.5 Goals | back | 1.55 | - | skipped: would put more than 20% of the bank at risk | - | A |
+| 17:39 | Uganda Revenue Authority v Kigezi Homeboys FC | Under 2.5 Goals | back | 1.55 | £14.79 | won | +£7.97 | A |
 | 17:43 | Gor Mahia FC v Mombasa United | Under 3.5 Goals | back | 1.64 | £4.49 | won | +£2.82 | A |
-| 17:50 | AaB v Esbjerg | The Draw | back | 4.00 | £2.53 | open | - | T3 |
+| 17:50 | AaB v Esbjerg | The Draw | back | 4.00 | - | skipped: would put more than 20% of the bank at risk | - | T3 |
 | 18:50 | Stoke U21 v AC Milan U21 | The Draw | back | 5.10 | £3.00 | open | - | T3 |
 | 18:58 | Burnley U21 v Wolves U21 | Burnley U21 | back | 2.26 | £4.30 | open | - | T1 |
 | 18:58 | Stoke U21 v AC Milan U21 | AC Milan U21 | back | 1.56 | £50.00 | open | - | T1 |
 | 19:06 | Al Faisaly ( KSA ) v Al Draih | Under 4.5 Goals | back | 1.16 | - | skipped: this rule is down 3% of the bank today | - | C |
-| 19:06 | Al Faisaly ( KSA ) v Al Draih | Under 4.5 Goals | back | 1.16 | £50.00 | open | - | C+S |
+| 19:06 | Al Faisaly ( KSA ) v Al Draih | Under 4.5 Goals | back | 1.16 | £50.00 | won | +£7.84 | C+S |
 | 19:06 | Ajax v Thun | Over 2.5 Goals | back | 1.19 | - | skipped: would put more than 20% of the bank at risk | - | M7 |
 | 19:06 | FK Kauno Zalgiris v FK Riga | Under 2.5 Goals | back | 1.20 | £4.19 | open | - | M7 |
 | 19:07 | FC Iberia 1999 v Getafe | Under 2.5 Goals | back | 1.22 | - | skipped: would put more than 20% of the bank at risk | - | M7 |
@@ -198,52 +198,77 @@ DROPPED: T2 in loss (-555.54) after 300 settled orders; no new trial orders.
 | 19:10 | FC Iberia 1999 v Getafe | Under 2.5 Goals | back | 1.18 | - | skipped: this rule is down 3% of the bank today | - | C |
 | 19:10 | FK Jablonec v Lugano | Under 1.5 Goals | back | 1.23 | - | skipped: this rule is down 3% of the bank today | - | C |
 | 19:10 | Olympiakos v AC Milan | Under 5.5 Goals | back | 1.23 | - | skipped: this rule is down 3% of the bank today | - | C |
-| 19:10 | FC Iberia 1999 v Getafe | Under 2.5 Goals | back | 1.18 | £2.00 | open | - | C+S |
+| 19:10 | FC Iberia 1999 v Getafe | Under 2.5 Goals | back | 1.18 | £2.00 | won | +£0.35 | C+S |
 | 19:10 | FK Jablonec v Lugano | Under 1.5 Goals | back | 1.23 | - | skipped: would put more than 20% of the bank at risk | - | C+S |
 | 19:10 | Olympiakos v AC Milan | Under 5.5 Goals | back | 1.23 | - | skipped: would put more than 20% of the bank at risk | - | C+S |
 | 19:11 | Marseille v PFC Levski Sofia | Under 2.5 Goals | back | 1.22 | - | skipped: this rule is down 3% of the bank today | - | C |
 | 19:11 | Marseille v PFC Levski Sofia | Under 2.5 Goals | back | 1.22 | - | skipped: would put more than 20% of the bank at risk | - | C+S |
 | 19:12 | Celta Vigo v Bournemouth | Under 3.5 Goals | back | 1.21 | - | skipped: this rule is down 3% of the bank today | - | C |
-| 19:12 | Celta Vigo v Bournemouth | Under 3.5 Goals | back | 1.21 | £23.83 | closed at 1.73, waiting for the result | - | C+S |
+| 19:12 | Celta Vigo v Bournemouth | Under 3.5 Goals | back | 1.21 | £23.83 | lost | -£4.15 | C+S |
 | 19:16 | Pafos FC v Midtjylland | Under 2.5 Goals | back | 1.17 | - | skipped: this rule is down 3% of the bank today | - | C |
 | 19:16 | Pafos FC v Midtjylland | Under 2.5 Goals | back | 1.17 | - | skipped: would put more than 20% of the bank at risk | - | C+S |
-| 19:16 | FK Kauno Zalgiris v FK Riga | Over 2.5 Goals | back | 1.42 | - | skipped: would put more than 20% of the bank at risk | - | M4 |
+| 19:16 | FK Kauno Zalgiris v FK Riga | Over 2.5 Goals | back | 1.42 | £3.00 | open | - | M4 |
 | 19:17 | Egnatia Rrogozhine v Lincoln Red Imps | Under 2.5 Goals | back | 1.23 | - | skipped: this rule is down 3% of the bank today | - | C |
 | 19:17 | Egnatia Rrogozhine v Lincoln Red Imps | Under 2.5 Goals | back | 1.23 | - | skipped: would put more than 20% of the bank at risk | - | C+S |
 | 19:20 | FC Iberia 1999 v Getafe | Under 1.5 Goals | back | 1.57 | - | skipped: would put more than 20% of the bank at risk | - | A |
 | 19:20 | Pafos FC v Midtjylland | Under 1.5 Goals | back | 1.79 | - | skipped: would put more than 20% of the bank at risk | - | A |
 | 19:20 | Red Bull Salzburg v Ararat Armenia | Under 3.5 Goals | back | 1.18 | - | skipped: this rule is down 3% of the bank today | - | C |
 | 19:20 | Dinamo Zagreb v Leverkusen | Under 3.5 Goals | back | 1.16 | - | skipped: this rule is down 3% of the bank today | - | C |
-| 19:20 | Red Bull Salzburg v Ararat Armenia | Under 3.5 Goals | back | 1.18 | - | skipped: would put more than 20% of the bank at risk | - | C+S |
+| 19:20 | Red Bull Salzburg v Ararat Armenia | Under 3.5 Goals | back | 1.18 | £4.19 | won | +£0.74 | C+S |
 | 19:20 | Dinamo Zagreb v Leverkusen | Under 3.5 Goals | back | 1.16 | - | skipped: would put more than 20% of the bank at risk | - | C+S |
 | 19:21 | Marseille v PFC Levski Sofia | Under 1.5 Goals | back | 1.64 | - | skipped: would put more than 20% of the bank at risk | - | A |
 | 19:21 | Hearts v Monaco | Under 5.5 Goals | back | 1.22 | - | skipped: this rule is down 3% of the bank today | - | C |
-| 19:21 | Hearts v Monaco | Under 5.5 Goals | back | 1.22 | - | skipped: would put more than 20% of the bank at risk | - | C+S |
+| 19:21 | Hearts v Monaco | Under 5.5 Goals | back | 1.22 | £23.83 | open | - | C+S |
 | 19:22 | Union St Gilloise v Lech Poznan | Under 5.5 Goals | back | 1.21 | - | skipped: this rule is down 3% of the bank today | - | C |
 | 19:22 | Union St Gilloise v Lech Poznan | Under 5.5 Goals | back | 1.21 | - | skipped: would put more than 20% of the bank at risk | - | C+S |
 | 19:24 | Ajax v Thun | Under 4.5 Goals | back | 1.18 | - | skipped: this rule is down 3% of the bank today | - | C |
 | 19:24 | Ajax v Thun | Under 4.5 Goals | back | 1.18 | - | skipped: would put more than 20% of the bank at risk | - | C+S |
 | 19:25 | Dinamo Zagreb v Leverkusen | Under 2.5 Goals | back | 1.63 | - | skipped: would put more than 20% of the bank at risk | - | A |
-| 19:27 | Egnatia Rrogozhine v Lincoln Red Imps | Under 3.5 Goals | back | 1.42 | £4.19 | open | - | A |
-| 19:28 | Union St Gilloise v Lech Poznan | Under 4.5 Goals | back | 1.73 | - | skipped: would put more than 20% of the bank at risk | - | A |
+| 19:27 | Egnatia Rrogozhine v Lincoln Red Imps | Under 3.5 Goals | back | 1.42 | £4.19 | won | +£1.72 | A |
+| 19:28 | Union St Gilloise v Lech Poznan | Under 4.5 Goals | back | 1.73 | £50.00 | won | +£35.77 | A |
+| 19:29 | Ajax v Thun | Under 3.5 Goals | back | 1.47 | £4.19 | lost | -£4.19 | A |
+| 19:31 | Hearts v Monaco | Under 4.5 Goals | back | 1.67 | £50.00 | open | - | A |
+| 19:32 | FK Kauno Zalgiris v FK Riga | Under 3.5 Goals | back | 1.15 | - | skipped: this rule is down 3% of the bank today | - | C |
+| 19:32 | FK Kauno Zalgiris v FK Riga | Under 3.5 Goals | back | 1.15 | - | skipped: would put more than 20% of the bank at risk | - | C+S |
+| 19:33 | AaB v Esbjerg | Under 5.5 Goals | back | 1.17 | - | skipped: this rule is down 3% of the bank today | - | C |
+| 19:33 | AaB v Esbjerg | Under 5.5 Goals | back | 1.17 | - | skipped: would put more than 20% of the bank at risk | - | C+S |
+| 19:36 | FK Kauno Zalgiris v FK Riga | Under 2.5 Goals | back | 1.72 | £4.27 | open | - | A |
+| 19:39 | AaB v Esbjerg | Under 4.5 Goals | back | 1.64 | £49.39 | open | - | A |
+| 19:50 | Sunderland v Jagiellonia Bialystock | Jagiellonia Bialystock | back | 14.00 | - | skipped: its rule was down 3% of the bank today | - | T3 |
+| 19:50 | NEC Nijmegen v Rennes | NEC Nijmegen | back | 3.10 | - | skipped: its rule was down 3% of the bank today | - | T3 |
+| 19:50 | OFI v Anderlecht | The Draw | back | 4.00 | - | skipped: its rule was down 3% of the bank today | - | T3 |
+| 19:50 | Torreense v Celtic | The Draw | back | 4.40 | - | skipped: its rule was down 3% of the bank today | - | T3 |
+| 19:50 | Hoffenheim v Sturm Graz | The Draw | back | 7.00 | - | skipped: its rule was down 3% of the bank today | - | T3 |
+| 19:50 | Gent v Crvena Zvezda | Crvena Zvezda | back | 3.10 | - | skipped: its rule was down 3% of the bank today | - | T3 |
+| 19:50 | FC Nordsjaelland v Panathinaikos | Panathinaikos | back | 3.15 | - | skipped: its rule was down 3% of the bank today | - | T3 |
+| 19:50 | CSKA Sofia v Trabzonspor | CSKA Sofia | back | 4.40 | - | skipped: its rule was down 3% of the bank today | - | T3 |
+| 19:50 | Freiburg v FC Twente | Freiburg | back | 2.10 | - | skipped: its rule was down 3% of the bank today | - | T3 |
+| 19:50 | Freiburg v FC Twente | FC Twente | back | 3.70 | - | skipped: its rule was down 3% of the bank today | - | T3 |
+| 19:50 | Borac Banja Luka v Atalanta | The Draw | back | 5.00 | - | skipped: its rule was down 3% of the bank today | - | T3 |
+| 19:50 | Sparta Prague v Az Alkmaar | Sparta Prague | back | 2.76 | - | skipped: its rule was down 3% of the bank today | - | T3 |
+| 19:50 | Ferencvaros v NK Celje | NK Celje | back | 8.00 | - | skipped: its rule was down 3% of the bank today | - | T3 |
+| 19:50 | Ferencvaros v NK Celje | The Draw | back | 5.60 | - | skipped: its rule was down 3% of the bank today | - | T3 |
+| 19:50 | Braga v KuPS | Braga | back | 1.14 | - | skipped: its rule was down 3% of the bank today | - | T3 |
+| 19:50 | Inter Club Escaldes v FC Copenhagen | The Draw | back | 5.40 | - | skipped: its rule was down 3% of the bank today | - | T3 |
+| 19:50 | Doncaster v Huddersfield | Doncaster | back | 5.20 | - | skipped: its rule was down 3% of the bank today | - | T3 |
 
 Counting: an order is one trial order the one test filled; a market is one market however many orders it holds. The entry bar counts settled markets (at least 300 on 10 separate days); the drop at 300 counts settled orders; 'the bank took' counts bets after the bank's limits and stops.
-- T1 (BET): In football match result markets with under £5,000 matched two minutes before the start, back the favourite two minutes before the start and hold it to the result. 280 orders settled since 22 Nov (280 markets): +£2,332.67 on £8,973.47 staked at the market's stake, +26.0 per £100. The bank took 154 of these: +£1,122.06 on £3,865.05 staked, +29.0 per £100. To clear the entry bar: about 20 more markets and 5 more days (chance of a fluke 0.0000 against the bar 0.00089).
+- T1 (BET): In football match result markets with under £5,000 matched two minutes before the start, back the favourite two minutes before the start and hold it to the result. 281 orders settled since 22 Nov (281 markets): +£2,311.02 on £8,995.12 staked at the market's stake, +25.7 per £100. The bank took 155 of these: +£1,100.34 on £3,886.54 staked, +28.3 per £100. To clear the entry bar: about 19 more markets and 5 more days (chance of a fluke 0.0000 against the bar 0.00089).
 - T2 (TRADE, dropped): In football match result markets, an hour before the start, when the money waiting to back a selection is 2 times the money waiting to lay it, back it, and close it at a 40% gain or a 20% loss of the stake, or 30 minutes after the entry, whichever comes first. 300 orders settled since 22 Nov (235 markets): -£555.54 on £4,115.43 staked at the market's stake, -13.5 per £100. The bank took 126 of these: -£289.04 on £1,055.92 staked, -27.4 per £100. To clear the entry bar: never at the current rate (not in profit so far). Bets skipped by this rule's 3% daily stop: 0 today, 64 since 22 Nov (a stopped day is not the rule's full day).
-- T3 (BET): In football match result markets, ten minutes before the start, when the money waiting to back a selection is 3 times the money waiting to lay it, back it and hold it to the result. 505 orders settled since 22 Nov (386 markets): +£228.15 on £8,342.80 staked at the market's stake, +2.7 per £100. The bank took 102 of these: -£400.88 on £1,188.92 staked, -33.7 per £100. To clear the entry bar: about 52,150 more markets and 5 more days (chance of a fluke 0.3945 against the bar 0.00089). Bets skipped by this rule's 3% daily stop: 0 today, 266 since 22 Nov (a stopped day is not the rule's full day).
+- T3 (BET): In football match result markets, ten minutes before the start, when the money waiting to back a selection is 3 times the money waiting to lay it, back it and hold it to the result. 520 orders settled since 22 Nov (397 markets): +£78.33 on £8,860.98 staked at the market's stake, +0.9 per £100. The bank took 111 of these: -£528.51 on £1,464.67 staked, -36.1 per £100. To clear the entry bar: about 477,467 more markets and 5 more days (chance of a fluke 0.4642 against the bar 0.00089). Bets skipped by this rule's 3% daily stop: 17 today, 283 since 22 Nov (a stopped day is not the rule's full day).
 - M4 (BET): Football over/under 2.5 goals, in play 90 min after the scheduled start: back what the market rates at 70-75% and hold it to the result (calibration map, run 19). 18 orders settled since 22 Nov (18 markets): +£143.73 on £806.32 staked at the market's stake, +17.8 per £100. The bank took 9 of these: +£103.79 on £309.73 staked, +33.5 per £100. To clear the entry bar: about 282 more markets and 5 more days (chance of a fluke 0.0692 against the bar 3e-07).
 - M5 (BET): Football over/under 2.5 goals, in play 90 min after the scheduled start, price move since previous moment drifted some (7-20%): back what the market rates at 65-70% and hold it to the result (calibration map, run 19). 5 orders settled since 22 Nov (5 markets): +£49.62 on £115.19 staked at the market's stake, +43.1 per £100. The bank took 2 of these: -£1.11 on £12.62 staked, -8.8 per £100. To clear the entry bar: about 295 more markets and 6 more days (chance of a fluke 0.0922 against the bar 3e-07).
 - M6 (BET): Football over/under 2.5 goals, in play 80 min after the scheduled start: back what the market rates at 75-80% and hold it to the result (calibration map, run 19). 52 orders settled since 22 Nov (52 markets): -£3.86 on £2,311.77 staked at the market's stake, -0.2 per £100. The bank took 19 of these: +£31.03 on £769.36 staked, +4.0 per £100. To clear the entry bar: never at the current rate (not in profit so far). Bets skipped by this rule's 3% daily stop: 6 today, 6 since 22 Nov (a stopped day is not the rule's full day).
-- M7 (BET): Football over/under 2.5 goals, in play 80 min after the scheduled start: back what the market rates at 80-85% and hold it to the result (calibration map, run 19). 24 orders settled since 22 Nov (24 markets): -£8.14 on £969.61 staked at the market's stake, -0.8 per £100. The bank took 15 of these: -£16.24 on £560.28 staked, -2.9 per £100. To clear the entry bar: never at the current rate (not in profit so far).
+- M7 (BET): Football over/under 2.5 goals, in play 80 min after the scheduled start: back what the market rates at 80-85% and hold it to the result (calibration map, run 19). 25 orders settled since 22 Nov (25 markets): +£2.64 on £1,019.61 staked at the market's stake, +0.3 per £100. The bank took 15 of these: -£16.24 on £560.28 staked, -2.9 per £100. To clear the entry bar: about 855,232 more markets and 5 more days (chance of a fluke 0.4894 against the bar 3e-07).
 - I8 (BET): Football in play, about the 73rd minute (90 minutes after the off): when the over/under line is ONE goal away, back the UNDER if the market rates it 55-90% (price 1.11-1.82), and hold it to the result (in-play map, session 21, form A). 0 orders settled since 22 Nov (0 markets): £0.00 on £0.00 staked at the market's stake, - per £100. The bank took 0 of these: £0.00 on £0.00 staked, - per £100. To clear the entry bar: not enough markets yet to say.
-- **LATE UNDER, READ FIRST (2026-11-26): over 2.5 goals was rated 51.3% at kick-off and happened 46.8% in 47 of 57 matches with a result (-4.5 points, chance alone about ±7): about what the prices expected, within chance.**
+- **LATE UNDER, READ FIRST (2026-11-26): over 2.5 goals was rated 52.0% at kick-off and happened 42.6% in 54 of 61 matches with a result (-9.4 points, chance alone about ±7): FEWER goals than priced: this flatters every under, so discount a good result.**
 - Earlier days (kick-off rated / happened): 22 Nov 56% / 55% on 212 (-1); 23 Nov 55% / 54% on 96 (-1); 24 Nov 58% / 52% on 122 (-6); 25 Nov 55% / 54% on 110 (-2). On 14-21 Nov, the week these rules were measured, it was 55% / 52% (-2.5) on 1,001 matches settled by Betfair; inplay.md said 54% / 46% because it left out 113 matches it could not settle, 112 of them overs. The same gap dropped 27 form A bets; the 20 Betfair has settled all lost, so A measured +9.7 per £100 on those matches, not +14.0.
-- Score reading at the bets' moments (correct-score market): the settled lines agree on 627 of 628 readable, the score feed on 408 of 410 with one (feeds run 1-2 min behind).
-- The 5-second bet delay (form A): 85 of 274 bets could be checked on the stream, 7 of them would have missed (not counted); checked bets: 77 settled, -1.5 per £100; the rest are taken at the price on offer, unchecked: 181 settled, +9.2 per £100.
-- A (BET): Football in play, minutes 65-90, when an over/under line is ONE goal away, back the UNDER if it is rated 55-90%, one bet a match, held to the result (in-play map, session 21, score read from the correct-score market). 258 orders settled since 24 Nov (258 markets): +£478.83 on £7,830.03 staked at the market's stake, +6.1 per £100. The bank took 58 of these: -£1.82 on £1,302.49 staked, -0.1 per £100. To clear the entry bar: about 4,358 more markets and 7 more days (chance of a fluke 0.1404 against the bar 2.5e-06). Bets skipped by this rule's 3% daily stop: 0 today, 57 since 22 Nov (a stopped day is not the rule's full day).
-- A+P (BET): Football in play, minutes 65-90, when an over/under line is ONE goal away, back the UNDER if it is rated 55-90%, one bet a match, held to the result, only where the goal predictor scores the match and not when it is in its bands 8-10 (in-play map, session 21, score read from the correct-score market). 73 orders settled since 24 Nov (73 markets): -£75.76 on £1,979.25 staked at the market's stake, -3.8 per £100. The bank took 5 of these: +£64.00 on £109.30 staked, +58.6 per £100. To clear the entry bar: never at the current rate (not in profit so far).
-- A+P+S (TRADE): Football in play, minutes 65-90, when an over/under line is ONE goal away, back the UNDER if it is rated 55-90%, one bet a match, only where the goal predictor scores the match and not when it is in its bands 8-10, closed at a loss of 20% of the stake if a later sweep offers it, else held to the result (in-play map, session 21, score read from the correct-score market). 73 orders settled since 24 Nov (73 markets): -£145.54 on £1,979.25 staked at the market's stake, -7.4 per £100. The bank took 0 of these: £0.00 on £0.00 staked, - per £100. To clear the entry bar: never at the current rate (not in profit so far).
-- B (BET): Football in play, minutes 75-90, when an over/under line is ONE goal away, back the UNDER if it is rated 60-90%, one bet a match, held to the result (in-play map, session 21, score read from the correct-score market). 235 orders settled since 24 Nov (235 markets): +£283.71 on £6,823.25 staked at the market's stake, +4.2 per £100. The bank took 7 of these: +£39.54 on £84.23 staked, +46.9 per £100. To clear the entry bar: about 8,186 more markets and 7 more days (chance of a fluke 0.2231 against the bar 2.5e-06).
-- C (BET): Football in play, minutes 65-90, when an over/under line is TWO goals away, back the UNDER if it is rated 80-97%, one bet a match, held to the result (in-play map, session 21, score read from the correct-score market). 260 orders settled since 24 Nov (260 markets): +£453.92 on £10,708.90 staked at the market's stake, +4.2 per £100. The bank took 82 of these: +£10.08 on £2,686.95 staked, +0.4 per £100. To clear the entry bar: about 1,735 more markets and 7 more days (chance of a fluke 0.0498 against the bar 2.5e-06). Bets skipped by this rule's 3% daily stop: 21 today, 21 since 22 Nov (a stopped day is not the rule's full day).
-- C+S (TRADE): Football in play, minutes 65-90, when an over/under line is TWO goals away, back the UNDER if it is rated 80-97%, one bet a match, closed at a loss of 20% of the stake if a later sweep offers it, else held to the result (in-play map, session 21, score read from the correct-score market). 260 orders settled since 24 Nov (260 markets): +£139.81 on £10,708.90 staked at the market's stake, +1.3 per £100. The bank took 7 of these: +£32.94 on £179.65 staked, +18.3 per £100. To clear the entry bar: about 16,464 more markets and 7 more days (chance of a fluke 0.2848 against the bar 2.5e-06).
-All together (the same bet once, bank limits on): today +£249.41 on 120 settled, since 22 Nov +£694.35 on 586 settled; £2,000 bank now £2,694.35.
+- Score reading at the bets' moments (correct-score market): the settled lines agree on 634 of 635 readable, the score feed on 413 of 415 with one (feeds run 1-2 min behind).
+- The 5-second bet delay (form A): 86 of 278 bets could be checked on the stream, 7 of them would have missed (not counted); checked bets: 78 settled, -0.1 per £100; the rest are taken at the price on offer, unchecked: 190 settled, +8.1 per £100.
+- A (BET): Football in play, minutes 65-90, when an over/under line is ONE goal away, back the UNDER if it is rated 55-90%, one bet a match, held to the result (in-play map, session 21, score read from the correct-score market). 268 orders settled since 24 Nov (268 markets): +£470.05 on £8,176.15 staked at the market's stake, +5.7 per £100. The bank took 61 of these: +£8.04 on £1,325.58 staked, +0.6 per £100. To clear the entry bar: about 4,967 more markets and 7 more days (chance of a fluke 0.1510 against the bar 2.5e-06). Bets skipped by this rule's 3% daily stop: 0 today, 57 since 22 Nov (a stopped day is not the rule's full day).
+- A+P (BET): Football in play, minutes 65-90, when an over/under line is ONE goal away, back the UNDER if it is rated 55-90%, one bet a match, held to the result, only where the goal predictor scores the match and not when it is in its bands 8-10 (in-play map, session 21, score read from the correct-score market). 76 orders settled since 24 Nov (76 markets): -£75.88 on £1,990.78 staked at the market's stake, -3.8 per £100. The bank took 5 of these: +£64.00 on £109.30 staked, +58.6 per £100. To clear the entry bar: never at the current rate (not in profit so far).
+- A+P+S (TRADE): Football in play, minutes 65-90, when an over/under line is ONE goal away, back the UNDER if it is rated 55-90%, one bet a match, only where the goal predictor scores the match and not when it is in its bands 8-10, closed at a loss of 20% of the stake if a later sweep offers it, else held to the result (in-play map, session 21, score read from the correct-score market). 76 orders settled since 24 Nov (76 markets): -£145.66 on £1,990.78 staked at the market's stake, -7.3 per £100. The bank took 0 of these: £0.00 on £0.00 staked, - per £100. To clear the entry bar: never at the current rate (not in profit so far).
+- B (BET): Football in play, minutes 75-90, when an over/under line is ONE goal away, back the UNDER if it is rated 60-90%, one bet a match, held to the result (in-play map, session 21, score read from the correct-score market). 244 orders settled since 24 Nov (244 markets): +£344.62 on £7,159.37 staked at the market's stake, +4.8 per £100. The bank took 7 of these: +£39.54 on £84.23 staked, +46.9 per £100. To clear the entry bar: about 5,994 more markets and 7 more days (chance of a fluke 0.1835 against the bar 2.5e-06).
+- C (BET): Football in play, minutes 65-90, when an over/under line is TWO goals away, back the UNDER if it is rated 80-97%, one bet a match, held to the result (in-play map, session 21, score read from the correct-score market). 272 orders settled since 24 Nov (272 markets): +£363.81 on £11,188.92 staked at the market's stake, +3.3 per £100. The bank took 82 of these: +£10.08 on £2,686.95 staked, +0.4 per £100. To clear the entry bar: about 3,328 more markets and 7 more days (chance of a fluke 0.1049 against the bar 2.5e-06). Bets skipped by this rule's 3% daily stop: 23 today, 23 since 22 Nov (a stopped day is not the rule's full day).
+- C+S (TRADE): Football in play, minutes 65-90, when an over/under line is TWO goals away, back the UNDER if it is rated 80-97%, one bet a match, closed at a loss of 20% of the stake if a later sweep offers it, else held to the result (in-play map, session 21, score read from the correct-score market). 272 orders settled since 24 Nov (272 markets): +£56.95 on £11,188.92 staked at the market's stake, +0.5 per £100. The bank took 11 of these: +£37.71 on £259.59 staked, +14.5 per £100. To clear the entry bar: about 116,521 more markets and 7 more days (chance of a fluke 0.4129 against the bar 2.5e-06).
+All together (the same bet once, bank limits on): today +£114.69 on 137 settled, since 22 Nov +£559.63 on 603 settled; £2,000 bank now £2,559.63.
