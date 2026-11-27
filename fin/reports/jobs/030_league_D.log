@@ -1,0 +1,15 @@
+D rows 199724 days 1781 2020-01-13 to 2026-11-26 average cost 2.2
+universe D: ways tested 94752 | passing 8 | 6 instruments, 1781 days, hourly decisions, entry 2 minutes after the hour, average cost 2.2 hundredths of a percent a round trip
+do          hold   
+BUY         4 hours    4
+SELL SHORT  4 hours    4
+       at                                                                      facts         do    hold  days  per_day  trades_month  net_bps  half1  half2    t  usd_month
+20:00 UTC                               {"weekday": "Wednesday", "which": "USD/JPY"} SELL SHORT 4 hours   355     1.00           4.4      3.1    0.2    6.0 5.41         27
+08:00 UTC  {"place in the last 24 hours' range": "near the low", "which": "AUD/USD"} SELL SHORT 4 hours   364     1.00           4.5      2.7    4.9    0.5 3.67         25
+15:00 UTC                                  {"last hour": "rose", "which": "USD/JPY"}        BUY 4 hours   323     1.00           4.0      2.8    4.5    1.0 3.92         23
+20:00 UTC                              {"last 24 hours": "fell", "which": "USD/JPY"} SELL SHORT 4 hours   238     1.00           2.9      2.6    3.0    2.1 5.13         15
+20:00 UTC                            {"last 24 hours": "rose", "weekday": "Tuesday"}        BUY 4 hours   287     1.88           6.7      0.8    0.2    1.3 3.51         10
+00:00 UTC {"place in the last 24 hours' range": "near the high", "which": "GBP/USD"} SELL SHORT 4 hours   434     1.00           5.4      0.4    0.8    0.1 3.58          5
+20:00 UTC                              {"last 24 hours": "rose", "which": "EUR/USD"}        BUY 4 hours   257     1.00           3.2      0.4    0.6    0.2 3.66          3
+20:00 UTC                         {"which": "EUR/USD", "euro last 24 hours": "rose"}        BUY 4 hours   257     1.00           3.2      0.4    0.6    0.2 3.66          3
+exit=0 secs=16
