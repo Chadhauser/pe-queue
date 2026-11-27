@@ -1,9 +1,9 @@
-# Goal signal against real games (2026-11-25) - tier one, money £0 (scorecard only, no bets, no paper)
+# Goal signal against real games (2026-11-26) - tier one, money £0 (scorecard only, no bets, no paper)
 
-**On 689 matches over 5 days, when the signal said HIGH a goal followed within 10 minutes 23% of the time, against 21% normally for those same minutes and scores; when it said LOW, 14% (normally 19%).**
-Is that enough to trust? Not yet. Resampling whole matches, HIGH could plausibly be anywhere from 21% to 25% and LOW from 13% to 16%. The HIGH range still includes the normal rate, so this could be luck. LOW is below normal even at the top of its range. Each extra day narrows it; a week of nights (the table below fills itself) should roughly halve the range.
+**On 750 matches over 6 days, when the signal said HIGH a goal followed within 10 minutes 23% of the time, against 21% normally for those same minutes and scores; when it said LOW, 14% (normally 19%).**
+Is that enough to trust? Not yet. Resampling whole matches, HIGH could plausibly be anywhere from 22% to 25% and LOW from 13% to 15%. HIGH beats normal even at the bottom of its range. LOW is below normal even at the top of its range. Each extra day narrows it; a week of nights (the table below fills itself) should roughly halve the range.
 
-_Data: 120 matches kicked off and finished on the stream; 77 had a score feed; 75 could be scored (75 live by v2, 0 replayed on the recorded ticks; the scorecard uses the in-play minutes of these). v2 has run live since 21 Nov 17:18 UTC: every match that kicked off before then is replayed, every later one is its live record (list: goaltrade/cache/sc_match_*.parquet, column live); replay and live agree to a median 0.3 points where both exist. Goals in those matches: 201 on the score feeds; 182 (91%) matched to a Betfair suspension, the feeds a median 1.2 min behind it; 19 did not match (timed from the feed less 1.5 min). The other way round, 84 suspensions with a 10% price move had no goal on any feed: penalties awarded, red cards, VAR, goals ruled out, or a price measured on a thin outsider - so they are counted, not used._
+_Data: 91 matches kicked off and finished on the stream; 58 had a score feed; 57 could be scored (57 live by v2, 0 replayed on the recorded ticks; the scorecard uses the in-play minutes of these). v2 has run live since 21 Nov 17:18 UTC: every match that kicked off before then is replayed, every later one is its live record (list: goaltrade/cache/sc_match_*.parquet, column live); replay and live agree to a median 0.3 points where both exist. Goals in those matches: 166 on the score feeds; 159 (96%) matched to a Betfair suspension, the feeds a median 1.2 min behind it; 7 did not match (timed from the feed less 1.5 min). The other way round, 86 suspensions with a 10% price move had no goal on any feed: penalties awarded, red cards, VAR, goals ruled out, or a price measured on a thin outsider - so they are counted, not used._
 
 ## Scorecard: every call
 
@@ -11,30 +11,30 @@ Each call is one minute of one match. "Normal" = the average for the same minute
 
 | signal says | calls | matches | goal within 10 min | normal | share of playing time |
 |---|---|---|---|---|---|
-| v2 HIGH | 1,746 | 74 | **22%** (17%-27%) | 21% | 24% |
-| v2 NORMAL | 3,808 | 75 | **24%** (21%-28%) | 24% | 52% |
-| v2 LOW | 1,840 | 75 | **14%** (10%-18%) | 16% | 25% |
-| old HIGH | 11 | 7 | **18%** (0%-50%) | 24% | 0% |
-| old NORMAL | 4,594 | 58 | **26%** (22%-29%) | 23% | 100% |
-| old LOW | 0 | 0 | - | - | - |
+| v2 HIGH | 1,743 | 55 | **26%** (20%-32%) | 23% | 32% |
+| v2 NORMAL | 2,454 | 57 | **27%** (23%-31%) | 26% | 45% |
+| v2 LOW | 1,315 | 57 | **11%** (7%-15%) | 17% | 24% |
+| old HIGH | 35 | 12 | **31%** (13%-53%) | 26% | 1% |
+| old NORMAL | 2,943 | 42 | **26%** (22%-31%) | 25% | 95% |
+| old LOW | 112 | 22 | **23%** (15%-33%) | 25% | 4% |
 
-v2's actual alerts (chance 29% or more, nothing gated, one per match per 10 min): 96 on 45 matches, a goal followed within 10 min 27% against 25% normally.
-The old signal gave a number on 58 of 75 matches; it said exactly 38% (its fixed default) on 84% of those minutes. Its only alerts were 8 half-time bets on the final total (e.g. "back Under 3.5"), not goal-timing calls; 5 could be linked to a scored match and 4 of them (80%) were right.
+v2's actual alerts (chance 29% or more, nothing gated, one per match per 10 min): 105 on 39 matches, a goal followed within 10 min 33% against 26% normally.
+The old signal gave a number on 42 of 57 matches; it said exactly 38% (its fixed default) on 86% of those minutes. Its only alerts were 14 half-time bets on the final total (e.g. "back Under 3.5"), not goal-timing calls; 10 could be linked to a scored match and 9 of them (90%) were right.
 
-- **Goals and what v2 was saying just before:** of 194 goals it was watching, 53 (27%) came while it said HIGH, 105 (54%) NORMAL, 36 (19%) LOW; it spent 24% / 52% / 25% of playing time in each. (10 more goals came with no v2 call in the 3 min before: no feed, half time or gated.)
-- **Warning:** 95 goals had a HIGH in the 10 minutes before; the HIGH had been on for 6.7 min on average (median 4.0).
-- **HIGH with no goal:** 256 of 371 HIGH spells (69%) passed with no goal in the 10 minutes after.
+- **Goals and what v2 was saying just before:** of 160 goals it was watching, 52 (32%) came while it said HIGH, 83 (52%) NORMAL, 25 (16%) LOW; it spent 32% / 45% / 24% of playing time in each. (7 more goals came with no v2 call in the 3 min before: no feed, half time or gated.)
+- **Warning:** 101 goals had a HIGH in the 10 minutes before; the HIGH had been on for 9.1 min on average (median 5.4).
+- **HIGH with no goal:** 215 of 328 HIGH spells (66%) passed with no goal in the 10 minutes after.
 
 **By half, score and late on (v2): goal within 10 min when it said HIGH / NORMAL / LOW, with the plain average for those minutes)**
 
 | | HIGH | NORMAL | LOW |
 |---|---|---|---|
-| first half | 18% of 886 (avg 18%) | 21% of 1,926 (avg 23%) | 29% of 463 (avg 21%) |
-| second half | 25% of 860 (avg 23%) | 28% of 1,882 (avg 25%) | 9% of 1,377 (avg 14%) |
-| level | 21% of 999 (avg 20%) | 26% of 1,915 (avg 25%) | 18% of 513 (avg 21%) |
-| one-goal game | 24% of 462 (avg 22%) | 23% of 1,514 (avg 23%) | 14% of 720 (avg 15%) |
-| two or more apart | 20% of 285 (avg 19%) | 24% of 379 (avg 19%) | 10% of 607 (avg 14%) |
-| last 15 min (75+) | 20% of 238 (avg 11%) | 19% of 561 (avg 13%) | 6% of 1,094 (avg 11%) |
+| first half | 26% of 896 (avg 23%) | 25% of 1,322 (avg 25%) | 13% of 227 (avg 24%) |
+| second half | 25% of 847 (avg 23%) | 29% of 1,132 (avg 26%) | 10% of 1,088 (avg 15%) |
+| level | 24% of 1,008 (avg 23%) | 30% of 974 (avg 29%) | 11% of 222 (avg 26%) |
+| one-goal game | 37% of 357 (avg 28%) | 27% of 1,080 (avg 26%) | 9% of 400 (avg 19%) |
+| two or more apart | 19% of 378 (avg 19%) | 19% of 400 (avg 17%) | 12% of 693 (avg 12%) |
+| last 15 min (75+) | 27% of 207 (avg 14%) | 30% of 357 (avg 19%) | 5% of 821 (avg 13%) |
 
 ## What would make it sharper (from 21-22 Nov; written once by session 22, not rewritten nightly)
 
@@ -46,7 +46,7 @@ Looked at the 661 goals v2 called NORMAL or LOW just before, and the 5,882 HIGH 
 
 ## Day by day (rewritten 23:30 UK each night)
 
-**Second version against the current one: 5 of 7 days, too early to call. LOW (points below normal): current +2.8 (14,318 calls), second +2.6 (14,436), difference -0.2 (range -0.6 to +0.1); late HIGH (points above normal): current +10.9 (2,016 calls), second +10.9 (1,988), difference +0.0 (range -1.0 to +0.9).**
+**Second version against the current one: 6 of 7 days, too early to call. LOW (points below normal): current +3.0 (15,468 calls), second +2.8 (15,633), difference -0.2 (range -0.5 to +0.2); late HIGH (points above normal): current +11.3 (2,240 calls), second +11.4 (2,204), difference +0.1 (range -0.8 to +1.1).**
 
 Second version = fitted on days before 21 Nov; no HIGH before the second half (so its HIGH is second half only); the over price not drifting measured over 5, 10 and 15 minutes, weighted more late on. Scored from the recorded ticks on the same calls; late HIGH = HIGH from minute 75, goal within 10 (calls).
 
@@ -56,25 +56,27 @@ Second version = fitted on days before 21 Nov; no HIGH before the second half (s
 | 2026-11-22 | 174 | 16,614 | 25% (3,766) | 25% | 14% (4,638) | 29% (481) | 30% (1,829) | 24% | 17% (3,840) | 30% (468) | 22% |
 | 2026-11-23 | 67 | 6,424 | 17% (1,684) | 26% | 10% (1,536) | 22% (243) | 21% (857) | 23% | 13% (1,248) | 22% (241) | 20% |
 | 2026-11-24 | 109 | 10,779 | 24% (2,820) | 26% | 15% (2,760) | 16% (355) | 26% (1,383) | 25% | 18% (2,269) | 15% (327) | 22% |
-| 2026-11-25 | 75 | 7,394 | 22% (1,746) | 24% | 14% (1,840) | 20% (238) | 28% (875) | 23% | 18% (1,492) | 22% (246) | 21% |
+| 2026-11-25 | 79 | 7,797 | 22% (1,836) | 24% | 14% (1,943) | 24% (255) | 28% (909) | 22% | 18% (1,566) | 25% (261) | 21% |
+| 2026-11-26 | 57 | 5,512 | 26% (1,743) | 27% | 11% (1,315) | 27% (207) | 27% (844) | 27% | 13% (1,123) | 29% (201) | 23% |
 
 
 **Every version beside the others, on the same calls** (points, calls in brackets: LOW = how far BELOW normal the goals were, HIGH and late HIGH (from minute 75) = how far ABOVE; bigger is better; normal = same minutes and scores; version 3 is always scored by a model fitted before that day)
 
 | date | calls | old: LOW / HIGH / late HIGH | 2: LOW / HIGH / late HIGH | 2b: LOW / HIGH / late HIGH | 3: LOW / HIGH / late HIGH | best LOW | best late HIGH |
 |---|---|---|---|---|---|---|---|
-| 2026-11-21 | 22,091 | - / +5.6 (90) / -1.7 (8) | +3.2 (5,046) / +2.0 (5,517) / +15.9 (696) | +3.2 (5,076) / +3.4 (2,551) / +15.1 (703) | +6.6 (4,508) / +3.2 (7,468) / +10.7 (1,173) | 3 | 2 |
-| 2026-11-22 | 15,579 | - / -4.7 (27) / +1.0 (5) | +2.4 (3,664) / +3.5 (3,763) / +14.8 (479) | +1.7 (3,677) / +6.0 (1,826) / +15.5 (465) | +5.3 (3,077) / +3.8 (5,741) / +13.7 (866) | 3 | 2b |
-| 2026-11-23 | 5,674 | - / -23.9 (4) / - | +6.4 (1,132) / -6.0 (1,547) / +2.9 (214) | +6.2 (1,148) / -5.0 (776) / +2.8 (209) | +8.2 (1,242) / +0.1 (1,952) / +9.1 (354) | 3 | 3 |
-| 2026-11-24 | 10,203 | - / +1.8 (7) / -25.3 (1) | +0.5 (2,189) / +2.4 (2,817) / +1.6 (355) | +0.8 (2,207) / +2.5 (1,380) / -0.1 (327) | +7.4 (1,771) / +5.9 (4,795) / +8.9 (666) | 3 | 3 |
-| 2026-11-25 | 6,875 | - / -5.3 (11) / -15.2 (1) | +1.0 (1,401) / +0.5 (1,745) / +5.2 (238) | +0.5 (1,433) / +4.2 (870) / +7.7 (244) | +6.6 (1,357) / +5.6 (2,620) / +8.9 (374) | 3 | 3 |
-| **all days** | 60,422 | - / +1.7 (139) / -3.2 (15) | +2.6 (13,432) / +1.5 (15,389) / +10.4 (1,982) | +2.4 (13,541) / +3.1 (7,403) / +10.4 (1,948) | +6.6 (11,955) / +3.9 (22,576) / +10.7 (3,433) | 3 | 3 |
+| 2026-11-21 | 22,091 | - / +5.4 (90) / -2.0 (8) | +3.2 (5,046) / +2.0 (5,517) / +15.8 (696) | +3.2 (5,076) / +3.5 (2,551) / +15.0 (703) | +7.0 (4,508) / +3.2 (7,468) / +11.0 (1,173) | 3 | 2 |
+| 2026-11-22 | 15,579 | - / -5.1 (27) / +0.5 (5) | +2.4 (3,664) / +3.5 (3,763) / +14.6 (479) | +1.7 (3,677) / +6.1 (1,826) / +15.4 (465) | +5.6 (3,077) / +3.8 (5,741) / +13.9 (866) | 3 | 2b |
+| 2026-11-23 | 5,674 | - / -24.2 (4) / - | +6.5 (1,132) / -5.9 (1,547) / +3.0 (214) | +6.3 (1,148) / -4.7 (776) / +2.9 (209) | +8.5 (1,242) / +0.2 (1,952) / +9.4 (354) | 3 | 3 |
+| 2026-11-24 | 10,203 | - / +1.8 (7) / -26.0 (1) | +0.5 (2,189) / +2.3 (2,817) / +1.5 (355) | +0.8 (2,207) / +2.6 (1,380) / -0.2 (327) | +7.7 (1,771) / +5.9 (4,795) / +9.2 (666) | 3 | 3 |
+| 2026-11-25 | 7,260 | - / -5.5 (11) / -15.7 (1) | +1.2 (1,486) / +1.2 (1,835) / +8.6 (255) | +0.8 (1,507) / +5.2 (904) / +9.9 (259) | +6.5 (1,429) / +5.2 (2,683) / +9.9 (389) | 3 | 3 |
+| 2026-11-26 | 5,198 | -0.4 (112) / +8.9 (35) / +51.8 (6) | +6.1 (1,024) / +3.7 (1,742) / +12.3 (207) | +6.0 (1,083) / +2.9 (844) / +14.8 (201) | +2.9 (754) / +3.4 (2,268) / +3.2 (329) | 2 | 2b |
+| **all days** | 66,005 | -0.4 (112) / +3.0 (174) / +12.2 (21) | +2.8 (14,541) / +1.7 (17,221) / +10.8 (2,206) | +2.7 (14,698) / +3.3 (8,281) / +11.0 (2,164) | +6.6 (12,781) / +3.9 (24,907) / +10.4 (3,777) | 3 | 2b |
 
-**The trial rules read version 2 (since 2026-11-24).** They switch when a newer version beats it for a full week (7 scored days) on LOW and on late HIGH: 5 of 7 days scored.
+**The trial rules read version 2 (since 2026-11-24).** They switch when a newer version beats it for a full week (7 scored days) on LOW and on late HIGH: 6 of 7 days scored.
 
-Live version 3 against its replay on 2026-11-25: 6,875 moments, correlation 0.96, typical gap 0.5 points. (Under 0.80 the trial may not switch to version 3.)
+Live version 3 against its replay on 2026-11-26: 5,124 moments, correlation 0.91, typical gap 0.7 points. (Under 0.80 the trial may not switch to version 3.)
 
-Live events collector, last 24 hours: 127 Betfair matches, 107 found on the feed, live stats for 41; goals arrive a median 46 s after the Betfair suspension (248 goals matched); calls used 58 of its 30,000.
+Live events collector, last 24 hours: 94 Betfair matches, 71 found on the feed, live stats for 47; goals arrive a median 45 s after the Betfair suspension (201 goals matched); calls used 1 of its 30,000.
 
 ## Version 3 (session 25, 24 Nov)
 
@@ -338,78 +340,72 @@ Plainly: **the price-only version is not weaker per call, it just speaks less of
 
 v2 = version 2's chance of a goal in the next 10 minutes; usual rate = how often a goal followed in the same minute band and score on 2-19 Nov (what HIGH / LOW is measured against); old signal = the old model's chance and its band against its own usual level. RIGHT/WRONG marks only HIGH and LOW.
 
-### Most money matched on 2026-11-25 with full data (£2,461,363 on match odds): Sporting Lisbon v Man Utd (live)
-Goals (Betfair suspension times): 33' 1-0, 49' 1-1, 51' 1-2, 80' 2-2. On these lines: 7 right, 4 wrong.
+### Most money matched on 2026-11-26 with full data (£2,369,221 on match odds): Celta Vigo v Bournemouth (live)
+Goals (Betfair suspension times): 11' 1-0, 48' 1-1, 79' 1-2. On these lines: 2 right, 5 wrong.
 
 | min | score | v2: goal in next 10 min | usual rate | old signal | next 10 min | call |
 |---|---|---|---|---|---|---|
-| 2 | 0-0 | 8% **LOW** | 20% | 42% NORMAL | no goal | RIGHT |
-| 5 | 0-0 | 18% **NORMAL** | 20% | 44% NORMAL | no goal |  |
-| 10 | 0-0 | 23% **NORMAL** | 20% | 44% NORMAL | no goal |  |
-| 15 | 0-0 | 24% **NORMAL** | 20% | 44% NORMAL | no goal |  |
-| 20 | 0-0 | 24% **HIGH** | 18% | 44% NORMAL | no goal | WRONG |
-| 25 | 0-0 | 25% **HIGH** | 18% | 44% NORMAL | GOAL 33' (1-0) | RIGHT |
-| 30 | 0-0 | 23% **HIGH** | 18% | 44% NORMAL | GOAL 33' (1-0) | RIGHT |
-| 35 | 1-0 | 19% **LOW** | 24% | 44% NORMAL | no goal | RIGHT |
-| 40 | 1-0 | 27% **NORMAL** | 24% | 44% NORMAL | no goal |  |
-| 45 | 1-0 | 25% **NORMAL** | 24% | 44% NORMAL | no goal |  |
+| 1 | 0-0 | 14% **LOW** | 20% | 31% NORMAL | GOAL 11' (1-0) | WRONG |
+| 5 | 0-0 | 25% **HIGH** | 20% | 38% NORMAL | GOAL 11' (1-0) | RIGHT |
+| 10 | 0-0 | 23% **NORMAL** | 20% | 38% NORMAL | GOAL 11' (1-0) |  |
+| 15 | 0-0 | 24% **NORMAL** | 20% | 38% NORMAL | no goal |  |
+| 20 | 1-0 | 26% **NORMAL** | 25% | 38% NORMAL | no goal |  |
+| 25 | 1-0 | 24% **NORMAL** | 25% | 38% NORMAL | no goal |  |
+| 30 | 1-0 | 24% **NORMAL** | 25% | 38% NORMAL | no goal |  |
+| 35 | 1-0 | 25% **NORMAL** | 24% | 38% NORMAL | no goal |  |
+| 40 | 1-0 | 25% **NORMAL** | 24% | 38% NORMAL | no goal |  |
 | HT | | | | | | |
-| 46 | 1-0 | 27% **NORMAL** | 24% | none | GOAL 51' (1-2) |  |
-| 50 | 1-1 | 19% **NORMAL** | 21% | 44% NORMAL | no goal |  |
-| 55 | 1-2 | 30% **HIGH** | 24% | 44% NORMAL | no goal | WRONG |
-| 60 | 1-2 | 30% **HIGH** | 24% | 44% NORMAL | no goal | WRONG |
-| 65 | 1-2 | 29% **HIGH** | 22% | 44% NORMAL | no goal | WRONG |
-| 71 | 1-2 | 29% **HIGH** | 22% | 44% NORMAL | GOAL 80' (2-2) | RIGHT |
-| 75 | 1-2 | 29% **HIGH** | 22% | 44% NORMAL | GOAL 80' (2-2) | RIGHT |
-| 81 | 2-2 | 33% **NORMAL** | 29% | 44% NORMAL | no goal |  |
-| 85 | 2-2 | 27% **NORMAL** | 29% | 45% NORMAL | no goal |  |
-| 90 | 2-2 | 22% **LOW** | 29% | none | no goal | RIGHT |
+| 46 | 1-0 | 27% **NORMAL** | 24% | none | GOAL 48' (1-1) |  |
+| 51 | 1-1 | 24% **NORMAL** | 21% | 38% NORMAL | no goal |  |
+| 55 | 1-1 | 29% **HIGH** | 21% | 38% NORMAL | no goal | WRONG |
+| 60 | 1-1 | 29% **HIGH** | 21% | 38% NORMAL | no goal | WRONG |
+| 65 | 1-1 | 31% **NORMAL** | 29% | 38% NORMAL | no goal |  |
+| 71 | 1-1 | 31% **NORMAL** | 29% | 38% NORMAL | GOAL 79' (1-2) |  |
+| 76 | 1-1 | 33% **NORMAL** | 29% | 38% NORMAL | GOAL 79' (1-2) |  |
+| 80 | 1-2 | 26% **HIGH** | 20% | 38% NORMAL | no goal | WRONG |
+| 85 | 1-2 | 27% **HIGH** | 20% | 38% NORMAL | no goal | WRONG |
+| 90 | 1-2 | 13% **LOW** | 20% | none | no goal | RIGHT |
 
-### Best called on 2026-11-25 (97% of 39 HIGH/LOW calls right): Kashima v Jeonbuk Motors (live)
-Goals (Betfair suspension times): 18' 1-0, 61' 2-0, 74' 3-0. On these lines: 3 right, 0 wrong.
+### Best called on 2026-11-26 (96% of 47 HIGH/LOW calls right): Muranga Seal v KCB (live)
+Goals (Betfair suspension times): 6' 0-1, 10' 1-1, 72' 0-3. On these lines: 7 right, 1 wrong.
 
 | min | score | v2: goal in next 10 min | usual rate | old signal | next 10 min | call |
 |---|---|---|---|---|---|---|
-| 5 | 0-0 | 14% **LOW** | 20% | 38% NORMAL | no goal | RIGHT |
-| 10 | 0-0 | 24% **NORMAL** | 20% | 38% NORMAL | GOAL 18' (1-0) |  |
-| 16 | 0-0 | 25% **HIGH** | 18% | 38% NORMAL | GOAL 18' (1-0) | RIGHT |
-| 20 | 1-0 | 23% **NORMAL** | 25% | 38% NORMAL | no goal |  |
-| 27 | 1-0 | 23% **NORMAL** | 25% | 38% NORMAL | no goal |  |
-| 31 | 1-0 | 24% **NORMAL** | 24% | 38% NORMAL | no goal |  |
-| 35 | 1-0 | 23% **NORMAL** | 24% | 38% NORMAL | no goal |  |
-| 41 | 1-0 | 24% **NORMAL** | 24% | 38% NORMAL | no goal |  |
+| 1 | 0-0 | 7% **LOW** | 20% | 38% NORMAL | GOAL 6' (0-1), GOAL 10' (1-1) | WRONG |
+| 5 | 0-0 | 17% **NORMAL** | 20% | 38% NORMAL | GOAL 10' (1-1) |  |
+| 10 | 1-1 | 20% **NORMAL** | 20% | 38% NORMAL | no goal |  |
+| 15 | 0-1 | 19% **NORMAL** | 21% | 38% NORMAL | no goal |  |
+| 20 | 0-1 | 18% **LOW** | 25% | 38% NORMAL | no goal | RIGHT |
+| 25 | 0-1 | 18% **LOW** | 25% | 38% NORMAL | no goal | RIGHT |
+| 30 | 0-1 | 21% **NORMAL** | 25% | 38% NORMAL | no goal |  |
+| 35 | 0-1 | 23% **NORMAL** | 24% | 38% NORMAL | no goal |  |
+| 40 | 0-1 | 21% **NORMAL** | 24% | 38% NORMAL | no goal |  |
+| 45 | 0-2 | 15% **NORMAL** | 18% | 38% NORMAL | no goal |  |
 | HT | | | | | | |
-| 50 | 1-0 | 26% **NORMAL** | 24% | 38% NORMAL | GOAL 61' (2-0) |  |
-| 55 | 1-0 | 28% **NORMAL** | 24% | 38% NORMAL | GOAL 61' (2-0) |  |
-| 61 | 2-0 | 19% **NORMAL** | 19% | 38% NORMAL | no goal |  |
-| 65 | 2-0 | 19% **NORMAL** | 19% | 38% NORMAL | GOAL 74' (3-0) |  |
-| 70 | 2-0 | 25% **HIGH** | 19% | 38% NORMAL | GOAL 74' (3-0) | RIGHT |
+| 47 | 0-2 | 9% **LOW** | 20% | none | no goal | RIGHT |
+| 50 | 0-2 | 22% **NORMAL** | 20% | none | no goal |  |
+| 55 | 0-2 | 23% **NORMAL** | 20% | 38% NORMAL | no goal |  |
+| 60 | 0-2 | 23% **NORMAL** | 20% | 38% NORMAL | GOAL 72' (0-3) |  |
+| 65 | 0-2 | 22% **NORMAL** | 19% | 38% NORMAL | GOAL 72' (0-3) |  |
+| 70 | 0-2 | 23% **NORMAL** | 19% | 38% NORMAL | no goal |  |
+| 75 | 0-3 | 10% **LOW** | 19% | 38% NORMAL | no goal | RIGHT |
+| 80 | 0-3 | 9% **LOW** | 16% | none | no goal | RIGHT |
+| 85 | 0-3 | 8% **LOW** | 16% | none | no goal | RIGHT |
+| 90 | 0-3 | 6% **LOW** | 16% | none | no goal | RIGHT |
 
-### Worst called on 2026-11-25 (16% of 56 HIGH/LOW calls right): Atletico Madrid U19 v Viking FK U19 (live)
-Goals (Betfair suspension times): 79' 1-0, 90' 2-0. On these lines: 1 right, 11 wrong.
+### Worst called on 2026-11-26 (12% of 32 HIGH/LOW calls right): Olympiakos v AC Milan (live)
+Goals (Betfair suspension times): 31' 1-0, 51' 2-0. On these lines: 1 right, 2 wrong.
 
 | min | score | v2: goal in next 10 min | usual rate | old signal | next 10 min | call |
 |---|---|---|---|---|---|---|
-| 2 | 0-0 | 12% **LOW** | 20% | 38% NORMAL | no goal | RIGHT |
-| 6 | 0-0 | 21% **NORMAL** | 20% | 38% NORMAL | no goal |  |
-| 10 | 0-0 | 22% **NORMAL** | 20% | 38% NORMAL | no goal |  |
-| 15 | 0-0 | 23% **NORMAL** | 20% | 38% NORMAL | no goal |  |
-| 20 | 0-0 | 24% **HIGH** | 18% | 38% NORMAL | no goal | WRONG |
-| 25 | 0-0 | 25% **HIGH** | 18% | 38% NORMAL | no goal | WRONG |
-| 30 | 0-0 | 26% **HIGH** | 18% | 38% NORMAL | no goal | WRONG |
-| 35 | 0-0 | 27% **HIGH** | 15% | 38% NORMAL | no goal | WRONG |
-| 40 | 0-0 | 26% **HIGH** | 15% | 38% NORMAL | no goal | WRONG |
-| 45 | 0-0 | 26% **HIGH** | 15% | 38% NORMAL | no goal | WRONG |
+| 22 | 0-0 | 23% **HIGH** | 18% | none | GOAL 31' (1-0) | RIGHT |
+| 26 | 0-0 | 23% **NORMAL** | 18% | none | GOAL 31' (1-0) |  |
+| 31 | 1-0 | 27% **NORMAL** | 24% | none | no goal |  |
+| 36 | 1-0 | 23% **NORMAL** | 24% | none | no goal |  |
+| 41 | 1-0 | 23% **NORMAL** | 24% | none | no goal |  |
 | HT | | | | | | |
-| 46 | 0-0 | 28% **HIGH** | 21% | 38% NORMAL | no goal | WRONG |
-| 50 | 0-0 | 29% **HIGH** | 21% | 38% NORMAL | no goal | WRONG |
-| 55 | 0-0 | 31% **HIGH** | 21% | 38% NORMAL | no goal | WRONG |
-| 61 | 0-0 | 32% **NORMAL** | 29% | 38% NORMAL | no goal |  |
-| 65 | 0-0 | 33% **NORMAL** | 29% | 38% NORMAL | no goal |  |
-| 70 | 0-0 | 32% **NORMAL** | 29% | 38% NORMAL | GOAL 79' (1-0) |  |
-| 75 | 0-0 | 29% **NORMAL** | 29% | 38% NORMAL | GOAL 79' (1-0) |  |
-| 81 | 1-0 | 28% **HIGH** | 20% | 38% NORMAL | no goal | WRONG |
-| 85 | 1-0 | 20% **NORMAL** | 20% | 38% NORMAL | GOAL 90' (2-0) |  |
-| 90 | 1-0 | 14% **LOW** | 20% | none | GOAL 90' (2-0) | WRONG |
+| 46 | 1-0 | 25% **NORMAL** | 24% | none | GOAL 51' (2-0) |  |
+| 51 | 2-0 | 27% **HIGH** | 20% | none | no goal | WRONG |
+| 55 | 2-0 | 26% **HIGH** | 20% | none | no goal | WRONG |
 
-_Built 2026-11-26 00:11 UTC by /root/pe-sports/goaltrade/sc_build.py + sc_report.py (session 22). Scorecard only._
+_Built 2026-11-27 00:00 UTC by /root/pe-sports/goaltrade/sc_build.py + sc_report.py (session 22). Scorecard only._
