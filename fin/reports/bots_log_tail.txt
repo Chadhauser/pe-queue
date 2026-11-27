@@ -1,6 +1,3 @@
-2026-11-24 15:55:23 GET /positions/ONT -> 404 {'code': 40410000, 'message': 'position does not exist'}
-2026-11-24 15:58:02 GET /positions/QQQ -> 404 {'code': 40410000, 'message': 'position does not exist'}
-2026-11-24 15:58:02 GET /positions/SPY -> 404 {'code': 40410000, 'message': 'position does not exist'}
 2026-11-24 15:58:12 GET /positions/IWM -> 404 {'code': 40410000, 'message': 'position does not exist'}
 2026-11-24 15:58:13 E1S {'note': 'no FOMC next (2026-11-25)'}
 2026-11-24 15:59:00 GET /positions/QQQM -> 404 {'code': 40410000, 'message': 'position does not exist'}
@@ -58,3 +55,6 @@
 2026-11-27 09:35:06 ORB_SPY sell 34 SPY ~723.19 stop 726.05 target 694.59 -> 200
 2026-11-27 09:35:06 ORB_IWM buy 210 IWM ~272.285 stop 271.81 target 277.04 -> 200
 2026-11-27 09:35:37 ORB_SPY PROTECT fill 722.42 risk 1.27x planned, kept 27 of 34 shares, stop/target order -> 200
+2026-11-27 09:36:07 ORB PROTECT fill 640.114 risk 1.13x planned, kept 17 of 20 shares, stop/target order -> 200
+2026-11-27 09:37:14 GET /positions/IWM -> 404 {'code': 40410000, 'message': 'position does not exist'}
+2026-11-27 09:37:14 ORB_IWM PROTECT fill 271.658333 already beyond stop 271.81: closed
