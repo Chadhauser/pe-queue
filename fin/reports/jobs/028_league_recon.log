@@ -1,0 +1,159 @@
+== alpaca minute dirs
+AAL AAPL ABBV ADBE AFRM AMC AMD AMGN AMZN ARKK ARM AVGO AXP BA BABA BAC BTCUSD C CAT CCL COIN COP COST CRM CSCO CVNA CVX DAL DE DIS DKNG ETHUSD F GE GILD GLD GM GME GOOGL GS HD HOOD INTC IWM JD JNJ JPM KO LCID LLY LOW LUV MA MARA MCD META MGM MRK MRNA MS MSFT MSTR MU NFLX NIO NKE NVDA ORCL OXY PDD PEP PFE PG PLTR PYPL QCOM QQQ RCL RIOT RIVN ROKU SBUX SHOP SLB SMCI SNOW SOFI SOLUSD SPY SQ SQQQ T TGT TLT TMUS TQQQ TSLA UAL UBER UNH UPST USO V VZ WFC WMT WYNN XOM 
+1m_2021-01.parquet
+1m_2021-02.parquet
+1m_2021-03.parquet
+71
+BTCUSD
+ETHUSD
+SOLUSD
+== oanda
+AUD_USD
+EUR_USD
+GBP_USD
+USD_CAD
+USD_JPY
+XAU_USD
+1m_2020-01.parquet
+1m_2020-02.parquet
+1m_2020-03.parquet
+1m_2020-04.parquet
+1m_2020-05.parquet
+83
+== yf1m / duka
+CL_F.parquet
+ES_F.parquet
+EURUSD_X.parquet
+GBPUSD_X.parquet
+GC_F.parquet
+NQ_F.parquet
+EURUSD
+GBPUSD
+STATUS
+USATECHIDXUSD
+== loaders
+# MECH2 — second batch of OUR OWN mechanism hypotheses on Alpaca 1-min ETF bars (QQQ SPY IWM TLT GLD USO TQQQ SQQQ, Jul 2020 ->).
+# Each hypothesis is a named function returning one return per trade (bps of price, after 1c spread + 1c slip per side on the
+# traded ETF) indexed by date. Direction is PRE-REGISTERED in the docstring. Control = same trades with random sign.
+# Usage: python3 -I mech2.py <id>      prints one RESULT line.    python3 -I mech2.py list   prints ids.
+import sys, math, json, datetime as dt, numpy as np, pandas as pd
+sys.path.insert(0,'/root/pe-fin'); from alpaca_load import load
+_cache={}
+def bars(sym):
+/root/pe-fin/alpaca_load.py:3:def load(sym, spread=0.01):
+/root/pe-fin/alpaca_load.py-4-    d=f"{BASE}/{sym}"; files=sorted(f for f in os.listdir(d) if f.endswith('.parquet')) if os.path.isdir(d) else []
+/root/pe-fin/alpaca_load.py-5-    if not files: return pd.DataFrame(columns=['open','high','low','close','spread','ticks'])
+/root/pe-fin/alpaca_load.py-6-    b=pd.concat(pd.read_parquet(f"{d}/{f}") for f in files).sort_index(); b=b[~b.index.duplicated()]
+/root/pe-fin/alpaca_load.py-7-    b['spread']=spread; return b[['open','high','low','close','spread','ticks','volume']]
+--
+/root/pe-fin/duka_load.py:2:def load(sym,base='/root/pe-data/duka'):
+/root/pe-fin/duka_load.py-3-    d=f"{base}/{sym}"; fs=sorted(f for f in os.listdir(d) if f.startswith('day_') and os.path.getsize(f"{d}/{f}")>2000) if os.path.isdir(d) else []
+/root/pe-fin/duka_load.py-4-    if not fs: return pd.DataFrame()
+/root/pe-fin/duka_load.py-5-    b=pd.concat(pd.read_parquet(f"{d}/{f}") for f in fs).sort_index(); return b[~b.index.duplicated()]
+--
+/root/pe-fin/fin_lib.py:12:def load():
+/root/pe-fin/fin_lib.py-13-    data={}
+/root/pe-fin/fin_lib.py-14-    if SYNTH:
+/root/pe-fin/fin_lib.py-15-        rng=np.random.default_rng(7); idx=pd.bdate_range('2010-01-01','2026-10-01')
+/root/pe-fin/fin_lib.py-16-        for cls,ts in UNI.items():
+/root/pe-fin/fin_lib.py-17-            for t in ts:
+/root/pe-fin/fin_lib.py-18-                r=rng.normal(0.0002,0.012,len(idx)); px=100*np.exp(np.cumsum(r))
+/root/pe-fin/fin_lib.py-19-                df=pd.DataFrame({'Close':px},index=idx); df['High']=df.Close*(1+abs(rng.normal(0,0.006,len(idx)))); df['Low']=df.Close*(1-abs(rng.normal(0,0.006,len(idx)))); df['Volume']=1e6
+/root/pe-fin/fin_lib.py-20-                data[(cls,t)]=df
+--
+/root/pe-fin/oanda_load.py:3:def load(inst):
+/root/pe-fin/oanda_load.py-4-    d=f"{BASE}/{inst}"; fs=sorted(f for f in os.listdir(d) if f.endswith('.parquet')) if os.path.isdir(d) else []
+/root/pe-fin/oanda_load.py-5-    if not fs: return pd.DataFrame(columns=['open','high','low','close','spread','ticks','volume'])
+/root/pe-fin/oanda_load.py-6-    b=pd.concat(pd.read_parquet(f"{d}/{f}") for f in fs).sort_index(); return b[~b.index.duplicated()]
+/root/pe-fin/alpaca_load.py
+/root/pe-fin/alpaca_pull.py
+/root/pe-fin/alpaca_stocks.py
+/root/pe-fin/crypto_pull.py
+/root/pe-fin/duka_1m.py
+/root/pe-fin/duka_daemon.py
+/root/pe-fin/duka_load.py
+/root/pe-fin/fin_lib.py
+/root/pe-fin/fin_paper.py
+/root/pe-fin/fin_watchdog.py
+/root/pe-fin/findb.py
+/root/pe-fin/fvt_nq.py
+/root/pe-fin/grammar_sweep.py
+/root/pe-fin/mechanisms.py
+/root/pe-fin/oanda_load.py
+/root/pe-fin/oanda_pull.py
+/root/pe-fin/orb_mc.py
+/root/pe-fin/orb_nq.py
+/root/pe-fin/orb_qqq.py
+/root/pe-fin/orb_slices.py
+/root/pe-fin/orb_stocks.py
+/root/pe-fin/tqqq_test.py
+/root/pe-fin/yf1m_collect.py
+/root/pe-fin/team/mech_crypto.py:7:def bars(sym):
+/root/pe-fin/team/mech_crypto.py:11:def px_at(b,mi):
+/root/pe-fin/team/mech_crypto.py:13:def ret(sym,t_in,t_out,cond,sign):
+/root/pe-fin/team/mech_crypto.py:24:def move(sym,a,b_):
+/root/pe-fin/team/mech_crypto.py:26:def daily(sym):
+/root/pe-fin/team/mech_crypto.py:29:def reg(i,doc):
+/root/pe-fin/team/mech_crypto.py:30:    def w(f): f.__doc__=doc; H[i]=f; return f
+/root/pe-fin/team/mech_crypto.py:33:def C1():
+/root/pe-fin/team/mech_crypto.py:42:def C2():
+/root/pe-fin/team/mech_crypto.py:45:def C3():
+/root/pe-fin/team/mech_crypto.py:48:def C4():
+/root/pe-fin/team/mech_crypto.py:51:def C5():
+/root/pe-fin/team/mech_crypto.py:54:def C6():
+/root/pe-fin/team/mech_crypto.py:56:    def sign(d): return 1 if c[d]>f.h[d] else (-1 if c[d]<f.l[d] else 0)
+/root/pe-fin/team/mech_crypto.py:59:def C7():
+/root/pe-fin/team/mech_crypto.py:62:def C8():
+/root/pe-fin/team/mech_crypto.py:64:    def sun(d): i=pos[d]; return (D.c[idx[i-1]]/D.o[idx[i-1]]-1) if i>0 and idx[i-1].weekday()==6 else 0
+/root/pe-fin/team/mech_crypto.py:66:def st(s):
+/root/pe-fin/team/mech_fx.py:7:def bars(i):
+/root/pe-fin/team/mech_fx.py:11:def at(b,mi):
+/root/pe-fin/team/mech_fx.py:13:def ret(inst,t_in,t_out,cond,sign):
+/root/pe-fin/team/mech_fx.py:24:def move(inst,a,b_):
+/root/pe-fin/team/mech_fx.py:26:def rng(inst,a,b_):
+/root/pe-fin/team/mech_fx.py:29:def reg(i,doc):
+/root/pe-fin/team/mech_fx.py:30:    def w(f): f.__doc__=doc; H[i]=f; return f
+/root/pe-fin/team/mech_fx.py:32:def orb(inst,a,b_,chk,end):
+/root/pe-fin/team/mech_fx.py:34:    def sign(d): return 1 if c[d]>f.h[d] else (-1 if c[d]<f.l[d] else 0)
+/root/pe-fin/team/mech_fx.py:37:def F1(): return orb('EUR_USD',420,480,485,720)
+/root/pe-fin/team/mech_fx.py:39:def F2(): return orb('GBP_USD',420,480,485,720)
+/root/pe-fin/team/mech_fx.py:41:def F3(): return orb('EUR_USD',0,420,425,600)
+/root/pe-fin/team/mech_fx.py:43:def F4():
+/root/pe-fin/team/mech_fx.py:46:def F5():
+/root/pe-fin/team/mech_fx.py:49:def F6():
+/root/pe-fin/team/mech_fx.py:52:def F7():
+/root/pe-fin/team/mech_fx.py:55:def F8():
+/root/pe-fin/team/mech_fx.py:58:def F9(): return orb('XAU_USD',420,480,485,810)
+/root/pe-fin/team/mech_fx.py:60:def F10():
+/root/pe-fin/team/mech_fx.py:62:def st(s):
+/root/pe-data/alpaca/BTCUSD/*.parquet 71 1m_2021-01.parquet 1m_2026-11.parquet ['open', 'high', 'low', 'close', 'volume', 'ticks'] [Timestamp('2026-11-01 00:00:00+0000', tz='UTC'), Timestamp('2026-11-01 00:01:00+0000', tz='UTC')] 37393
+/root/pe-data/alpaca/SPY/*.parquet 131 1m_2016-01.parquet 1m_2026-11.parquet ['open', 'high', 'low', 'close', 'volume', 'ticks'] [Timestamp('2026-11-02 13:17:00+0000', tz='UTC'), Timestamp('2026-11-02 13:33:00+0000', tz='UTC')] 4042
+/root/pe-data/oanda 498 ['/root/pe-data/oanda/AUD_USD/1m_2020-01.parquet', '/root/pe-data/oanda/AUD_USD/1m_2020-02.parquet'] ['/root/pe-data/oanda/XAU_USD/1m_2026-11.parquet']
+['open', 'high', 'low', 'close', 'spread', 'volume', 'ticks'] [Timestamp('2026-11-01 23:04:00+0000', tz='UTC'), Timestamp('2026-11-01 23:05:00+0000', tz='UTC')] 26020
+                               open      high      low  ...  spread  volume  ticks
+ts                                                      ...                       
+2026-11-26 23:28:00+00:00  3567.840  3568.255  3567.81  ...    0.75     133    133
+2026-11-26 23:29:00+00:00  3568.005  3568.105  3566.31  ...    0.86     150    150
+
+[2 rows x 7 columns]
+/root/pe-data/yf1m 6 ['/root/pe-data/yf1m/CL_F.parquet', '/root/pe-data/yf1m/ES_F.parquet'] ['/root/pe-data/yf1m/NQ_F.parquet']
+['Adj Close', 'Close', 'High', 'Low', 'Open', 'Volume'] [Timestamp('2026-10-23 04:09:00+0000', tz='UTC'), Timestamp('2026-10-23 04:10:00+0000', tz='UTC')] 32733
+Price                      Adj Close     Close  ...      Open  Volume
+Datetime                                        ...                  
+2026-11-26 04:57:00+00:00   26372.00  26372.00  ...  26374.75      66
+2026-11-26 04:58:00+00:00   26389.75  26389.75  ...  26372.25     113
+
+[2 rows x 6 columns]
+/root/pe-data/duka 177 ['/root/pe-data/duka/EURUSD/day_20241029.parquet', '/root/pe-data/duka/EURUSD/day_20241125.parquet'] ['/root/pe-data/duka/USATECHIDXUSD/day_20261023.parquet']
+['open', 'high', 'low', 'close', 'spread', 'ticks'] [Timestamp('2026-10-23 00:00:00+0000', tz='UTC'), Timestamp('2026-10-23 00:01:00+0000', tz='UTC')] 1080
+                                 open        high  ...    spread  ticks
+ts                                                 ...                 
+2026-10-23 17:58:00+00:00  29028.2775  29059.8775  ...  0.970958    456
+2026-10-23 17:59:00+00:00  29049.8885  29055.3170  ...  0.970519    385
+
+[2 rows x 6 columns]
+               total        used        free      shared  buff/cache   available
+Mem:              17           5           3           1          10          11
+6
+/dev/sda1       968G  229G  739G  24% /
+exit=0 secs=2
