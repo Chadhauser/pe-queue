@@ -1,27 +1,29 @@
 <stdin>:3: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
-# Coherence forward paper (real order book) — 2026-11-26 06:15 UTC
+# Coherence forward paper (real order book) — 2026-11-27 06:15 UTC
 
-Bets 367, settled 366, £310.68 at £2.
+Bets 416, settled 415, £559.10 at £2.
 
 | cell | side | bets | settled | won | £ | per £100 |
 |---|---|---|---|---|---|---|
-| CORRECT_SCORE cs_aoa | BACK | 102 | 102 | 8 | 357.18 | 175.1 |
-| CORRECT_SCORE cs_aod | LAY | 21 | 21 | 21 | 41.16 | 98.0 |
-| CORRECT_SCORE cs2-3 | LAY | 28 | 28 | 27 | 16.92 | 30.2 |
+| CORRECT_SCORE cs_aoa | BACK | 109 | 109 | 9 | 380.46 | 174.5 |
+| CORRECT_SCORE cs2-0 | BACK | 39 | 39 | 2 | 182.76 | 234.3 |
+| CORRECT_SCORE cs_aod | LAY | 29 | 29 | 29 | 56.84 | 98.0 |
+| CORRECT_SCORE cs2-3 | LAY | 34 | 34 | 33 | 28.68 | 42.2 |
+| CORRECT_SCORE cs3-2 | LAY | 59 | 59 | 57 | 18.72 | 15.9 |
 | CORRECT_SCORE cs1-0 | LAY | 3 | 3 | 3 | 5.88 | 98.0 |
+| OU45 over | LAY | 3 | 3 | 3 | 5.88 | 98.0 |
 | CORRECT_SCORE cs_aoa | LAY | 2 | 2 | 2 | 3.92 | 98.0 |
-| OU45 over | LAY | 2 | 2 | 2 | 3.92 | 98.0 |
-| CORRECT_SCORE cs2-0 | BACK | 36 | 36 | 1 | 2.52 | 3.5 |
 | OU35 over | LAY | 1 | 1 | 1 | 1.96 | 98.0 |
-| CORRECT_SCORE cs3-2 | LAY | 50 | 50 | 48 | 1.08 | 1.1 |
+| CORRECT_SCORE cs0-2 | LAY | 1 | 1 | 1 | 1.96 | 98.0 |
+| CORRECT_SCORE cs1-3 | LAY | 1 | 1 | 1 | 1.96 | 98.0 |
 | OU15 over | LAY | 1 | 1 | 0 | -1.16 | -58.0 |
-| CORRECT_SCORE cs2-3 | BACK | 1 | 1 | 0 | -2.00 | -100.0 |
 | BOTH_TEAMS_TO_SCORE btts_no | BACK | 1 | 1 | 0 | -2.00 | -100.0 |
-| CORRECT_SCORE cs0-1 | BACK | 27 | 26 | 1 | -4.92 | -9.5 |
+| CORRECT_SCORE cs2-3 | BACK | 1 | 1 | 0 | -2.00 | -100.0 |
+| CORRECT_SCORE cs1-2 | LAY | 9 | 9 | 8 | -2.32 | -12.9 |
 | OU35 over | BACK | 3 | 3 | 0 | -6.00 | -100.0 |
-| CORRECT_SCORE cs1-2 | LAY | 7 | 7 | 6 | -6.24 | -44.6 |
-| CORRECT_SCORE cs3-1 | BACK | 4 | 4 | 0 | -8.00 | -100.0 |
-| CORRECT_SCORE cs1-0 | BACK | 4 | 4 | 0 | -8.00 | -100.0 |
-| BOTH_TEAMS_TO_SCORE btts | LAY | 23 | 23 | 11 | -8.86 | -19.3 |
-| CORRECT_SCORE cs0-0 | LAY | 18 | 18 | 17 | -10.68 | -29.7 |
-| CORRECT_SCORE cs0-3 | BACK | 33 | 33 | 0 | -66.00 | -100.0 |
+| CORRECT_SCORE cs0-0 | LAY | 20 | 20 | 19 | -6.76 | -16.9 |
+| CORRECT_SCORE cs0-1 | BACK | 28 | 27 | 1 | -6.92 | -12.8 |
+| BOTH_TEAMS_TO_SCORE btts | LAY | 25 | 25 | 12 | -8.76 | -17.5 |
+| CORRECT_SCORE cs3-1 | BACK | 5 | 5 | 0 | -10.00 | -100.0 |
+| CORRECT_SCORE cs1-0 | BACK | 6 | 6 | 0 | -12.00 | -100.0 |
+| CORRECT_SCORE cs0-3 | BACK | 36 | 36 | 0 | -72.00 | -100.0 |
