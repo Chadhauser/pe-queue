@@ -13,6 +13,8 @@ DROPPED: T3 in loss (-75.04) after 533 settled orders; no new trial orders.
 | 02:34 | Pachuca v Guadalajara | Under 3.5 Goals | back | 1.23 | £49.94 | won | +£11.26 | C |
 | 02:49 | Pachuca v Guadalajara | Under 2.5 Goals | back | 1.63 | £22.88 | lost | -£22.88 | B |
 | 04:43 | Leon v Cruz Azul | Under 4.5 Goals | back | 1.22 | £49.71 | won | +£10.72 | C |
+| 08:28 | Bangladesh Police v Dhaka Abahani | Bangladesh Police | back | 2.52 | £15.50 | open | - | T1 |
+| 08:28 | Rahmatganj MFS v Mohammedan Dhaka | Mohammedan Dhaka | back | 1.38 | £29.62 | open | - | T1 |
 
 Counting: an order is one trial order the one test filled; a market is one market however many orders it holds. The entry bar counts settled markets (at least 300 on 10 separate days); the drop at 300 counts settled orders; 'the bank took' counts bets after the bank's limits and stops.
 - T1 (BET): In football match result markets with under £5,000 matched two minutes before the start, back the favourite two minutes before the start and hold it to the result. 283 orders settled since 22 Nov (283 markets): +£2,323.76 on £9,072.75 staked at the market's stake, +25.6 per £100. The bank took 157 of these: +£1,113.08 on £3,964.17 staked, +28.1 per £100. To clear the entry bar: about 17 more markets and 5 more days (chance of a fluke 0.0000 against the bar 0.00089).
