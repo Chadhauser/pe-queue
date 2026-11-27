@@ -1,7 +1,3 @@
-2026-11-24 15:51:15 K4 new ['SA', 'DC', 'AIRO', 'USAU', 'AUNA', 'RUM', 'MNRO', 'CNL', 'ARQQ', 'CHA']
-2026-11-24 15:52:59 K7 new ['ENOV', 'WWW', 'VIA', 'XNCR', 'OSW', 'PRCH']
-2026-11-24 15:55:15 GET /positions/DMAC -> 404 {'code': 40410000, 'message': 'position does not exist'}
-2026-11-24 15:55:21 GET /positions/MPLT -> 404 {'code': 40410000, 'message': 'position does not exist'}
 2026-11-24 15:55:23 GET /positions/ONT -> 404 {'code': 40410000, 'message': 'position does not exist'}
 2026-11-24 15:58:02 GET /positions/QQQ -> 404 {'code': 40410000, 'message': 'position does not exist'}
 2026-11-24 15:58:02 GET /positions/SPY -> 404 {'code': 40410000, 'message': 'position does not exist'}
@@ -58,3 +54,7 @@
 2026-11-27 09:31:00 K2 entry started
 2026-11-27 09:31:08 K2 gap source: official open; 59 first-pass names, 18 qualify
 2026-11-27 09:31:14 K2 scanned 1627 legs [('PICS', 'sell'), ('OTLY', 'buy'), ('ALVO', 'buy'), ('MEI', 'buy'), ('KC', 'sell'), ('MUX', 'buy'), ('ARIS', 'buy'), ('SKE', 'buy'), ('NEXA', 'buy'), ('PAX', 'sell'), ('LTBR', 'sell'), ('CTGO', 'buy'), ('ASPN', 'buy'), ('PDFS', 'sell'), ('BLZE', 'sell'), ('MEC', 'buy'), ('LAR', 'buy'), ('AIP', 'sell')]
+2026-11-27 09:35:05 ORB sell 20 QQQ ~640.75 stop 645.74 target 590.85 -> 200
+2026-11-27 09:35:06 ORB_SPY sell 34 SPY ~723.19 stop 726.05 target 694.59 -> 200
+2026-11-27 09:35:06 ORB_IWM buy 210 IWM ~272.285 stop 271.81 target 277.04 -> 200
+2026-11-27 09:35:37 ORB_SPY PROTECT fill 722.42 risk 1.27x planned, kept 27 of 34 shares, stop/target order -> 200
