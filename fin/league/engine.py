@@ -51,6 +51,7 @@ def finish(name, out, tested, outdir, extra=''):
         print(T.groupby(['do', 'hold']).size().to_string()); print(T.sort_values('usd_month', ascending=False).head(30).drop(columns=['universe', 'stake', 'trades']).to_string(index=False))
 # ---------------------------------------------------------------- A: shares and funds, minute bars, regular session
 def run_A(outdir):
+    os.makedirs(outdir, exist_ok=True)
     import mech2
     TS = [5, 15, 30, 60, 90, 120, 180, 240, 300, 330, 360]; NM = {t: f'{(570 + t) // 60:02d}:{(570 + t) % 60:02d}' for t in TS}
     syms = sorted(s for s in os.listdir('/root/pe-data/alpaca') if 'USD' not in s); D = {}; rows = []
@@ -107,6 +108,7 @@ def run_A(outdir):
     ycols = [('30 minutes', 'y30', 'both', 1), ('60 minutes', 'y60', 'both', 1), ('two hours', 'y120', 'both', 1), ('to the close', 'yclose', 'both', 1), ('overnight to the next open', 'yon', 'both', 1), ('to the next day\'s close', 'ync', 'both', 2)]
     for tag, mode in (('L', 'long'), ('S', 'short')):
         ycols += [('to the close, stop at a quarter of a normal day\'s range', f'y{tag}_stop', mode, 1), ('to the close, stop at a quarter and bank at half a normal day\'s range', f'y{tag}_st', mode, 1), ('to the close, bank at half a normal day\'s range', f'y{tag}_tgt', mode, 1)]
+    X[X.date == days[-1]][['date', 'sym', 'time'] + [f for f in feats if f not in ('always',)]].to_csv(os.path.join(outdir, 'parity_A.csv'), index=False)   # for the live-executor parity check
     out, tested = score(X, ycols, feats, len(days), mid, 10000.0, 10, 21, 'shares and funds')
     finish('A', out, tested, outdir, f'{X.sym.nunique()} shares and funds, {len(days)} days, entry 2 minutes after the signal, cost 3 (funds) / 6 (shares) hundredths of a percent a round trip')
 # ---------------------------------------------------------------- C and D: round-the-clock markets, hourly decisions
