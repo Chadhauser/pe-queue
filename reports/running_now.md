@@ -3,3 +3,4 @@ lane 1 (readiness, racing, golf): 1 | lane 2 (tennis, cricket): 1 | loader fixer
 724 done 08:42 UTC: form guide and keep-the-rules added to racing/golf/cricket briefs (3 of 3), note left for tennis; football form session queued behind golf. Racing started before this edit: 1 (0 = reads the new brief). Sessions running: 4 | free memory 14 GB.
 725 done 08:44 UTC: big-games part added to the football small-markets brief (1) and watch card to the football form brief (1); either already started: 0 (0 = both read the new briefs).
 726 done 08:48 UTC: correct score own look and nil-nil trade in the football small-markets brief (1); watch card works without Peter (1); either already started: 0 (0 = both read the new briefs).
+727 started 13:32 UTC 27 Nov: safe path to real money, dry run only. Build session running: 1 | REAL_MONEY_OFF present: yes | ON file present: no | free memory 8 GB.
