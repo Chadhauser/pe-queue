@@ -1,0 +1,21 @@
+A rows 1134804 symbols 105 days 1561 2020-08-10 to 2026-11-13
+universe A: ways tested 217710 | passing 241 | 105 shares and funds, 1561 days, entry 2 minutes after the signal, cost 3 (funds) / 6 (shares) hundredths of a percent a round trip
+do          hold                                                                 
+BUY         30 minutes                                                                1
+  differs: 09:35 ABBV overnight gap | test: no gap | live: gap up
+  differs: 09:35 ARKK overnight gap | test: big gap down | live: no gap
+  differs: 09:35 ARKK yesterday | test: down day | live: big down day
+  differs: 09:35 BABA overnight gap | test: gap down | live: big gap down
+  differs: 09:35 C move so far today | test: flat | live: down a little
+  differs: 09:35 C yesterday | test: up day | live: flat day
+parity day 2026-11-13 | shares compared 73
+  move so far today: 96.8% the same (790 checks)
+  overnight gap: 91.8% the same (790 checks)
+  yesterday: 88.9% the same (790 checks)
+  first five minutes: 98.6% the same (790 checks)
+  place in today's range: 100.0% the same (790 checks)
+  volume so far: 96.1% the same (790 checks)
+  market so far (S&P 500 fund): 100.0% the same (790 checks)
+  against the market: 98.6% the same (790 checks)
+  last 30 minutes: 98.5% the same (790 checks)
+exit=0 secs=383
