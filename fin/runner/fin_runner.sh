@@ -15,6 +15,11 @@ publish(){
   [ -f $S/bots/bots.md ] && { tail -n +2 $S/bots/bots.md > $S/bots_body.new; cmp -s $S/bots_body.new $S/bots_body.last || { cp $S/bots/bots.md fin/reports/bots.md; cp $S/bots_body.new $S/bots_body.last; }; }
   [ -f $S/bots/bots.log ] && tail -60 $S/bots/bots.log > fin/reports/bots_log_tail.txt
   [ -f $S/stops.log ] && tail -20 $S/stops.log > fin/reports/stops.txt
+  for f in league.md league_paper.md league_trades_today.md; do                      # league files: copy only when the content (not the timestamp) changed
+    [ -f $S/league/$f ] || continue
+    grep -v '^updated ' $S/league/$f > $S/league_$f.new
+    cmp -s $S/league_$f.new $S/league_$f.last || { cp $S/league/$f fin/reports/$f; cp $S/league_$f.new $S/league_$f.last; }
+  done
   git add fin/reports >/dev/null 2>&1
   git diff --cached --quiet && return 0
   git commit -qm "fin reports $(date -u +%FT%H:%M)" && { git pull -q --rebase origin main 2>>$S/git.err; git push -q origin HEAD:main 2>>$S/git.err; }
