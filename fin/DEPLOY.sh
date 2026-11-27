@@ -25,7 +25,8 @@ pkill -f orb_alpaca_bot.py; pkill -f k2_gapfade_bot.py; pkill -f k4_reversal_bot
 crontab -l > /root/crontab_before_finq_$(date +%Y%m%d%H%M).txt 2>/dev/null
 ( crontab -l 2>/dev/null | grep -v '# FINQ'
   echo "*/2 * * * * nice -n 19 ionice -c3 $R/fin/runner/fin_runner.sh >> $S/runner.out 2>&1 # FINQ"
-  echo "* * * * * cd $R/fin/bots && nice -n 19 ionice -c3 timeout 300 /usr/bin/python3 tick.py >> $S/tick.out 2>&1 # FINQ" ) | crontab -
+  echo "* * * * * cd $R/fin/bots && nice -n 19 ionice -c3 timeout 300 /usr/bin/python3 tick.py >> $S/tick.out 2>&1 # FINQ"
+  echo "* * * * * cd $R/fin/league && nice -n 19 ionice -c3 timeout 280 /usr/bin/python3 league_bot.py >> $S/league_bot.out 2>&1 # FINQ" ) | crontab -
 say "cron: $(crontab -l | grep -c '# FINQ') FINQ lines (runner every 2 min, bot tick every minute) | old fin cron lines: $(crontab -l | grep -cE '/root/pe-fin/|mt5')"
 say "wine on box: $(command -v wine || echo none)"
 mkdir -p $R/fin/reports && cp $OUT $R/fin/reports/deploy.txt && cd $R && git add fin/reports/deploy.txt && git commit -qm "fin deploy report" && git pull -q --rebase origin main && git push -q origin HEAD:main
