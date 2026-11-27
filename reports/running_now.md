@@ -1,3 +1,4 @@
 lane 1 (readiness, racing, golf): 1 | lane 2 (tennis, cricket): 1 | loader fixer: 1 | free memory: 9 GB of 17 | 08:32 UTC 27 Nov
 723 done 08:38 UTC: racing brief now carves every race type (1); small-market lens in racing/golf/cricket briefs (3 of 3) and as a note for tennis; football small-markets session queued behind cricket. Racing session already started before this edit: 0 (0 = it will read the new brief). Readiness check running: 1.
 724 done 08:42 UTC: form guide and keep-the-rules added to racing/golf/cricket briefs (3 of 3), note left for tennis; football form session queued behind golf. Racing started before this edit: 1 (0 = reads the new brief). Sessions running: 4 | free memory 14 GB.
+725 done 08:44 UTC: big-games part added to the football small-markets brief (1) and watch card to the football form brief (1); either already started: 0 (0 = both read the new briefs).
