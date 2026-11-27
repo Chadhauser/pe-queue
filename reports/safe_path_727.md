@@ -47,12 +47,17 @@ Tested (4 passed, 0 failed): forced bad login wrote "BREAK: guard could not log 
 
 **5. DRY RUN AGAINST T1 - RUNNING.** Built: t1_live.py uses the trial's own code and loader with T1's frozen rule, at the start minus 125 s, on live recorded prices. Each pick goes to placer.py in dry mode at £2, into real.intended_orders, with every check, would-send and why not. It is kept alive through the mechanic's watch.list. The hourly comparer writes dry_run_t1.md and pushes it, with a cause for each mismatch. The daily reconciler (dry form) writes real_vs_paper.md after 07:00 UK.
 Tested (5 passed, 0 failed): the dry runner's process cannot send; it uses the same code and rule; three recorded markets give the trial's exact team and price; tick and slippage arithmetic; dry settlement (a £2 win at 2.04 = +£2.04, lost -£2.00, non-runner £0).
+First live check (15:00 UTC kick-offs, 27 Nov): **4 of 4 matched**. The dry runner decided at 14:57:55 and picked Neftchi Baku 1.76, Al-Ittifaq Maqaba 1.85, Vysocina Jihlava 1.48 and Faroe Islands U19 (W) 1.14. The trial's T1 rows, written at 14:58, have the same 4 markets, teams and prices. Both skipped the fifth market (no two-sided quote). All 4 dry rows: limits ok, would send = no (switch off).
 Replay of 27 Nov morning: 53 of 57 matched. The other 4 all had prices that moved in the 5 seconds between start - 125 s (as ordered) and the trial's start - 120 s.
 - Faults in my new code, fixed: (a) after a restart it wrote late rows for markets already past their moment; they are now recorded as missed, and the 2 days restarted from that fix (first start 14:03:36, kept in dry_started.history); (b) its schedule saw too few markets and now looks back 60 minutes.
 - My operational mistake, fixed: my two keepalive lines lacked a final "&", which held the mechanic for 9 minutes (14:10-14:18 UTC). The finance runner reset its repo copy once (13:44 UTC) because of my uncommitted lock edits.
 - Findings in how the trial records (not edited): the shared price loader crashes on a small batch of markets that all have different kick-off times (worked around inside the dry runner only); the book recorder has failed every 30 s since 05:47 UTC ("cursor already closed"; trial and dry run read the same tables, so both are affected the same).
 - Commission (read-only): 1.96% charged on 64 winning markets, in line with the paper's 2%.
 
-Final run: test file "RESULT: 44 passed, 0 failed; network calls attempted in tests: 0; real sender network calls: 0"; one-file search "files with an order-sending call: 1 (/root/pe-real/placer.py); problems: 0".
+- Small known fault, left alone: the dry runner's log line shows "nan" where the match name should be, because the trial's order frame carries no name. The orders themselves are keyed by market and team, so this is cosmetic. I did not restart the runner to fix it.
+
+Final run (27 Nov 14:36 UTC, files work/test_run_final.txt and work/onecall_final.txt):
+- test file: "RESULT: 44 passed, 0 failed; network calls attempted in tests: 0; real sender network calls: 0"
+- one-file search: "2026-11-27T14:36Z one-placer check: files with an order-sending call: 1 (/root/pe-real/placer.py); problems: 0"
 
 What I need from you: nothing for the dry run. Before any real order: (1) your choice on the £20 stop-the-day behaviour above; (2) T1 must first pass the proof gate (it is still a trial); (3) then your yes in this chat. The key and the password in bot_core.py should be changed.
