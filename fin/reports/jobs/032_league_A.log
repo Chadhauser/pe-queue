@@ -1,0 +1,50 @@
+A rows 1134804 symbols 105 days 1561 2020-08-10 to 2026-11-13
+universe A: ways tested 217710 | passing 1523 | 105 shares and funds, 1561 days, entry 2 minutes after the signal, cost 3 (funds) / 6 (shares) hundredths of a percent a round trip
+do          hold                                                                 
+BUY         30 minutes                                                                 1
+            60 minutes                                                                11
+            overnight to the next open                                               177
+            to the close                                                               9
+            to the close, bank at half a normal day's range                            9
+            to the close, stop at a quarter and bank at half a normal day's range    274
+            to the close, stop at a quarter of a normal day's range                  565
+            two hours                                                                 20
+SELL SHORT  30 minutes                                                                 2
+            60 minutes                                                                 2
+            overnight to the next open                                                 2
+            to the close                                                               4
+            to the close, bank at half a normal day's range                            7
+            to the close, stop at a quarter and bank at half a normal day's range    167
+            to the close, stop at a quarter of a normal day's range                  273
+   at                                                                                                  facts  do                                                                  hold  days  per_day  trades_month  net_bps  half1  half2    t  usd_month
+09:35                                                                        {"overnight gap": "big gap up"} BUY               to the close, stop at a quarter of a normal day's range  1513     8.90         181.2     18.0   22.3   13.8 6.90       3258
+09:35                         {"overnight gap": "big gap up", "market so far (S&P 500 fund)": "market flat"} BUY               to the close, stop at a quarter of a normal day's range  1444     8.75         169.9     16.6   19.8   13.6 6.62       2823
+09:35                                                       {"overnight gap": "big gap up", "kind": "share"} BUY               to the close, stop at a quarter of a normal day's range  1484     8.03         160.3     16.8   17.2   16.4 6.31       2690
+09:45                                 {"move so far today": "up a little", "against the market": "stronger"} BUY                                            overnight to the next open  1551    10.00         208.7     12.4   12.0   12.9 3.73       2590
+11:00                                                {"against the market": "much stronger than the market"} BUY                                            overnight to the next open  1542     8.81         182.7     14.1   16.4   11.8 4.06       2574
+09:35                        {"move so far today": "up a little", "place in today's range": "near the high"} BUY                                            overnight to the next open  1556    10.00         209.3     12.0    8.4   15.6 3.55       2521
+10:30                                                {"against the market": "much stronger than the market"} BUY                                            overnight to the next open  1536     7.78         160.8     15.6   11.9   19.3 4.15       2515
+11:30                                                {"against the market": "much stronger than the market"} BUY                                            overnight to the next open  1546     9.59         199.4     12.5   12.1   12.9 3.97       2495
+11:00                               {"against the market": "much stronger than the market", "kind": "share"} BUY                                            overnight to the next open  1539     8.41         174.2     13.2   14.9   11.6 3.81       2307
+09:45                                                                     {"against the market": "stronger"} BUY                                            overnight to the next open  1560    10.00         209.9     10.8   11.5   10.2 3.80       2277
+09:45                                           {"place in today's range": "near the high", "kind": "share"} BUY                                            overnight to the next open  1555    10.00         209.2     10.9    7.0   14.7 3.79       2274
+09:45                          {"place in today's range": "near the high", "against the market": "stronger"} BUY                                            overnight to the next open  1546     9.19         191.2     11.8   13.3   10.3 3.54       2254
+09:35                                        {"move so far today": "up a little", "volume so far": "normal"} BUY                                            overnight to the next open  1530     6.92         142.3     15.5   11.9   19.0 4.07       2207
+10:30                               {"against the market": "much stronger than the market", "kind": "share"} BUY                                            overnight to the next open  1535     7.45         153.8     14.3   10.1   18.3 3.83       2193
+09:45                                                    {"against the market": "stronger", "kind": "share"} BUY                                            overnight to the next open  1560    10.00         209.9     10.3   11.1    9.5 3.61       2159
+09:35                        {"move so far today": "up a little", "place in today's range": "near the high"} BUY               to the close, stop at a quarter of a normal day's range  1557    10.00         209.5     10.3   13.2    7.4 6.67       2155
+11:00                                                                             {"volume so far": "quiet"} BUY                                            overnight to the next open  1557    10.00         209.5     10.3   10.4   10.1 3.54       2152
+09:45                                                            {"place in today's range": "near the high"} BUY                                            overnight to the next open  1559    10.00         209.7     10.2    7.8   12.6 3.81       2144
+11:30                               {"against the market": "much stronger than the market", "kind": "share"} BUY                                            overnight to the next open  1546     9.11         189.4     11.3   10.5   12.0 3.65       2132
+11:00                           {"place in today's range": "in the middle", "against the market": "in line"} BUY                                            overnight to the next open  1554    10.00         209.1     10.1    4.6   15.6 3.56       2121
+10:00                                                                     {"against the market": "stronger"} BUY                                            overnight to the next open  1560    10.00         209.9     10.1   11.2    9.0 3.86       2115
+10:00                                                {"against the market": "much stronger than the market"} BUY                                            overnight to the next open  1506     5.94         120.4     17.4    0.8   33.8 3.61       2100
+09:35                                                                        {"overnight gap": "big gap up"} BUY to the close, stop at a quarter and bank at half a normal day's range  1513     8.90         181.2     11.5   15.8    7.3 7.20       2090
+10:00                                                    {"against the market": "stronger", "kind": "share"} BUY                                            overnight to the next open  1560    10.00         209.9     10.0   11.2    8.7 3.77       2090
+09:35                                 {"move so far today": "up a little", "against the market": "stronger"} BUY               to the close, stop at a quarter of a normal day's range  1560    10.00         209.9      9.9   12.3    7.5 6.67       2078
+11:00 {"market so far (S&P 500 fund)": "market flat", "against the market": "much stronger than the market"} BUY                                            overnight to the next open   855     7.92          91.1     22.7   30.4   16.1 4.32       2068
+13:30                                                          {"move so far today": "up half to one range"} BUY                                            overnight to the next open  1530     9.27         190.8     10.8   11.6    9.9 3.97       2052
+09:45                                                                   {"move so far today": "up a little"} BUY                                            overnight to the next open  1560    10.00         209.9      9.7   10.9    8.5 3.63       2045
+13:30     {"place in today's range": "in the middle", "against the market": "much stronger than the market"} BUY                                            overnight to the next open  1369     4.43          81.6     25.0   27.5   22.6 4.28       2042
+13:30                                                {"against the market": "much stronger than the market"} BUY                                            overnight to the next open  1554    10.00         209.1      9.7    8.6   10.8 3.85       2037
+exit=0 secs=486
