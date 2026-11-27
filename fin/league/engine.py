@@ -5,7 +5,7 @@
 #   every way out. Usage: python3 engine.py A|C|D <out_dir>.   A = shares and funds (minute), C = crypto, D = currencies and gold.
 import sys, os, json, math, itertools, warnings; warnings.filterwarnings('ignore')
 import numpy as np, pandas as pd
-sys.path.insert(0, '/root/pe-fin'); sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+sys.path.insert(0, '/root/pe-fin'); sys.path.insert(0, '/root/pe-fin/team'); sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from bands import BANDS, band, FUNDS
 MIN_DAYS, T_BAR = 200, 3.5
 def score(X, ycols, feats, total_days, mid, stake, maxn, days_month, universe, tkey='time'):
@@ -117,13 +117,15 @@ def run_24(outdir, name):
         if name == 'C': d['cost'] = 55.0
         else:
             sp = b.spread.reindex(idx + pd.Timedelta(minutes=2), method='ffill', tolerance=pd.Timedelta(minutes=5)); sp.index = idx; d['cost'] = (sp / e * 1e4).values + 0.5
-        for h in (1, 4, 12, 24): d[f'y{h}'] = ((at(h * 60 + 2) / e - 1) * 1e4).values
+        for h in (1, 4, 12, 24, 48, 72, 168): d[f'y{h}'] = ((at(h * 60 + 2) / e - 1) * 1e4).values
+        d['last 3 days'] = band('h24', (sig / sig.shift(72) - 1).values / adr_h / 1.7); d['last 7 days'] = band('h24', (sig / sig.shift(168) - 1).values / adr_h / 2.6)
         if s in ('BTCUSD', 'EUR_USD'): ctx = d[['last 24 hours']].rename(columns={'last 24 hours': 'bitcoin last 24 hours' if name == 'C' else 'euro last 24 hours'})
         rows.append(d.dropna(subset=['last 24 hours', 'y1', 'cost']))
     X = pd.concat(rows); cn = ctx.columns[0]; X[cn] = ctx[cn].reindex(X.index).values; X = X.reset_index(drop=True)
     days = np.sort(X.date.unique()); mid = days[len(days) // 2]; print(name, 'rows', len(X), 'days', len(days), str(days[0])[:10], 'to', str(days[-1])[:10], 'average cost', round(X.cost.mean(), 1))
     feats = ['always', 'last hour', 'last 4 hours', 'last 24 hours', "place in the last 24 hours' range", 'weekday', 'which', cn]
     ycols = [('one hour', 'y1', 'both', 1), ('4 hours', 'y4', 'both', 1), ('12 hours', 'y12', 'both', 1.5), ('24 hours', 'y24', 'both', 2)]
+    feats += ['last 3 days', 'last 7 days']; ycols += [('2 days', 'y48', 'both', 3), ('3 days', 'y72', 'both', 4), ('7 days', 'y168', 'both', 8)]
     out, tested = score(X, ycols, feats, len(days), mid, stake, 3 if name == 'C' else 6, dm, uni)
     finish(name, out, tested, outdir, f'{len(syms)} instruments, {len(days)} days, hourly decisions, entry 2 minutes after the hour, average cost {X.cost.mean():.1f} hundredths of a percent a round trip')
 if __name__ == '__main__':
