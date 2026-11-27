@@ -12,8 +12,11 @@ def score(X, ycols, feats, total_days, mid, stake, maxn, days_month, universe, t
     """X: one row per possible trade with date, time, feature bands, cost (bps) and outcome columns (bps).
     ycols: [(hold name, column, mode, overlap)] mode 'both' = direction read from the data, 'long'/'short' = column is already that side.
     Every cell is reduced to one number per day first (so a busy day counts once), then judged across days."""
-    out = []; tested = 0; yn = list(dict.fromkeys(c for _, c, _, _ in ycols)); X = X.copy()
-    for c in yn: X.loc[X[c].abs() >= 5000, c] = np.nan
+    out = []; tested = 0; yraw = list(dict.fromkeys(c for _, c, _, _ in ycols)); X = X.copy(); has_x = all(c + '_x' in X.columns for c in yraw)
+    for c in yraw:
+        bad = X[c].abs() >= 5000; X.loc[bad, c] = np.nan
+        if has_x: X.loc[bad, c + '_x'] = np.nan
+    yn = yraw + ([c + '_x' for c in yraw] if has_x else [])
     combos = [(f,) for f in feats] + list(itertools.combinations(feats, 2))
     for combo in combos:
         if set(combo) == {'kind', 'which'} or (len(combo) == 2 and 'always' in combo): continue
@@ -25,11 +28,13 @@ def score(X, ycols, feats, total_days, mid, stake, maxn, days_month, universe, t
         m1 = dm[first].groupby(keys, observed=True)[yn].mean().reindex(m.index); m2 = dm[~first].groupby(keys, observed=True)[yn].mean().reindex(m.index)
         c1 = dm[first].groupby(keys, observed=True)['cost'].mean().reindex(m.index); c2 = dm[~first].groupby(keys, observed=True)['cost'].mean().reindex(m.index)
         cg = cn.groupby(keys, observed=True)[yn]; tot = cg.sum().reindex(m.index); cn_pos = cn.copy(); cn_pos[yn] = cn_pos[yn].replace(0, np.nan); per = cn_pos.groupby(keys, observed=True)[yn].mean().reindex(m.index)
-        for hname, col, mode, overlap in ycols:
+        for hname, rawcol, mode, overlap in ycols:
+            col = rawcol + '_x' if has_x else rawcol
             tested += len(m) * (2 if mode == 'both' else 1)
             sgn = np.sign(m[col]) if mode == 'both' else pd.Series(1.0, index=m.index)
             t = m[col].abs() / (sd[col] / np.sqrt(nd[col])) / math.sqrt(overlap); h1 = sgn * m1[col] - c1; h2 = sgn * m2[col] - c2
             ok = (nd[col] >= MIN_DAYS) & (t >= T_BAR) & (h1 > 0) & (h2 > 0) & ((m[col] > 0) if mode != 'both' else True)
+            if has_x: ok = ok & ((sgn * m1[rawcol] - c1) > 0) & ((sgn * m2[rawcol] - c2) > 0)
             for key in m.index[ok.fillna(False).values]:
                 k = key if isinstance(key, tuple) else (key,); n_ = int(nd[col][key]); net = abs(m[col][key]) - c_all[key]; pdx = min(maxn, per[col][key])
                 side = ('BUY' if sgn[key] > 0 else 'SELL SHORT') if mode == 'both' else ('BUY' if mode == 'long' else 'SELL SHORT')
@@ -83,13 +88,20 @@ def run_A(outdir):
                 for sgn, tag in ((1, 'L'), (-1, 'S')):
                     sh = sgn * (W - ev) <= -sdist; th = sgn * (W - ev) >= gdist
                     i_s = np.where(sh.any(axis=1), sh.argmax(axis=1), 10 ** 6); i_t = np.where(th.any(axis=1), th.argmax(axis=1), 10 ** 6)
-                    plain = sgn * (last / e.values - 1); stopv = -(sdist[:, 0] / e.values); tgtv = gdist[:, 0] / e.values
+                    plain = sgn * (last / e.values - 1); nW = W.shape[1]; rws = np.arange(len(W))
+                    # exits are market orders sent after the breaching minute closes and filled about two minutes later: use that price, not the stop level
+                    stopv = sgn * (W[rws, np.minimum(np.where(i_s < 10 ** 6, i_s, 0) + 2, nW - 1)] / e.values - 1); tgtv = sgn * (W[rws, np.minimum(np.where(i_t < 10 ** 6, i_t, 0) + 2, nW - 1)] / e.values - 1)
                     d[f'y{tag}_stop'] = np.where(i_s < 10 ** 6, stopv, plain) * 1e4
                     d[f'y{tag}_st'] = np.where((i_s < i_t), stopv, np.where(i_t < 10 ** 6, tgtv, plain)) * 1e4
                     d[f'y{tag}_tgt'] = np.where(i_t < 10 ** 6, tgtv, plain) * 1e4
                 rows.append(d.dropna(subset=['move so far today', 'yclose']))
         except Exception as ex: print('skip', s, str(ex)[:90])
     X = pd.concat(rows, ignore_index=True); days = np.sort(X.date.unique()); mid = days[len(days) // 2]
+    # The share list is today's well-known names, so history flatters every BUY (they are the ones that went up). Each share is
+    # therefore also scored against the average of ALL shares at the same moment; a way must pass on both measures. Funds are not adjusted.
+    ycs = [c for c in X.columns if c.startswith('y') and c != 'yesterday']; sh = X.kind == 'share'
+    mu = X[sh].groupby(['date', 'time'])[ycs].transform('mean')
+    for c in ycs: X[c + '_x'] = X[c]; X.loc[sh, c + '_x'] = X.loc[sh, c] - mu[c]
     print('A rows', len(X), 'symbols', X.sym.nunique(), 'days', len(days), str(days[0])[:10], 'to', str(days[-1])[:10])
     feats = ['always', 'move so far today', 'overnight gap', 'yesterday', 'first five minutes', "place in today's range", 'volume so far', 'market so far (S&P 500 fund)', 'against the market', 'last 30 minutes', 'weekday', 'kind']
     ycols = [('30 minutes', 'y30', 'both', 1), ('60 minutes', 'y60', 'both', 1), ('two hours', 'y120', 'both', 1), ('to the close', 'yclose', 'both', 1), ('overnight to the next open', 'yon', 'both', 1), ('to the next day\'s close', 'ync', 'both', 2)]
