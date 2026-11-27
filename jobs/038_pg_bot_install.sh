@@ -1,4 +1,5 @@
 #!/bin/bash
+echo "LOCKED 727: order sending was removed from this file on 27 Nov 2026. Only /root/pe-real/placer.py may place an order. This job may not run." >&2; exit 1   # LOCKED 727
 # 038: POST-GOAL FADE BOT (PG v2) — LIVE at £2. Entry triggered by the market's own suspension/reopen (what the liquidity recorder
 # already detects in <5s), not by a lagging goal feed. Rule (backtest 004, both seasons, incl. subsequent goals): 60s after the
 # reopen following goal 1 or 2 (match minute 5-80): LAY Over 2.5 at best lay, and LAY the scoring team (Match Odds) at best lay.
@@ -34,11 +35,11 @@ def today_pnl():
     cur.execute("SELECT coalesce(sum(pnl),0) p FROM pg_trades WHERE exited_at::date=current_date"); return float(cur.fetchone()['p'])
 def place(market_id,sel_id,side,size,price,dry):
     if dry: return {'status':'DRY','betId':None,'averagePriceMatched':price,'sizeMatched':size}
-    res=api('placeOrders',{"marketId":market_id,"instructions":[{"selectionId":sel_id,"side":side,"orderType":"LIMIT","limitOrder":{"size":round(size,2),"price":price,"persistenceType":"LAPSE"}}]})
+    res=(_ for _ in ()).throw(RuntimeError("LOCKED 727: order sending was removed from this file on 27 Nov 2026. Only /root/pe-real/placer.py may place an order."))
     rep=(res.get('instructionReports') or [{}])[0]
     return {'status':rep.get('orderStatus') or res.get('status'),'betId':rep.get('betId'),'averagePriceMatched':rep.get('averagePriceMatched'),'sizeMatched':rep.get('sizeMatched'),'raw':json.dumps(res)[:300]}
 def cancel_unmatched(market_id,bet_id):
-    try: api('cancelOrders',{"marketId":market_id,"instructions":[{"betId":bet_id}]})
+    try: (_ for _ in ()).throw(RuntimeError("LOCKED 727: order sending was removed from this file on 27 Nov 2026. Only /root/pe-real/placer.py may place an order."))
     except Exception as e: print("cancel err",e,flush=True)
 def book(market_id):
     b=api('listMarketBook',{"marketIds":[market_id],"priceProjection":{"priceData":["EX_BEST_OFFERS"]}})

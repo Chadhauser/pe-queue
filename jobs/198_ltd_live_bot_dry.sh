@@ -1,4 +1,5 @@
 #!/bin/bash
+echo "LOCKED 727: order sending was removed from this file on 27 Nov 2026. Only /root/pe-real/placer.py may place an order. This job may not run." >&2; exit 1   # LOCKED 727
 # 198: IN-PLAY LAY-THE-DRAW — LIVE BOT, INSTALLED IN DRY-RUN. Same rule as the paper bot (194) but working from Betfair's live book
 # so it can place real orders: 0-0 at 46'/60'/75', draw lay 1.5-2.5, >= £20 at the lay price, >= £5k matched, both sides >= 1.30.
 # Entry: LAY the draw at the best lay price, stake from ltd_control (default £2 -> liability <= £3). Exit: on the next goal (draw
@@ -35,7 +36,7 @@ def ctl():
     cur.execute("SELECT * FROM ltd_control WHERE id=1"); return cur.fetchone()
 def place(market_id,sel_id,side,size,price,dry):
     if dry: return {'status':'DRY','betId':None,'averagePriceMatched':price,'sizeMatched':size}
-    res=api('placeOrders',{"marketId":market_id,"instructions":[{"selectionId":sel_id,"side":side,"orderType":"LIMIT","limitOrder":{"size":round(size,2),"price":price,"persistenceType":"PERSIST" if side=='LAY' else "LAPSE"}}]})
+    res=(_ for _ in ()).throw(RuntimeError("LOCKED 727: order sending was removed from this file on 27 Nov 2026. Only /root/pe-real/placer.py may place an order."))
     rep=(res.get('instructionReports') or [{}])[0]
     return {'status':rep.get('orderStatus') or res.get('status'),'betId':rep.get('betId'),'averagePriceMatched':rep.get('averagePriceMatched'),'sizeMatched':rep.get('sizeMatched'),'raw':json.dumps(res)[:300]}
 def hedge_size(lay_size,lay_px,back_px): return round(lay_size*lay_px/back_px,2)

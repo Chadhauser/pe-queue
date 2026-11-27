@@ -1,4 +1,5 @@
 #!/bin/bash
+echo "LOCKED 727: order sending was removed from this file on 27 Nov 2026. Only /root/pe-real/placer.py may place an order. This job may not run." >&2; exit 1   # LOCKED 727
 # 220: LATE LAY-OVER — REAL-ORDER BOT, INSTALLED IN DRY-RUN (same pattern as 198). Works from Betfair's own Over/Under 2.5 book so its log
 # is the execution-realistic twin of the paper bot: 70'-85', ESPN score <= 1 goal (matched through the Match Odds market the recorder
 # tracks for the same event), Over best lay 2.2-12 with >= £10, price-must-agree-with-score guard. LAY £2 (lo_control.stake). Exit:
@@ -33,7 +34,7 @@ def ctl():
     cur.execute("SELECT * FROM lo_control WHERE id=1"); return cur.fetchone()
 def place(market_id,sel_id,side,size,price,dry):
     if dry: return {'status':'DRY','betId':None,'averagePriceMatched':price,'sizeMatched':size}
-    res=api('placeOrders',{"marketId":market_id,"instructions":[{"selectionId":sel_id,"side":side,"orderType":"LIMIT","limitOrder":{"size":round(size,2),"price":price,"persistenceType":"PERSIST" if side=='LAY' else "LAPSE"}}]})
+    res=(_ for _ in ()).throw(RuntimeError("LOCKED 727: order sending was removed from this file on 27 Nov 2026. Only /root/pe-real/placer.py may place an order."))
     rep=(res.get('instructionReports') or [{}])[0]
     return {'status':rep.get('orderStatus') or res.get('status'),'betId':rep.get('betId'),'averagePriceMatched':rep.get('averagePriceMatched'),'sizeMatched':rep.get('sizeMatched')}
 def hedge_size(lay_size,lay_px,back_px): return round(lay_size*lay_px/back_px,2)

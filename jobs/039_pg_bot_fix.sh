@@ -1,4 +1,5 @@
 #!/bin/bash
+echo "LOCKED 727: order sending was removed from this file on 27 Nov 2026. Only /root/pe-real/placer.py may place an order. This job may not run." >&2; exit 1   # LOCKED 727
 # 039: pg_bot fixes — Decimal*float crash in scoring-team detection (killed every loop iteration last night, no money moved);
 # unmatched entries now retried at the new best lay within the 60-100s window instead of abandoned. Restart via cron keepalive.
 mkdir -p /root/pe-pg && cat > /root/pe-pg/pg_bot.py <<'PYFILE'
@@ -30,11 +31,11 @@ def today_pnl():
     cur.execute("SELECT coalesce(sum(pnl),0) p FROM pg_trades WHERE exited_at::date=current_date"); return float(cur.fetchone()['p'])
 def place(market_id,sel_id,side,size,price,dry):
     if dry: return {'status':'DRY','betId':None,'averagePriceMatched':price,'sizeMatched':size}
-    res=api('placeOrders',{"marketId":market_id,"instructions":[{"selectionId":sel_id,"side":side,"orderType":"LIMIT","limitOrder":{"size":round(size,2),"price":price,"persistenceType":"LAPSE"}}]})
+    res=(_ for _ in ()).throw(RuntimeError("LOCKED 727: order sending was removed from this file on 27 Nov 2026. Only /root/pe-real/placer.py may place an order."))
     rep=(res.get('instructionReports') or [{}])[0]
     return {'status':rep.get('orderStatus') or res.get('status'),'betId':rep.get('betId'),'averagePriceMatched':rep.get('averagePriceMatched'),'sizeMatched':rep.get('sizeMatched'),'raw':json.dumps(res)[:300]}
 def cancel_unmatched(market_id,bet_id):
-    try: api('cancelOrders',{"marketId":market_id,"instructions":[{"betId":bet_id}]})
+    try: (_ for _ in ()).throw(RuntimeError("LOCKED 727: order sending was removed from this file on 27 Nov 2026. Only /root/pe-real/placer.py may place an order."))
     except Exception as e: print("cancel err",e,flush=True)
 def book(market_id):
     b=api('listMarketBook',{"marketIds":[market_id],"priceProjection":{"priceData":["EX_BEST_OFFERS"]}})
