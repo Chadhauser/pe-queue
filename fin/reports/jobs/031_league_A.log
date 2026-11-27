@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/root/pe-finq/repo/fin/league/engine.py", line 131, in <module>
+    run_A(od) if m == 'A' else run_24(od, m)
+    ^^^^^^^^^
+  File "/root/pe-finq/repo/fin/league/engine.py", line 49, in run_A
+    import mech2
+ModuleNotFoundError: No module named 'mech2'
+exit=0 secs=1
