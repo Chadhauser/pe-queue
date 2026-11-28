@@ -1,5 +1,5 @@
 <stdin>:3: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
-# Coherence forward paper (real order book) — 2026-11-27 06:15 UTC
+# Coherence forward paper (real order book) — 2026-11-28 06:15 UTC
 
 Bets 416, settled 415, £559.10 at £2.
 
