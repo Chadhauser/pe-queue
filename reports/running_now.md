@@ -4,3 +4,4 @@ lane 1 (readiness, racing, golf): 1 | lane 2 (tennis, cricket): 1 | loader fixer
 725 done 08:44 UTC: big-games part added to the football small-markets brief (1) and watch card to the football form brief (1); either already started: 0 (0 = both read the new briefs).
 726 done 08:48 UTC: correct score own look and nil-nil trade in the football small-markets brief (1); watch card works without Peter (1); either already started: 0 (0 = both read the new briefs).
 727 started 13:32 UTC 27 Nov: safe path to real money, dry run only. Build session running: 1 | REAL_MONEY_OFF present: yes | ON file present: no | free memory 8 GB.
+729 started 05:12 UTC 28 Nov: dry run must match (recorder, schedule, same moment as the trial). Running: 1 | REAL_MONEY_OFF present: yes | ON file: no | free memory 12 GB
