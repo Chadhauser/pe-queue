@@ -1,5 +1,5 @@
 ALL RECORDING, nothing needs you
-As of 28 Nov 20:36 UK. The asker checks 58 things every 5 min, plus 11 it found itself (watch only). It checks output, not processes, and looks 3 hours ahead every 10 min.
+As of 28 Nov 20:56 UK. The asker checks 58 things every 5 min, plus 11 it found itself (watch only). It checks output, not processes, and looks 3 hours ahead every 10 min.
 
 FIXED WITHOUT YOU (last 24 h)
 - Tennis prices on all three exchanges before the start: broke 28 Nov 17:25, noticed 28 Nov 17:25, fixed 28 Nov 17:35 by a repair session. Lost: nothing recorded lost.
@@ -14,17 +14,17 @@ COULD NOT FIX
 - No more repair sessions tonight for cricketrec, tenniscoll, xx_matchbook, xx_smarkets: Smarkets 429 Too Many Requests is one limit shared by 5 programs on this server (cricket session 17:49-18:47 found it; one-recorder sessions cannot fix it and each restart adds calls). Needs one shared Smarkets rate budg
 - cricketrec: a repair session could not fix it: the error is still repeating. Smarkets refuses nearly every call from this server since 18:30 (5 programs share one Smarkets limit); cricket's Smarkets prices (cricket.sm_snap) stale since 18:29; Betfair and Matchbook cricket fine. Needs one shared Smarkets rate budget across golf, tennis, racing,
 - xx_matchbook: a repair session could not fix it: the error is still repeating. The repeating "quotes chunk error" is the Smarkets 429 limit shared by 5 programs on this server (cricket session 17:49-18:47); one-recorder sessions cannot fix it. Needs one shared Smarkets rate budget (a builder order). (full: /root/pe-asker/sessions/20261128_1852_x
-- Warnings, output still flowing (a repair session starts after 2 h): cricketrec, tenniscoll repeat "sm quotes HTTPError('# Client Error: Too Many"; xx_matchbook, xx_smarkets repeat "quotes chunk error RuntimeError('smarkets mar"
+- Warnings, output still flowing (a repair session starts after 2 h): cricketrec repeat "sm quotes HTTPError('# Client Error: Too Many"; xx_matchbook, xx_smarkets repeat "quotes chunk error RuntimeError('smarkets mar"
 - Paused on purpose and silent (not acted on): player
 
 NEXT 3 HOURS
-- football: 21 events start (first 21:00). Recorded now, of those inside each feed's window: fast stream 14/14; order book 18/18; extra market types 13/13
+- football: 21 events start (first 21:00). Recorded now, of those inside each feed's window: fast stream 14/14; order book 21/21; extra market types 13/13
 - tennis: 1 events start (first 22:00). Recorded now, of those inside each feed's window: tennis prices 1/1
 - cricket: 4 events start (first 21:30). Recorded now, of those inside each feed's window: cricket prices 4/4
-- In play now (football match odds): fast stream 22/22; order book 22/22
-- For information (they do not list every match): Smarkets 0/21; Matchbook 12/21; live facts 13/13
-- Kick-offs in the last 3 h: 42 of 42 football matches had a stream price at the off (40 with a tick in the last 30 s).
+- In play now (football match odds): fast stream 17/17; order book 17/17
+- For information (they do not list every match): Smarkets 0/21; Matchbook 12/21; live facts 14/14
+- Kick-offs in the last 3 h: 35 of 35 football matches had a stream price at the off (34 with a tick in the last 30 s).
 - Next 3 hours all covered on our feeds: yes
 
-Checks: database 38/100 connections, up since 27 Nov 05:47; disk 779 GB free; memory 8.6 GB free; clock synced yes (+0.8 s v Betfair); Betfair login 19:16.
+Checks: database 38/100 connections, up since 27 Nov 05:47; disk 779 GB free; memory 8.5 GB free; clock synced yes (+0.8 s v Betfair); Betfair login 19:16.
 Watchman/breaks lines read this pass: 4; ack; ack; ack; ack
