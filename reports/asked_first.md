@@ -1,5 +1,5 @@
 ALL RECORDING, nothing needs you
-As of 28 Nov 19:16 UK. The asker checks 58 things every 5 min, plus 11 it found itself (watch only). It checks output, not processes, and looks 3 hours ahead every 10 min.
+As of 28 Nov 19:36 UK. The asker checks 58 things every 5 min, plus 11 it found itself (watch only). It checks output, not processes, and looks 3 hours ahead every 10 min.
 
 FIXED WITHOUT YOU (last 24 h)
 - Tennis prices on all three exchanges before the start: broke 28 Nov 17:25, noticed 28 Nov 17:25, fixed 28 Nov 17:35 by a repair session. Lost: nothing recorded lost.
@@ -18,14 +18,14 @@ COULD NOT FIX
 - Paused on purpose and silent (not acted on): player
 
 NEXT 3 HOURS
-- football: 30 events start (first 19:30). Recorded now, of those inside each feed's window: fast stream 24/24; order book 30/30; extra market types 15/15
-- racing: 1 events start (first 19:30). Recorded now, of those inside each feed's window: racing recorder 1/1
+- football: 27 events start (first 19:45). Recorded now, of those inside each feed's window: fast stream 26/26; order book 27/27; extra market types 13/13
+- racing: 1 events start (first 20:00). Recorded now, of those inside each feed's window: racing recorder 1/1
 - tennis: 2 events start (first 20:00). Recorded now, of those inside each feed's window: tennis prices 2/2
 - cricket: 4 events start (first 21:30). Recorded now, of those inside each feed's window: cricket prices 4/4
-- In play now (football match odds): fast stream 24/24; order book 24/24
-- For information (they do not list every match): Smarkets 0/30; Matchbook 11/30; live facts 16/16
-- Kick-offs in the last 3 h: 56 of 59 football matches had a stream price at the off (49 with a tick in the last 30 s). Not priced, e.g.: Univ Catolica (Ecu) v Independiente (Ecu), Pergolettese v Giana Erminio, Sorrento v Cosenza
+- In play now (football match odds): fast stream 21/21; order book 21/21
+- For information (they do not list every match): Smarkets 0/27; Matchbook 10/27; live facts 13/13
+- Kick-offs in the last 3 h: 54 of 54 football matches had a stream price at the off (51 with a tick in the last 30 s).
 - Next 3 hours all covered on our feeds: yes
 
-Checks: database 38/100 connections, up since 27 Nov 05:47; disk 780 GB free; memory 10.2 GB free; clock synced yes (+0.8 s v Betfair); Betfair login 19:16.
+Checks: database 38/100 connections, up since 27 Nov 05:47; disk 780 GB free; memory 8.3 GB free; clock synced yes (+0.8 s v Betfair); Betfair login 19:16.
 Watchman/breaks lines read this pass: 4; ack; ack; ack; ack
