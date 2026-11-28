@@ -18,6 +18,13 @@ DROPPED: B in loss (-1.99) after 316 settled orders; no new trial orders.
 | 02:55 | San Francisco FC v Arabe Unido | Under 1.5 Goals | back | 1.16 | £20.02 | open | - | C |
 | 03:10 | Millonarios v America de Cali S.A | Under 1.5 Goals | back | 1.22 | £48.99 | open | - | C |
 | 03:37 | Cs Herediano v Escorpiones FC | Under 3.5 Goals | back | 1.20 | £50.00 | won | +£9.80 | C |
+| 04:58 | NaN | Seongnam FC | back | 2.52 | £25.89 | open | - | T1 |
+| 04:58 | NaN | Daejeon Citizen | back | 2.58 | £9.11 | open | - | T1 |
+| 04:58 | NaN | Yongin FC | back | 1.94 | £18.66 | open | - | T1 |
+| 04:58 | NaN | Omiya | back | 1.60 | £50.00 | open | - | T1 |
+| 04:58 | NaN | Kyoto | back | 2.52 | £50.00 | open | - | T1 |
+| 04:58 | NaN | Jeju Utd | back | 2.58 | £50.00 | open | - | T1 |
+| 04:58 | NaN | Nara Club | back | 2.40 | £50.00 | open | - | T1 |
 
 Counting: an order is one trial order the one test filled; a market is one market however many orders it holds. The entry bar counts settled markets (at least 300 on 10 separate days); the drop at 300 counts settled orders; 'the bank took' counts bets after the bank's limits and stops.
 - T1 (BET): In football match result markets with under £5,000 matched two minutes before the start, back the favourite two minutes before the start and hold it to the result. 370 orders settled since 22 Nov (370 markets): +£2,695.12 on £11,870.43 staked at the market's stake, +22.7 per £100. The bank took 166 of these: +£1,138.29 on £4,224.05 staked, +26.9 per £100. To clear the entry bar: about 0 more markets and 3 more days (chance of a fluke 0.0000 against the bar 0.00089).
