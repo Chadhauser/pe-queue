@@ -326,3 +326,4 @@
 2026-11-28T16:10 BREAK: ONE-PLACER CHECK FAILED - order-sending call in /root/pe-asker/test_asker.py (line 33: Betfair operation passed to a call)
 2026-11-28T16:20 BREAK: no bot bets in 6 hours while football is on (209 match-odds markets on the tape); basketball silent 6 hours on xx_tape; bot process not running;
 2026-11-28T17:20 BREAK: no bot bets in 6 hours while football is on (263 match-odds markets on the tape); bot process not running;
+2026-11-28T18:20 BREAK: no bot bets in 6 hours while football is on (290 match-odds markets on the tape); bot process not running;
