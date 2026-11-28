@@ -1,89 +1,89 @@
-# The full grid, stage 2: recorded prices - 2026-11-28 10:50 UTC
+# The full grid, stage 2: recorded prices - 2026-11-28 17:28 UTC
 
 Real prices on offer: back at the best back, lay at the best lay, only with £2+ on offer; stake = money on offer up to £50; a lay risks at most £50. 2% commission on winnings. Prices must be fresh (last quote inside a window just before the point). In-and-out with no fresh exit price is held to the result. Offering the price: rest one tick inside the spread, filled only if a later trade goes THROUGH the price. Depth from the market's matched £ at the point: thin under £2,000, deep £20,000+. Halves by date. £ a month = real-stake £ over all days the source has data x 30.4. A bet needs at least £1 of stake (Betfair minimum), so lays above about 51 are not placed. Paper only, UNVERIFIED until it passes the proof gate.
 
 ## Coverage
 
-- recorded:betfair: 27 days (2026-10-31 to 2026-11-26), 65,369 markets recorded, 3,549 unsettled or void and left out, 182,530 runners priced.
-- recorded:matchbook: 24 days (2026-11-03 to 2026-11-26), 2,913 markets recorded, 1,803 unsettled or void and left out, 3,314 runners priced.
-- recorded:smarkets: 24 days (2026-11-03 to 2026-11-26), 141,088 markets recorded, 58,592 unsettled or void and left out, 24,820 runners priced.
+- recorded:betfair: 28 days (2026-10-31 to 2026-11-27), 67,443 markets recorded, 3,588 unsettled or void and left out, 189,217 runners priced.
+- recorded:matchbook: 25 days (2026-11-03 to 2026-11-27), 3,045 markets recorded, 1,851 unsettled or void and left out, 3,566 runners priced.
+- recorded:smarkets: 25 days (2026-11-03 to 2026-11-27), 145,267 markets recorded, 58,798 unsettled or void and left out, 26,441 runners priced.
 
-Slices tested: 86,184. With 300+ bets: 3,168. Profitable in both halves: 271. Never lost a bet (flagged, not ranked): 0.
+Slices tested: 86,733. With 300+ bets: 3,293. Profitable in both halves: 278. Never lost a bet (flagged, not ranked): 0.
 
 ## Top 25 surviving slices by £ a month at the real stake
 
 | # | source | sport | market | when | chance | side | move | depth | bets | £ per £100 | 1st half | 2nd half | days | £ a month |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| 1 | smarkets | football | Winner and over/under 2.5 | in-play, first third | 10-20% | back | no earlier price | no volume data | 1,291 | +54.81 | +55.35 | +54.40 | 17 | £52,649 |
-| 2 | smarkets | football | Winner and over/under 2.5 | in-play, first third | 20-30% | back | no earlier price | no volume data | 992 | +40.38 | +34.40 | +45.24 | 15 | £29,160 |
-| 3 | smarkets | football | Winner and both teams to score | in-play, first third | 10-20% | back | no earlier price | no volume data | 2,168 | +16.48 | +16.28 | +16.63 | 17 | £25,766 |
-| 4 | smarkets | football | Winner and both teams to score | in-play, first third | 0-10% | back | no earlier price | no volume data | 765 | +44.64 | +42.60 | +46.57 | 15 | £24,134 |
-| 5 | smarkets | football | Winner and over/under 2.5 | in in-play, first third, out in-play, last third | 10-20% | back then lay | no earlier price | no volume data | 1,291 | +24.04 | +24.22 | +23.91 | 17 | £23,206 |
-| 6 | smarkets | football | Winner and over/under 2.5 | in-play, middle third | 20-30% | back | price falling | no volume data | 374 | +58.83 | +47.18 | +66.89 | 15 | £16,549 |
-| 7 | smarkets | football | Winner and over/under 2.5 | in-play, middle third | 30-40% | back | price falling | no volume data | 487 | +44.46 | +43.09 | +45.56 | 16 | £16,334 |
-| 8 | smarkets | football | Winner and both teams to score | in-play, first third | 20-30% | back | no earlier price | no volume data | 1,051 | +16.93 | +19.14 | +15.19 | 17 | £13,407 |
-| 9 | betfair | horse_racing | WIN | 10 minutes before | 0-10% | offer back | no earlier price | deep | 671 | +34.08 | +7.67 | +58.60 | 24 | £12,874 |
-| 10 | smarkets | football | Winner and both teams to score | in-play, middle third | 20-30% | back | price falling | no volume data | 620 | +25.79 | +15.13 | +33.59 | 16 | £11,461 |
-| 11 | smarkets | football | Winner and over/under 2.5 | in in-play, first third, out in-play, last third | 20-30% | back then lay | no earlier price | no volume data | 992 | +13.99 | +9.26 | +17.84 | 15 | £10,712 |
-| 12 | smarkets | football | Winner and both teams to score | in-play, first third | 30-40% | back | no earlier price | no volume data | 480 | +29.90 | +31.62 | +28.48 | 16 | £10,652 |
-| 13 | betfair | football | FIRST_HALF_GOALS_05 | in in-play, first third, out in-play, last third | 60-70% | lay then back | price rising | thin | 405 | +68.52 | +64.44 | +72.22 | 13 | £10,214 |
-| 14 | betfair | football | OVER_UNDER_05 | in 1 hour before, out in-play, last third | 90-100% | lay then back | no earlier price | thin | 1,156 | +64.12 | +55.97 | +72.10 | 10 | £9,018 |
-| 15 | betfair | football | FIRST_HALF_GOALS_05 | in 10 minutes before, out in-play, last third | 70-80% | lay then back | price flat | thin | 907 | +34.77 | +7.12 | +50.89 | 17 | £8,482 |
-| 16 | smarkets | football | Winner and both teams to score | in-play, middle third | 10-20% | back | price falling | no volume data | 358 | +31.58 | +31.99 | +31.29 | 15 | £8,476 |
-| 17 | betfair | football | FIRST_HALF_GOALS_05 | in 1 hour before, out in-play, last third | 70-80% | lay then back | no earlier price | thin | 1,095 | +34.19 | +9.17 | +51.20 | 17 | £8,476 |
-| 18 | smarkets | football | Winner and both teams to score | in in-play, first third, out in-play, last third | 0-10% | back then lay | no earlier price | no volume data | 765 | +15.15 | +19.00 | +11.51 | 15 | £8,083 |
-| 19 | betfair | football | OVER_UNDER_05 | in 10 minutes before, out in-play, last third | 90-100% | lay then back | price flat | thin | 1,059 | +59.23 | +47.57 | +70.35 | 10 | £7,922 |
-| 20 | smarkets | football | Winner and both teams to score | in-play, middle third | 30-40% | back | price falling | no volume data | 382 | +23.38 | +35.77 | +14.55 | 16 | £7,303 |
-| 21 | smarkets | football | Winner and over/under 2.5 | in-play, middle third | 10-20% | back | price rising | no volume data | 448 | +21.57 | +13.47 | +27.48 | 15 | £7,059 |
-| 22 | betfair | football | FIRST_HALF_GOALS_05 | in in-play, first third, out in-play, last third | 30-40% | back then lay | price falling | thin | 434 | +49.16 | +43.03 | +54.92 | 14 | £6,959 |
-| 23 | smarkets | football | Winner and over/under 2.5 | in in-play, middle third, out in-play, last third | 20-30% | back then lay | price falling | no volume data | 374 | +23.76 | +15.20 | +29.68 | 15 | £6,772 |
-| 24 | betfair | football | FIRST_HALF_GOALS_05 | in 1 hour before, out in-play, last third | 20-30% | back then lay | no earlier price | thin | 1,067 | +27.41 | +9.36 | +39.17 | 17 | £6,608 |
-| 25 | smarkets | football | Winner and both teams to score | in in-play, first third, out in-play, last third | 20-30% | back then lay | no earlier price | no volume data | 1,051 | +7.07 | +5.53 | +8.29 | 17 | £5,977 |
+| 1 | smarkets | football | Winner and over/under 2.5 | in-play, first third | 10-20% | back | no earlier price | no volume data | 1,390 | +54.90 | +55.35 | +54.60 | 18 | £54,000 |
+| 2 | smarkets | football | Winner and over/under 2.5 | in-play, first third | 20-30% | back | no earlier price | no volume data | 1,047 | +40.01 | +34.40 | +44.16 | 16 | £29,261 |
+| 3 | smarkets | football | Winner and both teams to score | in-play, first third | 10-20% | back | no earlier price | no volume data | 2,311 | +16.43 | +16.28 | +16.54 | 18 | £26,366 |
+| 4 | smarkets | football | Winner and both teams to score | in-play, first third | 0-10% | back | no earlier price | no volume data | 807 | +45.61 | +42.60 | +48.18 | 16 | £24,821 |
+| 5 | smarkets | football | Winner and over/under 2.5 | in in-play, first third, out in-play, last third | 10-20% | back then lay | no earlier price | no volume data | 1,390 | +23.41 | +24.22 | +22.87 | 18 | £23,141 |
+| 6 | smarkets | football | Winner and over/under 2.5 | in-play, middle third | 30-40% | back | price falling | no volume data | 511 | +45.20 | +43.09 | +46.75 | 17 | £16,600 |
+| 7 | smarkets | football | Winner and over/under 2.5 | in-play, middle third | 20-30% | back | price falling | no volume data | 401 | +56.96 | +47.18 | +63.00 | 16 | £16,369 |
+| 8 | smarkets | football | Winner and both teams to score | in-play, first third | 20-30% | back | no earlier price | no volume data | 1,127 | +16.20 | +19.14 | +14.15 | 18 | £13,114 |
+| 9 | smarkets | football | Winner and both teams to score | in-play, middle third | 20-30% | back | price falling | no volume data | 664 | +25.99 | +15.13 | +33.08 | 17 | £11,853 |
+| 10 | betfair | horse_racing | WIN | 10 minutes before | 0-10% | offer back | no earlier price | deep | 699 | +28.71 | +7.67 | +46.79 | 25 | £10,895 |
+| 11 | smarkets | football | Winner and over/under 2.5 | in in-play, first third, out in-play, last third | 20-30% | back then lay | no earlier price | no volume data | 1,047 | +13.87 | +9.26 | +17.27 | 16 | £10,813 |
+| 12 | smarkets | football | Winner and both teams to score | in-play, first third | 30-40% | back | no earlier price | no volume data | 515 | +29.38 | +31.62 | +27.75 | 17 | £10,723 |
+| 13 | betfair | football | FIRST_HALF_GOALS_05 | in in-play, first third, out in-play, last third | 60-70% | lay then back | price rising | thin | 407 | +68.22 | +64.44 | +71.63 | 14 | £9,817 |
+| 14 | smarkets | football | Winner and both teams to score | in in-play, first third, out in-play, last third | 0-10% | back then lay | no earlier price | no volume data | 807 | +16.56 | +19.00 | +14.48 | 16 | £8,856 |
+| 15 | betfair | football | OVER_UNDER_05 | in 1 hour before, out in-play, last third | 90-100% | lay then back | no earlier price | thin | 1,160 | +63.91 | +55.97 | +71.63 | 11 | £8,665 |
+| 16 | smarkets | football | Winner and both teams to score | in-play, middle third | 10-20% | back | price falling | no volume data | 384 | +29.99 | +31.99 | +28.74 | 16 | £8,226 |
+| 17 | smarkets | football | Winner and both teams to score | in-play, middle third | 30-40% | back | price falling | no volume data | 414 | +25.66 | +35.77 | +19.35 | 17 | £8,205 |
+| 18 | betfair | football | FIRST_HALF_GOALS_05 | in 10 minutes before, out in-play, last third | 70-80% | lay then back | price flat | thin | 909 | +34.77 | +7.12 | +50.83 | 18 | £8,175 |
+| 19 | betfair | football | FIRST_HALF_GOALS_05 | in 1 hour before, out in-play, last third | 70-80% | lay then back | no earlier price | thin | 1,098 | +34.21 | +9.17 | +51.15 | 18 | £8,162 |
+| 20 | betfair | football | OVER_UNDER_05 | in 10 minutes before, out in-play, last third | 90-100% | lay then back | price flat | thin | 1,063 | +58.94 | +47.57 | +69.71 | 11 | £7,591 |
+| 21 | smarkets | football | Winner and over/under 2.5 | in-play, first third | 0-10% | back | no earlier price | no volume data | 817 | +12.47 | +7.84 | +16.99 | 17 | £7,078 |
+| 22 | betfair | football | FIRST_HALF_GOALS_05 | in in-play, first third, out in-play, last third | 30-40% | back then lay | price falling | thin | 436 | +48.97 | +43.03 | +54.49 | 15 | £6,677 |
+| 23 | smarkets | football | Winner and over/under 2.5 | in-play, middle third | 10-20% | back | price rising | no volume data | 471 | +19.47 | +13.47 | +23.50 | 16 | £6,390 |
+| 24 | betfair | football | FIRST_HALF_GOALS_05 | in 1 hour before, out in-play, last third | 20-30% | back then lay | no earlier price | thin | 1,070 | +27.36 | +9.36 | +39.03 | 18 | £6,363 |
+| 25 | smarkets | football | Winner and over/under 2.5 | in in-play, middle third, out in-play, last third | 20-30% | back then lay | price falling | no volume data | 401 | +21.11 | +15.20 | +24.75 | 16 | £6,145 |
 
 ## Top 10, hold to the result
 
 | # | source | sport | market | when | chance | side | move | depth | bets | £ per £100 | 1st half | 2nd half | days | £ a month |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| 1 | smarkets | football | Winner and over/under 2.5 | in-play, first third | 10-20% | back | no earlier price | no volume data | 1,291 | +54.81 | +55.35 | +54.40 | 17 | £52,649 |
-| 2 | smarkets | football | Winner and over/under 2.5 | in-play, first third | 20-30% | back | no earlier price | no volume data | 992 | +40.38 | +34.40 | +45.24 | 15 | £29,160 |
-| 3 | smarkets | football | Winner and both teams to score | in-play, first third | 10-20% | back | no earlier price | no volume data | 2,168 | +16.48 | +16.28 | +16.63 | 17 | £25,766 |
-| 4 | smarkets | football | Winner and both teams to score | in-play, first third | 0-10% | back | no earlier price | no volume data | 765 | +44.64 | +42.60 | +46.57 | 15 | £24,134 |
-| 5 | smarkets | football | Winner and over/under 2.5 | in-play, middle third | 20-30% | back | price falling | no volume data | 374 | +58.83 | +47.18 | +66.89 | 15 | £16,549 |
-| 6 | smarkets | football | Winner and over/under 2.5 | in-play, middle third | 30-40% | back | price falling | no volume data | 487 | +44.46 | +43.09 | +45.56 | 16 | £16,334 |
-| 7 | smarkets | football | Winner and both teams to score | in-play, first third | 20-30% | back | no earlier price | no volume data | 1,051 | +16.93 | +19.14 | +15.19 | 17 | £13,407 |
-| 8 | smarkets | football | Winner and both teams to score | in-play, middle third | 20-30% | back | price falling | no volume data | 620 | +25.79 | +15.13 | +33.59 | 16 | £11,461 |
-| 9 | smarkets | football | Winner and both teams to score | in-play, first third | 30-40% | back | no earlier price | no volume data | 480 | +29.90 | +31.62 | +28.48 | 16 | £10,652 |
-| 10 | smarkets | football | Winner and both teams to score | in-play, middle third | 10-20% | back | price falling | no volume data | 358 | +31.58 | +31.99 | +31.29 | 15 | £8,476 |
+| 1 | smarkets | football | Winner and over/under 2.5 | in-play, first third | 10-20% | back | no earlier price | no volume data | 1,390 | +54.90 | +55.35 | +54.60 | 18 | £54,000 |
+| 2 | smarkets | football | Winner and over/under 2.5 | in-play, first third | 20-30% | back | no earlier price | no volume data | 1,047 | +40.01 | +34.40 | +44.16 | 16 | £29,261 |
+| 3 | smarkets | football | Winner and both teams to score | in-play, first third | 10-20% | back | no earlier price | no volume data | 2,311 | +16.43 | +16.28 | +16.54 | 18 | £26,366 |
+| 4 | smarkets | football | Winner and both teams to score | in-play, first third | 0-10% | back | no earlier price | no volume data | 807 | +45.61 | +42.60 | +48.18 | 16 | £24,821 |
+| 5 | smarkets | football | Winner and over/under 2.5 | in-play, middle third | 30-40% | back | price falling | no volume data | 511 | +45.20 | +43.09 | +46.75 | 17 | £16,600 |
+| 6 | smarkets | football | Winner and over/under 2.5 | in-play, middle third | 20-30% | back | price falling | no volume data | 401 | +56.96 | +47.18 | +63.00 | 16 | £16,369 |
+| 7 | smarkets | football | Winner and both teams to score | in-play, first third | 20-30% | back | no earlier price | no volume data | 1,127 | +16.20 | +19.14 | +14.15 | 18 | £13,114 |
+| 8 | smarkets | football | Winner and both teams to score | in-play, middle third | 20-30% | back | price falling | no volume data | 664 | +25.99 | +15.13 | +33.08 | 17 | £11,853 |
+| 9 | smarkets | football | Winner and both teams to score | in-play, first third | 30-40% | back | no earlier price | no volume data | 515 | +29.38 | +31.62 | +27.75 | 17 | £10,723 |
+| 10 | smarkets | football | Winner and both teams to score | in-play, middle third | 10-20% | back | price falling | no volume data | 384 | +29.99 | +31.99 | +28.74 | 16 | £8,226 |
 
 ## Top 10, in and out
 
 | # | source | sport | market | when | chance | side | move | depth | bets | £ per £100 | 1st half | 2nd half | days | £ a month |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| 1 | smarkets | football | Winner and over/under 2.5 | in in-play, first third, out in-play, last third | 10-20% | back then lay | no earlier price | no volume data | 1,291 | +24.04 | +24.22 | +23.91 | 17 | £23,206 |
-| 2 | smarkets | football | Winner and over/under 2.5 | in in-play, first third, out in-play, last third | 20-30% | back then lay | no earlier price | no volume data | 992 | +13.99 | +9.26 | +17.84 | 15 | £10,712 |
-| 3 | betfair | football | FIRST_HALF_GOALS_05 | in in-play, first third, out in-play, last third | 60-70% | lay then back | price rising | thin | 405 | +68.52 | +64.44 | +72.22 | 13 | £10,214 |
-| 4 | betfair | football | OVER_UNDER_05 | in 1 hour before, out in-play, last third | 90-100% | lay then back | no earlier price | thin | 1,156 | +64.12 | +55.97 | +72.10 | 10 | £9,018 |
-| 5 | betfair | football | FIRST_HALF_GOALS_05 | in 10 minutes before, out in-play, last third | 70-80% | lay then back | price flat | thin | 907 | +34.77 | +7.12 | +50.89 | 17 | £8,482 |
-| 6 | betfair | football | FIRST_HALF_GOALS_05 | in 1 hour before, out in-play, last third | 70-80% | lay then back | no earlier price | thin | 1,095 | +34.19 | +9.17 | +51.20 | 17 | £8,476 |
-| 7 | smarkets | football | Winner and both teams to score | in in-play, first third, out in-play, last third | 0-10% | back then lay | no earlier price | no volume data | 765 | +15.15 | +19.00 | +11.51 | 15 | £8,083 |
-| 8 | betfair | football | OVER_UNDER_05 | in 10 minutes before, out in-play, last third | 90-100% | lay then back | price flat | thin | 1,059 | +59.23 | +47.57 | +70.35 | 10 | £7,922 |
-| 9 | betfair | football | FIRST_HALF_GOALS_05 | in in-play, first third, out in-play, last third | 30-40% | back then lay | price falling | thin | 434 | +49.16 | +43.03 | +54.92 | 14 | £6,959 |
-| 10 | smarkets | football | Winner and over/under 2.5 | in in-play, middle third, out in-play, last third | 20-30% | back then lay | price falling | no volume data | 374 | +23.76 | +15.20 | +29.68 | 15 | £6,772 |
+| 1 | smarkets | football | Winner and over/under 2.5 | in in-play, first third, out in-play, last third | 10-20% | back then lay | no earlier price | no volume data | 1,390 | +23.41 | +24.22 | +22.87 | 18 | £23,141 |
+| 2 | smarkets | football | Winner and over/under 2.5 | in in-play, first third, out in-play, last third | 20-30% | back then lay | no earlier price | no volume data | 1,047 | +13.87 | +9.26 | +17.27 | 16 | £10,813 |
+| 3 | betfair | football | FIRST_HALF_GOALS_05 | in in-play, first third, out in-play, last third | 60-70% | lay then back | price rising | thin | 407 | +68.22 | +64.44 | +71.63 | 14 | £9,817 |
+| 4 | smarkets | football | Winner and both teams to score | in in-play, first third, out in-play, last third | 0-10% | back then lay | no earlier price | no volume data | 807 | +16.56 | +19.00 | +14.48 | 16 | £8,856 |
+| 5 | betfair | football | OVER_UNDER_05 | in 1 hour before, out in-play, last third | 90-100% | lay then back | no earlier price | thin | 1,160 | +63.91 | +55.97 | +71.63 | 11 | £8,665 |
+| 6 | betfair | football | FIRST_HALF_GOALS_05 | in 10 minutes before, out in-play, last third | 70-80% | lay then back | price flat | thin | 909 | +34.77 | +7.12 | +50.83 | 18 | £8,175 |
+| 7 | betfair | football | FIRST_HALF_GOALS_05 | in 1 hour before, out in-play, last third | 70-80% | lay then back | no earlier price | thin | 1,098 | +34.21 | +9.17 | +51.15 | 18 | £8,162 |
+| 8 | betfair | football | OVER_UNDER_05 | in 10 minutes before, out in-play, last third | 90-100% | lay then back | price flat | thin | 1,063 | +58.94 | +47.57 | +69.71 | 11 | £7,591 |
+| 9 | betfair | football | FIRST_HALF_GOALS_05 | in in-play, first third, out in-play, last third | 30-40% | back then lay | price falling | thin | 436 | +48.97 | +43.03 | +54.49 | 15 | £6,677 |
+| 10 | betfair | football | FIRST_HALF_GOALS_05 | in 1 hour before, out in-play, last third | 20-30% | back then lay | no earlier price | thin | 1,070 | +27.36 | +9.36 | +39.03 | 18 | £6,363 |
 
 ## Top 10, offering the price
 
 | # | source | sport | market | when | chance | side | move | depth | bets | £ per £100 | 1st half | 2nd half | days | £ a month |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| 1 | betfair | horse_racing | WIN | 10 minutes before | 0-10% | offer back | no earlier price | deep | 671 | +34.08 | +7.67 | +58.60 | 24 | £12,874 |
-| 2 | betfair | football | MATCH_ODDS | 1 hour before | 30-40% | offer back | no earlier price | thin | 368 | +18.81 | +23.70 | +14.28 | 24 | £3,897 |
-| 3 | betfair | football | MATCH_ODDS | 1 hour before | 20-30% | offer back | no earlier price | medium | 313 | +20.39 | +9.94 | +30.00 | 24 | £3,593 |
-| 4 | betfair | football | CORRECT_SCORE | 1 hour before | 10-20% | offer back | no earlier price | thin | 979 | +5.53 | +4.54 | +6.44 | 17 | £3,045 |
-| 5 | betfair | football | MATCH_ODDS | 10 minutes before | 20-30% | offer back | price flat | thin | 316 | +7.58 | +11.40 | +3.94 | 24 | £1,348 |
-| 6 | betfair | football | OVER_UNDER_25 | 1 hour before | 50-60% | offer back | no earlier price | thin | 344 | +6.63 | +2.69 | +8.49 | 14 | £1,285 |
-| 7 | betfair | horse_racing | WIN | in-play, first third | 0-10% | offer back | price falling | deep | 322 | +5.56 | +8.70 | +2.88 | 23 | £1,007 |
-| 8 | betfair | football | FIRST_HALF_GOALS_05 | 1 hour before | 70-80% | offer back | no earlier price | thin | 332 | +2.74 | +4.44 | +1.35 | 17 | £512 |
-| 9 | betfair | football | OVER_UNDER_45 | 1 hour before | 10-20% | offer lay | no earlier price | thin | 324 | +1.38 | +1.65 | +1.17 | 17 | £252 |
-| 10 | betfair | horse_racing | WIN | 2 minutes before | 0-10% | offer lay | price falling | deep | 317 | +1.39 | +0.74 | +1.97 | 24 | £249 |
+| 1 | betfair | horse_racing | WIN | 10 minutes before | 0-10% | offer back | no earlier price | deep | 699 | +28.71 | +7.67 | +46.79 | 25 | £10,895 |
+| 2 | betfair | football | MATCH_ODDS | 1 hour before | 20-30% | offer back | no earlier price | medium | 329 | +19.62 | +9.94 | +27.74 | 25 | £3,505 |
+| 3 | betfair | football | MATCH_ODDS | 1 hour before | 30-40% | offer back | no earlier price | thin | 396 | +15.27 | +23.70 | +8.46 | 25 | £3,282 |
+| 4 | betfair | football | CORRECT_SCORE | 1 hour before | 10-20% | offer back | no earlier price | thin | 1,030 | +2.84 | +4.54 | +1.40 | 18 | £1,586 |
+| 5 | betfair | football | OVER_UNDER_25 | 1 hour before | 50-60% | offer back | no earlier price | thin | 345 | +6.32 | +2.69 | +8.02 | 15 | £1,184 |
+| 6 | betfair | horse_racing | WIN | in-play, first third | 0-10% | offer back | price falling | deep | 332 | +5.28 | +8.70 | +2.52 | 24 | £951 |
+| 7 | betfair | football | FIRST_HALF_GOALS_05 | 1 hour before | 70-80% | offer back | no earlier price | thin | 332 | +2.74 | +4.44 | +1.35 | 17 | £494 |
+| 8 | betfair | football | BOTH_TEAMS_TO_SCORE | 1 hour before | 50-60% | offer lay | no earlier price | thin | 387 | +1.73 | +2.89 | +0.59 | 18 | £364 |
+| 9 | betfair | football | OVER_UNDER_45 | 1 hour before | 10-20% | offer lay | no earlier price | thin | 338 | +1.97 | +1.65 | +2.20 | 18 | £362 |
+| 10 | betfair | horse_racing | WIN | 2 minutes before | 0-10% | offer lay | price falling | deep | 331 | +1.57 | +0.49 | +2.61 | 25 | £282 |
 
 Note: slices overlap (the same bet sits in many slices), so £ a month does NOT add up across rows.
 
@@ -91,9 +91,9 @@ Note: slices overlap (the same bet sits in many slices), so £ a month does NOT 
 
 | source | when | back offers | filled | lay offers | filled |
 |---|---|---|---|---|---|
-| betfair | 1 hour before | 97,322 | 26,806 (28%) | 97,322 | 30,343 (31%) |
-| betfair | 10 minutes before | 99,573 | 16,180 (16%) | 99,573 | 21,143 (21%) |
-| betfair | 2 minutes before | 48,606 | 15,782 (32%) | 48,606 | 18,709 (38%) |
-| betfair | in-play, first third | 92,697 | 43,779 (47%) | 92,697 | 46,143 (50%) |
-| betfair | in-play, last third | 56,884 | 27,872 (49%) | 56,884 | 31,141 (55%) |
-| betfair | in-play, middle third | 82,523 | 43,216 (52%) | 82,523 | 45,564 (55%) |
+| betfair | 1 hour before | 100,256 | 27,708 (28%) | 100,256 | 31,293 (31%) |
+| betfair | 10 minutes before | 103,285 | 16,811 (16%) | 103,285 | 21,976 (21%) |
+| betfair | 2 minutes before | 51,148 | 16,279 (32%) | 51,148 | 19,428 (38%) |
+| betfair | in-play, first third | 93,992 | 44,633 (47%) | 93,992 | 47,014 (50%) |
+| betfair | in-play, last third | 57,880 | 28,466 (49%) | 57,880 | 31,776 (55%) |
+| betfair | in-play, middle third | 83,747 | 44,060 (53%) | 83,747 | 46,431 (55%) |
