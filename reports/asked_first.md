@@ -1,5 +1,5 @@
 ALL RECORDING, nothing needs you
-As of 28 Nov 19:56 UK. The asker checks 58 things every 5 min, plus 11 it found itself (watch only). It checks output, not processes, and looks 3 hours ahead every 10 min.
+As of 28 Nov 20:06 UK. The asker checks 58 things every 5 min, plus 11 it found itself (watch only). It checks output, not processes, and looks 3 hours ahead every 10 min.
 
 FIXED WITHOUT YOU (last 24 h)
 - Tennis prices on all three exchanges before the start: broke 28 Nov 17:25, noticed 28 Nov 17:25, fixed 28 Nov 17:35 by a repair session. Lost: nothing recorded lost.
@@ -18,14 +18,14 @@ COULD NOT FIX
 - Paused on purpose and silent (not acted on): player
 
 NEXT 3 HOURS
-- football: 20 events start (first 20:00). Recorded now, of those inside each feed's window: fast stream 19/19; order book 20/20; extra market types 6/6
-- racing: 1 events start (first 20:00). Recorded now, of those inside each feed's window: fast stream 1/1; racing recorder 1/1
-- tennis: 2 events start (first 20:00). Recorded now, of those inside each feed's window: tennis prices 2/2
+- football: 19 events start (first 20:30). Recorded now, of those inside each feed's window: fast stream 15/15; order book 15/15; extra market types 9/9
+- racing: 1 events start (first 20:30). Recorded now, of those inside each feed's window: racing recorder 1/1
+- tennis: 1 events start (first 22:00). Recorded now, of those inside each feed's window: tennis prices 1/1
 - cricket: 4 events start (first 21:30). Recorded now, of those inside each feed's window: cricket prices 4/4
-- In play now (football match odds): fast stream 20/20; order book 20/20
-- For information (they do not list every match): Smarkets 0/20; Matchbook 10/20; live facts 14/14
-- Kick-offs in the last 3 h: 61 of 61 football matches had a stream price at the off (58 with a tick in the last 30 s).
+- In play now (football match odds): fast stream 23/23; order book 23/23
+- For information (they do not list every match): Smarkets 0/19; Matchbook 9/19; live facts 10/10
+- Kick-offs in the last 3 h: 52 of 52 football matches had a stream price at the off (50 with a tick in the last 30 s).
 - Next 3 hours all covered on our feeds: yes
 
-Checks: database 38/100 connections, up since 27 Nov 05:47; disk 780 GB free; memory 8.2 GB free; clock synced yes (+0.8 s v Betfair); Betfair login 19:16.
+Checks: database 37/100 connections, up since 27 Nov 05:47; disk 780 GB free; memory 8.6 GB free; clock synced yes (+0.8 s v Betfair); Betfair login 19:16.
 Watchman/breaks lines read this pass: 4; ack; ack; ack; ack
