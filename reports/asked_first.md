@@ -1,5 +1,5 @@
 ALL RECORDING, nothing needs you
-As of 28 Nov 18:02 UK. The asker checks 58 things every 5 min (plus 11 it found itself, watch only) (output, not process) and looks 3 hours ahead every 10 min.
+As of 28 Nov 18:21 UK. The asker checks 58 things every 5 min (plus 11 it found itself, watch only) (output, not process) and looks 3 hours ahead every 10 min.
 
 FIXED WITHOUT YOU (last 24 h)
 - Tennis prices on all three exchanges before the start: broke 28 Nov 17:25, noticed 28 Nov 17:25, fixed 28 Nov 17:35 by a repair session. Lost: nothing recorded lost.
@@ -16,13 +16,13 @@ COULD NOT FIX
 - Paused on purpose and silent (not acted on): player
 
 NEXT 3 HOURS
-- football: 35 events start (first 18:15). Recorded now, of those inside each feed's window: fast stream 26/26; order book 27/27; extra market types 4/4
-- racing: 1 events start (first 18:30). Recorded now, of those inside each feed's window: racing recorder 1/1
-- tennis: 4 events start (first 18:30). Recorded now, of those inside each feed's window: tennis prices 4/4
-- In play now (football match odds): fast stream 46/49; order book 49/49
-- For information (they do not list every match): Smarkets 0/35; Matchbook 14/35; live facts 11/11
-- Kick-offs in the last 3 h: 73 of 80 football matches had a stream price at the off (40 with a tick in the last 30 s). Not priced, e.g.: Ibiza Eivissa v Atletico Madrid II, Union de Salamanca v Deportivo La Coruna II, MTK Budapest v Ujpest, Kruger United FC v Mamelodi Sundowns
+- football: 34 events start (first 18:30). Recorded now, of those inside each feed's window: fast stream 24/24; order book 33/33; extra market types 9/9
+- racing: 1 events start (first 18:30). Recorded now, of those inside each feed's window: fast stream 1/1; racing recorder 1/1
+- tennis: 4 events start (first 18:25). Recorded now, of those inside each feed's window: tennis prices 4/4
+- In play now (football match odds): fast stream 39/39; order book 39/39
+- For information (they do not list every match): Smarkets 0/34; Matchbook 14/34; live facts 12/12
+- Kick-offs in the last 3 h: 72 of 79 football matches had a stream price at the off (42 with a tick in the last 30 s). Not priced, e.g.: Ibiza Eivissa v Atletico Madrid II, Union de Salamanca v Deportivo La Coruna II, MTK Budapest v Ujpest, Kruger United FC v Mamelodi Sundowns
 - Next 3 hours all covered on our feeds: yes
 
-Checks: database 38/100 connections, up since 27 Nov 05:47; disk 781 GB free; memory 14.0 GB free; clock synced yes (+0.3 s v Betfair); Betfair login 17:52.
-Watchman/breaks lines read this pass: 7; checked; ack; ack; ack; ack; ack; ack
+Checks: database 37/100 connections, up since 27 Nov 05:47; disk 781 GB free; memory 14.2 GB free; clock synced yes (+0.1 s v Betfair); Betfair login 18:11.
+Watchman/breaks lines read this pass: 4; ack; ack; ack; ack
