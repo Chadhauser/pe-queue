@@ -1,5 +1,5 @@
 ALL RECORDING, nothing needs you
-As of 28 Nov 21:16 UK. The asker checks 58 things every 5 min, plus 11 it found itself (watch only). It checks output, not processes, and looks 3 hours ahead every 10 min.
+As of 28 Nov 21:36 UK. The asker checks 58 things every 5 min, plus 11 it found itself (watch only). It checks output, not processes, and looks 3 hours ahead every 10 min.
 
 FIXED WITHOUT YOU (last 24 h)
 - Tennis prices on all three exchanges before the start: broke 28 Nov 17:25, noticed 28 Nov 17:25, fixed 28 Nov 17:35 by a repair session. Lost: nothing recorded lost.
@@ -18,13 +18,13 @@ COULD NOT FIX
 - Paused on purpose and silent (not acted on): player
 
 NEXT 3 HOURS
-- football: 13 events start (first 21:30). Recorded now, of those inside each feed's window: fast stream 9/9; order book 13/13; extra market types 5/5
-- tennis: 1 events start (first 22:00). Recorded now, of those inside each feed's window: tennis prices 1/1
-- cricket: 4 events start (first 21:30). Recorded now, of those inside each feed's window: cricket prices 4/4
-- In play now (football match odds): fast stream 22/22; order book 22/22
-- For information (they do not list every match): Smarkets 0/13; Matchbook 5/13; live facts 5/5
-- Kick-offs in the last 3 h: 33 of 33 football matches had a stream price at the off (32 with a tick in the last 30 s).
+- football: 10 events start (first 22:00). Recorded now, of those inside each feed's window: fast stream 8/8; order book 9/9; extra market types 1/1
+- tennis: 2 events start (first 22:00). Recorded now, of those inside each feed's window: tennis prices 2/2
+- cricket: 1 events start (first 22:00). Recorded now, of those inside each feed's window: cricket prices 1/1
+- In play now (football match odds): fast stream 19/19; order book 19/19
+- For information (they do not list every match): Smarkets 0/10; Matchbook 6/10; live facts 1/1
+- Kick-offs in the last 3 h: 36 of 36 football matches had a stream price at the off (35 with a tick in the last 30 s).
 - Next 3 hours all covered on our feeds: yes
 
-Checks: database 38/100 connections, up since 27 Nov 05:47; disk 779 GB free; memory 8.3 GB free; clock synced yes (+0.8 s v Betfair); Betfair login 19:16.
+Checks: database 37/100 connections, up since 27 Nov 05:47; disk 779 GB free; memory 8.4 GB free; clock synced yes (+0.8 s v Betfair); Betfair login 19:16.
 Watchman/breaks lines read this pass: 4; ack; ack; ack; ack
