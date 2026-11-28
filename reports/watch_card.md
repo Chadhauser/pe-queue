@@ -1,4 +1,4 @@
-# Watch card — Fri 27 Nov 2026 (built 16:30 UK)
+# Watch card — Sat 28 Nov 2026 (built 09:30 UK)
 
 Paper only, no trade instructions. Biggest games by money matched on Betfair (we hold no TV listings). The machine answers every question itself at its moment from our live figures; Peter's answer is logged beside it: `record_eye.py answer <team> <Q> yes|no`.
 
@@ -8,35 +8,35 @@ Paper only, no trade instructions. Biggest games by money matched on Betfair (we
 - **QHT_00** at half-time, if 0-0: has it been open, real chances at both ends? Yes: over 1.5 landed 52% v 44% priced, +22.7.
 *Comes back* = avoided defeat after conceding first; *folds* = failed to win after scoring first; *late* = share of goals after 75 min.
 
-## Nottm Forest v Chelsea — 20:00 UK, English Premier League, £327,567
-- **Form v price:** Nottm Forest 43% v 40%, draw 29% v 28%, Chelsea 28% v 33% (form v price). Price rates Chelsea 4 pts above form.
-- **In play (2 seasons):** Nottm Forest comes back 28%, folds 21%, late goals 21% for / 29% against. Chelsea comes back 36%, folds 33%, late goals 17% for / 24% against. (All teams: comes back 33%, folds 33%, late 23%.)
-- **Watch:** Q25 is Nottm Forest on top at 25 min? · QHT_LEVEL if level at half-time, has Nottm Forest made clearly the better chances? · QHT_00 if 0-0, open game?
+## Man Utd v Brentford — 15:00 UK, English Premier League, £192,610
+- **Form v price:** Man Utd 65% v 42%, draw 22% v 26%, Brentford 13% v 33% (form v price). Price rates Man Utd 23 pts below form.
+- **In play (2 seasons):** Man Utd comes back 42%, folds 34%, late goals 32% for / 24% against. Brentford comes back 37%, folds 37%, late goals 28% for / 29% against. (All teams: comes back 33%, folds 33%, late 23%.)
+- **Watch:** Q25 is Man Utd on top at 25 min? · QHT_LEVEL if level at half-time, has Man Utd made clearly the better chances? · QHT_00 if 0-0, open game?
 
-## Venezia v Bologna — 19:45 UK, Italian Serie A, £127,078
-- **Form v price:** Venezia 29% v 31%, draw 26% v 30%, Bologna 45% v 39% (form v price). Price rates Bologna 6 pts below form.
-- **In play (2 seasons):** Venezia comes back 28%, folds 35%, late goals 16% for / 29% against. Bologna comes back 44%, folds 33%, late goals 17% for / 21% against. (All teams: comes back 33%, folds 33%, late 23%.)
-- **Watch:** Q25 is Bologna on top at 25 min? · QHT_LEVEL if level at half-time, has Bologna made clearly the better chances? · QHT_00 if 0-0, open game?
+## Hamburger SV v Bayern Munich — 14:30 UK, German Bundesliga, £122,494
+- **Form v price:** Hamburger SV 9% v 11%, draw 14% v 15%, Bayern Munich 76% v 74% (form v price). Price rates Bayern Munich 2 pts below form.
+- **In play (2 seasons):** Hamburger SV comes back 36%, folds 33%, late goals 23% for / 24% against. Bayern Munich comes back 87%, folds 13%, late goals 24% for / 29% against. (All teams: comes back 33%, folds 33%, late 23%.)
+- **Watch:** Q25 is Bayern Munich on top at 25 min? · QHT_LEVEL if level at half-time, has Bayern Munich made clearly the better chances? · QHT_00 if 0-0, open game?
 
-## Levante v Racing Santander — 20:00 UK, Spanish La Liga, £117,070
-- **Form v price:** Levante 51% v 50%, draw 27% v 24%, Racing Santander 22% v 26% (form v price). Price rates Racing Santander 4 pts above form.
-- **In play (2 seasons):** Levante comes back 38%, folds 29%, late goals 38% for / 27% against. Racing Santander comes back 54%, folds 36%, late goals 21% for / 21% against. (All teams: comes back 33%, folds 33%, late 23%.)
-- **Watch:** Q25 is Levante on top at 25 min? · QHT_LEVEL if level at half-time, has Levante made clearly the better chances? · QHT_00 if 0-0, open game?
+## Leeds v Coventry — 15:00 UK, English Premier League, £119,225
+- **Form v price:** Leeds 56% v 66%, draw 25% v 21%, Coventry 19% v 13% (form v price). Price rates Leeds 10 pts above form.
+- **In play (2 seasons):** Leeds comes back 58%, folds 28%, late goals 24% for / 28% against. Coventry comes back 37%, folds 24%, late goals 21% for / 23% against. (All teams: comes back 33%, folds 33%, late 23%.)
+- **Watch:** Q25 is Leeds on top at 25 min? · QHT_LEVEL if level at half-time, has Leeds made clearly the better chances? · QHT_00 if 0-0, open game?
 
-## Werder Bremen v Mgladbach — 19:30 UK, German Bundesliga, £87,120
-- **Form v price:** Werder Bremen 59% v 58%, draw 25% v 22%, Mgladbach 15% v 20% (form v price). Price rates Mgladbach 4 pts above form.
-- **In play (2 seasons):** Werder Bremen comes back 32%, folds 30%, late goals 35% for / 23% against. Mgladbach: no in-play history held. (All teams: comes back 33%, folds 33%, late 23%.)
-- **Watch:** Q25 is Werder Bremen on top at 25 min? · QHT_LEVEL if level at half-time, has Werder Bremen made clearly the better chances? · QHT_00 if 0-0, open game?
+## Elche v Atletico Madrid — 17:30 UK, Spanish La Liga, £109,518
+- **Form v price:** Elche 18% v 15%, draw 22% v 20%, Atletico Madrid 59% v 66% (form v price). Price rates Atletico Madrid 7 pts above form.
+- **In play (2 seasons):** Elche comes back 38%, folds 34%, late goals 28% for / 29% against. Atletico Madrid comes back 39%, folds 29%, late goals 25% for / 24% against. (All teams: comes back 33%, folds 33%, late 23%.)
+- **Watch:** Q25 is Atletico Madrid on top at 25 min? · QHT_LEVEL if level at half-time, has Atletico Madrid made clearly the better chances? · QHT_00 if 0-0, open game?
 
-## Southampton v Middlesbrough — 20:00 UK, English Sky Bet Championship, £76,721
-- **Form v price:** Southampton 38% v 31%, draw 29% v 25%, Middlesbrough 33% v 44% (form v price). Price rates Middlesbrough 11 pts above form — the kind of gap where the priced side has beaten even its price.
-- **In play (2 seasons):** Southampton comes back 39%, folds 40%, late goals 23% for / 26% against. Middlesbrough comes back 41%, folds 30%, late goals 18% for / 25% against. (All teams: comes back 33%, folds 33%, late 23%.)
-- **Watch:** Q25 is Middlesbrough on top at 25 min? · QHT_LEVEL if level at half-time, has Middlesbrough made clearly the better chances? · QHT_00 if 0-0, open game?
+## Real Madrid v Alaves — 20:00 UK, Spanish La Liga, £70,091
+- **Form v price:** Real Madrid 84% v 86%, draw 11% v 9%, Alaves 5% v 5% (form v price). Price rates Real Madrid 2 pts above form.
+- **In play (2 seasons):** Real Madrid comes back 55%, folds 12%, late goals 25% for / 24% against. Alaves comes back 38%, folds 44%, late goals 27% for / 27% against. (All teams: comes back 33%, folds 33%, late 23%.)
+- **Watch:** Q25 is Real Madrid on top at 25 min? · QHT_LEVEL if level at half-time, has Real Madrid made clearly the better chances? · QHT_00 if 0-0, open game?
 
-## Brest v Paris FC — 19:45 UK, French Ligue 1, £28,367
-- **Form v price:** Brest 36% v 27%, draw 29% v 28%, Paris FC 35% v 45% (form v price). Price rates Paris FC 10 pts above form.
-- **In play (2 seasons):** Brest comes back 21%, folds 35%, late goals 18% for / 24% against. Paris FC comes back 32%, folds 24%, late goals 23% for / 28% against. (All teams: comes back 33%, folds 33%, late 23%.)
-- **Watch:** Q25 is Paris FC on top at 25 min? · QHT_LEVEL if level at half-time, has Paris FC made clearly the better chances? · QHT_00 if 0-0, open game?
+## Frosinone v Parma — 14:00 UK, Italian Serie A, £66,977
+- **Form v price:** Frosinone 50% v 68%, draw 28% v 18%, Parma 22% v 14% (form v price). Price rates Frosinone 18 pts above form — the kind of gap where the priced side has beaten even its price.
+- **In play (2 seasons):** Frosinone comes back 50%, folds 31%, late goals 17% for / 15% against. Parma comes back 26%, folds 27%, late goals 37% for / 27% against. (All teams: comes back 33%, folds 33%, late 23%.)
+- **Watch:** Q25 is Frosinone on top at 25 min? · QHT_LEVEL if level at half-time, has Frosinone made clearly the better chances? · QHT_00 if 0-0, open game?
 
 
 *Value per question is a first estimate from 1,634 top-five-league matches (Aug 2024 - May 2026, shot-by-shot expected goals, Betfair last traded prices at that minute): ideas, not money. The score sheet (football_form.eye_calls) measures it on real prices from today.*
